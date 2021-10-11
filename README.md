@@ -16,3 +16,6 @@
 - List of citez in Iran with SQL format
 - List of citez in Iran with JSON format
 - Name, ID and province ID
+
+## Tag
+`لیست شهرهای ایران`, `لیست شهرستان های ایران`, `لیست شهرهای ایران با فرمت SQL`, `لیست شهرستان های ایران با فرمت SQL`, `لیست شهرهای ایران با فرمت JSON`, `لیست شهرستان های ایران با فرمت JSON`, 
