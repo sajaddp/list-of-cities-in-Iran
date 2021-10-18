@@ -1,4 +1,17 @@
-  <img alt="GitHub (Pre-)Release Date" src="https://img.shields.io/github/release-date-pre/sajaddp/list-of-cities-in-Iran?style=for-the-badge"><img alt="GitHub" src="https://img.shields.io/github/license/sajaddp/list-of-cities-in-Iran?style=for-the-badge"><img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/w/sajaddp/list-of-cities-in-Iran?style=for-the-badge"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
+<div align="center">
+
+[![Iran](images/iran.jpeg)](#)
+
+</div>
+
+<p>
+<img alt="GitHub (Pre-)Release Date" src="https://img.shields.io/github/release-date-pre/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
+<img alt="GitHub" src="https://img.shields.io/github/license/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
+<img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/w/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
+</p>
+
+<div dir="rtl">
 
 # لیست شهرها و استان های ایران
 
@@ -15,22 +28,30 @@
 
 ## نحوه استفاده
 
-```bash
+</div>
+  
+```shell
 $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 ```
+
+<div dir="rtl">
 
 ## مشارکت
 
 از کمک شما برای تکمیل لیست و فرمت ها استقبال می کنم
 
 ### ویژگی های نیازمند مشارکت
-- [ ] فرمت csv
-- [ ] فرمت xlsx
-- [ ] فرمت txt
-- [ ] تابع نمونه PHP
-- [ ] تابع نمونه Python
-- [ ] تابع نمونه ES6
+- فرمت Json &check;
+- فرمت SQL &check;
+- فرمت csv &times;
+- فرمت xlsx &times;
+- فرمت txt &times;
+- تابع نمونه PHP &times;
+- تابع نمونه Python &times;
+- تابع نمونه ES6 &times;
 
+</div>
+  
 ---
 
 # List of cities in Iran
@@ -47,7 +68,7 @@ In this repository, you can access the list of cities and provinces of Iran in v
 
 ## Usage
 
-```bash
+```shell
 $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 ```
 
