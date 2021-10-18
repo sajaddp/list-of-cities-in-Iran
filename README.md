@@ -41,12 +41,14 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 از کمک شما برای تکمیل لیست و فرمت ها استقبال می کنم
 
 ### ویژگی های نیازمند مشارکت
-- [ ] فرمت csv
-- [ ] فرمت xlsx
-- [ ] فرمت txt
-- [ ] تابع نمونه PHP
-- [ ] تابع نمونه Python
-- [ ] تابع نمونه ES6
+- فرمت Json &check;
+- فرمت SQL &check;
+- فرمت csv &times;
+- فرمت xlsx &times;
+- فرمت txt &times;
+- تابع نمونه PHP &times;
+- تابع نمونه Python &times;
+- تابع نمونه ES6 &times;
 
 </div>
   
