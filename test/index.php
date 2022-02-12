@@ -14,6 +14,39 @@
 
 
 
+
+
+
+/*
+
+	getCitiesAndProvinceFull_V1 & getCitiesAndProvinceFull_V2 makes an array of all provinces and cities in this format:
+
+	{
+		"id": 1,
+		"name": "آذربایجان شرقی",
+		"slug": "آذربایجان-شرقی"
+		"cities":[
+			{
+			  "id": 1,
+			  "name": "اسکو",
+			  "slug": "اسکو",
+			},
+			{
+			  "id": 2,
+			  "name": "اهر",
+			  "slug": "اهر",
+			},
+			{
+			  "id": 3,
+			  "name": "ایلخچی",
+			  "slug": "ایلخچی",
+			},
+			.....
+
+		]
+	}
+
+*/
 function getCitiesAndProvinceFull_V1($cities,$provinces,$input_format='array',$output_format='array')
 {
 	// Load Data
