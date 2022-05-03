@@ -43,7 +43,13 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 - تابع نمونه Python &times;
 - تابع نمونه ES6 &times;
 
-  
+
+### روش تبدیل json به csv
+
+```shell
+$ jq -r '(.[0] | keys_unsorted) as $keys | $keys, map([.[ $keys[] ]])[] | @csv' cities.json > cities.csv
+```
+
 ---
 
 # List of cities in Iran
