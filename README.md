@@ -1,8 +1,4 @@
-<div align="center">
-
 [![Iran](images/iran.jpeg)](#)
-
-</div>
 
 <p>
 <img alt="GitHub (Pre-)Release Date" src="https://img.shields.io/github/release-date-pre/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
@@ -11,36 +7,33 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
 </p>
 
-<div dir="rtl">
 
-# لیست شهرها و استان های ایران
+# لیست شهرها و استان‌های ایران
 
-در این مخزن می توانید به لیست شهرها و استان های ایران با فرمت های گوناگون دسترسی پیدا کنید
+در این مخزن می‌توانید به لیست شهرها و استان‌های ایران در قالب‌های گوناگون دسترسی داشته باشید.
 
-## ویژگی ها
+## ویژگی‌ها
 
 - لیست شهرهای ایران
-- لیست شهرستان های ایران
+- لیست شهرستان‌های ایران
 - لیست شهرهای ایران با فرمت SQL
-- لیست شهرستان های ایران با فرمت SQL
+- لیست شهرستان‌های ایران با فرمت SQL
 - لیست شهرهای ایران با فرمت JSON
-- لیست شهرستان های ایران با فرمت JSON
+- لیست شهرستان‌های ایران با فرمت JSON
 
-## نحوه استفاده
+## روش استفاده
 
-</div>
   
 ```shell
 $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 ```
 
-<div dir="rtl">
 
 ## مشارکت
 
-از کمک شما برای تکمیل لیست و فرمت ها استقبال می کنم
+از کمک شما برای تکمیل لیست و فرمت‌ها استقبال می‌کنم
 
-### ویژگی های نیازمند مشارکت
+### ویژگی‌های نیازمند مشارکت
 - فرمت Json &check;
 - فرمت SQL &check;
 - فرمت csv &times;
@@ -50,7 +43,6 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 - تابع نمونه Python &times;
 - تابع نمونه ES6 &times;
 
-</div>
   
 ---
 
