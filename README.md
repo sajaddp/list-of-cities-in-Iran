@@ -41,9 +41,10 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 از کمک شما برای تکمیل لیست و فرمت ها استقبال می کنم
 
 ### ویژگی های نیازمند مشارکت
+
 - فرمت Json &check;
 - فرمت SQL &check;
-- فرمت csv &times;
+- فرمت csv &check;
 - فرمت xlsx &times;
 - فرمت txt &times;
 - تابع نمونه PHP &times;
@@ -59,6 +60,7 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 In this repository, you can access the list of cities and provinces of Iran in various formats
 
 ## Features
+
 - List of cities in Iran
 - List of provinces in Iran
 - List of cities in Iran with SQL format
@@ -73,4 +75,5 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 ```
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
