@@ -29,6 +29,8 @@
 - لیست شهرستان های ایران با فرمت csv
 - لیست شهرهای ایران با فرمت xlsx
 - لیست شهرستان های ایران با فرمت xlsx
+- لیست شهرهای ایران با فرمت txt
+- لیست شهرستان های ایران با فرمت txt
 
 ## نحوه استفاده
 
@@ -50,7 +52,7 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 - فرمت SQL &check;
 - فرمت csv &check;
 - فرمت xlsx &check;
-- فرمت txt &times;
+- فرمت txt &check;
 - تابع نمونه PHP &times;
 - تابع نمونه Python &times;
 - تابع نمونه ES6 &times;
