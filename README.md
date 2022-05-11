@@ -45,7 +45,7 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 - فرمت Json &check;
 - فرمت SQL &check;
 - فرمت csv &check;
-- فرمت xlsx &times;
+- فرمت xlsx &check;
 - فرمت txt &times;
 - تابع نمونه PHP &times;
 - تابع نمونه Python &times;
