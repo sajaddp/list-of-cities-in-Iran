@@ -52,7 +52,6 @@ $ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 
 ### ویژگی های نیازمند مشارکت
 
-- تابع نمونه PHP &times;
 - تابع نمونه Python &times;
 - تابع نمونه ES6 &times;
 
