@@ -1118,7 +1118,7 @@ INSERT INTO cities(id,name,slug,province_id) VALUES (1121,'زیباکنار','ز
 INSERT INTO cities(id,name,slug,province_id) VALUES (1135,'کردان','کردان',5);
 INSERT INTO cities(id,name,slug,province_id) VALUES (1137,'ساوجبلاغ','ساوجبلاغ',5);
 INSERT INTO cities(id,name,slug,province_id) VALUES (1138,'تهران دشت','تهران-دشت',5);
-INSERT INTO cities(id,name,slug,province_id) VALUES (1150,'گلبهار',NULL,11);
+INSERT INTO cities(id,name,slug,province_id) VALUES (1150,'گلبهار','گلبهار',11);
 INSERT INTO cities(id,name,slug,province_id) VALUES (1153,'قیامدشت','قیامدشت',8);
 INSERT INTO cities(id,name,slug,province_id) VALUES (1155,'بینالود','بینالود',11);
 INSERT INTO cities(id,name,slug,province_id) VALUES (1159,'پیربازار','پیربازار',26);
