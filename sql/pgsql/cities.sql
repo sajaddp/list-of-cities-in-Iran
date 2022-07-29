@@ -3072,7 +3072,7 @@ INSERT INTO
 VALUES
     (1138, 'تهران دشت', 'تهران-دشت', 5);
 
-INSERT INTO "public"."cities" VALUES (1150, 'گلبهار', NULL, 11);
+INSERT INTO "public"."cities" VALUES (1150, 'گلبهار', 'گلبهار', 11);
 
 INSERT INTO "public"."cities" VALUES (1153, 'قیامدشت', 'قیامدشت', 8);
 
