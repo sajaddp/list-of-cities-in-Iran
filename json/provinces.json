@@ -1,157 +1,219 @@
 [
-  {
-    "id": 1,
-    "name": "آذربایجان شرقی",
-    "slug": "آذربایجان-شرقی"
-  },
-  {
-    "id": 2,
-    "name": "آذربایجان غربی",
-    "slug": "آذربایجان-غربی"
-  },
-  {
-    "id": 3,
-    "name": "اردبیل",
-    "slug": "اردبیل"
-  },
-  {
-    "id": 4,
-    "name": "اصفهان",
-    "slug": "اصفهان"
-  },
-  {
-    "id": 5,
-    "name": "البرز",
-    "slug": "البرز"
-  },
-  {
-    "id": 6,
-    "name": "ایلام",
-    "slug": "ایلام"
-  },
-  {
-    "id": 7,
-    "name": "بوشهر",
-    "slug": "بوشهر"
-  },
-  {
-    "id": 8,
-    "name": "تهران",
-    "slug": "تهران"
-  },
-  {
-    "id": 9,
-    "name": "چهارمحال و بختیاری",
-    "slug": "چهارمحال-بختیاری"
-  },
-  {
-    "id": 10,
-    "name": "خراسان جنوبی",
-    "slug": "خراسان-جنوبی"
-  },
-  {
-    "id": 11,
-    "name": "خراسان رضوی",
-    "slug": "خراسان-رضوی"
-  },
-  {
-    "id": 12,
-    "name": "خراسان شمالی",
-    "slug": "خراسان-شمالی"
-  },
-  {
-    "id": 13,
-    "name": "خوزستان",
-    "slug": "خوزستان"
-  },
-  {
-    "id": 14,
-    "name": "زنجان",
-    "slug": "زنجان"
-  },
-  {
-    "id": 15,
-    "name": "سمنان",
-    "slug": "سمنان"
-  },
-  {
-    "id": 16,
-    "name": "سیستان و بلوچستان",
-    "slug": "سیستان-بلوچستان"
-  },
-  {
-    "id": 17,
-    "name": "فارس",
-    "slug": "فارس"
-  },
-  {
-    "id": 18,
-    "name": "قزوین",
-    "slug": "قزوین"
-  },
-  {
-    "id": 19,
-    "name": "قم",
-    "slug": "قم"
-  },
-  {
-    "id": 20,
-    "name": "کردستان",
-    "slug": "کردستان"
-  },
-  {
-    "id": 21,
-    "name": "کرمان",
-    "slug": "کرمان"
-  },
-  {
-    "id": 22,
-    "name": "کرمانشاه",
-    "slug": "کرمانشاه"
-  },
-  {
-    "id": 23,
-    "name": "کهگیلویه و بویراحمد",
-    "slug": "کهگیلویه-بویراحمد"
-  },
-  {
-    "id": 24,
-    "name": "گلستان",
-    "slug": "گلستان"
-  },
-  {
-    "id": 25,
-    "name": "لرستان",
-    "slug": "لرستان"
-  },
-  {
-    "id": 26,
-    "name": "گیلان",
-    "slug": "گیلان"
-  },
-  {
-    "id": 27,
-    "name": "مازندران",
-    "slug": "مازندران"
-  },
-  {
-    "id": 28,
-    "name": "مرکزی",
-    "slug": "مرکزی"
-  },
-  {
-    "id": 29,
-    "name": "هرمزگان",
-    "slug": "هرمزگان"
-  },
-  {
-    "id": 30,
-    "name": "همدان",
-    "slug": "همدان"
-  },
-  {
-    "id": 31,
-    "name": "یزد",
-    "slug": "یزد"
-  }
-]
+    {
+        id: 1,
+        name: "آذربایجان شرقی",
+        slug: "آذربایجان-شرقی",
+        englishName: "East Azerbaijan",
+        englishSlug: "east-azerbaijan",
+    },
+    {
+        id: 2,
+        name: "آذربایجان غربی",
+        slug: "آذربایجان-غربی",
+        englishName: "West Azerbaijan",
+        englishSlug: "west-azerbaijan",
+    },
+    {
+        id: 3,
+        name: "اردبیل",
+        slug: "اردبیل",
+        englishName: "Ardabil",
+        englishSlug: "ardabil",
+    },
+    {
+        id: 4,
+        name: "اصفهان",
+        slug: "اصفهان",
+        englishName: "Isfahan",
+        englishSlug: "isfahan",
+    },
+    {
+        id: 5,
+        name: "البرز",
+        slug: "البرز",
+        englishName: "Alborz",
+        englishSlug: "alborz",
+    },
+    {
+        id: 6,
+        name: "ایلام",
+        slug: "ایلام",
+        englishName: "Ilam",
+        englishSlug: "ilam",
+    },
+    {
+        id: 7,
+        name: "بوشهر",
+        slug: "بوشهر",
+        englishName: "Bushehr",
+        englishSlug: "bushehr",
+    },
+    {
+        id: 8,
+        name: "تهران",
+        slug: "تهران",
+        englishName: "Tehran",
+        englishSlug: "tehran",
+    },
+    {
+        id: 9,
+        name: "چهارمحال و بختیاری",
+        slug: "چهارمحال-بختیاری",
+        englishName: "Chaharmahal and Bakhtiari",
+        englishSlug: "chaharmahal-and-bakhtiari",
+    },
+    {
+        id: 10,
+        name: "خراسان جنوبی",
+        slug: "خراسان-جنوبی",
+        englishName: "South Khorasan",
+        englishSlug: "south-khorasan",
+    },
+    {
+        id: 11,
+        name: "خراسان رضوی",
+        slug: "خراسان-رضوی",
+        englishName: "Razavi Khorasan",
+        englishSlug: "razavi-khorasan",
+    },
+    {
+        id: 12,
+        name: "خراسان شمالی",
+        slug: "خراسان-شمالی",
+        englishName: "North Khorasan",
+        englishSlug: "north-khorasan",
+    },
+    {
+        id: 13,
+        name: "خوزستان",
+        slug: "خوزستان",
+        englishName: "Khuzestan",
+        englishSlug: "khuzestan",
+    },
+    {
+        id: 14,
+        name: "زنجان",
+        slug: "زنجان",
+        englishName: "Zanjan",
+        englishSlug: "zanjan",
+    },
+    {
+        id: 15,
+        name: "سمنان",
+        slug: "سمنان",
+        englishName: "Semnan",
+        englishSlug: "semnan",
+    },
+    {
+        id: 16,
+        name: "سیستان و بلوچستان",
+        slug: "سیستان-بلوچستان",
+        englishName: "Sistan and Baluchestan",
+        englishSlug: "sistan-and-baluchestan",
+    },
+    {
+        id: 17,
+        name: "فارس",
+        slug: "فارس",
+        englishName: "Fars",
+        englishSlug: "fars",
+    },
+    {
+        id: 18,
+        name: "قزوین",
+        slug: "قزوین",
+        englishName: "Qazvin",
+        englishSlug: "qazvin",
+    },
+    {
+        id: 19,
+        name: "قم",
+        slug: "قم",
+        englishName: "Qom",
+        englishSlug: "qom",
+    },
+    {
+        id: 20,
+        name: "کردستان",
+        slug: "کردستان",
+        englishName: "Kurdistan",
+        englishSlug: "kurdistan",
+    },
+    {
+        id: 21,
+        name: "کرمان",
+        slug: "کرمان",
+        englishName: "Kerman",
+        englishSlug: "kerman",
+    },
+    {
+        id: 22,
+        name: "کرمانشاه",
+        slug: "کرمانشاه",
+        englishName: "Kermanshah",
+        englishSlug: "kermanshah",
+    },
+    {
+        id: 23,
+        name: "کهگیلویه و بویراحمد",
+        slug: "کهگیلویه-بویراحمد",
+        englishName: "Kohgiluyeh and Boyer-Ahmad",
+        englishSlug: "kohgiluyeh-and-boyer-ahmad",
+    },
+    {
+        id: 24,
+        name: "گلستان",
+        slug: "گلستان",
+        englishName: "Golestan",
+        englishSlug: "golestan",
+    },
+    {
+        id: 25,
+        name: "لرستان",
+        slug: "لرستان",
+        englishName: "Lorestan",
+        englishSlug: "lorestan",
+    },
+    {
+        id: 26,
+        name: "گیلان",
+        slug: "گیلان",
+        englishName: "Gilan",
+        englishSlug: "gilan",
+    },
+    {
+        id: 27,
+        name: "مازندران",
+        slug: "مازندران",
+        englishName: "Mazandaran",
+        englishSlug: "mazandaran",
+    },
+    {
+        id: 28,
+        name: "مرکزی",
+        slug: "مرکزی",
+        englishName: "Markazi",
+        englishSlug: "markazi",
+    },
+    {
+        id: 29,
+        name: "هرمزگان",
+        slug: "هرمزگان",
+        englishName: "Hormozgan",
+        englishSlug: "hormozgan",
+    },
+    {
+        id: 30,
+        name: "همدان",
+        slug: "همدان",
+        englishName: "Hamedan",
+        englishSlug: "hamedan",
+    },
+    {
+        id: 31,
+        name: "یزد",
+        slug: "یزد",
+        englishName: "Yazd",
+        englishSlug: "yazd",
+    },
+];
