@@ -7,7 +7,6 @@
 <p>
 <img alt="GitHub (Pre-)Release Date" src="https://img.shields.io/github/release-date-pre/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
 <img alt="GitHub" src="https://img.shields.io/github/license/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
-<img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/w/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/sajaddp/list-of-cities-in-Iran?style=for-the-badge">
 </p>
 
@@ -41,7 +40,7 @@
 </div>
   
 ```shell
-$ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
+git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 ```
 
 <div dir="rtl">
@@ -85,7 +84,7 @@ In this repository, you can access the list of cities and provinces of Iran in v
 ## Usage
 
 ```shell
-$ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
+git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 ```
 
 ## Contributing
