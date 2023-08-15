@@ -2,11 +2,15 @@
   "name": "list-of-cities-in-iran",
   "version": "1.3.0",
   "description": "A module for querying the list of cities and provinces of Iran.",
-  "type": "module",
-  "main": "index.js",
+  "types": "index.ts",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Sajad Dehshiri <sajaddp71@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
 }

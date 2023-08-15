@@ -1,5 +1,5 @@
-import cities from "./json/cities.json";
-import provinces from "./json/provinces.json";
+import cities from "./../../json/cities.json";
+import provinces from "./../../json/provinces.json";
 
 // Return all cities
 export function getAllCities() {
