@@ -1,6 +1,12 @@
 import cities from "./../../json/cities.json";
 import provinces from "./../../json/provinces.json";
 
+/**
+ * Author: Sajad Dehshiri <sajaddp71@gmail.com>
+ * GitHub: https://github.com/sajaddp/list-of-cities-in-Iran
+ * If you find this useful, please consider starring the repository on GitHub.
+ */
+
 interface City {
     id: number;
     name: string;
