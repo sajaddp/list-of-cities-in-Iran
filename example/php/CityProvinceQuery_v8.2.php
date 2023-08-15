@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Author: Sajad Dehshiri <sajaddp71@gmail.com>
+ * GitHub: https://github.com/sajaddp/list-of-cities-in-Iran
+ * If you find this useful, please consider starring the repository on GitHub.
+ */
+
 class CityProvinceQuery
 {
 
