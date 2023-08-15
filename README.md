@@ -14,7 +14,7 @@
 
 # لیست شهرها و استان های ایران
 
-در این مخزن می‌توانید به لیست شهرها و استان های ایران با فرمت‌های گوناگون دسترسی پیدا کنید
+- در این مخزن می‌توانید به لیست شهرها و استان های ایران با فرمت‌های گوناگون دسترسی پیدا کنید.
 
 ## ویژگی ها
 
@@ -52,11 +52,6 @@ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 ## مشارکت
 
 از کمک شما برای تکمیل لیست و فرمت‌ها استقبال می‌کنم
-
-### ویژگی های نیازمند مشارکت
-
-- تابع نمونه Python &times;
-- تابع نمونه ES6 &times;
 
 </div>
   
@@ -98,3 +93,5 @@ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+made with ❤ by [@sajaddp](https://github.com/sajaddp)
