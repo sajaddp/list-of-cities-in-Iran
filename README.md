@@ -34,6 +34,10 @@
 - لیست شهرستان های ایران با فرمت xlsx
 - لیست شهرهای ایران با فرمت txt
 - لیست شهرستان های ایران با فرمت txt
+- لیست شهرهای ایران با فرمت Ts
+- لیست شهرستان های ایران با فرمت Ts
+- لیست شهرهای ایران با فرمت Py
+- لیست شهرستان های ایران با فرمت Py
 
 ## نحوه استفاده
 
@@ -80,6 +84,10 @@ In this repository, you can access the list of cities and provinces of Iran in v
 - List of provinces in Iran with xlsx format
 - List of cities in Iran with txt format
 - List of provinces in Iran with txt format
+- List of cities in Iran with Ts format
+- List of provinces in Iran with Ts format
+- List of cities in Iran with Py format
+- List of provinces in Iran with Py format
 
 ## Usage
 
