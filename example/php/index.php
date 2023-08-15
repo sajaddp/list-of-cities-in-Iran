@@ -51,3 +51,9 @@ $city_info_slug = $query->getCityBySlug("رفسنجان");
 echo "City Info by Slug (رفسنجان):<br>";
 print_r($city_info_slug);
 echo "<br><br>";
+
+echo `
+<br>
+<hr>
+<p>If you find this repository useful, please consider starring it on GitHub: <a href="https://github.com/sajaddp/list-of-cities-in-Iran" target="_blank">https://github.com/sajaddp/list-of-cities-in-Iran</a></p>
+`;
