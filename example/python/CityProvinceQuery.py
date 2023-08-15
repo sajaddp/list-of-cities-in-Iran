@@ -13,23 +13,15 @@ import os
 class CityProvinceQuery:
 
     def __init__(self):
-        cities_path = None
-        provinces_path = None
+        base_path = os.path.join(os.path.dirname(
+            os.path.abspath(__file__)), '../../json')
+        cities_file_path = os.path.join(base_path, 'cities.json')
+        provinces_file_path = os.path.join(base_path, 'provinces.json')
 
-        # Recursively search for the files
-        for root, _, files in os.walk(os.getcwd()):
-            if 'cities.json' in files:
-                cities_path = os.path.join(root, 'cities.json')
-            if 'provinces.json' in files:
-                provinces_path = os.path.join(root, 'provinces.json')
-
-        if not cities_path or not provinces_path:
-            raise FileNotFoundError("Required JSON files not found!")
-
-        with open(cities_path, 'r', encoding='utf-8') as cities_file:
+        with open(cities_file_path, 'r', encoding='utf-8') as cities_file:
             self.cities = json.load(cities_file)
 
-        with open(provinces_path, 'r', encoding='utf-8') as provinces_file:
+        with open(provinces_file_path, 'r', encoding='utf-8') as provinces_file:
             self.provinces = json.load(provinces_file)
 
     def get_all_cities(self):
