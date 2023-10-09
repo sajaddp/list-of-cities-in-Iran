@@ -26,6 +26,8 @@
 - لیست شهرستان های ایران برای MySQL
 - لیست شهرهای ایران برای postgres (PgSQL)
 - لیست شهرستان های ایران برای postgres (PgSQL)
+- لیست شهرهای ایران برای MSSQL
+- لیست شهرستان های ایران برای MSSQL
 - لیست شهرهای ایران با فرمت JSON
 - لیست شهرستان های ایران با فرمت JSON
 - لیست شهرهای ایران با فرمت csv
@@ -71,6 +73,8 @@ In this repository, you can access the list of cities and provinces of Iran in v
 - List of provinces in Iran for MySQL format
 - List of cities in Iran for postgres (Pgsql) format
 - List of provinces in Iran for postgres (Pgsql) format
+- - List of cities in Iran for MSSQL format
+- List of provinces in Iran for MSSQL format
 - List of cities in Iran with JSON format
 - List of provinces in Iran with JSON format
 - List of cities in Iran with csv format
