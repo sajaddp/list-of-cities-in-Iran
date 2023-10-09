@@ -73,7 +73,7 @@ In this repository, you can access the list of cities and provinces of Iran in v
 - List of provinces in Iran for MySQL format
 - List of cities in Iran for postgres (Pgsql) format
 - List of provinces in Iran for postgres (Pgsql) format
-- - List of cities in Iran for MSSQL format
+- List of cities in Iran for MSSQL format
 - List of provinces in Iran for MSSQL format
 - List of cities in Iran with JSON format
 - List of provinces in Iran with JSON format
