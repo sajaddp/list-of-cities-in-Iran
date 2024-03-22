@@ -3,7 +3,7 @@
 Author: Sajad Dehshiri <sajaddp71@gmail.com>
 GitHub: https://github.com/sajaddp/list-of-cities-in-Iran
 If you find this useful, please consider starring the repository on GitHub.
-Python Version: 3.9 (Note: 3.11 features are not included as it hasn't been released as of September 2021)
+Python Version: 3.9+
 """
 
 import json
