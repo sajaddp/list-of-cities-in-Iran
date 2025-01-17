@@ -24,7 +24,7 @@ export function generateJsonFiles(
   districtsOutput: DistrictInterface[],
   ruralsOutput: RuralInterface[],
 ) {
-  fs.mkdirSync(path.join(__dirname, "../json"), { recursive: true });
+  fs.mkdirSync(path.join(__dirname, "../../json"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: provincesOutput },
@@ -35,7 +35,7 @@ export function generateJsonFiles(
   ];
 
   outputs.forEach(({ name, data }) => {
-    const outputPath = path.join(__dirname, `../json/${name}.json`);
+    const outputPath = path.join(__dirname, `../../json/${name}.json`);
     fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), "utf-8");
   });
 }
