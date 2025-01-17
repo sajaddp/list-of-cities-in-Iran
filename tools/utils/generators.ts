@@ -62,7 +62,7 @@ export async function generateCsvFiles(
   outputs.forEach(async ({ name, data }) => {
     const csvWriter = createObjectCsvWriter({
       path: path.join(__dirname, `../../csv/${name}.csv`),
-      header: Object.keys(data).map((key) => ({ id: key, title: key })),
+      header: Object.keys(data[0]).map((key) => ({ id: key, title: key })),
     });
     await csvWriter.writeRecords(data);
   });
