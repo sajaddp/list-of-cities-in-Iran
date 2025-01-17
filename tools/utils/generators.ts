@@ -1,5 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
+import xlsx from "xlsx";
+import { createObjectCsvWriter } from "csv-writer";
 import {
   AllInterface,
   CityInterface,
@@ -7,7 +9,6 @@ import {
   ProvinceInterface,
   RuralInterface,
 } from ".";
-import { createObjectCsvWriter } from "csv-writer";
 
 export function generateSlug(item: string): string {
   return item
@@ -40,6 +41,7 @@ export function generateJsonFiles(
     fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), "utf-8");
   });
 }
+
 export async function generateCsvFiles(
   allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
@@ -63,5 +65,30 @@ export async function generateCsvFiles(
       header: Object.keys(data).map((key) => ({ id: key, title: key })),
     });
     await csvWriter.writeRecords(data);
+  });
+}
+
+export async function generateXlsxFiles(
+  allOutput: AllInterface[],
+  provincesOutput: ProvinceInterface[],
+  citiesOutput: CityInterface[],
+  districtsOutput: DistrictInterface[],
+  ruralsOutput: RuralInterface[],
+) {
+  fs.mkdirSync(path.join(__dirname, "../../xlsx"), { recursive: true });
+
+  const outputs = [
+    { name: "provinces", data: provincesOutput },
+    { name: "cities", data: citiesOutput },
+    { name: "districts", data: districtsOutput },
+    { name: "rurals", data: ruralsOutput },
+    { name: "all", data: allOutput },
+  ];
+
+  outputs.forEach(async ({ name, data }) => {
+    const workbook = xlsx.utils.book_new();
+    const worksheet = xlsx.utils.json_to_sheet(data);
+    xlsx.utils.book_append_sheet(workbook, worksheet, "Sheet1");
+    xlsx.writeFile(workbook, path.join(__dirname, `../../xlsx/${name}.xlsx`));
   });
 }
