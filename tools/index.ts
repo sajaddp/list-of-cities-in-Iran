@@ -1,9 +1,14 @@
 import list from "../offical/list.json"
+import * as fs from 'fs';
+import * as path from 'path';
 
-interface ListInterface {
+export interface ListInterface {
     type: string,
     name: string,
     national_id: number
+    province?: string,
+    city?: string,
+    district?: string,
 }
 
 let provincesIds: { [key: string]: number } = {};
@@ -11,15 +16,42 @@ let citiesIds: { [key: string]: number } = {};
 let districtIds: { [key: string]: number } = {};
 let ruralIds: { [key: string]: number } = {};
 
-let provincesOutput: { id: number, name: string, slug: string, tel_prefix: string }[] = [];
+export interface ProvinceInterface {
+    id: number,
+    name: string,
+    slug: string,
+    tel_prefix: string,
+}
+let provincesOutput: ProvinceInterface[] = [];
+
+export interface CityInterface {
+    id: number,
+    name: string,
+    slug: string,
+    province_id: number,
+}
+let citiesOutput: CityInterface[] = [];
+
+export interface DistrictInterface {
+    id: number,
+    name: string,
+    slug: string,
+    province_id: number,
+    city_id: number,
+}
+let districtsOutput: DistrictInterface[] = [];
+
+export interface RuralInterface {
+    id: number,
+    name: string,
+    slug: string,
+    province_id: number,
+    city_id: number,
+    district_id: number,
+}
+let ruralsOutput: RuralInterface[] = [];
 
 (list as ListInterface[]).forEach((item: ListInterface, index: number) => {
-    // "type": "دهستان",
-    // "name": "الهیجان",
-    // "province": "آذربایجان شرقی",
-    // "city": "تبریز",
-    // "district": "خسروشاه",
-    // "national_id": 1000015246
     if (item.type == "استان") {
         provincesIds[item.name] = item.national_id;
         provincesOutput.push({
@@ -30,21 +62,60 @@ let provincesOutput: { id: number, name: string, slug: string, tel_prefix: strin
         })
     } else if (item.type == "شهرستان") {
         citiesIds[item.name] = item.national_id;
+        citiesOutput.push({
+            id: item.national_id,
+            name: item.name,
+            slug: generateSlug(item.name),
+            province_id: provincesIds[item.province as string]
+        })
     } else if (item.type == "بخش") {
         districtIds[item.name] = item.national_id;
+        districtsOutput.push({
+            id: item.national_id,
+            name: item.name,
+            slug: generateSlug(item.name),
+            province_id: provincesIds[item.province as string],
+            city_id: citiesIds[item.city as string]
+        })
     } else if (item.type == "دهستان") {
         ruralIds[item.name] = item.national_id;
+        ruralsOutput.push({
+            id: item.national_id,
+            name: item.name,
+            slug: generateSlug(item.name),
+            province_id: provincesIds[item.province as string],
+            city_id: citiesIds[item.city as string],
+            district_id: districtIds[item.district as string]
+        })
     }
 });
 
+export interface AllInterface {
+    id: number,
+    name: string,
+    slug: string,
+    province_id?: number,
+    city_id?: number,
+    district_id?: number,
+    tel_prefix?: string,
+}
+const allOutput: AllInterface[] = [
+    ...provincesOutput,
+    ...citiesOutput,
+    ...districtsOutput,
+    ...ruralsOutput,
+];
 
-// fs.writeFile(outputFilePath, JSON.stringify(outputData, null, 2), 'utf-8', (err) => {
-//     if (err) {
-//         console.error('Error writing output file:', err);
-//     } else {
-//         console.log('Output file has been created successfully.');
-//     }
-// });
+const provincesOutputPath = path.join(__dirname, '../json/provinces.json');
+fs.writeFileSync(provincesOutputPath, JSON.stringify(provincesOutput, null, 2), 'utf-8');
+const citiesOutputPath = path.join(__dirname, '../json/cities.json');
+fs.writeFileSync(citiesOutputPath, JSON.stringify(citiesOutput, null, 2), 'utf-8');
+const districtsOutputPath = path.join(__dirname, '../json/districts.json');
+fs.writeFileSync(districtsOutputPath, JSON.stringify(districtsOutput, null, 2), 'utf-8');
+const ruralsOutputtPath = path.join(__dirname, '../json/rurals.json');
+fs.writeFileSync(ruralsOutputtPath, JSON.stringify(ruralsOutput, null, 2), 'utf-8');
+const outputPath = path.join(__dirname, '../json/all.json');
+fs.writeFileSync(outputPath, JSON.stringify(allOutput, null, 2), 'utf-8');
 
 
 function generateSlug(item: string): string {
