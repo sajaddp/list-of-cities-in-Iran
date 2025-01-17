@@ -27,7 +27,7 @@ const outputData = (list as ListInterface[])
                 id: item.national_id,
                 name: item.name,
                 slug: generateSlug(item.name),
-                tel_prefix: 
+                tel_prefix: telPrefixorProvince(item.name)
             })
         } else if (item.type == "شهرستان") {
             citiesIds[item.name] = item.national_id;
@@ -64,131 +64,40 @@ function generateSlug(item: string): string {
         .replace(/[^\w\-آ-ی\u0600-\u06FF]+/g, '');
 }
 
-function telPrefixorProvince() {
-    [
-        {
-            "name": "آذربایجان شرقی",
-            "tel_prefix": "041"
-        },
-        {
-            "name": "آذربایجان غربی",
-            "tel_prefix": "044"
-        },
-        {
-            "name": "اردبیل",
-            "tel_prefix": "045"
-        },
-        {
-            "name": "اصفهان",
-            "tel_prefix": "031"
-        },
-        {
-            "name": "البرز",
-            "tel_prefix": "026"
-        },
-        {
-            "name": "ایلام",
-            "tel_prefix": "084"
-        },
-        {
-            "name": "بوشهر",
-            "tel_prefix": "077"
-        },
-        {
-            "name": "تهران",
-            "tel_prefix": "021"
-        },
-        {
-            "name": "چهارمحال و بختیاری",
-            "tel_prefix": "038"
-        },
-        {
-            "name": "خراسان جنوبی",
-            "tel_prefix": "056"
-        },
-        {
-            "name": "خراسان رضوی",
-            "tel_prefix": "051"
-        },
-        {
-            "name": "خراسان شمالی",
-            "tel_prefix": "058"
-        },
-        {
-            "name": "خوزستان",
-            "tel_prefix": "061"
-        },
-        {
-            "name": "زنجان",
-            "tel_prefix": "024"
-        },
-        {
-            "name": "سمنان",
-            "tel_prefix": "023"
-        },
-        {
-            "name": "سیستان و بلوچستان",
-            "tel_prefix": "054"
-        },
-        {
-            "name": "فارس",
-            "tel_prefix": "071"
-        },
-        {
-            "name": "قزوین",
-            "tel_prefix": "028"
-        },
-        {
-            "name": "قم",
-            "tel_prefix": "025"
-        },
-        {
-            "name": "کردستان",
-            "tel_prefix": "087"
-        },
-        {
-            "name": "کرمان",
-            "tel_prefix": "034"
-        },
-        {
-            "name": "کرمانشاه",
-            "tel_prefix": "083"
-        },
-        {
-            "name": "کهگیلویه و بویراحمد",
-            "tel_prefix": "074"
-        },
-        {
-            "name": "گلستان",
-            "tel_prefix": "017"
-        },
-        {
-            "name": "لرستان",
-            "tel_prefix": "066"
-        },
-        {
-            "name": "گیلان",
-            "tel_prefix": "013"
-        },
-        {
-            "name": "مازندران",
-            "tel_prefix": "011"
-        },
-        {
-            "name": "مرکزی",
-            "tel_prefix": "086"
-        },
-        {
-            "name": "هرمزگان",
-            "tel_prefix": "076"
-        },
-        {
-            "name": "همدان",
-            "tel_prefix": "081"
-        },
-        {
-            "name": "یزد",
-            "tel_prefix": "035"
-        }
-    ];
+function telPrefixorProvince(name: string): string {
+    const list: { [key: string]: string } = {
+        "آذربایجان شرقی": "041",
+        "آذربایجان غربی": "044",
+        "اردبیل": "045",
+        "اصفهان": "031",
+        "البرز": "026",
+        "ایلام": "084",
+        "بوشهر": "077",
+        "تهران": "021",
+        "چهارمحال و بختیاری": "038",
+        "خراسان جنوبی": "056",
+        "خراسان رضوی": "051",
+        "خراسان شمالی": "058",
+        "خوزستان": "061",
+        "زنجان": "024",
+        "سمنان": "023",
+        "سیستان و بلوچستان": "054",
+        "فارس": "071",
+        "قزوین": "028",
+        "قم": "025",
+        "کردستان": "087",
+        "کرمان": "034",
+        "کرمانشاه": "083",
+        "کهگیلویه و بویراحمد": "074",
+        "گلستان": "017",
+        "لرستان": "066",
+        "گیلان": "013",
+        "مازندران": "011",
+        "مرکزی": "086",
+        "هرمزگان": "076",
+        "همدان": "081",
+        "یزد": "035"
+    };
+
+    return list[name] || "---";
 }
