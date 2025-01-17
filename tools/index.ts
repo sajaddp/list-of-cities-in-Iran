@@ -1,54 +1,16 @@
 import list from "../offical/list.json"
 import * as fs from 'fs';
 import * as path from 'path';
-
-export interface ListInterface {
-    type: string,
-    name: string,
-    national_id: number
-    province?: string,
-    city?: string,
-    district?: string,
-}
+import { AllInterface, CityInterface, DistrictInterface, generateSlug, getTelPrefixForProvince, ListInterface, ProvinceInterface, RuralInterface } from "./utils";
 
 let provincesIds: { [key: string]: number } = {};
 let citiesIds: { [key: string]: number } = {};
 let districtIds: { [key: string]: number } = {};
 let ruralIds: { [key: string]: number } = {};
 
-export interface ProvinceInterface {
-    id: number,
-    name: string,
-    slug: string,
-    tel_prefix: string,
-}
 let provincesOutput: ProvinceInterface[] = [];
-
-export interface CityInterface {
-    id: number,
-    name: string,
-    slug: string,
-    province_id: number,
-}
 let citiesOutput: CityInterface[] = [];
-
-export interface DistrictInterface {
-    id: number,
-    name: string,
-    slug: string,
-    province_id: number,
-    city_id: number,
-}
 let districtsOutput: DistrictInterface[] = [];
-
-export interface RuralInterface {
-    id: number,
-    name: string,
-    slug: string,
-    province_id: number,
-    city_id: number,
-    district_id: number,
-}
 let ruralsOutput: RuralInterface[] = [];
 
 (list as ListInterface[]).forEach((item: ListInterface, index: number) => {
@@ -58,7 +20,7 @@ let ruralsOutput: RuralInterface[] = [];
             id: item.national_id,
             name: item.name,
             slug: generateSlug(item.name),
-            tel_prefix: telPrefixorProvince(item.name)
+            tel_prefix: getTelPrefixForProvince(item.name)
         })
     } else if (item.type == "شهرستان") {
         citiesIds[item.name] = item.national_id;
@@ -90,15 +52,6 @@ let ruralsOutput: RuralInterface[] = [];
     }
 });
 
-export interface AllInterface {
-    id: number,
-    name: string,
-    slug: string,
-    province_id?: number,
-    city_id?: number,
-    district_id?: number,
-    tel_prefix?: string,
-}
 const allOutput: AllInterface[] = [
     ...provincesOutput,
     ...citiesOutput,
@@ -118,50 +71,3 @@ const ruralsOutputtPath = path.join(__dirname, '../json/rurals.json');
 fs.writeFileSync(ruralsOutputtPath, JSON.stringify(ruralsOutput, null, 2), 'utf-8');
 const outputPath = path.join(__dirname, '../json/all.json');
 fs.writeFileSync(outputPath, JSON.stringify(allOutput, null, 2), 'utf-8');
-
-
-function generateSlug(item: string): string {
-    return item.replace(/[\u200C\u200B]/g, "")
-        .toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/[-]+/g, '-')
-        .replace(/[^\w\-آ-ی\u0600-\u06FF]+/g, '');
-}
-
-function telPrefixorProvince(name: string): string {
-    const list: { [key: string]: string } = {
-        "آذربایجان شرقی": "041",
-        "آذربایجان غربی": "044",
-        "اردبیل": "045",
-        "اصفهان": "031",
-        "البرز": "026",
-        "ایلام": "084",
-        "بوشهر": "077",
-        "تهران": "021",
-        "چهارمحال و بختیاری": "038",
-        "خراسان جنوبی": "056",
-        "خراسان رضوی": "051",
-        "خراسان شمالی": "058",
-        "خوزستان": "061",
-        "زنجان": "024",
-        "سمنان": "023",
-        "سیستان و بلوچستان": "054",
-        "فارس": "071",
-        "قزوین": "028",
-        "قم": "025",
-        "کردستان": "087",
-        "کرمان": "034",
-        "کرمانشاه": "083",
-        "کهگیلویه و بویراحمد": "074",
-        "گلستان": "017",
-        "لرستان": "066",
-        "گیلان": "013",
-        "مازندران": "011",
-        "مرکزی": "086",
-        "هرمزگان": "076",
-        "همدان": "081",
-        "یزد": "035"
-    };
-
-    return list[name] || "---";
-}
