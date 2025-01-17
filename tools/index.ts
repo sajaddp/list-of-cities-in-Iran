@@ -34,33 +34,63 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
     });
   },
   شهرستان: (item) => {
-    citiesIds.set(item.name, item.national_id);
+    const provinceId = provincesIds.get(item.province as string) || 0;
+    if (!provinceId) {
+      throw new Error(`Province not found for city: ${item.name}`);
+    }
+    citiesIds.set(item.name + "p" + provinceId, item.national_id);
     citiesOutput.push({
       id: item.national_id,
       name: item.name,
       slug: generateSlug(item.name),
-      province_id: provincesIds.get(item.province as string) || 0,
+      province_id: provinceId,
     });
   },
   بخش: (item) => {
-    districtIds.set(item.name, item.national_id);
+    const provinceId = provincesIds.get(item.province as string) || 0;
+    if (!provinceId) {
+      throw new Error(`Province not found for district: ${item.name}`);
+    }
+    const cityId = citiesIds.get(item.city as string) || 0;
+    if (!cityId) {
+      throw new Error(`City not found for district: ${item.name}`);
+    }
+    districtIds.set(
+      item.name + "p" + provinceId + "c" + cityId,
+      item.national_id,
+    );
     districtsOutput.push({
       id: item.national_id,
       name: item.name,
       slug: generateSlug(item.name),
-      province_id: provincesIds.get(item.province as string) || 0,
-      city_id: citiesIds.get(item.city as string) || 0,
+      province_id: provinceId,
+      city_id: cityId,
     });
   },
   دهستان: (item) => {
-    ruralIds.set(item.name, item.national_id);
+    const provinceId = provincesIds.get(item.province as string) || 0;
+    if (!provinceId) {
+      throw new Error(`Province not found for rural: ${item.name}`);
+    }
+    const cityId = citiesIds.get(item.city as string) || 0;
+    if (!cityId) {
+      throw new Error(`City not found for rural: ${item.name}`);
+    }
+    const districtId = districtIds.get(item.district as string) || 0;
+    if (!districtId) {
+      throw new Error(`District not found for rural: ${item.name}`);
+    }
+    ruralIds.set(
+      item.name + "p" + provinceId + "c" + cityId + "d" + districtId,
+      item.national_id,
+    );
     ruralsOutput.push({
       id: item.national_id,
       name: item.name,
       slug: generateSlug(item.name),
-      province_id: provincesIds.get(item.province as string) || 0,
-      city_id: citiesIds.get(item.city as string) || 0,
-      district_id: districtIds.get(item.district as string) || 0,
+      province_id: provinceId,
+      city_id: cityId,
+      district_id: districtId,
     });
   },
 };
