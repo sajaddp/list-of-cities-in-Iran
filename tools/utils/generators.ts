@@ -17,7 +17,7 @@ export function generateSlug(item: string): string {
     .replace(/[^\w\-آ-ی\u0600-\u06FF]+/g, "");
 }
 
-export function generatesonFiles(
+export function generateJsonFiles(
   allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
   citiesOutput: CityInterface[],
