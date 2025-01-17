@@ -16,6 +16,9 @@
     "prettier": "^3.4.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.20.0"
-  }
+    "typescript-eslint": "^8.20.0",
+    "csv-writer": "^1.6.0",
+    "xlsx": "^0.18.5"
+  },
+  "dependencies": {}
 }
