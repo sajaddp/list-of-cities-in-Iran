@@ -3,8 +3,10 @@ import {
   AllInterface,
   CityInterface,
   DistrictInterface,
-  generateSlug,
+  generateCsvFiles,
   generateJsonFiles,
+  generateSlug,
+  generateXlsxFiles,
   getTelPrefixForProvince,
   ListInterface,
   ProvinceInterface,
@@ -75,9 +77,35 @@ const allOutput: AllInterface[] = [
   ...citiesOutput,
   ...districtsOutput,
   ...ruralsOutput,
-];
+].map((item: AllInterface) => {
+  return {
+    id: item.id,
+    name: item.name,
+    slug: item.slug,
+    province_id: "province_id" in item ? item.province_id : undefined,
+    city_id: "city_id" in item ? item.city_id : undefined,
+    district_id: "district_id" in item ? item.district_id : undefined,
+    tel_prefix: "tel_prefix" in item ? item.tel_prefix : undefined,
+  };
+});
 
 generateJsonFiles(
+  allOutput,
+  provincesOutput,
+  citiesOutput,
+  districtsOutput,
+  ruralsOutput,
+);
+
+generateCsvFiles(
+  allOutput,
+  provincesOutput,
+  citiesOutput,
+  districtsOutput,
+  ruralsOutput,
+);
+
+generateXlsxFiles(
   allOutput,
   provincesOutput,
   citiesOutput,
