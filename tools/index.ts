@@ -13,38 +13,29 @@ let ruralIds: { [key: string]: number } = {};
 
 let provincesOutput: { id: number, name: string, slug: string, tel_prefix: string }[] = [];
 
-const outputData = (list as ListInterface[])
-    .map((item: ListInterface, index: number) => {
-        // "type": "دهستان",
-        // "name": "الهیجان",
-        // "province": "آذربایجان شرقی",
-        // "city": "تبریز",
-        // "district": "خسروشاه",
-        // "national_id": 1000015246
-        if (item.type == "استان") {
-            provincesIds[item.name] = item.national_id;
-            provincesOutput.push({
-                id: item.national_id,
-                name: item.name,
-                slug: generateSlug(item.name),
-                tel_prefix: telPrefixorProvince(item.name)
-            })
-        } else if (item.type == "شهرستان") {
-            citiesIds[item.name] = item.national_id;
-        } else if (item.type == "بخش") {
-            districtIds[item.name] = item.national_id;
-        } else if (item.type == "دهستان") {
-            ruralIds[item.name] = item.national_id;
-        }
-
-
-        return {
-            id: item.national_id, // شماره‌گذاری id از 1 شروع می‌شود
-            name: item.name, // نام شهرستان
-            slug: item.name.toLowerCase().replace(/\s+/g, '-'),
-            province_id: index + 1
-        }
-    });
+(list as ListInterface[]).forEach((item: ListInterface, index: number) => {
+    // "type": "دهستان",
+    // "name": "الهیجان",
+    // "province": "آذربایجان شرقی",
+    // "city": "تبریز",
+    // "district": "خسروشاه",
+    // "national_id": 1000015246
+    if (item.type == "استان") {
+        provincesIds[item.name] = item.national_id;
+        provincesOutput.push({
+            id: item.national_id,
+            name: item.name,
+            slug: generateSlug(item.name),
+            tel_prefix: telPrefixorProvince(item.name)
+        })
+    } else if (item.type == "شهرستان") {
+        citiesIds[item.name] = item.national_id;
+    } else if (item.type == "بخش") {
+        districtIds[item.name] = item.national_id;
+    } else if (item.type == "دهستان") {
+        ruralIds[item.name] = item.national_id;
+    }
+});
 
 
 // fs.writeFile(outputFilePath, JSON.stringify(outputData, null, 2), 'utf-8', (err) => {
