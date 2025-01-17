@@ -106,6 +106,8 @@ const allOutput: AllInterface[] = [
     ...ruralsOutput,
 ];
 
+fs.mkdirSync(path.join(__dirname, '../json'), { recursive: true });
+
 const provincesOutputPath = path.join(__dirname, '../json/provinces.json');
 fs.writeFileSync(provincesOutputPath, JSON.stringify(provincesOutput, null, 2), 'utf-8');
 const citiesOutputPath = path.join(__dirname, '../json/cities.json');
