@@ -4,7 +4,7 @@ import {
   CityInterface,
   DistrictInterface,
   generateSlug,
-  generatesonFiles,
+  generateJsonFiles,
   getTelPrefixForProvince,
   ListInterface,
   ProvinceInterface,
@@ -77,7 +77,7 @@ const allOutput: AllInterface[] = [
   ...ruralsOutput,
 ];
 
-generatesonFiles(
+generateJsonFiles(
   allOutput,
   provincesOutput,
   citiesOutput,
