@@ -19,6 +19,7 @@ export interface CityInterface {
   name: string;
   slug: string;
   province_id: number;
+  city_id?: number;
 }
 
 export interface DistrictInterface {
