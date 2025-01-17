@@ -46,12 +46,33 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
       province_id: provinceId,
     });
   },
+  شهر: (item) => {
+    const provinceId = provincesIds.get(item.province as string) || 0;
+    if (!provinceId) {
+      throw new Error(`Province not found for city: ${item.name}`);
+    }
+    const cityId = citiesIds.get((item.city + "p" + provinceId) as string) || 0;
+    if (!cityId) {
+      throw new Error(`City not found for City: ${item.name}`);
+    }
+    citiesIds.set(
+      item.name + "p" + provinceId + "c" + cityId,
+      item.national_id,
+    );
+    citiesOutput.push({
+      id: item.national_id,
+      name: item.name,
+      slug: generateSlug(item.name),
+      city_id: cityId,
+      province_id: provinceId,
+    });
+  },
   بخش: (item) => {
     const provinceId = provincesIds.get(item.province as string) || 0;
     if (!provinceId) {
       throw new Error(`Province not found for district: ${item.name}`);
     }
-    const cityId = citiesIds.get(item.city as string) || 0;
+    const cityId = citiesIds.get((item.city + "p" + provinceId) as string) || 0;
     if (!cityId) {
       throw new Error(`City not found for district: ${item.name}`);
     }
@@ -72,11 +93,14 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
     if (!provinceId) {
       throw new Error(`Province not found for rural: ${item.name}`);
     }
-    const cityId = citiesIds.get(item.city as string) || 0;
+    const cityId = citiesIds.get((item.city + "p" + provinceId) as string) || 0;
     if (!cityId) {
       throw new Error(`City not found for rural: ${item.name}`);
     }
-    const districtId = districtIds.get(item.district as string) || 0;
+    const districtId =
+      districtIds.get(
+        (item.district + "p" + provinceId + "c" + cityId) as string,
+      ) || 0;
     if (!districtId) {
       throw new Error(`District not found for rural: ${item.name}`);
     }
@@ -117,6 +141,15 @@ const allOutput: AllInterface[] = [
     district_id: "district_id" in item ? item.district_id : undefined,
     tel_prefix: "tel_prefix" in item ? item.tel_prefix : undefined,
   };
+});
+
+console.table({
+  provincesOutput: provincesOutput.length,
+  citiesOutput: citiesOutput.length,
+  districtsOutput: districtsOutput.length,
+  ruralsOutput: ruralsOutput.length,
+  allOutput: allOutput.length,
+  listLength: list.length,
 });
 
 generateJsonFiles(
