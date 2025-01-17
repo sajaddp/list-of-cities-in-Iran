@@ -6,13 +6,6 @@ settings:
 
 importers:
   .:
-    dependencies:
-      csv-writer:
-        specifier: ^1.6.0
-        version: 1.6.0
-      xlsx:
-        specifier: ^0.18.5
-        version: 0.18.5
     devDependencies:
       "@eslint/js":
         specifier: ^9.18.0
@@ -20,6 +13,9 @@ importers:
       "@types/node":
         specifier: ^22.10.7
         version: 22.10.7
+      csv-writer:
+        specifier: ^1.6.0
+        version: 1.6.0
       eslint:
         specifier: ^9.18.0
         version: 9.18.0
@@ -35,6 +31,9 @@ importers:
       typescript-eslint:
         specifier: ^8.20.0
         version: 8.20.0(eslint@9.18.0)(typescript@5.7.3)
+      xlsx:
+        specifier: ^0.18.5
+        version: 0.18.5
 
 packages:
   "@cspotcode/source-map-support@0.8.1":
