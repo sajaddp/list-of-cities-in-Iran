@@ -1,26 +1,45 @@
-import * as pdfjsLib from 'pdfjs-dist';
-import { TextContent, TextItem, TextMarkedContent } from 'pdfjs-dist/types/src/display/api';
+import fs from "fs";
+import * as pdfjsLib from "pdfjs-dist";
+import {
+  TextContent,
+  TextItem,
+  TextMarkedContent,
+} from "pdfjs-dist/types/src/display/api";
 
-const pdfPath = '../offical/list.pdf';
+const pdfPath = "../offical/list.pdf";
 
-async function extractTextFromPDF(pdfPath: string) {
-  const pdf = await pdfjsLib.getDocument(pdfPath).promise;
-  let text = '';
+async function extractDataFromPDF(pdfPath: string) {
+  const pdfDoc = await pdfjsLib.getDocument(pdfPath).promise;
+  let extractedData = [];
 
-  for (let i = 1; i <= pdf.numPages; i++) {
-    const page = await pdf.getPage(i);
+  for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+    const page = await pdfDoc.getPage(pageNum);
     const textContent: TextContent = await page.getTextContent();
-    text += textContent.items.map((item: TextItem | TextMarkedContent) => {
-      if ((item as TextItem).str !== undefined) {
-        return (item as TextItem).str;
+    const items = textContent.items.map(
+      (item: TextItem | TextMarkedContent) => {
+        if ("str" in item) {
+          return item.str;
+        }
+        return "";
+      },
+    );
+
+    let rows = [];
+    let row = [];
+    for (let i = 0; i < items.length; i++) {
+      row.push(items[i]);
+      if ((i + 1) % 9 === 0) {
+        rows.push(row);
+        row = [];
       }
-      console.log(JSON.stringify(item, null, 2));
-      process.exit(1);
-      return '';
-    }).join(' ') + '\n';
+    }
+    extractedData.push(...rows);
   }
 
-  return text;
+  return extractedData;
 }
 
-extractTextFromPDF(pdfPath).then(text => console.log(text));
+extractDataFromPDF(pdfPath).then((data) => {
+  fs.writeFileSync("./output.json", JSON.stringify(data, null, 2), "utf-8");
+  console.log("✅ داده‌ها استخراج و در فایل `output.json` ذخیره شدند.");
+});
