@@ -275,6 +275,17 @@
     "nationalId": 1000015303
   },
   {
+    "row": 26,
+    "type": "دهستان",
+    "name": "قوری چای غربی",
+    "province": "آذربایجان شرقی",
+    "county": "مراغه",
+    "district": "سراجو",
+    "rural": "",
+    "hierarchicalCode": 10111112,
+    "nationalId": 1000015311
+  },
+  {
     "row": 27,
     "type": "شهر",
     "name": "خداجو",
@@ -548,6 +559,17 @@
     "rural": "",
     "hierarchicalCode": 10131112,
     "nationalId": 1000015493
+  },
+  {
+    "row": 52,
+    "type": "شهر",
+    "name": "مهربان",
+    "province": "آذربایجان شرقی",
+    "county": "سراب",
+    "district": "مهربان",
+    "rural": "",
+    "hierarchicalCode": 101311500,
+    "nationalId": 1000041184
   },
   {
     "row": 53,
@@ -825,6 +847,17 @@
     "nationalId": 1000015592
   },
   {
+    "row": 78,
+    "type": "دهستان",
+    "name": "شیخ درآباد",
+    "province": "آذربایجان شرقی",
+    "county": "میانه",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 10151011,
+    "nationalId": 1000015600
+  },
+  {
     "row": 79,
     "type": "دهستان",
     "name": "قافلانکوه غربی",
@@ -1098,6 +1131,17 @@
     "rural": "",
     "hierarchicalCode": 101610,
     "nationalId": 1000004760
+  },
+  {
+    "row": 104,
+    "type": "دهستان",
+    "name": "چاراویماق شمالشرقی",
+    "province": "آذربایجان شرقی",
+    "county": "هشترود",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 10161010,
+    "nationalId": 1000015766
   },
   {
     "row": 105,
@@ -1375,6 +1419,17 @@
     "nationalId": 1000015915
   },
   {
+    "row": 130,
+    "type": "دهستان",
+    "name": "باروق",
+    "province": "آذربایجان شرقی",
+    "county": "هریس",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 10181012,
+    "nationalId": 1000015923
+  },
+  {
     "row": 131,
     "type": "شهر",
     "name": "هریس",
@@ -1648,6 +1703,17 @@
     "rural": "",
     "hierarchicalCode": 102010500,
     "nationalId": 1000041416
+  },
+  {
+    "row": 156,
+    "type": "شهر",
+    "name": "کرد کندی",
+    "province": "آذربایجان شرقی",
+    "county": "بستان آباد",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 102010501,
+    "nationalId": 1001543550
   },
   {
     "row": 157,
@@ -1925,6 +1991,17 @@
     "nationalId": 1000041507
   },
   {
+    "row": 182,
+    "type": "بخش",
+    "name": "تسوج",
+    "province": "آذربایجان شرقی",
+    "county": "شبستر",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 102112,
+    "nationalId": 1000004877
+  },
+  {
     "row": 183,
     "type": "دهستان",
     "name": "چهرگان",
@@ -2198,6 +2275,17 @@
     "rural": "",
     "hierarchicalCode": 102311500,
     "nationalId": 1000041572
+  },
+  {
+    "row": 208,
+    "type": "شهرستان",
+    "name": "آذرشهر",
+    "province": "آذربایجان شرقی",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1024,
+    "nationalId": 1000000479
   },
   {
     "row": 209,
@@ -2475,6 +2563,17 @@
     "nationalId": 1000041648
   },
   {
+    "row": 234,
+    "type": "شهرستان",
+    "name": "چاراویماق",
+    "province": "آذربایجان شرقی",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1026,
+    "nationalId": 1000000495
+  },
+  {
     "row": 235,
     "type": "بخش",
     "name": "مرکزی",
@@ -2748,6 +2847,17 @@
     "rural": "",
     "hierarchicalCode": 102810500,
     "nationalId": 1000041689
+  },
+  {
+    "row": 260,
+    "type": "بخش",
+    "name": "خاروانا",
+    "province": "آذربایجان شرقی",
+    "county": "ورزقان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 102811,
+    "nationalId": 1000005023
   },
   {
     "row": 261,
@@ -3025,6 +3135,17 @@
     "nationalId": 1000372621
   },
   {
+    "row": 286,
+    "type": "دهستان",
+    "name": "چهاردانگه شمالی",
+    "province": "آذربایجان شرقی",
+    "county": "هوراند",
+    "district": "چهاردانگه",
+    "rural": "",
+    "hierarchicalCode": 10301110,
+    "nationalId": 1000015386
+  },
+  {
     "row": 287,
     "type": "دهستان",
     "name": "چهاردانگه جنوبی",
@@ -3298,6 +3419,17 @@
     "rural": "",
     "hierarchicalCode": 111013,
     "nationalId": 1000005098
+  },
+  {
+    "row": 312,
+    "type": "دهستان",
+    "name": "انزل جنوبی",
+    "province": "آذربایجان غربی",
+    "county": "ارومیه",
+    "district": "انزل",
+    "rural": "",
+    "hierarchicalCode": 11101310,
+    "nationalId": 1000016772
   },
   {
     "row": 313,
@@ -3575,6 +3707,17 @@
     "nationalId": 1000016913
   },
   {
+    "row": 338,
+    "type": "دهستان",
+    "name": "زری",
+    "province": "آذربایجان غربی",
+    "county": "خوی",
+    "district": "قطور",
+    "rural": "",
+    "hierarchicalCode": 11111311,
+    "nationalId": 1000016921
+  },
+  {
     "row": 339,
     "type": "شهر",
     "name": "قطور",
@@ -3848,6 +3991,17 @@
     "rural": "",
     "hierarchicalCode": 11131111,
     "nationalId": 1000017028
+  },
+  {
+    "row": 364,
+    "type": "شهر",
+    "name": "بازرگان",
+    "province": "آذربایجان غربی",
+    "county": "ماکو",
+    "district": "بازرگان",
+    "rural": "",
+    "hierarchicalCode": 111311500,
+    "nationalId": 1000041853
   },
   {
     "row": 365,
@@ -4125,6 +4279,17 @@
     "nationalId": 1000000594
   },
   {
+    "row": 390,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "آذربایجان غربی",
+    "county": "نقده",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 111610,
+    "nationalId": 1000005247
+  },
+  {
     "row": 391,
     "type": "دهستان",
     "name": "بیگم قلعه",
@@ -4398,6 +4563,17 @@
     "rural": "",
     "hierarchicalCode": 11181111,
     "nationalId": 1000017358
+  },
+  {
+    "row": 416,
+    "type": "شهر",
+    "name": "میرآباد",
+    "province": "آذربایجان غربی",
+    "county": "سردشت",
+    "district": "وزینه",
+    "rural": "",
+    "hierarchicalCode": 111811500,
+    "nationalId": 1000041978
   },
   {
     "row": 417,
@@ -4675,6 +4851,17 @@
     "nationalId": 1000017465
   },
   {
+    "row": 442,
+    "type": "دهستان",
+    "name": "ساروق",
+    "province": "آذربایجان غربی",
+    "county": "تکاب",
+    "district": "تخت سلیمان",
+    "rural": "",
+    "hierarchicalCode": 11201111,
+    "nationalId": 1000017473
+  },
+  {
     "row": 443,
     "type": "دهستان",
     "name": "چمن",
@@ -4948,6 +5135,17 @@
     "rural": "",
     "hierarchicalCode": 11231010,
     "nationalId": 1000017580
+  },
+  {
+    "row": 468,
+    "type": "دهستان",
+    "name": "چالدران جنوبی",
+    "province": "آذربایجان غربی",
+    "county": "چالدران",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 11231011,
+    "nationalId": 1000017598
   },
   {
     "row": 469,
@@ -5225,6 +5423,17 @@
     "nationalId": 1000000693
   },
   {
+    "row": 494,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "آذربایجان غربی",
+    "county": "شوط",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 112610,
+    "nationalId": 1000005445
+  },
+  {
     "row": 495,
     "type": "دهستان",
     "name": "قره قویون شمالی",
@@ -5498,6 +5707,17 @@
     "rural": "",
     "hierarchicalCode": 12,
     "nationalId": 1000000040
+  },
+  {
+    "row": 520,
+    "type": "شهرستان",
+    "name": "اصفهان",
+    "province": "اصفهان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1210,
+    "nationalId": 1000000701
   },
   {
     "row": 521,
@@ -5775,6 +5995,17 @@
     "nationalId": 1000042315
   },
   {
+    "row": 546,
+    "type": "بخش",
+    "name": "نیاسر",
+    "province": "اصفهان",
+    "county": "کاشان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 121112,
+    "nationalId": 1000005544
+  },
+  {
     "row": 547,
     "type": "دهستان",
     "name": "کوه دشت",
@@ -6048,6 +6279,17 @@
     "rural": "",
     "hierarchicalCode": 121410,
     "nationalId": 1000005585
+  },
+  {
+    "row": 572,
+    "type": "دهستان",
+    "name": "دالانکوه",
+    "province": "اصفهان",
+    "county": "فریدن",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 12141010,
+    "nationalId": 1000018109
   },
   {
     "row": 573,
@@ -6325,6 +6567,17 @@
     "nationalId": 1000005635
   },
   {
+    "row": 598,
+    "type": "دهستان",
+    "name": "ریگستان",
+    "province": "اصفهان",
+    "county": "اردستان",
+    "district": "زواره",
+    "rural": "",
+    "hierarchicalCode": 12161110,
+    "nationalId": 1000018257
+  },
+  {
     "row": 599,
     "type": "دهستان",
     "name": "سفلی",
@@ -6598,6 +6851,17 @@
     "rural": "",
     "hierarchicalCode": 12181012,
     "nationalId": 1000018349
+  },
+  {
+    "row": 624,
+    "type": "شهر",
+    "name": "نطنز",
+    "province": "اصفهان",
+    "county": "نطنز",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 121810500,
+    "nationalId": 1000042539
   },
   {
     "row": 625,
@@ -6875,6 +7139,17 @@
     "nationalId": 1000577799
   },
   {
+    "row": 650,
+    "type": "شهرستان",
+    "name": "لنجان",
+    "province": "اصفهان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1220,
+    "nationalId": 1000000800
+  },
+  {
     "row": 651,
     "type": "بخش",
     "name": "مرکزی",
@@ -7148,6 +7423,17 @@
     "rural": "",
     "hierarchicalCode": 122110500,
     "nationalId": 1000042703
+  },
+  {
+    "row": 676,
+    "type": "شهر",
+    "name": "ویست",
+    "province": "اصفهان",
+    "county": "خوانسار",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 122110501,
+    "nationalId": 1001542370
   },
   {
     "row": 677,
@@ -7425,6 +7711,17 @@
     "nationalId": 1000042786
   },
   {
+    "row": 702,
+    "type": "شهر",
+    "name": "ابریشم",
+    "province": "اصفهان",
+    "county": "فلاورجان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 122410502,
+    "nationalId": 1000042794
+  },
+  {
     "row": 703,
     "type": "شهر",
     "name": "اشترجان",
@@ -7698,6 +7995,17 @@
     "rural": "",
     "hierarchicalCode": 122511500,
     "nationalId": 1000042885
+  },
+  {
+    "row": 728,
+    "type": "شهر",
+    "name": "شاهین شهر",
+    "province": "اصفهان",
+    "county": "شاهین شهر و میمه",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 122511501,
+    "nationalId": 1000042893
   },
   {
     "row": 729,
@@ -7975,6 +8283,17 @@
     "nationalId": 1000018802
   },
   {
+    "row": 754,
+    "type": "شهر",
+    "name": "ابوزید آباد",
+    "province": "اصفهان",
+    "county": "آران و بیدگل",
+    "district": "کویرات",
+    "rural": "",
+    "hierarchicalCode": 122711500,
+    "nationalId": 1000042992
+  },
+  {
     "row": 755,
     "type": "شهرستان",
     "name": "تیران و کرون",
@@ -8248,6 +8567,17 @@
     "rural": "",
     "hierarchicalCode": 123010500,
     "nationalId": 1000043057
+  },
+  {
+    "row": 780,
+    "type": "شهر",
+    "name": "گلشن",
+    "province": "اصفهان",
+    "county": "دهاقان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 123010501,
+    "nationalId": 1000043065
   },
   {
     "row": 781,
@@ -8525,6 +8855,17 @@
     "nationalId": 1000018992
   },
   {
+    "row": 806,
+    "type": "دهستان",
+    "name": "گرجی",
+    "province": "اصفهان",
+    "county": "بوئین میاندشت",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 12331011,
+    "nationalId": 1000019008
+  },
+  {
     "row": 807,
     "type": "دهستان",
     "name": "ییلاق",
@@ -8798,6 +9139,17 @@
     "rural": "",
     "hierarchicalCode": 12351110,
     "nationalId": 1000017770
+  },
+  {
+    "row": 832,
+    "type": "دهستان",
+    "name": "سیستان",
+    "province": "اصفهان",
+    "county": "کوهپایه",
+    "district": "سیستان",
+    "rural": "",
+    "hierarchicalCode": 12351111,
+    "nationalId": 1000017788
   },
   {
     "row": 833,
@@ -9075,6 +9427,17 @@
     "nationalId": 1000005981
   },
   {
+    "row": 858,
+    "type": "دهستان",
+    "name": "بالاولایت",
+    "province": "خراسان رضوی",
+    "county": "تربت حیدریه",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 13101110,
+    "nationalId": 1000019065
+  },
+  {
     "row": 859,
     "type": "دهستان",
     "name": "پائین ولایت",
@@ -9348,6 +9711,17 @@
     "rural": "",
     "hierarchicalCode": 131210,
     "nationalId": 1000006047
+  },
+  {
+    "row": 884,
+    "type": "دهستان",
+    "name": "دولتخانه",
+    "province": "خراسان رضوی",
+    "county": "قوچان",
+    "district": "باجگیران",
+    "rural": "",
+    "hierarchicalCode": 13121010,
+    "nationalId": 1000019230
   },
   {
     "row": 885,
@@ -9625,6 +9999,17 @@
     "nationalId": 1000043305
   },
   {
+    "row": 910,
+    "type": "شهرستان",
+    "name": "مشهد",
+    "province": "خراسان رضوی",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1314,
+    "nationalId": 1000000982
+  },
+  {
     "row": 911,
     "type": "بخش",
     "name": "احمد آباد",
@@ -9898,6 +10283,17 @@
     "rural": "",
     "hierarchicalCode": 13151211,
     "nationalId": 1000019495
+  },
+  {
+    "row": 936,
+    "type": "دهستان",
+    "name": "ریوند",
+    "province": "خراسان رضوی",
+    "county": "نیشابور",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 13151212,
+    "nationalId": 1000019503
   },
   {
     "row": 937,
@@ -10175,6 +10571,17 @@
     "nationalId": 1000019636
   },
   {
+    "row": 962,
+    "type": "شهر",
+    "name": "درگز",
+    "province": "خراسان رضوی",
+    "county": "درگز",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 131711500,
+    "nationalId": 1000043446
+  },
+  {
     "row": 963,
     "type": "بخش",
     "name": "چاپشلو",
@@ -10448,6 +10855,17 @@
     "rural": "",
     "hierarchicalCode": 13181410,
     "nationalId": 1000019792
+  },
+  {
+    "row": 988,
+    "type": "دهستان",
+    "name": "گل بانو",
+    "province": "خراسان رضوی",
+    "county": "تربت جام",
+    "district": "پایین جام",
+    "rural": "",
+    "hierarchicalCode": 13181411,
+    "nationalId": 1000019800
   },
   {
     "row": 989,
@@ -10725,6 +11143,17 @@
     "nationalId": 1000043586
   },
   {
+    "row": 1014,
+    "type": "بخش",
+    "name": "سالمی",
+    "province": "خراسان رضوی",
+    "county": "خواف",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 132013,
+    "nationalId": 1000006310
+  },
+  {
     "row": 1015,
     "type": "دهستان",
     "name": "بالاخواف",
@@ -10998,6 +11427,17 @@
     "rural": "",
     "hierarchicalCode": 132213,
     "nationalId": 1002285243
+  },
+  {
+    "row": 1040,
+    "type": "دهستان",
+    "name": "رادکان",
+    "province": "خراسان رضوی",
+    "county": "چناران",
+    "district": "رادکان",
+    "rural": "",
+    "hierarchicalCode": 13221310,
+    "nationalId": 1000020006
   },
   {
     "row": 1041,
@@ -11275,6 +11715,17 @@
     "nationalId": 1000020139
   },
   {
+    "row": 1066,
+    "type": "دهستان",
+    "name": "شهرآباد",
+    "province": "خراسان رضوی",
+    "county": "بردسکن",
+    "district": "شهر آباد",
+    "rural": "",
+    "hierarchicalCode": 13241211,
+    "nationalId": 1000020147
+  },
+  {
     "row": 1067,
     "type": "شهر",
     "name": "شهر آباد",
@@ -11548,6 +11999,17 @@
     "rural": "",
     "hierarchicalCode": 1327,
     "nationalId": 1000001113
+  },
+  {
+    "row": 1092,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "خراسان رضوی",
+    "county": "خلیل آباد",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 132710,
+    "nationalId": 1000006450
   },
   {
     "row": 1093,
@@ -11825,6 +12287,17 @@
     "nationalId": 1000043818
   },
   {
+    "row": 1118,
+    "type": "شهرستان",
+    "name": "طرقبه شاندیز",
+    "province": "خراسان رضوی",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1330,
+    "nationalId": 1000001147
+  },
+  {
     "row": 1119,
     "type": "بخش",
     "name": "طرقبه",
@@ -12098,6 +12571,17 @@
     "rural": "",
     "hierarchicalCode": 13321111,
     "nationalId": 1000020469
+  },
+  {
+    "row": 1144,
+    "type": "شهر",
+    "name": "حکم آباد",
+    "province": "خراسان رضوی",
+    "county": "جوین",
+    "district": "عطاملک",
+    "rural": "",
+    "hierarchicalCode": 133211500,
+    "nationalId": 1000268613
   },
   {
     "row": 1145,
@@ -12375,6 +12859,17 @@
     "nationalId": 1000006625
   },
   {
+    "row": 1170,
+    "type": "دهستان",
+    "name": "بالاولایت",
+    "province": "خراسان رضوی",
+    "county": "باخرز",
+    "district": "بالا ولایت",
+    "rural": "",
+    "hierarchicalCode": 13351110,
+    "nationalId": 1000020576
+  },
+  {
     "row": 1171,
     "type": "دهستان",
     "name": "اشتین",
@@ -12648,6 +13143,17 @@
     "rural": "",
     "hierarchicalCode": 1338,
     "nationalId": 1000372670
+  },
+  {
+    "row": 1196,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "خراسان رضوی",
+    "county": "صالح آباد",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 133810,
+    "nationalId": 1000006211
   },
   {
     "row": 1197,
@@ -12925,6 +13431,17 @@
     "nationalId": 1000019446
   },
   {
+    "row": 1222,
+    "type": "دهستان",
+    "name": "حشمتیه",
+    "province": "خراسان رضوی",
+    "county": "زبرخان",
+    "district": "اسحاق آباد",
+    "rural": "",
+    "hierarchicalCode": 13401111,
+    "nationalId": 1002245379
+  },
+  {
     "row": 1223,
     "type": "شهر",
     "name": "اسحاق آباد",
@@ -13198,6 +13715,17 @@
     "rural": "",
     "hierarchicalCode": 141010500,
     "nationalId": 1000043925
+  },
+  {
+    "row": 1248,
+    "type": "شهر",
+    "name": "الهائی",
+    "province": "خوزستان",
+    "county": "اهواز",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 141010501,
+    "nationalId": 1000043933
   },
   {
     "row": 1249,
@@ -13475,6 +14003,17 @@
     "nationalId": 1000020824
   },
   {
+    "row": 1274,
+    "type": "شهر",
+    "name": "خرمشهر",
+    "province": "خوزستان",
+    "county": "خرمشهر",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 141210500,
+    "nationalId": 1000043982
+  },
+  {
     "row": 1275,
     "type": "شهر",
     "name": "مقاومت",
@@ -13748,6 +14287,17 @@
     "rural": "",
     "hierarchicalCode": 14141112,
     "nationalId": 1000020949
+  },
+  {
+    "row": 1300,
+    "type": "شهر",
+    "name": "سوسنگرد",
+    "province": "خوزستان",
+    "county": "دشت آزادگان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 141411500,
+    "nationalId": 1000044055
   },
   {
     "row": 1301,
@@ -14025,6 +14575,17 @@
     "nationalId": 1000021012
   },
   {
+    "row": 1326,
+    "type": "دهستان",
+    "name": "امامزاده سید محمود",
+    "province": "خوزستان",
+    "county": "دزفول",
+    "district": "شهیون",
+    "rural": "",
+    "hierarchicalCode": 14151311,
+    "nationalId": 1000021020
+  },
+  {
     "row": 1327,
     "type": "دهستان",
     "name": "دره کاید",
@@ -14298,6 +14859,17 @@
     "rural": "",
     "hierarchicalCode": 141711,
     "nationalId": 1000006872
+  },
+  {
+    "row": 1352,
+    "type": "دهستان",
+    "name": "تل بزان",
+    "province": "خوزستان",
+    "county": "مسجد سلیمان",
+    "district": "گلگیر",
+    "rural": "",
+    "hierarchicalCode": 14171110,
+    "nationalId": 1000021145
   },
   {
     "row": 1353,
@@ -14575,6 +15147,17 @@
     "nationalId": 1000021319
   },
   {
+    "row": 1378,
+    "type": "شهر",
+    "name": "باوج",
+    "province": "خوزستان",
+    "county": "رامهرمز",
+    "district": "ابوالفارس",
+    "rural": "",
+    "hierarchicalCode": 141911500,
+    "nationalId": 1001544509
+  },
+  {
     "row": 1379,
     "type": "بخش",
     "name": "رود زرد",
@@ -14848,6 +15431,17 @@
     "rural": "",
     "hierarchicalCode": 14211111,
     "nationalId": 1000021426
+  },
+  {
+    "row": 1404,
+    "type": "شهر",
+    "name": "خنافره",
+    "province": "خوزستان",
+    "county": "شادگان",
+    "district": "خنافره",
+    "rural": "",
+    "hierarchicalCode": 142111500,
+    "nationalId": 1000044303
   },
   {
     "row": 1405,
@@ -15125,6 +15719,17 @@
     "nationalId": 1000021558
   },
   {
+    "row": 1430,
+    "type": "شهر",
+    "name": "فتح المبین",
+    "province": "خوزستان",
+    "county": "شوش",
+    "district": "فتح المبین",
+    "rural": "",
+    "hierarchicalCode": 142312500,
+    "nationalId": 1000044410
+  },
+  {
     "row": 1431,
     "type": "شهرستان",
     "name": "باغ ملک",
@@ -15398,6 +16003,17 @@
     "rural": "",
     "hierarchicalCode": 14251111,
     "nationalId": 1000021665
+  },
+  {
+    "row": 1456,
+    "type": "شهر",
+    "name": "امیدیه",
+    "province": "خوزستان",
+    "county": "امیدیه",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 142511500,
+    "nationalId": 1000044477
   },
   {
     "row": 1457,
@@ -15675,6 +16291,17 @@
     "nationalId": 1000007169
   },
   {
+    "row": 1482,
+    "type": "دهستان",
+    "name": "آزاده",
+    "province": "خوزستان",
+    "county": "رامشیر",
+    "district": "مشراگه",
+    "rural": "",
+    "hierarchicalCode": 14281110,
+    "nationalId": 1000021772
+  },
+  {
     "row": 1483,
     "type": "دهستان",
     "name": "مشراگه",
@@ -15948,6 +16575,17 @@
     "rural": "",
     "hierarchicalCode": 14301210,
     "nationalId": 1000021871
+  },
+  {
+    "row": 1508,
+    "type": "دهستان",
+    "name": "للرکتک",
+    "province": "خوزستان",
+    "county": "اندیکا",
+    "district": "چلو",
+    "rural": "",
+    "hierarchicalCode": 14301211,
+    "nationalId": 1000021889
   },
   {
     "row": 1509,
@@ -16225,6 +16863,17 @@
     "nationalId": 1000021988
   },
   {
+    "row": 1534,
+    "type": "دهستان",
+    "name": "زرگان",
+    "province": "خوزستان",
+    "county": "باوی",
+    "district": "ویس",
+    "rural": "",
+    "hierarchicalCode": 14331111,
+    "nationalId": 1000021996
+  },
+  {
     "row": 1535,
     "type": "شهر",
     "name": "شیبان",
@@ -16498,6 +17147,17 @@
     "rural": "",
     "hierarchicalCode": 143611500,
     "nationalId": 1000044683
+  },
+  {
+    "row": 1560,
+    "type": "شهرستان",
+    "name": "کرخه",
+    "province": "خوزستان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1437,
+    "nationalId": 1002573176
   },
   {
     "row": 1561,
@@ -16775,6 +17435,17 @@
     "nationalId": 1000044733
   },
   {
+    "row": 1586,
+    "type": "بخش",
+    "name": "بهمن و صغاد",
+    "province": "فارس",
+    "county": "آباده",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 151011,
+    "nationalId": 1000948149
+  },
+  {
     "row": 1587,
     "type": "دهستان",
     "name": "خسروشیرین",
@@ -17048,6 +17719,17 @@
     "rural": "",
     "hierarchicalCode": 15121010,
     "nationalId": 1000022267
+  },
+  {
+    "row": 1612,
+    "type": "دهستان",
+    "name": "صحرارود",
+    "province": "فارس",
+    "county": "فسا",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 15121011,
+    "nationalId": 1000022275
   },
   {
     "row": 1613,
@@ -17325,6 +18007,17 @@
     "nationalId": 1000007458
   },
   {
+    "row": 1638,
+    "type": "دهستان",
+    "name": "بیرم",
+    "province": "فارس",
+    "county": "لارستان",
+    "district": "بیرم",
+    "rural": "",
+    "hierarchicalCode": 15131310,
+    "nationalId": 1000022416
+  },
+  {
     "row": 1639,
     "type": "دهستان",
     "name": "بالاده",
@@ -17598,6 +18291,17 @@
     "rural": "",
     "hierarchicalCode": 151510500,
     "nationalId": 1000044964
+  },
+  {
+    "row": 1664,
+    "type": "بخش",
+    "name": "سیمکان",
+    "province": "فارس",
+    "county": "جهرم",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 151512,
+    "nationalId": 1000007524
   },
   {
     "row": 1665,
@@ -17875,6 +18579,17 @@
     "nationalId": 1000045045
   },
   {
+    "row": 1690,
+    "type": "بخش",
+    "name": "خشت",
+    "province": "فارس",
+    "county": "کازرون",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 151615,
+    "nationalId": 1000007599
+  },
+  {
     "row": 1691,
     "type": "دهستان",
     "name": "امامزاده محمد",
@@ -18148,6 +18863,17 @@
     "rural": "",
     "hierarchicalCode": 15181210,
     "nationalId": 1000022895
+  },
+  {
+    "row": 1716,
+    "type": "دهستان",
+    "name": "فورگ",
+    "province": "فارس",
+    "county": "داراب",
+    "district": "فورگ",
+    "rural": "",
+    "hierarchicalCode": 15181211,
+    "nationalId": 1000022903
   },
   {
     "row": 1717,
@@ -18425,6 +19151,17 @@
     "nationalId": 1000007706
   },
   {
+    "row": 1742,
+    "type": "دهستان",
+    "name": "بکش دو",
+    "province": "فارس",
+    "county": "ممسنی",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 15201010,
+    "nationalId": 1000023026
+  },
+  {
     "row": 1743,
     "type": "دهستان",
     "name": "بکش یک",
@@ -18698,6 +19435,17 @@
     "rural": "",
     "hierarchicalCode": 152111500,
     "nationalId": 1000045227
+  },
+  {
+    "row": 1768,
+    "type": "شهر",
+    "name": "دژکرد",
+    "province": "فارس",
+    "county": "اقلید",
+    "district": "سده",
+    "rural": "",
+    "hierarchicalCode": 152111501,
+    "nationalId": 1000045235
   },
   {
     "row": 1769,
@@ -18975,6 +19723,17 @@
     "nationalId": 1000045276
   },
   {
+    "row": 1794,
+    "type": "بخش",
+    "name": "سیدان",
+    "province": "فارس",
+    "county": "مرودشت",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 152213,
+    "nationalId": 1000007797
+  },
+  {
     "row": 1795,
     "type": "دهستان",
     "name": "خفرک علیا",
@@ -19248,6 +20007,17 @@
     "rural": "",
     "hierarchicalCode": 15241110,
     "nationalId": 1000023455
+  },
+  {
+    "row": 1820,
+    "type": "دهستان",
+    "name": "کال",
+    "province": "فارس",
+    "county": "لامرد",
+    "district": "اشکنان",
+    "rural": "",
+    "hierarchicalCode": 15241111,
+    "nationalId": 1000023463
   },
   {
     "row": 1821,
@@ -19525,6 +20295,17 @@
     "nationalId": 1000007912
   },
   {
+    "row": 1846,
+    "type": "دهستان",
+    "name": "خرمی",
+    "province": "فارس",
+    "county": "خرم بید",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 15261010,
+    "nationalId": 1000023588
+  },
+  {
     "row": 1847,
     "type": "دهستان",
     "name": "قشلاق",
@@ -19798,6 +20579,17 @@
     "rural": "",
     "hierarchicalCode": 15291010,
     "nationalId": 1000023695
+  },
+  {
+    "row": 1872,
+    "type": "دهستان",
+    "name": "مبارک آباد",
+    "province": "فارس",
+    "county": "قیروکارزین",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 15291011,
+    "nationalId": 1000023703
   },
   {
     "row": 1873,
@@ -20075,6 +20867,17 @@
     "nationalId": 1000008019
   },
   {
+    "row": 1898,
+    "type": "دهستان",
+    "name": "اسیر",
+    "province": "فارس",
+    "county": "مهر",
+    "district": "اسیر",
+    "rural": "",
+    "hierarchicalCode": 15301310,
+    "nationalId": 1000023802
+  },
+  {
     "row": 1899,
     "type": "دهستان",
     "name": "دشت الله",
@@ -20348,6 +21151,17 @@
     "rural": "",
     "hierarchicalCode": 15331011,
     "nationalId": 1000023919
+  },
+  {
+    "row": 1924,
+    "type": "شهر",
+    "name": "سعادت شهر",
+    "province": "فارس",
+    "county": "پاسارگاد",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 153310500,
+    "nationalId": 1000045615
   },
   {
     "row": 1925,
@@ -20625,6 +21439,17 @@
     "nationalId": 1000024024
   },
   {
+    "row": 1950,
+    "type": "دهستان",
+    "name": "خلیلی",
+    "province": "فارس",
+    "county": "گراش",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 15361011,
+    "nationalId": 1000024032
+  },
+  {
     "row": 1951,
     "type": "شهر",
     "name": "گراش",
@@ -20898,6 +21723,17 @@
     "rural": "",
     "hierarchicalCode": 153811,
     "nationalId": 1000008175
+  },
+  {
+    "row": 1976,
+    "type": "دهستان",
+    "name": "دهقانان",
+    "province": "فارس",
+    "county": "خرامه",
+    "district": "کربال",
+    "rural": "",
+    "hierarchicalCode": 15381110,
+    "nationalId": 1000024131
   },
   {
     "row": 1977,
@@ -21175,6 +22011,17 @@
     "nationalId": 1000947935
   },
   {
+    "row": 2002,
+    "type": "دهستان",
+    "name": "حنا",
+    "province": "فارس",
+    "county": "بختگان",
+    "district": "حنا",
+    "rural": "",
+    "hierarchicalCode": 15411110,
+    "nationalId": 1000022952
+  },
+  {
     "row": 2003,
     "type": "دهستان",
     "name": "چاه گز",
@@ -21448,6 +22295,17 @@
     "rural": "",
     "hierarchicalCode": 15441011,
     "nationalId": 1000022168
+  },
+  {
+    "row": 2028,
+    "type": "شهر",
+    "name": "زرقان",
+    "province": "فارس",
+    "county": "زرقان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 154410500,
+    "nationalId": 1000044741
   },
   {
     "row": 2029,
@@ -21725,6 +22583,17 @@
     "nationalId": 1000022358
   },
   {
+    "row": 2054,
+    "type": "استان",
+    "name": "کرمان",
+    "province": "",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 16,
+    "nationalId": 1000000081
+  },
+  {
     "row": 2055,
     "type": "شهرستان",
     "name": "بم",
@@ -21998,6 +22867,17 @@
     "rural": "",
     "hierarchicalCode": 161111502,
     "nationalId": 1000045771
+  },
+  {
+    "row": 2080,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "کرمان",
+    "county": "کرمان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 161112,
+    "nationalId": 1000008225
   },
   {
     "row": 2081,
@@ -22275,6 +23155,17 @@
     "nationalId": 1000024354
   },
   {
+    "row": 2106,
+    "type": "دهستان",
+    "name": "نجف آباد",
+    "province": "کرمان",
+    "county": "سیرجان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 16121011,
+    "nationalId": 1000024362
+  },
+  {
     "row": 2107,
     "type": "شهر",
     "name": "سیرجان",
@@ -22548,6 +23439,17 @@
     "rural": "",
     "hierarchicalCode": 16131013,
     "nationalId": 1000024487
+  },
+  {
+    "row": 2132,
+    "type": "دهستان",
+    "name": "رزم آوران",
+    "province": "کرمان",
+    "county": "رفسنجان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 16131014,
+    "nationalId": 1000024495
   },
   {
     "row": 2133,
@@ -22825,6 +23727,17 @@
     "nationalId": 1000008365
   },
   {
+    "row": 2158,
+    "type": "دهستان",
+    "name": "اسلام آباد",
+    "province": "کرمان",
+    "county": "جیرفت",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 16141111,
+    "nationalId": 1000024636
+  },
+  {
     "row": 2159,
     "type": "دهستان",
     "name": "خاتون آباد",
@@ -23098,6 +24011,17 @@
     "rural": "",
     "hierarchicalCode": 161510500,
     "nationalId": 1000046027
+  },
+  {
+    "row": 2184,
+    "type": "شهر",
+    "name": "بزنجان",
+    "province": "کرمان",
+    "county": "بافت",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 161510501,
+    "nationalId": 1000046035
   },
   {
     "row": 2185,
@@ -23375,6 +24299,17 @@
     "nationalId": 1000008431
   },
   {
+    "row": 2210,
+    "type": "دهستان",
+    "name": "استبرق",
+    "province": "کرمان",
+    "county": "شهربابک",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 16171010,
+    "nationalId": 1000024909
+  },
+  {
     "row": 2211,
     "type": "دهستان",
     "name": "پاقلعه",
@@ -23648,6 +24583,17 @@
     "rural": "",
     "hierarchicalCode": 161812,
     "nationalId": 1000008472
+  },
+  {
+    "row": 2236,
+    "type": "دهستان",
+    "name": "گلزار",
+    "province": "کرمان",
+    "county": "بردسیر",
+    "district": "گلزار",
+    "rural": "",
+    "hierarchicalCode": 16181210,
+    "nationalId": 1000025039
   },
   {
     "row": 2237,
@@ -23925,6 +24871,17 @@
     "nationalId": 1000046209
   },
   {
+    "row": 2262,
+    "type": "شهرستان",
+    "name": "منوجان",
+    "province": "کرمان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1621,
+    "nationalId": 1000001899
+  },
+  {
     "row": 2263,
     "type": "بخش",
     "name": "مرکزی",
@@ -24198,6 +25155,17 @@
     "rural": "",
     "hierarchicalCode": 16231010,
     "nationalId": 1000025278
+  },
+  {
+    "row": 2288,
+    "type": "دهستان",
+    "name": "خرم دشت",
+    "province": "کرمان",
+    "county": "کوهبنان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 16231011,
+    "nationalId": 1000025286
   },
   {
     "row": 2289,
@@ -24475,6 +25443,17 @@
     "nationalId": 1000001949
   },
   {
+    "row": 2314,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "کرمان",
+    "county": "ریگان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 162610,
+    "nationalId": 1000008639
+  },
+  {
     "row": 2315,
     "type": "دهستان",
     "name": "ریگان",
@@ -24748,6 +25727,17 @@
     "rural": "",
     "hierarchicalCode": 1629,
     "nationalId": 1000001972
+  },
+  {
+    "row": 2340,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "کرمان",
+    "county": "رابر",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 162910,
+    "nationalId": 1000008688
   },
   {
     "row": 2341,
@@ -25025,6 +26015,17 @@
     "nationalId": 1000930337
   },
   {
+    "row": 2366,
+    "type": "شهرستان",
+    "name": "ارزوئیه",
+    "province": "کرمان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1632,
+    "nationalId": 1000002004
+  },
+  {
     "row": 2367,
     "type": "بخش",
     "name": "مرکزی",
@@ -25298,6 +26299,17 @@
     "rural": "",
     "hierarchicalCode": 17111010,
     "nationalId": 1000025732
+  },
+  {
+    "row": 2392,
+    "type": "دهستان",
+    "name": "دورود فرامان",
+    "province": "کرمانشاه",
+    "county": "کرمانشاه",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 17111011,
+    "nationalId": 1000025740
   },
   {
     "row": 2393,
@@ -25575,6 +26587,17 @@
     "nationalId": 1000008845
   },
   {
+    "row": 2418,
+    "type": "دهستان",
+    "name": "الوند",
+    "province": "کرمانشاه",
+    "county": "قصرشیرین",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 17121110,
+    "nationalId": 1000025872
+  },
+  {
     "row": 2419,
     "type": "دهستان",
     "name": "نصر آباد",
@@ -25848,6 +26871,17 @@
     "rural": "",
     "hierarchicalCode": 17141110,
     "nationalId": 1000026003
+  },
+  {
+    "row": 2444,
+    "type": "دهستان",
+    "name": "سطر",
+    "province": "کرمانشاه",
+    "county": "سنقر",
+    "district": "کلیائی",
+    "rural": "",
+    "hierarchicalCode": 17141111,
+    "nationalId": 1000026011
   },
   {
     "row": 2445,
@@ -26125,6 +27159,17 @@
     "nationalId": 1000026102
   },
   {
+    "row": 2470,
+    "type": "دهستان",
+    "name": "جگیران",
+    "province": "کرمانشاه",
+    "county": "سر پل ذهاب",
+    "district": "دشت ذهاب",
+    "rural": "",
+    "hierarchicalCode": 17161212,
+    "nationalId": 1000026359
+  },
+  {
     "row": 2471,
     "type": "دهستان",
     "name": "سرقلعه",
@@ -26398,6 +27443,17 @@
     "rural": "",
     "hierarchicalCode": 17191011,
     "nationalId": 1000026250
+  },
+  {
+    "row": 2496,
+    "type": "دهستان",
+    "name": "گاماسیاب",
+    "province": "کرمانشاه",
+    "county": "صحنه",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 17191012,
+    "nationalId": 1000026268
   },
   {
     "row": 2497,
@@ -26675,6 +27731,17 @@
     "nationalId": 1000577930
   },
   {
+    "row": 2522,
+    "type": "دهستان",
+    "name": "زمکان جنوبی",
+    "province": "کرمانشاه",
+    "county": "ثلاث باباجانی",
+    "district": "زمکان",
+    "rural": "",
+    "hierarchicalCode": 17211210,
+    "nationalId": 1000026383
+  },
+  {
     "row": 2523,
     "type": "دهستان",
     "name": "زمکان شمالی",
@@ -26948,6 +28015,17 @@
     "rural": "",
     "hierarchicalCode": 18,
     "nationalId": 1000000107
+  },
+  {
+    "row": 2548,
+    "type": "شهرستان",
+    "name": "رشت",
+    "province": "گیلان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1810,
+    "nationalId": 1000002152
   },
   {
     "row": 2549,
@@ -27225,6 +28303,17 @@
     "nationalId": 1000026680
   },
   {
+    "row": 2574,
+    "type": "دهستان",
+    "name": "نوشرخشکبیجار",
+    "province": "گیلان",
+    "county": "رشت",
+    "district": "خشکبیجار",
+    "rural": "",
+    "hierarchicalCode": 18101511,
+    "nationalId": 1000026698
+  },
+  {
     "row": 2575,
     "type": "شهر",
     "name": "خشکبیجار",
@@ -27498,6 +28587,17 @@
     "rural": "",
     "hierarchicalCode": 181213500,
     "nationalId": 1000046852
+  },
+  {
+    "row": 2600,
+    "type": "شهر",
+    "name": "چوبر",
+    "province": "گیلان",
+    "county": "طوالش",
+    "district": "حویق",
+    "rural": "",
+    "hierarchicalCode": 181213501,
+    "nationalId": 1000046860
   },
   {
     "row": 2601,
@@ -27775,6 +28875,17 @@
     "nationalId": 1000002202
   },
   {
+    "row": 2626,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "گیلان",
+    "county": "رودسر",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 181510,
+    "nationalId": 1000009223
+  },
+  {
     "row": 2627,
     "type": "دهستان",
     "name": "چینی جان",
@@ -28048,6 +29159,17 @@
     "rural": "",
     "hierarchicalCode": 18161110,
     "nationalId": 1000027076
+  },
+  {
+    "row": 2652,
+    "type": "دهستان",
+    "name": "چلوند",
+    "province": "گیلان",
+    "county": "آستارا",
+    "district": "لوندویل",
+    "rural": "",
+    "hierarchicalCode": 18161111,
+    "nationalId": 1000027084
   },
   {
     "row": 2653,
@@ -28325,6 +29447,17 @@
     "nationalId": 1000047066
   },
   {
+    "row": 2678,
+    "type": "شهر",
+    "name": "رستم آباد",
+    "province": "گیلان",
+    "county": "رودبار",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 181810503,
+    "nationalId": 1000047074
+  },
+  {
     "row": 2679,
     "type": "بخش",
     "name": "عمارلو",
@@ -28598,6 +29731,17 @@
     "rural": "",
     "hierarchicalCode": 18191211,
     "nationalId": 1000027324
+  },
+  {
+    "row": 2704,
+    "type": "شهر",
+    "name": "گوراب زرمیخ",
+    "province": "گیلان",
+    "county": "صومعه سرا",
+    "district": "میرزاکوچک جنگلی",
+    "rural": "",
+    "hierarchicalCode": 181912500,
+    "nationalId": 1000047132
   },
   {
     "row": 2705,
@@ -28875,6 +30019,17 @@
     "nationalId": 1000027423
   },
   {
+    "row": 2730,
+    "type": "شهر",
+    "name": "احمد سر گوراب",
+    "province": "گیلان",
+    "county": "شفت",
+    "district": "احمد سر گوراب",
+    "rural": "",
+    "hierarchicalCode": 182111500,
+    "nationalId": 1000047173
+  },
+  {
     "row": 2731,
     "type": "شهرستان",
     "name": "رضوانشهر",
@@ -29148,6 +30303,17 @@
     "rural": "",
     "hierarchicalCode": 18241110,
     "nationalId": 1000027530
+  },
+  {
+    "row": 2756,
+    "type": "دهستان",
+    "name": "شبخوس لات",
+    "province": "گیلان",
+    "county": "املش",
+    "district": "رانکوه",
+    "rural": "",
+    "hierarchicalCode": 18241111,
+    "nationalId": 1000027548
   },
   {
     "row": 2757,
@@ -29425,6 +30591,17 @@
     "nationalId": 1000027621
   },
   {
+    "row": 2782,
+    "type": "شهر",
+    "name": "تنکابن",
+    "province": "مازندران",
+    "county": "تنکابن",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 191010500,
+    "nationalId": 1000047264
+  },
+  {
     "row": 2783,
     "type": "شهر",
     "name": "شیرود",
@@ -29698,6 +30875,17 @@
     "rural": "",
     "hierarchicalCode": 191111500,
     "nationalId": 1000047314
+  },
+  {
+    "row": 2808,
+    "type": "بخش",
+    "name": "دو دانگه",
+    "province": "مازندران",
+    "county": "ساری",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 191112,
+    "nationalId": 1000009553
   },
   {
     "row": 2809,
@@ -29975,6 +31163,17 @@
     "nationalId": 1000047355
   },
   {
+    "row": 2834,
+    "type": "شهر",
+    "name": "بابل",
+    "province": "مازندران",
+    "county": "بابل",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 191211501,
+    "nationalId": 1000047363
+  },
+  {
     "row": 2835,
     "type": "بخش",
     "name": "بندپی شرقی",
@@ -30248,6 +31447,17 @@
     "rural": "",
     "hierarchicalCode": 191310501,
     "nationalId": 1000047421
+  },
+  {
+    "row": 2860,
+    "type": "شهرستان",
+    "name": "آمل",
+    "province": "مازندران",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 1914,
+    "nationalId": 1000002350
   },
   {
     "row": 2861,
@@ -30525,6 +31735,17 @@
     "nationalId": 1000028124
   },
   {
+    "row": 2886,
+    "type": "دهستان",
+    "name": "خیرود کنار",
+    "province": "مازندران",
+    "county": "نوشهر",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 19151011,
+    "nationalId": 1000028132
+  },
+  {
     "row": 2887,
     "type": "دهستان",
     "name": "کالج",
@@ -30798,6 +32019,17 @@
     "rural": "",
     "hierarchicalCode": 191710500,
     "nationalId": 1000047546
+  },
+  {
+    "row": 2912,
+    "type": "شهر",
+    "name": "نور",
+    "province": "مازندران",
+    "county": "نور",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 191710501,
+    "nationalId": 1000047553
   },
   {
     "row": 2913,
@@ -31075,6 +32307,17 @@
     "nationalId": 1000047611
   },
   {
+    "row": 2938,
+    "type": "شهر",
+    "name": "آلاشت",
+    "province": "مازندران",
+    "county": "سواد کوه",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 191910501,
+    "nationalId": 1000047629
+  },
+  {
     "row": 2939,
     "type": "بخش",
     "name": "زیرآب",
@@ -31348,6 +32591,17 @@
     "rural": "",
     "hierarchicalCode": 19211110,
     "nationalId": 1000028496
+  },
+  {
+    "row": 2964,
+    "type": "دهستان",
+    "name": "هراز پی شمالی",
+    "province": "مازندران",
+    "county": "محمود آباد",
+    "district": "سرخرود",
+    "rural": "",
+    "hierarchicalCode": 19211111,
+    "nationalId": 1000028504
   },
   {
     "row": 2965,
@@ -31625,6 +32879,17 @@
     "nationalId": 1000047736
   },
   {
+    "row": 2990,
+    "type": "بخش",
+    "name": "گیل خوران",
+    "province": "مازندران",
+    "county": "جویبار",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 192411,
+    "nationalId": 1000009918
+  },
+  {
     "row": 2991,
     "type": "دهستان",
     "name": "چپکرود",
@@ -31898,6 +33163,17 @@
     "rural": "",
     "hierarchicalCode": 192710500,
     "nationalId": 1000047777
+  },
+  {
+    "row": 3016,
+    "type": "بخش",
+    "name": "سلمان شهر",
+    "province": "مازندران",
+    "county": "عباس آباد",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 192711,
+    "nationalId": 1000009975
   },
   {
     "row": 3017,
@@ -32175,6 +33451,17 @@
     "nationalId": 1000002517
   },
   {
+    "row": 3042,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "مازندران",
+    "county": "سوادکوه شمالی",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 193010,
+    "nationalId": 1000010031
+  },
+  {
     "row": 3043,
     "type": "دهستان",
     "name": "شرق وغرب شیرگاه",
@@ -32448,6 +33735,17 @@
     "rural": "",
     "hierarchicalCode": 20101110,
     "nationalId": 1000028991
+  },
+  {
+    "row": 3068,
+    "type": "دهستان",
+    "name": "مشهد لاکوبه",
+    "province": "مرکزی",
+    "county": "اراک",
+    "district": "ساروق",
+    "rural": "",
+    "hierarchicalCode": 20101111,
+    "nationalId": 1000029007
   },
   {
     "row": 3069,
@@ -32725,6 +34023,17 @@
     "nationalId": 1000047934
   },
   {
+    "row": 3094,
+    "type": "شهرستان",
+    "name": "تفرش",
+    "province": "مرکزی",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2013,
+    "nationalId": 1000002566
+  },
+  {
     "row": 3095,
     "type": "بخش",
     "name": "مرکزی",
@@ -32998,6 +34307,17 @@
     "rural": "",
     "hierarchicalCode": 2016,
     "nationalId": 1000002590
+  },
+  {
+    "row": 3120,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "مرکزی",
+    "county": "دلیجان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 201610,
+    "nationalId": 1000010163
   },
   {
     "row": 3121,
@@ -33275,6 +34595,17 @@
     "nationalId": 1000029387
   },
   {
+    "row": 3146,
+    "type": "شهر",
+    "name": "شهباز",
+    "province": "مرکزی",
+    "county": "شازند",
+    "district": "قره کهریز",
+    "rural": "",
+    "hierarchicalCode": 201713500,
+    "nationalId": 1000048056
+  },
+  {
     "row": 3147,
     "type": "شهرستان",
     "name": "زرندیه",
@@ -33548,6 +34879,17 @@
     "rural": "",
     "hierarchicalCode": 201911500,
     "nationalId": 1000048122
+  },
+  {
+    "row": 3172,
+    "type": "شهرستان",
+    "name": "خنداب",
+    "province": "مرکزی",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2020,
+    "nationalId": 1000002632
   },
   {
     "row": 3173,
@@ -33825,6 +35167,17 @@
     "nationalId": 1000048171
   },
   {
+    "row": 3198,
+    "type": "شهر",
+    "name": "بنجار",
+    "province": "سیستان و بلوچستان",
+    "county": "زابل",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 211010501,
+    "nationalId": 1000048189
+  },
+  {
     "row": 3199,
     "type": "بخش",
     "name": "کرباسک",
@@ -34098,6 +35451,17 @@
     "rural": "",
     "hierarchicalCode": 211211500,
     "nationalId": 1000048221
+  },
+  {
+    "row": 3224,
+    "type": "بخش",
+    "name": "دامن",
+    "province": "سیستان و بلوچستان",
+    "county": "ایرانشهر",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 211214,
+    "nationalId": 1001187184
   },
   {
     "row": 3225,
@@ -34375,6 +35739,17 @@
     "nationalId": 1000048312
   },
   {
+    "row": 3250,
+    "type": "بخش",
+    "name": "مهرگان",
+    "province": "سیستان و بلوچستان",
+    "county": "سراوان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 211413,
+    "nationalId": 1000372498
+  },
+  {
     "row": 3251,
     "type": "دهستان",
     "name": "اسفندک",
@@ -34648,6 +36023,17 @@
     "rural": "",
     "hierarchicalCode": 211610500,
     "nationalId": 1000048346
+  },
+  {
+    "row": 3276,
+    "type": "بخش",
+    "name": "بنت",
+    "province": "سیستان و بلوچستان",
+    "county": "نیک شهر",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 211611,
+    "nationalId": 1000010460
   },
   {
     "row": 3277,
@@ -34925,6 +36311,17 @@
     "nationalId": 1002657086
   },
   {
+    "row": 3302,
+    "type": "شهر",
+    "name": "کنارک",
+    "province": "سیستان و بلوچستان",
+    "county": "کنارک",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 211810500,
+    "nationalId": 1000048403
+  },
+  {
     "row": 3303,
     "type": "بخش",
     "name": "کهیر",
@@ -35198,6 +36595,17 @@
     "rural": "",
     "hierarchicalCode": 212011500,
     "nationalId": 1000371805
+  },
+  {
+    "row": 3328,
+    "type": "شهرستان",
+    "name": "سیب سوران",
+    "province": "سیستان و بلوچستان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2121,
+    "nationalId": 1000002764
   },
   {
     "row": 3329,
@@ -35475,6 +36883,17 @@
     "nationalId": 1000002780
   },
   {
+    "row": 3354,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "سیستان و بلوچستان",
+    "county": "هیرمند",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 212310,
+    "nationalId": 1000010635
+  },
+  {
     "row": 3355,
     "type": "دهستان",
     "name": "جهان آباد",
@@ -35748,6 +37167,17 @@
     "rural": "",
     "hierarchicalCode": 212510500,
     "nationalId": 1000048494
+  },
+  {
+    "row": 3380,
+    "type": "بخش",
+    "name": "ریگ ملک",
+    "province": "سیستان و بلوچستان",
+    "county": "میرجاوه",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 212511,
+    "nationalId": 1000010692
   },
   {
     "row": 3381,
@@ -36025,6 +37455,17 @@
     "nationalId": 1000048528
   },
   {
+    "row": 3406,
+    "type": "شهرستان",
+    "name": "فنوج",
+    "province": "سیستان و بلوچستان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2128,
+    "nationalId": 1000002830
+  },
+  {
     "row": 3407,
     "type": "بخش",
     "name": "مرکزی",
@@ -36298,6 +37739,17 @@
     "rural": "",
     "hierarchicalCode": 21301110,
     "nationalId": 1001187234
+  },
+  {
+    "row": 3432,
+    "type": "دهستان",
+    "name": "گوهر کوه",
+    "province": "سیستان و بلوچستان",
+    "county": "تفتان",
+    "district": "گوهرکوه",
+    "rural": "",
+    "hierarchicalCode": 21301111,
+    "nationalId": 1000029932
   },
   {
     "row": 3433,
@@ -36575,6 +38027,17 @@
     "nationalId": 1000029742
   },
   {
+    "row": 3458,
+    "type": "دهستان",
+    "name": "درگس",
+    "province": "سیستان و بلوچستان",
+    "county": "دشتیاری",
+    "district": "باهوکلات",
+    "rural": "",
+    "hierarchicalCode": 21321111,
+    "nationalId": 1001187341
+  },
+  {
     "row": 3459,
     "type": "شهرستان",
     "name": "گلشن",
@@ -36848,6 +38311,17 @@
     "rural": "",
     "hierarchicalCode": 22,
     "nationalId": 1000000149
+  },
+  {
+    "row": 3484,
+    "type": "شهرستان",
+    "name": "بیجار",
+    "province": "کردستان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2210,
+    "nationalId": 1000002848
   },
   {
     "row": 3485,
@@ -37125,6 +38599,17 @@
     "nationalId": 1000030849
   },
   {
+    "row": 3510,
+    "type": "دهستان",
+    "name": "سراب قامیش",
+    "province": "کردستان",
+    "county": "سنندج",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 22111014,
+    "nationalId": 1000030856
+  },
+  {
     "row": 3511,
     "type": "شهر",
     "name": "سنندج",
@@ -37398,6 +38883,17 @@
     "rural": "",
     "hierarchicalCode": 221212,
     "nationalId": 1000010866
+  },
+  {
+    "row": 3536,
+    "type": "دهستان",
+    "name": "ذولافقار",
+    "province": "کردستان",
+    "county": "سقز",
+    "district": "سرشیو",
+    "rural": "",
+    "hierarchicalCode": 22121210,
+    "nationalId": 1000030997
   },
   {
     "row": 3537,
@@ -37675,6 +39171,17 @@
     "nationalId": 1000010924
   },
   {
+    "row": 3562,
+    "type": "دهستان",
+    "name": "زریوار",
+    "province": "کردستان",
+    "county": "مریوان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 22141010,
+    "nationalId": 1000031128
+  },
+  {
     "row": 3563,
     "type": "دهستان",
     "name": "سرگل",
@@ -37948,6 +39455,17 @@
     "rural": "",
     "hierarchicalCode": 22151212,
     "nationalId": 1000031250
+  },
+  {
+    "row": 3588,
+    "type": "شهر",
+    "name": "سریش آباد",
+    "province": "کردستان",
+    "county": "قروه",
+    "district": "سریش آباد",
+    "rural": "",
+    "hierarchicalCode": 221512500,
+    "nationalId": 1000048742
   },
   {
     "row": 3589,
@@ -38225,6 +39743,17 @@
     "nationalId": 1000031383
   },
   {
+    "row": 3614,
+    "type": "شهر",
+    "name": "کامیاران",
+    "province": "کردستان",
+    "county": "کامیاران",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 221710500,
+    "nationalId": 1000048775
+  },
+  {
     "row": 3615,
     "type": "بخش",
     "name": "موچش",
@@ -38498,6 +40027,17 @@
     "rural": "",
     "hierarchicalCode": 221910500,
     "nationalId": 1000048817
+  },
+  {
+    "row": 3640,
+    "type": "بخش",
+    "name": "بلبان آباد",
+    "province": "کردستان",
+    "county": "دهگلان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 221911,
+    "nationalId": 1000011070
   },
   {
     "row": 3641,
@@ -38775,6 +40315,17 @@
     "nationalId": 1000048874
   },
   {
+    "row": 3666,
+    "type": "بخش",
+    "name": "هرمز",
+    "province": "هرمزگان",
+    "county": "بندرعباس",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 231014,
+    "nationalId": 1000011229
+  },
+  {
     "row": 3667,
     "type": "شهر",
     "name": "هرمز",
@@ -39048,6 +40599,17 @@
     "rural": "",
     "hierarchicalCode": 23121010,
     "nationalId": 1000031755
+  },
+  {
+    "row": 3692,
+    "type": "دهستان",
+    "name": "حومه",
+    "province": "هرمزگان",
+    "county": "میناب",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 23121011,
+    "nationalId": 1000031763
   },
   {
     "row": 3693,
@@ -39325,6 +40887,17 @@
     "nationalId": 1000048973
   },
   {
+    "row": 3718,
+    "type": "شهر",
+    "name": "درگهان",
+    "province": "هرمزگان",
+    "county": "قشم",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 231310501,
+    "nationalId": 1000048981
+  },
+  {
     "row": 3719,
     "type": "شهر",
     "name": "رمکان",
@@ -39598,6 +41171,17 @@
     "rural": "",
     "hierarchicalCode": 23151111,
     "nationalId": 1000031995
+  },
+  {
+    "row": 3744,
+    "type": "شهر",
+    "name": "لیردف",
+    "province": "هرمزگان",
+    "county": "جاسک",
+    "district": "لیردف",
+    "rural": "",
+    "hierarchicalCode": 231511500,
+    "nationalId": 1000053619
   },
   {
     "row": 3745,
@@ -39875,6 +41459,17 @@
     "nationalId": 1000049062
   },
   {
+    "row": 3770,
+    "type": "بخش",
+    "name": "فارغان",
+    "province": "هرمزگان",
+    "county": "حاجی آباد",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 231711,
+    "nationalId": 1000011328
+  },
+  {
     "row": 3771,
     "type": "دهستان",
     "name": "فارغان",
@@ -40148,6 +41743,17 @@
     "rural": "",
     "hierarchicalCode": 231910,
     "nationalId": 1000011377
+  },
+  {
+    "row": 3796,
+    "type": "دهستان",
+    "name": "مهرگان",
+    "province": "هرمزگان",
+    "county": "پارسیان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 23191010,
+    "nationalId": 1000032233
   },
   {
     "row": 3797,
@@ -40425,6 +42031,17 @@
     "nationalId": 1000032332
   },
   {
+    "row": 3822,
+    "type": "دهستان",
+    "name": "شاهمردی",
+    "province": "هرمزگان",
+    "county": "سیریک",
+    "district": "بمانی",
+    "rural": "",
+    "hierarchicalCode": 23211111,
+    "nationalId": 1000032340
+  },
+  {
     "row": 3823,
     "type": "شهر",
     "name": "کوهستک",
@@ -40698,6 +42315,17 @@
     "rural": "",
     "hierarchicalCode": 24101211,
     "nationalId": 1001541505
+  },
+  {
+    "row": 3848,
+    "type": "شهر",
+    "name": "چغادک",
+    "province": "بوشهر",
+    "county": "بوشهر",
+    "district": "چغادک",
+    "rural": "",
+    "hierarchicalCode": 241012500,
+    "nationalId": 1000049237
   },
   {
     "row": 3849,
@@ -40975,6 +42603,17 @@
     "nationalId": 1000011534
   },
   {
+    "row": 3874,
+    "type": "دهستان",
+    "name": "درواهی",
+    "province": "بوشهر",
+    "county": "دشتستان",
+    "district": "آبپخش",
+    "rural": "",
+    "hierarchicalCode": 24111510,
+    "nationalId": 1000032530
+  },
+  {
     "row": 3875,
     "type": "دهستان",
     "name": "دشتی اسماعیل خانی",
@@ -41248,6 +42887,17 @@
     "rural": "",
     "hierarchicalCode": 24131210,
     "nationalId": 1000032647
+  },
+  {
+    "row": 3900,
+    "type": "دهستان",
+    "name": "طسوج",
+    "province": "بوشهر",
+    "county": "دشتی",
+    "district": "شنبه و طسوج",
+    "rural": "",
+    "hierarchicalCode": 24131211,
+    "nationalId": 1000032654
   },
   {
     "row": 3901,
@@ -41525,6 +43175,17 @@
     "nationalId": 1000049492
   },
   {
+    "row": 3926,
+    "type": "بخش",
+    "name": "بردخون",
+    "province": "بوشهر",
+    "county": "دیر",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 241611,
+    "nationalId": 1000011633
+  },
+  {
     "row": 3927,
     "type": "دهستان",
     "name": "بردخون",
@@ -41798,6 +43459,17 @@
     "rural": "",
     "hierarchicalCode": 24181111,
     "nationalId": 1000032837
+  },
+  {
+    "row": 3952,
+    "type": "دهستان",
+    "name": "تشان",
+    "province": "بوشهر",
+    "county": "جم",
+    "district": "ریز",
+    "rural": "",
+    "hierarchicalCode": 24181112,
+    "nationalId": 1000032845
   },
   {
     "row": 3953,
@@ -42075,6 +43747,17 @@
     "nationalId": 1000032910
   },
   {
+    "row": 3978,
+    "type": "دهستان",
+    "name": "مرغملک",
+    "province": "چهارمحال و بختیاری",
+    "county": "شهر کرد",
+    "district": "لاران",
+    "rural": "",
+    "hierarchicalCode": 25101111,
+    "nationalId": 1000032928
+  },
+  {
     "row": 3979,
     "type": "شهر",
     "name": "سورشجان",
@@ -42348,6 +44031,17 @@
     "rural": "",
     "hierarchicalCode": 25121010,
     "nationalId": 1000033009
+  },
+  {
+    "row": 4004,
+    "type": "شهر",
+    "name": "فارسان",
+    "province": "چهارمحال و بختیاری",
+    "county": "فارسان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 251210500,
+    "nationalId": 1000049740
   },
   {
     "row": 4005,
@@ -42625,6 +44319,17 @@
     "nationalId": 1000049849
   },
   {
+    "row": 4030,
+    "type": "شهرستان",
+    "name": "اردل",
+    "province": "چهارمحال و بختیاری",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2514,
+    "nationalId": 1000003218
+  },
+  {
     "row": 4031,
     "type": "بخش",
     "name": "مرکزی",
@@ -42898,6 +44603,17 @@
     "rural": "",
     "hierarchicalCode": 2516,
     "nationalId": 1000003234
+  },
+  {
+    "row": 4056,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "چهارمحال و بختیاری",
+    "county": "کیار",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 251610,
+    "nationalId": 1000011906
   },
   {
     "row": 4057,
@@ -43175,6 +44891,17 @@
     "nationalId": 1000011955
   },
   {
+    "row": 4082,
+    "type": "دهستان",
+    "name": "هوره",
+    "province": "چهارمحال و بختیاری",
+    "county": "سامان",
+    "district": "زاینده رود",
+    "rural": "",
+    "hierarchicalCode": 25181110,
+    "nationalId": 1000033371
+  },
+  {
     "row": 4083,
     "type": "دهستان",
     "name": "زرین",
@@ -43448,6 +45175,17 @@
     "rural": "",
     "hierarchicalCode": 26101013,
     "nationalId": 1000033421
+  },
+  {
+    "row": 4108,
+    "type": "دهستان",
+    "name": "قلتوق",
+    "province": "زنجان",
+    "county": "زنجان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 26101014,
+    "nationalId": 1000033439
   },
   {
     "row": 4109,
@@ -43725,6 +45463,17 @@
     "nationalId": 1000012003
   },
   {
+    "row": 4134,
+    "type": "دهستان",
+    "name": "خرارود",
+    "province": "زنجان",
+    "county": "خدابنده",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 26121011,
+    "nationalId": 1000033587
+  },
+  {
     "row": 4135,
     "type": "دهستان",
     "name": "سهرورد",
@@ -43998,6 +45747,17 @@
     "rural": "",
     "hierarchicalCode": 26131011,
     "nationalId": 1000033686
+  },
+  {
+    "row": 4160,
+    "type": "دهستان",
+    "name": "ماهنشان",
+    "province": "زنجان",
+    "county": "ماهنشان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 26131012,
+    "nationalId": 1000033694
   },
   {
     "row": 4161,
@@ -44275,6 +46035,17 @@
     "nationalId": 1000033785
   },
   {
+    "row": 4186,
+    "type": "دهستان",
+    "name": "تشویر",
+    "province": "زنجان",
+    "county": "طارم",
+    "district": "گیلوان",
+    "rural": "",
+    "hierarchicalCode": 26151211,
+    "nationalId": 1000545291
+  },
+  {
     "row": 4187,
     "type": "شهرستان",
     "name": "خرمدره",
@@ -44548,6 +46319,17 @@
     "rural": "",
     "hierarchicalCode": 271012,
     "nationalId": 1000012151
+  },
+  {
+    "row": 4212,
+    "type": "دهستان",
+    "name": "ازنا",
+    "province": "لرستان",
+    "county": "خرم آباد",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 27101210,
+    "nationalId": 1000033926
   },
   {
     "row": 4213,
@@ -44825,6 +46607,17 @@
     "nationalId": 1000034106
   },
   {
+    "row": 4238,
+    "type": "شهر",
+    "name": "بروجرد",
+    "province": "لرستان",
+    "county": "بروجرد",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 271111500,
+    "nationalId": 1000050250
+  },
+  {
     "row": 4239,
     "type": "بخش",
     "name": "شیروان",
@@ -45098,6 +46891,17 @@
     "rural": "",
     "hierarchicalCode": 27121411,
     "nationalId": 1000034221
+  },
+  {
+    "row": 4264,
+    "type": "شهر",
+    "name": "شاپور آباد",
+    "province": "لرستان",
+    "county": "لایگودرز",
+    "district": "بربرود غربی",
+    "rural": "",
+    "hierarchicalCode": 271214500,
+    "nationalId": 1000213130
   },
   {
     "row": 4265,
@@ -45375,6 +47179,17 @@
     "nationalId": 1000050300
   },
   {
+    "row": 4290,
+    "type": "بخش",
+    "name": "طرهان",
+    "province": "لرستان",
+    "county": "کوهدشت",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 271411,
+    "nationalId": 1000012284
+  },
+  {
     "row": 4291,
     "type": "دهستان",
     "name": "طرهان",
@@ -45648,6 +47463,17 @@
     "rural": "",
     "hierarchicalCode": 27161011,
     "nationalId": 1000034486
+  },
+  {
+    "row": 4316,
+    "type": "شهر",
+    "name": "ازنا",
+    "province": "لرستان",
+    "county": "ازنا",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 271610500,
+    "nationalId": 1000050367
   },
   {
     "row": 4317,
@@ -45925,6 +47751,17 @@
     "nationalId": 1000012383
   },
   {
+    "row": 4342,
+    "type": "دهستان",
+    "name": "فیروز آباد",
+    "province": "لرستان",
+    "county": "سلسله",
+    "district": "فیروزآباد",
+    "rural": "",
+    "hierarchicalCode": 27181110,
+    "nationalId": 1000034627
+  },
+  {
     "row": 4343,
     "type": "دهستان",
     "name": "قلائی",
@@ -46198,6 +48035,17 @@
     "rural": "",
     "hierarchicalCode": 28,
     "nationalId": 1000000206
+  },
+  {
+    "row": 4368,
+    "type": "شهرستان",
+    "name": "ملایر",
+    "province": "همدان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2810,
+    "nationalId": 1000003457
   },
   {
     "row": 4369,
@@ -46475,6 +48323,17 @@
     "nationalId": 1000050490
   },
   {
+    "row": 4394,
+    "type": "شهرستان",
+    "name": "همدان",
+    "province": "همدان",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2811,
+    "nationalId": 1000003465
+  },
+  {
     "row": 4395,
     "type": "بخش",
     "name": "مرکزی",
@@ -46748,6 +48607,17 @@
     "rural": "",
     "hierarchicalCode": 281211500,
     "nationalId": 1000050557
+  },
+  {
+    "row": 4420,
+    "type": "بخش",
+    "name": "زرین دشت",
+    "province": "همدان",
+    "county": "نهاوند",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 281212,
+    "nationalId": 1000012524
   },
   {
     "row": 4421,
@@ -47025,6 +48895,17 @@
     "nationalId": 1000035160
   },
   {
+    "row": 4446,
+    "type": "دهستان",
+    "name": "کوهین",
+    "province": "همدان",
+    "county": "کبودرآهنگ",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 28141013,
+    "nationalId": 1000035178
+  },
+  {
     "row": 4447,
     "type": "دهستان",
     "name": "سرداران",
@@ -47298,6 +49179,17 @@
     "rural": "",
     "hierarchicalCode": 281610,
     "nationalId": 1000012615
+  },
+  {
+    "row": 4472,
+    "type": "دهستان",
+    "name": "سیمینه رود",
+    "province": "همدان",
+    "county": "بهار",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 28161010,
+    "nationalId": 1000035301
   },
   {
     "row": 4473,
@@ -47575,6 +49467,17 @@
     "nationalId": 1000035442
   },
   {
+    "row": 4498,
+    "type": "شهر",
+    "name": "فامنین",
+    "province": "همدان",
+    "county": "فامنین",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 281810500,
+    "nationalId": 1000050730
+  },
+  {
     "row": 4499,
     "type": "بخش",
     "name": "پیشخور",
@@ -47848,6 +49751,17 @@
     "rural": "",
     "hierarchicalCode": 291110,
     "nationalId": 1000012714
+  },
+  {
+    "row": 4524,
+    "type": "دهستان",
+    "name": "رباطات",
+    "province": "یزد",
+    "county": "اردکان",
+    "district": "خرانق",
+    "rural": "",
+    "hierarchicalCode": 29111010,
+    "nationalId": 1000035517
   },
   {
     "row": 4525,
@@ -48125,6 +50039,17 @@
     "nationalId": 1000012763
   },
   {
+    "row": 4550,
+    "type": "دهستان",
+    "name": "بنادکوک",
+    "province": "یزد",
+    "county": "تفت",
+    "district": "نیر",
+    "rural": "",
+    "hierarchicalCode": 29131110,
+    "nationalId": 1000035640
+  },
+  {
     "row": 4551,
     "type": "دهستان",
     "name": "زردین",
@@ -48398,6 +50323,17 @@
     "rural": "",
     "hierarchicalCode": 29151210,
     "nationalId": 1000035772
+  },
+  {
+    "row": 4576,
+    "type": "دهستان",
+    "name": "صدر آباد",
+    "province": "یزد",
+    "county": "میبد",
+    "district": "ندوشن",
+    "rural": "",
+    "hierarchicalCode": 29151211,
+    "nationalId": 1000035780
   },
   {
     "row": 4577,
@@ -48675,6 +50611,17 @@
     "nationalId": 1002284287
   },
   {
+    "row": 4602,
+    "type": "شهرستان",
+    "name": "بهاباد",
+    "province": "یزد",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 2919,
+    "nationalId": 1000003630
+  },
+  {
     "row": 4603,
     "type": "بخش",
     "name": "مرکزی",
@@ -48948,6 +50895,17 @@
     "rural": "",
     "hierarchicalCode": 3011,
     "nationalId": 1000003655
+  },
+  {
+    "row": 4628,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "ایلام",
+    "county": "دره شهر",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 301110,
+    "nationalId": 1000012938
   },
   {
     "row": 4629,
@@ -49225,6 +51183,17 @@
     "nationalId": 1000036044
   },
   {
+    "row": 4654,
+    "type": "دهستان",
+    "name": "ابوغویر",
+    "province": "ایلام",
+    "county": "دهلران",
+    "district": "دشت عباس",
+    "rural": "",
+    "hierarchicalCode": 30121412,
+    "nationalId": 1000036036
+  },
+  {
     "row": 4655,
     "type": "شهرستان",
     "name": "مهران",
@@ -49498,6 +51467,17 @@
     "rural": "",
     "hierarchicalCode": 301510500,
     "nationalId": 1000051092
+  },
+  {
+    "row": 4680,
+    "type": "بخش",
+    "name": "کلات",
+    "province": "ایلام",
+    "county": "آبدانان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 301511,
+    "nationalId": 1000013068
   },
   {
     "row": 4681,
@@ -49775,6 +51755,17 @@
     "nationalId": 1000051159
   },
   {
+    "row": 4706,
+    "type": "شهر",
+    "name": "مهر",
+    "province": "ایلام",
+    "county": "ملکشاهی",
+    "district": "گچی",
+    "rural": "",
+    "hierarchicalCode": 301711501,
+    "nationalId": 1000051167
+  },
+  {
     "row": 4707,
     "type": "شهرستان",
     "name": "سیروان",
@@ -50048,6 +52039,17 @@
     "rural": "",
     "hierarchicalCode": 30201111,
     "nationalId": 1001235363
+  },
+  {
+    "row": 4732,
+    "type": "شهرستان",
+    "name": "چوار",
+    "province": "ایلام",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 3021,
+    "nationalId": 1002284246
   },
   {
     "row": 4733,
@@ -50325,6 +52327,17 @@
     "nationalId": 1000051241
   },
   {
+    "row": 4758,
+    "type": "بخش",
+    "name": "بیارجمند",
+    "province": "سمنان",
+    "county": "شاهرود",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 311112,
+    "nationalId": 1000013191
+  },
+  {
     "row": 4759,
     "type": "دهستان",
     "name": "بیارجمند",
@@ -50598,6 +52611,17 @@
     "rural": "",
     "hierarchicalCode": 3114,
     "nationalId": 1000003788
+  },
+  {
+    "row": 4784,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "سمنان",
+    "county": "مهدی شهر",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 311410,
+    "nationalId": 1000013241
   },
   {
     "row": 4785,
@@ -50875,6 +52899,17 @@
     "nationalId": 1000036697
   },
   {
+    "row": 4810,
+    "type": "شهر",
+    "name": "کهن آباد",
+    "province": "سمنان",
+    "county": "آرادان",
+    "district": "کهن آباد",
+    "rural": "",
+    "hierarchicalCode": 311611500,
+    "nationalId": 1000051373
+  },
+  {
     "row": 4811,
     "type": "شهرستان",
     "name": "سرخه",
@@ -51148,6 +53183,17 @@
     "rural": "",
     "hierarchicalCode": 321013,
     "nationalId": 1000013340
+  },
+  {
+    "row": 4836,
+    "type": "دهستان",
+    "name": "طیبی گرمسیری جنوبی",
+    "province": "کهگیلویه و بویراحمد",
+    "county": "کهگیلویه",
+    "district": "سوق",
+    "rural": "",
+    "hierarchicalCode": 32101310,
+    "nationalId": 1000036804
   },
   {
     "row": 4837,
@@ -51425,6 +53471,17 @@
     "nationalId": 1000036937
   },
   {
+    "row": 4862,
+    "type": "دهستان",
+    "name": "بویر احمد گرمسیری",
+    "province": "کهگیلویه و بویراحمد",
+    "county": "گچساران",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 32121011,
+    "nationalId": 1000036945
+  },
+  {
     "row": 4863,
     "type": "دهستان",
     "name": "بی بی حکیمه",
@@ -51698,6 +53755,17 @@
     "rural": "",
     "hierarchicalCode": 321412500,
     "nationalId": 1001549441
+  },
+  {
+    "row": 4888,
+    "type": "شهرستان",
+    "name": "باشت",
+    "province": "کهگیلویه و بویراحمد",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 3215,
+    "nationalId": 1000003879
   },
   {
     "row": 4889,
@@ -51975,6 +54043,17 @@
     "nationalId": 1000037166
   },
   {
+    "row": 4914,
+    "type": "شهرستان",
+    "name": "مارگون",
+    "province": "کهگیلویه و بویراحمد",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 3218,
+    "nationalId": 1001235447
+  },
+  {
     "row": 4915,
     "type": "بخش",
     "name": "مرکزی",
@@ -52248,6 +54327,17 @@
     "rural": "",
     "hierarchicalCode": 331110502,
     "nationalId": 1000051597
+  },
+  {
+    "row": 4940,
+    "type": "بخش",
+    "name": "رودهن",
+    "province": "تهران",
+    "county": "دماوند",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 331111,
+    "nationalId": 1000013548
   },
   {
     "row": 4941,
@@ -52525,6 +54615,17 @@
     "nationalId": 1000051662
   },
   {
+    "row": 4966,
+    "type": "شهر",
+    "name": "کهریزک",
+    "province": "تهران",
+    "county": "ری",
+    "district": "کهریزک",
+    "rural": "",
+    "hierarchicalCode": 331312501,
+    "nationalId": 1000051670
+  },
+  {
     "row": 4967,
     "type": "بخش",
     "name": "خاوران",
@@ -52798,6 +54899,17 @@
     "rural": "",
     "hierarchicalCode": 331510500,
     "nationalId": 1000051720
+  },
+  {
+    "row": 4992,
+    "type": "شهر",
+    "name": "صباشهر",
+    "province": "تهران",
+    "county": "شهریار",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 331510502,
+    "nationalId": 1000051746
   },
   {
     "row": 4993,
@@ -53075,6 +55187,17 @@
     "nationalId": 1000037554
   },
   {
+    "row": 5018,
+    "type": "دهستان",
+    "name": "منجیل آباد",
+    "province": "تهران",
+    "county": "رباط کریم",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 33171012,
+    "nationalId": 1000037562
+  },
+  {
     "row": 5019,
     "type": "شهر",
     "name": "رباط کریم",
@@ -53348,6 +55471,17 @@
     "rural": "",
     "hierarchicalCode": 331911500,
     "nationalId": 1000051886
+  },
+  {
+    "row": 5044,
+    "type": "شهرستان",
+    "name": "قدس",
+    "province": "تهران",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 3320,
+    "nationalId": 1000004000
   },
   {
     "row": 5045,
@@ -53625,6 +55759,17 @@
     "nationalId": 1000037786
   },
   {
+    "row": 5070,
+    "type": "دهستان",
+    "name": "میمنت",
+    "province": "تهران",
+    "county": "بهارستان",
+    "district": "گلستان",
+    "rural": "",
+    "hierarchicalCode": 33231011,
+    "nationalId": 1000037794
+  },
+  {
     "row": 5071,
     "type": "شهر",
     "name": "گلستان",
@@ -53898,6 +56043,17 @@
     "rural": "",
     "hierarchicalCode": 332510500,
     "nationalId": 1000051985
+  },
+  {
+    "row": 5096,
+    "type": "استان",
+    "name": "اردبیل",
+    "province": "",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 34,
+    "nationalId": 1000000263
   },
   {
     "row": 5097,
@@ -54175,6 +56331,17 @@
     "nationalId": 1000013878
   },
   {
+    "row": 5122,
+    "type": "دهستان",
+    "name": "پلنگا",
+    "province": "اردبیل",
+    "county": "خلخال",
+    "district": "شاهرود",
+    "rural": "",
+    "hierarchicalCode": 34111110,
+    "nationalId": 1000038016
+  },
+  {
     "row": 5123,
     "type": "دهستان",
     "name": "شلا",
@@ -54448,6 +56615,17 @@
     "rural": "",
     "hierarchicalCode": 34121310,
     "nationalId": 1000038131
+  },
+  {
+    "row": 5148,
+    "type": "دهستان",
+    "name": "یافت",
+    "province": "اردبیل",
+    "county": "مشگین شهر",
+    "district": "مرادلو",
+    "rural": "",
+    "hierarchicalCode": 34121311,
+    "nationalId": 1000038149
   },
   {
     "row": 5149,
@@ -54725,6 +56903,17 @@
     "nationalId": 1000038297
   },
   {
+    "row": 5174,
+    "type": "دهستان",
+    "name": "قشلاق شرقی",
+    "province": "اردبیل",
+    "county": "بیله سوار",
+    "district": "قشلاق دشت",
+    "rural": "",
+    "hierarchicalCode": 34141111,
+    "nationalId": 1000038305
+  },
+  {
     "row": 5175,
     "type": "شهر",
     "name": "جعفرآباد",
@@ -54998,6 +57187,17 @@
     "rural": "",
     "hierarchicalCode": 341611500,
     "nationalId": 1000052199
+  },
+  {
+    "row": 5200,
+    "type": "بخش",
+    "name": "عنبران",
+    "province": "اردبیل",
+    "county": "نمین",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 341612,
+    "nationalId": 1000014058
   },
   {
     "row": 5201,
@@ -55275,6 +57475,17 @@
     "nationalId": 1000038560
   },
   {
+    "row": 5226,
+    "type": "شهر",
+    "name": "سرعین",
+    "province": "اردبیل",
+    "county": "سرعین",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 341910500,
+    "nationalId": 1000052249
+  },
+  {
     "row": 5227,
     "type": "بخش",
     "name": "سبلان",
@@ -55548,6 +57759,17 @@
     "rural": "",
     "hierarchicalCode": 351010500,
     "nationalId": 1000052256
+  },
+  {
+    "row": 5252,
+    "type": "بخش",
+    "name": "مرکزی",
+    "province": "قم",
+    "county": "قم",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 351011,
+    "nationalId": 1000014132
   },
   {
     "row": 5253,
@@ -55825,6 +58047,17 @@
     "nationalId": 1000000289
   },
   {
+    "row": 5278,
+    "type": "شهرستان",
+    "name": "قزوین",
+    "province": "قزوین",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 3610,
+    "nationalId": 1000004174
+  },
+  {
     "row": 5279,
     "type": "بخش",
     "name": "رودبار لاموت شرقی",
@@ -56098,6 +58331,17 @@
     "rural": "",
     "hierarchicalCode": 36101411,
     "nationalId": 1000038818
+  },
+  {
+    "row": 5304,
+    "type": "شهر",
+    "name": "کوهین",
+    "province": "قزوین",
+    "county": "قزوین",
+    "district": "کوهین",
+    "rural": "",
+    "hierarchicalCode": 361014500,
+    "nationalId": 1000052371
   },
   {
     "row": 5305,
@@ -56375,6 +58619,17 @@
     "nationalId": 1000052439
   },
   {
+    "row": 5330,
+    "type": "شهر",
+    "name": "سگز آباد",
+    "province": "قزوین",
+    "county": "بوئین زهرا",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 361210501,
+    "nationalId": 1000052447
+  },
+  {
     "row": 5331,
     "type": "شهر",
     "name": "عصمت آباد",
@@ -56650,11 +58905,22 @@
     "nationalId": 1000052496
   },
   {
+    "row": 5356,
+    "type": "شهرستان",
+    "name": "البرز",
+    "province": "قزوین",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 3614,
+    "nationalId": 1000004216
+  },
+  {
     "row": 5357,
     "type": "بخش",
     "name": "مرکزی",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "",
     "rural": "",
     "hierarchicalCode": 361410,
@@ -56665,7 +58931,7 @@
     "type": "دهستان",
     "name": "پیر یوسفیان",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "مرکزی",
     "rural": "",
     "hierarchicalCode": 36141010,
@@ -56676,7 +58942,7 @@
     "type": "دهستان",
     "name": "نصرت آباد",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "مرکزی",
     "rural": "",
     "hierarchicalCode": 36141011,
@@ -56687,7 +58953,7 @@
     "type": "شهر",
     "name": "الوند",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "مرکزی",
     "rural": "",
     "hierarchicalCode": 361410500,
@@ -56698,7 +58964,7 @@
     "type": "بخش",
     "name": "محمدیه",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "",
     "rural": "",
     "hierarchicalCode": 361411,
@@ -56709,7 +58975,7 @@
     "type": "دهستان",
     "name": "شریف آباد",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "محمدیه",
     "rural": "",
     "hierarchicalCode": 36141110,
@@ -56720,7 +58986,7 @@
     "type": "دهستان",
     "name": "حصار خروان",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "محمدیه",
     "rural": "",
     "hierarchicalCode": 36141111,
@@ -56731,7 +58997,7 @@
     "type": "شهر",
     "name": "محمدیه",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "محمدیه",
     "rural": "",
     "hierarchicalCode": 361411500,
@@ -56742,7 +59008,7 @@
     "type": "شهر",
     "name": "بیدستان",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "محمدیه",
     "rural": "",
     "hierarchicalCode": 361411501,
@@ -56753,7 +59019,7 @@
     "type": "شهر",
     "name": "شریفیه",
     "province": "قزوین",
-    "county": "لابرز",
+    "county": "البرز",
     "district": "محمدیه",
     "rural": "",
     "hierarchicalCode": 361411502,
@@ -56923,6 +59189,17 @@
     "rural": "",
     "hierarchicalCode": 37101011,
     "nationalId": 1000039154
+  },
+  {
+    "row": 5382,
+    "type": "دهستان",
+    "name": "روشن آباد",
+    "province": "گلستان",
+    "county": "گرگان",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 37101012,
+    "nationalId": 1000039162
   },
   {
     "row": 5383,
@@ -57200,6 +59477,17 @@
     "nationalId": 1000014413
   },
   {
+    "row": 5408,
+    "type": "دهستان",
+    "name": "قره سو شرقی",
+    "province": "گلستان",
+    "county": "ترکمن",
+    "district": "سیجولا",
+    "rural": "",
+    "hierarchicalCode": 37121110,
+    "nationalId": 1000039279
+  },
+  {
     "row": 5409,
     "type": "دهستان",
     "name": "قره سو غربی",
@@ -57473,6 +59761,17 @@
     "rural": "",
     "hierarchicalCode": 371511,
     "nationalId": 1000014462
+  },
+  {
+    "row": 5434,
+    "type": "دهستان",
+    "name": "گرو",
+    "province": "گلستان",
+    "county": "مینودشت",
+    "district": "کوهسارات",
+    "rural": "",
+    "hierarchicalCode": 37151110,
+    "nationalId": 1000039386
   },
   {
     "row": 5435,
@@ -57750,6 +60049,17 @@
     "nationalId": 1000039501
   },
   {
+    "row": 5460,
+    "type": "دهستان",
+    "name": "کنگور",
+    "province": "گلستان",
+    "county": "کلاله",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 37181012,
+    "nationalId": 1000039519
+  },
+  {
     "row": 5461,
     "type": "شهر",
     "name": "کلاله",
@@ -58023,6 +60333,17 @@
     "rural": "",
     "hierarchicalCode": 37201111,
     "nationalId": 1000039618
+  },
+  {
+    "row": 5486,
+    "type": "شهر",
+    "name": "خان ببین",
+    "province": "گلستان",
+    "county": "رامیان",
+    "district": "فندرسک",
+    "rural": "",
+    "hierarchicalCode": 372011500,
+    "nationalId": 1000052819
   },
   {
     "row": 5487,
@@ -58300,6 +60621,17 @@
     "nationalId": 1000039725
   },
   {
+    "row": 5512,
+    "type": "دهستان",
+    "name": "گلستان",
+    "province": "گلستان",
+    "county": "گلایکش",
+    "district": "لوه",
+    "rural": "",
+    "hierarchicalCode": 37231111,
+    "nationalId": 1000039733
+  },
+  {
     "row": 5513,
     "type": "شهر",
     "name": "صادق آباد",
@@ -58573,6 +60905,17 @@
     "rural": "",
     "hierarchicalCode": 38121011,
     "nationalId": 1000039840
+  },
+  {
+    "row": 5538,
+    "type": "دهستان",
+    "name": "منتظریه",
+    "province": "خراسان جنوبی",
+    "county": "طبس",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 38121012,
+    "nationalId": 1000039857
   },
   {
     "row": 5539,
@@ -58850,6 +61193,17 @@
     "nationalId": 1000039972
   },
   {
+    "row": 5564,
+    "type": "دهستان",
+    "name": "آفریز",
+    "province": "خراسان جنوبی",
+    "county": "قائنات",
+    "district": "سده",
+    "rural": "",
+    "hierarchicalCode": 38131212,
+    "nationalId": 1000039980
+  },
+  {
     "row": 5565,
     "type": "شهر",
     "name": "آرین شهر",
@@ -59123,6 +61477,17 @@
     "rural": "",
     "hierarchicalCode": 381512,
     "nationalId": 1000014751
+  },
+  {
+    "row": 5590,
+    "type": "دهستان",
+    "name": "درح",
+    "province": "خراسان جنوبی",
+    "county": "سربیشه",
+    "district": "درح",
+    "rural": "",
+    "hierarchicalCode": 38151210,
+    "nationalId": 1000040087
   },
   {
     "row": 5591,
@@ -59400,6 +61765,17 @@
     "nationalId": 1000053064
   },
   {
+    "row": 5616,
+    "type": "بخش",
+    "name": "سه قلعه",
+    "province": "خراسان جنوبی",
+    "county": "سرایان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 381711,
+    "nationalId": 1000014801
+  },
+  {
     "row": 5617,
     "type": "دهستان",
     "name": "سه قلعه",
@@ -59673,6 +62049,17 @@
     "rural": "",
     "hierarchicalCode": 38201010,
     "nationalId": 1000040293
+  },
+  {
+    "row": 5642,
+    "type": "دهستان",
+    "name": "زیرکوه",
+    "province": "خراسان جنوبی",
+    "county": "زیرکوه",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 38201011,
+    "nationalId": 1000040301
   },
   {
     "row": 5643,
@@ -59950,6 +62337,17 @@
     "nationalId": 1000040418
   },
   {
+    "row": 5668,
+    "type": "شهر",
+    "name": "صفی آباد",
+    "province": "خراسان شمالی",
+    "county": "اسفراین",
+    "district": "بام وصفی آباد",
+    "rural": "",
+    "hierarchicalCode": 391110500,
+    "nationalId": 1000053171
+  },
+  {
     "row": 5669,
     "type": "بخش",
     "name": "مرکزی",
@@ -60223,6 +62621,17 @@
     "rural": "",
     "hierarchicalCode": 391212500,
     "nationalId": 1000053221
+  },
+  {
+    "row": 5694,
+    "type": "شهرستان",
+    "name": "جاجرم",
+    "province": "خراسان شمالی",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 3913,
+    "nationalId": 1000004513
   },
   {
     "row": 5695,
@@ -60500,6 +62909,17 @@
     "nationalId": 1000053296
   },
   {
+    "row": 5720,
+    "type": "شهرستان",
+    "name": "فاروج",
+    "province": "خراسان شمالی",
+    "county": "",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 3915,
+    "nationalId": 1000004539
+  },
+  {
     "row": 5721,
     "type": "بخش",
     "name": "مرکزی",
@@ -60775,6 +63195,17 @@
     "nationalId": 1000545010
   },
   {
+    "row": 5746,
+    "type": "بخش",
+    "name": "غلامان",
+    "province": "خراسان شمالی",
+    "county": "راز و جرگلان",
+    "district": "",
+    "rural": "",
+    "hierarchicalCode": 391712,
+    "nationalId": 1000015063
+  },
+  {
     "row": 5747,
     "type": "دهستان",
     "name": "غلامان",
@@ -60810,7 +63241,7 @@
   {
     "row": 5750,
     "type": "استان",
-    "name": "لابرز",
+    "name": "البرز",
     "province": "",
     "county": "",
     "district": "",
@@ -60822,7 +63253,7 @@
     "row": 5751,
     "type": "شهرستان",
     "name": "کرج",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "",
     "district": "",
     "rural": "",
@@ -60833,7 +63264,7 @@
     "row": 5752,
     "type": "بخش",
     "name": "مرکزی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "",
     "rural": "",
@@ -60844,7 +63275,7 @@
     "row": 5753,
     "type": "دهستان",
     "name": "گرمدره",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "مرکزی",
     "rural": "",
@@ -60855,7 +63286,7 @@
     "row": 5754,
     "type": "دهستان",
     "name": "محمدآباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "مرکزی",
     "rural": "",
@@ -60866,7 +63297,7 @@
     "row": 5755,
     "type": "دهستان",
     "name": "کمال آباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "مرکزی",
     "rural": "",
@@ -60877,7 +63308,7 @@
     "row": 5756,
     "type": "شهر",
     "name": "کرج",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "مرکزی",
     "rural": "",
@@ -60888,7 +63319,7 @@
     "row": 5757,
     "type": "شهر",
     "name": "ماهدشت",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "مرکزی",
     "rural": "",
@@ -60899,7 +63330,7 @@
     "row": 5758,
     "type": "شهر",
     "name": "کمال شهر",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "مرکزی",
     "rural": "",
@@ -60910,7 +63341,7 @@
     "row": 5759,
     "type": "شهر",
     "name": "محمد شهر",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "مرکزی",
     "rural": "",
@@ -60921,7 +63352,7 @@
     "row": 5760,
     "type": "شهر",
     "name": "گرمدره",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "مرکزی",
     "rural": "",
@@ -60932,7 +63363,7 @@
     "row": 5761,
     "type": "بخش",
     "name": "آسارا",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "",
     "rural": "",
@@ -60943,7 +63374,7 @@
     "row": 5762,
     "type": "دهستان",
     "name": "آدران",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "آسارا",
     "rural": "",
@@ -60954,7 +63385,7 @@
     "row": 5763,
     "type": "دهستان",
     "name": "آسارا",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "آسارا",
     "rural": "",
@@ -60965,7 +63396,7 @@
     "row": 5764,
     "type": "دهستان",
     "name": "نساء",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "آسارا",
     "rural": "",
@@ -60976,7 +63407,7 @@
     "row": 5765,
     "type": "شهر",
     "name": "آسارا",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "کرج",
     "district": "آسارا",
     "rural": "",
@@ -60987,7 +63418,7 @@
     "row": 5766,
     "type": "شهرستان",
     "name": "ساوجبلاغ",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "",
     "district": "",
     "rural": "",
@@ -60998,7 +63429,7 @@
     "row": 5767,
     "type": "بخش",
     "name": "مرکزی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "",
     "rural": "",
@@ -61009,7 +63440,7 @@
     "row": 5768,
     "type": "دهستان",
     "name": "سعیدآباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "مرکزی",
     "rural": "",
@@ -61020,7 +63451,7 @@
     "row": 5769,
     "type": "دهستان",
     "name": "هیو",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "مرکزی",
     "rural": "",
@@ -61031,7 +63462,7 @@
     "row": 5770,
     "type": "شهر",
     "name": "هشتگرد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "مرکزی",
     "rural": "",
@@ -61042,7 +63473,7 @@
     "row": 5771,
     "type": "شهر",
     "name": "گلسار",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "مرکزی",
     "rural": "",
@@ -61050,10 +63481,21 @@
     "nationalId": 1000053445
   },
   {
+    "row": 5772,
+    "type": "شهر",
+    "name": "شهر جدید هشتگرد",
+    "province": "البرز",
+    "county": "ساوجبلاغ",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 401110900,
+    "nationalId": 1000053437
+  },
+  {
     "row": 5773,
     "type": "بخش",
     "name": "چندار",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "",
     "rural": "",
@@ -61064,7 +63506,7 @@
     "row": 5774,
     "type": "دهستان",
     "name": "برغان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "چندار",
     "rural": "",
@@ -61075,7 +63517,7 @@
     "row": 5775,
     "type": "دهستان",
     "name": "چندار",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "چندار",
     "rural": "",
@@ -61086,7 +63528,7 @@
     "row": 5776,
     "type": "شهر",
     "name": "کوهسار",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "ساوجبلاغ",
     "district": "چندار",
     "rural": "",
@@ -61097,7 +63539,7 @@
     "row": 5777,
     "type": "شهرستان",
     "name": "نظرآباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "",
     "district": "",
     "rural": "",
@@ -61108,7 +63550,7 @@
     "row": 5778,
     "type": "بخش",
     "name": "مرکزی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "",
     "rural": "",
@@ -61119,7 +63561,7 @@
     "row": 5779,
     "type": "دهستان",
     "name": "احمدآباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "مرکزی",
     "rural": "",
@@ -61130,7 +63572,7 @@
     "row": 5780,
     "type": "دهستان",
     "name": "جمال الدین",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "مرکزی",
     "rural": "",
@@ -61141,7 +63583,7 @@
     "row": 5781,
     "type": "دهستان",
     "name": "نجم آباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "مرکزی",
     "rural": "",
@@ -61152,7 +63594,7 @@
     "row": 5782,
     "type": "شهر",
     "name": "نظر آباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "مرکزی",
     "rural": "",
@@ -61163,7 +63605,7 @@
     "row": 5783,
     "type": "بخش",
     "name": "تنکمان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "",
     "rural": "",
@@ -61174,7 +63616,7 @@
     "row": 5784,
     "type": "دهستان",
     "name": "تنکمان شمالی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "تنکمان",
     "rural": "",
@@ -61185,7 +63627,7 @@
     "row": 5785,
     "type": "دهستان",
     "name": "تنکمان جنوبی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "تنکمان",
     "rural": "",
@@ -61196,7 +63638,7 @@
     "row": 5786,
     "type": "شهر",
     "name": "تنکمان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "نظرآباد",
     "district": "تنکمان",
     "rural": "",
@@ -61207,7 +63649,7 @@
     "row": 5787,
     "type": "شهرستان",
     "name": "طالقان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "",
     "district": "",
     "rural": "",
@@ -61218,7 +63660,7 @@
     "row": 5788,
     "type": "بخش",
     "name": "مرکزی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "طالقان",
     "district": "",
     "rural": "",
@@ -61229,7 +63671,7 @@
     "row": 5789,
     "type": "دهستان",
     "name": "پائین طالقان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "طالقان",
     "district": "مرکزی",
     "rural": "",
@@ -61240,7 +63682,7 @@
     "row": 5790,
     "type": "دهستان",
     "name": "میان طالقان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "طالقان",
     "district": "مرکزی",
     "rural": "",
@@ -61251,7 +63693,7 @@
     "row": 5791,
     "type": "شهر",
     "name": "طالقان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "طالقان",
     "district": "مرکزی",
     "rural": "",
@@ -61262,7 +63704,7 @@
     "row": 5792,
     "type": "بخش",
     "name": "بالا طلاقان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "طالقان",
     "district": "",
     "rural": "",
@@ -61273,7 +63715,7 @@
     "row": 5793,
     "type": "دهستان",
     "name": "جوستان",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "طالقان",
     "district": "بالا طلاقان",
     "rural": "",
@@ -61284,7 +63726,7 @@
     "row": 5794,
     "type": "دهستان",
     "name": "کنار رود",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "طالقان",
     "district": "بالا طلاقان",
     "rural": "",
@@ -61295,7 +63737,7 @@
     "row": 5795,
     "type": "شهرستان",
     "name": "اشتهارد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "",
     "district": "",
     "rural": "",
@@ -61306,7 +63748,7 @@
     "row": 5796,
     "type": "بخش",
     "name": "مرکزی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "اشتهارد",
     "district": "",
     "rural": "",
@@ -61317,7 +63759,7 @@
     "row": 5797,
     "type": "دهستان",
     "name": "ایپک",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "اشتهارد",
     "district": "مرکزی",
     "rural": "",
@@ -61325,10 +63767,21 @@
     "nationalId": 1000041010
   },
   {
+    "row": 5798,
+    "type": "دهستان",
+    "name": "صحت آباد",
+    "province": "البرز",
+    "county": "اشتهارد",
+    "district": "مرکزی",
+    "rural": "",
+    "hierarchicalCode": 40141011,
+    "nationalId": 1000041028
+  },
+  {
     "row": 5799,
     "type": "شهر",
     "name": "اشتهارد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "اشتهارد",
     "district": "مرکزی",
     "rural": "",
@@ -61339,7 +63792,7 @@
     "row": 5800,
     "type": "بخش",
     "name": "پلنگ آباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "اشتهارد",
     "district": "",
     "rural": "",
@@ -61350,7 +63803,7 @@
     "row": 5801,
     "type": "دهستان",
     "name": "پلنگ آباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "اشتهارد",
     "district": "پلنگ آباد",
     "rural": "",
@@ -61361,7 +63814,7 @@
     "row": 5802,
     "type": "دهستان",
     "name": "جارو",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "اشتهارد",
     "district": "پلنگ آباد",
     "rural": "",
@@ -61372,7 +63825,7 @@
     "row": 5803,
     "type": "شهر",
     "name": "پلنگ آباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "اشتهارد",
     "district": "پلنگ آباد",
     "rural": "",
@@ -61383,7 +63836,7 @@
     "row": 5804,
     "type": "شهرستان",
     "name": "فردیس",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "",
     "district": "",
     "rural": "",
@@ -61394,7 +63847,7 @@
     "row": 5805,
     "type": "بخش",
     "name": "مرکزی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "فردیس",
     "district": "",
     "rural": "",
@@ -61405,7 +63858,7 @@
     "row": 5806,
     "type": "دهستان",
     "name": "فردیس",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "فردیس",
     "district": "مرکزی",
     "rural": "",
@@ -61416,7 +63869,7 @@
     "row": 5807,
     "type": "دهستان",
     "name": "وحدت",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "فردیس",
     "district": "مرکزی",
     "rural": "",
@@ -61427,7 +63880,7 @@
     "row": 5808,
     "type": "شهر",
     "name": "فردیس",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "فردیس",
     "district": "مرکزی",
     "rural": "",
@@ -61438,7 +63891,7 @@
     "row": 5809,
     "type": "بخش",
     "name": "مشکین دشت",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "فردیس",
     "district": "",
     "rural": "",
@@ -61449,7 +63902,7 @@
     "row": 5810,
     "type": "دهستان",
     "name": "فرخ آباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "فردیس",
     "district": "مشکین دشت",
     "rural": "",
@@ -61460,7 +63913,7 @@
     "row": 5811,
     "type": "دهستان",
     "name": "مشکین آباد",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "فردیس",
     "district": "مشکین دشت",
     "rural": "",
@@ -61471,7 +63924,7 @@
     "row": 5812,
     "type": "شهر",
     "name": "مشکین دشت",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "فردیس",
     "district": "مشکین دشت",
     "rural": "",
@@ -61482,7 +63935,7 @@
     "row": 5813,
     "type": "شهرستان",
     "name": "چهار باغ",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "",
     "district": "",
     "rural": "",
@@ -61493,7 +63946,7 @@
     "row": 5814,
     "type": "بخش",
     "name": "مرکزی",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "چهار باغ",
     "district": "",
     "rural": "",
@@ -61504,7 +63957,7 @@
     "row": 5815,
     "type": "دهستان",
     "name": "چهار دانگه",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "چهار باغ",
     "district": "مرکزی",
     "rural": "",
@@ -61515,7 +63968,7 @@
     "row": 5816,
     "type": "دهستان",
     "name": "عرب آباد افشار",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "چهار باغ",
     "district": "مرکزی",
     "rural": "",
@@ -61526,7 +63979,7 @@
     "row": 5817,
     "type": "شهر",
     "name": "چهار باغ",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "چهار باغ",
     "district": "مرکزی",
     "rural": "",
@@ -61537,7 +63990,7 @@
     "row": 5818,
     "type": "بخش",
     "name": "رامجین",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "چهار باغ",
     "district": "",
     "rural": "",
@@ -61548,11 +64001,22 @@
     "row": 5819,
     "type": "دهستان",
     "name": "رامجین",
-    "province": "لابرز",
+    "province": "البرز",
     "county": "چهار باغ",
     "district": "رامجین",
     "rural": "",
     "hierarchicalCode": 40161110,
     "nationalId": 1000040913
+  },
+  {
+    "row": 5820,
+    "type": "دهستان",
+    "name": "اغلان تپه",
+    "province": "البرز",
+    "county": "چهار باغ",
+    "district": "رامجین",
+    "rural": "",
+    "hierarchicalCode": 40161111,
+    "nationalId": 1002408175
   }
 ]
