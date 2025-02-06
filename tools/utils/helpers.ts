@@ -312,9 +312,12 @@ export function manualFixText(text: string): string {
     "باال طالقان",
     "اغالن تپه"
   ];
-  if (!text.includes(text)) return text;
+  if (!wrongWords.includes(text)) return text;
+  wrongWords.forEach((wrongWord) => {
+    if (wrongWord === text) {
+      text = text.replace(wrongWord, wrongWord.replace(/ال/g, "لا"));
+    }
+  });
 
   return text;
-  return text.replace(/الهیجان/g, "لاهیجان")
-    .replace(/گیالن/g, "گیلان")
 }
