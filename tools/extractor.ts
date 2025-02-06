@@ -1,10 +1,11 @@
-import fs from "fs";
+import * as fs from "fs";
+import xlsx from "xlsx";
 import * as pdfjsLib from "pdfjs-dist";
 import { TextContent, TextItem } from "pdfjs-dist/types/src/display/api";
 import { manualFixText, normalizePersianText } from "./utils";
+import { createObjectCsvWriter } from "csv-writer";
 
 const pdfPath = "../offical/list.pdf";
-// const temp = new Set<string>();
 async function extractDataFromPDF(pdfPath: string) {
   const pdfDoc = await pdfjsLib.getDocument(pdfPath).promise;
   let extractedData = [];
@@ -44,9 +45,6 @@ async function extractDataFromPDF(pdfPath: string) {
     let column = 0;
     for (let i = 0; i < items.length; i++) {
       items[i].str = normalizePersianText(items[i].str);
-      // if (items[i].str.includes("ال")) {
-      //   temp.add(items[i].str);
-      // }
       items[i].str = manualFixText(items[i].str);
 
       if (items[i].transform[5] !== lastLineY) {
@@ -66,7 +64,7 @@ async function extractDataFromPDF(pdfPath: string) {
           };
         }
         lastLineY = items[i].transform[5];
-        row.row = items[i].str !== 'ردیف' ? Number(items[i].str) : -2;
+        row.row = items[i].str !== "ردیف" ? Number(items[i].str) : -2;
         column++;
         continue;
       }
@@ -117,16 +115,23 @@ async function extractDataFromPDF(pdfPath: string) {
   return extractedData;
 }
 
-extractDataFromPDF(pdfPath).then((data) => {
+extractDataFromPDF(pdfPath).then(async (data) => {
   fs.writeFileSync(
     "../offical/list.json",
     JSON.stringify(data, null, 2),
     "utf-8",
   );
-  // fs.writeFileSync(
-  //   "./manualFixText.json",
-  //   JSON.stringify(Array.from(temp), null, 2),
-  //   "utf-8"
-  // );
+
+  const csvWriter = createObjectCsvWriter({
+    path: "../offical/list.csv",
+    header: Object.keys(data[0]).map((key) => ({ id: key, title: key })),
+  });
+  await csvWriter.writeRecords(data);
+
+  const workbook = xlsx.utils.book_new();
+  const worksheet = xlsx.utils.json_to_sheet(data);
+  xlsx.utils.book_append_sheet(workbook, worksheet, "Sheet1");
+  xlsx.writeFile(workbook, "../offical/list.xlsx");
+
   console.log("Done.");
 });
