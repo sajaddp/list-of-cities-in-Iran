@@ -7,36 +7,50 @@ import {
 } from "pdfjs-dist/types/src/display/api";
 
 const pdfPath = "../offical/list.pdf";
+const keys = [
+  "رديف",
+  "نوع",
+  "نام مصوب",
+  "استان",
+  "شهرستان",
+  "بخش",
+  "دهستان",
+  "کد سلسله مراتبي",
+  "شناسه ملي",
+];
 
 async function extractDataFromPDF(pdfPath: string) {
   const pdfDoc = await pdfjsLib.getDocument(pdfPath).promise;
   let extractedData = [];
-
   for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
     const page = await pdfDoc.getPage(pageNum);
+    await page.streamTextContent();
     const textContent: TextContent = await page.getTextContent();
-    const items = textContent.items.map(
-      (item: TextItem | TextMarkedContent) => {
-        if ("str" in item) {
-          return item.str;
-        }
-        return "";
-      },
-    );
+    console.log(textContent.items[13]);
+    process.exit(0);
+    //   const items = textContent.items.map(
+    //     (item: TextItem | TextMarkedContent) => {
+    //       if ("str" in item) {
+    //         return item.str;
+    //       }
+    //       return "";
+    //     },
+    //   );
 
-    let rows = [];
-    let row = [];
-    for (let i = 0; i < items.length; i++) {
-      row.push(items[i]);
-      if ((i + 1) % 9 === 0) {
-        rows.push(row);
-        row = [];
-      }
-    }
-    extractedData.push(...rows);
+    //   let rows = [];
+    //   let row = [];
+    //   for (let i = 0; i < items.length; i++) {
+    //     if (keys.includes(items[i])) continue;
+    //     row.push(items[i]);
+    //     if ((i + 1) % 9 === 0) {
+    //       rows.push(row);
+    //       row = [];
+    //     }
+    //   }
+    //   extractedData.push(...rows);
   }
 
-  return extractedData;
+  // return extractedData;
 }
 
 extractDataFromPDF(pdfPath).then((data) => {
