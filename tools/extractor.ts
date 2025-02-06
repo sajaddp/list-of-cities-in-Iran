@@ -1,10 +1,10 @@
 import fs from "fs";
 import * as pdfjsLib from "pdfjs-dist";
 import { TextContent, TextItem } from "pdfjs-dist/types/src/display/api";
-import { normalizePersianText } from "./utils";
+import { manualFixText, normalizePersianText } from "./utils";
 
 const pdfPath = "../offical/list.pdf";
-
+// const temp = new Set<string>();
 async function extractDataFromPDF(pdfPath: string) {
   const pdfDoc = await pdfjsLib.getDocument(pdfPath).promise;
   let extractedData = [];
@@ -18,50 +18,55 @@ async function extractDataFromPDF(pdfPath: string) {
       .filter((item) => !item.hasEOL)
       .filter((item) => !item.str.includes("Page"));
     interface Row {
-      row: string;
+      row: number;
       type: string;
       name: string;
       province: string;
       county: string;
       district: string;
       rural: string;
-      hierarchicalCode: string;
-      nationalId: string;
+      hierarchicalCode: number;
+      nationalId: number;
     }
     let rows: Row[] = [];
     let row: Row = {
-      row: "",
+      row: -1,
       type: "",
       name: "",
       province: "",
       county: "",
       district: "",
       rural: "",
-      hierarchicalCode: "",
-      nationalId: "",
+      hierarchicalCode: -1,
+      nationalId: -1,
     };
     let lastLineY = 0;
     let column = 0;
     for (let i = 0; i < items.length; i++) {
       items[i].str = normalizePersianText(items[i].str);
+      // if (items[i].str.includes("ال")) {
+      //   temp.add(items[i].str);
+      // }
+      items[i].str = manualFixText(items[i].str);
+
       if (items[i].transform[5] !== lastLineY) {
         if (row["type"] !== "") {
           rows.push(row);
           column = 0;
           row = {
-            row: "",
+            row: -1,
             type: "",
             name: "",
             province: "",
             county: "",
             district: "",
             rural: "",
-            hierarchicalCode: "",
-            nationalId: "",
+            hierarchicalCode: -1,
+            nationalId: -1,
           };
         }
         lastLineY = items[i].transform[5];
-        row.row = items[i].str;
+        row.row = items[i].str !== 'ردیف' ? Number(items[i].str) : -2;
         column++;
         continue;
       }
@@ -84,19 +89,19 @@ async function extractDataFromPDF(pdfPath: string) {
           if (column === 6) row.rural = "";
           column++;
         }
-        row.hierarchicalCode = items[i].str;
+        row.hierarchicalCode = Number(items[i].str);
         column = 8;
         continue;
       }
 
       if (column === 7) {
-        row.hierarchicalCode = items[i].str;
+        row.hierarchicalCode = Number(items[i].str);
         column++;
         continue;
       }
 
       if (column === 8) {
-        row.nationalId = items[i].str;
+        row.nationalId = Number(items[i].str);
         column++;
         continue;
       }
@@ -106,7 +111,7 @@ async function extractDataFromPDF(pdfPath: string) {
       }
     }
 
-    extractedData.push(...rows.filter((row) => row.row !== "ردیف"));
+    extractedData.push(...rows.filter((row) => row.row !== -2));
   }
 
   return extractedData;
@@ -118,5 +123,10 @@ extractDataFromPDF(pdfPath).then((data) => {
     JSON.stringify(data, null, 2),
     "utf-8",
   );
+  // fs.writeFileSync(
+  //   "./manualFixText.json",
+  //   JSON.stringify(Array.from(temp), null, 2),
+  //   "utf-8"
+  // );
   console.log("Done.");
 });
