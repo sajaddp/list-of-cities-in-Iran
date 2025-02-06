@@ -1,12 +1,14 @@
 export interface ListInterface {
+  row: number;
   type: string;
   name: string;
-  national_id: number;
-  province?: string;
-  city?: string;
-  district?: string;
+  province: string;
+  county: string;
+  district: string;
+  rural: string;
+  hierarchicalCode: number;
+  nationalId: number;
 }
-
 export interface ProvinceInterface {
   id: number;
   name: string;
@@ -52,7 +54,7 @@ export interface AllInterface {
   name: string;
   slug: string;
   province_id?: number;
-  city_id?: number;
+  county_id?: number;
   district_id?: number;
   tel_prefix?: string;
 }
