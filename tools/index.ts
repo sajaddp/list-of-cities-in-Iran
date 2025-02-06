@@ -36,7 +36,7 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
   شهرستان: (item) => {
     const provinceId = provincesIds.get(item.province as string) || 0;
     if (!provinceId) {
-      throw new Error(`Province not found for city: ${item.name}`);
+      throw new Error(`Province not found for County: ${item.name}`);
     }
     citiesIds.set(item.name + "p" + provinceId, item.national_id);
     citiesOutput.push({
@@ -160,18 +160,18 @@ generateJsonFiles(
   ruralsOutput,
 );
 
-generateCsvFiles(
-  allOutput,
-  provincesOutput,
-  citiesOutput,
-  districtsOutput,
-  ruralsOutput,
-);
+// generateCsvFiles(
+//   allOutput,
+//   provincesOutput,
+//   citiesOutput,
+//   districtsOutput,
+//   ruralsOutput,
+// );
 
-generateXlsxFiles(
-  allOutput,
-  provincesOutput,
-  citiesOutput,
-  districtsOutput,
-  ruralsOutput,
-);
+// generateXlsxFiles(
+//   allOutput,
+//   provincesOutput,
+//   citiesOutput,
+//   districtsOutput,
+//   ruralsOutput,
+// );
