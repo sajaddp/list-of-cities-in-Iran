@@ -19,7 +19,14 @@ export interface CityInterface {
   name: string;
   slug: string;
   province_id: number;
-  city_id?: number;
+  city_id: number;
+}
+
+export interface CountyInterface {
+  id: number;
+  name: string;
+  slug: string;
+  province_id: number;
 }
 
 export interface DistrictInterface {
@@ -41,6 +48,7 @@ export interface RuralInterface {
 
 export interface AllInterface {
   id: number;
+  type?: "province" | "city" | "county" | "district" | "rural";
   name: string;
   slug: string;
   province_id?: number;
