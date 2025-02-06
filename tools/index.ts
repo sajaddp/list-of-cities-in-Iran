@@ -15,14 +15,16 @@ import {
 } from "./utils";
 
 const provincesIds = new Map<string, number>();
+const provincesOutput: ProvinceInterface[] = [];
+
 const countiesIds = new Map<string, number>();
+const countiesOutput: CountyInterface[] = [];
+
 const citiesIds = new Map<string, number>();
 const districtIds = new Map<string, number>();
 const ruralIds = new Map<string, number>();
 
-const provincesOutput: ProvinceInterface[] = [];
 const citiesOutput: CityInterface[] = [];
-const countiesOutput: CountyInterface[] = [];
 const districtsOutput: DistrictInterface[] = [];
 const ruralsOutput: RuralInterface[] = [];
 
@@ -36,19 +38,19 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
       tel_prefix: getTelPrefixForProvince(item.name),
     });
   },
-  // شهرستان: (item) => {
-  //   const provinceId = provincesIds.get(item.province as string) || 0;
-  //   if (!provinceId) {
-  //     throw new Error(`Province not found for County: ${item.name}`);
-  //   }
-  //   countiesIds.set(item.name + "p" + provinceId, item.national_id);
-  //   countiesOutput.push({
-  //     id: item.national_id,
-  //     name: item.name,
-  //     slug: generateSlug(item.name),
-  //     province_id: provinceId,
-  //   });
-  // },
+  شهرستان: (item) => {
+    const provinceId = provincesIds.get(item.province as string) || 0;
+    if (!provinceId) {
+      throw new Error(`Province not found for County: ${item.name}`);
+    }
+    countiesIds.set(item.name + "p" + provinceId, item.nationalId);
+    countiesOutput.push({
+      id: item.nationalId,
+      name: item.name,
+      slug: generateSlug(item.name),
+      province_id: provinceId,
+    });
+  },
   // شهر: (item) => {
   //   const provinceId = provincesIds.get(item.province as string) || 0;
   //   if (!provinceId) {
@@ -129,44 +131,45 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
   }
 });
 
-// const allOutput: AllInterface[] = [
-//   ...provincesOutput,
-//   ...countiesOutput,
-//   ...citiesOutput,
-//   ...districtsOutput,
-//   ...ruralsOutput,
-// ].map((item: AllInterface) => {
-//   return {
-//     id: item.id,
-//     type: (() => {
-//       if ("tel_prefix" in item) return "استان";
-//       if ("province_id" in item && !("city_id" in item)) return "شهرستان";
-//       if ("city_id" in item && !("district_id" in item)) return "شهر";
-//       if ("district_id" in item && !("tel_prefix" in item)) return "بخش";
-//       if ("district_id" in item && "tel_prefix" in item) return "دهستان";
-//       return "unknown";
-//     })(),
-//     name: item.name,
-//     slug: item.slug,
-//     province_id: "province_id" in item ? item.province_id : undefined,
-//     city_id: "city_id" in item ? item.city_id : undefined,
-//     district_id: "district_id" in item ? item.district_id : undefined,
-//     tel_prefix: "tel_prefix" in item ? item.tel_prefix : undefined,
-//   };
-// });
+const allOutput: AllInterface[] = [
+  ...provincesOutput,
+  ...countiesOutput,
+  // ...citiesOutput,
+  // ...districtsOutput,
+  // ...ruralsOutput,
+].map((item: ProvinceInterface | CountyInterface) => {
+  if ("tel_prefix" in item) {
+    return {
+      id: item.id,
+      type: "province",
+      name: item.name,
+      slug: item.slug,
+      tel_prefix: item.tel_prefix,
+    };
+  }
+  return {
+    id: item.id,
+    type: "county",
+    name: item.name,
+    slug: item.slug,
+    province_id: item.province_id,
+  };
+});
 
 console.table({
   provincesOutput: provincesOutput.length,
+  countiesOutput: countiesOutput.length,
   citiesOutput: citiesOutput.length,
   districtsOutput: districtsOutput.length,
   ruralsOutput: ruralsOutput.length,
-  // allOutput: allOutput.length,
+  allOutput: allOutput.length,
   listLength: list.length,
 });
 
 generateJsonFiles(
-  // allOutput,
+  allOutput,
   provincesOutput,
+  countiesOutput,
   // citiesOutput,
   // districtsOutput,
   // ruralsOutput,
