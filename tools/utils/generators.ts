@@ -5,6 +5,7 @@ import { createObjectCsvWriter } from "csv-writer";
 import {
   AllInterface,
   CityInterface,
+  CountyInterface,
   DistrictInterface,
   ProvinceInterface,
   RuralInterface,
@@ -20,8 +21,9 @@ export function generateSlug(item: string): string {
 }
 
 export function generateJsonFiles(
-  // allOutput: AllInterface[],
+  allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
+  countiesOutput: CountyInterface[],
   // citiesOutput: CityInterface[],
   // districtsOutput: DistrictInterface[],
   // ruralsOutput: RuralInterface[],
@@ -30,10 +32,11 @@ export function generateJsonFiles(
 
   const outputs = [
     { name: "provinces", data: provincesOutput },
+    { name: "counties", data: countiesOutput },
     // { name: "cities", data: citiesOutput },
     // { name: "districts", data: districtsOutput },
     // { name: "rurals", data: ruralsOutput },
-    // { name: "all", data: allOutput },
+    { name: "all", data: allOutput },
   ];
 
   outputs.forEach(({ name, data }) => {
