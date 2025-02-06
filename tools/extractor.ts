@@ -2,7 +2,7 @@ import * as fs from "fs";
 import xlsx from "xlsx";
 import * as pdfjsLib from "pdfjs-dist";
 import { TextContent, TextItem } from "pdfjs-dist/types/src/display/api";
-import { manualFixText, normalizePersianText } from "./utils";
+import { ListInterface, manualFixText, normalizePersianText } from "./utils";
 import { createObjectCsvWriter } from "csv-writer";
 
 const pdfPath = "../offical/list.pdf";
@@ -18,19 +18,9 @@ async function extractDataFromPDF(pdfPath: string) {
       .filter((item): item is TextItem => "str" in item)
       .filter((item) => !item.hasEOL)
       .filter((item) => !item.str.includes("Page"));
-    interface Row {
-      row: number;
-      type: string;
-      name: string;
-      province: string;
-      county: string;
-      district: string;
-      rural: string;
-      hierarchicalCode: number;
-      nationalId: number;
-    }
-    let rows: Row[] = [];
-    let row: Row = {
+
+    let rows: ListInterface[] = [];
+    let row: ListInterface = {
       row: -1,
       type: "",
       name: "",
@@ -68,6 +58,7 @@ async function extractDataFromPDF(pdfPath: string) {
         column++;
         continue;
       }
+
       if (column < 7 && items[i].dir === "rtl") {
         if (column === 1) row.type = items[i].str;
         if (column === 2) row.name = items[i].str;
@@ -103,11 +94,8 @@ async function extractDataFromPDF(pdfPath: string) {
         column++;
         continue;
       }
-
-      if (i === items.length - 1) {
-        rows.push(row);
-      }
     }
+    rows.push(row);
 
     extractedData.push(...rows.filter((row) => row.row !== -2));
   }
