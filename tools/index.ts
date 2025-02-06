@@ -175,18 +175,20 @@ generateJsonFiles(
   // ruralsOutput,
 );
 
-// generateCsvFiles(
-//   allOutput,
-//   provincesOutput,
-//   citiesOutput,
-//   districtsOutput,
-//   ruralsOutput,
-// );
+generateCsvFiles(
+  allOutput,
+  provincesOutput,
+  countiesOutput,
+  // citiesOutput,
+  // districtsOutput,
+  // ruralsOutput,
+);
 
-// generateXlsxFiles(
-//   allOutput,
-//   provincesOutput,
-//   citiesOutput,
-//   districtsOutput,
-//   ruralsOutput,
-// );
+generateXlsxFiles(
+  allOutput,
+  provincesOutput,
+  countiesOutput,
+  // citiesOutput,
+  // districtsOutput,
+  // ruralsOutput,
+);
