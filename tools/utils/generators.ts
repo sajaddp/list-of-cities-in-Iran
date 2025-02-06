@@ -48,17 +48,19 @@ export function generateJsonFiles(
 export async function generateCsvFiles(
   allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
-  citiesOutput: CityInterface[],
-  districtsOutput: DistrictInterface[],
-  ruralsOutput: RuralInterface[],
+  countiesOutput: CountyInterface[],
+  // citiesOutput: CityInterface[],
+  // districtsOutput: DistrictInterface[],
+  // ruralsOutput: RuralInterface[],
 ) {
   fs.mkdirSync(path.join(__dirname, "../../csv"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: provincesOutput },
-    { name: "cities", data: citiesOutput },
-    { name: "districts", data: districtsOutput },
-    { name: "rurals", data: ruralsOutput },
+    { name: "counties", data: countiesOutput },
+    // { name: "cities", data: citiesOutput },
+    // { name: "districts", data: districtsOutput },
+    // { name: "rurals", data: ruralsOutput },
     { name: "all", data: allOutput },
   ];
 
@@ -74,17 +76,19 @@ export async function generateCsvFiles(
 export async function generateXlsxFiles(
   allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
-  citiesOutput: CityInterface[],
-  districtsOutput: DistrictInterface[],
-  ruralsOutput: RuralInterface[],
+  countiesOutput: CountyInterface[],
+  // citiesOutput: CityInterface[],
+  // districtsOutput: DistrictInterface[],
+  // ruralsOutput: RuralInterface[],
 ) {
   fs.mkdirSync(path.join(__dirname, "../../xlsx"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: provincesOutput },
-    { name: "cities", data: citiesOutput },
-    { name: "districts", data: districtsOutput },
-    { name: "rurals", data: ruralsOutput },
+    { name: "counties", data: countiesOutput },
+    // { name: "cities", data: citiesOutput },
+    // { name: "districts", data: districtsOutput },
+    // { name: "rurals", data: ruralsOutput },
     { name: "all", data: allOutput },
   ];
 
