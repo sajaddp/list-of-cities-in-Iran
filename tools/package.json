@@ -10,15 +10,15 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "@types/node": "^22.10.7",
+    "@eslint/js": "^9.19.0",
+    "@types/node": "^22.13.1",
     "csv-writer": "^1.6.0",
-    "eslint": "^9.18.0",
+    "eslint": "^9.19.0",
+    "pdfjs-dist": "^4.10.38",
     "prettier": "^3.4.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.20.0",
-    "xlsx": "^0.18.5",
-    "pdfjs-dist": "^4.10.38"
+    "typescript-eslint": "^8.23.0",
+    "xlsx": "^0.18.5"
   }
 }
