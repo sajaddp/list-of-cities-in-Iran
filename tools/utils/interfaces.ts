@@ -50,7 +50,7 @@ export interface RuralInterface {
 
 export interface AllInterface {
   id: number;
-  type?: "province" | "city" | "county" | "district" | "rural";
+  type: "province" | "city" | "county" | "district" | "rural";
   name: string;
   slug: string;
   province_id?: number;
