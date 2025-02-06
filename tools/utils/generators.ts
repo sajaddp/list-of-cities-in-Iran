@@ -20,20 +20,20 @@ export function generateSlug(item: string): string {
 }
 
 export function generateJsonFiles(
-  allOutput: AllInterface[],
+  // allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
-  citiesOutput: CityInterface[],
-  districtsOutput: DistrictInterface[],
-  ruralsOutput: RuralInterface[],
+  // citiesOutput: CityInterface[],
+  // districtsOutput: DistrictInterface[],
+  // ruralsOutput: RuralInterface[],
 ) {
   fs.mkdirSync(path.join(__dirname, "../../json"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: provincesOutput },
-    { name: "cities", data: citiesOutput },
-    { name: "districts", data: districtsOutput },
-    { name: "rurals", data: ruralsOutput },
-    { name: "all", data: allOutput },
+    // { name: "cities", data: citiesOutput },
+    // { name: "districts", data: districtsOutput },
+    // { name: "rurals", data: ruralsOutput },
+    // { name: "all", data: allOutput },
   ];
 
   outputs.forEach(({ name, data }) => {
