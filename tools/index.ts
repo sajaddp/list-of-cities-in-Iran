@@ -1,7 +1,9 @@
+import { count } from "console";
 import list from "../offical/list.json";
 import {
   AllInterface,
   CityInterface,
+  CountyInterface,
   DistrictInterface,
   generateCsvFiles,
   generateJsonFiles,
@@ -14,12 +16,14 @@ import {
 } from "./utils";
 
 const provincesIds = new Map<string, number>();
+const countiesIds = new Map<string, number>();
 const citiesIds = new Map<string, number>();
 const districtIds = new Map<string, number>();
 const ruralIds = new Map<string, number>();
 
 const provincesOutput: ProvinceInterface[] = [];
 const citiesOutput: CityInterface[] = [];
+const countiesOutput: CountyInterface[] = [];
 const districtsOutput: DistrictInterface[] = [];
 const ruralsOutput: RuralInterface[] = [];
 
@@ -38,8 +42,8 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
     if (!provinceId) {
       throw new Error(`Province not found for County: ${item.name}`);
     }
-    citiesIds.set(item.name + "p" + provinceId, item.national_id);
-    citiesOutput.push({
+    countiesIds.set(item.name + "p" + provinceId, item.national_id);
+    countiesOutput.push({
       id: item.national_id,
       name: item.name,
       slug: generateSlug(item.name),
@@ -128,12 +132,21 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
 
 const allOutput: AllInterface[] = [
   ...provincesOutput,
+  ...countiesOutput,
   ...citiesOutput,
   ...districtsOutput,
   ...ruralsOutput,
 ].map((item: AllInterface) => {
   return {
     id: item.id,
+    type: (() => {
+      if ("tel_prefix" in item) return "استان";
+      if ("province_id" in item && !("city_id" in item)) return "شهرستان";
+      if ("city_id" in item && !("district_id" in item)) return "شهر";
+      if ("district_id" in item && !("tel_prefix" in item)) return "بخش";
+      if ("district_id" in item && "tel_prefix" in item) return "دهستان";
+      return "unknown";
+    })(),
     name: item.name,
     slug: item.slug,
     province_id: "province_id" in item ? item.province_id : undefined,
