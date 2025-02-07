@@ -24,7 +24,7 @@ export function generateJsonFiles(
   allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
   countiesOutput: CountyInterface[],
-  // citiesOutput: CityInterface[],
+  citiesOutput: CityInterface[],
   // districtsOutput: DistrictInterface[],
   // ruralsOutput: RuralInterface[],
 ) {
@@ -33,7 +33,7 @@ export function generateJsonFiles(
   const outputs = [
     { name: "provinces", data: provincesOutput },
     { name: "counties", data: countiesOutput },
-    // { name: "cities", data: citiesOutput },
+    { name: "cities", data: citiesOutput },
     // { name: "districts", data: districtsOutput },
     // { name: "rurals", data: ruralsOutput },
     { name: "all", data: allOutput },
@@ -49,7 +49,7 @@ export async function generateCsvFiles(
   allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
   countiesOutput: CountyInterface[],
-  // citiesOutput: CityInterface[],
+  citiesOutput: CityInterface[],
   // districtsOutput: DistrictInterface[],
   // ruralsOutput: RuralInterface[],
 ) {
@@ -58,7 +58,7 @@ export async function generateCsvFiles(
   const outputs = [
     { name: "provinces", data: provincesOutput },
     { name: "counties", data: countiesOutput },
-    // { name: "cities", data: citiesOutput },
+    { name: "cities", data: citiesOutput },
     // { name: "districts", data: districtsOutput },
     // { name: "rurals", data: ruralsOutput },
     { name: "all", data: allOutput },
@@ -77,7 +77,7 @@ export async function generateXlsxFiles(
   allOutput: AllInterface[],
   provincesOutput: ProvinceInterface[],
   countiesOutput: CountyInterface[],
-  // citiesOutput: CityInterface[],
+  citiesOutput: CityInterface[],
   // districtsOutput: DistrictInterface[],
   // ruralsOutput: RuralInterface[],
 ) {
@@ -86,7 +86,7 @@ export async function generateXlsxFiles(
   const outputs = [
     { name: "provinces", data: provincesOutput },
     { name: "counties", data: countiesOutput },
-    // { name: "cities", data: citiesOutput },
+    { name: "cities", data: citiesOutput },
     // { name: "districts", data: districtsOutput },
     // { name: "rurals", data: ruralsOutput },
     { name: "all", data: allOutput },
