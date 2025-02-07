@@ -25,8 +25,8 @@ export function generateJsonFiles(
   provincesOutput: ProvinceInterface[],
   countiesOutput: CountyInterface[],
   citiesOutput: CityInterface[],
-  // districtsOutput: DistrictInterface[],
-  // ruralsOutput: RuralInterface[],
+  districtsOutput: DistrictInterface[],
+  ruralsOutput: RuralInterface[],
 ) {
   fs.mkdirSync(path.join(__dirname, "../../json"), { recursive: true });
 
@@ -34,8 +34,8 @@ export function generateJsonFiles(
     { name: "provinces", data: provincesOutput },
     { name: "counties", data: countiesOutput },
     { name: "cities", data: citiesOutput },
-    // { name: "districts", data: districtsOutput },
-    // { name: "rurals", data: ruralsOutput },
+    { name: "districts", data: districtsOutput },
+    { name: "rurals", data: ruralsOutput },
     { name: "all", data: allOutput },
   ];
 
@@ -50,8 +50,8 @@ export async function generateCsvFiles(
   provincesOutput: ProvinceInterface[],
   countiesOutput: CountyInterface[],
   citiesOutput: CityInterface[],
-  // districtsOutput: DistrictInterface[],
-  // ruralsOutput: RuralInterface[],
+  districtsOutput: DistrictInterface[],
+  ruralsOutput: RuralInterface[],
 ) {
   fs.mkdirSync(path.join(__dirname, "../../csv"), { recursive: true });
 
@@ -59,8 +59,8 @@ export async function generateCsvFiles(
     { name: "provinces", data: provincesOutput },
     { name: "counties", data: countiesOutput },
     { name: "cities", data: citiesOutput },
-    // { name: "districts", data: districtsOutput },
-    // { name: "rurals", data: ruralsOutput },
+    { name: "districts", data: districtsOutput },
+    { name: "rurals", data: ruralsOutput },
     { name: "all", data: allOutput },
   ];
 
@@ -78,8 +78,8 @@ export async function generateXlsxFiles(
   provincesOutput: ProvinceInterface[],
   countiesOutput: CountyInterface[],
   citiesOutput: CityInterface[],
-  // districtsOutput: DistrictInterface[],
-  // ruralsOutput: RuralInterface[],
+  districtsOutput: DistrictInterface[],
+  ruralsOutput: RuralInterface[],
 ) {
   fs.mkdirSync(path.join(__dirname, "../../xlsx"), { recursive: true });
 
@@ -87,8 +87,8 @@ export async function generateXlsxFiles(
     { name: "provinces", data: provincesOutput },
     { name: "counties", data: countiesOutput },
     { name: "cities", data: citiesOutput },
-    // { name: "districts", data: districtsOutput },
-    // { name: "rurals", data: ruralsOutput },
+    { name: "districts", data: districtsOutput },
+    { name: "rurals", data: ruralsOutput },
     { name: "all", data: allOutput },
   ];
 
