@@ -158,8 +158,8 @@ generateJsonFiles(
   provincesOutput,
   countiesOutput,
   citiesOutput,
-  // districtsOutput,
-  // ruralsOutput,
+  districtsOutput,
+  ruralsOutput,
 );
 
 generateCsvFiles(
@@ -167,8 +167,8 @@ generateCsvFiles(
   provincesOutput,
   countiesOutput,
   citiesOutput,
-  // districtsOutput,
-  // ruralsOutput,
+  districtsOutput,
+  ruralsOutput,
 );
 
 generateXlsxFiles(
@@ -176,6 +176,6 @@ generateXlsxFiles(
   provincesOutput,
   countiesOutput,
   citiesOutput,
-  // districtsOutput,
-  // ruralsOutput,
+  districtsOutput,
+  ruralsOutput,
 );
