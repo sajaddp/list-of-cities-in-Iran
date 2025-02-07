@@ -22343,13 +22343,13 @@
   {
     "row": 2032,
     "type": "دهستان",
-    "name": "امامزاده علی",
-    "province": "",
-    "county": "",
-    "district": "",
+    "name": "امامزاده علی(ع)",
+    "province": "فارس",
+    "county": "زرقان",
+    "district": "رحمت آباد",
     "rural": "",
-    "hierarchicalCode": null,
-    "nationalId": null
+    "hierarchicalCode": 15441111,
+    "nationalId": 1000948115
   },
   {
     "row": 2033,
