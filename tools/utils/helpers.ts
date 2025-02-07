@@ -60,7 +60,6 @@ export function manualFixText(text: string): string {
     "فوالدشهر",
     "فالورجان",
     "الی بید",
-    "طالخونچه",
     "باالوالیت",
     "پائین والیت",
     "باالرخ",
@@ -198,6 +197,7 @@ export function manualFixText(text: string): string {
     "سراب باال",
     "میالس",
     "بازفت باال",
+    "مالسرا",
     "فالرد",
     "مال خلیفه",
     "زنجانرود باال",
@@ -291,7 +291,6 @@ export function manualFixText(text: string): string {
     "گالیکش",
     "قراوالن",
     "القورات",
-    "سیدال",
     "النو",
     "آالداغ",
     "میالنو",
@@ -309,8 +308,12 @@ export function manualFixText(text: string): string {
   wrongWords.forEach((wrongWord) => {
     if (wrongWord === text) {
       text = text.replace(wrongWord, wrongWord.replace(/ال/g, "لا"));
+      if (wrongWord === "باال طالقان") {
+        text = "بالا طالقان"
+      }
     }
   });
+  text = text.replace(/شملای/g, "شمالی");
 
   return text;
 }
