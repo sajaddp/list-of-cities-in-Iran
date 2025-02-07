@@ -21,22 +21,25 @@ const countiesIds = new Map<string, number>();
 const countiesOutput: CountyInterface[] = [];
 
 const citiesIds = new Map<string, number>();
-const districtIds = new Map<string, number>();
-const ruralIds = new Map<string, number>();
-
 const citiesOutput: CityInterface[] = [];
+
+const districtIds = new Map<string, number>();
 const districtsOutput: DistrictInterface[] = [];
+
 const ruralsOutput: RuralInterface[] = [];
+const allOutput: AllInterface[] = [];
 
 const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
   استان: (item) => {
     provincesIds.set(item.name, item.nationalId);
-    provincesOutput.push({
+    const result = {
       id: item.nationalId,
       name: item.name,
       slug: generateSlug(item.name),
       tel_prefix: getTelPrefixForProvince(item.name),
-    });
+    };
+    provincesOutput.push(result);
+    allOutput.push({ type: "province", ...result });
   },
   شهرستان: (item) => {
     const provinceId = provincesIds.get(item.province as string) || 0;
@@ -44,84 +47,93 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
       throw new Error(`Province not found for County: ${item.name}`);
     }
     countiesIds.set(item.name + "p" + provinceId, item.nationalId);
-    countiesOutput.push({
+    const result = {
       id: item.nationalId,
       name: item.name,
       slug: generateSlug(item.name),
       province_id: provinceId,
-    });
+    };
+    countiesOutput.push(result);
+    allOutput.push({ type: "county", ...result });
   },
-  // شهر: (item) => {
-  //   const provinceId = provincesIds.get(item.province as string) || 0;
-  //   if (!provinceId) {
-  //     throw new Error(`Province not found for city: ${item.name}`);
-  //   }
-  //   const cityId = citiesIds.get((item.city + "p" + provinceId) as string) || 0;
-  //   if (!cityId) {
-  //     throw new Error(`City not found for City: ${item.name}`);
-  //   }
-  //   citiesIds.set(
-  //     item.name + "p" + provinceId + "c" + cityId,
-  //     item.national_id,
-  //   );
-  //   citiesOutput.push({
-  //     id: item.national_id,
-  //     name: item.name,
-  //     slug: generateSlug(item.name),
-  //     city_id: cityId,
-  //     province_id: provinceId,
-  //   });
-  // },
-  // بخش: (item) => {
-  //   const provinceId = provincesIds.get(item.province as string) || 0;
-  //   if (!provinceId) {
-  //     throw new Error(`Province not found for district: ${item.name}`);
-  //   }
-  //   const cityId = citiesIds.get((item.city + "p" + provinceId) as string) || 0;
-  //   if (!cityId) {
-  //     throw new Error(`City not found for district: ${item.name}`);
-  //   }
-  //   districtIds.set(
-  //     item.name + "p" + provinceId + "c" + cityId,
-  //     item.national_id,
-  //   );
-  //   districtsOutput.push({
-  //     id: item.national_id,
-  //     name: item.name,
-  //     slug: generateSlug(item.name),
-  //     province_id: provinceId,
-  //     city_id: cityId,
-  //   });
-  // },
-  // دهستان: (item) => {
-  //   const provinceId = provincesIds.get(item.province as string) || 0;
-  //   if (!provinceId) {
-  //     throw new Error(`Province not found for rural: ${item.name}`);
-  //   }
-  //   const cityId = citiesIds.get((item.city + "p" + provinceId) as string) || 0;
-  //   if (!cityId) {
-  //     throw new Error(`City not found for rural: ${item.name}`);
-  //   }
-  //   const districtId =
-  //     districtIds.get(
-  //       (item.district + "p" + provinceId + "c" + cityId) as string,
-  //     ) || 0;
-  //   if (!districtId) {
-  //     throw new Error(`District not found for rural: ${item.name}`);
-  //   }
-  //   ruralIds.set(
-  //     item.name + "p" + provinceId + "c" + cityId + "d" + districtId,
-  //     item.national_id,
-  //   );
-  //   ruralsOutput.push({
-  //     id: item.national_id,
-  //     name: item.name,
-  //     slug: generateSlug(item.name),
-  //     province_id: provinceId,
-  //     city_id: cityId,
-  //     district_id: districtId,
-  //   });
-  // },
+  شهر: (item) => {
+    const provinceId = provincesIds.get(item.province as string) || 0;
+    if (!provinceId) {
+      throw new Error(`Province not found for City: ${item.name}`);
+    }
+    const countyId =
+      countiesIds.get((item.county + "p" + provinceId) as string) || 0;
+    if (!countyId) {
+      throw new Error(`County not found for City: ${item.name}`);
+    }
+    citiesIds.set(
+      item.name + "p" + provinceId + "c" + countyId,
+      item.nationalId,
+    );
+    const result = {
+      id: item.nationalId,
+      name: item.name,
+      slug: generateSlug(item.name),
+      county_id: countyId,
+      province_id: provinceId,
+    };
+    citiesOutput.push(result);
+    allOutput.push({ type: "city", ...result });
+  },
+  بخش: (item) => {
+    const provinceId = provincesIds.get(item.province as string) || 0;
+    if (!provinceId) {
+      throw new Error(`Province not found for District: ${item.name}`);
+    }
+    const countyId =
+      countiesIds.get((item.county + "p" + provinceId) as string) || 0;
+    if (!countyId) {
+      throw new Error(`County not found for District: ${item.name}`);
+    }
+    districtIds.set(
+      item.name + "p" + provinceId + "c" + countyId,
+      item.nationalId,
+    );
+    const result = {
+      id: item.nationalId,
+      name: item.name,
+      slug: generateSlug(item.name),
+      province_id: provinceId,
+      county_id: countyId,
+    };
+    districtsOutput.push(result);
+    allOutput.push({ type: "district", ...result });
+  },
+  دهستان: (item) => {
+    const provinceId = provincesIds.get(item.province as string) || 0;
+    if (!provinceId) {
+      console.log(item);
+
+      throw new Error(`Province not found for Rural: ${item.name}`);
+    }
+    const countyId =
+      countiesIds.get((item.county + "p" + provinceId) as string) || 0;
+    if (!countyId) {
+      throw new Error(`County not found for Rural: ${item.name}`);
+    }
+    const districtId =
+      districtIds.get(
+        (item.district + "p" + provinceId + "c" + countyId) as string,
+      ) || 0;
+    if (!districtId) {
+      throw new Error(`District not found for Rural: ${item.name}`);
+    }
+    const result = {
+      id: item.nationalId,
+      name: item.name,
+      slug: generateSlug(item.name),
+      province_id: provinceId,
+      county_id: countyId,
+      district_id: districtId,
+    };
+    ruralsOutput.push(result);
+    allOutput.push({ type: "rural", ...result });
+  },
 };
 
 (list as ListInterface[]).forEach((item: ListInterface) => {
@@ -129,31 +141,6 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
   if (handler) {
     handler(item);
   }
-});
-
-const allOutput: AllInterface[] = [
-  ...provincesOutput,
-  ...countiesOutput,
-  // ...citiesOutput,
-  // ...districtsOutput,
-  // ...ruralsOutput,
-].map((item: ProvinceInterface | CountyInterface) => {
-  if ("tel_prefix" in item) {
-    return {
-      id: item.id,
-      type: "province",
-      name: item.name,
-      slug: item.slug,
-      tel_prefix: item.tel_prefix,
-    };
-  }
-  return {
-    id: item.id,
-    type: "county",
-    name: item.name,
-    slug: item.slug,
-    province_id: item.province_id,
-  };
 });
 
 console.table({
@@ -170,7 +157,7 @@ generateJsonFiles(
   allOutput,
   provincesOutput,
   countiesOutput,
-  // citiesOutput,
+  citiesOutput,
   // districtsOutput,
   // ruralsOutput,
 );
@@ -179,7 +166,7 @@ generateCsvFiles(
   allOutput,
   provincesOutput,
   countiesOutput,
-  // citiesOutput,
+  citiesOutput,
   // districtsOutput,
   // ruralsOutput,
 );
@@ -188,7 +175,7 @@ generateXlsxFiles(
   allOutput,
   provincesOutput,
   countiesOutput,
-  // citiesOutput,
+  citiesOutput,
   // districtsOutput,
   // ruralsOutput,
 );
