@@ -16,19 +16,18 @@ export interface ProvinceInterface {
   tel_prefix: string;
 }
 
-export interface CityInterface {
-  id: number;
-  name: string;
-  slug: string;
-  province_id: number;
-  city_id: number;
-}
-
 export interface CountyInterface {
   id: number;
   name: string;
   slug: string;
   province_id: number;
+}
+export interface CityInterface {
+  id: number;
+  name: string;
+  slug: string;
+  province_id: number;
+  county_id: number;
 }
 
 export interface DistrictInterface {
@@ -36,7 +35,7 @@ export interface DistrictInterface {
   name: string;
   slug: string;
   province_id: number;
-  city_id: number;
+  county_id: number;
 }
 
 export interface RuralInterface {
@@ -44,13 +43,13 @@ export interface RuralInterface {
   name: string;
   slug: string;
   province_id: number;
-  city_id: number;
+  county_id: number;
   district_id: number;
 }
 
 export interface AllInterface {
   id: number;
-  type: "province" | "city" | "county" | "district" | "rural";
+  type: "province" | "county" | "city" | "district" | "rural";
   name: string;
   slug: string;
   province_id?: number;
