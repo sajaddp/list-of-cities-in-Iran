@@ -33,12 +33,21 @@ async function extractDataFromPDF(pdfPath: string) {
     };
     let lastLineY = 0;
     let column = 0;
+    let tinyFix = false;
     for (let i = 0; i < items.length; i++) {
+      if (["(", "ع", ")"].includes(items[i].str)) {
+        tinyFix = true;
+        continue;
+      }
       items[i].str = normalizePersianText(items[i].str);
       items[i].str = manualFixText(items[i].str);
 
       if (items[i].transform[5] !== lastLineY) {
         if (row["type"] !== "") {
+          if (tinyFix) {
+            tinyFix = false;
+            row.name += "(ع)";
+          }
           rows.push(row);
           column = 0;
           row = {
