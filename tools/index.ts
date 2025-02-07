@@ -12,6 +12,7 @@ import {
   ListInterface,
   ProvinceInterface,
   RuralInterface,
+  sortAllInterfaceArray,
 } from "./utils";
 
 const provincesIds = new Map<string, number>();
@@ -27,7 +28,7 @@ const districtIds = new Map<string, number>();
 const districtsOutput: DistrictInterface[] = [];
 
 const ruralsOutput: RuralInterface[] = [];
-const allOutput: AllInterface[] = [];
+let allOutput: AllInterface[] = [];
 
 const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
   استان: (item) => {
@@ -142,6 +143,8 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
     handler(item);
   }
 });
+
+allOutput = sortAllInterfaceArray(allOutput);
 
 console.table({
   provincesOutput: provincesOutput.length,
