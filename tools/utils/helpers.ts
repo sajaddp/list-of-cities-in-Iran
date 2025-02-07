@@ -1,3 +1,5 @@
+import { AllInterface } from ".";
+
 export function normalizePersianText(text: string): string {
   if (!text) return ""; // بررسی مقدار خالی
 
@@ -141,7 +143,6 @@ export function manualFixText(text: string): string {
     "کالرستاق شرقی",
     "کالرستاق غربی",
     "الریم",
-    "امامزاده عبدهللا شمالی",
     "کالر آباد غربی",
     "کالر",
     "کالر شرقی",
@@ -152,7 +153,6 @@ export function manualFixText(text: string): string {
     "کالردشت",
     "کالردشت شرقی",
     "کالردشت غربی",
-    "مشهد الکوبه",
     "محالت",
     "صالحان",
     "مالمیر",
@@ -304,6 +304,7 @@ export function manualFixText(text: string): string {
     "باال طالقان",
     "اغالن تپه",
   ];
+  text = text.replace(/عبدهللا/g, "عبدالله");
   if (!wrongWords.includes(text)) return text;
   wrongWords.forEach((wrongWord) => {
     if (wrongWord === text) {
@@ -313,3 +314,15 @@ export function manualFixText(text: string): string {
 
   return text;
 }
+
+export const sortAllInterfaceArray = (data: AllInterface[]): AllInterface[] => {
+  const typeOrder: Record<AllInterface["type"], number> = {
+    province: 1,
+    county: 2,
+    city: 3,
+    district: 4,
+    rural: 5,
+  };
+
+  return data.sort((a, b) => typeOrder[a.type] - typeOrder[b.type]);
+};
