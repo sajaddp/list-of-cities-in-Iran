@@ -1,13 +1,16 @@
 export interface ListInterface {
-  row: number;
-  type: string;
-  name: string;
-  province: string;
-  county: string;
-  district: string;
-  rural: string;
-  hierarchicalCode: number;
-  nationalId: number;
+  "کد استان": string;
+  "نام استان": string;
+  "کد شهرستان"?: string;
+  "نام شهرستان"?: string;
+  "کد بخش"?: string;
+  "نام بخش"?: string;
+  "کد دهستان/ شهر"?: string;
+  "نام دهستان/ شهر"?: string;
+  CODEREC?: string;
+  نام?: string;
+  FARICODE?: string;
+  DIAG?: string;
 }
 export interface ProvinceInterface {
   id: number;
