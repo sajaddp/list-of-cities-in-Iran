@@ -8,7 +8,7 @@ export interface ListInterface {
   "کد دهستان/ شهر"?: string;
   "نام دهستان/ شهر"?: string;
   CODEREC?: string;
-  نام?: string;
+  نام: string;
   FARICODE?: string;
   DIAG?: string;
 }
