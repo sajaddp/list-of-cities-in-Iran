@@ -7,6 +7,7 @@ import {
   CityInterface,
   CountyInterface,
   DistrictInterface,
+  ProcessedDataInterface,
   ProvinceInterface,
   RuralInterface,
 } from ".";
@@ -20,14 +21,12 @@ export function generateSlug(item: string): string {
     .replace(/[^\w\-آ-ی\u0600-\u06FF]+/g, "");
 }
 
-export function generateJsonFiles(processedData: {
-  provinces: { [key: number]: ProvinceInterface };
-}) {
+export function generateJsonFiles(processedData: ProcessedDataInterface) {
   fs.mkdirSync(path.join(__dirname, "../../json"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
-    // { name: "counties", data: countiesOutput },
+    { name: "counties", data: processedData.counties },
     // { name: "cities", data: citiesOutput },
     // { name: "districts", data: districtsOutput },
     // { name: "rurals", data: ruralsOutput },
@@ -40,14 +39,12 @@ export function generateJsonFiles(processedData: {
   });
 }
 
-export async function generateCsvFiles(processedData: {
-  provinces: { [key: number]: ProvinceInterface };
-}) {
+export async function generateCsvFiles(processedData: ProcessedDataInterface) {
   fs.mkdirSync(path.join(__dirname, "../../csv"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
-    // { name: "counties", data: countiesOutput },
+    { name: "counties", data: processedData.counties },
     // { name: "cities", data: citiesOutput },
     // { name: "districts", data: districtsOutput },
     // { name: "rurals", data: ruralsOutput },
@@ -63,14 +60,12 @@ export async function generateCsvFiles(processedData: {
   });
 }
 
-export async function generateXlsxFiles(processedData: {
-  provinces: { [key: number]: ProvinceInterface };
-}) {
+export async function generateXlsxFiles(processedData: ProcessedDataInterface) {
   fs.mkdirSync(path.join(__dirname, "../../xlsx"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
-    // { name: "counties", data: countiesOutput },
+    { name: "counties", data: processedData.counties },
     // { name: "cities", data: citiesOutput },
     // { name: "districts", data: districtsOutput },
     // { name: "rurals", data: ruralsOutput },
