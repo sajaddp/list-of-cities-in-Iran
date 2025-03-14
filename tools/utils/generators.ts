@@ -52,9 +52,11 @@ export async function generateCsvFiles(processedData: ProcessedDataInterface) {
   ];
 
   outputs.forEach(async ({ name, data }) => {
+    const header = data[Number(Object.keys(data)[0])];
+
     const csvWriter = createObjectCsvWriter({
       path: path.join(__dirname, `../../csv/${name}.csv`),
-      header: Object.keys(data[0]).map((key) => ({ id: key, title: key })),
+      header: Object.keys(header).map((key) => ({ id: key, title: key })),
     });
     await csvWriter.writeRecords(Object.values(data));
   });
