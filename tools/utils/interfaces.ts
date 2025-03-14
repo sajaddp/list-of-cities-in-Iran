@@ -60,3 +60,8 @@ export interface AllInterface {
   district_id?: number;
   tel_prefix?: string;
 }
+
+export interface ProcessedDataInterface {
+  provinces: { [key: number]: ProvinceInterface };
+  counties: { [key: number]: CountyInterface };
+}
