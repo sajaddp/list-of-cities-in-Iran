@@ -20,23 +20,18 @@ export function generateSlug(item: string): string {
     .replace(/[^\w\-آ-ی\u0600-\u06FF]+/g, "");
 }
 
-export function generateJsonFiles(
-  allOutput: AllInterface[],
-  provincesOutput: ProvinceInterface[],
-  countiesOutput: CountyInterface[],
-  citiesOutput: CityInterface[],
-  districtsOutput: DistrictInterface[],
-  ruralsOutput: RuralInterface[],
-) {
+export function generateJsonFiles(processedData: {
+  provinces: { [key: number]: ProvinceInterface };
+}) {
   fs.mkdirSync(path.join(__dirname, "../../json"), { recursive: true });
 
   const outputs = [
-    { name: "provinces", data: provincesOutput },
-    { name: "counties", data: countiesOutput },
-    { name: "cities", data: citiesOutput },
-    { name: "districts", data: districtsOutput },
-    { name: "rurals", data: ruralsOutput },
-    { name: "all", data: allOutput },
+    { name: "provinces", data: processedData.provinces },
+    // { name: "counties", data: countiesOutput },
+    // { name: "cities", data: citiesOutput },
+    // { name: "districts", data: districtsOutput },
+    // { name: "rurals", data: ruralsOutput },
+    // { name: "all", data: allOutput },
   ];
 
   outputs.forEach(({ name, data }) => {
@@ -45,23 +40,18 @@ export function generateJsonFiles(
   });
 }
 
-export async function generateCsvFiles(
-  allOutput: AllInterface[],
-  provincesOutput: ProvinceInterface[],
-  countiesOutput: CountyInterface[],
-  citiesOutput: CityInterface[],
-  districtsOutput: DistrictInterface[],
-  ruralsOutput: RuralInterface[],
-) {
+export async function generateCsvFiles(processedData: {
+  provinces: { [key: number]: ProvinceInterface };
+}) {
   fs.mkdirSync(path.join(__dirname, "../../csv"), { recursive: true });
 
   const outputs = [
-    { name: "provinces", data: provincesOutput },
-    { name: "counties", data: countiesOutput },
-    { name: "cities", data: citiesOutput },
-    { name: "districts", data: districtsOutput },
-    { name: "rurals", data: ruralsOutput },
-    { name: "all", data: allOutput },
+    { name: "provinces", data: processedData.provinces },
+    // { name: "counties", data: countiesOutput },
+    // { name: "cities", data: citiesOutput },
+    // { name: "districts", data: districtsOutput },
+    // { name: "rurals", data: ruralsOutput },
+    // { name: "all", data: allOutput },
   ];
 
   outputs.forEach(async ({ name, data }) => {
@@ -69,32 +59,27 @@ export async function generateCsvFiles(
       path: path.join(__dirname, `../../csv/${name}.csv`),
       header: Object.keys(data[0]).map((key) => ({ id: key, title: key })),
     });
-    await csvWriter.writeRecords(data);
+    await csvWriter.writeRecords(Object.values(data));
   });
 }
 
-export async function generateXlsxFiles(
-  allOutput: AllInterface[],
-  provincesOutput: ProvinceInterface[],
-  countiesOutput: CountyInterface[],
-  citiesOutput: CityInterface[],
-  districtsOutput: DistrictInterface[],
-  ruralsOutput: RuralInterface[],
-) {
+export async function generateXlsxFiles(processedData: {
+  provinces: { [key: number]: ProvinceInterface };
+}) {
   fs.mkdirSync(path.join(__dirname, "../../xlsx"), { recursive: true });
 
   const outputs = [
-    { name: "provinces", data: provincesOutput },
-    { name: "counties", data: countiesOutput },
-    { name: "cities", data: citiesOutput },
-    { name: "districts", data: districtsOutput },
-    { name: "rurals", data: ruralsOutput },
-    { name: "all", data: allOutput },
+    { name: "provinces", data: processedData.provinces },
+    // { name: "counties", data: countiesOutput },
+    // { name: "cities", data: citiesOutput },
+    // { name: "districts", data: districtsOutput },
+    // { name: "rurals", data: ruralsOutput },
+    // { name: "all", data: allOutput },
   ];
 
   outputs.forEach(async ({ name, data }) => {
     const workbook = xlsx.utils.book_new();
-    const worksheet = xlsx.utils.json_to_sheet(data);
+    const worksheet = xlsx.utils.json_to_sheet(Object.values(data));
     xlsx.utils.book_append_sheet(workbook, worksheet, "Sheet1");
     xlsx.writeFile(workbook, path.join(__dirname, `../../xlsx/${name}.xlsx`));
   });
