@@ -309,7 +309,7 @@ export function manualFixText(text: string): string {
     if (wrongWord === text) {
       text = text.replace(wrongWord, wrongWord.replace(/ال/g, "لا"));
       if (wrongWord === "باال طالقان") {
-        text = "بالا طالقان"
+        text = "بالا طالقان";
       }
     }
   });
