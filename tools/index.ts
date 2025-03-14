@@ -10,175 +10,60 @@ import {
   generateXlsxFiles,
   getTelPrefixForProvince,
   ListInterface,
+  normalizePersianText,
   ProvinceInterface,
   RuralInterface,
   sortAllInterfaceArray,
 } from "./utils";
 
-const provincesIds = new Map<string, number>();
-const provincesOutput: ProvinceInterface[] = [];
+const processedData = {
+  provinces: {} as { [key: number]: ProvinceInterface },
+};
 
-const countiesIds = new Map<string, number>();
-const countiesOutput: CountyInterface[] = [];
+const listTyped: ListInterface[] = list as ListInterface[];
 
-const citiesIds = new Map<string, number>();
-const citiesOutput: CityInterface[] = [];
+const normalizedList = listTyped.map((item: ListInterface) => {
+  let normalizedItem: ListInterface = item;
 
-const districtIds = new Map<string, number>();
-const districtsOutput: DistrictInterface[] = [];
+  normalizedItem["نام استان"] = normalizePersianText(item["نام استان"]);
+  if (item["نام شهرستان"] != undefined) {
+    normalizedItem["نام شهرستان"] = normalizePersianText(item["نام شهرستان"]);
+  }
+  if (item["نام بخش"] != undefined) {
+    normalizedItem["نام بخش"] = normalizePersianText(item["نام بخش"]);
+  }
+  if (item["نام دهستان/ شهر"] != undefined) {
+    normalizedItem["نام دهستان/ شهر"] = normalizePersianText(
+      item["نام دهستان/ شهر"],
+    );
+  }
+  if (item["نام"] != undefined) {
+    normalizedItem["نام"] = normalizePersianText(item["نام"]);
+  }
 
-const ruralsOutput: RuralInterface[] = [];
-let allOutput: AllInterface[] = [];
+  return normalizedItem;
+});
 
 const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
-  استان: (item) => {
-    provincesIds.set(item.name, item.nationalId);
-    const result = {
-      id: item.nationalId,
-      name: item.name,
-      slug: generateSlug(item.name),
-      tel_prefix: getTelPrefixForProvince(item.name),
-    };
-    provincesOutput.push(result);
-    allOutput.push({ type: "province", ...result });
-  },
-  شهرستان: (item) => {
-    const provinceId = provincesIds.get(item.province as string) || 0;
-    if (!provinceId) {
-      throw new Error(`Province not found for County: ${item.name}`);
+  province: (item: ListInterface) => {
+    const provinceId = parseInt(item["کد استان"]);
+    if (!processedData.provinces[provinceId]) {
+      processedData.provinces[provinceId] = {
+        id: provinceId,
+        name: item["نام استان"],
+        slug: generateSlug(item["نام استان"]),
+        tel_prefix: getTelPrefixForProvince(item["نام استان"]),
+      };
     }
-    countiesIds.set(item.name + "p" + provinceId, item.nationalId);
-    const result = {
-      id: item.nationalId,
-      name: item.name,
-      slug: generateSlug(item.name),
-      province_id: provinceId,
-    };
-    countiesOutput.push(result);
-    allOutput.push({ type: "county", ...result });
-  },
-  شهر: (item) => {
-    const provinceId = provincesIds.get(item.province as string) || 0;
-    if (!provinceId) {
-      throw new Error(`Province not found for City: ${item.name}`);
-    }
-    const countyId =
-      countiesIds.get((item.county + "p" + provinceId) as string) || 0;
-    if (!countyId) {
-      throw new Error(`County not found for City: ${item.name}`);
-    }
-    citiesIds.set(
-      item.name + "p" + provinceId + "c" + countyId,
-      item.nationalId,
-    );
-    const result = {
-      id: item.nationalId,
-      name: item.name,
-      slug: generateSlug(item.name),
-      county_id: countyId,
-      province_id: provinceId,
-    };
-    citiesOutput.push(result);
-    allOutput.push({ type: "city", ...result });
-  },
-  بخش: (item) => {
-    const provinceId = provincesIds.get(item.province as string) || 0;
-    if (!provinceId) {
-      throw new Error(`Province not found for District: ${item.name}`);
-    }
-    const countyId =
-      countiesIds.get((item.county + "p" + provinceId) as string) || 0;
-    if (!countyId) {
-      throw new Error(`County not found for District: ${item.name}`);
-    }
-    districtIds.set(
-      item.name + "p" + provinceId + "c" + countyId,
-      item.nationalId,
-    );
-    const result = {
-      id: item.nationalId,
-      name: item.name,
-      slug: generateSlug(item.name),
-      province_id: provinceId,
-      county_id: countyId,
-    };
-    districtsOutput.push(result);
-    allOutput.push({ type: "district", ...result });
-  },
-  دهستان: (item) => {
-    const provinceId = provincesIds.get(item.province as string) || 0;
-    if (!provinceId) {
-      console.log(item);
-
-      throw new Error(`Province not found for Rural: ${item.name}`);
-    }
-    const countyId =
-      countiesIds.get((item.county + "p" + provinceId) as string) || 0;
-    if (!countyId) {
-      throw new Error(`County not found for Rural: ${item.name}`);
-    }
-    const districtId =
-      districtIds.get(
-        (item.district + "p" + provinceId + "c" + countyId) as string,
-      ) || 0;
-    if (!districtId) {
-      throw new Error(`District not found for Rural: ${item.name}`);
-    }
-    const result = {
-      id: item.nationalId,
-      name: item.name,
-      slug: generateSlug(item.name),
-      province_id: provinceId,
-      county_id: countyId,
-      district_id: districtId,
-    };
-    ruralsOutput.push(result);
-    allOutput.push({ type: "rural", ...result });
   },
 };
 
-(list as ListInterface[]).forEach((item: ListInterface) => {
-  const handler = typeHandlers[item.type];
-  if (handler) {
-    handler(item);
-  }
+normalizedList.forEach((item: ListInterface) => {
+  typeHandlers.province(item);
 });
 
-allOutput = sortAllInterfaceArray(allOutput);
+generateJsonFiles(processedData);
 
-console.table({
-  provincesOutput: provincesOutput.length,
-  countiesOutput: countiesOutput.length,
-  citiesOutput: citiesOutput.length,
-  districtsOutput: districtsOutput.length,
-  ruralsOutput: ruralsOutput.length,
-  allOutput: allOutput.length,
-  listLength: list.length,
-});
+generateCsvFiles(processedData);
 
-generateJsonFiles(
-  allOutput,
-  provincesOutput,
-  countiesOutput,
-  citiesOutput,
-  districtsOutput,
-  ruralsOutput,
-);
-
-generateCsvFiles(
-  allOutput,
-  provincesOutput,
-  countiesOutput,
-  citiesOutput,
-  districtsOutput,
-  ruralsOutput,
-);
-
-generateXlsxFiles(
-  allOutput,
-  provincesOutput,
-  countiesOutput,
-  citiesOutput,
-  districtsOutput,
-  ruralsOutput,
-);
+generateXlsxFiles(processedData);
