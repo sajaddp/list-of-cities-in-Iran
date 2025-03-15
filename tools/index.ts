@@ -47,12 +47,14 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
     const provinceId = parseInt(100 + item["کد استان"]);
     if (!processedData.provinces[provinceId]) {
       const name = item["نام"];
-      processedData.provinces[provinceId] = {
+      const data = {
         id: provinceId,
         name: name,
         slug: generateSlug(name),
         tel_prefix: getTelPrefixForProvince(name),
       };
+      processedData.provinces[provinceId] = data;
+      processedData.all[provinceId] = { ...data, type: "province" };
     }
   },
   county: (item: ListInterface) => {
@@ -64,12 +66,14 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
 
       if (!processedData.counties[countyId]) {
         const name = item["نام"];
-        processedData.counties[countyId] = {
+        const data = {
           id: countyId,
           name: name,
           slug: generateSlug(name),
           province_id: provinceId,
         };
+        processedData.counties[countyId] = data;
+        processedData.all[countyId] = { ...data, type: "county" };
       }
     }
   },
@@ -89,13 +93,15 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
 
       if (!processedData.cities[cityId]) {
         const name = item["نام"];
-        processedData.cities[cityId] = {
+        const data = {
           id: cityId,
           name: name,
           slug: generateSlug(name),
           province_id: provinceId,
           county_id: countyId,
         };
+        processedData.cities[cityId] = data;
+        processedData.all[cityId] = { ...data, type: "city" };
       }
     }
   },
@@ -115,13 +121,15 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
 
       if (!processedData.rurals[ruralId]) {
         const name = item["نام"];
-        processedData.rurals[ruralId] = {
+        const data = {
           id: ruralId,
           name: name,
           slug: generateSlug(name),
           province_id: provinceId,
           county_id: countyId,
         };
+        processedData.rurals[ruralId] = data;
+        processedData.all[ruralId] = { ...data, type: "rural" };
       }
     }
   },
@@ -144,6 +152,7 @@ console.table({
   counties: Object.keys(processedData.counties).length,
   cities: Object.keys(processedData.cities).length,
   rurals: Object.keys(processedData.rurals).length,
+  all: Object.keys(processedData.all).length,
 });
 generateJsonFiles(processedData);
 generateCsvFiles(processedData);
