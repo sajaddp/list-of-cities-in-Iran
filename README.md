@@ -1,3 +1,7 @@
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
+
 # لیست شهرهای ایران
 
 این مخزن شامل لیستی جامع از شهرهای ایران به همراه اطلاعات جغرافیایی و استانداردهای مربوطه است. این اطلاعات می‌تواند برای توسعه‌دهندگان، محققان و هر کسی که به داده‌های جغرافیایی ایران نیاز دارد، مفید باشد.
@@ -33,9 +37,13 @@
 
 این پروژه تحت مجوز MIT منتشر شده است. برای اطلاعات بیشتر، فایل `LICENSE` را مطالعه کنید.
 
+## سلب مسئولیت
+
+تنها مرجع اعلام مختصات جغرافیای جمهوری اسلامی ایران، وزارت کشور است. این مخزن برای استناد حقوقی مناسب نیست و هرگونه استناد حقوقی فاقد ارزش است.
+
 ---
 
-# List of Cities in Iran
+## List of Cities in Iran
 
 This repository contains a comprehensive list of cities in Iran along with geographical information and related standards. This information can be useful for developers, researchers, and anyone who needs geographical data of Iran.
 
