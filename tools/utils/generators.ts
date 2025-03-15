@@ -2,11 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import xlsx from "xlsx";
 import { createObjectCsvWriter } from "csv-writer";
-import {
-
-  ProcessedDataInterface,
-
-} from ".";
+import { ProcessedDataInterface } from ".";
 
 export function generateSlug(item: string): string {
   return item
