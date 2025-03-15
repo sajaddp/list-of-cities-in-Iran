@@ -23,17 +23,6 @@ export function normalizePersianText(text: string): string {
       .replace(/٩/g, "9")
       .replace(/[^\w\s\u0600-\u06FF]/g, "") // حذف کاراکترهای غیرمجاز
       // .replace(/\u200C/g, " ") // حذف نیم‌فاصله
-      .trim()
-  ); // حذف فاصله‌های اضافی
+      .trim() // حذف فاصله‌های اضافی
+  );
 }
-
-export const sortAllInterfaceArray = (data: AllInterface[]): AllInterface[] => {
-  const typeOrder: Record<AllInterface["type"], number> = {
-    province: 1,
-    county: 2,
-    city: 3,
-    rural: 5,
-  };
-
-  return data.sort((a, b) => typeOrder[a.type] - typeOrder[b.type]);
-};
