@@ -3,12 +3,9 @@ import * as path from "path";
 import xlsx from "xlsx";
 import { createObjectCsvWriter } from "csv-writer";
 import {
-  AllInterface,
-  CityInterface,
-  CountyInterface,
+
   ProcessedDataInterface,
-  ProvinceInterface,
-  RuralInterface,
+
 } from ".";
 
 export function generateSlug(item: string): string {
