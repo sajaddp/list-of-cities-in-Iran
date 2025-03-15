@@ -56,7 +56,7 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
     }
   },
   county: (item: ListInterface) => {
-    if (item["کد شهرستان"] && item["نام شهرستان"]) {
+    if (item["کد شهرستان"] && item["نام شهرستان"] && item["CODEREC"] === 2) {
       const provinceId = parseInt(100 + item["کد استان"]);
       const countyId = parseInt(
         provinceId.toString() + "000" + item["کد شهرستان"],
