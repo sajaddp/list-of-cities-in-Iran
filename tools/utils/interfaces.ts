@@ -43,12 +43,11 @@ export interface RuralInterface {
 
 export interface AllInterface {
   id: number;
-  type: "province" | "county" | "city" | "district" | "rural";
+  type: "province" | "county" | "city" | "rural";
   name: string;
   slug: string;
   province_id?: number;
   county_id?: number;
-  district_id?: number;
   tel_prefix?: string;
 }
 
