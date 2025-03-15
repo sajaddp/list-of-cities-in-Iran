@@ -32,7 +32,6 @@ export const sortAllInterfaceArray = (data: AllInterface[]): AllInterface[] => {
     province: 1,
     county: 2,
     city: 3,
-    district: 4,
     rural: 5,
   };
 
