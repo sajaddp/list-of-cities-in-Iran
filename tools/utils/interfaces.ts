@@ -33,21 +33,12 @@ export interface CityInterface {
   county_id: number;
 }
 
-export interface DistrictInterface {
-  id: number;
-  name: string;
-  slug: string;
-  province_id: number;
-  county_id: number;
-}
-
 export interface RuralInterface {
   id: number;
   name: string;
   slug: string;
   province_id: number;
   county_id: number;
-  district_id: number;
 }
 
 export interface AllInterface {
@@ -65,4 +56,6 @@ export interface ProcessedDataInterface {
   provinces: { [key: number]: ProvinceInterface };
   counties: { [key: number]: CountyInterface };
   cities: { [key: number]: CityInterface };
+  rurals: { [key: number]: RuralInterface };
+  all: { [key: number]: AllInterface };
 }
