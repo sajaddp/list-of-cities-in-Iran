@@ -26,7 +26,7 @@ export function generateJsonFiles(processedData: ProcessedDataInterface) {
 
   outputs.forEach(({ name, data }) => {
     const outputPath = path.join(__dirname, `../../json/${name}.json`);
-    fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), "utf-8");
+    fs.writeFileSync(outputPath, JSON.stringify(Object.values(data), null, 2), "utf-8");
   });
 }
 
