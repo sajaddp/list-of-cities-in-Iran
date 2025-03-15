@@ -7,7 +7,7 @@ export interface ListInterface {
   "نام بخش"?: string;
   "کد دهستان/ شهر"?: string;
   "نام دهستان/ شهر"?: string;
-  CODEREC?: string;
+  CODEREC?: number;
   نام: string;
   FARICODE?: string;
   DIAG?: string;
@@ -64,4 +64,5 @@ export interface AllInterface {
 export interface ProcessedDataInterface {
   provinces: { [key: number]: ProvinceInterface };
   counties: { [key: number]: CountyInterface };
+  cities: { [key: number]: CityInterface };
 }
