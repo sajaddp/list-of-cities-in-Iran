@@ -20,6 +20,7 @@ import {
 const processedData: ProcessedDataInterface = {
   provinces: {},
   counties: {},
+  cities: {},
 };
 
 const listTyped: ListInterface[] = list as ListInterface[];
@@ -50,11 +51,12 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
   province: (item: ListInterface) => {
     const provinceId = parseInt(100 + item["کد استان"]);
     if (!processedData.provinces[provinceId]) {
+      const name = item["نام"];
       processedData.provinces[provinceId] = {
         id: provinceId,
-        name: item["نام"],
-        slug: generateSlug(item["نام استان"]),
-        tel_prefix: getTelPrefixForProvince(item["نام استان"]),
+        name: name,
+        slug: generateSlug(name),
+        tel_prefix: getTelPrefixForProvince(name),
       };
     }
   },
@@ -66,11 +68,38 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
       );
 
       if (!processedData.counties[countyId]) {
+        const name = item["نام"];
         processedData.counties[countyId] = {
           id: countyId,
-          name: item["نام"],
-          slug: generateSlug(item["نام شهرستان"]),
+          name: name,
+          slug: generateSlug(name),
           province_id: provinceId,
+        };
+      }
+    }
+  },
+  city: (item: ListInterface) => {
+    if (
+      item["کد دهستان/ شهر"] &&
+      item["نام دهستان/ شهر"] &&
+      item["CODEREC"] === 5
+    ) {
+      const provinceId = parseInt(100 + item["کد استان"]);
+      const countyId = parseInt(
+        provinceId.toString() + "000" + item["کد شهرستان"],
+      );
+      const cityId = parseInt(
+        countyId.toString() + "00" + item["کد دهستان/ شهر"],
+      );
+
+      if (!processedData.cities[cityId]) {
+        const name = item["نام"];
+        processedData.cities[cityId] = {
+          id: cityId,
+          name: name,
+          slug: generateSlug(name),
+          province_id: provinceId,
+          county_id: countyId,
         };
       }
     }
@@ -83,9 +112,11 @@ normalizedList.forEach((item: ListInterface) => {
 normalizedList.forEach((item: ListInterface) => {
   typeHandlers.county(item);
 });
+normalizedList.forEach((item: ListInterface) => {
+  typeHandlers.city(item);
+});
 
-// console.log(JSON.stringify(processedData.counties, null, 2));
-
+// console.log(JSON.stringify(processedData.cities, null, 2));
 generateJsonFiles(processedData);
 generateCsvFiles(processedData);
 generateXlsxFiles(processedData);
