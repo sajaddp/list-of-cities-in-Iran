@@ -13,8 +13,12 @@ export function generateSlug(item: string): string {
     .replace(/[^\w\-آ-ی\u0600-\u06FF]+/g, "");
 }
 
+function getJsonFilePath(directory: string): string {
+  return path.join(__dirname, `../../output/${directory}`)
+}
+
 export function generateJsonFiles(processedData: ProcessedDataInterface) {
-  fs.mkdirSync(path.join(__dirname, "../../json"), { recursive: true });
+  fs.mkdirSync(getJsonFilePath('json'), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
@@ -25,7 +29,7 @@ export function generateJsonFiles(processedData: ProcessedDataInterface) {
   ];
 
   outputs.forEach(({ name, data }) => {
-    const outputPath = path.join(__dirname, `../../json/${name}.json`);
+    const outputPath = getJsonFilePath(`json/${name}.json`);
     fs.writeFileSync(
       outputPath,
       JSON.stringify(Object.values(data), null, 2),
@@ -35,7 +39,7 @@ export function generateJsonFiles(processedData: ProcessedDataInterface) {
 }
 
 export async function generateCsvFiles(processedData: ProcessedDataInterface) {
-  fs.mkdirSync(path.join(__dirname, "../../csv"), { recursive: true });
+  fs.mkdirSync(getJsonFilePath('csv'), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
@@ -49,7 +53,7 @@ export async function generateCsvFiles(processedData: ProcessedDataInterface) {
     const header = data[Number(Object.keys(data)[0])];
 
     const csvWriter = createObjectCsvWriter({
-      path: path.join(__dirname, `../../csv/${name}.csv`),
+      path: getJsonFilePath(`csv/${name}.csv`),
       header: Object.keys(header).map((key) => ({ id: key, title: key })),
     });
     await csvWriter.writeRecords(Object.values(data));
@@ -57,7 +61,7 @@ export async function generateCsvFiles(processedData: ProcessedDataInterface) {
 }
 
 export async function generateXlsxFiles(processedData: ProcessedDataInterface) {
-  fs.mkdirSync(path.join(__dirname, "../../xlsx"), { recursive: true });
+  fs.mkdirSync(getJsonFilePath('xlsx'), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
@@ -71,6 +75,6 @@ export async function generateXlsxFiles(processedData: ProcessedDataInterface) {
     const workbook = xlsx.utils.book_new();
     const worksheet = xlsx.utils.json_to_sheet(Object.values(data));
     xlsx.utils.book_append_sheet(workbook, worksheet, "Sheet1");
-    xlsx.writeFile(workbook, path.join(__dirname, `../../xlsx/${name}.xlsx`));
+    xlsx.writeFile(workbook, getJsonFilePath(`xlsx/${name}.xlsx`));
   });
 }
