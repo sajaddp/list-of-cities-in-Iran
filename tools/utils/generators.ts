@@ -14,11 +14,11 @@ export function generateSlug(item: string): string {
 }
 
 function getJsonFilePath(directory: string): string {
-  return path.join(__dirname, `../../output/${directory}`)
+  return path.join(__dirname, `../../output/${directory}`);
 }
 
 export function generateJsonFiles(processedData: ProcessedDataInterface) {
-  fs.mkdirSync(getJsonFilePath('json'), { recursive: true });
+  fs.mkdirSync(getJsonFilePath("json"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
@@ -39,7 +39,7 @@ export function generateJsonFiles(processedData: ProcessedDataInterface) {
 }
 
 export async function generateCsvFiles(processedData: ProcessedDataInterface) {
-  fs.mkdirSync(getJsonFilePath('csv'), { recursive: true });
+  fs.mkdirSync(getJsonFilePath("csv"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
@@ -61,7 +61,7 @@ export async function generateCsvFiles(processedData: ProcessedDataInterface) {
 }
 
 export async function generateXlsxFiles(processedData: ProcessedDataInterface) {
-  fs.mkdirSync(getJsonFilePath('xlsx'), { recursive: true });
+  fs.mkdirSync(getJsonFilePath("xlsx"), { recursive: true });
 
   const outputs = [
     { name: "provinces", data: processedData.provinces },
