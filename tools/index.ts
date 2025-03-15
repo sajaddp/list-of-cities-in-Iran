@@ -1,8 +1,5 @@
 import list from "../offical/list.json";
 import {
-  AllInterface,
-  CityInterface,
-  CountyInterface,
   generateCsvFiles,
   generateJsonFiles,
   generateSlug,
@@ -11,9 +8,6 @@ import {
   ListInterface,
   normalizePersianText,
   ProcessedDataInterface,
-  ProvinceInterface,
-  RuralInterface,
-  sortAllInterfaceArray,
 } from "./utils";
 
 const processedData: ProcessedDataInterface = {
@@ -145,7 +139,12 @@ normalizedList.forEach((item: ListInterface) => {
 normalizedList.forEach((item: ListInterface) => {
   typeHandlers.rural(item);
 });
-
+console.table({
+  provinces: Object.keys(processedData.provinces).length,
+  counties: Object.keys(processedData.counties).length,
+  cities: Object.keys(processedData.cities).length,
+  rurals: Object.keys(processedData.rurals).length,
+});
 generateJsonFiles(processedData);
 generateCsvFiles(processedData);
 generateXlsxFiles(processedData);
