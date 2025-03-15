@@ -6,7 +6,6 @@ import {
   AllInterface,
   CityInterface,
   CountyInterface,
-  DistrictInterface,
   ProcessedDataInterface,
   ProvinceInterface,
   RuralInterface,
@@ -28,8 +27,7 @@ export function generateJsonFiles(processedData: ProcessedDataInterface) {
     { name: "provinces", data: processedData.provinces },
     { name: "counties", data: processedData.counties },
     { name: "cities", data: processedData.cities },
-    // { name: "districts", data: districtsOutput },
-    // { name: "rurals", data: ruralsOutput },
+    { name: "rurals", data: processedData.rurals },
     // { name: "all", data: allOutput },
   ];
 
@@ -46,8 +44,7 @@ export async function generateCsvFiles(processedData: ProcessedDataInterface) {
     { name: "provinces", data: processedData.provinces },
     { name: "counties", data: processedData.counties },
     { name: "cities", data: processedData.cities },
-    // { name: "districts", data: districtsOutput },
-    // { name: "rurals", data: ruralsOutput },
+    { name: "rurals", data: processedData.rurals },
     // { name: "all", data: allOutput },
   ];
 
@@ -69,8 +66,7 @@ export async function generateXlsxFiles(processedData: ProcessedDataInterface) {
     { name: "provinces", data: processedData.provinces },
     { name: "counties", data: processedData.counties },
     { name: "cities", data: processedData.cities },
-    // { name: "districts", data: districtsOutput },
-    // { name: "rurals", data: ruralsOutput },
+    { name: "rurals", data: processedData.rurals },
     // { name: "all", data: allOutput },
   ];
 
