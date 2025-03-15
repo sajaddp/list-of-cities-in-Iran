@@ -22,12 +22,12 @@
 
 - `examples/`: شامل مثال‌هایی از نحوه استفاده از داده‌ها در زبان‌های مختلف برنامه‌نویسی.
 - `official/`: شامل فایل‌های رسمی و استانداردهای جغرافیایی.
-- `output/`: شامل خروجی‌های تولید شده از داده‌ها.
+- `dist/`: شامل خروجی‌های تولید شده از داده‌ها.
 - `tools/`: شامل ابزارهای مورد نیاز برای تبدیل و پردازش داده‌ها.
 
 ## نحوه استفاده
 
-برای استفاده از داده‌ها، می‌توانید فایل‌های موجود در پوشه `output/` را دانلود کرده و در پروژه‌های خود استفاده کنید. همچنین می‌توانید از ابزارهای موجود در پوشه `tools/` برای پردازش و تبدیل داده‌ها استفاده کنید.
+برای استفاده از داده‌ها، می‌توانید فایل‌های موجود در پوشه `dist/` را دانلود کرده و در پروژه‌های خود استفاده کنید. همچنین می‌توانید از ابزارهای موجود در پوشه `tools/` برای پردازش و تبدیل داده‌ها استفاده کنید.
 
 ## مشارکت
 
@@ -63,12 +63,12 @@ This project aims to provide an open and free resource of geographical data of c
 
 - `examples/`: Contains examples of how to use the data in different programming languages.
 - `official/`: Contains official files and geographical standards.
-- `output/`: Contains generated outputs from the data.
+- `dist/`: Contains generated dists from the data.
 - `tools/`: Contains tools needed for data conversion and processing.
 
 ## Usage
 
-To use the data, you can download the files available in the `output/` folder and use them in your projects. You can also use the tools available in the `tools/` folder for data processing and conversion.
+To use the data, you can download the files available in the `dist/` folder and use them in your projects. You can also use the tools available in the `tools/` folder for data processing and conversion.
 
 ## Contributing
 

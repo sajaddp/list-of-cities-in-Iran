@@ -1,15 +1,15 @@
 # نحوه فراخوانی فایل JSON در تایپ اسکریپت
 
-برای فراخوانی یک فایل JSON از مسیر `output/json` و استفاده از آن در تایپ اسکریپت، می‌توانید به صورت زیر عمل کنید:
+برای فراخوانی یک فایل JSON از مسیر `dist/json` و استفاده از آن در تایپ اسکریپت، می‌توانید به صورت زیر عمل کنید:
 
 1. ابتدا باید تنظیمات `tsconfig.json` را به‌روزرسانی کنید تا امکان وارد کردن فایل‌های JSON فراهم شود. برای این کار، مقدار `resolveJsonModule` را به `true` تغییر دهید:
 
 ```json
 {
-    "compilerOptions": {
-        "resolveJsonModule": true,
-        "esModuleInterop": true
-    }
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
 }
 ```
 
@@ -17,18 +17,18 @@
 
 ```typescript
 interface Province {
-    id: number;
-    name: string;
+  id: number;
+  name: string;
 }
 ```
 
 3. در نهایت، فایل JSON را وارد کرده و از آن استفاده کنید:
 
 ```typescript
-import provinces from '../output/json/provinces.json';
+import provinces from "../dist/json/provinces.json";
 
 const getProvinces = (): Province[] => {
-    return provinces;
+  return provinces;
 };
 
 console.log(getProvinces());
@@ -36,16 +36,16 @@ console.log(getProvinces());
 
 ## How to Import a JSON File in TypeScript
 
-To import a JSON file from the `output/json` directory and use it in TypeScript, follow these steps:
+To import a JSON file from the `dist/json` directory and use it in TypeScript, follow these steps:
 
 1. First, update the `tsconfig.json` settings to enable importing JSON files. Set the `resolveJsonModule` option to `true`:
 
 ```json
 {
-    "compilerOptions": {
-        "resolveJsonModule": true,
-        "esModuleInterop": true
-    }
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
 }
 ```
 
@@ -53,18 +53,18 @@ To import a JSON file from the `output/json` directory and use it in TypeScript,
 
 ```typescript
 interface Province {
-    id: number;
-    name: string;
+  id: number;
+  name: string;
 }
 ```
 
 3. Finally, import the JSON file and use it:
 
 ```typescript
-import provinces from '../output/json/provinces.json';
+import provinces from "../dist/json/provinces.json";
 
 const getProvinces = (): Province[] => {
-    return provinces;
+  return provinces;
 };
 
 console.log(getProvinces());

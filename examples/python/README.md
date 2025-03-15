@@ -1,6 +1,6 @@
 # راهنمای استفاده از فایل JSON در پایتون 3.13
 
-این راهنما به شما نشان می‌دهد که چگونه یک فایل JSON را از مسیر `output/json` فراخوانی کرده و از آن استفاده کنید. در این مثال، ما فایل `provinces.json` را بارگذاری می‌کنیم.
+این راهنما به شما نشان می‌دهد که چگونه یک فایل JSON را از مسیر `dist/json` فراخوانی کرده و از آن استفاده کنید. در این مثال، ما فایل `provinces.json` را بارگذاری می‌کنیم.
 
 ## مثال کد پایتون
 
@@ -20,14 +20,14 @@ def load_json(file_path: str) -> Dict[str, Any]:
     return data
 
 # استفاده از تابع
-file_path = 'output/json/provinces.json'
+file_path = 'dist/json/provinces.json'
 provinces_data = load_json(file_path)
 print(provinces_data)
 ```
 
 ## Guide to Using JSON Files in Python 3.13
 
-This guide shows you how to load a JSON file from the `output/json` directory and use it. In this example, we will load the `provinces.json` file.
+This guide shows you how to load a JSON file from the `dist/json` directory and use it. In this example, we will load the `provinces.json` file.
 
 ## Python Code Example
 
@@ -47,7 +47,7 @@ def load_json(file_path: str) -> Dict[str, Any]:
     return data
 
 # Using the function
-file_path = 'output/json/provinces.json'
+file_path = 'dist/json/provinces.json'
 provinces_data = load_json(file_path)
 print(provinces_data)
 ```
