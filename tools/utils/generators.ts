@@ -14,7 +14,7 @@ export function generateSlug(item: string): string {
 }
 
 function getJsonFilePath(directory: string): string {
-  return path.join(__dirname, `../../output/${directory}`);
+  return path.join(__dirname, `../../dist/${directory}`);
 }
 
 export function generateJsonFiles(processedData: ProcessedDataInterface) {
