@@ -21,12 +21,16 @@ export function generateJsonFiles(processedData: ProcessedDataInterface) {
     { name: "counties", data: processedData.counties },
     { name: "cities", data: processedData.cities },
     { name: "rurals", data: processedData.rurals },
-    // { name: "all", data: allOutput },
+    { name: "all", data: processedData.all },
   ];
 
   outputs.forEach(({ name, data }) => {
     const outputPath = path.join(__dirname, `../../json/${name}.json`);
-    fs.writeFileSync(outputPath, JSON.stringify(Object.values(data), null, 2), "utf-8");
+    fs.writeFileSync(
+      outputPath,
+      JSON.stringify(Object.values(data), null, 2),
+      "utf-8",
+    );
   });
 }
 
@@ -38,7 +42,7 @@ export async function generateCsvFiles(processedData: ProcessedDataInterface) {
     { name: "counties", data: processedData.counties },
     { name: "cities", data: processedData.cities },
     { name: "rurals", data: processedData.rurals },
-    // { name: "all", data: allOutput },
+    { name: "all", data: processedData.all },
   ];
 
   outputs.forEach(async ({ name, data }) => {
@@ -60,7 +64,7 @@ export async function generateXlsxFiles(processedData: ProcessedDataInterface) {
     { name: "counties", data: processedData.counties },
     { name: "cities", data: processedData.cities },
     { name: "rurals", data: processedData.rurals },
-    // { name: "all", data: allOutput },
+    { name: "all", data: processedData.all },
   ];
 
   outputs.forEach(async ({ name, data }) => {
