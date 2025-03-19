@@ -23,6 +23,7 @@ export function generateJsonFiles(processedData: ProcessedDataInterface) {
   const outputs = [
     { name: "provinces", data: processedData.provinces },
     { name: "counties", data: processedData.counties },
+    { name: "districts", data: processedData.districts },
     { name: "cities", data: processedData.cities },
     { name: "rurals", data: processedData.rurals },
     { name: "all", data: processedData.all },
@@ -44,6 +45,7 @@ export async function generateCsvFiles(processedData: ProcessedDataInterface) {
   const outputs = [
     { name: "provinces", data: processedData.provinces },
     { name: "counties", data: processedData.counties },
+    { name: "districts", data: processedData.districts },
     { name: "cities", data: processedData.cities },
     { name: "rurals", data: processedData.rurals },
     { name: "all", data: processedData.all },
@@ -66,6 +68,7 @@ export async function generateXlsxFiles(processedData: ProcessedDataInterface) {
   const outputs = [
     { name: "provinces", data: processedData.provinces },
     { name: "counties", data: processedData.counties },
+    { name: "districts", data: processedData.districts },
     { name: "cities", data: processedData.cities },
     { name: "rurals", data: processedData.rurals },
     { name: "all", data: processedData.all },
