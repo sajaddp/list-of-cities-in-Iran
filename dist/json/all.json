@@ -3615,6 +3615,14 @@
     "type": "rural"
   },
   {
+    "id": 1000001004,
+    "name": "معصومیه",
+    "slug": "معصومیه",
+    "province_id": 100,
+    "county_id": 1000001,
+    "type": "district"
+  },
+  {
     "id": 1000001005,
     "name": "سده",
     "slug": "سده",
@@ -3831,6 +3839,14 @@
     "type": "rural"
   },
   {
+    "id": 1000007004,
+    "name": "قره کهریز",
+    "slug": "قره-کهریز",
+    "province_id": 100,
+    "county_id": 1000007,
+    "type": "district"
+  },
+  {
     "id": 1000007007,
     "name": "کزاز",
     "slug": "کزاز",
@@ -3959,6 +3975,22 @@
     "type": "rural"
   },
   {
+    "id": 1010004005,
+    "name": "اسالم",
+    "slug": "اسالم",
+    "province_id": 101,
+    "county_id": 1010004,
+    "type": "district"
+  },
+  {
+    "id": 1010004006,
+    "name": "حویق",
+    "slug": "حویق",
+    "province_id": 101,
+    "county_id": 1010004,
+    "type": "district"
+  },
+  {
     "id": 1010005001,
     "name": "اسلام آباد",
     "slug": "اسلام-آباد",
@@ -3991,6 +4023,22 @@
     "type": "rural"
   },
   {
+    "id": 1010005005,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 101,
+    "county_id": 1010005,
+    "type": "district"
+  },
+  {
+    "id": 1010005006,
+    "name": "خشکبیجار",
+    "slug": "خشکبیجار",
+    "province_id": 101,
+    "county_id": 1010005,
+    "type": "district"
+  },
+  {
     "id": 1010006001,
     "name": "خورگام",
     "slug": "خورگام",
@@ -4013,6 +4061,14 @@
     "province_id": 101,
     "county_id": 1010006,
     "type": "rural"
+  },
+  {
+    "id": 1010006004,
+    "name": "خورگام",
+    "slug": "خورگام",
+    "province_id": 101,
+    "county_id": 1010006,
+    "type": "district"
   },
   {
     "id": 1010007001,
@@ -4047,6 +4103,14 @@
     "type": "rural"
   },
   {
+    "id": 1010007005,
+    "name": "کلاچای",
+    "slug": "کلاچای",
+    "province_id": 101,
+    "county_id": 1010007,
+    "type": "district"
+  },
+  {
     "id": 1010008001,
     "name": "تولم",
     "slug": "تولم",
@@ -4079,6 +4143,14 @@
     "type": "rural"
   },
   {
+    "id": 1010008005,
+    "name": "ضیابر",
+    "slug": "ضیابر",
+    "province_id": 101,
+    "county_id": 1010008,
+    "type": "district"
+  },
+  {
     "id": 1010009001,
     "name": "آلیان",
     "slug": "آلیان",
@@ -4093,6 +4165,14 @@
     "province_id": 101,
     "county_id": 1010009,
     "type": "rural"
+  },
+  {
+    "id": 1010009003,
+    "name": "سردارجنگل",
+    "slug": "سردارجنگل",
+    "province_id": 101,
+    "county_id": 1010009,
+    "type": "district"
   },
   {
     "id": 1010009004,
@@ -4143,6 +4223,22 @@
     "type": "rural"
   },
   {
+    "id": 1020001004,
+    "name": "امامزاده عبدالله",
+    "slug": "امامزاده-عبدالله",
+    "province_id": 102,
+    "county_id": 1020001,
+    "type": "district"
+  },
+  {
+    "id": 1020001005,
+    "name": "دشت سر",
+    "slug": "دشت-سر",
+    "province_id": 102,
+    "county_id": 1020001,
+    "type": "district"
+  },
+  {
     "id": 1020001006,
     "name": "هرازپی جنوبی",
     "slug": "هرازپی-جنوبی",
@@ -4175,6 +4271,14 @@
     "type": "rural"
   },
   {
+    "id": 1020002003,
+    "name": "بندپی شرقی",
+    "slug": "بندپی-شرقی",
+    "province_id": 102,
+    "county_id": 1020002,
+    "type": "district"
+  },
+  {
     "id": 1020002004,
     "name": "شهیدآباد",
     "slug": "شهیدآباد",
@@ -4189,6 +4293,14 @@
     "province_id": 102,
     "county_id": 1020002,
     "type": "rural"
+  },
+  {
+    "id": 1020002006,
+    "name": "گتاب",
+    "slug": "گتاب",
+    "province_id": 102,
+    "county_id": 1020002,
+    "type": "district"
   },
   {
     "id": 1020004001,
@@ -4213,6 +4325,14 @@
     "province_id": 102,
     "county_id": 1020004,
     "type": "rural"
+  },
+  {
+    "id": 1020004004,
+    "name": "یانه سر",
+    "slug": "یانه-سر",
+    "province_id": 102,
+    "county_id": 1020004,
+    "type": "district"
   },
   {
     "id": 1020005001,
@@ -4245,6 +4365,14 @@
     "province_id": 102,
     "county_id": 1020005,
     "type": "rural"
+  },
+  {
+    "id": 1020005005,
+    "name": "کوهستان",
+    "slug": "کوهستان",
+    "province_id": 102,
+    "county_id": 1020005,
+    "type": "district"
   },
   {
     "id": 1020006001,
@@ -4317,6 +4445,14 @@
     "province_id": 102,
     "county_id": 1020007,
     "type": "rural"
+  },
+  {
+    "id": 1020007007,
+    "name": "رودپی شمالی",
+    "slug": "رودپی-شمالی",
+    "province_id": 102,
+    "county_id": 1020007,
+    "type": "district"
   },
   {
     "id": 1020008001,
@@ -4397,6 +4533,30 @@
     "province_id": 103,
     "county_id": 1030003,
     "type": "rural"
+  },
+  {
+    "id": 1030003003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 103,
+    "county_id": 1030003,
+    "type": "district"
+  },
+  {
+    "id": 1030003004,
+    "name": "خسروشاه",
+    "slug": "خسروشاه",
+    "province_id": 103,
+    "county_id": 1030003,
+    "type": "district"
+  },
+  {
+    "id": 1030003005,
+    "name": "باسمنج",
+    "slug": "باسمنج",
+    "province_id": 103,
+    "county_id": 1030003,
+    "type": "district"
   },
   {
     "id": 1030003006,
@@ -4509,6 +4669,14 @@
     "province_id": 103,
     "county_id": 1030007,
     "type": "rural"
+  },
+  {
+    "id": 1030007003,
+    "name": "یامچی",
+    "slug": "یامچی",
+    "province_id": 103,
+    "county_id": 1030007,
+    "type": "district"
   },
   {
     "id": 1030007004,
@@ -4671,6 +4839,22 @@
     "type": "rural"
   },
   {
+    "id": 1040003005,
+    "name": "قطور",
+    "slug": "قطور",
+    "province_id": 104,
+    "county_id": 1040003,
+    "type": "district"
+  },
+  {
+    "id": 1040003006,
+    "name": "فیرورق",
+    "slug": "فیرورق",
+    "province_id": 104,
+    "county_id": 1040003,
+    "type": "district"
+  },
+  {
     "id": 1040003007,
     "name": "قره سو",
     "slug": "قره-سو",
@@ -4773,6 +4957,14 @@
     "province_id": 104,
     "county_id": 1040006,
     "type": "rural"
+  },
+  {
+    "id": 1040006004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 104,
+    "county_id": 1040006,
+    "type": "district"
   },
   {
     "id": 1040006005,
@@ -4957,6 +5149,22 @@
     "province_id": 105,
     "county_id": 1050002,
     "type": "rural"
+  },
+  {
+    "id": 1050002007,
+    "name": "کوزران",
+    "slug": "کوزران",
+    "province_id": 105,
+    "county_id": 1050002,
+    "type": "district"
+  },
+  {
+    "id": 1050002008,
+    "name": "بیلوار",
+    "slug": "بیلوار",
+    "province_id": 105,
+    "county_id": 1050002,
+    "type": "district"
   },
   {
     "id": 1050003001,
@@ -5183,6 +5391,14 @@
     "type": "rural"
   },
   {
+    "id": 1050009004,
+    "name": "کلاشی",
+    "slug": "کلاشی",
+    "province_id": 105,
+    "county_id": 1050009,
+    "type": "district"
+  },
+  {
     "id": 1060001001,
     "name": "مینوبار",
     "slug": "مینوبار",
@@ -5247,6 +5463,22 @@
     "type": "rural"
   },
   {
+    "id": 1060003004,
+    "name": "اسماعیلیه",
+    "slug": "اسماعیلیه",
+    "province_id": 106,
+    "county_id": 1060003,
+    "type": "district"
+  },
+  {
+    "id": 1060003005,
+    "name": "غیزانیه",
+    "slug": "غیزانیه",
+    "province_id": 106,
+    "county_id": 1060003,
+    "type": "district"
+  },
+  {
     "id": 1060003009,
     "name": "لامی",
     "slug": "لامی",
@@ -5277,6 +5509,14 @@
     "province_id": 106,
     "county_id": 1060004,
     "type": "rural"
+  },
+  {
+    "id": 1060004004,
+    "name": "سوسن",
+    "slug": "سوسن",
+    "province_id": 106,
+    "county_id": 1060004,
+    "type": "district"
   },
   {
     "id": 1060004006,
@@ -5333,6 +5573,14 @@
     "province_id": 106,
     "county_id": 1060006,
     "type": "rural"
+  },
+  {
+    "id": 1060006004,
+    "name": "تشان",
+    "slug": "تشان",
+    "province_id": 106,
+    "county_id": 1060006,
+    "type": "district"
   },
   {
     "id": 1060007001,
@@ -5463,6 +5711,14 @@
     "type": "rural"
   },
   {
+    "id": 1070001005,
+    "name": "بهمن صغاد",
+    "slug": "بهمن-صغاد",
+    "province_id": 107,
+    "county_id": 1070001,
+    "type": "district"
+  },
+  {
     "id": 1070002001,
     "name": "خیر",
     "slug": "خیر",
@@ -5535,6 +5791,14 @@
     "type": "rural"
   },
   {
+    "id": 1070004004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 107,
+    "county_id": 1070004,
+    "type": "district"
+  },
+  {
     "id": 1070005001,
     "name": "بالش",
     "slug": "بالش",
@@ -5565,6 +5829,22 @@
     "province_id": 107,
     "county_id": 1070005,
     "type": "rural"
+  },
+  {
+    "id": 1070005005,
+    "name": "جنت",
+    "slug": "جنت",
+    "province_id": 107,
+    "county_id": 1070005,
+    "type": "district"
+  },
+  {
+    "id": 1070005006,
+    "name": "فسارود",
+    "slug": "فسارود",
+    "province_id": 107,
+    "county_id": 1070005,
+    "type": "district"
   },
   {
     "id": 1070005007,
@@ -5631,12 +5911,28 @@
     "type": "rural"
   },
   {
+    "id": 1070007005,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 107,
+    "county_id": 1070007,
+    "type": "district"
+  },
+  {
     "id": 1070007006,
     "name": "قره باغ",
     "slug": "قره-باغ",
     "province_id": 107,
     "county_id": 1070007,
     "type": "rural"
+  },
+  {
+    "id": 1070007007,
+    "name": "سیاخ دارنگون",
+    "slug": "سیاخ-دارنگون",
+    "province_id": 107,
+    "county_id": 1070007,
+    "type": "district"
   },
   {
     "id": 1070007008,
@@ -5671,6 +5967,14 @@
     "type": "rural"
   },
   {
+    "id": 1070008004,
+    "name": "نوبندگان",
+    "slug": "نوبندگان",
+    "province_id": 107,
+    "county_id": 1070008,
+    "type": "district"
+  },
+  {
     "id": 1070009001,
     "name": "احمدآباد",
     "slug": "احمدآباد",
@@ -5695,6 +5999,14 @@
     "type": "rural"
   },
   {
+    "id": 1070009004,
+    "name": "میمند",
+    "slug": "میمند",
+    "province_id": 107,
+    "county_id": 1070009,
+    "type": "district"
+  },
+  {
     "id": 1080001001,
     "name": "بزنجان",
     "slug": "بزنجان",
@@ -5709,6 +6021,22 @@
     "province_id": 108,
     "county_id": 1080001,
     "type": "rural"
+  },
+  {
+    "id": 1080001003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 108,
+    "county_id": 1080001,
+    "type": "district"
+  },
+  {
+    "id": 1080001004,
+    "name": "خبر",
+    "slug": "خبر",
+    "province_id": 108,
+    "county_id": 1080001,
+    "type": "district"
   },
   {
     "id": 1080001005,
@@ -5759,6 +6087,22 @@
     "type": "rural"
   },
   {
+    "id": 1080002007,
+    "name": "بروات",
+    "slug": "بروات",
+    "province_id": 108,
+    "county_id": 1080002,
+    "type": "district"
+  },
+  {
+    "id": 1080002008,
+    "name": "دهبکری",
+    "slug": "دهبکری",
+    "province_id": 108,
+    "county_id": 1080002,
+    "type": "district"
+  },
+  {
     "id": 1080003001,
     "name": "دلفارد",
     "slug": "دلفارد",
@@ -5781,6 +6125,14 @@
     "province_id": 108,
     "county_id": 1080003,
     "type": "rural"
+  },
+  {
+    "id": 1080003004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 108,
+    "county_id": 1080003,
+    "type": "district"
   },
   {
     "id": 1080003005,
@@ -5935,6 +6287,30 @@
     "type": "rural"
   },
   {
+    "id": 1080006003,
+    "name": "گلستان",
+    "slug": "گلستان",
+    "province_id": 108,
+    "county_id": 1080006,
+    "type": "district"
+  },
+  {
+    "id": 1080006004,
+    "name": "زیدآباد",
+    "slug": "زیدآباد",
+    "province_id": 108,
+    "county_id": 1080006,
+    "type": "district"
+  },
+  {
+    "id": 1080006005,
+    "name": "بلورد",
+    "slug": "بلورد",
+    "province_id": 108,
+    "county_id": 1080006,
+    "type": "district"
+  },
+  {
     "id": 1080006006,
     "name": "شریف آباد",
     "slug": "شریف-آباد",
@@ -6047,6 +6423,14 @@
     "type": "rural"
   },
   {
+    "id": 1080008007,
+    "name": "چترود",
+    "slug": "چترود",
+    "province_id": 108,
+    "county_id": 1080008,
+    "type": "district"
+  },
+  {
     "id": 1080009001,
     "name": "چاه ریگان",
     "slug": "چاه-ریگان",
@@ -6151,6 +6535,22 @@
     "type": "rural"
   },
   {
+    "id": 1090005006,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 109,
+    "county_id": 1090005,
+    "type": "district"
+  },
+  {
+    "id": 1090005007,
+    "name": "جلگه رخ",
+    "slug": "جلگه-رخ",
+    "province_id": 109,
+    "county_id": 1090005,
+    "type": "district"
+  },
+  {
     "id": 1090006001,
     "name": "دشت جام",
     "slug": "دشت-جام",
@@ -6207,6 +6607,22 @@
     "type": "rural"
   },
   {
+    "id": 1090007003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 109,
+    "county_id": 1090007,
+    "type": "district"
+  },
+  {
+    "id": 1090007004,
+    "name": "نوخندان",
+    "slug": "نوخندان",
+    "province_id": 109,
+    "county_id": 1090007,
+    "type": "district"
+  },
+  {
     "id": 1090008001,
     "name": "خواشد",
     "slug": "خواشد",
@@ -6237,6 +6653,22 @@
     "province_id": 109,
     "county_id": 1090008,
     "type": "rural"
+  },
+  {
+    "id": 1090008005,
+    "name": "روداب",
+    "slug": "روداب",
+    "province_id": 109,
+    "county_id": 1090008,
+    "type": "district"
+  },
+  {
+    "id": 1090008007,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 109,
+    "county_id": 1090008,
+    "type": "district"
   },
   {
     "id": 1100001001,
@@ -6399,6 +6831,14 @@
     "type": "rural"
   },
   {
+    "id": 1100005004,
+    "name": "وردشت",
+    "slug": "وردشت",
+    "province_id": 110,
+    "county_id": 1100005,
+    "type": "district"
+  },
+  {
     "id": 1100006001,
     "name": "دالانکوه",
     "slug": "دالانکوه",
@@ -6413,6 +6853,14 @@
     "province_id": 110,
     "county_id": 1100006,
     "type": "rural"
+  },
+  {
+    "id": 1100006003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 110,
+    "county_id": 1100006,
+    "type": "district"
   },
   {
     "id": 1100006004,
@@ -6535,6 +6983,22 @@
     "type": "rural"
   },
   {
+    "id": 1110001005,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 111,
+    "county_id": 1110001,
+    "type": "district"
+  },
+  {
+    "id": 1110001006,
+    "name": "دامن",
+    "slug": "دامن",
+    "province_id": 111,
+    "county_id": 1110001,
+    "type": "district"
+  },
+  {
     "id": 1110002001,
     "name": "پلان",
     "slug": "پلان",
@@ -6631,6 +7095,22 @@
     "type": "rural"
   },
   {
+    "id": 1110004004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 111,
+    "county_id": 1110004,
+    "type": "district"
+  },
+  {
+    "id": 1110004005,
+    "name": "کرباسک",
+    "slug": "کرباسک",
+    "province_id": 111,
+    "county_id": 1110004,
+    "type": "district"
+  },
+  {
     "id": 1110005001,
     "name": "چشمه زیارت",
     "slug": "چشمه-زیارت",
@@ -6647,6 +7127,22 @@
     "type": "rural"
   },
   {
+    "id": 1110005003,
+    "name": "نصرت آباد",
+    "slug": "نصرت-آباد",
+    "province_id": 111,
+    "county_id": 1110005,
+    "type": "district"
+  },
+  {
+    "id": 1110005004,
+    "name": "کورین",
+    "slug": "کورین",
+    "province_id": 111,
+    "county_id": 1110005,
+    "type": "district"
+  },
+  {
     "id": 1110006001,
     "name": "بم پشت",
     "slug": "بم-پشت",
@@ -6661,6 +7157,14 @@
     "province_id": 111,
     "county_id": 1110006,
     "type": "rural"
+  },
+  {
+    "id": 1110006004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 111,
+    "county_id": 1110006,
+    "type": "district"
   },
   {
     "id": 1110006005,
@@ -6711,6 +7215,22 @@
     "type": "rural"
   },
   {
+    "id": 1110007005,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 111,
+    "county_id": 1110007,
+    "type": "district"
+  },
+  {
+    "id": 1110007006,
+    "name": "آهوران",
+    "slug": "آهوران",
+    "province_id": 111,
+    "county_id": 1110007,
+    "type": "district"
+  },
+  {
     "id": 1110008001,
     "name": "پیشین",
     "slug": "پیشین",
@@ -6741,6 +7261,14 @@
     "province_id": 111,
     "county_id": 1110008,
     "type": "rural"
+  },
+  {
+    "id": 1110008005,
+    "name": "پارود",
+    "slug": "پارود",
+    "province_id": 111,
+    "county_id": 1110008,
+    "type": "district"
   },
   {
     "id": 1110009001,
@@ -6789,6 +7317,14 @@
     "province_id": 112,
     "county_id": 1120001,
     "type": "rural"
+  },
+  {
+    "id": 1120001004,
+    "name": "ننور",
+    "slug": "ننور",
+    "province_id": 112,
+    "county_id": 1120001,
+    "type": "district"
   },
   {
     "id": 1120002001,
@@ -6919,6 +7455,14 @@
     "type": "rural"
   },
   {
+    "id": 1120004005,
+    "name": "حسین آباد",
+    "slug": "حسین-آباد",
+    "province_id": 112,
+    "county_id": 1120004,
+    "type": "district"
+  },
+  {
     "id": 1120004006,
     "name": "نران",
     "slug": "نران",
@@ -6957,6 +7501,22 @@
     "province_id": 112,
     "county_id": 1120005,
     "type": "rural"
+  },
+  {
+    "id": 1120005004,
+    "name": "چهاردولی",
+    "slug": "چهاردولی",
+    "province_id": 112,
+    "county_id": 1120005,
+    "type": "district"
+  },
+  {
+    "id": 1120005005,
+    "name": "دلبران",
+    "slug": "دلبران",
+    "province_id": 112,
+    "county_id": 1120005,
+    "type": "district"
   },
   {
     "id": 1120006001,
@@ -7207,6 +7767,22 @@
     "type": "rural"
   },
   {
+    "id": 1130003003,
+    "name": "زرین دشت",
+    "slug": "زرین-دشت",
+    "province_id": 113,
+    "county_id": 1130003,
+    "type": "district"
+  },
+  {
+    "id": 1130003004,
+    "name": "گیان",
+    "slug": "گیان",
+    "province_id": 113,
+    "county_id": 1130003,
+    "type": "district"
+  },
+  {
     "id": 1130003005,
     "name": "گاماسیاب",
     "slug": "گاماسیاب",
@@ -7261,6 +7837,14 @@
     "province_id": 113,
     "county_id": 1130004,
     "type": "rural"
+  },
+  {
+    "id": 1130004007,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 113,
+    "county_id": 1130004,
+    "type": "district"
   },
   {
     "id": 1130005001,
@@ -7367,6 +7951,14 @@
     "type": "rural"
   },
   {
+    "id": 1130007003,
+    "name": "صالح آباد",
+    "slug": "صالح-آباد",
+    "province_id": 113,
+    "county_id": 1130007,
+    "type": "district"
+  },
+  {
     "id": 1130007004,
     "name": "آبرومند",
     "slug": "آبرومند",
@@ -7439,6 +8031,14 @@
     "type": "rural"
   },
   {
+    "id": 1140001004,
+    "name": "بلداجی",
+    "slug": "بلداجی",
+    "province_id": 114,
+    "county_id": 1140001,
+    "type": "district"
+  },
+  {
     "id": 1140002001,
     "name": "حومه",
     "slug": "حومه",
@@ -7463,6 +8063,14 @@
     "type": "rural"
   },
   {
+    "id": 1140002005,
+    "name": "لاران",
+    "slug": "لاران",
+    "province_id": 114,
+    "county_id": 1140002,
+    "type": "district"
+  },
+  {
     "id": 1140003001,
     "name": "سراب علیا",
     "slug": "سراب-علیا",
@@ -7477,6 +8085,22 @@
     "province_id": 114,
     "county_id": 1140003,
     "type": "rural"
+  },
+  {
+    "id": 1140003003,
+    "name": "بابا حیدر",
+    "slug": "بابا-حیدر",
+    "province_id": 114,
+    "county_id": 1140003,
+    "type": "district"
+  },
+  {
+    "id": 1140003004,
+    "name": "جونقان",
+    "slug": "جونقان",
+    "province_id": 114,
+    "county_id": 1140003,
+    "type": "district"
   },
   {
     "id": 1140004001,
@@ -7501,6 +8125,14 @@
     "province_id": 114,
     "county_id": 1140004,
     "type": "rural"
+  },
+  {
+    "id": 1140004005,
+    "name": "روددشت",
+    "slug": "روددشت",
+    "province_id": 114,
+    "county_id": 1140004,
+    "type": "district"
   },
   {
     "id": 1140004007,
@@ -7639,12 +8271,28 @@
     "type": "rural"
   },
   {
+    "id": 1150001004,
+    "name": "ذلقی",
+    "slug": "ذلقی",
+    "province_id": 115,
+    "county_id": 1150001,
+    "type": "district"
+  },
+  {
     "id": 1150001005,
     "name": "خمه",
     "slug": "خمه",
     "province_id": 115,
     "county_id": 1150001,
     "type": "rural"
+  },
+  {
+    "id": 1150001006,
+    "name": "بربرود شرقی",
+    "slug": "بربرود-شرقی",
+    "province_id": 115,
+    "county_id": 1150001,
+    "type": "district"
   },
   {
     "id": 1150002001,
@@ -7831,6 +8479,22 @@
     "type": "rural"
   },
   {
+    "id": 1150006004,
+    "name": "کوهنانی",
+    "slug": "کوهنانی",
+    "province_id": 115,
+    "county_id": 1150006,
+    "type": "district"
+  },
+  {
+    "id": 1150006005,
+    "name": "درب گنبد",
+    "slug": "درب-گنبد",
+    "province_id": 115,
+    "county_id": 1150006,
+    "type": "district"
+  },
+  {
     "id": 1150007001,
     "name": "جاپلق شرقی",
     "slug": "جاپلق-شرقی",
@@ -7927,6 +8591,14 @@
     "type": "rural"
   },
   {
+    "id": 1160001004,
+    "name": "سیوان",
+    "slug": "سیوان",
+    "province_id": 116,
+    "county_id": 1160001,
+    "type": "district"
+  },
+  {
     "id": 1160002001,
     "name": "ارمو",
     "slug": "ارمو",
@@ -7941,6 +8613,22 @@
     "province_id": 116,
     "county_id": 1160002,
     "type": "rural"
+  },
+  {
+    "id": 1160002003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 116,
+    "county_id": 1160002,
+    "type": "district"
+  },
+  {
+    "id": 1160002004,
+    "name": "ماژین",
+    "slug": "ماژین",
+    "province_id": 116,
+    "county_id": 1160002,
+    "type": "district"
   },
   {
     "id": 1160003001,
@@ -7975,6 +8663,14 @@
     "type": "rural"
   },
   {
+    "id": 1160003005,
+    "name": "دشت عباس",
+    "slug": "دشت-عباس",
+    "province_id": 116,
+    "county_id": 1160003,
+    "type": "district"
+  },
+  {
     "id": 1160004001,
     "name": "شباب",
     "slug": "شباب",
@@ -7991,12 +8687,52 @@
     "type": "rural"
   },
   {
+    "id": 1160004004,
+    "name": "شباب",
+    "slug": "شباب",
+    "province_id": 116,
+    "county_id": 1160004,
+    "type": "district"
+  },
+  {
+    "id": 1160004005,
+    "name": "زاگرس",
+    "slug": "زاگرس",
+    "province_id": 116,
+    "county_id": 1160004,
+    "type": "district"
+  },
+  {
+    "id": 1160004006,
+    "name": "آسمان آباد",
+    "slug": "آسمان-آباد",
+    "province_id": 116,
+    "county_id": 1160004,
+    "type": "district"
+  },
+  {
     "id": 1160005001,
     "name": "هجداندشت",
     "slug": "هجداندشت",
     "province_id": 116,
     "county_id": 1160005,
     "type": "rural"
+  },
+  {
+    "id": 1160005002,
+    "name": "صالح آباد",
+    "slug": "صالح-آباد",
+    "province_id": 116,
+    "county_id": 1160005,
+    "type": "district"
+  },
+  {
+    "id": 1160005003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 116,
+    "county_id": 1160005,
+    "type": "district"
   },
   {
     "id": 1160006001,
@@ -8111,6 +8847,14 @@
     "type": "rural"
   },
   {
+    "id": 1170001006,
+    "name": "سپیدار",
+    "slug": "سپیدار",
+    "province_id": 117,
+    "county_id": 1170001,
+    "type": "district"
+  },
+  {
     "id": 1170002001,
     "name": "بهمیی سرحدی شرقی",
     "slug": "بهمیی-سرحدی-شرقی",
@@ -8141,6 +8885,30 @@
     "province_id": 117,
     "county_id": 1170002,
     "type": "rural"
+  },
+  {
+    "id": 1170002005,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 117,
+    "county_id": 1170002,
+    "type": "district"
+  },
+  {
+    "id": 1170002006,
+    "name": "دیشموک",
+    "slug": "دیشموک",
+    "province_id": 117,
+    "county_id": 1170002,
+    "type": "district"
+  },
+  {
+    "id": 1170002007,
+    "name": "سوق",
+    "slug": "سوق",
+    "province_id": 117,
+    "county_id": 1170002,
+    "type": "district"
   },
   {
     "id": 1170003001,
@@ -8189,6 +8957,14 @@
     "province_id": 117,
     "county_id": 1170004,
     "type": "rural"
+  },
+  {
+    "id": 1170004003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 117,
+    "county_id": 1170004,
+    "type": "district"
   },
   {
     "id": 1170005001,
@@ -8303,6 +9079,14 @@
     "type": "rural"
   },
   {
+    "id": 1180001003,
+    "name": "چغادک",
+    "slug": "چغادک",
+    "province_id": 118,
+    "county_id": 1180001,
+    "type": "district"
+  },
+  {
     "id": 1180002001,
     "name": "بوالخیر",
     "slug": "بوالخیر",
@@ -8357,6 +9141,14 @@
     "province_id": 118,
     "county_id": 1180003,
     "type": "rural"
+  },
+  {
+    "id": 1180003006,
+    "name": "آب پخش",
+    "slug": "آب-پخش",
+    "province_id": 118,
+    "county_id": 1180003,
+    "type": "district"
   },
   {
     "id": 1180004001,
@@ -8423,6 +9215,14 @@
     "type": "rural"
   },
   {
+    "id": 1180006003,
+    "name": "سیراف",
+    "slug": "سیراف",
+    "province_id": 118,
+    "county_id": 1180006,
+    "type": "district"
+  },
+  {
     "id": 1180006004,
     "name": "حومه",
     "slug": "حومه",
@@ -8445,6 +9245,22 @@
     "province_id": 118,
     "county_id": 1180007,
     "type": "rural"
+  },
+  {
+    "id": 1180007002,
+    "name": "ریگ",
+    "slug": "ریگ",
+    "province_id": 118,
+    "county_id": 1180007,
+    "type": "district"
+  },
+  {
+    "id": 1180007003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 118,
+    "county_id": 1180007,
+    "type": "district"
   },
   {
     "id": 1180008001,
@@ -8549,6 +9365,14 @@
     "province_id": 119,
     "county_id": 1190003,
     "type": "rural"
+  },
+  {
+    "id": 1190003004,
+    "name": "سجاس رود",
+    "slug": "سجاس-رود",
+    "province_id": 119,
+    "county_id": 1190003,
+    "type": "district"
   },
   {
     "id": 1190003005,
@@ -8669,6 +9493,14 @@
     "province_id": 119,
     "county_id": 1190008,
     "type": "rural"
+  },
+  {
+    "id": 1190008003,
+    "name": "گیلوان",
+    "slug": "گیلوان",
+    "province_id": 119,
+    "county_id": 1190008,
+    "type": "district"
   },
   {
     "id": 1190009001,
@@ -9007,6 +9839,14 @@
     "type": "rural"
   },
   {
+    "id": 1210005005,
+    "name": "اکرم آباد",
+    "slug": "اکرم-آباد",
+    "province_id": 121,
+    "county_id": 1210005,
+    "type": "district"
+  },
+  {
     "id": 1210006001,
     "name": "ندوشن",
     "slug": "ندوشن",
@@ -9021,6 +9861,14 @@
     "province_id": 121,
     "county_id": 1210006,
     "type": "rural"
+  },
+  {
+    "id": 1210006003,
+    "name": "بفروییه",
+    "slug": "بفروییه",
+    "province_id": 121,
+    "county_id": 1210006,
+    "type": "district"
   },
   {
     "id": 1210007001,
@@ -9047,6 +9895,14 @@
     "type": "rural"
   },
   {
+    "id": 1210008002,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 121,
+    "county_id": 1210008,
+    "type": "district"
+  },
+  {
     "id": 1210009001,
     "name": "چاهک",
     "slug": "چاهک",
@@ -9063,12 +9919,28 @@
     "type": "rural"
   },
   {
+    "id": 1210009003,
+    "name": "چاهک",
+    "slug": "چاهک",
+    "province_id": 121,
+    "county_id": 1210009,
+    "type": "district"
+  },
+  {
     "id": 1220001001,
     "name": "تنب",
     "slug": "تنب",
     "province_id": 122,
     "county_id": 1220001,
     "type": "rural"
+  },
+  {
+    "id": 1220001002,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 122,
+    "county_id": 1220001,
+    "type": "district"
   },
   {
     "id": 1220001003,
@@ -9103,12 +9975,28 @@
     "type": "rural"
   },
   {
+    "id": 1220002004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 122,
+    "county_id": 1220002,
+    "type": "district"
+  },
+  {
     "id": 1220002005,
     "name": "گچین",
     "slug": "گچین",
     "province_id": 122,
     "county_id": 1220002,
     "type": "rural"
+  },
+  {
+    "id": 1220002006,
+    "name": "قلعه قاضی",
+    "slug": "قلعه-قاضی",
+    "province_id": 122,
+    "county_id": 1220002,
+    "type": "district"
   },
   {
     "id": 1220002007,
@@ -9149,6 +10037,22 @@
     "province_id": 122,
     "county_id": 1220003,
     "type": "rural"
+  },
+  {
+    "id": 1220003005,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 122,
+    "county_id": 1220003,
+    "type": "district"
+  },
+  {
+    "id": 1220003006,
+    "name": "مهران",
+    "slug": "مهران",
+    "province_id": 122,
+    "county_id": 1220003,
+    "type": "district"
   },
   {
     "id": 1220004001,
@@ -9207,12 +10111,36 @@
     "type": "rural"
   },
   {
+    "id": 1220005004,
+    "name": "توکهور",
+    "slug": "توکهور",
+    "province_id": 122,
+    "county_id": 1220005,
+    "type": "district"
+  },
+  {
     "id": 1220005005,
     "name": "گوربند",
     "slug": "گوربند",
     "province_id": 122,
     "county_id": 1220005,
     "type": "rural"
+  },
+  {
+    "id": 1220005006,
+    "name": "تیاب",
+    "slug": "تیاب",
+    "province_id": 122,
+    "county_id": 1220005,
+    "type": "district"
+  },
+  {
+    "id": 1220005007,
+    "name": "کریان",
+    "slug": "کریان",
+    "province_id": 122,
+    "county_id": 1220005,
+    "type": "district"
   },
   {
     "id": 1220006001,
@@ -9269,6 +10197,14 @@
     "province_id": 122,
     "county_id": 1220007,
     "type": "rural"
+  },
+  {
+    "id": 1220007004,
+    "name": "بیکاه",
+    "slug": "بیکاه",
+    "province_id": 122,
+    "county_id": 1220007,
+    "type": "district"
   },
   {
     "id": 1220007006,
@@ -9351,6 +10287,14 @@
     "type": "rural"
   },
   {
+    "id": 1230001003,
+    "name": "آفتاب",
+    "slug": "آفتاب",
+    "province_id": 123,
+    "county_id": 1230001,
+    "type": "district"
+  },
+  {
     "id": 1230002001,
     "name": "ابرشیوه",
     "slug": "ابرشیوه",
@@ -9407,6 +10351,30 @@
     "type": "rural"
   },
   {
+    "id": 1230003004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 123,
+    "county_id": 1230003,
+    "type": "district"
+  },
+  {
+    "id": 1230003005,
+    "name": "خاوران",
+    "slug": "خاوران",
+    "province_id": 123,
+    "county_id": 1230003,
+    "type": "district"
+  },
+  {
+    "id": 1230003006,
+    "name": "قلعه نو",
+    "slug": "قلعه-نو",
+    "province_id": 123,
+    "county_id": 1230003,
+    "type": "district"
+  },
+  {
     "id": 1230004001,
     "name": "رودبارقصران",
     "slug": "رودبارقصران",
@@ -9461,6 +10429,14 @@
     "province_id": 123,
     "county_id": 1230009,
     "type": "rural"
+  },
+  {
+    "id": 1230009003,
+    "name": "جوقین",
+    "slug": "جوقین",
+    "province_id": 123,
+    "county_id": 1230009,
+    "type": "district"
   },
   {
     "id": 1230009004,
@@ -9535,6 +10511,14 @@
     "type": "rural"
   },
   {
+    "id": 1240001006,
+    "name": "ثمرین",
+    "slug": "ثمرین",
+    "province_id": 124,
+    "county_id": 1240001,
+    "type": "district"
+  },
+  {
     "id": 1240001007,
     "name": "کلخوران",
     "slug": "کلخوران",
@@ -9591,6 +10575,14 @@
     "type": "rural"
   },
   {
+    "id": 1240003004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 124,
+    "county_id": 1240003,
+    "type": "district"
+  },
+  {
     "id": 1240004001,
     "name": "ارشق شمالی",
     "slug": "ارشق-شمالی",
@@ -9613,6 +10605,14 @@
     "province_id": 124,
     "county_id": 1240004,
     "type": "rural"
+  },
+  {
+    "id": 1240004004,
+    "name": "مرادلو",
+    "slug": "مرادلو",
+    "province_id": 124,
+    "county_id": 1240004,
+    "type": "district"
   },
   {
     "id": 1240004005,
@@ -9799,6 +10799,14 @@
     "type": "rural"
   },
   {
+    "id": 1250001005,
+    "name": "سلفچگان",
+    "slug": "سلفچگان",
+    "province_id": 125,
+    "county_id": 1250001,
+    "type": "district"
+  },
+  {
     "id": 1250002001,
     "name": "جعفرآباد",
     "slug": "جعفرآباد",
@@ -9871,6 +10879,14 @@
     "type": "rural"
   },
   {
+    "id": 1260001006,
+    "name": "دشتابی",
+    "slug": "دشتابی",
+    "province_id": 126,
+    "county_id": 1260001,
+    "type": "district"
+  },
+  {
     "id": 1260002001,
     "name": "اک",
     "slug": "اک",
@@ -9893,6 +10909,14 @@
     "province_id": 126,
     "county_id": 1260002,
     "type": "rural"
+  },
+  {
+    "id": 1260002004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 126,
+    "county_id": 1260002,
+    "type": "district"
   },
   {
     "id": 1260003001,
@@ -9925,6 +10949,22 @@
     "province_id": 126,
     "county_id": 1260003,
     "type": "rural"
+  },
+  {
+    "id": 1260003005,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 126,
+    "county_id": 1260003,
+    "type": "district"
+  },
+  {
+    "id": 1260003007,
+    "name": "کوهین",
+    "slug": "کوهین",
+    "province_id": 126,
+    "county_id": 1260003,
+    "type": "district"
   },
   {
     "id": 1260004001,
@@ -10021,6 +11061,14 @@
     "province_id": 127,
     "county_id": 1270002,
     "type": "rural"
+  },
+  {
+    "id": 1270002003,
+    "name": "سیجوال",
+    "slug": "سیجوال",
+    "province_id": 127,
+    "county_id": 1270002,
+    "type": "district"
   },
   {
     "id": 1270003001,
@@ -10151,6 +11199,22 @@
     "type": "rural"
   },
   {
+    "id": 1270007004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 127,
+    "county_id": 1270007,
+    "type": "district"
+  },
+  {
+    "id": 1270007005,
+    "name": "کوهسارات",
+    "slug": "کوهسارات",
+    "province_id": 127,
+    "county_id": 1270007,
+    "type": "district"
+  },
+  {
     "id": 1270008001,
     "name": "مزرعه جنوبی",
     "slug": "مزرعه-جنوبی",
@@ -10191,6 +11255,14 @@
     "type": "rural"
   },
   {
+    "id": 1270009003,
+    "name": "پیشکمر",
+    "slug": "پیشکمر",
+    "province_id": 127,
+    "county_id": 1270009,
+    "type": "district"
+  },
+  {
     "id": 1270009004,
     "name": "کنگور",
     "slug": "کنگور",
@@ -10213,6 +11285,14 @@
     "province_id": 128,
     "county_id": 1280001,
     "type": "rural"
+  },
+  {
+    "id": 1280001003,
+    "name": "زرق آباد",
+    "slug": "زرق-آباد",
+    "province_id": 128,
+    "county_id": 1280001,
+    "type": "district"
   },
   {
     "id": 1280001004,
@@ -10255,6 +11335,22 @@
     "type": "rural"
   },
   {
+    "id": 1280002004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 128,
+    "county_id": 1280002,
+    "type": "district"
+  },
+  {
+    "id": 1280002005,
+    "name": "گرمخان",
+    "slug": "گرمخان",
+    "province_id": 128,
+    "county_id": 1280002,
+    "type": "district"
+  },
+  {
     "id": 1280003001,
     "name": "چهارده سنخواست",
     "slug": "چهارده-سنخواست",
@@ -10269,6 +11365,14 @@
     "province_id": 128,
     "county_id": 1280003,
     "type": "rural"
+  },
+  {
+    "id": 1280003003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 128,
+    "county_id": 1280003,
+    "type": "district"
   },
   {
     "id": 1280004001,
@@ -10351,6 +11455,14 @@
     "type": "rural"
   },
   {
+    "id": 1280006003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 128,
+    "county_id": 1280006,
+    "type": "district"
+  },
+  {
     "id": 1280007001,
     "name": "گلستان",
     "slug": "گلستان",
@@ -10381,6 +11493,14 @@
     "province_id": 128,
     "county_id": 1280008,
     "type": "rural"
+  },
+  {
+    "id": 1280008003,
+    "name": "جرگلان",
+    "slug": "جرگلان",
+    "province_id": 128,
+    "county_id": 1280008,
+    "type": "district"
   },
   {
     "id": 1280009001,
@@ -10471,6 +11591,14 @@
     "type": "rural"
   },
   {
+    "id": 1290002004,
+    "name": "میاندشت",
+    "slug": "میاندشت",
+    "province_id": 129,
+    "county_id": 1290002,
+    "type": "district"
+  },
+  {
     "id": 1290003001,
     "name": "مود",
     "slug": "مود",
@@ -10517,6 +11645,14 @@
     "province_id": 129,
     "county_id": 1290004,
     "type": "rural"
+  },
+  {
+    "id": 1290004005,
+    "name": "سده",
+    "slug": "سده",
+    "province_id": 129,
+    "county_id": 1290004,
+    "type": "district"
   },
   {
     "id": 1290005001,
@@ -10575,6 +11711,22 @@
     "type": "rural"
   },
   {
+    "id": 1290007003,
+    "name": "اسلامیه",
+    "slug": "اسلامیه",
+    "province_id": 129,
+    "county_id": 1290007,
+    "type": "district"
+  },
+  {
+    "id": 1290007004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 129,
+    "county_id": 1290007,
+    "type": "district"
+  },
+  {
     "id": 1290008001,
     "name": "علی جمال",
     "slug": "علی-جمال",
@@ -10605,6 +11757,14 @@
     "province_id": 129,
     "county_id": 1290009,
     "type": "rural"
+  },
+  {
+    "id": 1290009003,
+    "name": "شاسکوه",
+    "slug": "شاسکوه",
+    "province_id": 129,
+    "county_id": 1290009,
+    "type": "district"
   },
   {
     "id": 1300001001,
@@ -10645,6 +11805,14 @@
     "province_id": 130,
     "county_id": 1300002,
     "type": "rural"
+  },
+  {
+    "id": 1300002003,
+    "name": "چندار",
+    "slug": "چندار",
+    "province_id": 130,
+    "county_id": 1300002,
+    "type": "district"
   },
   {
     "id": 1300003001,
@@ -24007,33 +25175,9 @@
     "type": "city"
   },
   {
-    "id": 10000010010,
-    "name": "حاجی آباد",
-    "slug": "حاجی-آباد",
-    "province_id": 100,
-    "county_id": 1000001,
-    "type": "rural"
-  },
-  {
     "id": 10000012002,
     "name": "دهچال",
     "slug": "دهچال",
-    "province_id": 100,
-    "county_id": 10000012,
-    "type": "rural"
-  },
-  {
-    "id": 10000012003,
-    "name": "سنگ سفید",
-    "slug": "سنگ-سفید",
-    "province_id": 100,
-    "county_id": 10000012,
-    "type": "rural"
-  },
-  {
-    "id": 10000012001,
-    "name": "خنداب",
-    "slug": "خنداب",
     "province_id": 100,
     "county_id": 10000012,
     "type": "rural"
@@ -24071,19 +25215,19 @@
     "type": "rural"
   },
   {
-    "id": 10000011004,
-    "name": "وفس",
-    "slug": "وفس",
-    "province_id": 100,
-    "county_id": 10000011,
-    "type": "rural"
-  },
-  {
     "id": 10000011002,
     "name": "میلاجرد",
     "slug": "میلاجرد",
     "province_id": 100,
     "county_id": 10000011,
+    "type": "rural"
+  },
+  {
+    "id": 10000012001,
+    "name": "خنداب",
+    "slug": "خنداب",
+    "province_id": 100,
+    "county_id": 10000012,
     "type": "rural"
   },
   {
@@ -24111,22 +25255,6 @@
     "type": "rural"
   },
   {
-    "id": 10100010003,
-    "name": "دیوشل",
-    "slug": "دیوشل",
-    "province_id": 101,
-    "county_id": 10100010,
-    "type": "rural"
-  },
-  {
-    "id": 10100010004,
-    "name": "گل سفید",
-    "slug": "گل-سفید",
-    "province_id": 101,
-    "county_id": 10100010,
-    "type": "rural"
-  },
-  {
     "id": 10100010002,
     "name": "لات لیل",
     "slug": "لات-لیل",
@@ -24135,11 +25263,11 @@
     "type": "rural"
   },
   {
-    "id": 10100011001,
-    "name": "آهندان",
-    "slug": "آهندان",
+    "id": 10100010003,
+    "name": "دیوشل",
+    "slug": "دیوشل",
     "province_id": 101,
-    "county_id": 10100011,
+    "county_id": 10100010,
     "type": "rural"
   },
   {
@@ -24151,28 +25279,12 @@
     "type": "rural"
   },
   {
-    "id": 10100011005,
-    "name": "لفمجان",
-    "slug": "لفمجان",
+    "id": 10100011004,
+    "name": "رودبنه",
+    "slug": "رودبنه",
     "province_id": 101,
     "county_id": 10100011,
-    "type": "rural"
-  },
-  {
-    "id": 10100011006,
-    "name": "لیالستان",
-    "slug": "لیالستان",
-    "province_id": 101,
-    "county_id": 10100011,
-    "type": "rural"
-  },
-  {
-    "id": 10100011007,
-    "name": "لیل",
-    "slug": "لیل",
-    "province_id": 101,
-    "county_id": 10100011,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10100012001,
@@ -24202,14 +25314,6 @@
     "id": 10100013002,
     "name": "شبخوس لات",
     "slug": "شبخوس-لات",
-    "province_id": 101,
-    "county_id": 10100013,
-    "type": "rural"
-  },
-  {
-    "id": 10100013003,
-    "name": "کجید",
-    "slug": "کجید",
     "province_id": 101,
     "county_id": 10100013,
     "type": "rural"
@@ -24247,14 +25351,6 @@
     "type": "rural"
   },
   {
-    "id": 10100015003,
-    "name": "مالفجان",
-    "slug": "مالفجان",
-    "province_id": 101,
-    "county_id": 10100015,
-    "type": "rural"
-  },
-  {
     "id": 10100016001,
     "name": "شاندرمن",
     "slug": "شاندرمن",
@@ -24287,27 +25383,11 @@
     "type": "rural"
   },
   {
-    "id": 10200014003,
-    "name": "شیخ فضل اله نوری",
-    "slug": "شیخ-فضل-اله-نوری",
+    "id": 10200014002,
+    "name": "تتارستاق",
+    "slug": "تتارستاق",
     "province_id": 102,
     "county_id": 10200014,
-    "type": "rural"
-  },
-  {
-    "id": 10200014001,
-    "name": "لاویج",
-    "slug": "لاویج",
-    "province_id": 102,
-    "county_id": 10200014,
-    "type": "rural"
-  },
-  {
-    "id": 10200010001,
-    "name": "بالاتجن",
-    "slug": "بالاتجن",
-    "province_id": 102,
-    "county_id": 10200010,
     "type": "rural"
   },
   {
@@ -24319,59 +25399,27 @@
     "type": "rural"
   },
   {
-    "id": 10200010004,
-    "name": "علی آباد",
-    "slug": "علی-آباد",
-    "province_id": 102,
-    "county_id": 10200010,
-    "type": "rural"
-  },
-  {
-    "id": 10200010005,
-    "name": "نوکنده کا",
-    "slug": "نوکنده-کا",
-    "province_id": 102,
-    "county_id": 10200010,
-    "type": "rural"
-  },
-  {
-    "id": 10200010006,
-    "name": "کوهساران",
-    "slug": "کوهساران",
-    "province_id": 102,
-    "county_id": 10200010,
-    "type": "rural"
-  },
-  {
-    "id": 10200014002,
-    "name": "تتارستاق",
-    "slug": "تتارستاق",
+    "id": 10200014001,
+    "name": "لاویج",
+    "slug": "لاویج",
     "province_id": 102,
     "county_id": 10200014,
     "type": "rural"
   },
   {
-    "id": 10200016002,
-    "name": "عزیزک",
-    "slug": "عزیزک",
+    "id": 10200016004,
+    "name": "رودبست",
+    "slug": "رودبست",
     "province_id": 102,
     "county_id": 10200016,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10200016001,
-    "name": "پازوار",
-    "slug": "پازوار",
+    "id": 10200014003,
+    "name": "شیخ فضل اله نوری",
+    "slug": "شیخ-فضل-اله-نوری",
     "province_id": 102,
-    "county_id": 10200016,
-    "type": "rural"
-  },
-  {
-    "id": 10200015001,
-    "name": "پنجک رستاق",
-    "slug": "پنجک-رستاق",
-    "province_id": 102,
-    "county_id": 10200015,
+    "county_id": 10200014,
     "type": "rural"
   },
   {
@@ -24383,12 +25431,28 @@
     "type": "rural"
   },
   {
-    "id": 10200015003,
-    "name": "زانوس رستاق",
-    "slug": "زانوس-رستاق",
+    "id": 10200015004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
     "province_id": 102,
     "county_id": 10200015,
+    "type": "district"
+  },
+  {
+    "id": 10200016002,
+    "name": "عزیزک",
+    "slug": "عزیزک",
+    "province_id": 102,
+    "county_id": 10200016,
     "type": "rural"
+  },
+  {
+    "id": 10200016003,
+    "name": "بهنمیر",
+    "slug": "بهنمیر",
+    "province_id": 102,
+    "county_id": 10200016,
+    "type": "district"
   },
   {
     "id": 10200018001,
@@ -24407,43 +25471,11 @@
     "type": "rural"
   },
   {
-    "id": 10200018003,
-    "name": "هرازپی غربی",
-    "slug": "هرازپی-غربی",
-    "province_id": 102,
-    "county_id": 10200018,
-    "type": "rural"
-  },
-  {
     "id": 10200019001,
     "name": "پی رجه",
     "slug": "پی-رجه",
     "province_id": 102,
     "county_id": 10200019,
-    "type": "rural"
-  },
-  {
-    "id": 10200019002,
-    "name": "قره طغان",
-    "slug": "قره-طغان",
-    "province_id": 102,
-    "county_id": 10200019,
-    "type": "rural"
-  },
-  {
-    "id": 10200019003,
-    "name": "مهروان",
-    "slug": "مهروان",
-    "province_id": 102,
-    "county_id": 10200019,
-    "type": "rural"
-  },
-  {
-    "id": 10200022001,
-    "name": "توسکاچشمه",
-    "slug": "توسکاچشمه",
-    "province_id": 102,
-    "county_id": 10200022,
     "type": "rural"
   },
   {
@@ -24455,11 +25487,11 @@
     "type": "rural"
   },
   {
-    "id": 10200020001,
-    "name": "کلارستاق شرقی",
-    "slug": "کلارستاق-شرقی",
+    "id": 10200019002,
+    "name": "قره طغان",
+    "slug": "قره-طغان",
     "province_id": 102,
-    "county_id": 10200020,
+    "county_id": 10200019,
     "type": "rural"
   },
   {
@@ -24471,9 +25503,25 @@
     "type": "rural"
   },
   {
+    "id": 10200020003,
+    "name": "مرزن آباد",
+    "slug": "مرزن-آباد",
+    "province_id": 102,
+    "county_id": 10200020,
+    "type": "district"
+  },
+  {
     "id": 10200021001,
     "name": "چپکرود شرقی",
     "slug": "چپکرود-شرقی",
+    "province_id": 102,
+    "county_id": 10200021,
+    "type": "rural"
+  },
+  {
+    "id": 10200021002,
+    "name": "سیاهرود",
+    "slug": "سیاهرود",
     "province_id": 102,
     "county_id": 10200021,
     "type": "rural"
@@ -24487,11 +25535,11 @@
     "type": "rural"
   },
   {
-    "id": 10200021002,
-    "name": "سیاهرود",
-    "slug": "سیاهرود",
+    "id": 10200022001,
+    "name": "توسکاچشمه",
+    "slug": "توسکاچشمه",
     "province_id": 102,
-    "county_id": 10200021,
+    "county_id": 10200022,
     "type": "rural"
   },
   {
@@ -24527,6 +25575,14 @@
     "type": "rural"
   },
   {
+    "id": 10200024003,
+    "name": "کلار",
+    "slug": "کلار",
+    "province_id": 102,
+    "county_id": 10200024,
+    "type": "district"
+  },
+  {
     "id": 10200025001,
     "name": "کوهدشت شرقی",
     "slug": "کوهدشت-شرقی",
@@ -24538,14 +25594,6 @@
     "id": 10200025002,
     "name": "کوهدشت غربی",
     "slug": "کوهدشت-غربی",
-    "province_id": 102,
-    "county_id": 10200025,
-    "type": "rural"
-  },
-  {
-    "id": 10200025003,
-    "name": "میاندورود بزرگ",
-    "slug": "میاندورود-بزرگ",
     "province_id": 102,
     "county_id": 10200025,
     "type": "rural"
@@ -24591,25 +25639,17 @@
     "type": "rural"
   },
   {
-    "id": 10200028002,
-    "name": "کلاردشت غربی",
-    "slug": "کلاردشت-غربی",
-    "province_id": 102,
-    "county_id": 10200028,
+    "id": 10300010001,
+    "name": "اوچ تپه غربی",
+    "slug": "اوچ-تپه-غربی",
+    "province_id": 103,
+    "county_id": 10300010,
     "type": "rural"
   },
   {
     "id": 10300010002,
     "name": "بروانان شرقی",
     "slug": "بروانان-شرقی",
-    "province_id": 103,
-    "county_id": 10300010,
-    "type": "rural"
-  },
-  {
-    "id": 10300010001,
-    "name": "اوچ تپه غربی",
-    "slug": "اوچ-تپه-غربی",
     "province_id": 103,
     "county_id": 10300010,
     "type": "rural"
@@ -24631,30 +25671,6 @@
     "type": "rural"
   },
   {
-    "id": 10300010005,
-    "name": "کله بوزشرقی",
-    "slug": "کله-بوزشرقی",
-    "province_id": 103,
-    "county_id": 10300010,
-    "type": "rural"
-  },
-  {
-    "id": 10300010006,
-    "name": "کله بوزغربی",
-    "slug": "کله-بوزغربی",
-    "province_id": 103,
-    "county_id": 10300010,
-    "type": "rural"
-  },
-  {
-    "id": 10300010007,
-    "name": "گرمه جنوبی",
-    "slug": "گرمه-جنوبی",
-    "province_id": 103,
-    "county_id": 10300010,
-    "type": "rural"
-  },
-  {
     "id": 10300011002,
     "name": "سلوک",
     "slug": "سلوک",
@@ -24671,73 +25687,9 @@
     "type": "rural"
   },
   {
-    "id": 10300011004,
-    "name": "قرانقو",
-    "slug": "قرانقو",
-    "province_id": 103,
-    "county_id": 10300011,
-    "type": "rural"
-  },
-  {
-    "id": 10300011005,
-    "name": "کوهسار",
-    "slug": "کوهسار",
-    "province_id": 103,
-    "county_id": 10300011,
-    "type": "rural"
-  },
-  {
-    "id": 10300011006,
-    "name": "چاراویماق شمالشرقی",
-    "slug": "چاراویماق-شمالشرقی",
-    "province_id": 103,
-    "county_id": 10300011,
-    "type": "rural"
-  },
-  {
-    "id": 10300013004,
-    "name": "مهرانرودجنوبی",
-    "slug": "مهرانرودجنوبی",
-    "province_id": 103,
-    "county_id": 10300013,
-    "type": "rural"
-  },
-  {
-    "id": 10300013005,
-    "name": "مهرانرودمرکزی",
-    "slug": "مهرانرودمرکزی",
-    "province_id": 103,
-    "county_id": 10300013,
-    "type": "rural"
-  },
-  {
-    "id": 10300011001,
-    "name": "آلمالو",
-    "slug": "آلمالو",
-    "province_id": 103,
-    "county_id": 10300011,
-    "type": "rural"
-  },
-  {
     "id": 10300012001,
     "name": "بناجوی شرقی",
     "slug": "بناجوی-شرقی",
-    "province_id": 103,
-    "county_id": 10300012,
-    "type": "rural"
-  },
-  {
-    "id": 10300012002,
-    "name": "بناجوی شمالی",
-    "slug": "بناجوی-شمالی",
-    "province_id": 103,
-    "county_id": 10300012,
-    "type": "rural"
-  },
-  {
-    "id": 10300012003,
-    "name": "بناجوی غربی",
-    "slug": "بناجوی-غربی",
     "province_id": 103,
     "county_id": 10300012,
     "type": "rural"
@@ -24759,17 +25711,9 @@
     "type": "rural"
   },
   {
-    "id": 10300013003,
-    "name": "عبا س  شرقی",
-    "slug": "عبا-س-شرقی",
-    "province_id": 103,
-    "county_id": 10300013,
-    "type": "rural"
-  },
-  {
-    "id": 10300015001,
-    "name": "آبش احمد",
-    "slug": "آبش-احمد",
+    "id": 10300015003,
+    "name": "مولان",
+    "slug": "مولان",
     "province_id": 103,
     "county_id": 10300015,
     "type": "rural"
@@ -24799,41 +25743,9 @@
     "type": "rural"
   },
   {
-    "id": 10300014005,
-    "name": "گونی مرکزی",
-    "slug": "گونی-مرکزی",
-    "province_id": 103,
-    "county_id": 10300014,
-    "type": "rural"
-  },
-  {
     "id": 10300015002,
     "name": "پیغان چایی",
     "slug": "پیغان-چایی",
-    "province_id": 103,
-    "county_id": 10300015,
-    "type": "rural"
-  },
-  {
-    "id": 10300015003,
-    "name": "مولان",
-    "slug": "مولان",
-    "province_id": 103,
-    "county_id": 10300015,
-    "type": "rural"
-  },
-  {
-    "id": 10300015004,
-    "name": "میشه پاره",
-    "slug": "میشه-پاره",
-    "province_id": 103,
-    "county_id": 10300015,
-    "type": "rural"
-  },
-  {
-    "id": 10300015005,
-    "name": "ییلاق",
-    "slug": "ییلاق",
     "province_id": 103,
     "county_id": 10300015,
     "type": "rural"
@@ -24855,33 +25767,9 @@
     "type": "rural"
   },
   {
-    "id": 10300021003,
-    "name": "قاضی جهان",
-    "slug": "قاضی-جهان",
-    "province_id": 103,
-    "county_id": 10300021,
-    "type": "rural"
-  },
-  {
-    "id": 10300016003,
-    "name": "مواضع خان شمالی",
-    "slug": "مواضع-خان-شمالی",
-    "province_id": 103,
-    "county_id": 10300016,
-    "type": "rural"
-  },
-  {
     "id": 10300019001,
     "name": "دیزمارغربی",
     "slug": "دیزمارغربی",
-    "province_id": 103,
-    "county_id": 10300019,
-    "type": "rural"
-  },
-  {
-    "id": 10300019003,
-    "name": "نوجه مهر",
-    "slug": "نوجه-مهر",
     "province_id": 103,
     "county_id": 10300019,
     "type": "rural"
@@ -24892,22 +25780,6 @@
     "slug": "ارسی",
     "province_id": 103,
     "county_id": 10300019,
-    "type": "rural"
-  },
-  {
-    "id": 10300020003,
-    "name": "گاودول مرکزی",
-    "slug": "گاودول-مرکزی",
-    "province_id": 103,
-    "county_id": 10300020,
-    "type": "rural"
-  },
-  {
-    "id": 10300020001,
-    "name": "گاودول شرقی",
-    "slug": "گاودول-شرقی",
-    "province_id": 103,
-    "county_id": 10300020,
     "type": "rural"
   },
   {
@@ -24927,6 +25799,14 @@
     "type": "rural"
   },
   {
+    "id": 10300020003,
+    "name": "گاودول مرکزی",
+    "slug": "گاودول-مرکزی",
+    "province_id": 103,
+    "county_id": 10300020,
+    "type": "rural"
+  },
+  {
     "id": 10300021002,
     "name": "قبله داغی",
     "slug": "قبله-داغی",
@@ -24935,9 +25815,9 @@
     "type": "rural"
   },
   {
-    "id": 10300021004,
-    "name": "ینگجه",
-    "slug": "ینگجه",
+    "id": 10300021003,
+    "name": "قاضی جهان",
+    "slug": "قاضی-جهان",
     "province_id": 103,
     "county_id": 10300021,
     "type": "rural"
@@ -24951,22 +25831,6 @@
     "type": "rural"
   },
   {
-    "id": 10300022001,
-    "name": "باویل",
-    "slug": "باویل",
-    "province_id": 103,
-    "county_id": 10300022,
-    "type": "rural"
-  },
-  {
-    "id": 10300022003,
-    "name": "گنبر",
-    "slug": "گنبر",
-    "province_id": 103,
-    "county_id": 10300022,
-    "type": "rural"
-  },
-  {
     "id": 10300023001,
     "name": "چاراویماق جنوب شرقی",
     "slug": "چاراویماق-جنوب-شرقی",
@@ -24975,17 +25839,17 @@
     "type": "rural"
   },
   {
-    "id": 10300023002,
-    "name": "چاراویماق شرقی",
-    "slug": "چاراویماق-شرقی",
+    "id": 10300022001,
+    "name": "باویل",
+    "slug": "باویل",
     "province_id": 103,
-    "county_id": 10300023,
+    "county_id": 10300022,
     "type": "rural"
   },
   {
-    "id": 10300023004,
-    "name": "ورقه",
-    "slug": "ورقه",
+    "id": 10300023002,
+    "name": "چاراویماق شرقی",
+    "slug": "چاراویماق-شرقی",
     "province_id": 103,
     "county_id": 10300023,
     "type": "rural"
@@ -25007,25 +25871,9 @@
     "type": "rural"
   },
   {
-    "id": 10300023003,
-    "name": "قوری چای شرقی",
-    "slug": "قوری-چای-شرقی",
-    "province_id": 103,
-    "county_id": 10300023,
-    "type": "rural"
-  },
-  {
     "id": 10300024002,
     "name": "جوشین",
     "slug": "جوشین",
-    "province_id": 103,
-    "county_id": 10300024,
-    "type": "rural"
-  },
-  {
-    "id": 10300024003,
-    "name": "دیزمارمرکزی",
-    "slug": "دیزمارمرکزی",
     "province_id": 103,
     "county_id": 10300024,
     "type": "rural"
@@ -25044,14 +25892,6 @@
     "slug": "دیزجرودغربی",
     "province_id": 103,
     "county_id": 10300025,
-    "type": "rural"
-  },
-  {
-    "id": 10300024004,
-    "name": "سینا",
-    "slug": "سینا",
-    "province_id": 103,
-    "county_id": 10300024,
     "type": "rural"
   },
   {
@@ -25103,22 +25943,6 @@
     "type": "rural"
   },
   {
-    "id": 10400010011,
-    "name": "نازلوی جنوبی",
-    "slug": "نازلوی-جنوبی",
-    "province_id": 104,
-    "county_id": 1040001,
-    "type": "rural"
-  },
-  {
-    "id": 10400030010,
-    "name": "گوهران",
-    "slug": "گوهران",
-    "province_id": 104,
-    "county_id": 1040003,
-    "type": "rural"
-  },
-  {
     "id": 10400010001,
     "name": "آختاچی شرقی",
     "slug": "آختاچی-شرقی",
@@ -25135,41 +25959,9 @@
     "type": "rural"
   },
   {
-    "id": 10400010003,
-    "name": "بهی دهبکری",
-    "slug": "بهی-دهبکری",
-    "province_id": 104,
-    "county_id": 10400010,
-    "type": "rural"
-  },
-  {
-    "id": 10400010004,
-    "name": "بهی فیض اله بیگی",
-    "slug": "بهی-فیض-اله-بیگی",
-    "province_id": 104,
-    "county_id": 10400010,
-    "type": "rural"
-  },
-  {
     "id": 10400011001,
     "name": "صفاخانه",
     "slug": "صفاخانه",
-    "province_id": 104,
-    "county_id": 10400011,
-    "type": "rural"
-  },
-  {
-    "id": 10400011002,
-    "name": "محمودآباد",
-    "slug": "محمودآباد",
-    "province_id": 104,
-    "county_id": 10400011,
-    "type": "rural"
-  },
-  {
-    "id": 10400011003,
-    "name": "هولاسو",
-    "slug": "هولاسو",
     "province_id": 104,
     "county_id": 10400011,
     "type": "rural"
@@ -25183,17 +25975,9 @@
     "type": "rural"
   },
   {
-    "id": 10400015001,
-    "name": "چایباسارشرقی",
-    "slug": "چایباسارشرقی",
-    "province_id": 104,
-    "county_id": 10400015,
-    "type": "rural"
-  },
-  {
-    "id": 10400011004,
-    "name": "کشاور",
-    "slug": "کشاور",
+    "id": 10400011002,
+    "name": "محمودآباد",
+    "slug": "محمودآباد",
     "province_id": 104,
     "county_id": 10400011,
     "type": "rural"
@@ -25210,14 +25994,6 @@
     "id": 10400012002,
     "name": "انصار",
     "slug": "انصار",
-    "province_id": 104,
-    "county_id": 10400012,
-    "type": "rural"
-  },
-  {
-    "id": 10400012003,
-    "name": "کرفتو",
-    "slug": "کرفتو",
     "province_id": 104,
     "county_id": 10400012,
     "type": "rural"
@@ -25255,11 +26031,11 @@
     "type": "rural"
   },
   {
-    "id": 10400014003,
-    "name": "ببه جیک",
-    "slug": "ببه-جیک",
+    "id": 10400015001,
+    "name": "چایباسارشرقی",
+    "slug": "چایباسارشرقی",
     "province_id": 104,
-    "county_id": 10400014,
+    "county_id": 10400015,
     "type": "rural"
   },
   {
@@ -25359,30 +26135,6 @@
     "type": "rural"
   },
   {
-    "id": 10500010003,
-    "name": "کندوله",
-    "slug": "کندوله",
-    "province_id": 105,
-    "county_id": 10500010,
-    "type": "rural"
-  },
-  {
-    "id": 10500010005,
-    "name": "هجر",
-    "slug": "هجر",
-    "province_id": 105,
-    "county_id": 10500010,
-    "type": "rural"
-  },
-  {
-    "id": 10500010004,
-    "name": "گاماسیاب",
-    "slug": "گاماسیاب",
-    "province_id": 105,
-    "county_id": 10500010,
-    "type": "rural"
-  },
-  {
     "id": 10500011001,
     "name": "چم چمال",
     "slug": "چم-چمال",
@@ -25415,12 +26167,12 @@
     "type": "rural"
   },
   {
-    "id": 10500013002,
-    "name": "گورانی",
-    "slug": "گورانی",
+    "id": 10500012003,
+    "name": "زمکان",
+    "slug": "زمکان",
     "province_id": 105,
-    "county_id": 10500013,
-    "type": "rural"
+    "county_id": 10500012,
+    "type": "district"
   },
   {
     "id": 10500013001,
@@ -25431,9 +26183,9 @@
     "type": "rural"
   },
   {
-    "id": 10500013003,
-    "name": "حومه کرند",
-    "slug": "حومه-کرند",
+    "id": 10500013002,
+    "name": "گورانی",
+    "slug": "گورانی",
     "province_id": 105,
     "county_id": 10500013,
     "type": "rural"
@@ -25455,19 +26207,11 @@
     "type": "rural"
   },
   {
-    "id": 10500014003,
-    "name": "دولت اباد",
-    "slug": "دولت-اباد",
-    "province_id": 105,
-    "county_id": 10500014,
-    "type": "rural"
-  },
-  {
-    "id": 10500014004,
-    "name": "زالوآب",
-    "slug": "زالوآب",
-    "province_id": 105,
-    "county_id": 10500014,
+    "id": 10600010002,
+    "name": "ماماتین",
+    "slug": "ماماتین",
+    "province_id": 106,
+    "county_id": 10600010,
     "type": "rural"
   },
   {
@@ -25487,20 +26231,12 @@
     "type": "rural"
   },
   {
-    "id": 10600010001,
-    "name": "جره",
-    "slug": "جره",
+    "id": 10600010005,
+    "name": "ابولفارس",
+    "slug": "ابولفارس",
     "province_id": 106,
     "county_id": 10600010,
-    "type": "rural"
-  },
-  {
-    "id": 10600010002,
-    "name": "ماماتین",
-    "slug": "ماماتین",
-    "province_id": 106,
-    "county_id": 10600010,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10600011001,
@@ -25527,17 +26263,9 @@
     "type": "rural"
   },
   {
-    "id": 10600011004,
-    "name": "حسینی",
-    "slug": "حسینی",
-    "province_id": 106,
-    "county_id": 10600011,
-    "type": "rural"
-  },
-  {
-    "id": 10600012001,
-    "name": "سردارآباد",
-    "slug": "سردارآباد",
+    "id": 10600012002,
+    "name": "شعیبیه غربی",
+    "slug": "شعیبیه-غربی",
     "province_id": 106,
     "county_id": 10600012,
     "type": "rural"
@@ -25551,33 +26279,41 @@
     "type": "rural"
   },
   {
-    "id": 10600012002,
-    "name": "شعیبیه غربی",
-    "slug": "شعیبیه-غربی",
+    "id": 10600012004,
+    "name": "میان آب",
+    "slug": "میان-آب",
     "province_id": 106,
     "county_id": 10600012,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10600013001,
-    "name": "جهانگیری",
-    "slug": "جهانگیری",
+    "id": 10600013003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
     "province_id": 106,
     "county_id": 10600013,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10600013002,
-    "name": "جهانگیری شمالی",
-    "slug": "جهانگیری-شمالی",
+    "id": 10600013004,
+    "name": "گلگیر",
+    "slug": "گلگیر",
     "province_id": 106,
     "county_id": 10600013,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10600014001,
-    "name": "بن معلی",
-    "slug": "بن-معلی",
+    "id": 10600013005,
+    "name": "عنبر",
+    "slug": "عنبر",
+    "province_id": 106,
+    "county_id": 10600013,
+    "type": "district"
+  },
+  {
+    "id": 10600014002,
+    "name": "سرخه",
+    "slug": "سرخه",
     "province_id": 106,
     "county_id": 10600014,
     "type": "rural"
@@ -25591,25 +26327,9 @@
     "type": "rural"
   },
   {
-    "id": 10600014002,
-    "name": "سرخه",
-    "slug": "سرخه",
-    "province_id": 106,
-    "county_id": 10600014,
-    "type": "rural"
-  },
-  {
     "id": 10600015002,
     "name": "رودزرد",
     "slug": "رودزرد",
-    "province_id": 106,
-    "county_id": 10600015,
-    "type": "rural"
-  },
-  {
-    "id": 10600015004,
-    "name": "منگشت",
-    "slug": "منگشت",
     "province_id": 106,
     "county_id": 10600015,
     "type": "rural"
@@ -25623,28 +26343,20 @@
     "type": "rural"
   },
   {
-    "id": 10600018001,
-    "name": "چم خلف عیسی",
-    "slug": "چم-خلف-عیسی",
-    "province_id": 106,
-    "county_id": 10600018,
-    "type": "rural"
-  },
-  {
-    "id": 10600015006,
-    "name": "هپرو",
-    "slug": "هپرو",
+    "id": 10600015004,
+    "name": "منگشت",
+    "slug": "منگشت",
     "province_id": 106,
     "county_id": 10600015,
     "type": "rural"
   },
   {
-    "id": 10600015001,
-    "name": "سرله",
-    "slug": "سرله",
+    "id": 10600015005,
+    "name": "قلعه تل",
+    "slug": "قلعه-تل",
     "province_id": 106,
     "county_id": 10600015,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10600016001,
@@ -25676,6 +26388,14 @@
     "slug": "سادات",
     "province_id": 106,
     "county_id": 10600017,
+    "type": "rural"
+  },
+  {
+    "id": 10600018001,
+    "name": "چم خلف عیسی",
+    "slug": "چم-خلف-عیسی",
+    "province_id": 106,
+    "county_id": 10600018,
     "type": "rural"
   },
   {
@@ -25725,6 +26445,14 @@
     "province_id": 106,
     "county_id": 10600021,
     "type": "rural"
+  },
+  {
+    "id": 10600021003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 106,
+    "county_id": 10600021,
+    "type": "district"
   },
   {
     "id": 10600022001,
@@ -25887,14 +26615,6 @@
     "type": "rural"
   },
   {
-    "id": 10700010003,
-    "name": "فامور",
-    "slug": "فامور",
-    "province_id": 107,
-    "county_id": 10700010,
-    "type": "rural"
-  },
-  {
     "id": 10700010004,
     "name": "انارستان",
     "slug": "انارستان",
@@ -25903,52 +26623,60 @@
     "type": "rural"
   },
   {
-    "id": 10700010005,
-    "name": "دشت برم",
-    "slug": "دشت-برم",
+    "id": 10700010006,
+    "name": "خشت",
+    "slug": "خشت",
     "province_id": 107,
     "county_id": 10700010,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10700011001,
-    "name": "حومه",
-    "slug": "حومه",
+    "id": 10700011004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
     "province_id": 107,
     "county_id": 10700011,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10700011002,
-    "name": "درزوسابیان",
-    "slug": "درزوسابیان",
+    "id": 10700011005,
+    "name": "بیرم",
+    "slug": "بیرم",
     "province_id": 107,
     "county_id": 10700011,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10700011003,
-    "name": "دهکویه",
-    "slug": "دهکویه",
+    "id": 10700011007,
+    "name": "بنارویه",
+    "slug": "بنارویه",
     "province_id": 107,
     "county_id": 10700011,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10700012001,
-    "name": "خرم مکان",
-    "slug": "خرم-مکان",
+    "id": 10700011008,
+    "name": "صحرای باغ",
+    "slug": "صحرای-باغ",
+    "province_id": 107,
+    "county_id": 10700011,
+    "type": "district"
+  },
+  {
+    "id": 10700012003,
+    "name": "رامجرددو",
+    "slug": "رامجرددو",
     "province_id": 107,
     "county_id": 10700012,
     "type": "rural"
   },
   {
-    "id": 10700012002,
-    "name": "کامفیروزجنوبی",
-    "slug": "کامفیروزجنوبی",
+    "id": 10700012004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
     "province_id": 107,
     "county_id": 10700012,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10700012005,
@@ -25956,6 +26684,22 @@
     "slug": "رامجردیک",
     "province_id": 107,
     "county_id": 10700012,
+    "type": "rural"
+  },
+  {
+    "id": 10700012006,
+    "name": "سیدان",
+    "slug": "سیدان",
+    "province_id": 107,
+    "county_id": 10700012,
+    "type": "district"
+  },
+  {
+    "id": 10700014003,
+    "name": "ده چاه",
+    "slug": "ده-چاه",
+    "province_id": 107,
+    "county_id": 10700014,
     "type": "rural"
   },
   {
@@ -25967,62 +26711,6 @@
     "type": "rural"
   },
   {
-    "id": 10700012008,
-    "name": "کناره",
-    "slug": "کناره",
-    "province_id": 107,
-    "county_id": 10700012,
-    "type": "rural"
-  },
-  {
-    "id": 10700012009,
-    "name": "مجدآباد",
-    "slug": "مجدآباد",
-    "province_id": 107,
-    "county_id": 10700012,
-    "type": "rural"
-  },
-  {
-    "id": 107000120010,
-    "name": "محمدآباد",
-    "slug": "محمدآباد",
-    "province_id": 107,
-    "county_id": 10700012,
-    "type": "rural"
-  },
-  {
-    "id": 107000120011,
-    "name": "نقش رستم",
-    "slug": "نقش-رستم",
-    "province_id": 107,
-    "county_id": 10700012,
-    "type": "rural"
-  },
-  {
-    "id": 10700012003,
-    "name": "رامجرددو",
-    "slug": "رامجرددو",
-    "province_id": 107,
-    "county_id": 10700012,
-    "type": "rural"
-  },
-  {
-    "id": 10700014001,
-    "name": "رستاق",
-    "slug": "رستاق",
-    "province_id": 107,
-    "county_id": 10700014,
-    "type": "rural"
-  },
-  {
-    "id": 10700013001,
-    "name": "ماهور",
-    "slug": "ماهور",
-    "province_id": 107,
-    "county_id": 10700013,
-    "type": "rural"
-  },
-  {
     "id": 10700013002,
     "name": "میشان",
     "slug": "میشان",
@@ -26031,25 +26719,33 @@
     "type": "rural"
   },
   {
-    "id": 10700013004,
-    "name": "جاویدماهوری",
-    "slug": "جاویدماهوری",
+    "id": 10700013003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
     "province_id": 107,
     "county_id": 10700013,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10700013008,
-    "name": "فهلیان",
-    "slug": "فهلیان",
+    "id": 10700013005,
+    "name": "دشمن زیاری",
+    "slug": "دشمن-زیاری",
     "province_id": 107,
     "county_id": 10700013,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10700014003,
-    "name": "ده چاه",
-    "slug": "ده-چاه",
+    "id": 10700013006,
+    "name": "جوزار",
+    "slug": "جوزار",
+    "province_id": 107,
+    "county_id": 10700013,
+    "type": "district"
+  },
+  {
+    "id": 10700014002,
+    "name": "هرگان",
+    "slug": "هرگان",
     "province_id": 107,
     "county_id": 10700014,
     "type": "rural"
@@ -26063,11 +26759,11 @@
     "type": "rural"
   },
   {
-    "id": 10700014002,
-    "name": "هرگان",
-    "slug": "هرگان",
+    "id": 10700015001,
+    "name": "اشکنان",
+    "slug": "اشکنان",
     "province_id": 107,
-    "county_id": 10700014,
+    "county_id": 10700015,
     "type": "rural"
   },
   {
@@ -26087,36 +26783,20 @@
     "type": "rural"
   },
   {
-    "id": 10700015001,
-    "name": "اشکنان",
-    "slug": "اشکنان",
+    "id": 10700015005,
+    "name": "چاه ورز",
+    "slug": "چاه-ورز",
     "province_id": 107,
     "county_id": 10700015,
-    "type": "rural"
+    "type": "district"
   },
   {
-    "id": 10700015002,
-    "name": "کال",
-    "slug": "کال",
+    "id": 10700015006,
+    "name": "خیرگو",
+    "slug": "خیرگو",
     "province_id": 107,
     "county_id": 10700015,
-    "type": "rural"
-  },
-  {
-    "id": 10700016001,
-    "name": "باغستان",
-    "slug": "باغستان",
-    "province_id": 107,
-    "county_id": 10700016,
-    "type": "rural"
-  },
-  {
-    "id": 10700016004,
-    "name": "سیمکان",
-    "slug": "سیمکان",
-    "province_id": 107,
-    "county_id": 10700016,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10700016002,
@@ -26127,25 +26807,17 @@
     "type": "rural"
   },
   {
+    "id": 10700016003,
+    "name": "مزایجان",
+    "slug": "مزایجان",
+    "province_id": 107,
+    "county_id": 10700016,
+    "type": "district"
+  },
+  {
     "id": 10700017001,
     "name": "خبریز",
     "slug": "خبریز",
-    "province_id": 107,
-    "county_id": 10700017,
-    "type": "rural"
-  },
-  {
-    "id": 10700017002,
-    "name": "شورآب",
-    "slug": "شورآب",
-    "province_id": 107,
-    "county_id": 10700017,
-    "type": "rural"
-  },
-  {
-    "id": 10700017003,
-    "name": "علی آبادملک",
-    "slug": "علی-آبادملک",
     "province_id": 107,
     "county_id": 10700017,
     "type": "rural"
@@ -26183,14 +26855,6 @@
     "type": "rural"
   },
   {
-    "id": 10700019003,
-    "name": "زیرآب",
-    "slug": "زیرآب",
-    "province_id": 107,
-    "county_id": 10700019,
-    "type": "rural"
-  },
-  {
     "id": 10700020001,
     "name": "افزر",
     "slug": "افزر",
@@ -26207,11 +26871,11 @@
     "type": "rural"
   },
   {
-    "id": 10700020003,
-    "name": "هنگام",
-    "slug": "هنگام",
+    "id": 10700021001,
+    "name": "خوزی",
+    "slug": "خوزی",
     "province_id": 107,
-    "county_id": 10700020,
+    "county_id": 10700021,
     "type": "rural"
   },
   {
@@ -26239,14 +26903,6 @@
     "type": "rural"
   },
   {
-    "id": 10700021001,
-    "name": "خوزی",
-    "slug": "خوزی",
-    "province_id": 107,
-    "county_id": 10700021,
-    "type": "rural"
-  },
-  {
     "id": 10700022001,
     "name": "آویز",
     "slug": "آویز",
@@ -26255,25 +26911,9 @@
     "type": "rural"
   },
   {
-    "id": 10700022003,
-    "name": "نوجین",
-    "slug": "نوجین",
-    "province_id": 107,
-    "county_id": 10700022,
-    "type": "rural"
-  },
-  {
     "id": 10700022002,
     "name": "دهرم",
     "slug": "دهرم",
-    "province_id": 107,
-    "county_id": 10700022,
-    "type": "rural"
-  },
-  {
-    "id": 10700022004,
-    "name": "دژگاه",
-    "slug": "دژگاه",
     "province_id": 107,
     "county_id": 10700022,
     "type": "rural"
@@ -26322,14 +26962,6 @@
     "id": 10700029002,
     "name": "سفلی",
     "slug": "سفلی",
-    "province_id": 107,
-    "county_id": 10700029,
-    "type": "rural"
-  },
-  {
-    "id": 10700029003,
-    "name": "خیرآباد",
-    "slug": "خیرآباد",
     "province_id": 107,
     "county_id": 10700029,
     "type": "rural"
@@ -26431,6 +27063,14 @@
     "type": "rural"
   },
   {
+    "id": 10700032001,
+    "name": "باغ صفا",
+    "slug": "باغ-صفا",
+    "province_id": 107,
+    "county_id": 10700032,
+    "type": "rural"
+  },
+  {
     "id": 10700032002,
     "name": "سرچهان",
     "slug": "سرچهان",
@@ -26442,14 +27082,6 @@
     "id": 10700032003,
     "name": "حسامی",
     "slug": "حسامی",
-    "province_id": 107,
-    "county_id": 10700032,
-    "type": "rural"
-  },
-  {
-    "id": 10700032001,
-    "name": "باغ صفا",
-    "slug": "باغ-صفا",
     "province_id": 107,
     "county_id": 10700032,
     "type": "rural"
@@ -26482,22 +27114,6 @@
     "id": 10700034002,
     "name": "خفر",
     "slug": "خفر",
-    "province_id": 107,
-    "county_id": 10700034,
-    "type": "rural"
-  },
-  {
-    "id": 10700034003,
-    "name": "علی آباد",
-    "slug": "علی-آباد",
-    "province_id": 107,
-    "county_id": 10700034,
-    "type": "rural"
-  },
-  {
-    "id": 10700034004,
-    "name": "سفیدار",
-    "slug": "سفیدار",
     "province_id": 107,
     "county_id": 10700034,
     "type": "rural"
@@ -26551,62 +27167,6 @@
     "type": "rural"
   },
   {
-    "id": 10800040012,
-    "name": "قاسم آباد",
-    "slug": "قاسم-آباد",
-    "province_id": 108,
-    "county_id": 1080004,
-    "type": "rural"
-  },
-  {
-    "id": 10800040013,
-    "name": "کبوترخان",
-    "slug": "کبوترخان",
-    "province_id": 108,
-    "county_id": 1080004,
-    "type": "rural"
-  },
-  {
-    "id": 10800050011,
-    "name": "خانوک",
-    "slug": "خانوک",
-    "province_id": 108,
-    "county_id": 1080005,
-    "type": "rural"
-  },
-  {
-    "id": 10800050012,
-    "name": "حتکن",
-    "slug": "حتکن",
-    "province_id": 108,
-    "county_id": 1080005,
-    "type": "rural"
-  },
-  {
-    "id": 10800060010,
-    "name": "نجف آباد",
-    "slug": "نجف-آباد",
-    "province_id": 108,
-    "county_id": 1080006,
-    "type": "rural"
-  },
-  {
-    "id": 10800010003,
-    "name": "کوه پنج",
-    "slug": "کوه-پنج",
-    "province_id": 108,
-    "county_id": 10800010,
-    "type": "rural"
-  },
-  {
-    "id": 10800010005,
-    "name": "مشیز",
-    "slug": "مشیز",
-    "province_id": 108,
-    "county_id": 10800010,
-    "type": "rural"
-  },
-  {
     "id": 10800010001,
     "name": "قلعه عسگر",
     "slug": "قلعه-عسگر",
@@ -26623,6 +27183,22 @@
     "type": "rural"
   },
   {
+    "id": 10800010003,
+    "name": "کوه پنج",
+    "slug": "کوه-پنج",
+    "province_id": 108,
+    "county_id": 10800010,
+    "type": "rural"
+  },
+  {
+    "id": 10800010004,
+    "name": "نگار",
+    "slug": "نگار",
+    "province_id": 108,
+    "county_id": 10800010,
+    "type": "district"
+  },
+  {
     "id": 10800011001,
     "name": "حرجند",
     "slug": "حرجند",
@@ -26631,12 +27207,12 @@
     "type": "rural"
   },
   {
-    "id": 10800011003,
-    "name": "هروز",
-    "slug": "هروز",
+    "id": 10800011002,
+    "name": "مرکزی",
+    "slug": "مرکزی",
     "province_id": 108,
     "county_id": 10800011,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10800012001,
@@ -26647,25 +27223,9 @@
     "type": "rural"
   },
   {
-    "id": 10800012002,
-    "name": "جهادآباد",
-    "slug": "جهادآباد",
-    "province_id": 108,
-    "county_id": 10800012,
-    "type": "rural"
-  },
-  {
     "id": 10800012003,
     "name": "علی آباد",
     "slug": "علی-آباد",
-    "province_id": 108,
-    "county_id": 10800012,
-    "type": "rural"
-  },
-  {
-    "id": 10800012004,
-    "name": "محمدآباد",
-    "slug": "محمدآباد",
     "province_id": 108,
     "county_id": 10800012,
     "type": "rural"
@@ -26687,11 +27247,11 @@
     "type": "rural"
   },
   {
-    "id": 10800013003,
-    "name": "نورآباد",
-    "slug": "نورآباد",
+    "id": 10800014001,
+    "name": "جور",
+    "slug": "جور",
     "province_id": 108,
-    "county_id": 10800013,
+    "county_id": 10800014,
     "type": "rural"
   },
   {
@@ -26703,17 +27263,9 @@
     "type": "rural"
   },
   {
-    "id": 10800014001,
-    "name": "جور",
-    "slug": "جور",
-    "province_id": 108,
-    "county_id": 10800014,
-    "type": "rural"
-  },
-  {
-    "id": 10800015001,
-    "name": "رودبار",
-    "slug": "رودبار",
+    "id": 10800015002,
+    "name": "عباس آباد",
+    "slug": "عباس-آباد",
     "province_id": 108,
     "county_id": 10800015,
     "type": "rural"
@@ -26722,14 +27274,6 @@
     "id": 10800015003,
     "name": "بیژن آباد",
     "slug": "بیژن-آباد",
-    "province_id": 108,
-    "county_id": 10800015,
-    "type": "rural"
-  },
-  {
-    "id": 10800015002,
-    "name": "عباس آباد",
-    "slug": "عباس-آباد",
     "province_id": 108,
     "county_id": 10800015,
     "type": "rural"
@@ -26767,20 +27311,12 @@
     "type": "rural"
   },
   {
-    "id": 10800017004,
-    "name": "پشت ریگ",
-    "slug": "پشت-ریگ",
+    "id": 10800017003,
+    "name": "رحمت آباد",
+    "slug": "رحمت-آباد",
     "province_id": 108,
     "county_id": 10800017,
-    "type": "rural"
-  },
-  {
-    "id": 10800017001,
-    "name": "گاوکان",
-    "slug": "گاوکان",
-    "province_id": 108,
-    "county_id": 10800017,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10800018001,
@@ -26818,14 +27354,6 @@
     "id": 10800020001,
     "name": "بیاض",
     "slug": "بیاض",
-    "province_id": 108,
-    "county_id": 10800020,
-    "type": "rural"
-  },
-  {
-    "id": 10800020002,
-    "name": "حسین آباد",
-    "slug": "حسین-آباد",
     "province_id": 108,
     "county_id": 10800020,
     "type": "rural"
@@ -26879,14 +27407,6 @@
     "type": "rural"
   },
   {
-    "id": 10800023003,
-    "name": "دهسرد",
-    "slug": "دهسرد",
-    "province_id": 108,
-    "county_id": 10800023,
-    "type": "rural"
-  },
-  {
     "id": 10800024001,
     "name": "گنبکی",
     "slug": "گنبکی",
@@ -26919,14 +27439,6 @@
     "type": "rural"
   },
   {
-    "id": 10900013002,
-    "name": "سودلانه",
-    "slug": "سودلانه",
-    "province_id": 109,
-    "county_id": 10900013,
-    "type": "rural"
-  },
-  {
     "id": 10900013003,
     "name": "شیرین دره",
     "slug": "شیرین-دره",
@@ -26943,28 +27455,36 @@
     "type": "rural"
   },
   {
-    "id": 10900014001,
-    "name": "بالا ولایت",
-    "slug": "بالا-ولایت",
+    "id": 10900013004,
+    "name": "آبکوه",
+    "slug": "آبکوه",
     "province_id": 109,
-    "county_id": 10900014,
-    "type": "rural"
+    "county_id": 10900013,
+    "type": "district"
   },
   {
-    "id": 10900014002,
-    "name": "پایین ولایت",
-    "slug": "پایین-ولایت",
+    "id": 10900013005,
+    "name": "قوچان عتیق",
+    "slug": "قوچان-عتیق",
     "province_id": 109,
-    "county_id": 10900014,
-    "type": "rural"
+    "county_id": 10900013,
+    "type": "district"
   },
   {
-    "id": 10900015001,
-    "name": "پس کلوت",
-    "slug": "پس-کلوت",
+    "id": 10900014004,
+    "name": "مرکزی",
+    "slug": "مرکزی",
     "province_id": 109,
-    "county_id": 10900015,
-    "type": "rural"
+    "county_id": 10900014,
+    "type": "district"
+  },
+  {
+    "id": 10900014005,
+    "name": "فرح دشت",
+    "slug": "فرح-دشت",
+    "province_id": 109,
+    "county_id": 10900014,
+    "type": "district"
   },
   {
     "id": 10900015002,
@@ -26975,33 +27495,17 @@
     "type": "rural"
   },
   {
-    "id": 10900016002,
-    "name": "پیوه ژن",
-    "slug": "پیوه-ژن",
+    "id": 10900015003,
+    "name": "کاخک",
+    "slug": "کاخک",
     "province_id": 109,
-    "county_id": 10900016,
-    "type": "rural"
-  },
-  {
-    "id": 10900016004,
-    "name": "سرجام",
-    "slug": "سرجام",
-    "province_id": 109,
-    "county_id": 10900016,
-    "type": "rural"
+    "county_id": 10900015,
+    "type": "district"
   },
   {
     "id": 10900016001,
     "name": "تبادکان",
     "slug": "تبادکان",
-    "province_id": 109,
-    "county_id": 10900016,
-    "type": "rural"
-  },
-  {
-    "id": 10900016003,
-    "name": "کارده",
-    "slug": "کارده",
     "province_id": 109,
     "county_id": 10900016,
     "type": "rural"
@@ -27023,22 +27527,6 @@
     "type": "rural"
   },
   {
-    "id": 10900017004,
-    "name": "مازول",
-    "slug": "مازول",
-    "province_id": 109,
-    "county_id": 10900017,
-    "type": "rural"
-  },
-  {
-    "id": 10900017002,
-    "name": "سرولایت",
-    "slug": "سرولایت",
-    "province_id": 109,
-    "county_id": 10900017,
-    "type": "rural"
-  },
-  {
     "id": 10900017003,
     "name": "برزنون",
     "slug": "برزنون",
@@ -27047,25 +27535,17 @@
     "type": "rural"
   },
   {
-    "id": 10900017001,
-    "name": "دربقاضی",
-    "slug": "دربقاضی",
+    "id": 10900017004,
+    "name": "مازول",
+    "slug": "مازول",
     "province_id": 109,
     "county_id": 10900017,
     "type": "rural"
   },
   {
-    "id": 10900017005,
-    "name": "بینالود",
-    "slug": "بینالود",
-    "province_id": 109,
-    "county_id": 10900017,
-    "type": "rural"
-  },
-  {
-    "id": 10900018001,
-    "name": "چناران",
-    "slug": "چناران",
+    "id": 10900018002,
+    "name": "غیاث آباد",
+    "slug": "غیاث-آباد",
     "province_id": 109,
     "county_id": 10900018,
     "type": "rural"
@@ -27087,25 +27567,17 @@
     "type": "rural"
   },
   {
-    "id": 10900018002,
-    "name": "غیاث آباد",
-    "slug": "غیاث-آباد",
+    "id": 10900018004,
+    "name": "سید آباد",
+    "slug": "سید-آباد",
     "province_id": 109,
     "county_id": 10900018,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10900019001,
     "name": "پایین خواف",
     "slug": "پایین-خواف",
-    "province_id": 109,
-    "county_id": 10900019,
-    "type": "rural"
-  },
-  {
-    "id": 10900019003,
-    "name": "بستان",
-    "slug": "بستان",
     "province_id": 109,
     "county_id": 10900019,
     "type": "rural"
@@ -27119,6 +27591,22 @@
     "type": "rural"
   },
   {
+    "id": 10900019003,
+    "name": "بستان",
+    "slug": "بستان",
+    "province_id": 109,
+    "county_id": 10900019,
+    "type": "rural"
+  },
+  {
+    "id": 10900019004,
+    "name": "سلامی",
+    "slug": "سلامی",
+    "province_id": 109,
+    "county_id": 10900019,
+    "type": "district"
+  },
+  {
     "id": 10900020001,
     "name": "پل خاتون",
     "slug": "پل-خاتون",
@@ -27130,14 +27618,6 @@
     "id": 10900020002,
     "name": "گل بی بی",
     "slug": "گل-بی-بی",
-    "province_id": 109,
-    "county_id": 10900020,
-    "type": "rural"
-  },
-  {
-    "id": 10900020003,
-    "name": "مرز داران",
-    "slug": "مرز-داران",
     "province_id": 109,
     "county_id": 10900020,
     "type": "rural"
@@ -27159,20 +27639,20 @@
     "type": "rural"
   },
   {
-    "id": 10900022003,
-    "name": "فریمان",
-    "slug": "فریمان",
-    "province_id": 109,
-    "county_id": 10900022,
-    "type": "rural"
-  },
-  {
     "id": 10900023002,
     "name": "صحرا",
     "slug": "صحرا",
     "province_id": 109,
     "county_id": 10900023,
     "type": "rural"
+  },
+  {
+    "id": 10900023003,
+    "name": "شهرآباد",
+    "slug": "شهرآباد",
+    "province_id": 109,
+    "county_id": 10900023,
+    "type": "district"
   },
   {
     "id": 10900027001,
@@ -27279,17 +27759,17 @@
     "type": "rural"
   },
   {
-    "id": 10900033001,
-    "name": "طاغنکوه شمالی",
-    "slug": "طاغنکوه-شمالی",
+    "id": 10900033002,
+    "name": "فیروزه",
+    "slug": "فیروزه",
     "province_id": 109,
     "county_id": 10900033,
     "type": "rural"
   },
   {
-    "id": 10900033002,
-    "name": "فیروزه",
-    "slug": "فیروزه",
+    "id": 10900033001,
+    "name": "طاغنکوه شمالی",
+    "slug": "طاغنکوه-شمالی",
     "province_id": 109,
     "county_id": 10900033,
     "type": "rural"
@@ -27335,12 +27815,12 @@
     "type": "rural"
   },
   {
-    "id": 10900038001,
-    "name": "طبس",
-    "slug": "طبس",
+    "id": 10900038003,
+    "name": "نوده انقلاب",
+    "slug": "نوده-انقلاب",
     "province_id": 109,
     "county_id": 10900038,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 10900036002,
@@ -27364,6 +27844,14 @@
     "slug": "دشت-ارزنه",
     "province_id": 109,
     "county_id": 10900037,
+    "type": "rural"
+  },
+  {
+    "id": 10900038001,
+    "name": "طبس",
+    "slug": "طبس",
+    "province_id": 109,
+    "county_id": 10900038,
     "type": "rural"
   },
   {
@@ -27407,33 +27895,17 @@
     "type": "rural"
   },
   {
-    "id": 10900040003,
-    "name": "قلعه حمام",
-    "slug": "قلعه-حمام",
+    "id": 10900041001,
+    "name": "بررود",
+    "slug": "بررود",
     "province_id": 109,
-    "county_id": 10900040,
+    "county_id": 10900041,
     "type": "rural"
   },
   {
     "id": 10900041002,
     "name": "برکوه",
     "slug": "برکوه",
-    "province_id": 109,
-    "county_id": 10900041,
-    "type": "rural"
-  },
-  {
-    "id": 10900041004,
-    "name": "کوه سفید",
-    "slug": "کوه-سفید",
-    "province_id": 109,
-    "county_id": 10900041,
-    "type": "rural"
-  },
-  {
-    "id": 10900041001,
-    "name": "بررود",
-    "slug": "بررود",
     "province_id": 109,
     "county_id": 10900041,
     "type": "rural"
@@ -27452,14 +27924,6 @@
     "slug": "زبرخان",
     "province_id": 109,
     "county_id": 10900042,
-    "type": "rural"
-  },
-  {
-    "id": 10900044001,
-    "name": "گلمکان",
-    "slug": "گلمکان",
-    "province_id": 109,
-    "county_id": 10900044,
     "type": "rural"
   },
   {
@@ -27487,6 +27951,14 @@
     "type": "rural"
   },
   {
+    "id": 10900044001,
+    "name": "گلمکان",
+    "slug": "گلمکان",
+    "province_id": 109,
+    "county_id": 10900044,
+    "type": "rural"
+  },
+  {
     "id": 10900045001,
     "name": "عشق آباد",
     "slug": "عشق-آباد",
@@ -27500,14 +27972,6 @@
     "slug": "غزالی",
     "province_id": 109,
     "county_id": 10900045,
-    "type": "rural"
-  },
-  {
-    "id": 11000010001,
-    "name": "جوشقان قالی",
-    "slug": "جوشقان-قالی",
-    "province_id": 110,
-    "county_id": 11000010,
     "type": "rural"
   },
   {
@@ -27535,25 +27999,17 @@
     "type": "rural"
   },
   {
+    "id": 11000010005,
+    "name": "برزک",
+    "slug": "برزک",
+    "province_id": 110,
+    "county_id": 11000010,
+    "type": "district"
+  },
+  {
     "id": 11000011001,
     "name": "جلگه",
     "slug": "جلگه",
-    "province_id": 110,
-    "county_id": 11000011,
-    "type": "rural"
-  },
-  {
-    "id": 11000011002,
-    "name": "کناررودخانه",
-    "slug": "کناررودخانه",
-    "province_id": 110,
-    "county_id": 11000011,
-    "type": "rural"
-  },
-  {
-    "id": 11000011003,
-    "name": "نیوان",
-    "slug": "نیوان",
     "province_id": 110,
     "county_id": 11000011,
     "type": "rural"
@@ -27567,27 +28023,11 @@
     "type": "rural"
   },
   {
-    "id": 11000012002,
-    "name": "زیرکوه",
-    "slug": "زیرکوه",
-    "province_id": 110,
-    "county_id": 11000012,
-    "type": "rural"
-  },
-  {
     "id": 11000012003,
     "name": "چم کوه",
     "slug": "چم-کوه",
     "province_id": 110,
     "county_id": 11000012,
-    "type": "rural"
-  },
-  {
-    "id": 11000013002,
-    "name": "چوپانان",
-    "slug": "چوپانان",
-    "province_id": 110,
-    "county_id": 11000013,
     "type": "rural"
   },
   {
@@ -27607,22 +28047,6 @@
     "type": "rural"
   },
   {
-    "id": 11000013004,
-    "name": "لای سیاه",
-    "slug": "لای-سیاه",
-    "province_id": 110,
-    "county_id": 11000013,
-    "type": "rural"
-  },
-  {
-    "id": 11000014001,
-    "name": "جوزدان",
-    "slug": "جوزدان",
-    "province_id": 110,
-    "county_id": 11000014,
-    "type": "rural"
-  },
-  {
     "id": 11000014002,
     "name": "صادقیه",
     "slug": "صادقیه",
@@ -27639,30 +28063,6 @@
     "type": "rural"
   },
   {
-    "id": 11000015002,
-    "name": "برزرود",
-    "slug": "برزرود",
-    "province_id": 110,
-    "county_id": 11000015,
-    "type": "rural"
-  },
-  {
-    "id": 11000015003,
-    "name": "طرق رود",
-    "slug": "طرق-رود",
-    "province_id": 110,
-    "county_id": 11000015,
-    "type": "rural"
-  },
-  {
-    "id": 11000015004,
-    "name": "کرکس",
-    "slug": "کرکس",
-    "province_id": 110,
-    "county_id": 11000015,
-    "type": "rural"
-  },
-  {
     "id": 11000015001,
     "name": "امامزاده آقا علی عباس",
     "slug": "امامزاده-آقا-علی-عباس",
@@ -27671,11 +28071,11 @@
     "type": "rural"
   },
   {
-    "id": 11000016001,
-    "name": "زرکان",
-    "slug": "زرکان",
+    "id": 11000015002,
+    "name": "برزرود",
+    "slug": "برزرود",
     "province_id": 110,
-    "county_id": 11000016,
+    "county_id": 11000015,
     "type": "rural"
   },
   {
@@ -27685,6 +28085,14 @@
     "province_id": 110,
     "county_id": 11000016,
     "type": "rural"
+  },
+  {
+    "id": 11000016003,
+    "name": "مرکزی",
+    "slug": "مرکزی",
+    "province_id": 110,
+    "county_id": 11000016,
+    "type": "district"
   },
   {
     "id": 11000017001,
@@ -27698,14 +28106,6 @@
     "id": 11000017002,
     "name": "دیزیچه",
     "slug": "دیزیچه",
-    "province_id": 110,
-    "county_id": 11000017,
-    "type": "rural"
-  },
-  {
-    "id": 11000017003,
-    "name": "کرکوند",
-    "slug": "کرکوند",
     "province_id": 110,
     "county_id": 11000017,
     "type": "rural"
@@ -27759,28 +28159,12 @@
     "type": "rural"
   },
   {
-    "id": 11000021002,
-    "name": "قمبوان",
-    "slug": "قمبوان",
+    "id": 11000021001,
+    "name": "مرکزی",
+    "slug": "مرکزی",
     "province_id": 110,
     "county_id": 11000021,
-    "type": "rural"
-  },
-  {
-    "id": 11000021003,
-    "name": "موسی آباد",
-    "slug": "موسی-آباد",
-    "province_id": 110,
-    "county_id": 11000021,
-    "type": "rural"
-  },
-  {
-    "id": 11000021004,
-    "name": "همگین",
-    "slug": "همگین",
-    "province_id": 110,
-    "county_id": 11000021,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 11000022001,
@@ -27807,22 +28191,6 @@
     "type": "rural"
   },
   {
-    "id": 11000023002,
-    "name": "جندق",
-    "slug": "جندق",
-    "province_id": 110,
-    "county_id": 11000023,
-    "type": "rural"
-  },
-  {
-    "id": 11000023003,
-    "name": "نخلستان",
-    "slug": "نخلستان",
-    "province_id": 110,
-    "county_id": 11000023,
-    "type": "rural"
-  },
-  {
     "id": 11000024001,
     "name": "سردسیر",
     "slug": "سردسیر",
@@ -27834,14 +28202,6 @@
     "id": 11000024002,
     "name": "گرجی",
     "slug": "گرجی",
-    "province_id": 110,
-    "county_id": 11000024,
-    "type": "rural"
-  },
-  {
-    "id": 11000024003,
-    "name": "ییلاق",
-    "slug": "ییلاق",
     "province_id": 110,
     "county_id": 11000024,
     "type": "rural"
@@ -27919,17 +28279,17 @@
     "type": "rural"
   },
   {
-    "id": 11100010003,
-    "name": "قلعه نو",
-    "slug": "قلعه-نو",
+    "id": 11100010002,
+    "name": "زهک",
+    "slug": "زهک",
     "province_id": 111,
     "county_id": 11100010,
     "type": "rural"
   },
   {
-    "id": 11100010002,
-    "name": "زهک",
-    "slug": "زهک",
+    "id": 11100010003,
+    "name": "قلعه نو",
+    "slug": "قلعه-نو",
     "province_id": 111,
     "county_id": 11100010,
     "type": "rural"
@@ -27951,14 +28311,6 @@
     "type": "rural"
   },
   {
-    "id": 11100011003,
-    "name": "جهان آباد",
-    "slug": "جهان-آباد",
-    "province_id": 111,
-    "county_id": 11100011,
-    "type": "rural"
-  },
-  {
     "id": 11100012001,
     "name": "گنبد علوی",
     "slug": "گنبد-علوی",
@@ -27975,25 +28327,9 @@
     "type": "rural"
   },
   {
-    "id": 11100012003,
-    "name": "هودیان",
-    "slug": "هودیان",
-    "province_id": 111,
-    "county_id": 11100012,
-    "type": "rural"
-  },
-  {
     "id": 11100013001,
     "name": "زابلی",
     "slug": "زابلی",
-    "province_id": 111,
-    "county_id": 11100013,
-    "type": "rural"
-  },
-  {
-    "id": 11100013003,
-    "name": "دهی",
-    "slug": "دهی",
     "province_id": 111,
     "county_id": 11100013,
     "type": "rural"
@@ -28007,6 +28343,14 @@
     "type": "rural"
   },
   {
+    "id": 11100013003,
+    "name": "دهی",
+    "slug": "دهی",
+    "province_id": 111,
+    "county_id": 11100013,
+    "type": "rural"
+  },
+  {
     "id": 11100014001,
     "name": "سیب وسوران",
     "slug": "سیب-وسوران",
@@ -28015,17 +28359,17 @@
     "type": "rural"
   },
   {
-    "id": 11100014003,
-    "name": "شندان",
-    "slug": "شندان",
+    "id": 11100014002,
+    "name": "کنت",
+    "slug": "کنت",
     "province_id": 111,
     "county_id": 11100014,
     "type": "rural"
   },
   {
-    "id": 11100014002,
-    "name": "کنت",
-    "slug": "کنت",
+    "id": 11100014003,
+    "name": "شندان",
+    "slug": "شندان",
     "province_id": 111,
     "county_id": 11100014,
     "type": "rural"
@@ -28055,22 +28399,6 @@
     "type": "rural"
   },
   {
-    "id": 11100016003,
-    "name": "لوتک",
-    "slug": "لوتک",
-    "province_id": 111,
-    "county_id": 11100016,
-    "type": "rural"
-  },
-  {
-    "id": 11100016004,
-    "name": "محمدآباد",
-    "slug": "محمدآباد",
-    "province_id": 111,
-    "county_id": 11100016,
-    "type": "rural"
-  },
-  {
     "id": 11100016001,
     "name": "تیمورآباد",
     "slug": "تیمورآباد",
@@ -28084,22 +28412,6 @@
     "slug": "کوه-خواجه",
     "province_id": 111,
     "county_id": 11100016,
-    "type": "rural"
-  },
-  {
-    "id": 11100017003,
-    "name": "حومه",
-    "slug": "حومه",
-    "province_id": 111,
-    "county_id": 11100017,
-    "type": "rural"
-  },
-  {
-    "id": 11100017004,
-    "name": "انده",
-    "slug": "انده",
-    "province_id": 111,
-    "county_id": 11100017,
     "type": "rural"
   },
   {
@@ -28119,6 +28431,22 @@
     "type": "rural"
   },
   {
+    "id": 11100017003,
+    "name": "حومه",
+    "slug": "حومه",
+    "province_id": 111,
+    "county_id": 11100017,
+    "type": "rural"
+  },
+  {
+    "id": 11100018001,
+    "name": "ساربوک",
+    "slug": "ساربوک",
+    "province_id": 111,
+    "county_id": 11100018,
+    "type": "rural"
+  },
+  {
     "id": 11100018002,
     "name": "هلونچکان",
     "slug": "هلونچکان",
@@ -28130,14 +28458,6 @@
     "id": 11100018003,
     "name": "هیت",
     "slug": "هیت",
-    "province_id": 111,
-    "county_id": 11100018,
-    "type": "rural"
-  },
-  {
-    "id": 11100018001,
-    "name": "ساربوک",
-    "slug": "ساربوک",
     "province_id": 111,
     "county_id": 11100018,
     "type": "rural"
@@ -28167,14 +28487,6 @@
     "type": "rural"
   },
   {
-    "id": 11100020003,
-    "name": "خیرآباد",
-    "slug": "خیرآباد",
-    "province_id": 111,
-    "county_id": 11100020,
-    "type": "rural"
-  },
-  {
     "id": 11100020002,
     "name": "میرآباد",
     "slug": "میرآباد",
@@ -28197,6 +28509,14 @@
     "province_id": 111,
     "county_id": 11100021,
     "type": "rural"
+  },
+  {
+    "id": 11100021003,
+    "name": "گوهرکوه",
+    "slug": "گوهرکوه",
+    "province_id": 111,
+    "county_id": 11100021,
+    "type": "district"
   },
   {
     "id": 11100022001,
@@ -28229,6 +28549,22 @@
     "province_id": 111,
     "county_id": 11100023,
     "type": "rural"
+  },
+  {
+    "id": 11100023003,
+    "name": "مینان",
+    "slug": "مینان",
+    "province_id": 111,
+    "county_id": 11100023,
+    "type": "district"
+  },
+  {
+    "id": 11100023004,
+    "name": "نسکند",
+    "slug": "نسکند",
+    "province_id": 111,
+    "county_id": 11100023,
+    "type": "district"
   },
   {
     "id": 11100024001,
@@ -28276,14 +28612,6 @@
     "slug": "اسماعیل-چات",
     "province_id": 111,
     "county_id": 11100026,
-    "type": "rural"
-  },
-  {
-    "id": 11200010003,
-    "name": "قوری چای",
-    "slug": "قوری-چای",
-    "province_id": 112,
-    "county_id": 11200010,
     "type": "rural"
   },
   {
@@ -28383,6 +28711,14 @@
     "type": "rural"
   },
   {
+    "id": 11500010003,
+    "name": "ویسیان",
+    "slug": "ویسیان",
+    "province_id": 115,
+    "county_id": 11500010,
+    "type": "district"
+  },
+  {
     "id": 11500011001,
     "name": "سوری",
     "slug": "سوری",
@@ -28415,14 +28751,6 @@
     "type": "rural"
   },
   {
-    "id": 11600012001,
-    "name": "بولی",
-    "slug": "بولی",
-    "province_id": 116,
-    "county_id": 11600012,
-    "type": "rural"
-  },
-  {
     "id": 11600012002,
     "name": "چکر",
     "slug": "چکر",
@@ -28447,14 +28775,6 @@
     "type": "rural"
   },
   {
-    "id": 11600010003,
-    "name": "علیشروان",
-    "slug": "علیشروان",
-    "province_id": 116,
-    "county_id": 11600010,
-    "type": "rural"
-  },
-  {
     "id": 11600011001,
     "name": "گوران",
     "slug": "گوران",
@@ -28471,6 +28791,14 @@
     "type": "rural"
   },
   {
+    "id": 11600012001,
+    "name": "بولی",
+    "slug": "بولی",
+    "province_id": 116,
+    "county_id": 11600012,
+    "type": "rural"
+  },
+  {
     "id": 11800010001,
     "name": "عسلویه",
     "slug": "عسلویه",
@@ -28484,22 +28812,6 @@
     "slug": "اخند",
     "province_id": 118,
     "county_id": 11800010,
-    "type": "rural"
-  },
-  {
-    "id": 11900040010,
-    "name": "معجزات",
-    "slug": "معجزات",
-    "province_id": 119,
-    "county_id": 1190004,
-    "type": "rural"
-  },
-  {
-    "id": 11900040011,
-    "name": "قلتوق",
-    "slug": "قلتوق",
-    "province_id": 119,
-    "county_id": 1190004,
     "type": "rural"
   },
   {
@@ -28639,12 +28951,12 @@
     "type": "rural"
   },
   {
-    "id": 12300017001,
-    "name": "ملارد شمالی",
-    "slug": "ملارد-شمالی",
-    "province_id": 123,
-    "county_id": 12300017,
-    "type": "rural"
+    "id": 12200013003,
+    "name": "گافروپارمون",
+    "slug": "گافروپارمون",
+    "province_id": 122,
+    "county_id": 12200013,
+    "type": "district"
   },
   {
     "id": 12300017002,
@@ -28687,33 +28999,17 @@
     "type": "rural"
   },
   {
-    "id": 12300010004,
-    "name": "بهرام آباد",
-    "slug": "بهرام-آباد",
+    "id": 12300010003,
+    "name": "احمد آباد مستوفی",
+    "slug": "احمد-آباد-مستوفی",
     "province_id": 123,
     "county_id": 12300010,
-    "type": "rural"
-  },
-  {
-    "id": 12300012001,
-    "name": "امامزاده ابوطالب",
-    "slug": "امامزاده-ابوطالب",
-    "province_id": 123,
-    "county_id": 12300012,
-    "type": "rural"
+    "type": "district"
   },
   {
     "id": 12300012002,
     "name": "منجیل آباد",
     "slug": "منجیل-آباد",
-    "province_id": 123,
-    "county_id": 12300012,
-    "type": "rural"
-  },
-  {
-    "id": 12300012003,
-    "name": "وهن آباد",
-    "slug": "وهن-آباد",
     "province_id": 123,
     "county_id": 12300012,
     "type": "rural"
@@ -28735,33 +29031,17 @@
     "type": "rural"
   },
   {
-    "id": 12300013003,
-    "name": "کریم آباد",
-    "slug": "کریم-آباد",
+    "id": 12300014001,
+    "name": "پشتکوه",
+    "slug": "پشتکوه",
     "province_id": 123,
-    "county_id": 12300013,
+    "county_id": 12300014,
     "type": "rural"
   },
   {
     "id": 12300014002,
     "name": "قزقانچای",
     "slug": "قزقانچای",
-    "province_id": 123,
-    "county_id": 12300014,
-    "type": "rural"
-  },
-  {
-    "id": 12300014003,
-    "name": "دوبلوک",
-    "slug": "دوبلوک",
-    "province_id": 123,
-    "county_id": 12300014,
-    "type": "rural"
-  },
-  {
-    "id": 12300014001,
-    "name": "پشتکوه",
-    "slug": "پشتکوه",
     "province_id": 123,
     "county_id": 12300014,
     "type": "rural"
@@ -28775,11 +29055,11 @@
     "type": "rural"
   },
   {
-    "id": 12300016002,
-    "name": "هفت جوی",
-    "slug": "هفت-جوی",
+    "id": 12300017001,
+    "name": "ملارد شمالی",
+    "slug": "ملارد-شمالی",
     "province_id": 123,
-    "county_id": 12300016,
+    "county_id": 12300017,
     "type": "rural"
   },
   {
@@ -28807,14 +29087,6 @@
     "type": "rural"
   },
   {
-    "id": 12300020003,
-    "name": "طاهر آباد",
-    "slug": "طاهر-آباد",
-    "province_id": 123,
-    "county_id": 12300020,
-    "type": "rural"
-  },
-  {
     "id": 12300020002,
     "name": "سعید آباد",
     "slug": "سعید-آباد",
@@ -28823,17 +29095,17 @@
     "type": "rural"
   },
   {
-    "id": 12300021001,
-    "name": "قشلاق جیتو",
-    "slug": "قشلاق-جیتو",
+    "id": 12300020003,
+    "name": "طاهر آباد",
+    "slug": "طاهر-آباد",
     "province_id": 123,
-    "county_id": 12300021,
+    "county_id": 12300020,
     "type": "rural"
   },
   {
-    "id": 12300021002,
-    "name": "ولی آباد",
-    "slug": "ولی-آباد",
+    "id": 12300021001,
+    "name": "قشلاق جیتو",
+    "slug": "قشلاق-جیتو",
     "province_id": 123,
     "county_id": 12300021,
     "type": "rural"
@@ -28858,14 +29130,6 @@
     "id": 12400011001,
     "name": "اصلاندوز غربی",
     "slug": "اصلاندوز-غربی",
-    "province_id": 124,
-    "county_id": 12400011,
-    "type": "rural"
-  },
-  {
-    "id": 12400011003,
-    "name": "اصلاندوز شرقی",
-    "slug": "اصلاندوز-شرقی",
     "province_id": 124,
     "county_id": 12400011,
     "type": "rural"
@@ -28927,22 +29191,6 @@
     "type": "rural"
   },
   {
-    "id": 12700014002,
-    "name": "گلستان",
-    "slug": "گلستان",
-    "province_id": 127,
-    "county_id": 12700014,
-    "type": "rural"
-  },
-  {
-    "id": 12700011003,
-    "name": "قلعه میران",
-    "slug": "قلعه-میران",
-    "province_id": 127,
-    "county_id": 12700011,
-    "type": "rural"
-  },
-  {
     "id": 12700012001,
     "name": "مراوه تپه",
     "slug": "مراوه-تپه",
@@ -28983,6 +29231,14 @@
     "type": "rural"
   },
   {
+    "id": 12700014002,
+    "name": "گلستان",
+    "slug": "گلستان",
+    "province_id": 127,
+    "county_id": 12700014,
+    "type": "rural"
+  },
+  {
     "id": 12800010001,
     "name": "اترک",
     "slug": "اترک",
@@ -29015,22 +29271,6 @@
     "type": "rural"
   },
   {
-    "id": 12900011003,
-    "name": "منتظریه",
-    "slug": "منتظریه",
-    "province_id": 129,
-    "county_id": 12900011,
-    "type": "rural"
-  },
-  {
-    "id": 12900010003,
-    "name": "قلعه زری",
-    "slug": "قلعه-زری",
-    "province_id": 129,
-    "county_id": 12900010,
-    "type": "rural"
-  },
-  {
     "id": 12900011001,
     "name": "دستگردان",
     "slug": "دستگردان",
@@ -29044,6 +29284,1318 @@
     "slug": "کوه-یخاب",
     "province_id": 129,
     "county_id": 12900011,
+    "type": "rural"
+  },
+  {
+    "id": 12900011003,
+    "name": "منتظریه",
+    "slug": "منتظریه",
+    "province_id": 129,
+    "county_id": 12900011,
+    "type": "rural"
+  },
+  {
+    "id": 10000010010,
+    "name": "حاجی آباد",
+    "slug": "حاجی-آباد",
+    "province_id": 100,
+    "county_id": 1000001,
+    "type": "rural"
+  },
+  {
+    "id": 10000012003,
+    "name": "سنگ سفید",
+    "slug": "سنگ-سفید",
+    "province_id": 100,
+    "county_id": 10000012,
+    "type": "rural"
+  },
+  {
+    "id": 10000011004,
+    "name": "وفس",
+    "slug": "وفس",
+    "province_id": 100,
+    "county_id": 10000011,
+    "type": "rural"
+  },
+  {
+    "id": 10100010004,
+    "name": "گل سفید",
+    "slug": "گل-سفید",
+    "province_id": 101,
+    "county_id": 10100010,
+    "type": "rural"
+  },
+  {
+    "id": 10100011001,
+    "name": "آهندان",
+    "slug": "آهندان",
+    "province_id": 101,
+    "county_id": 10100011,
+    "type": "rural"
+  },
+  {
+    "id": 10100011005,
+    "name": "لفمجان",
+    "slug": "لفمجان",
+    "province_id": 101,
+    "county_id": 10100011,
+    "type": "rural"
+  },
+  {
+    "id": 10100011006,
+    "name": "لیالستان",
+    "slug": "لیالستان",
+    "province_id": 101,
+    "county_id": 10100011,
+    "type": "rural"
+  },
+  {
+    "id": 10100011007,
+    "name": "لیل",
+    "slug": "لیل",
+    "province_id": 101,
+    "county_id": 10100011,
+    "type": "rural"
+  },
+  {
+    "id": 10100013003,
+    "name": "کجید",
+    "slug": "کجید",
+    "province_id": 101,
+    "county_id": 10100013,
+    "type": "rural"
+  },
+  {
+    "id": 10100015003,
+    "name": "مالفجان",
+    "slug": "مالفجان",
+    "province_id": 101,
+    "county_id": 10100015,
+    "type": "rural"
+  },
+  {
+    "id": 10200010001,
+    "name": "بالاتجن",
+    "slug": "بالاتجن",
+    "province_id": 102,
+    "county_id": 10200010,
+    "type": "rural"
+  },
+  {
+    "id": 10200010004,
+    "name": "علی آباد",
+    "slug": "علی-آباد",
+    "province_id": 102,
+    "county_id": 10200010,
+    "type": "rural"
+  },
+  {
+    "id": 10200010005,
+    "name": "نوکنده کا",
+    "slug": "نوکنده-کا",
+    "province_id": 102,
+    "county_id": 10200010,
+    "type": "rural"
+  },
+  {
+    "id": 10200010006,
+    "name": "کوهساران",
+    "slug": "کوهساران",
+    "province_id": 102,
+    "county_id": 10200010,
+    "type": "rural"
+  },
+  {
+    "id": 10200016001,
+    "name": "پازوار",
+    "slug": "پازوار",
+    "province_id": 102,
+    "county_id": 10200016,
+    "type": "rural"
+  },
+  {
+    "id": 10200015001,
+    "name": "پنجک رستاق",
+    "slug": "پنجک-رستاق",
+    "province_id": 102,
+    "county_id": 10200015,
+    "type": "rural"
+  },
+  {
+    "id": 10200015003,
+    "name": "زانوس رستاق",
+    "slug": "زانوس-رستاق",
+    "province_id": 102,
+    "county_id": 10200015,
+    "type": "rural"
+  },
+  {
+    "id": 10200018003,
+    "name": "هرازپی غربی",
+    "slug": "هرازپی-غربی",
+    "province_id": 102,
+    "county_id": 10200018,
+    "type": "rural"
+  },
+  {
+    "id": 10200019003,
+    "name": "مهروان",
+    "slug": "مهروان",
+    "province_id": 102,
+    "county_id": 10200019,
+    "type": "rural"
+  },
+  {
+    "id": 10200020001,
+    "name": "کلارستاق شرقی",
+    "slug": "کلارستاق-شرقی",
+    "province_id": 102,
+    "county_id": 10200020,
+    "type": "rural"
+  },
+  {
+    "id": 10200025003,
+    "name": "میاندورود بزرگ",
+    "slug": "میاندورود-بزرگ",
+    "province_id": 102,
+    "county_id": 10200025,
+    "type": "rural"
+  },
+  {
+    "id": 10200028002,
+    "name": "کلاردشت غربی",
+    "slug": "کلاردشت-غربی",
+    "province_id": 102,
+    "county_id": 10200028,
+    "type": "rural"
+  },
+  {
+    "id": 10300010005,
+    "name": "کله بوزشرقی",
+    "slug": "کله-بوزشرقی",
+    "province_id": 103,
+    "county_id": 10300010,
+    "type": "rural"
+  },
+  {
+    "id": 10300010006,
+    "name": "کله بوزغربی",
+    "slug": "کله-بوزغربی",
+    "province_id": 103,
+    "county_id": 10300010,
+    "type": "rural"
+  },
+  {
+    "id": 10300010007,
+    "name": "گرمه جنوبی",
+    "slug": "گرمه-جنوبی",
+    "province_id": 103,
+    "county_id": 10300010,
+    "type": "rural"
+  },
+  {
+    "id": 10300011004,
+    "name": "قرانقو",
+    "slug": "قرانقو",
+    "province_id": 103,
+    "county_id": 10300011,
+    "type": "rural"
+  },
+  {
+    "id": 10300011005,
+    "name": "کوهسار",
+    "slug": "کوهسار",
+    "province_id": 103,
+    "county_id": 10300011,
+    "type": "rural"
+  },
+  {
+    "id": 10300011006,
+    "name": "چاراویماق شمالشرقی",
+    "slug": "چاراویماق-شمالشرقی",
+    "province_id": 103,
+    "county_id": 10300011,
+    "type": "rural"
+  },
+  {
+    "id": 10300013004,
+    "name": "مهرانرودجنوبی",
+    "slug": "مهرانرودجنوبی",
+    "province_id": 103,
+    "county_id": 10300013,
+    "type": "rural"
+  },
+  {
+    "id": 10300013005,
+    "name": "مهرانرودمرکزی",
+    "slug": "مهرانرودمرکزی",
+    "province_id": 103,
+    "county_id": 10300013,
+    "type": "rural"
+  },
+  {
+    "id": 10300011001,
+    "name": "آلمالو",
+    "slug": "آلمالو",
+    "province_id": 103,
+    "county_id": 10300011,
+    "type": "rural"
+  },
+  {
+    "id": 10300012002,
+    "name": "بناجوی شمالی",
+    "slug": "بناجوی-شمالی",
+    "province_id": 103,
+    "county_id": 10300012,
+    "type": "rural"
+  },
+  {
+    "id": 10300012003,
+    "name": "بناجوی غربی",
+    "slug": "بناجوی-غربی",
+    "province_id": 103,
+    "county_id": 10300012,
+    "type": "rural"
+  },
+  {
+    "id": 10300013003,
+    "name": "عبا س  شرقی",
+    "slug": "عبا-س-شرقی",
+    "province_id": 103,
+    "county_id": 10300013,
+    "type": "rural"
+  },
+  {
+    "id": 10300015001,
+    "name": "آبش احمد",
+    "slug": "آبش-احمد",
+    "province_id": 103,
+    "county_id": 10300015,
+    "type": "rural"
+  },
+  {
+    "id": 10300014005,
+    "name": "گونی مرکزی",
+    "slug": "گونی-مرکزی",
+    "province_id": 103,
+    "county_id": 10300014,
+    "type": "rural"
+  },
+  {
+    "id": 10300015004,
+    "name": "میشه پاره",
+    "slug": "میشه-پاره",
+    "province_id": 103,
+    "county_id": 10300015,
+    "type": "rural"
+  },
+  {
+    "id": 10300015005,
+    "name": "ییلاق",
+    "slug": "ییلاق",
+    "province_id": 103,
+    "county_id": 10300015,
+    "type": "rural"
+  },
+  {
+    "id": 10300016003,
+    "name": "مواضع خان شمالی",
+    "slug": "مواضع-خان-شمالی",
+    "province_id": 103,
+    "county_id": 10300016,
+    "type": "rural"
+  },
+  {
+    "id": 10300019003,
+    "name": "نوجه مهر",
+    "slug": "نوجه-مهر",
+    "province_id": 103,
+    "county_id": 10300019,
+    "type": "rural"
+  },
+  {
+    "id": 10300020001,
+    "name": "گاودول شرقی",
+    "slug": "گاودول-شرقی",
+    "province_id": 103,
+    "county_id": 10300020,
+    "type": "rural"
+  },
+  {
+    "id": 10300021004,
+    "name": "ینگجه",
+    "slug": "ینگجه",
+    "province_id": 103,
+    "county_id": 10300021,
+    "type": "rural"
+  },
+  {
+    "id": 10300022003,
+    "name": "گنبر",
+    "slug": "گنبر",
+    "province_id": 103,
+    "county_id": 10300022,
+    "type": "rural"
+  },
+  {
+    "id": 10300023004,
+    "name": "ورقه",
+    "slug": "ورقه",
+    "province_id": 103,
+    "county_id": 10300023,
+    "type": "rural"
+  },
+  {
+    "id": 10300023003,
+    "name": "قوری چای شرقی",
+    "slug": "قوری-چای-شرقی",
+    "province_id": 103,
+    "county_id": 10300023,
+    "type": "rural"
+  },
+  {
+    "id": 10300024003,
+    "name": "دیزمارمرکزی",
+    "slug": "دیزمارمرکزی",
+    "province_id": 103,
+    "county_id": 10300024,
+    "type": "rural"
+  },
+  {
+    "id": 10300024004,
+    "name": "سینا",
+    "slug": "سینا",
+    "province_id": 103,
+    "county_id": 10300024,
+    "type": "rural"
+  },
+  {
+    "id": 10400010011,
+    "name": "نازلوی جنوبی",
+    "slug": "نازلوی-جنوبی",
+    "province_id": 104,
+    "county_id": 1040001,
+    "type": "rural"
+  },
+  {
+    "id": 10400030010,
+    "name": "گوهران",
+    "slug": "گوهران",
+    "province_id": 104,
+    "county_id": 1040003,
+    "type": "rural"
+  },
+  {
+    "id": 10400010003,
+    "name": "بهی دهبکری",
+    "slug": "بهی-دهبکری",
+    "province_id": 104,
+    "county_id": 10400010,
+    "type": "rural"
+  },
+  {
+    "id": 10400010004,
+    "name": "بهی فیض اله بیگی",
+    "slug": "بهی-فیض-اله-بیگی",
+    "province_id": 104,
+    "county_id": 10400010,
+    "type": "rural"
+  },
+  {
+    "id": 10400011003,
+    "name": "هولاسو",
+    "slug": "هولاسو",
+    "province_id": 104,
+    "county_id": 10400011,
+    "type": "rural"
+  },
+  {
+    "id": 10400011004,
+    "name": "کشاور",
+    "slug": "کشاور",
+    "province_id": 104,
+    "county_id": 10400011,
+    "type": "rural"
+  },
+  {
+    "id": 10400012003,
+    "name": "کرفتو",
+    "slug": "کرفتو",
+    "province_id": 104,
+    "county_id": 10400012,
+    "type": "rural"
+  },
+  {
+    "id": 10400014003,
+    "name": "ببه جیک",
+    "slug": "ببه-جیک",
+    "province_id": 104,
+    "county_id": 10400014,
+    "type": "rural"
+  },
+  {
+    "id": 10500010003,
+    "name": "کندوله",
+    "slug": "کندوله",
+    "province_id": 105,
+    "county_id": 10500010,
+    "type": "rural"
+  },
+  {
+    "id": 10500010005,
+    "name": "هجر",
+    "slug": "هجر",
+    "province_id": 105,
+    "county_id": 10500010,
+    "type": "rural"
+  },
+  {
+    "id": 10500010004,
+    "name": "گاماسیاب",
+    "slug": "گاماسیاب",
+    "province_id": 105,
+    "county_id": 10500010,
+    "type": "rural"
+  },
+  {
+    "id": 10500013003,
+    "name": "حومه کرند",
+    "slug": "حومه-کرند",
+    "province_id": 105,
+    "county_id": 10500013,
+    "type": "rural"
+  },
+  {
+    "id": 10500014003,
+    "name": "دولت اباد",
+    "slug": "دولت-اباد",
+    "province_id": 105,
+    "county_id": 10500014,
+    "type": "rural"
+  },
+  {
+    "id": 10500014004,
+    "name": "زالوآب",
+    "slug": "زالوآب",
+    "province_id": 105,
+    "county_id": 10500014,
+    "type": "rural"
+  },
+  {
+    "id": 10600010001,
+    "name": "جره",
+    "slug": "جره",
+    "province_id": 106,
+    "county_id": 10600010,
+    "type": "rural"
+  },
+  {
+    "id": 10600011004,
+    "name": "حسینی",
+    "slug": "حسینی",
+    "province_id": 106,
+    "county_id": 10600011,
+    "type": "rural"
+  },
+  {
+    "id": 10600012001,
+    "name": "سردارآباد",
+    "slug": "سردارآباد",
+    "province_id": 106,
+    "county_id": 10600012,
+    "type": "rural"
+  },
+  {
+    "id": 10600013001,
+    "name": "جهانگیری",
+    "slug": "جهانگیری",
+    "province_id": 106,
+    "county_id": 10600013,
+    "type": "rural"
+  },
+  {
+    "id": 10600013002,
+    "name": "جهانگیری شمالی",
+    "slug": "جهانگیری-شمالی",
+    "province_id": 106,
+    "county_id": 10600013,
+    "type": "rural"
+  },
+  {
+    "id": 10600014001,
+    "name": "بن معلی",
+    "slug": "بن-معلی",
+    "province_id": 106,
+    "county_id": 10600014,
+    "type": "rural"
+  },
+  {
+    "id": 10600015006,
+    "name": "هپرو",
+    "slug": "هپرو",
+    "province_id": 106,
+    "county_id": 10600015,
+    "type": "rural"
+  },
+  {
+    "id": 10600015001,
+    "name": "سرله",
+    "slug": "سرله",
+    "province_id": 106,
+    "county_id": 10600015,
+    "type": "rural"
+  },
+  {
+    "id": 10700010003,
+    "name": "فامور",
+    "slug": "فامور",
+    "province_id": 107,
+    "county_id": 10700010,
+    "type": "rural"
+  },
+  {
+    "id": 10700010005,
+    "name": "دشت برم",
+    "slug": "دشت-برم",
+    "province_id": 107,
+    "county_id": 10700010,
+    "type": "rural"
+  },
+  {
+    "id": 10700011001,
+    "name": "حومه",
+    "slug": "حومه",
+    "province_id": 107,
+    "county_id": 10700011,
+    "type": "rural"
+  },
+  {
+    "id": 10700011002,
+    "name": "درزوسابیان",
+    "slug": "درزوسابیان",
+    "province_id": 107,
+    "county_id": 10700011,
+    "type": "rural"
+  },
+  {
+    "id": 10700011003,
+    "name": "دهکویه",
+    "slug": "دهکویه",
+    "province_id": 107,
+    "county_id": 10700011,
+    "type": "rural"
+  },
+  {
+    "id": 10700012001,
+    "name": "خرم مکان",
+    "slug": "خرم-مکان",
+    "province_id": 107,
+    "county_id": 10700012,
+    "type": "rural"
+  },
+  {
+    "id": 10700012002,
+    "name": "کامفیروزجنوبی",
+    "slug": "کامفیروزجنوبی",
+    "province_id": 107,
+    "county_id": 10700012,
+    "type": "rural"
+  },
+  {
+    "id": 10700012008,
+    "name": "کناره",
+    "slug": "کناره",
+    "province_id": 107,
+    "county_id": 10700012,
+    "type": "rural"
+  },
+  {
+    "id": 10700012009,
+    "name": "مجدآباد",
+    "slug": "مجدآباد",
+    "province_id": 107,
+    "county_id": 10700012,
+    "type": "rural"
+  },
+  {
+    "id": 107000120010,
+    "name": "محمدآباد",
+    "slug": "محمدآباد",
+    "province_id": 107,
+    "county_id": 10700012,
+    "type": "rural"
+  },
+  {
+    "id": 107000120011,
+    "name": "نقش رستم",
+    "slug": "نقش-رستم",
+    "province_id": 107,
+    "county_id": 10700012,
+    "type": "rural"
+  },
+  {
+    "id": 10700014001,
+    "name": "رستاق",
+    "slug": "رستاق",
+    "province_id": 107,
+    "county_id": 10700014,
+    "type": "rural"
+  },
+  {
+    "id": 10700013001,
+    "name": "ماهور",
+    "slug": "ماهور",
+    "province_id": 107,
+    "county_id": 10700013,
+    "type": "rural"
+  },
+  {
+    "id": 10700013004,
+    "name": "جاویدماهوری",
+    "slug": "جاویدماهوری",
+    "province_id": 107,
+    "county_id": 10700013,
+    "type": "rural"
+  },
+  {
+    "id": 10700013008,
+    "name": "فهلیان",
+    "slug": "فهلیان",
+    "province_id": 107,
+    "county_id": 10700013,
+    "type": "rural"
+  },
+  {
+    "id": 10700015002,
+    "name": "کال",
+    "slug": "کال",
+    "province_id": 107,
+    "county_id": 10700015,
+    "type": "rural"
+  },
+  {
+    "id": 10700016001,
+    "name": "باغستان",
+    "slug": "باغستان",
+    "province_id": 107,
+    "county_id": 10700016,
+    "type": "rural"
+  },
+  {
+    "id": 10700016004,
+    "name": "سیمکان",
+    "slug": "سیمکان",
+    "province_id": 107,
+    "county_id": 10700016,
+    "type": "rural"
+  },
+  {
+    "id": 10700017002,
+    "name": "شورآب",
+    "slug": "شورآب",
+    "province_id": 107,
+    "county_id": 10700017,
+    "type": "rural"
+  },
+  {
+    "id": 10700017003,
+    "name": "علی آبادملک",
+    "slug": "علی-آبادملک",
+    "province_id": 107,
+    "county_id": 10700017,
+    "type": "rural"
+  },
+  {
+    "id": 10700019003,
+    "name": "زیرآب",
+    "slug": "زیرآب",
+    "province_id": 107,
+    "county_id": 10700019,
+    "type": "rural"
+  },
+  {
+    "id": 10700020003,
+    "name": "هنگام",
+    "slug": "هنگام",
+    "province_id": 107,
+    "county_id": 10700020,
+    "type": "rural"
+  },
+  {
+    "id": 10700022003,
+    "name": "نوجین",
+    "slug": "نوجین",
+    "province_id": 107,
+    "county_id": 10700022,
+    "type": "rural"
+  },
+  {
+    "id": 10700022004,
+    "name": "دژگاه",
+    "slug": "دژگاه",
+    "province_id": 107,
+    "county_id": 10700022,
+    "type": "rural"
+  },
+  {
+    "id": 10700029003,
+    "name": "خیرآباد",
+    "slug": "خیرآباد",
+    "province_id": 107,
+    "county_id": 10700029,
+    "type": "rural"
+  },
+  {
+    "id": 10700034003,
+    "name": "علی آباد",
+    "slug": "علی-آباد",
+    "province_id": 107,
+    "county_id": 10700034,
+    "type": "rural"
+  },
+  {
+    "id": 10700034004,
+    "name": "سفیدار",
+    "slug": "سفیدار",
+    "province_id": 107,
+    "county_id": 10700034,
+    "type": "rural"
+  },
+  {
+    "id": 10800040012,
+    "name": "قاسم آباد",
+    "slug": "قاسم-آباد",
+    "province_id": 108,
+    "county_id": 1080004,
+    "type": "rural"
+  },
+  {
+    "id": 10800040013,
+    "name": "کبوترخان",
+    "slug": "کبوترخان",
+    "province_id": 108,
+    "county_id": 1080004,
+    "type": "rural"
+  },
+  {
+    "id": 10800050011,
+    "name": "خانوک",
+    "slug": "خانوک",
+    "province_id": 108,
+    "county_id": 1080005,
+    "type": "rural"
+  },
+  {
+    "id": 10800050012,
+    "name": "حتکن",
+    "slug": "حتکن",
+    "province_id": 108,
+    "county_id": 1080005,
+    "type": "rural"
+  },
+  {
+    "id": 10800060010,
+    "name": "نجف آباد",
+    "slug": "نجف-آباد",
+    "province_id": 108,
+    "county_id": 1080006,
+    "type": "rural"
+  },
+  {
+    "id": 10800010005,
+    "name": "مشیز",
+    "slug": "مشیز",
+    "province_id": 108,
+    "county_id": 10800010,
+    "type": "rural"
+  },
+  {
+    "id": 10800011003,
+    "name": "هروز",
+    "slug": "هروز",
+    "province_id": 108,
+    "county_id": 10800011,
+    "type": "rural"
+  },
+  {
+    "id": 10800012002,
+    "name": "جهادآباد",
+    "slug": "جهادآباد",
+    "province_id": 108,
+    "county_id": 10800012,
+    "type": "rural"
+  },
+  {
+    "id": 10800012004,
+    "name": "محمدآباد",
+    "slug": "محمدآباد",
+    "province_id": 108,
+    "county_id": 10800012,
+    "type": "rural"
+  },
+  {
+    "id": 10800013003,
+    "name": "نورآباد",
+    "slug": "نورآباد",
+    "province_id": 108,
+    "county_id": 10800013,
+    "type": "rural"
+  },
+  {
+    "id": 10800015001,
+    "name": "رودبار",
+    "slug": "رودبار",
+    "province_id": 108,
+    "county_id": 10800015,
+    "type": "rural"
+  },
+  {
+    "id": 10800017004,
+    "name": "پشت ریگ",
+    "slug": "پشت-ریگ",
+    "province_id": 108,
+    "county_id": 10800017,
+    "type": "rural"
+  },
+  {
+    "id": 10800017001,
+    "name": "گاوکان",
+    "slug": "گاوکان",
+    "province_id": 108,
+    "county_id": 10800017,
+    "type": "rural"
+  },
+  {
+    "id": 10800020002,
+    "name": "حسین آباد",
+    "slug": "حسین-آباد",
+    "province_id": 108,
+    "county_id": 10800020,
+    "type": "rural"
+  },
+  {
+    "id": 10800023003,
+    "name": "دهسرد",
+    "slug": "دهسرد",
+    "province_id": 108,
+    "county_id": 10800023,
+    "type": "rural"
+  },
+  {
+    "id": 10900013002,
+    "name": "سودلانه",
+    "slug": "سودلانه",
+    "province_id": 109,
+    "county_id": 10900013,
+    "type": "rural"
+  },
+  {
+    "id": 10900014001,
+    "name": "بالا ولایت",
+    "slug": "بالا-ولایت",
+    "province_id": 109,
+    "county_id": 10900014,
+    "type": "rural"
+  },
+  {
+    "id": 10900014002,
+    "name": "پایین ولایت",
+    "slug": "پایین-ولایت",
+    "province_id": 109,
+    "county_id": 10900014,
+    "type": "rural"
+  },
+  {
+    "id": 10900015001,
+    "name": "پس کلوت",
+    "slug": "پس-کلوت",
+    "province_id": 109,
+    "county_id": 10900015,
+    "type": "rural"
+  },
+  {
+    "id": 10900016002,
+    "name": "پیوه ژن",
+    "slug": "پیوه-ژن",
+    "province_id": 109,
+    "county_id": 10900016,
+    "type": "rural"
+  },
+  {
+    "id": 10900016004,
+    "name": "سرجام",
+    "slug": "سرجام",
+    "province_id": 109,
+    "county_id": 10900016,
+    "type": "rural"
+  },
+  {
+    "id": 10900016003,
+    "name": "کارده",
+    "slug": "کارده",
+    "province_id": 109,
+    "county_id": 10900016,
+    "type": "rural"
+  },
+  {
+    "id": 10900017002,
+    "name": "سرولایت",
+    "slug": "سرولایت",
+    "province_id": 109,
+    "county_id": 10900017,
+    "type": "rural"
+  },
+  {
+    "id": 10900017001,
+    "name": "دربقاضی",
+    "slug": "دربقاضی",
+    "province_id": 109,
+    "county_id": 10900017,
+    "type": "rural"
+  },
+  {
+    "id": 10900017005,
+    "name": "بینالود",
+    "slug": "بینالود",
+    "province_id": 109,
+    "county_id": 10900017,
+    "type": "rural"
+  },
+  {
+    "id": 10900018001,
+    "name": "چناران",
+    "slug": "چناران",
+    "province_id": 109,
+    "county_id": 10900018,
+    "type": "rural"
+  },
+  {
+    "id": 10900020003,
+    "name": "مرز داران",
+    "slug": "مرز-داران",
+    "province_id": 109,
+    "county_id": 10900020,
+    "type": "rural"
+  },
+  {
+    "id": 10900022003,
+    "name": "فریمان",
+    "slug": "فریمان",
+    "province_id": 109,
+    "county_id": 10900022,
+    "type": "rural"
+  },
+  {
+    "id": 10900040003,
+    "name": "قلعه حمام",
+    "slug": "قلعه-حمام",
+    "province_id": 109,
+    "county_id": 10900040,
+    "type": "rural"
+  },
+  {
+    "id": 10900041004,
+    "name": "کوه سفید",
+    "slug": "کوه-سفید",
+    "province_id": 109,
+    "county_id": 10900041,
+    "type": "rural"
+  },
+  {
+    "id": 11000010001,
+    "name": "جوشقان قالی",
+    "slug": "جوشقان-قالی",
+    "province_id": 110,
+    "county_id": 11000010,
+    "type": "rural"
+  },
+  {
+    "id": 11000011002,
+    "name": "کناررودخانه",
+    "slug": "کناررودخانه",
+    "province_id": 110,
+    "county_id": 11000011,
+    "type": "rural"
+  },
+  {
+    "id": 11000011003,
+    "name": "نیوان",
+    "slug": "نیوان",
+    "province_id": 110,
+    "county_id": 11000011,
+    "type": "rural"
+  },
+  {
+    "id": 11000012002,
+    "name": "زیرکوه",
+    "slug": "زیرکوه",
+    "province_id": 110,
+    "county_id": 11000012,
+    "type": "rural"
+  },
+  {
+    "id": 11000013002,
+    "name": "چوپانان",
+    "slug": "چوپانان",
+    "province_id": 110,
+    "county_id": 11000013,
+    "type": "rural"
+  },
+  {
+    "id": 11000013004,
+    "name": "لای سیاه",
+    "slug": "لای-سیاه",
+    "province_id": 110,
+    "county_id": 11000013,
+    "type": "rural"
+  },
+  {
+    "id": 11000014001,
+    "name": "جوزدان",
+    "slug": "جوزدان",
+    "province_id": 110,
+    "county_id": 11000014,
+    "type": "rural"
+  },
+  {
+    "id": 11000015003,
+    "name": "طرق رود",
+    "slug": "طرق-رود",
+    "province_id": 110,
+    "county_id": 11000015,
+    "type": "rural"
+  },
+  {
+    "id": 11000015004,
+    "name": "کرکس",
+    "slug": "کرکس",
+    "province_id": 110,
+    "county_id": 11000015,
+    "type": "rural"
+  },
+  {
+    "id": 11000016001,
+    "name": "زرکان",
+    "slug": "زرکان",
+    "province_id": 110,
+    "county_id": 11000016,
+    "type": "rural"
+  },
+  {
+    "id": 11000017003,
+    "name": "کرکوند",
+    "slug": "کرکوند",
+    "province_id": 110,
+    "county_id": 11000017,
+    "type": "rural"
+  },
+  {
+    "id": 11000021002,
+    "name": "قمبوان",
+    "slug": "قمبوان",
+    "province_id": 110,
+    "county_id": 11000021,
+    "type": "rural"
+  },
+  {
+    "id": 11000021003,
+    "name": "موسی آباد",
+    "slug": "موسی-آباد",
+    "province_id": 110,
+    "county_id": 11000021,
+    "type": "rural"
+  },
+  {
+    "id": 11000021004,
+    "name": "همگین",
+    "slug": "همگین",
+    "province_id": 110,
+    "county_id": 11000021,
+    "type": "rural"
+  },
+  {
+    "id": 11000023002,
+    "name": "جندق",
+    "slug": "جندق",
+    "province_id": 110,
+    "county_id": 11000023,
+    "type": "rural"
+  },
+  {
+    "id": 11000023003,
+    "name": "نخلستان",
+    "slug": "نخلستان",
+    "province_id": 110,
+    "county_id": 11000023,
+    "type": "rural"
+  },
+  {
+    "id": 11000024003,
+    "name": "ییلاق",
+    "slug": "ییلاق",
+    "province_id": 110,
+    "county_id": 11000024,
+    "type": "rural"
+  },
+  {
+    "id": 11100011003,
+    "name": "جهان آباد",
+    "slug": "جهان-آباد",
+    "province_id": 111,
+    "county_id": 11100011,
+    "type": "rural"
+  },
+  {
+    "id": 11100012003,
+    "name": "هودیان",
+    "slug": "هودیان",
+    "province_id": 111,
+    "county_id": 11100012,
+    "type": "rural"
+  },
+  {
+    "id": 11100016003,
+    "name": "لوتک",
+    "slug": "لوتک",
+    "province_id": 111,
+    "county_id": 11100016,
+    "type": "rural"
+  },
+  {
+    "id": 11100016004,
+    "name": "محمدآباد",
+    "slug": "محمدآباد",
+    "province_id": 111,
+    "county_id": 11100016,
+    "type": "rural"
+  },
+  {
+    "id": 11100017004,
+    "name": "انده",
+    "slug": "انده",
+    "province_id": 111,
+    "county_id": 11100017,
+    "type": "rural"
+  },
+  {
+    "id": 11100020003,
+    "name": "خیرآباد",
+    "slug": "خیرآباد",
+    "province_id": 111,
+    "county_id": 11100020,
+    "type": "rural"
+  },
+  {
+    "id": 11200010003,
+    "name": "قوری چای",
+    "slug": "قوری-چای",
+    "province_id": 112,
+    "county_id": 11200010,
+    "type": "rural"
+  },
+  {
+    "id": 11600010003,
+    "name": "علیشروان",
+    "slug": "علیشروان",
+    "province_id": 116,
+    "county_id": 11600010,
+    "type": "rural"
+  },
+  {
+    "id": 11900040010,
+    "name": "معجزات",
+    "slug": "معجزات",
+    "province_id": 119,
+    "county_id": 1190004,
+    "type": "rural"
+  },
+  {
+    "id": 11900040011,
+    "name": "قلتوق",
+    "slug": "قلتوق",
+    "province_id": 119,
+    "county_id": 1190004,
+    "type": "rural"
+  },
+  {
+    "id": 12300010004,
+    "name": "بهرام آباد",
+    "slug": "بهرام-آباد",
+    "province_id": 123,
+    "county_id": 12300010,
+    "type": "rural"
+  },
+  {
+    "id": 12300012001,
+    "name": "امامزاده ابوطالب",
+    "slug": "امامزاده-ابوطالب",
+    "province_id": 123,
+    "county_id": 12300012,
+    "type": "rural"
+  },
+  {
+    "id": 12300012003,
+    "name": "وهن آباد",
+    "slug": "وهن-آباد",
+    "province_id": 123,
+    "county_id": 12300012,
+    "type": "rural"
+  },
+  {
+    "id": 12300013003,
+    "name": "کریم آباد",
+    "slug": "کریم-آباد",
+    "province_id": 123,
+    "county_id": 12300013,
+    "type": "rural"
+  },
+  {
+    "id": 12300014003,
+    "name": "دوبلوک",
+    "slug": "دوبلوک",
+    "province_id": 123,
+    "county_id": 12300014,
+    "type": "rural"
+  },
+  {
+    "id": 12300016002,
+    "name": "هفت جوی",
+    "slug": "هفت-جوی",
+    "province_id": 123,
+    "county_id": 12300016,
+    "type": "rural"
+  },
+  {
+    "id": 12300021002,
+    "name": "ولی آباد",
+    "slug": "ولی-آباد",
+    "province_id": 123,
+    "county_id": 12300021,
+    "type": "rural"
+  },
+  {
+    "id": 12400011003,
+    "name": "اصلاندوز شرقی",
+    "slug": "اصلاندوز-شرقی",
+    "province_id": 124,
+    "county_id": 12400011,
+    "type": "rural"
+  },
+  {
+    "id": 12700011003,
+    "name": "قلعه میران",
+    "slug": "قلعه-میران",
+    "province_id": 127,
+    "county_id": 12700011,
+    "type": "rural"
+  },
+  {
+    "id": 12900010003,
+    "name": "قلعه زری",
+    "slug": "قلعه-زری",
+    "province_id": 129,
+    "county_id": 12900010,
     "type": "rural"
   },
   {
