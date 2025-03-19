@@ -13,6 +13,7 @@ import {
 const processedData: ProcessedDataInterface = {
   provinces: {},
   counties: {},
+  districts: {},
   cities: {},
   rurals: {},
   all: {},
@@ -74,6 +75,28 @@ const typeHandlers: { [key: string]: (item: ListInterface) => void } = {
         };
         processedData.counties[countyId] = data;
         processedData.all[countyId] = { ...data, type: "county" };
+      }
+    }
+  },
+  district: (item: ListInterface) => {
+    if (item["کد بخش"] && item["نام بخش"] && item["CODEREC"] === 3) {
+      const provinceId = parseInt(100 + item["کد استان"]);
+      const countyId = parseInt(
+        provinceId.toString() + "000" + item["کد شهرستان"],
+      );
+      const districtId = parseInt(countyId.toString() + "00" + item["کد بخش"]);
+
+      if (!processedData.districts[districtId]) {
+        const name = item["نام"];
+        const data = {
+          id: districtId,
+          name: name,
+          slug: generateSlug(name),
+          province_id: provinceId,
+          county_id: countyId,
+        };
+        processedData.districts[districtId] = data;
+        processedData.all[districtId] = { ...data, type: "district" };
       }
     }
   },
@@ -145,15 +168,21 @@ normalizedList.forEach((item: ListInterface) => {
   typeHandlers.city(item);
 });
 normalizedList.forEach((item: ListInterface) => {
+  typeHandlers.district(item);
+});
+normalizedList.forEach((item: ListInterface) => {
   typeHandlers.rural(item);
 });
+
 console.table({
   provinces: Object.keys(processedData.provinces).length,
   counties: Object.keys(processedData.counties).length,
+  districts: Object.keys(processedData.districts).length,
   cities: Object.keys(processedData.cities).length,
   rurals: Object.keys(processedData.rurals).length,
   all: Object.keys(processedData.all).length,
 });
+
 generateJsonFiles(processedData);
 generateCsvFiles(processedData);
 generateXlsxFiles(processedData);
