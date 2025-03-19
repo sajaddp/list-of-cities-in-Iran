@@ -25,6 +25,14 @@ export interface CountyInterface {
   slug: string;
   province_id: number;
 }
+export interface DistrictInterface {
+  id: number;
+  name: string;
+  slug: string;
+  province_id: number;
+  county_id: number;
+}
+
 export interface CityInterface {
   id: number;
   name: string;
@@ -43,7 +51,7 @@ export interface RuralInterface {
 
 export interface AllInterface {
   id: number;
-  type: "province" | "county" | "city" | "rural";
+  type: "province" | "county" | "district" | "city" | "rural";
   name: string;
   slug: string;
   province_id?: number;
@@ -54,6 +62,7 @@ export interface AllInterface {
 export interface ProcessedDataInterface {
   provinces: { [key: number]: ProvinceInterface };
   counties: { [key: number]: CountyInterface };
+  districts: { [key: number]: DistrictInterface };
   cities: { [key: number]: CityInterface };
   rurals: { [key: number]: RuralInterface };
   all: { [key: number]: AllInterface };
