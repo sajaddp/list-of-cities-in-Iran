@@ -1,115 +1,111 @@
 # راهنمای ایمپورت فایل JSON برای فهرست شهرهای ایران به تفکیک استان به دیتابیس MSSQL
 
-در این راهنما، به صورت حرفه‌ای روش دقیق ایمپورت **فهرست شهرهای ایران** به دیتابیس MSSQL توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و به راحتی در پروژه‌های بک‌اند یا API محور قابل استفاده است.
+در این راهنما، به صورت حرفه‌ای روش دقیق ایمپورت **فهرست شهرهای ایران** به دیتابیس MSSQL توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و در پروژه‌های بک‌اند یا API محور کاربرد دارد.
 
 ## مراحل
 
-### 1. اتصال به دیتابیس MSSQL
+### 1. نصب پیش‌نیازها
 
-ابتدا باید به دیتابیس MSSQL متصل شوید. می‌توانید از ابزارهایی مثل SQL Server Management Studio (SSMS) یا Azure Data Studio استفاده کنید.
+ابتدا باید ابزارهای لازم را نصب کنید:
 
-### 2. ایجاد جدول موقت برای JSON
+- [نصب SQL Server](https://learn.microsoft.com/sql/linux/quickstart-install-connect-ubuntu)
+- [نصب SQLCMD](https://learn.microsoft.com/sql/linux/sql-server-linux-setup-tools)
+- نصب ابزار `jq`
 
-یک جدول موقت برای نگهداری داده‌های JSON ایجاد کنید:
-
-```sql
-CREATE TABLE ProvincesTemp (
-    JsonData NVARCHAR(MAX)
-);
+```sh
+sudo apt install jq  # Ubuntu/Debian
+sudo yum install jq  # CentOS
 ```
 
-### 3. بارگذاری داده‌ها به جدول موقت
+### 2. ایجاد دیتابیس و جدول
 
-برای بارگذاری فایل JSON به جدول موقت از دستورات زیر استفاده کنید:
+از دستور زیر برای ایجاد دیتابیس و جدول در MSSQL استفاده کنید:
 
 ```sql
-BULK INSERT ProvincesTemp
-FROM 'C:\\path\\to\\dist\\json\\provinces.json'
-WITH (
-    ROWTERMINATOR = '\n',
-    FIELDTERMINATOR = '\0'
+sqlcmd -S localhost -U SA -P 'YourPassword'
+
+CREATE DATABASE mydatabase;
+GO
+USE mydatabase;
+GO
+
+CREATE TABLE provinces (
+  id INT PRIMARY KEY,
+  name NVARCHAR(100),
+  slug NVARCHAR(100),
+  tel_prefix NVARCHAR(10)
 );
+GO
 ```
 
-**توجه:** مسیر فایل JSON را به‌طور دقیق تنظیم کنید.
+### 3. ایمپورت داده‌ها از فایل JSON
 
-### 4. استخراج داده‌ها از JSON
+برای وارد کردن داده‌ها به جدول، دستور زیر را اجرا کنید:
 
-داده‌ها را از جدول موقت استخراج کرده و در جدول نهایی وارد کنید:
+```sh
+jq -c '.[]' dist/json/provinces.json | while read item; do
+  id=$(echo "$item" | jq '.id')
+  name=$(echo "$item" | jq -r '.name')
+  slug=$(echo "$item" | jq -r '.slug')
+  tel_prefix=$(echo "$item" | jq -r '.tel_prefix')
 
-```sql
-SELECT *
-INTO Provinces
-FROM OPENJSON((SELECT JsonData FROM ProvincesTemp))
-WITH (
-    ProvinceID INT '$.ProvinceID',
-    ProvinceName NVARCHAR(100) '$.ProvinceName'
-);
-```
-
-### 5. حذف جدول موقت
-
-بعد از انتقال داده‌ها، جدول موقت را حذف کنید:
-
-```sql
-DROP TABLE ProvincesTemp;
+  sqlcmd -S localhost -U SA -P 'YourPassword' -d mydatabase -Q "INSERT INTO provinces (id, name, slug, tel_prefix) VALUES ($id, N'$name', N'$slug', N'$tel_prefix');"
+done
 ```
 
 ---
 
-## Guide to Import JSON File for Iranian Cities by Province into MSSQL Database
+## Guide to Import JSON File for Iranian Cities by Province into MSSQL
 
-This professional guide explains precisely how to import a structured JSON file containing **Iranian provinces and cities** into an MSSQL database. The example uses the file `provinces.json` located at `dist/json`, suitable for backend or API-based projects.
+This professional guide provides a clear method to import a JSON file containing the structured list of **Iranian provinces and cities** into MSSQL. The example file `provinces.json` located at `dist/json` is suitable for backend or API-based projects.
 
 ## Steps
 
-### 1. Connect to MSSQL Database
+### 1. Install Prerequisites
 
-First, connect to your MSSQL database using tools like SQL Server Management Studio (SSMS) or Azure Data Studio.
+First, install required tools:
 
-### 2. Create Temporary Table for JSON
+- [Install SQL Server](https://learn.microsoft.com/sql/linux/quickstart-install-connect-ubuntu)
+- [Install SQLCMD](https://learn.microsoft.com/sql/linux/sql-server-linux-setup-tools)
+- Install `jq`
 
-Create a temporary table to store JSON data:
-
-```sql
-CREATE TABLE ProvincesTemp (
-    JsonData NVARCHAR(MAX)
-);
+```sh
+sudo apt install jq  # Ubuntu/Debian
+sudo yum install jq  # CentOS
 ```
 
-### 3. Load JSON Data into Temporary Table
+### 2. Create Database and Table
 
-Use the following commands to load the JSON file into the temporary table:
+Use the following command to create the database and table in MSSQL:
 
 ```sql
-BULK INSERT ProvincesTemp
-FROM 'C:\\path\\to\\dist\\json\\provinces.json'
-WITH (
-    ROWTERMINATOR = '\n',
-    FIELDTERMINATOR = '\0'
+sqlcmd -S localhost -U SA -P 'YourPassword'
+
+CREATE DATABASE mydatabase;
+GO
+USE mydatabase;
+GO
+
+CREATE TABLE provinces (
+  id INT PRIMARY KEY,
+  name NVARCHAR(100),
+  slug NVARCHAR(100),
+  tel_prefix NVARCHAR(10)
 );
+GO
 ```
 
-**Note:** Ensure the file path is correctly specified.
+### 3. Import Data from JSON File
 
-### 4. Extract Data from JSON
+Execute the following command to import data into your table:
 
-Extract data from the temporary table and insert it into the final table:
+```sh
+jq -c '.[]' dist/json/provinces.json | while read item; do
+  id=$(echo "$item" | jq '.id')
+  name=$(echo "$item" | jq -r '.name')
+  slug=$(echo "$item" | jq -r '.slug')
+  tel_prefix=$(echo "$item" | jq -r '.tel_prefix')
 
-```sql
-SELECT *
-INTO Provinces
-FROM OPENJSON((SELECT JsonData FROM ProvincesTemp))
-WITH (
-    ProvinceID INT '$.ProvinceID',
-    ProvinceName NVARCHAR(100) '$.ProvinceName'
-);
-```
-
-### 5. Drop Temporary Table
-
-After transferring the data, drop the temporary table:
-
-```sql
-DROP TABLE ProvincesTemp;
+  sqlcmd -S localhost -U SA -P 'YourPassword' -d mydatabase -Q "INSERT INTO provinces (id, name, slug, tel_prefix) VALUES ($id, N'$name', N'$slug', N'$tel_prefix');"
+done
 ```
