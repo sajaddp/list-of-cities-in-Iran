@@ -1,65 +1,100 @@
-# راهنمای وارد کردن فایل JSON برای فهرست شهرهای ایران به تفکیک استان به دیتابیس PostgreSQL
+# راهنمای ایمپورت فایل JSON برای فهرست شهرهای ایران به تفکیک استان به دیتابیس PostgreSQL
 
-برای ذخیره‌سازی **فهرست شهرهای ایران** در دیتابیس PostgreSQL، می‌تونی از پشتیبانی قوی این دیتابیس از فرمت JSON استفاده کنی. در این راهنما، نحوه‌ی وارد کردن فایل `provinces.json` از مسیر `dist/json` به PostgreSQL رو توضیح می‌دیم. این فایل شامل اطلاعات ساختاریافته استان‌ها و شهرهای ایران هست و به‌راحتی می‌تونه با توابع داخلی مثل `jsonb_populate_record` یا `COPY` وارد جدول بشه.
+در این راهنما، به صورت حرفه‌ای روش دقیق ایمپورت **فهرست شهرهای ایران** به دیتابیس PostgreSQL توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و در پروژه‌های بک‌اند یا API محور کاربرد دارد.
 
-## مراحل به زبان فارسی
+## مراحل
 
-1. **نصب ابزارهای مورد نیاز**:
-   ابتدا باید ابزارهای `psql` و `jq` را نصب کنید. برای نصب این ابزارها می‌توانید از دستورات زیر استفاده کنید:
+### 1. نصب پیش‌نیازها
 
-   ```sh
-   sudo apt-get install postgresql-client jq
-   ```
+ابتدا باید ابزارهای لازم را نصب کنید:
 
-2. **ایجاد دیتابیس و جدول**:
-   یک دیتابیس جدید ایجاد کنید و جدول مورد نظر را با استفاده از دستور زیر ایجاد کنید:
+```sh
+sudo apt install postgresql postgresql-client jq  # Ubuntu/Debian
+sudo yum install postgresql postgresql-client jq  # CentOS
+```
 
-   ```sql
-   CREATE DATABASE mydatabase;
-   \c mydatabase
-   CREATE TABLE provinces (
-        id SERIAL PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        code VARCHAR(10) NOT NULL
-   );
-   ```
+### 2. ایجاد دیتابیس و جدول
 
-3. **وارد کردن داده‌ها از فایل JSON**:
-   فایل `provinces.json` را از مسیر `dist/json` بخوانید و داده‌ها را به جدول وارد کنید:
+یک دیتابیس جدید ایجاد کنید و سپس جدولی متناسب با ساختار JSON بسازید:
 
-   ```sh
-   cat dist/json/provinces.json | jq -c '.[]' | while read i; do
-        psql -d mydatabase -c "INSERT INTO provinces (name, code) VALUES ('$(echo $i | jq -r '.name')', '$(echo $i | jq -r '.code')');"
-   done
-   ```
+```sql
+sudo -u postgres psql
 
-### Steps in English
+CREATE DATABASE mydatabase;
+\c mydatabase
 
-1. **Install required tools**:
-   First, you need to install `psql` and `jq` tools. You can install these tools using the following commands:
+CREATE TABLE provinces (
+  id INT PRIMARY KEY,
+  name VARCHAR(100),
+  slug VARCHAR(100),
+  tel_prefix VARCHAR(10)
+);
+```
 
-   ```sh
-   sudo apt-get install postgresql-client jq
-   ```
+### 3. ایمپورت داده‌ها از فایل JSON
 
-2. **Create database and table**:
-   Create a new database and the required table using the following command:
+از دستور زیر برای وارد کردن خودکار داده‌ها به جدول استفاده کنید:
 
-   ```sql
-   CREATE DATABASE mydatabase;
-   \c mydatabase
-   CREATE TABLE provinces (
-        id SERIAL PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        code VARCHAR(10) NOT NULL
-   );
-   ```
+```sh
+jq -c '.[]' dist/json/provinces.json | while read item; do
+  id=$(echo "$item" | jq '.id')
+  name=$(echo "$item" | jq -r '.name')
+  slug=$(echo "$item" | jq -r '.slug')
+  tel_prefix=$(echo "$item" | jq -r '.tel_prefix')
 
-3. **Import data from JSON file**:
-   Read the `provinces.json` file from the `dist/json` path and import the data into the table:
+  psql -U postgres -d mydatabase -c "INSERT INTO provinces (id, name, slug, tel_prefix) VALUES ($id, '$name', '$slug', '$tel_prefix');"
+done
+```
 
-   ```sh
-   cat dist/json/provinces.json | jq -c '.[]' | while read i; do
-        psql -d mydatabase -c "INSERT INTO provinces (name, code) VALUES ('$(echo $i | jq -r '.name')', '$(echo $i | jq -r '.code')');"
-   done
-   ```
+---
+
+## Guide to Import JSON File for Iranian Cities by Province into PostgreSQL
+
+This professional guide provides a clear method to import a JSON file containing the structured list of **Iranian provinces and cities** into PostgreSQL. The example file `provinces.json` located at `dist/json` is suitable for backend or API-based projects.
+
+## Steps
+
+### 1. Install Prerequisites
+
+First, install required tools:
+
+```sh
+sudo apt install postgresql postgresql-client jq  # Ubuntu/Debian
+sudo yum install postgresql postgresql-client jq  # CentOS
+```
+
+### 2. Create Database and Table
+
+Create a new database and a table matching the JSON structure:
+
+```sql
+sudo -u postgres psql
+
+CREATE DATABASE mydatabase;
+\c mydatabase
+
+CREATE TABLE provinces (
+  id INT PRIMARY KEY,
+  name VARCHAR(100),
+  slug VARCHAR(100),
+  tel_prefix VARCHAR(10)
+);
+```
+
+### 3. Import Data from JSON File
+
+Use the following command to import data automatically into your table:
+
+```sh
+jq -c '.[]' dist/json/provinces.json | while read item; do
+  id=$(echo "$item" | jq '.id')
+  name=$(echo "$item" | jq -r '.name')
+  slug=$(echo "$item" | jq -r '.slug')
+  tel_prefix=$(echo "$item" | jq -r '.tel_prefix')
+
+  psql -U postgres -d mydatabase -c "INSERT INTO provinces (id, name, slug, tel_prefix) VALUES ($id, '$name', '$slug', '$tel_prefix');"
+done
+```
+
+---
+
