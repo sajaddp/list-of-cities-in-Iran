@@ -12,7 +12,9 @@
 - [ساختار پوشه‌ها](#ساختار-پوشه‌ها)
 - [نحوه استفاده](#نحوه-استفاده)
 - [مشارکت](#مشارکت)
+- [نسخه اختصاصی](#نسخه-اختصاصی)
 - [مجوز](#مجوز)
+- [سلب مسئولیت](#سلب-مسئولیت)
 
 ## مقدمه
 
@@ -20,7 +22,7 @@
 
 ## ساختار پوشه‌ها
 
-- `examples/`: شامل مثال‌هایی از نحوه استفاده از داده‌ها در زبان‌های مختلف برنامه‌نویسی.
+- `docs/`: شامل مثال‌هایی از نحوه استفاده از داده‌ها در زبان‌های مختلف برنامه‌نویسی.
 - `official/`: شامل فایل‌های رسمی و استانداردهای جغرافیایی.
 - `dist/`: شامل خروجی‌های تولید شده از داده‌ها.
 - `tools/`: شامل ابزارهای مورد نیاز برای تبدیل و پردازش داده‌ها.
@@ -32,6 +34,10 @@
 ## مشارکت
 
 ما از مشارکت‌های شما استقبال می‌کنیم. لطفاً قبل از ارسال درخواست، مستندات مشارکت را مطالعه کنید.
+
+## نسخه اختصاصی
+
+در صور نیاز به نسخه اختصاصی با آیدی [t.me/sajaddp71](https://t.me/sajaddp71) ارتباط برقرار کنید.
 
 ## مجوز
 
@@ -61,7 +67,7 @@ This project aims to provide an open and free resource of geographical data of c
 
 ## Folder Structure
 
-- `examples/`: Contains examples of how to use the data in different programming languages.
+- `docs/`: Contains examples of how to use the data in different programming languages.
 - `official/`: Contains official files and geographical standards.
 - `dist/`: Contains generated dists from the data.
 - `tools/`: Contains tools needed for data conversion and processing.
