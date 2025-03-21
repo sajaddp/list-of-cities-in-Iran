@@ -1,0 +1,28 @@
+{
+  "name": "list-of-cities-in-iran-tools",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "npx prettier --write ../"
+  },
+  "keywords": [
+    "cities",
+    "Iran",
+    "list",
+    "tools"
+  ],
+  "author": "Sajad Dehshiri",
+  "license": "ISC",
+  "description": "لیست شهرهای ایران",
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.13.10",
+    "csv-writer": "^1.6.0",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.27.0",
+    "xlsx": "^0.18.5"
+  }
+}
