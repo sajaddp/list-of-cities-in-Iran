@@ -1,73 +1,85 @@
-# نحوه فراخوانی فایل JSON برای فهرست شهرهای ایران به تفکیک استان در تایپ‌اسکریپت
+# راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در TypeScript
 
-اگه می‌خوای **فهرست شهرهای ایران** رو توی پروژه تایپ‌اسکریپت استفاده کنی، این راهنما دقیقا به کارت میاد. در این آموزش، نحوه‌ی فراخوانی فایل `provinces.json` از مسیر `dist/json` و استفاده ازش داخل کد TypeScript رو توضیح می‌دیم. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایرانه که می‌تونی به راحتی تایپ‌دهی و استفاده‌شون کنی.
+در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه TypeScript توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و در پروژه‌های Node.js، API محور یا واسط کاربری (UI) قابل استفاده است.
 
-## روش استفاده
+## مراحل
 
-1. ابتدا باید تنظیمات `tsconfig.json` را به‌روزرسانی کنید تا امکان وارد کردن فایل‌های JSON فراهم شود. برای این کار، مقدار `resolveJsonModule` را به `true` تغییر دهید:
+### 1. تنظیم TypeScript برای خواندن فایل JSON
 
-```json
-{
-  "compilerOptions": {
-    "resolveJsonModule": true,
-    "esModuleInterop": true
-  }
-}
-```
-
-2. سپس یک اینترفیس برای ساختار داده‌های JSON تعریف کنید. به عنوان مثال، اگر فایل `provinces.json` شامل لیستی از استان‌ها باشد، می‌توانید اینترفیس زیر را تعریف کنید:
-
-```typescript
-interface Province {
-  id: number;
-  name: string;
-}
-```
-
-3. در نهایت، فایل JSON را وارد کرده و از آن استفاده کنید:
-
-```typescript
-import provinces from "../dist/json/provinces.json";
-
-const getProvinces = (): Province[] => {
-  return provinces;
-};
-
-console.log(getProvinces());
-```
-
-## How to Import a JSON File in TypeScript
-
-To import a JSON file from the `dist/json` directory and use it in TypeScript, follow these steps:
-
-1. First, update the `tsconfig.json` settings to enable importing JSON files. Set the `resolveJsonModule` option to `true`:
+در فایل `tsconfig.json`، گزینه‌های زیر را فعال کنید:
 
 ```json
 {
   "compilerOptions": {
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "target": "ES2020"
   }
 }
 ```
 
-2. Next, define an interface for the structure of the JSON data. For example, if the `provinces.json` file contains a list of provinces, you can define the following interface:
+### 2. ایجاد فایل TypeScript و ایمپورت داده‌ها
 
-```typescript
-interface Province {
+می‌توانید فایل JSON را مستقیماً ایمپورت کرده و استفاده کنید:
+
+```ts
+import provinces from "./dist/json/provinces.json";
+
+type Province = {
   id: number;
   name: string;
+  slug: string;
+  tel_prefix: string;
+};
+
+(provinces as Province[]).forEach((province) => {
+  console.log(`${province.name} (${province.tel_prefix})`);
+});
+```
+
+> **نکته:** مطمئن شوید فایل `provinces.json` در زمان کامپایل در دسترس باشد یا از ابزارهایی مانند `webpack` یا `ts-node` استفاده می‌کنید.
+
+---
+
+## Guide to Using JSON File for Iranian Cities by Province in TypeScript
+
+This professional guide explains how to use a JSON file containing the list of **Iranian provinces and cities** in a TypeScript project. The file `provinces.json`, located in the `dist/json` directory, contains structured data suitable for use in Node.js, backend services, or frontend applications.
+
+## Steps
+
+### 1. Configure TypeScript to Read JSON
+
+In your `tsconfig.json`, enable the following options:
+
+```json
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "target": "ES2020"
+  }
 }
 ```
 
-3. Finally, import the JSON file and use it:
+### 2. Import and Use JSON Data
 
-```typescript
-import provinces from "../dist/json/provinces.json";
+You can directly import the JSON file and use its contents:
 
-const getProvinces = (): Province[] => {
-  return provinces;
+```ts
+import provinces from "./dist/json/provinces.json";
+
+type Province = {
+  id: number;
+  name: string;
+  slug: string;
+  tel_prefix: string;
 };
 
-console.log(getProvinces());
+(provinces as Province[]).forEach((province) => {
+  console.log(`${province.name} (${province.tel_prefix})`);
+});
 ```
+
+> **Note:** Ensure the `provinces.json` file is available at compile/runtime, especially when using tools like `webpack`, `ts-node`, or other build pipelines.
