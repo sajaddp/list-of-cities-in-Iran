@@ -95,6 +95,3 @@ jq -c '.[]' dist/json/provinces.json | while read item; do
   psql -U postgres -d mydatabase -c "INSERT INTO provinces (id, name, slug, tel_prefix) VALUES ($id, '$name', '$slug', '$tel_prefix');"
 done
 ```
-
----
-
