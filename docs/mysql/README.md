@@ -1,57 +1,93 @@
-# راهنمای وارد کردن فایل JSON برای فهرست شهرهای ایران به تفکیک استان به دیتابیس MySQL
+# راهنمای ایمپورت فایل JSON برای فهرست شهرهای ایران به تفکیک استان به دیتابیس MySQL
 
-اگه می‌خوای **فهرست شهرهای ایران** رو توی دیتابیس MySQL ذخیره کنی، این راهنما به کارت میاد. در این آموزش، نحوه‌ی وارد کردن فایل `provinces.json` از مسیر `dist/json` به MySQL رو بررسی می‌کنیم. این فایل شامل داده‌های کامل از استان‌ها و شهرهای ایرانه و می‌تونی با استفاده از اسکریپت یا ابزارهای ETL اون رو توی جدول‌های MySQL ایمپورت کنی.
+در این راهنما، به صورت حرفه‌ای روش دقیق ایمپورت **فهرست شهرهای ایران** به دیتابیس MySQL توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و در پروژه‌های بک‌اند یا API محور کاربرد دارد.
 
-## مراحل به زبان فارسی
+## مراحل
 
-1. **نصب MySQL و ابزارهای مورد نیاز**
-   ابتدا مطمئن شوید که MySQL روی سیستم شما نصب شده است. همچنین به ابزار `mysql` و `jq` نیاز دارید.
+### 1. نصب پیش‌نیازها
 
-2. **ایجاد دیتابیس**
-   یک دیتابیس جدید ایجاد کنید:
+ابتدا باید ابزارهای لازم را نصب کنید:
 
-   ```sql
-   CREATE DATABASE mydatabase;
-   USE mydatabase;
-   ```
+```sh
+sudo apt install mysql-client jq  # Ubuntu/Debian
+sudo yum install mysql jq        # CentOS
+```
 
-3. **ایجاد جدول به صورت خودکار**
-   از ابزار `jq` برای استخراج ساختار JSON و ایجاد جدول استفاده کنید:
+### 2. ایجاد دیتابیس و جدول
 
-   ```bash
-   jq -r 'keys_unsorted as $keys | $keys, map([.[]])[] | @csv' dist/json/provinces.json | head -n 1 | sed 's/"//g' | awk -F, '{print "CREATE TABLE provinces ("; for (i=1; i<=NF; i++) print $i " VARCHAR(255),"; print "PRIMARY KEY (" $1 "));"}' | mysql -u root -p mydatabase
-   ```
+یک دیتابیس جدید ایجاد کنید و سپس جدولی متناسب با ساختار JSON بسازید:
 
-4. **وارد کردن داده‌ها**
-   داده‌های JSON را به جدول وارد کنید:
+```sql
+CREATE DATABASE mydatabase;
+USE mydatabase;
 
-   ```bash
-   jq -r 'map([.[]])[] | @csv' dist/json/provinces.json | sed 's/"//g' | awk -F, '{print "INSERT INTO provinces VALUES (\""$1"\", \""$2"\", \""$3"\");"}' | mysql -u root -p mydatabase
-   ```
+CREATE TABLE provinces (
+  id INT PRIMARY KEY,
+  name VARCHAR(100),
+  slug VARCHAR(100),
+  tel_prefix VARCHAR(10)
+);
+```
 
-### Steps in English
+### 3. ایمپورت داده‌ها از فایل JSON
 
-1. **Install MySQL and required tools**
-   Ensure MySQL is installed on your system. You will also need the `mysql` and `jq` tools.
+از دستور زیر برای وارد کردن خودکار داده‌ها به جدول استفاده کنید:
 
-2. **Create a database**
-   Create a new database:
+```sh
+jq -c '.[]' dist/json/provinces.json | while read item; do
+  id=$(echo "$item" | jq '.id')
+  name=$(echo "$item" | jq -r '.name')
+  slug=$(echo "$item" | jq -r '.slug')
+  tel_prefix=$(echo "$item" | jq -r '.tel_prefix')
 
-   ```sql
-   CREATE DATABASE mydatabase;
-   USE mydatabase;
-   ```
+  mysql -u root -p mydatabase -e "INSERT INTO provinces (id, name, slug, tel_prefix) VALUES ($id, '$name', '$slug', '$tel_prefix');"
+done
+```
 
-3. **Automatically create the table**
-   Use `jq` to extract the JSON structure and create the table:
+---
 
-   ```bash
-   jq -r 'keys_unsorted as $keys | $keys, map([.[]])[] | @csv' dist/json/provinces.json | head -n 1 | sed 's/"//g' | awk -F, '{print "CREATE TABLE provinces ("; for (i=1; i<=NF; i++) print $i " VARCHAR(255),"; print "PRIMARY KEY (" $1 "));"}' | mysql -u root -p mydatabase
-   ```
+## Guide to Import JSON File for Iranian Cities by Province into MySQL
 
-4. **Import the data**
-   Import the JSON data into the table:
+This professional guide provides a clear method to import a JSON file containing the structured list of **Iranian provinces and cities** into MySQL. The example file `provinces.json` located at `dist/json` is suitable for backend or API-based projects.
 
-   ```bash
-   jq -r 'map([.[]])[] | @csv' dist/json/provinces.json | sed 's/"//g' | awk -F, '{print "INSERT INTO provinces VALUES (\""$1"\", \""$2"\", \""$3"\");"}' | mysql -u root -p mydatabase
-   ```
+## Steps
+
+### 1. Install Prerequisites
+
+First, install required tools:
+
+```sh
+sudo apt install mysql-client jq  # Ubuntu/Debian
+sudo yum install mysql jq        # CentOS
+```
+
+### 2. Create Database and Table
+
+Create a new database and a table matching the JSON structure:
+
+```sql
+CREATE DATABASE mydatabase;
+USE mydatabase;
+
+CREATE TABLE provinces (
+  id INT PRIMARY KEY,
+  name VARCHAR(100),
+  slug VARCHAR(100),
+  tel_prefix VARCHAR(10)
+);
+```
+
+### 3. Import Data from JSON File
+
+Use the following command to import data automatically into your table:
+
+```sh
+jq -c '.[]' dist/json/provinces.json | while read item; do
+  id=$(echo "$item" | jq '.id')
+  name=$(echo "$item" | jq -r '.name')
+  slug=$(echo "$item" | jq -r '.slug')
+  tel_prefix=$(echo "$item" | jq -r '.tel_prefix')
+
+  mysql -u root -p mydatabase -e "INSERT INTO provinces (id, name, slug, tel_prefix) VALUES ($id, '$name', '$slug', '$tel_prefix');"
+done
+```
