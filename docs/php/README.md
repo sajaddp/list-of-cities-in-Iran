@@ -1,59 +1,85 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در PHP 8.4
 
-اگه با PHP 8.4 کار می‌کنی و می‌خوای **فهرست شهرهای ایران** رو از یه فایل JSON بخونی، این راهنما برات آماده‌ست. توی این آموزش، نحوه‌ی فراخوانی و استفاده از فایل `provinces.json` از مسیر `dist/json` رو بررسی می‌کنیم. این فایل شامل اطلاعات دقیق استان‌ها و شهرهای ایرانه و می‌تونه توی پروژه‌های PHP برای تولید API، فرم‌ها یا گزارش‌ها استفاده بشه.
+در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه PHP توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و برای توسعه API، تولید فرم‌ها یا گزارش‌گیری کاربرد دارد.
 
 ## مراحل
 
-1. **ایجاد تابع برای خواندن فایل JSON:**
+### 1. ایجاد تابع برای خواندن فایل JSON
 
-   ```php
-   function readJsonFile(string $filePath): array {
-        if (!file_exists($filePath)) {
-             throw new Exception("File not found: $filePath");
-        }
+ابتدا یک تابع برای خواندن محتوای فایل JSON ایجاد کنید:
 
-        $jsonContent = file_get_contents($filePath);
-        return json_decode($jsonContent, true);
-   }
-   ```
+```php
+function readJsonFile(string $filePath): array {
+    if (!file_exists($filePath)) {
+        throw new Exception("File not found: $filePath");
+    }
 
-2. **فراخوانی تابع و استفاده از داده‌ها:**
+    $jsonContent = file_get_contents($filePath);
+    $data = json_decode($jsonContent, true);
 
-   ```php
-   try {
-        $provinces = readJsonFile('dist/json/provinces.json');
-        print_r($provinces);
-   } catch (Exception $e) {
-        echo 'Error: ' . $e->getMessage();
-   }
-   ```
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        throw new Exception("Invalid JSON format in file: $filePath");
+    }
 
-## Guide to Using JSON Files in PHP 8.3
+    return $data;
+}
+```
 
-In this guide, we will explain how to call and use a JSON file from the `dist/json` directory using PHP 8.3. For example, we will consider the `provinces.json` file.
+### 2. استفاده از داده‌ها در برنامه
 
-### Steps
+سپس می‌توانید داده‌ها را بارگذاری و استفاده کنید:
 
-1. **Create a function to read the JSON file:**
+```php
+try {
+    $provinces = readJsonFile('dist/json/provinces.json');
+    foreach ($provinces as $province) {
+        echo $province['name'] . ' (' . $province['tel_prefix'] . ")\n";
+    }
+} catch (Exception $e) {
+    echo 'Error: ' . $e->getMessage();
+}
+```
 
-   ```php
-   function readJsonFile(string $filePath): array {
-        if (!file_exists($filePath)) {
-             throw new Exception("File not found: $filePath");
-        }
+---
 
-        $jsonContent = file_get_contents($filePath);
-        return json_decode($jsonContent, true);
-   }
-   ```
+## Guide to Using JSON File for Iranian Cities by Province in PHP 8.4
 
-2. **Call the function and use the data:**
+This professional guide shows how to use a JSON file containing the list of **Iranian provinces and cities** in a PHP 8.4 project. The file `provinces.json`, located in the `dist/json` directory, contains structured data that can be used in backend services, APIs, or reporting tools.
 
-   ```php
-   try {
-        $provinces = readJsonFile('dist/json/provinces.json');
-        print_r($provinces);
-   } catch (Exception $e) {
-        echo 'Error: ' . $e->getMessage();
-   }
-   ```
+## Steps
+
+### 1. Create a Function to Read JSON File
+
+Start by defining a function to read the content of a JSON file:
+
+```php
+function readJsonFile(string $filePath): array {
+    if (!file_exists($filePath)) {
+        throw new Exception("File not found: $filePath");
+    }
+
+    $jsonContent = file_get_contents($filePath);
+    $data = json_decode($jsonContent, true);
+
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        throw new Exception("Invalid JSON format in file: $filePath");
+    }
+
+    return $data;
+}
+```
+
+### 2. Use the Data in Your Application
+
+Then load and use the data in your code:
+
+```php
+try {
+    $provinces = readJsonFile('dist/json/provinces.json');
+    foreach ($provinces as $province) {
+        echo $province['name'] . ' (' . $province['tel_prefix'] . ")\n";
+    }
+} catch (Exception $e) {
+    echo 'Error: ' . $e->getMessage();
+}
+```
