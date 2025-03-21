@@ -6,11 +6,11 @@
 
 ### 1. نصب MongoDB
 
-ابتدا باید MongoDB را نصب و اجرا کنید. می‌توانید برای راهنمای نصب از [لینک رسمی MongoDB](https://docs.mongodb.com/manual/installation/) استفاده کنید.
+ابتدا MongoDB را نصب و اجرا کنید. برای راهنمای نصب می‌توانید از [مستندات رسمی MongoDB](https://docs.mongodb.com/manual/installation/) استفاده کنید.
 
-### 2. اتصال به MongoDB
+### 2. اطمینان از اجرای MongoDB
 
-قبل از ایمپورت، از اجرای MongoDB اطمینان حاصل کنید:
+پیش از ایمپورت، مطمئن شوید MongoDB در حال اجرا است:
 
 ```sh
 mongod
@@ -18,13 +18,13 @@ mongod
 
 ### 3. ایمپورت فایل JSON به دیتابیس
 
-با استفاده از دستور زیر، فایل JSON را به دیتابیس MongoDB ایمپورت کنید. این دستور به صورت خودکار ساختار مورد نیاز را ایجاد می‌کند:
+از دستور زیر برای ایمپورت فایل استفاده کنید. این دستور به صورت خودکار دیتابیس و کالکشن را ایجاد می‌کند:
 
 ```sh
-mongoimport --db نام_دیتابیس --collection نام_کالکشن --file dist/json/provinces.json --jsonArray
+mongoimport --db mydatabase --collection provinces --file dist/json/provinces.json --jsonArray
 ```
 
-**توجه:** نام دیتابیس و کالکشن را به دلخواه تنظیم کنید.
+**توجه:** نام دیتابیس و کالکشن را می‌توانید به دلخواه تغییر دهید.
 
 ---
 
@@ -36,11 +36,11 @@ This professional guide provides a clear method to import a JSON file containing
 
 ### 1. Install MongoDB
 
-First, install and run MongoDB. You can follow the official installation guide from [MongoDB documentation](https://docs.mongodb.com/manual/installation/).
+Install and run MongoDB. For installation help, refer to the [official MongoDB documentation](https://docs.mongodb.com/manual/installation/).
 
-### 2. Connect to MongoDB
+### 2. Ensure MongoDB is Running
 
-Before importing, ensure MongoDB is running:
+Before importing, make sure MongoDB is up and running:
 
 ```sh
 mongod
@@ -48,10 +48,10 @@ mongod
 
 ### 3. Import JSON File to Database
 
-Use the following command to import your JSON file into MongoDB. This command automatically creates the necessary database structure:
+Use the following command to import the JSON file. This command will automatically create the required database and collection:
 
 ```sh
-mongoimport --db database_name --collection collection_name --file dist/json/provinces.json --jsonArray
+mongoimport --db mydatabase --collection provinces --file dist/json/provinces.json --jsonArray
 ```
 
-**Note:** Replace `database_name` and `collection_name` with your desired names.
+**Note:** Replace `mydatabase` and `provinces` with your preferred names.
