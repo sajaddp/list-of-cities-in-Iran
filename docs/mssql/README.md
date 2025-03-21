@@ -1,93 +1,115 @@
 # راهنمای ایمپورت فایل JSON برای فهرست شهرهای ایران به تفکیک استان به دیتابیس MSSQL
 
-برای وارد کردن **فهرست شهرهای ایران** به دیتابیس MSSQL، می‌تونی از قابلیت‌های داخلی JSON در SQL Server استفاده کنی. در این راهنما، نحوه‌ی ایمپورت فایل `provinces.json` از مسیر `dist/json` رو به جدول‌های MSSQL توضیح می‌دیم. این فایل شامل اطلاعات ساختاریافته از استان‌ها و شهرهای ایران هست و می‌تونه به‌راحتی به دیتابیس تبدیل بشه.
+در این راهنما، به صورت حرفه‌ای روش دقیق ایمپورت **فهرست شهرهای ایران** به دیتابیس MSSQL توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و به راحتی در پروژه‌های بک‌اند یا API محور قابل استفاده است.
 
-## فارسی
+## مراحل
 
-برای ایمپورت کردن فایل JSON از مسیر `dist/json` به دیتابیس MSSQL و تولید خودکار ساختار دیتابیس، مراحل زیر را دنبال کنید:
+### 1. اتصال به دیتابیس MSSQL
 
-1. **اتصال به دیتابیس MSSQL:**
-   ابتدا به دیتابیس MSSQL خود متصل شوید. می‌توانید از ابزارهایی مانند SQL Server Management Studio (SSMS) یا Azure Data Studio استفاده کنید.
+ابتدا باید به دیتابیس MSSQL متصل شوید. می‌توانید از ابزارهایی مثل SQL Server Management Studio (SSMS) یا Azure Data Studio استفاده کنید.
 
-2. **ایجاد جدول موقت:**
-   یک جدول موقت برای نگهداری داده‌های JSON ایجاد کنید. به عنوان مثال:
+### 2. ایجاد جدول موقت برای JSON
 
-   ```sql
-   CREATE TABLE ProvincesTemp (
-        JsonData NVARCHAR(MAX)
-   );
-   ```
+یک جدول موقت برای نگهداری داده‌های JSON ایجاد کنید:
 
-3. **بارگذاری فایل JSON:**
-   فایل JSON را به جدول موقت بارگذاری کنید. به عنوان مثال:
+```sql
+CREATE TABLE ProvincesTemp (
+    JsonData NVARCHAR(MAX)
+);
+```
 
-   ```sql
-   BULK INSERT ProvincesTemp
-   FROM 'C:\path\to\dist\json\provinces.json'
-   WITH (ROWTERMINATOR = '\n', FIELDTERMINATOR = ',');
-   ```
+### 3. بارگذاری داده‌ها به جدول موقت
 
-4. **استخراج داده‌ها از JSON:**
-   داده‌های JSON را از جدول موقت استخراج کرده و به جدول نهایی منتقل کنید. به عنوان مثال:
+برای بارگذاری فایل JSON به جدول موقت از دستورات زیر استفاده کنید:
 
-   ```sql
-   SELECT *
-   INTO Provinces
-   FROM OPENJSON((SELECT JsonData FROM ProvincesTemp))
-   WITH (
-        ProvinceID INT 'strict $.ProvinceID',
-        ProvinceName NVARCHAR(100) 'strict $.ProvinceName'
-   );
-   ```
+```sql
+BULK INSERT ProvincesTemp
+FROM 'C:\\path\\to\\dist\\json\\provinces.json'
+WITH (
+    ROWTERMINATOR = '\n',
+    FIELDTERMINATOR = '\0'
+);
+```
 
-5. **حذف جدول موقت:**
-   پس از انتقال داده‌ها، جدول موقت را حذف کنید:
+**توجه:** مسیر فایل JSON را به‌طور دقیق تنظیم کنید.
 
-   ```sql
-   DROP TABLE ProvincesTemp;
-   ```
+### 4. استخراج داده‌ها از JSON
 
-### English
+داده‌ها را از جدول موقت استخراج کرده و در جدول نهایی وارد کنید:
 
-To import a JSON file from the `dist/json` path into an MSSQL database and automatically generate the database structure, follow these steps:
+```sql
+SELECT *
+INTO Provinces
+FROM OPENJSON((SELECT JsonData FROM ProvincesTemp))
+WITH (
+    ProvinceID INT '$.ProvinceID',
+    ProvinceName NVARCHAR(100) '$.ProvinceName'
+);
+```
 
-1. **Connect to MSSQL Database:**
-   First, connect to your MSSQL database. You can use tools like SQL Server Management Studio (SSMS) or Azure Data Studio.
+### 5. حذف جدول موقت
 
-2. **Create a Temporary Table:**
-   Create a temporary table to hold the JSON data. For example:
+بعد از انتقال داده‌ها، جدول موقت را حذف کنید:
 
-   ```sql
-   CREATE TABLE ProvincesTemp (
-        JsonData NVARCHAR(MAX)
-   );
-   ```
+```sql
+DROP TABLE ProvincesTemp;
+```
 
-3. **Load JSON File:**
-   Load the JSON file into the temporary table. For example:
+---
 
-   ```sql
-   BULK INSERT ProvincesTemp
-   FROM 'C:\path\to\dist\json\provinces.json'
-   WITH (ROWTERMINATOR = '\n', FIELDTERMINATOR = ',');
-   ```
+## Guide to Import JSON File for Iranian Cities by Province into MSSQL Database
 
-4. **Extract Data from JSON:**
-   Extract the JSON data from the temporary table and insert it into the final table. For example:
+This professional guide explains precisely how to import a structured JSON file containing **Iranian provinces and cities** into an MSSQL database. The example uses the file `provinces.json` located at `dist/json`, suitable for backend or API-based projects.
 
-   ```sql
-   SELECT *
-   INTO Provinces
-   FROM OPENJSON((SELECT JsonData FROM ProvincesTemp))
-   WITH (
-        ProvinceID INT 'strict $.ProvinceID',
-        ProvinceName NVARCHAR(100) 'strict $.ProvinceName'
-   );
-   ```
+## Steps
 
-5. **Drop Temporary Table:**
-   After transferring the data, drop the temporary table:
+### 1. Connect to MSSQL Database
 
-   ```sql
-   DROP TABLE ProvincesTemp;
-   ```
+First, connect to your MSSQL database using tools like SQL Server Management Studio (SSMS) or Azure Data Studio.
+
+### 2. Create Temporary Table for JSON
+
+Create a temporary table to store JSON data:
+
+```sql
+CREATE TABLE ProvincesTemp (
+    JsonData NVARCHAR(MAX)
+);
+```
+
+### 3. Load JSON Data into Temporary Table
+
+Use the following commands to load the JSON file into the temporary table:
+
+```sql
+BULK INSERT ProvincesTemp
+FROM 'C:\\path\\to\\dist\\json\\provinces.json'
+WITH (
+    ROWTERMINATOR = '\n',
+    FIELDTERMINATOR = '\0'
+);
+```
+
+**Note:** Ensure the file path is correctly specified.
+
+### 4. Extract Data from JSON
+
+Extract data from the temporary table and insert it into the final table:
+
+```sql
+SELECT *
+INTO Provinces
+FROM OPENJSON((SELECT JsonData FROM ProvincesTemp))
+WITH (
+    ProvinceID INT '$.ProvinceID',
+    ProvinceName NVARCHAR(100) '$.ProvinceName'
+);
+```
+
+### 5. Drop Temporary Table
+
+After transferring the data, drop the temporary table:
+
+```sql
+DROP TABLE ProvincesTemp;
+```
