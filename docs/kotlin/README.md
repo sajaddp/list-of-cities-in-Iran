@@ -1,109 +1,133 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در Kotlin
 
-اگه با Kotlin 1.28 کار می‌کنی و دنبال راهی برای استفاده از **فهرست شهرهای ایران** به‌صورت JSON هستی، این راهنما به دردت می‌خوره. در این آموزش، نحوه‌ی فراخوانی و استفاده از فایل `provinces.json` از مسیر `dist/json` رو در پروژه Kotlin نشون می‌دیم. این فایل شامل داده‌های ساختاریافته از استان‌ها و شهرهای ایرانه.
+در این راهنما، به‌صورت حرفه‌ای روش صحیح فراخوانی و استفاده از **فهرست شهرهای ایران** به زبان Kotlin (نسخه 1.28) توضیح داده شده است. برای این منظور از فایل `provinces.json` در مسیر `dist/json` استفاده می‌کنیم. این فایل شامل داده‌های ساختاریافته مربوط به استان‌ها و شهرهای ایران است.
 
 ## مراحل
 
-1. **اضافه کردن وابستگی‌ها**: ابتدا باید وابستگی‌های لازم را به فایل `build.gradle.kts` اضافه کنید:
+### 1. اضافه کردن وابستگی‌ها
 
-   ```kotlin
-   dependencies {
-       implementation("com.squareup.moshi:moshi:1.12.0")
-       implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
-   }
-   ```
+وابستگی‌های زیر را به فایل `build.gradle.kts` اضافه کنید:
 
-2. **ایجاد مدل داده**: یک کلاس داده برای مدل JSON خود ایجاد کنید. به عنوان مثال:
+```kotlin
+dependencies {
+    implementation("com.squareup.moshi:moshi:1.12.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+}
+```
 
-   ```kotlin
-   data class Province(
-       val id: Int,
-       val name: String
-   )
-   ```
+### 2. ایجاد مدل داده
 
-3. **خواندن فایل JSON**: از تابع زیر برای خواندن فایل JSON استفاده کنید:
+کلاس داده‌ای برای مدل JSON تعریف کنید:
 
-   ```kotlin
-   import com.squareup.moshi.Moshi
-   import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-   import java.io.File
+```kotlin
+data class Province(
+    val id: Int,
+    val name: String
+)
+```
 
-   fun readProvincesFromFile(filePath: String): List<Province>? {
-       val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
-       val jsonAdapter = moshi.adapter<List<Province>>(Types.newParameterizedType(List::class.java, Province::class.java))
+### 3. خواندن فایل JSON
 
-       val file = File(filePath)
-       if (!file.exists()) {
-           println("File not found: $filePath")
-           return null
-       }
+از تابع زیر برای خواندن امن و حرفه‌ای فایل JSON استفاده کنید:
 
-       val json = file.readText()
-       return jsonAdapter.fromJson(json)
-   }
-   ```
+```kotlin
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.Types
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import java.io.File
 
-4. **فراخوانی تابع**: تابع را فراخوانی کنید و از داده‌ها استفاده کنید:
+fun readProvincesFromFile(filePath: String): List<Province>? {
+    val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+    val type = Types.newParameterizedType(List::class.java, Province::class.java)
+    val jsonAdapter = moshi.adapter<List<Province>>(type)
 
-   ```kotlin
-   fun main() {
-       val provinces = readProvincesFromFile("dist/json/provinces.json")
-       provinces?.forEach { println(it) }
-   }
-   ```
+    val file = File(filePath)
+    if (!file.exists()) {
+        println("File not found: $filePath")
+        return null
+    }
 
-## Guide to Using JSON File in Kotlin
+    val json = file.readText()
+    return jsonAdapter.fromJson(json)
+}
+```
 
-In this guide, we will explain how to load and use a JSON file from the `dist/json` directory in Kotlin 1.28. For example, consider the `provinces.json` file.
+### 4. استفاده از داده‌ها
 
-### Steps
+مثال کاربردی فراخوانی و استفاده از داده‌ها:
 
-1. **Add Dependencies**: First, add the necessary dependencies to your `build.gradle.kts` file:
+```kotlin
+fun main() {
+    val provinces = readProvincesFromFile("dist/json/provinces.json")
 
-   ```kotlin
-   dependencies {
-       implementation("com.squareup.moshi:moshi:1.12.0")
-       implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
-   }
-   ```
+    provinces?.forEach { println(it) } ?: println("Failed to load provinces data.")
+}
+```
 
-2. **Create Data Model**: Create a data class for your JSON model. For example:
+---
 
-   ```kotlin
-   data class Province(
-       val id: Int,
-       val name: String
-   )
-   ```
+## Guide to Using JSON File for Iranian Cities by Province in Kotlin
 
-3. **Read JSON File**: Use the following function to read the JSON file:
+This professional guide demonstrates how to correctly load and use the JSON file containing a structured list of **Iranian provinces and cities** in Kotlin (version 1.28). We use `provinces.json` located at `dist/json`.
 
-   ```kotlin
-   import com.squareup.moshi.Moshi
-   import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-   import java.io.File
+## Steps
 
-   fun readProvincesFromFile(filePath: String): List<Province>? {
-       val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
-       val jsonAdapter = moshi.adapter<List<Province>>(Types.newParameterizedType(List::class.java, Province::class.java))
+### 1. Add Dependencies
 
-       val file = File(filePath)
-       if (!file.exists()) {
-           println("File not found: $filePath")
-           return null
-       }
+Add the following dependencies to your `build.gradle.kts`:
 
-       val json = file.readText()
-       return jsonAdapter.fromJson(json)
-   }
-   ```
+```kotlin
+dependencies {
+    implementation("com.squareup.moshi:moshi:1.12.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+}
+```
 
-4. **Call the Function**: Call the function and use the data:
+### 2. Create Data Model
 
-   ```kotlin
-   fun main() {
-       val provinces = readProvincesFromFile("dist/json/provinces.json")
-       provinces?.forEach { println(it) }
-   }
-   ```
+Define a data class for your JSON model:
+
+```kotlin
+data class Province(
+    val id: Int,
+    val name: String
+)
+```
+
+### 3. Read JSON File
+
+Use the following safe and professional function to read the JSON file:
+
+```kotlin
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.Types
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import java.io.File
+
+fun readProvincesFromFile(filePath: String): List<Province>? {
+    val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+    val type = Types.newParameterizedType(List::class.java, Province::class.java)
+    val jsonAdapter = moshi.adapter<List<Province>>(type)
+
+    val file = File(filePath)
+    if (!file.exists()) {
+        println("File not found: $filePath")
+        return null
+    }
+
+    val json = file.readText()
+    return jsonAdapter.fromJson(json)
+}
+```
+
+### 4. Utilize Data
+
+Practical example of calling and using data:
+
+```kotlin
+fun main() {
+    val provinces = readProvincesFromFile("dist/json/provinces.json")
+
+    provinces?.forEach { println(it) } ?: println("Failed to load provinces data.")
+}
+```
