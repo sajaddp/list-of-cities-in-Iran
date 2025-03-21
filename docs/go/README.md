@@ -1,121 +1,131 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در Go
 
-اگر دنبال روشی برای کار با **فهرست شهرهای ایران** به‌صورت JSON در زبان Go هستی، این راهنما دقیقاً همونه. در این آموزش، نحوه‌ی فراخوانی و استفاده از فایل‌های JSON ذخیره‌شده در مسیر `dist/json` رو توضیح می‌دیم. مثلاً فایل `provinces.json` که شامل اطلاعات استان‌ها و شهرهاست، به‌عنوان نمونه استفاده می‌شه.
+در این راهنما، نحوه‌ی خواندن و استفاده از فایل JSON شامل **فهرست استان‌ها و شهرهای ایران** با زبان Go به صورت حرفه‌ای توضیح داده می‌شود. فایل نمونه مورد استفاده در این راهنما `provinces.json` است که در مسیر `dist/json` ذخیره شده است.
 
 ## مراحل
 
-1. **ایمپورت کردن پکیج‌های مورد نیاز:**
+### 1. ایمپورت کردن پکیج‌های ضروری
 
-   ```go
-   import (
-       "encoding/json"
-       "fmt"
-       "io/ioutil"
-       "os"
-   )
-   ```
+```go
+import (
+ "encoding/json"
+ "fmt"
+ "os"
+)
+```
 
-2. **تعریف ساختار داده‌ها:**
+### 2. تعریف ساختار داده‌ها
 
-   ```go
-   type Province struct {
-       ID   int    `json:"id"`
-       Name string `json:"name"`
-   }
-   ```
+برای خواندن صحیح اطلاعات از فایل JSON، باید ساختاری مطابق داده‌های JSON تعریف کنید:
 
-3. **فراخوانی و خواندن فایل JSON:**
+```go
+type Province struct {
+ ID   int    `json:"id"`
+ Name string `json:"name"`
+}
+```
 
-   ```go
-   func loadProvinces(filePath string) ([]Province, error) {
-       jsonFile, err := os.Open(filePath)
-       if err != nil {
-           return nil, err
-       }
-       defer jsonFile.Close()
+### 3. فراخوانی و خواندن فایل JSON
 
-       byteValue, _ := ioutil.ReadAll(jsonFile)
+برای خواندن و دیکد کردن اطلاعات از فایل JSON به صورت اصولی از تابع زیر استفاده کنید:
 
-       var provinces []Province
-       json.Unmarshal(byteValue, &provinces)
+```go
+func loadProvinces(filePath string) ([]Province, error) {
+ jsonFile, err := os.ReadFile(filePath)
+ if err != nil {
+  return nil, err
+ }
 
-       return provinces, nil
-   }
-   ```
+ var provinces []Province
+ if err := json.Unmarshal(jsonFile, &provinces); err != nil {
+  return nil, err
+ }
 
-4. **استفاده از داده‌های JSON:**
+ return provinces, nil
+}
+```
 
-   ```go
-   func main() {
-       provinces, err := loadProvinces("dist/json/provinces.json")
-       if err != nil {
-           fmt.Println("Error loading provinces:", err)
-           return
-       }
+### 4. استفاده از داده‌های JSON
 
-       for _, province := range provinces {
-           fmt.Printf("ID: %d, Name: %s\n", province.ID, province.Name)
-       }
-   }
-   ```
+نحوه‌ی استفاده از داده‌های خوانده شده:
 
-## Guide to Using JSON Files in Go
+```go
+func main() {
+ provinces, err := loadProvinces("dist/json/provinces.json")
+ if err != nil {
+  fmt.Println("Error loading provinces:", err)
+  return
+ }
 
-In this guide, we will explain how to load and use a JSON file from the `dist/json` directory. For example, consider the file `provinces.json`.
+ for _, province := range provinces {
+  fmt.Printf("ID: %d, Name: %s\n", province.ID, province.Name)
+ }
+}
+```
 
-### Steps
+---
 
-1. **Import the required packages:**
+## Guide to Using JSON Files for List of Iranian Cities by Province in Go
 
-   ```go
-   import (
-       "encoding/json"
-       "fmt"
-       "io/ioutil"
-       "os"
-   )
-   ```
+In this professional guide, you'll learn how to read and use JSON files containing the **list of Iranian provinces and cities** with Go. The example JSON file used here is `provinces.json`, located in the `dist/json` directory.
 
-2. **Define the data structure:**
+## Steps
 
-   ```go
-   type Province struct {
-       ID   int    `json:"id"`
-       Name string `json:"name"`
-   }
-   ```
+### 1. Import necessary packages
 
-3. **Load and read the JSON file:**
+```go
+import (
+ "encoding/json"
+ "fmt"
+ "os"
+)
+```
 
-   ```go
-   func loadProvinces(filePath string) ([]Province, error) {
-       jsonFile, err := os.Open(filePath)
-       if err != nil {
-           return nil, err
-       }
-       defer jsonFile.Close()
+### 2. Define the data structure
 
-       byteValue, _ := ioutil.ReadAll(jsonFile)
+Define a structure that accurately matches your JSON data:
 
-       var provinces []Province
-       json.Unmarshal(byteValue, &provinces)
+```go
+type Province struct {
+ ID   int    `json:"id"`
+ Name string `json:"name"`
+}
+```
 
-       return provinces, nil
-   }
-   ```
+### 3. Load and read the JSON file
 
-4. **Use the JSON data:**
+Use the following best-practice approach to read and decode JSON data from a file:
 
-   ```go
-   func main() {
-       provinces, err := loadProvinces("dist/json/provinces.json")
-       if err != nil {
-           fmt.Println("Error loading provinces:", err)
-           return
-       }
+```go
+func loadProvinces(filePath string) ([]Province, error) {
+ jsonFile, err := os.ReadFile(filePath)
+ if err != nil {
+  return nil, err
+ }
 
-       for _, province := range provinces {
-           fmt.Printf("ID: %d, Name: %s\n", province.ID, province.Name)
-       }
-   }
-   ```
+ var provinces []Province
+ if err := json.Unmarshal(jsonFile, &provinces); err != nil {
+  return nil, err
+ }
+
+ return provinces, nil
+}
+```
+
+### 4. Use the JSON data
+
+Here's how to utilize the loaded data:
+
+```go
+func main() {
+ provinces, err := loadProvinces("dist/json/provinces.json")
+ if err != nil {
+  fmt.Println("Error loading provinces:", err)
+  return
+ }
+
+ for _, province := range provinces {
+  fmt.Printf("ID: %d, Name: %s\n", province.ID, province.Name)
+ }
+}
+```
