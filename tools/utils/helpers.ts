@@ -1,5 +1,3 @@
-import { AllInterface } from ".";
-
 export function normalizePersianText(text: string): string {
   if (!text) return ""; // بررسی مقدار خالی
 

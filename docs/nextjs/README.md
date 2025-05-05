@@ -24,7 +24,7 @@
 در مسیر `app/provinces/page.tsx` فایل زیر را ایجاد کنید:
 
 ```tsx
-import provinces from '@/dist/json/provinces.json';
+import provinces from "@/dist/json/provinces.json";
 
 type Province = {
   id: number;
@@ -56,8 +56,8 @@ export default function ProvincesPage() {
 در مسیر `app/api/provinces/route.ts` فایل زیر را ایجاد کنید:
 
 ```ts
-import { NextResponse } from 'next/server';
-import provinces from '@/dist/json/provinces.json';
+import { NextResponse } from "next/server";
+import provinces from "@/dist/json/provinces.json";
 
 export async function GET() {
   return NextResponse.json(provinces);
@@ -92,7 +92,7 @@ Enable the following options in your `tsconfig.json`:
 Create the file at `app/provinces/page.tsx`:
 
 ```tsx
-import provinces from '@/dist/json/provinces.json';
+import provinces from "@/dist/json/provinces.json";
 
 type Province = {
   id: number;
@@ -124,8 +124,8 @@ export default function ProvincesPage() {
 Create the file at `app/api/provinces/route.ts`:
 
 ```ts
-import { NextResponse } from 'next/server';
-import provinces from '@/dist/json/provinces.json';
+import { NextResponse } from "next/server";
+import provinces from "@/dist/json/provinces.json";
 
 export async function GET() {
   return NextResponse.json(provinces);
