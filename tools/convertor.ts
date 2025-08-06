@@ -3,6 +3,8 @@ import * as path from "path";
 import * as fs from "fs";
 
 async function convertXlsxToCsv() {
+  console.log("Converting XLSX to CSV...");
+
   const filePath = path.join(__dirname, "../offical/list.xlsx");
   const workbook = xlsx.readFile(filePath);
   const sheetName = workbook.SheetNames[0];
@@ -14,6 +16,8 @@ async function convertXlsxToCsv() {
   console.log("CSV file created successfully:", outputFilePath);
 }
 
-async () => {
+const main = async () => {
   await convertXlsxToCsv();
 };
+
+main();
