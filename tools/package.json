@@ -15,14 +15,11 @@
   "license": "ISC",
   "description": "لیست شهرهای ایران",
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
     "@types/node": "^24.10.1",
+    "biome": "^0.3.3",
     "csv-writer": "^1.6.0",
-    "eslint": "^9.39.1",
-    "prettier": "^3.7.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.1",
     "xlsx": "^0.18.5"
   }
 }
