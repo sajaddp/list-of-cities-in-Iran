@@ -1,4 +1,5 @@
 
 .DS_Store
 tools/pnpm-lock.yaml
+tools/package-lock.json
 tools/node_modules/
