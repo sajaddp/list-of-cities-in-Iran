@@ -3,3 +3,4 @@
 tools/pnpm-lock.yaml
 tools/package-lock.json
 tools/node_modules/
+/node_modules
