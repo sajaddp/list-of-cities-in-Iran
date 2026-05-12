@@ -72,7 +72,11 @@ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 
 ## مجوز
 
-این پروژه تحت مجوز MIT منتشر شده است. برای اطلاعات بیشتر، فایل `LICENSE` را مطالعه کنید.
+این پروژه تحت مجوز GNU General Public License v3.0 منتشر شده است.  
+متن رسمی و معتبر مجوز در فایل `LICENSE` قرار دارد.
+
+ترجمه غیررسمی فارسی نیز در فایل `LICENSE-FA.txt` موجود است.  
+در صورت وجود هرگونه اختلاف، ابهام یا تعارض میان ترجمه فارسی و متن انگلیسی، متن انگلیسی فایل `LICENSE` ملاک خواهد بود.
 
 ## سلب مسئولیت
 
@@ -150,7 +154,11 @@ For an exclusive version, please contact [t.me/sajaddp71](https://t.me/sajaddp71
 
 ## License
 
-This project is licensed under the MIT License. For more information, see the `LICENSE` file.
+This project is licensed under the GNU General Public License v3.0.  
+The official and legally authoritative license text is available in the `LICENSE` file.
+
+A non-official Persian translation is also available in `LICENSE-FA.txt`.  
+In case of any conflict, ambiguity, or inconsistency between the Persian translation and the English text, the English text in `LICENSE` shall prevail.
 
 ## Disclaimer
 
