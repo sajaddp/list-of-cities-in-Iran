@@ -1,6 +1,6 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در Go
 
-در این راهنما، نحوه‌ی خواندن و استفاده از فایل JSON شامل **فهرست استان‌ها و شهرهای ایران** با زبان Go به صورت حرفه‌ای توضیح داده می‌شود. فایل نمونه مورد استفاده در این راهنما `provinces.json` است که در مسیر `dist/json` ذخیره شده است.
+در این راهنما، نحوه‌ی خواندن و استفاده از فایل JSON شامل **فهرست استان‌ها** با زبان Go به صورت حرفه‌ای توضیح داده می‌شود. فایل نمونه مورد استفاده در این راهنما `provinces.json` است که در مسیر `dist/json` ذخیره شده است.
 
 ## مراحل
 
@@ -67,7 +67,7 @@ func main() {
 
 ## Guide to Using JSON Files for List of Iranian Cities by Province in Go
 
-In this professional guide, you'll learn how to read and use JSON files containing the **list of Iranian provinces and cities** with Go. The example JSON file used here is `provinces.json`, located in the `dist/json` directory.
+In this professional guide, you'll learn how to read and use JSON files containing the **list of Iranian provinces** with Go. The example JSON file used here is `provinces.json`, located in the `dist/json` directory.
 
 ## Steps
 

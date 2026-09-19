@@ -1,201 +1,95 @@
-# لیست شهرها و استان‌های ایران
+# List of Cities in Iran
 
-![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
+Generated, versioned datasets for Iran's administrative divisions. The administrative source is the committed 1404 workbook in [`offical/list.xlsx`](offical/list.xlsx); generated output lives in [`dist/`](dist/).
 
-این مخزن شامل لیستی جامع از شهرها و استان‌های ایران به همراه اطلاعات و استانداردهای مربوطه است. این مخزن شامل آخرین اطلاعات رسمی تقسیمات کشوری جمهوری اسلامی ایران تا ۱۴۰۲ است. در صورتی که فایل به‌روزتری منتشر شده است، به ما اطلاع دهید.
+## Which file should I use?
 
-## نکته مهم: تفاوت «شهر» و «شهرستان»
+Choose the entity your application models. Every recommended dataset is available as JSON, CSV, and XLSX under `dist/json/`, `dist/csv/`, and `dist/xlsx/`.
 
-در تقسیمات کشوری ایران، «شهر» و «شهرستان» یکسان نیستند. «شهر» یک سکونتگاه شهری است، اما «شهرستان» یک واحد اداری بزرگ‌تر است که می‌تواند چند شهر، بخش، دهستان و روستا را در بر بگیرد. بخش زیادی از issueهای نادرست زمانی ایجاد می‌شود که نام یک «شهرستان» در فایل شهرها جستجو می‌شود یا برعکس.
+| Need | Recommended dataset |
+| --- | --- |
+| Provinces / استان‌ها | [`provinces.*`](dist/json/provinces.json) |
+| Counties / شهرستان‌ها | [`counties.*`](dist/json/counties.json) |
+| Cities — mainstream use / شهرها | [`cities-filtered.*`](dist/json/cities-filtered.json) |
+| Cities — complete source view | [`cities.*`](dist/json/cities.json) |
+| Districts / بخش‌ها | [`districts.*`](dist/json/districts.json) |
+| Rural districts / دهستان‌ها | [`rurals.*`](dist/json/rurals.json) |
+| Villages / آبادی‌ها | [`villages.*`](dist/json/villages.json) |
+| Complete hierarchy | [`all.*`](dist/json/all.json) |
 
-| اصطلاح فارسی | معادل انگلیسی       | توضیح                                                                  |
-| ------------ | ------------------- | ---------------------------------------------------------------------- |
-| استان        | Province            | سطح اول تقسیمات کشوری                                                  |
-| شهرستان      | County              | واحدی اداری بزرگ‌تر از شهر که می‌تواند شامل چند شهر، بخش، دهستان و روستا باشد |
-| بخش          | District            | زیرمجموعه شهرستان                                                      |
-| شهر          | City                | سکونتگاه شهری، مانند تهران، شیراز، مشهد یا رشت                         |
-| دهستان       | Rural District      | واحد اداری روستایی که معمولاً چند روستا را شامل می‌شود                 |
-| آبادی / روستا | Village / Settlement | سکونتگاه روستایی                                                       |
+Use the [manifest](dist/manifest.json) for generated paths, current row counts, versions, derivation, and provenance. Use the [JSON Schema](dist/schema.json) to validate fields, types, and strict record shapes.
 
-### قبل از ثبت issue
+## City and County are different
 
-پیش از گزارش داده مفقود یا نادرست، سطح تقسیمات کشوری را بررسی و فایل درست را جستجو کنید:
+**City = شهر. County = شهرستان.** They are different entity types; do not infer a type from a name. If an application needs a شهرستان, use `counties.*`. If it needs a شهر, use a city dataset.
 
-- برای شهر / City از فایل‌های `cities.*` استفاده کنید.
-- برای شهرستان / County از فایل‌های `counties.*` استفاده کنید.
-- برای بخش / District از فایل‌های `districts.*` استفاده کنید.
-- برای دهستان / Rural District از فایل‌های `rurals.*` استفاده کنید.
+For example, the same visible name can refer to two different entities:
 
-| مورد       | تعداد   |
-| ---------- | ------- |
-| استان‌ها   | 31      |
-| شهرستان‌ها | 482     |
-| بخش‌ها     | 1184    |
-| شهرها      | 1659    |
-| دهستان‌ها  | 1524    |
-| آبادی‌ها   | به زودی |
-
-## ویژگی‌ها
-
-- لیست شهرهای ایران به تفکیک استان
-- لیست شهرستان‌های ایران
-- خروجی‌های داده در فرمت‌های:
-  - CSV
-  - JSON
-  - XLSX
-- مثال‌ها و راهنماهای استفاده در `docs/` برای MySQL، PostgreSQL، MSSQL، TypeScript، JavaScript، Go، Kotlin، Python، PHP، MongoDB و Next.js.
-- امکان استفاده از فایل‌های JSON در هر زبانی که از JSON پشتیبانی می‌کند.
-
-## محتویات
-
-- [مقدمه](#مقدمه)
-- [ساختار پوشه‌ها](#ساختار-پوشه‌ها)
-- [نحوه استفاده](#نحوه-استفاده)
-- [مشارکت](#مشارکت)
-- [نسخه اختصاصی](#نسخه-اختصاصی)
-- [مجوز](#مجوز)
-- [سلب مسئولیت](#سلب-مسئولیت)
-
-## مقدمه
-
-این پروژه با هدف ارائه یک منبع باز و رایگان از داده‌های شهرها و استان‌های ایران ایجاد شده است. خروجی‌های داده به صورت فایل‌های CSV، JSON و XLSX در دسترس هستند و راهنماهای استفاده در `docs/` قرار دارند.
-
-## ساختار پوشه‌ها
-
-- `docs/`: شامل مثال‌هایی از نحوه استفاده از داده‌ها در زبان‌های مختلف برنامه‌نویسی.
-- `offical/`: شامل فایل‌های رسمی و استانداردهای تقسیمات کشوری.
-- `dist/`: شامل خروجی‌های تولید شده از داده‌ها.
-- `tools/`: شامل ابزارهای مورد نیاز برای تبدیل و پردازش داده‌ها.
-
-## نحوه استفاده
-
-برای استفاده از داده‌ها، می‌توانید مخزن را با دستور زیر کلون کنید:
-
-```shell
-git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
+```text
+استان کرمان
+└── شهرستان رفسنجان
+    └── ...
+        └── شهر رفسنجان
 ```
 
-همچنین می‌توانید فایل‌های موجود در پوشه `dist/` را دانلود کرده و در پروژه‌های خود استفاده کنید. ابزارهای موجود در پوشه `tools/` برای پردازش و تبدیل داده‌ها نیز قابل استفاده هستند.
+`county_id`, `province_id`, and `district_id` are ancestry fields, not optional display details. They are the safe way to disambiguate records.
 
-## مشارکت
+## City datasets
 
-ما از مشارکت‌های شما استقبال می‌کنیم. لطفاً قبل از ارسال درخواست، مستندات مشارکت را مطالعه کنید. برای تغییرات عمده، ابتدا یک issue باز کنید و تغییرات پیشنهادی خود را مطرح کنید.
+`cities.*` is the complete city projection generated from the current canonical source contract. Use it when complete fidelity to the repository's city data is required.
 
-## نسخه اختصاصی
+`cities-filtered.*` is a convenience, derived dataset for mainstream use. It is generated from `cities.*` by the current rule: **exclude cities whose current-name filter slug includes `-` or `_`**. It is not a separate official classification. Its generated row count is in [`dist/manifest.json`](dist/manifest.json).
 
-در صورت نیاز به نسخه اختصاصی، از طریق وب‌سایت [sajaddehshiri.ir](https://sajaddehshiri.ir) ارتباط برقرار کنید.
+## Contract and provenance
 
-## مجوز
+The [manifest](dist/manifest.json) is the machine-readable inventory: dataset and schema versions, source year, SHA-256, paths, row counts, derivation status, coordinate enrichment, and provenance source IDs.
 
-این پروژه تحت مجوز GNU General Public License v3.0 منتشر شده است.  
-متن رسمی و معتبر مجوز در فایل `LICENSE` قرار دارد.
+The [JSON Schema](dist/schema.json) is the validation contract. It defines required fields, numeric IDs, ancestry, strict additional-property policy, and the separate coordinate dataset schemas. README intentionally does not duplicate it.
 
-ترجمه غیررسمی فارسی نیز در فایل `LICENSE-FA.md` موجود است.  
-در صورت وجود هرگونه اختلاف، ابهام یا تعارض میان ترجمه فارسی و متن انگلیسی، متن انگلیسی فایل `LICENSE` ملاک خواهد بود.
+Administrative semantics come from [`offical/coderec.md`](offical/coderec.md). V2 continuity is documented in [`compat/v2-public-contract.json`](compat/v2-public-contract.json) and [`compat/v2-rural-migration-overrides.json`](compat/v2-rural-migration-overrides.json).
 
-## سلب مسئولیت
+## LLM Context
 
-تنها مرجع اعلام مختصات جغرافیایی جمهوری اسلامی ایران، وزارت کشور است. این مخزن برای استناد حقوقی مناسب نیست و هرگونه استناد حقوقی فاقد ارزش است.
+These compact, self-contained header + TSV files are meant to be copied or piped into an AI tool. They are context files, not training datasets:
 
----
+- [`dist/llm/provinces.txt`](dist/llm/provinces.txt)
+- [`dist/llm/counties.txt`](dist/llm/counties.txt)
+- [`dist/llm/cities-filtered.txt`](dist/llm/cities-filtered.txt)
+- [`dist/llm/cities.txt`](dist/llm/cities.txt)
 
-## List of Cities and Provinces in Iran
+Each file declares its scope, source year, row count, columns, TSV representation rules, and the City/County distinction. For example:
 
-This repository contains a comprehensive list of cities and provinces in Iran along with related information and standards. This repository contains the latest official administrative divisions of the Islamic Republic of Iran as of 2023. If a newer file has been released, please inform us.
-
-## Important Note: City vs County
-
-In Iran's administrative divisions, City and County are not the same. A City is an urban settlement, while a County is a larger administrative unit that may include multiple cities, districts, rural districts, and villages. Many incorrect issues are opened because a county name is searched for in the city files, or the other way around.
-
-| Persian Term  | English Equivalent   | Description                                                                                       |
-| ------------- | -------------------- | ------------------------------------------------------------------------------------------------- |
-| استان         | Province             | First-level administrative division                                                               |
-| شهرستان       | County               | An administrative unit larger than a city that may include multiple cities, districts, rural districts, and villages |
-| بخش           | District             | Subdivision of a county                                                                           |
-| شهر           | City                 | Urban settlement, such as Tehran, Shiraz, Mashhad, or Rasht                                       |
-| دهستان        | Rural District       | A rural administrative unit, usually containing multiple villages                                  |
-| آبادی / روستا | Village / Settlement | Rural settlement                                                                                  |
-
-### Before Opening an Issue
-
-Before reporting missing or incorrect data, confirm the administrative level and check the matching files:
-
-- Use `cities.*` files when looking for a City / `شهر`.
-- Use `counties.*` files when looking for a County / `شهرستان`.
-- Use `districts.*` files when looking for a District / `بخش`.
-- Use `rurals.*` files when looking for a Rural District / `دهستان`.
-
-| Item            | Count |
-| --------------- | ----- |
-| Provinces       | 31    |
-| Counties        | 482   |
-| Districts       | 1184  |
-| Cities          | 1659  |
-| Rural Districts | 1524  |
-| Villages        | Soon  |
-
-## Features
-
-- List of cities in Iran by province
-- List of counties in Iran
-- Data outputs are available in:
-  - CSV
-  - JSON
-  - XLSX
-- Usage examples and guides are available in `docs/` for MySQL, PostgreSQL, MSSQL, TypeScript, JavaScript, Go, Kotlin, Python, PHP, MongoDB, and Next.js.
-- JSON files can be used in any language that supports JSON.
-
-## Contents
-
-- [Introduction](#introduction)
-- [Folder Structure](#folder-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Exclusive Version](#exclusive-version)
-- [License](#license)
-- [Disclaimer](#disclaimer)
-
-## Introduction
-
-This project aims to provide an open and free resource of data for cities and provinces in Iran. Generated data files are available in CSV, JSON, and XLSX, with usage guides available in `docs/`.
-
-## Folder Structure
-
-- `docs/`: Contains examples of how to use the data in different programming languages.
-- `offical/`: Contains official files and administrative division standards.
-- `dist/`: Contains generated distributions from the data.
-- `tools/`: Contains tools needed for data conversion and processing.
-
-## Usage
-
-To use the data, clone the repository with the following command:
-
-```shell
-git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
+```sh
+cat dist/llm/counties.txt
 ```
 
-You can also download the files available in the `dist/` folder and use them in your projects. Additionally, the tools available in the `tools/` folder can be used for data processing and conversion.
+Agent-oriented navigation is also available at [`docs/llms.txt`](docs/llms.txt).
 
-## Contributing
+## Coordinate enrichment
 
-We welcome your contributions. Please read the contribution guidelines before submitting a request. For major changes, please open an issue first to discuss what you would like to change.
+Coordinate files are separate enrichment datasets, not fields added to the official administrative datasets:
 
-## Exclusive Version
+- [`province-capitals.*`](dist/json/province-capitals.json): coordinates of each **province capital**.
+- [`county-centers.*`](dist/json/county-centers.json): coordinates of each **county administrative center / seat**.
 
-For an exclusive version, please contact [sajaddehshiri.ir](https://sajaddehshiri.ir).
+They use WGS84 decimal latitude/longitude. They do **not** represent province/county polygon centroids, bounding-box centers, or legal boundaries. Coordinate records include `source_id`; resolve it through the manifest and [`enrichment/coordinates/sources.json`](enrichment/coordinates/sources.json). The current coordinate enrichment is explicitly derived/non-official and its build input is committed for an offline deterministic build.
+
+The Ministry of Interior remains the authoritative source for legal or authoritative geographic coordinates. This repository is not suitable for legal reference.
+
+## Build and verify
+
+```sh
+cd tools
+npm ci
+npm test
+npm run build
+npm run verify
+```
+
+The build consumes only committed source files, produces JSON/CSV/XLSX parity, and is deterministic. See [`CONTRIBUTING.md`](CONTRIBUTING.md) before changing source or compatibility contracts.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0.  
-The official and legally authoritative license text is available in the `LICENSE` file.
-
-A non-official Persian translation is also available in `LICENSE-FA.md`.  
-In case of any conflict, ambiguity, or inconsistency between the Persian translation and the English text, the English text in `LICENSE` shall prevail.
-
-## Disclaimer
-
-The Ministry of Interior is the only official source for the geographic coordinates of the Islamic Republic of Iran. This repository is not suitable for legal reference, and any legal citation is invalid.
+The repository is licensed under [GPL-3.0](LICENSE). The Persian translation is available in [LICENSE-FA.md](LICENSE-FA.md); the English license controls if they differ.
 
 Made with ❤ by [Sajad Dehshiri](https://sajaddehshiri.ir)

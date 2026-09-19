@@ -1,6 +1,6 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در PHP 8.4
 
-در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه PHP توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و برای توسعه API، تولید فرم‌ها یا گزارش‌گیری کاربرد دارد.
+در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه PHP توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها بوده و برای توسعه API، تولید فرم‌ها یا گزارش‌گیری کاربرد دارد.
 
 ## مراحل
 
@@ -44,7 +44,7 @@ try {
 
 ## Guide to Using JSON File for Iranian Cities by Province in PHP 8.4
 
-This professional guide shows how to use a JSON file containing the list of **Iranian provinces and cities** in a PHP 8.4 project. The file `provinces.json`, located in the `dist/json` directory, contains structured data that can be used in backend services, APIs, or reporting tools.
+This professional guide shows how to use a JSON file containing the list of **Iranian provinces** in a PHP 8.4 project. The file `provinces.json`, located in the `dist/json` directory, contains structured data that can be used in backend services, APIs, or reporting tools.
 
 ## Steps
 

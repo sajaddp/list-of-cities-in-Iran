@@ -31,6 +31,14 @@ export const schema = { $schema: "https://json-schema.org/draft/2020-12/schema",
   villages: local(["province_id", "county_id", "district_id", "rural_id", "coderec", "village_code", "mapped_rural_code"], { id: { type: "string", pattern: "^village:" }, ...ancestry, rural_id: integer, coderec: { enum: ["6", "8"] }, village_code: string, mapped_rural_code: nullableString }),
   all,
 } };
+const coordinateNumber = { type: "number" };
+const coordinateString = { type: "string", minLength: 1 };
+const coordinate = (required: string[], properties: Record<string, unknown>) => ({ type: "array", items: { type: "object", required, properties, additionalProperties: false } });
+export const coordinateSchema = { $schema: "https://json-schema.org/draft/2020-12/schema", title: "list-of-cities-in-iran V3 coordinate enrichment datasets", $defs: {
+  "province-capitals": coordinate(["province_id", "province_name", "center_name", "latitude", "longitude", "source_id"], { province_id: integer, province_name: coordinateString, center_name: coordinateString, latitude: coordinateNumber, longitude: coordinateNumber, source_id: coordinateString }),
+  "county-centers": coordinate(["county_id", "county_name", "province_id", "center_name", "latitude", "longitude", "source_id"], { county_id: integer, county_name: coordinateString, province_id: integer, center_name: coordinateString, latitude: coordinateNumber, longitude: coordinateNumber, source_id: coordinateString }),
+} };
+export const combinedSchema = { $schema: schema.$schema, title: "list-of-cities-in-iran V3 datasets", $defs: { ...schema.$defs, ...coordinateSchema.$defs } };
 export interface SchemaResult { passed: boolean; errors: string[]; }
 export function schemaResult(datasets: Datasets): SchemaResult { const ajv = new Ajv({ allErrors: true, strict: false }); const errors: string[] = []; for (const [name, records] of Object.entries(datasets) as [DatasetName, Datasets[DatasetName]][]) { const validate = ajv.compile({ ...schema, $ref: `#/$defs/${name}` }); if (!validate(records)) errors.push(`${name}: ${ajv.errorsText(validate.errors)}`); } return { passed: errors.length === 0, errors }; }
 export function validateDatasets(datasets: Datasets): void { const result = schemaResult(datasets); if (!result.passed) throw new Error(`Schema validation failed: ${result.errors.join("; ")}`); }

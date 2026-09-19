@@ -1,6 +1,6 @@
 # راهنمای ایمپورت فایل JSON برای فهرست شهرهای ایران به تفکیک استان به دیتابیس PostgreSQL
 
-در این راهنما، به صورت حرفه‌ای روش دقیق ایمپورت **فهرست شهرهای ایران** به دیتابیس PostgreSQL توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و در پروژه‌های بک‌اند یا API محور کاربرد دارد.
+در این راهنما، به صورت حرفه‌ای روش دقیق ایمپورت **فهرست شهرهای ایران** به دیتابیس PostgreSQL توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها بوده و در پروژه‌های بک‌اند یا API محور کاربرد دارد.
 
 ## مراحل
 
@@ -50,7 +50,7 @@ done
 
 ## Guide to Import JSON File for Iranian Cities by Province into PostgreSQL
 
-This professional guide provides a clear method to import a JSON file containing the structured list of **Iranian provinces and cities** into PostgreSQL. The example file `provinces.json` located at `dist/json` is suitable for backend or API-based projects.
+This professional guide provides a clear method to import a JSON file containing the structured list of **Iranian provinces** into PostgreSQL. The example file `provinces.json` located at `dist/json` is suitable for backend or API-based projects.
 
 ## Steps
 

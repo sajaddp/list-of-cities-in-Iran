@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "id": "geonames-iran-2026-09-19",
+      "provider": "GeoNames",
+      "source_url": "https://download.geonames.org/export/dump/IR.zip",
+      "accessed_on": "2026-09-19",
+      "license": "CC BY 4.0; attribution to GeoNames is required",
+      "status": "derived",
+      "notes": "A committed, one-time curated subset of the GeoNames Iran dump. It supplies point coordinates for province capitals and county seats; it is not part of the official administrative workbook and is not a centroid or polygon dataset."
+    }
+  ],
+  "identity_sources": [
+    {
+      "id": "wikipedia-counties-of-iran-2026-09-19",
+      "provider": "Wikimedia contributors",
+      "source_url": "https://en.wikipedia.org/wiki/Counties_of_Iran",
+      "accessed_on": "2026-09-19",
+      "license": "CC BY-SA 4.0",
+      "notes": "Used during one-time curation to cross-check county seat identities. The local V3 IDs and the committed coordinate CSVs are the build inputs."
+    },
+    {
+      "id": "wikidata-capital-property-2026-09-19",
+      "provider": "Wikimedia contributors",
+      "source_url": "https://www.wikidata.org/wiki/Property:P36",
+      "accessed_on": "2026-09-19",
+      "license": "CC0 1.0",
+      "notes": "Used as a semantic cross-check that a capital/seat is an administrative centre, not a geographic centroid."
+    }
+  ]
+}

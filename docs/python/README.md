@@ -1,6 +1,6 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در Python 3.13
 
-در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه پایتون توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و برای توسعه API، ساخت CLI، یا ابزارهای گزارش‌گیری کاربرد دارد.
+در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه پایتون توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها بوده و برای توسعه API، ساخت CLI، یا ابزارهای گزارش‌گیری کاربرد دارد.
 
 ## مراحل
 
@@ -41,7 +41,7 @@ except Exception as e:
 
 ## Guide to Using JSON File for Iranian Cities by Province in Python 3.13
 
-This professional guide demonstrates how to work with a JSON file containing the list of **Iranian provinces and cities** in a Python 3.13 project. The file `provinces.json`, located in the `dist/json` directory, holds structured data used in backend systems, reporting tools, or CLI applications.
+This professional guide demonstrates how to work with a JSON file containing the list of **Iranian provinces** in a Python 3.13 project. The file `provinces.json`, located in the `dist/json` directory, holds structured data used in backend systems, reporting tools, or CLI applications.
 
 ## Steps
 

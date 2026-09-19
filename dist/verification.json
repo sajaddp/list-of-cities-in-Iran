@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0-phase1",
+  "version": "3.0.0-phase2",
   "source": {
     "year": 1404,
     "filename": "offical/list.xlsx",
@@ -197,6 +197,122 @@
         "cities-filtered": "city",
         "villages": "village",
         "all": "mixed"
+      }
+    },
+    "llm": {
+      "contexts": {
+        "provinces": {
+          "scope": "provinces",
+          "rows": 31,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "tel_prefix"
+          ],
+          "bytes": 1772,
+          "semanticHeaderValid": true
+        },
+        "counties": {
+          "scope": "counties",
+          "rows": 484,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "province_id"
+          ],
+          "bytes": 18815,
+          "semanticHeaderValid": true
+        },
+        "cities": {
+          "scope": "cities",
+          "rows": 1672,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "province_id",
+            "county_id",
+            "district_id"
+          ],
+          "bytes": 108528,
+          "semanticHeaderValid": true
+        },
+        "cities-filtered": {
+          "scope": "cities-filtered",
+          "rows": 1185,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "province_id",
+            "county_id",
+            "district_id"
+          ],
+          "bytes": 74272,
+          "semanticHeaderValid": true
+        }
+      },
+      "deterministic": true,
+      "noUnexpectedArtifacts": true
+    },
+    "coordinates": {
+      "provinceCapitals": {
+        "expected": 31,
+        "matched": 31,
+        "missing": [],
+        "duplicates": 0,
+        "invalidCoordinates": 0,
+        "missingProvenance": 0
+      },
+      "countyCenters": {
+        "expected": 484,
+        "matched": 484,
+        "missing": [],
+        "duplicates": 0,
+        "invalidCoordinates": 0,
+        "missingProvenance": 0
+      },
+      "formatParity": {
+        "passed": true,
+        "rowCounts": {
+          "province-capitals": 31,
+          "county-centers": 484
+        },
+        "errors": []
+      },
+      "provenanceSources": [
+        {
+          "id": "geonames-iran-2026-09-19",
+          "provider": "GeoNames",
+          "source_url": "https://download.geonames.org/export/dump/IR.zip",
+          "accessed_on": "2026-09-19",
+          "license": "CC BY 4.0; attribution to GeoNames is required",
+          "status": "derived",
+          "notes": "A committed, one-time curated subset of the GeoNames Iran dump. It supplies point coordinates for province capitals and county seats; it is not part of the official administrative workbook and is not a centroid or polygon dataset."
+        }
+      ]
+    },
+    "documentation": {
+      "requiredPaths": [
+        "dist/manifest.json",
+        "dist/schema.json",
+        "dist/llm/provinces.txt",
+        "dist/llm/counties.txt",
+        "dist/llm/cities-filtered.txt",
+        "dist/llm/cities.txt",
+        "dist/json/province-capitals.json",
+        "dist/json/county-centers.json",
+        "docs/llms.txt"
+      ],
+      "missingPaths": [],
+      "quickStart": true,
+      "cityCountySemantics": true,
+      "filteredSemantics": true,
+      "manifestSchemaLinks": true,
+      "footer": {
+        "exact": true
       }
     },
     "v2Compatibility": {

@@ -1,0 +1,10 @@
+list-of-cities-in-Iran is a generated, versioned repository of Iran administrative divisions. Current official administrative source year: 1404.
+
+City = شهر; County = شهرستان. They are different entity types even when their names match.
+
+Manifest: dist/manifest.json
+JSON Schema: dist/schema.json
+Main JSON: dist/json/provinces.json, dist/json/counties.json, dist/json/cities-filtered.json, dist/json/cities.json, dist/json/all.json
+LLM Context: dist/llm/provinces.txt, dist/llm/counties.txt, dist/llm/cities-filtered.txt, dist/llm/cities.txt
+Administrative source/semantics: offical/list.xlsx and offical/coderec.md
+Coordinate provenance: enrichment/coordinates/sources.json and manifest enrichmentSources

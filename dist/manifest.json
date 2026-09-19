@@ -1,6 +1,6 @@
 {
-  "datasetVersion": "3.0.0-phase1",
-  "schemaVersion": "3.0.0-phase1",
+  "datasetVersion": "3.0.0-phase2",
+  "schemaVersion": "3.0.0-phase2",
   "officialSourceYear": 1404,
   "source": {
     "filename": "offical/list.xlsx",
@@ -107,9 +107,88 @@
       }
     }
   ],
+  "enrichmentDatasets": [
+    {
+      "name": "province-capitals",
+      "entityType": "province-capital",
+      "enrichment": true,
+      "derived": true,
+      "officialAdministrativeSource": false,
+      "rowCount": 31,
+      "sourceIds": [
+        "geonames-iran-2026-09-19"
+      ],
+      "paths": {
+        "json": "dist/json/province-capitals.json",
+        "csv": "dist/csv/province-capitals.csv",
+        "xlsx": "dist/xlsx/province-capitals.xlsx"
+      }
+    },
+    {
+      "name": "county-centers",
+      "entityType": "county-center",
+      "enrichment": true,
+      "derived": true,
+      "officialAdministrativeSource": false,
+      "rowCount": 484,
+      "sourceIds": [
+        "geonames-iran-2026-09-19"
+      ],
+      "paths": {
+        "json": "dist/json/county-centers.json",
+        "csv": "dist/csv/county-centers.csv",
+        "xlsx": "dist/xlsx/county-centers.xlsx"
+      }
+    }
+  ],
+  "enrichmentSources": [
+    {
+      "id": "geonames-iran-2026-09-19",
+      "provider": "GeoNames",
+      "source_url": "https://download.geonames.org/export/dump/IR.zip",
+      "accessed_on": "2026-09-19",
+      "license": "CC BY 4.0; attribution to GeoNames is required",
+      "status": "derived",
+      "notes": "A committed, one-time curated subset of the GeoNames Iran dump. It supplies point coordinates for province capitals and county seats; it is not part of the official administrative workbook and is not a centroid or polygon dataset."
+    }
+  ],
+  "llmContexts": [
+    {
+      "scope": "provinces",
+      "entityType": "province",
+      "rowCount": 31,
+      "path": "dist/llm/provinces.txt",
+      "format": "header+tsv",
+      "derived": true
+    },
+    {
+      "scope": "counties",
+      "entityType": "county",
+      "rowCount": 484,
+      "path": "dist/llm/counties.txt",
+      "format": "header+tsv",
+      "derived": true
+    },
+    {
+      "scope": "cities",
+      "entityType": "city",
+      "rowCount": 1672,
+      "path": "dist/llm/cities.txt",
+      "format": "header+tsv",
+      "derived": true
+    },
+    {
+      "scope": "cities-filtered",
+      "entityType": "city",
+      "rowCount": 1185,
+      "path": "dist/llm/cities-filtered.txt",
+      "format": "header+tsv",
+      "derived": true
+    }
+  ],
   "generator": {
     "name": "list-of-cities-in-iran-tools",
-    "version": "3.0.0-phase1",
+    "version": "3.0.0-phase2",
     "deterministic": true
   }
 }

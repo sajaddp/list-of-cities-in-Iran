@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "list-of-cities-in-iran V3 Phase 1 datasets",
+  "title": "list-of-cities-in-iran V3 datasets",
   "$defs": {
     "provinces": {
       "type": "array",
@@ -1305,6 +1305,86 @@
             ]
           }
         ]
+      }
+    },
+    "province-capitals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "province_id",
+          "province_name",
+          "center_name",
+          "latitude",
+          "longitude",
+          "source_id"
+        ],
+        "properties": {
+          "province_id": {
+            "type": "integer"
+          },
+          "province_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "center_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "county-centers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "county_id",
+          "county_name",
+          "province_id",
+          "center_name",
+          "latitude",
+          "longitude",
+          "source_id"
+        ],
+        "properties": {
+          "county_id": {
+            "type": "integer"
+          },
+          "county_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          },
+          "center_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
       }
     }
   }
