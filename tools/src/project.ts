@@ -10,9 +10,13 @@ const districtId = (e: CanonicalEntity) => numeric(`${countyId(e)}00${Number(e.c
 /** V3 rural IDs retain fixed-width district and rural segments to avoid V2's cross-district collision. */
 const ruralId = (e: CanonicalEntity) => numeric(`${countyId(e)}00${Number(e.codes.district).toString().padStart(2, "0")}${Number(e.codes.rural).toString().padStart(4, "0")}`);
 const cityId = (e: CanonicalEntity) => numeric(`${countyId(e)}00${Number(e.codes.rural)}`);
+/** Historical public IDs for continuing cities whose 1404 parent changed. */
+export const historicalCityIdOverrides: Readonly<Record<string, number>> = { "city:03:29:01:2144": 10300010002144, "city:29:12:01:2345": 12900011002345 };
 export function idFor(e: CanonicalEntity): string | number { switch (e.type) { case "province": return provinceId(e); case "county": return countyId(e); case "district": return districtId(e); case "rural": return ruralId(e); case "city": return cityId(e); case "village": return `village:${e.codes.province}:${e.codes.county}:${e.codes.district}:${e.codes.rural}:${e.codes.village}:${e.coderec}`; } }
 function base(e: CanonicalEntity, contract: V2Contract): PublicRecord {
-  const historical = v2RecordFor(contract, e);
+  const overrideId = e.type === "city" ? historicalCityIdOverrides[e.key] : undefined;
+  const historical = overrideId === undefined ? v2RecordFor(contract, e) : contract.datasets.cities.find((record) => record.id === overrideId);
+  if (overrideId !== undefined && !historical) throw new Error(`Missing historical city compatibility record ${overrideId} for ${e.key}`);
   // Names remain from the current official workbook. Only compatibility-facing slug/ID use V2.
   return { id: e.type === "village" || e.type === "rural" ? idFor(e) : historical?.id ?? legacyIdFor(e), name: e.name, slug: historical?.slug ?? generateSlug(e.name) };
 }

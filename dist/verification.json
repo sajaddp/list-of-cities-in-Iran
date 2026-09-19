@@ -202,39 +202,48 @@
     "v2Compatibility": {
       "provinces": {
         "historicalEntities": 31,
+        "historicalMatched": 31,
         "historicalEntitiesMatched": 31,
         "idsPreserved": 31,
+        "idsChanged": 0,
         "slugsPreserved": 31,
         "intentionalOrUnavoidableDifferences": 0
       },
       "counties": {
         "historicalEntities": 482,
+        "historicalMatched": 482,
         "historicalEntitiesMatched": 482,
         "idsPreserved": 482,
+        "idsChanged": 0,
         "slugsPreserved": 482,
         "intentionalOrUnavoidableDifferences": 0
       },
       "districts": {
         "historicalEntities": 1184,
+        "historicalMatched": 1182,
         "historicalEntitiesMatched": 1182,
         "idsPreserved": 1182,
+        "idsChanged": 0,
         "slugsPreserved": 1182,
         "intentionalOrUnavoidableDifferences": 2
       },
       "cities": {
         "historicalEntities": 1659,
-        "historicalEntitiesMatched": 1656,
-        "idsPreserved": 1656,
-        "slugsPreserved": 1656,
-        "intentionalOrUnavoidableDifferences": 3
+        "historicalMatched": 1658,
+        "historicalEntitiesMatched": 1658,
+        "idsPreserved": 1658,
+        "idsChanged": 0,
+        "slugsPreserved": 1658,
+        "intentionalOrUnavoidableDifferences": 1
       }
     },
     "migration": {
-      "actualV2RuralRows": 1524,
+      "v2Rows": 1524,
       "migrationRecords": 1524,
-      "matched": 1461,
+      "matched": 1511,
       "ambiguous": 0,
-      "not_found": 63,
+      "not_found": 13,
+      "normalizationMatches": 50,
       "invalidOldIds": 0,
       "invalidNewIds": 0,
       "complete": true

@@ -1,19 +1,21 @@
 import assert from "node:assert/strict";
 import { mkdtempSync, readFileSync, readdirSync, rmSync, statSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import { join, resolve, relative } from "node:path";
 import { tmpdir } from "node:os";
 import test from "node:test";
 import { loadV2Contract } from "../src/compat";
 import { buildCanonicalModel } from "../src/model";
 import { DATASET_COLUMNS, sha256, verifyFormatParity } from "../src/output";
-import { buildPipeline, MANIFEST_ENTITY_TYPES, validateManifest, verifyPipeline } from "../src/pipeline";
-import { assertUniquePublicIds, idFor, projectDatasets } from "../src/project";
+import { buildPipeline, classifyRuralMigrationCandidates, MANIFEST_ENTITY_TYPES, ruralMigrations, validateManifest, verifyPipeline } from "../src/pipeline";
+import { assertUniquePublicIds, historicalCityIdOverrides, idFor, projectDatasets } from "../src/project";
 import { validateDatasets } from "../src/schema";
 import { officialName, parseOfficialWorkbook } from "../src/source";
-import { normalizePersianText } from "../src/text";
+import { normalizeMigrationName, normalizePersianText } from "../src/text";
 import { Datasets, SourceRow } from "../src/types";
 
 const root = resolve(__dirname, "../..");
+const v2Commit = "c4fcbd9018edd0ba5ecaf7a4860cb3381dfa86c6";
 const row = (coderec: SourceRow["coderec"], extra: Partial<SourceRow> = {}): SourceRow => ({ provinceCode: "00", provinceName: "مرکزی", countyCode: "01", countyName: "اراک", districtCode: "02", districtName: "مرکزی", ruralCode: "0001", ruralName: "امان آباد", villageCode: "000266", coderec, name: "نام", mappedRuralCode: coderec === "8" ? "3238" : null, rowNumber: 1, ...extra });
 const load = (directory: string, name: keyof Datasets) => JSON.parse(readFileSync(join(directory, "json", `${name}.json`), "utf8"));
 const clone = <T>(value: T): T => JSON.parse(JSON.stringify(value));
@@ -29,6 +31,38 @@ test("canonical keys preserve padded codes while V3 rural IDs remain collision-s
 test("source accounting, compatibility fixture, and public compatibility are real", () => {
   const parsed = parseOfficialWorkbook(join(root, "offical/list.xlsx")); assert.deepEqual(parsed.inspection.coderecCounts, { "1": 31, "2": 484, "3": 1193, "4": 2777, "5": 1672, "6": 95389, "8": 3928 }); assert.equal(parsed.inspection.totalRows, 105474);
   const contract = loadV2Contract(root); assert.deepEqual(Object.fromEntries(Object.entries(contract.datasets).map(([name, records]) => [name, records.length])), { provinces: 31, counties: 482, districts: 1184, cities: 1659, rurals: 1524 });
+});
+test("compatibility fixture exactly matches the pinned V2 Git outputs", () => {
+  const contract = loadV2Contract(root); assert.equal(contract.sourceCommit, v2Commit);
+  for (const dataset of ["provinces", "counties", "districts", "cities", "rurals"] as const) {
+    let historical: unknown;
+    try { historical = JSON.parse(execFileSync("git", ["show", `${v2Commit}:dist/json/${dataset}.json`], { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] })); }
+    catch (error) { assert.fail(`Cannot read pinned V2 revision ${v2Commit} for ${dataset}; local Git history is required: ${error instanceof Error ? error.message : String(error)}`); }
+    assert.deepEqual(contract.datasets[dataset], historical, `compat fixture mismatch for ${dataset}`);
+  }
+});
+test("migration-only normalization preserves conservative rural matching and ambiguity", () => {
+  for (const [oldName, currentName] of [["چهار چشمه", "چهارچشمه"], ["بندرامام خمینی", "بندر امام خمینی"], ["شریف آباد", "شريف‌آباد"]]) assert.equal(normalizeMigrationName(oldName), normalizeMigrationName(currentName));
+  const old = { id: 1, name: "شریف آباد", slug: "x", province_id: 100, county_id: 1000001 };
+  assert.equal(classifyRuralMigrationCandidates(old, [{ legacy_id: 1, id: 9, name: "شريف‌آباد", province_id: 100, county_id: 1000001 }]).status, "matched");
+  const ambiguous = classifyRuralMigrationCandidates(old, [{ legacy_id: 1, id: 9, name: "شريف‌آباد", province_id: 100, county_id: 1000001 }, { legacy_id: 1, id: 10, name: "شریف‌آباد", province_id: 100, county_id: 1000001 }]);
+  assert.equal(ambiguous.status, "ambiguous"); assert.equal(ambiguous.new_id, null); assert.deepEqual(ambiguous.candidate_new_ids, [9, 10]);
+});
+test("real rural migration is complete, valid, and captures the audited normalization cases", () => {
+  const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical/list.xlsx")).rows); const contract = loadV2Contract(root); const data = projectDatasets(model, contract); const migrations = ruralMigrations(model, data, contract);
+  assert.equal(migrations.length, contract.datasets.rurals.length); assert.equal(new Set(migrations.map((record) => record.old_id)).size, contract.datasets.rurals.length);
+  const currentIds = new Set(data.rurals.map((record) => Number(record.id))); for (const migration of migrations) { if (migration.status === "matched") assert.ok(migration.new_id !== null && currentIds.has(migration.new_id)); for (const candidate of migration.candidate_new_ids) assert.ok(currentIds.has(candidate)); }
+  const previousNotFound = execFileSync("git", ["show", "3c982f57692bff9c80932a4e7a13e47a55bffd59:migration/v2-to-v3.csv"], { cwd: root, encoding: "utf8" }).trim().split("\n").slice(1).map((line) => line.split(",")).filter(([, , , status]) => status === "not_found").map(([, oldId]) => Number(oldId));
+  assert.equal(previousNotFound.length, 63); const repaired = migrations.filter((migration) => previousNotFound.includes(migration.old_id));
+  assert.deepEqual(Object.fromEntries(["matched", "ambiguous", "not_found"].map((status) => [status, repaired.filter((migration) => migration.status === status).length])), { matched: 50, ambiguous: 0, not_found: 13 });
+  assert.equal(migrations.filter((migration) => migration.status === "matched").length, 1511); assert.equal(migrations.filter((migration) => migration.match_basis === "legacy-id-province-county-normalized-name").length, 50);
+  for (const id of [1000004001, 1060005002, 12300013002]) { const migration = migrations.find((record) => record.old_id === id); assert.equal(migration?.status, "matched"); assert.equal(migration?.match_basis, "legacy-id-province-county-normalized-name"); }
+});
+test("reorganized cities retain V2 IDs without changing the current hierarchy", () => {
+  const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical/list.xlsx")).rows); const data = projectDatasets(model, loadV2Contract(root));
+  assert.deepEqual(historicalCityIdOverrides, { "city:03:29:01:2144": 10300010002144, "city:29:12:01:2345": 12900011002345 });
+  for (const expected of [{ name: "ترکمانچای", id: 10300010002144, province_id: 103, county_id: 10300029, district_id: 10300029001, slug: "ترکمانچای" }, { name: "عشق آباد", id: 12900011002345, province_id: 129, county_id: 12900012, district_id: 12900012001, slug: "عشق-آباد" }]) assert.deepEqual(data.cities.find((city) => city.id === expected.id), expected);
+  assert.doesNotThrow(() => assertUniquePublicIds(data));
 });
 test("build has strict schemas, exact parity, V2 IDs/slugs, migration truth, and tel prefixes", () => {
   const directory = mkdtempSync(join(tmpdir(), "iran-cities-v3-"));
