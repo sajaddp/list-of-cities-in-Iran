@@ -1,9 +1,12 @@
 {
   "name": "list-of-cities-in-iran-tools",
-  "version": "2.0.0",
-  "main": "index.js",
+  "version": "3.0.0-phase1",
+  "main": "src/index.ts",
   "scripts": {
-    "prettier": "npx prettier --write ../"
+    "build": "tsx src/index.ts",
+    "verify": "tsx src/verify.ts",
+    "test": "tsx --test test/*.test.ts",
+    "prettier": "prettier --write src test"
   },
   "keywords": [
     "cities",
@@ -17,12 +20,15 @@
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/node": "^24.10.1",
-    "csv-writer": "^1.6.0",
     "eslint": "^9.39.1",
     "prettier": "^3.7.4",
     "ts-node": "^10.9.2",
+    "tsx": "^4.23.13",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.48.1",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0"
   }
 }

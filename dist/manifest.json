@@ -1,0 +1,105 @@
+{
+  "datasetVersion": "3.0.0-phase1",
+  "schemaVersion": "3.0.0-phase1",
+  "officialSourceYear": 1404,
+  "source": {
+    "filename": "offical/list.xlsx",
+    "sha256": "e58107e6d478366f98042c3f25b2f27032363976f0ce25dab91fc55ea03ad1df"
+  },
+  "generatedDatasets": [
+    {
+      "name": "provinces",
+      "entityType": "province",
+      "derived": false,
+      "rowCount": 31,
+      "paths": {
+        "json": "dist/json/provinces.json",
+        "csv": "dist/csv/provinces.csv",
+        "xlsx": "dist/xlsx/provinces.xlsx"
+      }
+    },
+    {
+      "name": "counties",
+      "entityType": "countie",
+      "derived": false,
+      "rowCount": 484,
+      "paths": {
+        "json": "dist/json/counties.json",
+        "csv": "dist/csv/counties.csv",
+        "xlsx": "dist/xlsx/counties.xlsx"
+      }
+    },
+    {
+      "name": "districts",
+      "entityType": "district",
+      "derived": false,
+      "rowCount": 1193,
+      "paths": {
+        "json": "dist/json/districts.json",
+        "csv": "dist/csv/districts.csv",
+        "xlsx": "dist/xlsx/districts.xlsx"
+      }
+    },
+    {
+      "name": "rurals",
+      "entityType": "rural",
+      "derived": false,
+      "rowCount": 2777,
+      "paths": {
+        "json": "dist/json/rurals.json",
+        "csv": "dist/csv/rurals.csv",
+        "xlsx": "dist/xlsx/rurals.xlsx"
+      }
+    },
+    {
+      "name": "cities",
+      "entityType": "citie",
+      "derived": false,
+      "rowCount": 1672,
+      "paths": {
+        "json": "dist/json/cities.json",
+        "csv": "dist/csv/cities.csv",
+        "xlsx": "dist/xlsx/cities.xlsx"
+      }
+    },
+    {
+      "name": "cities-filtered",
+      "entityType": "city",
+      "derived": true,
+      "rowCount": 1185,
+      "paths": {
+        "json": "dist/json/cities-filtered.json",
+        "csv": "dist/csv/cities-filtered.csv",
+        "xlsx": "dist/xlsx/cities-filtered.xlsx"
+      },
+      "filterRule": "exclude cities whose slug includes '-' or '_'"
+    },
+    {
+      "name": "villages",
+      "entityType": "village",
+      "derived": false,
+      "rowCount": 99317,
+      "paths": {
+        "json": "dist/json/villages.json",
+        "csv": "dist/csv/villages.csv",
+        "xlsx": "dist/xlsx/villages.xlsx"
+      }
+    },
+    {
+      "name": "all",
+      "entityType": "al",
+      "derived": false,
+      "rowCount": 105474,
+      "paths": {
+        "json": "dist/json/all.json",
+        "csv": "dist/csv/all.csv",
+        "xlsx": "dist/xlsx/all.xlsx"
+      }
+    }
+  ],
+  "generator": {
+    "name": "list-of-cities-in-iran-tools",
+    "version": "3.0.0-phase1",
+    "deterministic": true
+  }
+}

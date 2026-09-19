@@ -1,0 +1,185 @@
+{
+  "version": "3.0.0-phase1",
+  "source": {
+    "year": 1404,
+    "filename": "offical/list.xlsx",
+    "sha256": "e58107e6d478366f98042c3f25b2f27032363976f0ce25dab91fc55ea03ad1df",
+    "worksheet": "Query3",
+    "totalRows": 105474,
+    "coderecCounts": {
+      "1": 31,
+      "2": 484,
+      "3": 1193,
+      "4": 2777,
+      "5": 1672,
+      "6": 95389,
+      "8": 3928
+    },
+    "nullableColumns": {
+      "کد استان": 0,
+      "نام استان": 0,
+      "کد شهرستان": 31,
+      "نام شهرستان": 31,
+      "کد بخش": 515,
+      "نام بخش": 515,
+      "کد دهستان": 1708,
+      "نام دهستان": 3380,
+      "کد آبادی": 6157,
+      "Coderec": 0,
+      "نام": 0,
+      "کد ابادی بلوکه": 101546
+    },
+    "samplesByCoderec": {
+      "1": {
+        "provinceCode": "00",
+        "provinceName": "مرکزي",
+        "countyCode": null,
+        "countyName": null,
+        "districtCode": null,
+        "districtName": null,
+        "ruralCode": null,
+        "ruralName": null,
+        "villageCode": null,
+        "coderec": "1",
+        "name": "مرکزي",
+        "mappedRuralCode": null,
+        "rowNumber": 2
+      },
+      "2": {
+        "provinceCode": "00",
+        "provinceName": "مرکزي",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": null,
+        "districtName": null,
+        "ruralCode": null,
+        "ruralName": null,
+        "villageCode": null,
+        "coderec": "2",
+        "name": "اراک",
+        "mappedRuralCode": null,
+        "rowNumber": 3
+      },
+      "3": {
+        "provinceCode": "00",
+        "provinceName": "مرکزي",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": null,
+        "ruralName": null,
+        "villageCode": null,
+        "coderec": "3",
+        "name": "مرکزي",
+        "mappedRuralCode": null,
+        "rowNumber": 4
+      },
+      "4": {
+        "provinceCode": "00",
+        "provinceName": "مرکزي",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": "0001",
+        "ruralName": "امان آباد",
+        "villageCode": null,
+        "coderec": "4",
+        "name": "امان آباد",
+        "mappedRuralCode": null,
+        "rowNumber": 5
+      },
+      "5": {
+        "provinceCode": "00",
+        "provinceName": "مرکزي",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": "1101",
+        "ruralName": null,
+        "villageCode": null,
+        "coderec": "5",
+        "name": "اراک",
+        "mappedRuralCode": null,
+        "rowNumber": 109
+      },
+      "6": {
+        "provinceCode": "00",
+        "provinceName": "مرکزي",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": "0001",
+        "ruralName": "امان آباد",
+        "villageCode": "000268",
+        "coderec": "6",
+        "name": "انجدان",
+        "mappedRuralCode": null,
+        "rowNumber": 7
+      },
+      "8": {
+        "provinceCode": "00",
+        "provinceName": "مرکزي",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": "0001",
+        "ruralName": "امان آباد",
+        "villageCode": "000266",
+        "coderec": "8",
+        "name": "امان آباد",
+        "mappedRuralCode": "3238",
+        "rowNumber": 6
+      }
+    }
+  },
+  "validation": {
+    "supportedRows": 105474,
+    "unhandledRows": 0,
+    "duplicateCanonicalKeys": 0,
+    "missingParents": 0,
+    "orphans": 0,
+    "cycles": 0,
+    "duplicatePublicIds": 0,
+    "unsafeNumericIdentifiers": 0,
+    "jsonSchema": "passed",
+    "formatParity": "passed",
+    "rowCounts": {
+      "provinces": 31,
+      "counties": 484,
+      "districts": 1193,
+      "rurals": 2777,
+      "cities": 1672,
+      "cities-filtered": 1185,
+      "villages": 99317,
+      "all": 105474
+    },
+    "citiesFiltered": {
+      "derived": true,
+      "rule": "exclude cities whose slug includes '-' or '_'",
+      "subset": true
+    },
+    "villages": {
+      "sourceCoderecs": [
+        "6",
+        "8"
+      ],
+      "accountedRows": 99317
+    },
+    "idStrategy": {
+      "v2Preserved": [
+        "provinces",
+        "counties",
+        "districts",
+        "cities"
+      ],
+      "rural": "V3 rural IDs add the district code because the V2 formula collides across districts",
+      "villages": "namespaced, delimiter-separated source-code IDs"
+    },
+    "normalization": "Arabic/Persian character variants are normalized; punctuation and spacing are preserved."
+  }
+}
