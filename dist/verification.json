@@ -32,7 +32,7 @@
     "samplesByCoderec": {
       "1": {
         "provinceCode": "00",
-        "provinceName": "مرکزي",
+        "provinceName": "مرکزی",
         "countyCode": null,
         "countyName": null,
         "districtCode": null,
@@ -41,13 +41,13 @@
         "ruralName": null,
         "villageCode": null,
         "coderec": "1",
-        "name": "مرکزي",
+        "name": "مرکزی",
         "mappedRuralCode": null,
         "rowNumber": 2
       },
       "2": {
         "provinceCode": "00",
-        "provinceName": "مرکزي",
+        "provinceName": "مرکزی",
         "countyCode": "01",
         "countyName": "اراک",
         "districtCode": null,
@@ -62,7 +62,7 @@
       },
       "3": {
         "provinceCode": "00",
-        "provinceName": "مرکزي",
+        "provinceName": "مرکزی",
         "countyCode": "01",
         "countyName": "اراک",
         "districtCode": "02",
@@ -71,13 +71,13 @@
         "ruralName": null,
         "villageCode": null,
         "coderec": "3",
-        "name": "مرکزي",
+        "name": "مرکزی",
         "mappedRuralCode": null,
         "rowNumber": 4
       },
       "4": {
         "provinceCode": "00",
-        "provinceName": "مرکزي",
+        "provinceName": "مرکزی",
         "countyCode": "01",
         "countyName": "اراک",
         "districtCode": "02",
@@ -92,7 +92,7 @@
       },
       "5": {
         "provinceCode": "00",
-        "provinceName": "مرکزي",
+        "provinceName": "مرکزی",
         "countyCode": "01",
         "countyName": "اراک",
         "districtCode": "02",
@@ -107,7 +107,7 @@
       },
       "6": {
         "provinceCode": "00",
-        "provinceName": "مرکزي",
+        "provinceName": "مرکزی",
         "countyCode": "01",
         "countyName": "اراک",
         "districtCode": "02",
@@ -122,7 +122,7 @@
       },
       "8": {
         "provinceCode": "00",
-        "provinceName": "مرکزي",
+        "provinceName": "مرکزی",
         "countyCode": "01",
         "countyName": "اراک",
         "districtCode": "02",
@@ -142,12 +142,28 @@
     "unhandledRows": 0,
     "duplicateCanonicalKeys": 0,
     "missingParents": 0,
-    "orphans": 0,
     "cycles": 0,
+    "orphans": 0,
     "duplicatePublicIds": 0,
     "unsafeNumericIdentifiers": 0,
-    "jsonSchema": "passed",
-    "formatParity": "passed",
+    "jsonSchema": {
+      "passed": true,
+      "errors": []
+    },
+    "formatParity": {
+      "passed": true,
+      "rowCounts": {
+        "provinces": 31,
+        "counties": 484,
+        "districts": 1193,
+        "rurals": 2777,
+        "cities": 1672,
+        "cities-filtered": 1185,
+        "villages": 99317,
+        "all": 105474
+      },
+      "errors": []
+    },
     "rowCounts": {
       "provinces": 31,
       "counties": 484,
@@ -160,7 +176,7 @@
     },
     "citiesFiltered": {
       "derived": true,
-      "rule": "exclude cities whose slug includes '-' or '_'",
+      "rule": "exclude cities whose current-name filter slug includes '-' or '_'",
       "subset": true
     },
     "villages": {
@@ -170,16 +186,80 @@
       ],
       "accountedRows": 99317
     },
+    "manifest": {
+      "passed": true,
+      "entityTypes": {
+        "provinces": "province",
+        "counties": "county",
+        "districts": "district",
+        "rurals": "rural",
+        "cities": "city",
+        "cities-filtered": "city",
+        "villages": "village",
+        "all": "mixed"
+      }
+    },
+    "v2Compatibility": {
+      "provinces": {
+        "historicalEntities": 31,
+        "historicalEntitiesMatched": 31,
+        "idsPreserved": 31,
+        "slugsPreserved": 31,
+        "intentionalOrUnavoidableDifferences": 0
+      },
+      "counties": {
+        "historicalEntities": 482,
+        "historicalEntitiesMatched": 482,
+        "idsPreserved": 482,
+        "slugsPreserved": 482,
+        "intentionalOrUnavoidableDifferences": 0
+      },
+      "districts": {
+        "historicalEntities": 1184,
+        "historicalEntitiesMatched": 1182,
+        "idsPreserved": 1182,
+        "slugsPreserved": 1182,
+        "intentionalOrUnavoidableDifferences": 2
+      },
+      "cities": {
+        "historicalEntities": 1659,
+        "historicalEntitiesMatched": 1656,
+        "idsPreserved": 1656,
+        "slugsPreserved": 1656,
+        "intentionalOrUnavoidableDifferences": 3
+      }
+    },
+    "migration": {
+      "actualV2RuralRows": 1524,
+      "migrationRecords": 1524,
+      "matched": 1461,
+      "ambiguous": 0,
+      "not_found": 63,
+      "invalidOldIds": 0,
+      "invalidNewIds": 0,
+      "complete": true
+    },
     "idStrategy": {
-      "v2Preserved": [
-        "provinces",
-        "counties",
-        "districts",
-        "cities"
-      ],
-      "rural": "V3 rural IDs add the district code because the V2 formula collides across districts",
+      "legacyPublicIds": "V2 formulas parse source segments numerically; canonical keys retain padded source strings",
+      "rural": "V3 fixed-width district+rural suffix prevents V2 cross-district collisions",
       "villages": "namespaced, delimiter-separated source-code IDs"
     },
-    "normalization": "Arabic/Persian character variants are normalized; punctuation and spacing are preserved."
+    "allContract": {
+      "fields": [
+        "id",
+        "type",
+        "name",
+        "slug",
+        "tel_prefix",
+        "province_id",
+        "county_id",
+        "district_id",
+        "rural_id",
+        "coderec",
+        "village_code",
+        "mapped_rural_code"
+      ],
+      "nullableTabularCellsDecodeAs": "null"
+    }
   }
 }
