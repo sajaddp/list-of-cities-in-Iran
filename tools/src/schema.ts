@@ -31,12 +31,13 @@ export const schema = { $schema: "https://json-schema.org/draft/2020-12/schema",
   villages: local(["province_id", "county_id", "district_id", "rural_id", "coderec", "village_code", "mapped_rural_code"], { id: { type: "string", pattern: "^village:" }, ...ancestry, rural_id: integer, coderec: { enum: ["6", "8"] }, village_code: string, mapped_rural_code: nullableString }),
   all,
 } };
-const coordinateNumber = { type: "number" };
+const latitude = { type: "number", minimum: -90, maximum: 90 };
+const longitude = { type: "number", minimum: -180, maximum: 180 };
 const coordinateString = { type: "string", minLength: 1 };
 const coordinate = (required: string[], properties: Record<string, unknown>) => ({ type: "array", items: { type: "object", required, properties, additionalProperties: false } });
 export const coordinateSchema = { $schema: "https://json-schema.org/draft/2020-12/schema", title: "list-of-cities-in-iran V3 coordinate enrichment datasets", $defs: {
-  "province-capitals": coordinate(["province_id", "province_name", "center_name", "latitude", "longitude", "source_id"], { province_id: integer, province_name: coordinateString, center_name: coordinateString, latitude: coordinateNumber, longitude: coordinateNumber, source_id: coordinateString }),
-  "county-centers": coordinate(["county_id", "county_name", "province_id", "center_name", "latitude", "longitude", "source_id"], { county_id: integer, county_name: coordinateString, province_id: integer, center_name: coordinateString, latitude: coordinateNumber, longitude: coordinateNumber, source_id: coordinateString }),
+  "province-capitals": coordinate(["province_id", "province_name", "center_name", "latitude", "longitude", "source_id", "source_feature_id", "source_name"], { province_id: integer, province_name: coordinateString, center_name: coordinateString, latitude, longitude, source_id: coordinateString, source_feature_id: coordinateString, source_name: coordinateString }),
+  "county-centers": coordinate(["county_id", "county_name", "province_id", "center_name", "latitude", "longitude", "source_id", "source_feature_id", "source_name"], { county_id: integer, county_name: coordinateString, province_id: integer, center_name: coordinateString, latitude, longitude, source_id: coordinateString, source_feature_id: coordinateString, source_name: coordinateString }),
 } };
 export const combinedSchema = { $schema: schema.$schema, title: "list-of-cities-in-iran V3 datasets", $defs: { ...schema.$defs, ...coordinateSchema.$defs } };
 export interface SchemaResult { passed: boolean; errors: string[]; }

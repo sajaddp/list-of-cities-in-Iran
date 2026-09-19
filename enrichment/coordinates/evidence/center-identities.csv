@@ -1,0 +1,516 @@
+entity_type,entity_id,center_name,identity_source_id,identity_record_id,identity_basis
+province,100,اراک,geonames-iran-2026-09-19,143127,geonames_admin_feature
+province,101,رشت,geonames-iran-2026-09-19,118743,geonames_admin_feature
+province,102,ساری,geonames-iran-2026-09-19,116996,geonames_admin_feature
+province,103,تبریز,geonames-iran-2026-09-19,113646,geonames_admin_feature
+province,104,ارومیه,geonames-iran-2026-09-19,121801,geonames_admin_feature
+province,105,کرمانشاه,geonames-iran-2026-09-19,128226,geonames_admin_feature
+province,106,اهواز,geonames-iran-2026-09-19,144448,geonames_admin_feature
+province,107,شیراز,geonames-iran-2026-09-19,115019,geonames_admin_feature
+province,108,کرمان,geonames-iran-2026-09-19,128234,geonames_admin_feature
+province,109,مشهد,geonames-iran-2026-09-19,124665,geonames_admin_feature
+province,110,اصفهان,geonames-iran-2026-09-19,418863,geonames_admin_feature
+province,111,زاهدان,geonames-iran-2026-09-19,1159301,geonames_admin_feature
+province,112,سنندج,geonames-iran-2026-09-19,117574,geonames_admin_feature
+province,113,همدان,geonames-iran-2026-09-19,132144,geonames_admin_feature
+province,114,شهرکرد,geonames-iran-2026-09-19,115770,geonames_admin_feature
+province,115,خرم آباد,geonames-iran-2026-09-19,127349,geonames_admin_feature
+province,116,ایلام,geonames-iran-2026-09-19,130802,geonames_admin_feature
+province,117,یاسوج,geonames-iran-2026-09-19,66093,geonames_admin_feature
+province,118,بوشهر,geonames-iran-2026-09-19,139817,geonames_admin_feature
+province,119,زنجان,geonames-iran-2026-09-19,111453,geonames_admin_feature
+province,120,سمنان,geonames-iran-2026-09-19,116402,geonames_admin_feature
+province,121,یزد,geonames-iran-2026-09-19,111822,geonames_admin_feature
+province,122,بندر عباس,geonames-iran-2026-09-19,141681,geonames_admin_feature
+province,123,تهران,coordinate-center-verification-2026-09-19,province:123,verified_override
+province,124,اردبیل,geonames-iran-2026-09-19,143083,geonames_admin_feature
+province,125,قم,geonames-iran-2026-09-19,119208,geonames_admin_feature
+province,126,قزوین,geonames-iran-2026-09-19,119505,geonames_admin_feature
+province,127,گرگان,geonames-iran-2026-09-19,132892,geonames_admin_feature
+province,128,بجنورد,geonames-iran-2026-09-19,140380,geonames_admin_feature
+province,129,بیرجند,geonames-iran-2026-09-19,140463,geonames_admin_feature
+province,130,کرج,geonames-iran-2026-09-19,128747,geonames_admin_feature
+county,1000001,اراک,geonames-iran-2026-09-19,143127,geonames_admin_feature
+county,1000002,آشتیان,geonames-iran-2026-09-19,142744,geonames_admin_feature
+county,1000003,تفرش,geonames-iran-2026-09-19,113636,geonames_admin_feature
+county,1000004,خمین,geonames-iran-2026-09-19,127403,geonames_admin_feature
+county,1000005,دلیجان,geonames-iran-2026-09-19,136399,geonames_admin_feature
+county,1000006,ساوه,geonames-iran-2026-09-19,116667,geonames_admin_feature
+county,1000007,شازند,geonames-iran-2026-09-19,142567,geonames_admin_feature
+county,1000009,محلات,geonames-iran-2026-09-19,125438,geonames_admin_feature
+county,1010001,آستارا,geonames-iran-2026-09-19,142676,geonames_admin_feature
+county,1010002,آستانه اشرفیه,geonames-iran-2026-09-19,142679,geonames_admin_feature
+county,1010003,بندرانزلی,geonames-iran-2026-09-19,141679,geonames_admin_feature
+county,1010004,هشتپر (تالش),geonames-iran-2026-09-19,113343,geonames_admin_feature
+county,1010005,رشت,geonames-iran-2026-09-19,118743,geonames_admin_feature
+county,1010006,رودبار,geonames-iran-2026-09-19,41151,geonames_admin_feature
+county,1010007,رودسر,geonames-iran-2026-09-19,118191,geonames_admin_feature
+county,1010008,صومعه سرا,geonames-iran-2026-09-19,113860,geonames_admin_feature
+county,1010009,فومن,geonames-iran-2026-09-19,134441,geonames_admin_feature
+county,1020001,آمل,geonames-iran-2026-09-19,143534,geonames_admin_feature
+county,1020002,بابل,geonames-iran-2026-09-19,142363,geonames_admin_feature
+county,1020004,بهشهر,geonames-iran-2026-09-19,140918,geonames_admin_feature
+county,1020005,تنکابن,geonames-iran-2026-09-19,112656,geonames_admin_feature
+county,1020006,رامسر,geonames-iran-2026-09-19,117773,geonames_admin_feature
+county,1020007,ساری,geonames-iran-2026-09-19,116996,geonames_admin_feature
+county,1020008,پل سفید,geonames-iran-2026-09-19,120936,geonames_admin_feature
+county,1030002,اهر,geonames-iran-2026-09-19,144616,geonames_admin_feature
+county,1030003,تبریز,geonames-iran-2026-09-19,113646,geonames_admin_feature
+county,1030005,سراب,geonames-iran-2026-09-19,117368,geonames_admin_feature
+county,1030006,مراغه,geonames-iran-2026-09-19,124877,geonames_admin_feature
+county,1030007,مرند,geonames-iran-2026-09-19,124862,geonames_admin_feature
+county,1040001,ارومیه,geonames-iran-2026-09-19,121801,geonames_admin_feature
+county,1040002,پیرانشهر,coordinate-center-verification-2026-09-19,county:1040002,verified_override
+county,1040003,خوی,geonames-iran-2026-09-19,126972,geonames_admin_feature
+county,1040004,سردشت,geonames-iran-2026-09-19,117111,geonames_admin_feature
+county,1040005,سلماس,geonames-iran-2026-09-19,117656,geonames_admin_feature
+county,1040006,ماکو,geonames-iran-2026-09-19,125205,geonames_admin_feature
+county,1040007,مهاباد,coordinate-center-verification-2026-09-19,county:1040007,verified_override
+county,1040008,میاندوآب,geonames-iran-2026-09-19,124085,geonames_admin_feature
+county,1040009,نقده,geonames-iran-2026-09-19,122698,geonames_admin_feature
+county,1050001,اسلام آبادغرب,geonames-iran-2026-09-19,135175,geonames_admin_feature
+county,1050002,کرمانشاه,geonames-iran-2026-09-19,128226,geonames_admin_feature
+county,1050003,پاوه,geonames-iran-2026-09-19,121240,geonames_admin_feature
+county,1050004,سرپل ذهاب,geonames-iran-2026-09-19,120931,geonames_admin_feature
+county,1050005,سنقر,geonames-iran-2026-09-19,114049,geonames_admin_feature
+county,1050006,قصرشیرین,geonames-iran-2026-09-19,119586,geonames_admin_feature
+county,1050007,کنگاور,geonames-iran-2026-09-19,128831,geonames_admin_feature
+county,1050008,گیلانغرب,geonames-iran-2026-09-19,133345,geonames_admin_feature
+county,1050009,جوانرود,geonames-iran-2026-09-19,25883,geonames_admin_feature
+county,1060001,آبادان,coordinate-center-verification-2026-09-19,county:1060001,verified_override
+county,1060002,اندیمشک,geonames-iran-2026-09-19,143420,geonames_admin_feature
+county,1060003,اهواز,geonames-iran-2026-09-19,144448,geonames_admin_feature
+county,1060004,ایذه,geonames-iran-2026-09-19,130697,geonames_admin_feature
+county,1060005,بندر ماهشهر,geonames-iran-2026-09-19,141663,geonames_admin_feature
+county,1060006,بهبهان,geonames-iran-2026-09-19,140951,geonames_admin_feature
+county,1060007,خرمشهر,geonames-iran-2026-09-19,127319,geonames_admin_feature
+county,1060008,دزفول,geonames-iran-2026-09-19,136256,geonames_admin_feature
+county,1060009,سوسنگرد,geonames-iran-2026-09-19,137268,geonames_admin_feature
+county,1070001,آباده,geonames-iran-2026-09-19,145449,geonames_admin_feature
+county,1070002,استهبان,geonames-iran-2026-09-19,135094,geonames_admin_feature
+county,1070003,اقلید,geonames-iran-2026-09-19,135355,geonames_admin_feature
+county,1070004,جهرم,geonames-iran-2026-09-19,130531,geonames_admin_feature
+county,1070005,داراب,geonames-iran-2026-09-19,137956,geonames_admin_feature
+county,1070006,اردکان,geonames-iran-2026-09-19,403656,geonames_admin_feature
+county,1070007,شیراز,geonames-iran-2026-09-19,115019,geonames_admin_feature
+county,1070008,فسا,geonames-iran-2026-09-19,134721,geonames_admin_feature
+county,1070009,فیروزآباد,geonames-iran-2026-09-19,134518,geonames_admin_feature
+county,1080001,بافت,geonames-iran-2026-09-19,142247,geonames_admin_feature
+county,1080002,بم,geonames-iran-2026-09-19,141736,geonames_admin_feature
+county,1080003,جیرفت,geonames-iran-2026-09-19,6925362,geonames_admin_feature
+county,1080004,رفسنجان,geonames-iran-2026-09-19,118994,geonames_admin_feature
+county,1080005,زرند,geonames-iran-2026-09-19,111421,geonames_admin_feature
+county,1080006,سیرجان,coordinate-center-verification-2026-09-19,county:1080006,verified_override
+county,1080007,شهربابک,geonames-iran-2026-09-19,115781,geonames_admin_feature
+county,1080008,کرمان,geonames-iran-2026-09-19,128234,geonames_admin_feature
+county,1080009,کهنوج,geonames-iran-2026-09-19,6961608,geonames_admin_feature
+county,1090004,تایباد,geonames-iran-2026-09-19,1159384,geonames_admin_feature
+county,1090005,تربت حیدریه,geonames-iran-2026-09-19,112646,geonames_admin_feature
+county,1090006,تربت جام,geonames-iran-2026-09-19,1159362,geonames_admin_feature
+county,1090007,درگز,geonames-iran-2026-09-19,137585,geonames_admin_feature
+county,1090008,سبزوار,coordinate-center-verification-2026-09-19,county:1090008,verified_override
+county,1100001,اردستان,geonames-iran-2026-09-19,143052,geonames_admin_feature
+county,1100002,اصفهان,geonames-iran-2026-09-19,418863,geonames_admin_feature
+county,1100003,خمینی شهر,geonames-iran-2026-09-19,418710,geonames_admin_feature
+county,1100004,خوانسار,geonames-iran-2026-09-19,127033,geonames_admin_feature
+county,1100005,سمیرم,geonames-iran-2026-09-19,116406,geonames_admin_feature
+county,1100006,داران,geonames-iran-2026-09-19,137929,geonames_admin_feature
+county,1100007,فریدونشهر,geonames-iran-2026-09-19,134601,geonames_admin_feature
+county,1100008,فلاورجان,geonames-iran-2026-09-19,418851,geonames_admin_feature
+county,1100009,شهرضا,geonames-iran-2026-09-19,418533,geonames_admin_feature
+county,1110001,ایرانشهر,geonames-iran-2026-09-19,1160939,geonames_admin_feature
+county,1110002,چاه بهار,geonames-iran-2026-09-19,1161724,geonames_admin_feature
+county,1110003,خاش,geonames-iran-2026-09-19,1160571,geonames_admin_feature
+county,1110004,زابل,geonames-iran-2026-09-19,1113217,geonames_admin_feature
+county,1110005,زاهدان,geonames-iran-2026-09-19,1159301,geonames_admin_feature
+county,1110006,سراوان,geonames-iran-2026-09-19,1159713,geonames_admin_feature
+county,1110007,نیک شهر,geonames-iran-2026-09-19,1160110,geonames_admin_feature
+county,1110008,راسک,geonames-iran-2026-09-19,1159836,geonames_admin_feature
+county,1110009,کنارک,geonames-iran-2026-09-19,1160500,geonames_admin_feature
+county,1120001,بانه,geonames-iran-2026-09-19,141584,geonames_admin_feature
+county,1120002,بیجار,coordinate-center-verification-2026-09-19,county:1120002,verified_override
+county,1120003,سقز,coordinate-center-verification-2026-09-19,county:1120003,verified_override
+county,1120004,سنندج,geonames-iran-2026-09-19,117574,geonames_admin_feature
+county,1120005,قروه,geonames-iran-2026-09-19,119161,geonames_admin_feature
+county,1120006,مریوان,geonames-iran-2026-09-19,124778,geonames_admin_feature
+county,1120007,دیواندره,geonames-iran-2026-09-19,136156,geonames_admin_feature
+county,1120008,کامیاران,geonames-iran-2026-09-19,128905,geonames_admin_feature
+county,1120009,سروآباد,geonames-iran-2026-09-19,116739,geonames_admin_feature
+county,1130001,تویسرکان,geonames-iran-2026-09-19,112422,geonames_admin_feature
+county,1130002,ملایر,geonames-iran-2026-09-19,125185,geonames_admin_feature
+county,1130003,نهاوند,geonames-iran-2026-09-19,122915,geonames_admin_feature
+county,1130004,همدان,geonames-iran-2026-09-19,132144,geonames_admin_feature
+county,1130005,کبودرآهنگ,geonames-iran-2026-09-19,129904,geonames_admin_feature
+county,1130006,اسدآباد,geonames-iran-2026-09-19,142872,geonames_admin_feature
+county,1130007,بهار,geonames-iran-2026-09-19,142000,geonames_admin_feature
+county,1130008,رزن,geonames-iran-2026-09-19,118681,geonames_admin_feature
+county,1130009,فامنین,geonames-iran-2026-09-19,134906,geonames_admin_feature
+county,1140001,بروجن,geonames-iran-2026-09-19,140046,geonames_admin_feature
+county,1140002,شهرکرد,geonames-iran-2026-09-19,115770,geonames_admin_feature
+county,1140003,فارسان,geonames-iran-2026-09-19,134762,geonames_admin_feature
+county,1140004,لردگان,geonames-iran-2026-09-19,125609,geonames_admin_feature
+county,1140005,اردل,geonames-iran-2026-09-19,143070,geonames_admin_feature
+county,1140006,چلگرد,geonames-iran-2026-09-19,138799,geonames_admin_feature
+county,1140007,شلمزار,geonames-iran-2026-09-19,115607,geonames_admin_feature
+county,1140008,سامان,geonames-iran-2026-09-19,117627,geonames_admin_feature
+county,1140009,بن,geonames-iran-2026-09-19,140891,geonames_admin_feature
+county,1150001,الیگودرز,geonames-iran-2026-09-19,143921,geonames_admin_feature
+county,1150002,بروجرد,geonames-iran-2026-09-19,140044,geonames_admin_feature
+county,1150003,خرم آباد,geonames-iran-2026-09-19,127349,geonames_admin_feature
+county,1150004,نورآباد,geonames-iran-2026-09-19,24851,geonames_admin_feature
+county,1150005,دورود,geonames-iran-2026-09-19,135878,geonames_admin_feature
+county,1150006,کوهدشت,geonames-iran-2026-09-19,126409,geonames_admin_feature
+county,1150007,ازنا,geonames-iran-2026-09-19,142497,geonames_admin_feature
+county,1150008,پلدختر,geonames-iran-2026-09-19,120949,geonames_admin_feature
+county,1150009,الشتر,geonames-iran-2026-09-19,144269,geonames_admin_feature
+county,1160001,ایلام,geonames-iran-2026-09-19,130802,geonames_admin_feature
+county,1160002,دره شهر,geonames-iran-2026-09-19,137436,geonames_admin_feature
+county,1160003,دهلران,geonames-iran-2026-09-19,136702,geonames_admin_feature
+county,1160004,سرابله,geonames-iran-2026-09-19,117304,geonames_admin_feature
+county,1160005,مهران,geonames-iran-2026-09-19,124291,geonames_admin_feature
+county,1160006,آبدانان,geonames-iran-2026-09-19,145233,geonames_admin_feature
+county,1160007,ایوان,geonames-iran-2026-09-19,129929,geonames_admin_feature
+county,1160008,ارکواز,geonames-iran-2026-09-19,120539,geonames_admin_feature
+county,1160009,لومار,geonames-iran-2026-09-19,401555,geonames_admin_feature
+county,1170001,یاسوج,geonames-iran-2026-09-19,66093,geonames_admin_feature
+county,1170002,دهدشت,geonames-iran-2026-09-19,136987,geonames_admin_feature
+county,1170003,دوگنبدان,coordinate-center-verification-2026-09-19,county:1170003,verified_override
+county,1170004,سی سخت,geonames-iran-2026-09-19,137013,geonames_admin_feature
+county,1170005,لیکک,geonames-iran-2026-09-19,125688,geonames_admin_feature
+county,1170006,چرام,geonames-iran-2026-09-19,138989,geonames_admin_feature
+county,1170007,باشت,geonames-iran-2026-09-19,141124,geonames_admin_feature
+county,1170008,لنده,geonames-iran-2026-09-19,125726,geonames_admin_feature
+county,1170009,مارگون,geonames-iran-2026-09-19,124771,geonames_admin_feature
+county,1180001,بوشهر,geonames-iran-2026-09-19,139817,geonames_admin_feature
+county,1180002,اهرم,geonames-iran-2026-09-19,144484,geonames_admin_feature
+county,1180003,برازجان,geonames-iran-2026-09-19,140097,geonames_admin_feature
+county,1180004,خورموج,geonames-iran-2026-09-19,127014,geonames_admin_feature
+county,1180005,بندردیر,geonames-iran-2026-09-19,136280,geonames_admin_feature
+county,1180006,بندرکنگان,coordinate-center-verification-2026-09-19,county:1180006,verified_override
+county,1180007,بندرگناوه,geonames-iran-2026-09-19,134217,geonames_admin_feature
+county,1180008,بندردیلم,geonames-iran-2026-09-19,141676,geonames_admin_feature
+county,1180009,جم,geonames-iran-2026-09-19,130451,geonames_admin_feature
+county,1190001,ابهر,geonames-iran-2026-09-19,145034,geonames_admin_feature
+county,1190003,قیدار,coordinate-center-verification-2026-09-19,county:1190003,verified_override
+county,1190004,زنجان,geonames-iran-2026-09-19,111453,geonames_admin_feature
+county,1190006,زرین آباد,geonames-iran-2026-09-19,111246,geonames_admin_feature
+county,1190007,خرمدره,geonames-iran-2026-09-19,41210,geonames_admin_feature
+county,1190008,آب بر,geonames-iran-2026-09-19,145407,geonames_admin_feature
+county,1190009,ماه نشان,geonames-iran-2026-09-19,125290,geonames_admin_feature
+county,1200001,دامغان,geonames-iran-2026-09-19,138025,geonames_admin_feature
+county,1200002,سمنان,geonames-iran-2026-09-19,116402,geonames_admin_feature
+county,1200003,شاهرود,coordinate-center-verification-2026-09-19,county:1200003,verified_override
+county,1200004,گرمسار,geonames-iran-2026-09-19,133964,geonames_admin_feature
+county,1200005,مهدی شهر,geonames-iran-2026-09-19,7100777,geonames_admin_feature
+county,1200006,آرادان,geonames-iran-2026-09-19,143129,geonames_admin_feature
+county,1200007,میامی,coordinate-center-verification-2026-09-19,county:1200007,verified_override
+county,1200008,سرخه,geonames-iran-2026-09-19,113952,geonames_admin_feature
+county,1210001,اردکان,geonames-iran-2026-09-19,143073,geonames_admin_feature
+county,1210002,بافق,geonames-iran-2026-09-19,142255,geonames_admin_feature
+county,1210003,تفت,geonames-iran-2026-09-19,113632,geonames_admin_feature
+county,1210004,مهریز,geonames-iran-2026-09-19,124274,geonames_admin_feature
+county,1210005,یزد,geonames-iran-2026-09-19,111822,geonames_admin_feature
+county,1210006,میبد,geonames-iran-2026-09-19,124193,geonames_admin_feature
+county,1210007,ابرکوه,geonames-iran-2026-09-19,145427,geonames_admin_feature
+county,1210008,اشکذر,geonames-iran-2026-09-19,66250,geonames_admin_feature
+county,1210009,هرات,geonames-iran-2026-09-19,113556,geonames_admin_feature
+county,1220001,ابوموسی,coordinate-center-verification-2026-09-19,county:1220001,verified_override
+county,1220002,بندر عباس,geonames-iran-2026-09-19,141681,geonames_admin_feature
+county,1220003,بندر لنگه,geonames-iran-2026-09-19,141665,geonames_admin_feature
+county,1220004,قشم,geonames-iran-2026-09-19,119374,geonames_admin_feature
+county,1220005,میناب,geonames-iran-2026-09-19,123941,geonames_admin_feature
+county,1220006,بندر جاسک,coordinate-center-verification-2026-09-19,county:1220006,verified_override
+county,1220007,دهبارز,geonames-iran-2026-09-19,120351,geonames_admin_feature
+county,1220008,حاجی آباد,geonames-iran-2026-09-19,132382,geonames_admin_feature
+county,1220009,بستک,geonames-iran-2026-09-19,141104,geonames_admin_feature
+county,1230001,تهران,coordinate-center-verification-2026-09-19,county:1230001,verified_override
+county,1230002,دماوند,geonames-iran-2026-09-19,138042,geonames_admin_feature
+county,1230003,ری,geonames-iran-2026-09-19,9533872,geonames_admin_feature
+county,1230004,تجریش,geonames-iran-2026-09-19,113514,geonames_admin_feature
+county,1230006,ورامین,geonames-iran-2026-09-19,112214,geonames_admin_feature
+county,1230009,شهریار,geonames-iran-2026-09-19,143860,geonames_admin_feature
+county,1240001,اردبیل,geonames-iran-2026-09-19,143083,geonames_admin_feature
+county,1240002,بیله سوار,geonames-iran-2026-09-19,140494,geonames_admin_feature
+county,1240003,خلخال,geonames-iran-2026-09-19,128008,geonames_admin_feature
+county,1240004,مشگین شهر,geonames-iran-2026-09-19,124210,geonames_admin_feature
+county,1240005,گرمی,geonames-iran-2026-09-19,133972,geonames_admin_feature
+county,1240006,پارس آباد,geonames-iran-2026-09-19,121380,geonames_admin_feature
+county,1240007,گیوی,geonames-iran-2026-09-19,9514746,geonames_admin_feature
+county,1240008,نمین,geonames-iran-2026-09-19,122721,geonames_admin_feature
+county,1240009,نیر,geonames-iran-2026-09-19,15269,geonames_admin_feature
+county,1250001,قم,geonames-iran-2026-09-19,119208,geonames_admin_feature
+county,1250002,جعفریه,coordinate-center-verification-2026-09-19,county:1250002,verified_override
+county,1250003,کهک,coordinate-center-verification-2026-09-19,county:1250003,verified_override
+county,1260001,بویین زهرا,coordinate-center-verification-2026-09-19,county:1260001,verified_override
+county,1260002,تاکستان,geonames-iran-2026-09-19,113491,geonames_admin_feature
+county,1260003,قزوین,geonames-iran-2026-09-19,119505,geonames_admin_feature
+county,1260004,آبیک,geonames-iran-2026-09-19,144795,geonames_admin_feature
+county,1260005,الوند,geonames-iran-2026-09-19,10570,geonames_admin_feature
+county,1260006,آوج,geonames-iran-2026-09-19,142642,geonames_admin_feature
+county,1270001,بندرگز,geonames-iran-2026-09-19,141673,geonames_admin_feature
+county,1270002,بندرترکمن,geonames-iran-2026-09-19,141653,geonames_admin_feature
+county,1270003,علی آباد,geonames-iran-2026-09-19,144038,geonames_admin_feature
+county,1270004,کردکوی,geonames-iran-2026-09-19,126572,geonames_admin_feature
+county,1270005,گرگان,geonames-iran-2026-09-19,132892,geonames_admin_feature
+county,1270006,گنبدکاووس,geonames-iran-2026-09-19,132938,geonames_admin_feature
+county,1270007,مینودشت,geonames-iran-2026-09-19,123927,geonames_admin_feature
+county,1270008,آق قلا,geonames-iran-2026-09-19,7329809,geonames_admin_feature
+county,1270009,کلاله,geonames-iran-2026-09-19,129512,geonames_admin_feature
+county,1280001,اسفراین,geonames-iran-2026-09-19,135298,geonames_admin_feature
+county,1280002,بجنورد,geonames-iran-2026-09-19,140380,geonames_admin_feature
+county,1280003,جاجرم,geonames-iran-2026-09-19,130524,geonames_admin_feature
+county,1280004,شیروان,geonames-iran-2026-09-19,114930,geonames_admin_feature
+county,1280005,فاروج,geonames-iran-2026-09-19,134745,geonames_admin_feature
+county,1280006,آشخانه,geonames-iran-2026-09-19,142768,geonames_admin_feature
+county,1280007,گرمه,geonames-iran-2026-09-19,133978,geonames_admin_feature
+county,1280008,راز,coordinate-center-verification-2026-09-19,county:1280008,verified_override
+county,1280009,صفی آباد,coordinate-center-verification-2026-09-19,county:1280009,verified_override
+county,1290001,بیرجند,geonames-iran-2026-09-19,140463,geonames_admin_feature
+county,1290002,اسدیه,geonames-iran-2026-09-19,142862,geonames_admin_feature
+county,1290003,سربیشه,geonames-iran-2026-09-19,117204,geonames_admin_feature
+county,1290004,قاین,geonames-iran-2026-09-19,120694,geonames_admin_feature
+county,1290005,نهبندان,geonames-iran-2026-09-19,1160120,geonames_admin_feature
+county,1290006,سرایان,geonames-iran-2026-09-19,117232,geonames_admin_feature
+county,1290007,فردوس,geonames-iran-2026-09-19,134613,geonames_admin_feature
+county,1290008,بشرویه,geonames-iran-2026-09-19,9480732,geonames_admin_feature
+county,1290009,حاجی آباد,geonames-iran-2026-09-19,1161048,geonames_admin_feature
+county,1300001,کرج,geonames-iran-2026-09-19,128747,geonames_admin_feature
+county,1300002,هشتگرد,geonames-iran-2026-09-19,131691,geonames_admin_feature
+county,1300003,نظرآباد,geonames-iran-2026-09-19,122438,geonames_admin_feature
+county,1300004,طالقان,geonames-iran-2026-09-19,9904,geonames_admin_feature
+county,1300005,اشتهارد,geonames-iran-2026-09-19,135205,geonames_admin_feature
+county,1300006,فردیس,geonames-iran-2026-09-19,112179,geonames_admin_feature
+county,1300007,چهارباغ,coordinate-center-verification-2026-09-19,county:1300007,verified_override
+county,10000010,مامونیه,geonames-iran-2026-09-19,6657461,geonames_admin_feature
+county,10000011,کمیجان,geonames-iran-2026-09-19,126715,geonames_admin_feature
+county,10000012,خنداب,geonames-iran-2026-09-19,127389,geonames_admin_feature
+county,10000013,فرمهین,geonames-iran-2026-09-19,134788,geonames_admin_feature
+county,10100010,لنگرود,geonames-iran-2026-09-19,125897,geonames_admin_feature
+county,10100011,لاهیجان,geonames-iran-2026-09-19,126015,geonames_admin_feature
+county,10100012,شفت,geonames-iran-2026-09-19,116076,geonames_admin_feature
+county,10100013,املش,geonames-iran-2026-09-19,143539,geonames_admin_feature
+county,10100014,رضوانشهر,geonames-iran-2026-09-19,118532,geonames_admin_feature
+county,10100015,سیاهکل,geonames-iran-2026-09-19,114489,geonames_admin_feature
+county,10100016,ماسال,geonames-iran-2026-09-19,141015,geonames_admin_feature
+county,10100017,خمام,coordinate-center-verification-2026-09-19,county:10100017,verified_override
+county,10200010,قایم شهر,coordinate-center-verification-2026-09-19,county:10200010,verified_override
+county,10200014,نور,geonames-iran-2026-09-19,113797,geonames_admin_feature
+county,10200015,نوشهر,geonames-iran-2026-09-19,121959,geonames_admin_feature
+county,10200016,بابلسر,geonames-iran-2026-09-19,142358,geonames_admin_feature
+county,10200018,محمودآباد,geonames-iran-2026-09-19,125328,geonames_admin_feature
+county,10200019,نکا,geonames-iran-2026-09-19,122397,geonames_admin_feature
+county,10200020,چالوس,geonames-iran-2026-09-19,139223,geonames_admin_feature
+county,10200021,جویبار,geonames-iran-2026-09-19,129933,geonames_admin_feature
+county,10200022,گلوگاه,geonames-iran-2026-09-19,134255,geonames_admin_feature
+county,10200023,فریدونکنار,geonames-iran-2026-09-19,134602,geonames_admin_feature
+county,10200024,عباس آباد,geonames-iran-2026-09-19,145303,geonames_admin_feature
+county,10200025,سورک,geonames-iran-2026-09-19,113760,geonames_admin_feature
+county,10200026,کیاکلا,geonames-iran-2026-09-19,126962,geonames_admin_feature
+county,10200027,شیرگاه,geonames-iran-2026-09-19,115001,geonames_admin_feature
+county,10200028,کلاردشت,geonames-iran-2026-09-19,8781,geonames_admin_feature
+county,10300010,میانه,geonames-iran-2026-09-19,124082,geonames_admin_feature
+county,10300011,هشترود,geonames-iran-2026-09-19,142554,geonames_admin_feature
+county,10300012,بناب,geonames-iran-2026-09-19,140889,geonames_admin_feature
+county,10300013,بستان آباد,geonames-iran-2026-09-19,23290,geonames_admin_feature
+county,10300014,شبستر,geonames-iran-2026-09-19,116126,geonames_admin_feature
+county,10300015,کلیبر,geonames-iran-2026-09-19,129201,geonames_admin_feature
+county,10300016,هریس,geonames-iran-2026-09-19,131528,geonames_admin_feature
+county,10300019,جلفا,coordinate-center-verification-2026-09-19,county:10300019,verified_override
+county,10300020,ملکان,geonames-iran-2026-09-19,125112,geonames_admin_feature
+county,10300021,آذرشهر,geonames-iran-2026-09-19,6686970,geonames_admin_feature
+county,10300022,اسکو,geonames-iran-2026-09-19,121781,geonames_admin_feature
+county,10300023,قره آغاج,geonames-iran-2026-09-19,22451,geonames_admin_feature
+county,10300024,ورزقان,geonames-iran-2026-09-19,112121,geonames_admin_feature
+county,10300025,عجب شیر,geonames-iran-2026-09-19,144443,geonames_admin_feature
+county,10300026,خمارلو,geonames-iran-2026-09-19,127409,geonames_admin_feature
+county,10300027,هوراند,coordinate-center-verification-2026-09-19,county:10300027,verified_override
+county,10300028,لیلان,coordinate-center-verification-2026-09-19,county:10300028,verified_override
+county,10300029,ترکمانچای,coordinate-center-verification-2026-09-19,county:10300029,verified_override
+county,10400010,بوکان,geonames-iran-2026-09-19,139889,geonames_admin_feature
+county,10400011,شاهین دژ,geonames-iran-2026-09-19,117793,geonames_admin_feature
+county,10400012,تکاب,geonames-iran-2026-09-19,113508,geonames_admin_feature
+county,10400013,اشنویه,geonames-iran-2026-09-19,121795,geonames_admin_feature
+county,10400014,سیه چشمه,geonames-iran-2026-09-19,116326,geonames_admin_feature
+county,10400015,پلدشت,geonames-iran-2026-09-19,120954,geonames_admin_feature
+county,10400016,قره ضیاءالدین,geonames-iran-2026-09-19,119730,geonames_admin_feature
+county,10400017,شوط,geonames-iran-2026-09-19,401118,geonames_admin_feature
+county,10400018,چهاربرج,coordinate-center-verification-2026-09-19,county:10400018,verified_override
+county,10400019,باروق,coordinate-center-verification-2026-09-19,county:10400019,verified_override
+county,10400020,میرآباد,geonames-iran-2026-09-19,3315,geonames_admin_feature
+county,10500010,صحنه,geonames-iran-2026-09-19,117835,geonames_admin_feature
+county,10500011,هرسین,geonames-iran-2026-09-19,131962,geonames_admin_feature
+county,10500012,تازه آباد,geonames-iran-2026-09-19,6709138,geonames_admin_feature
+county,10500013,کرند,coordinate-center-verification-2026-09-19,county:10500013,verified_override
+county,10500014,روانسر,geonames-iran-2026-09-19,118705,geonames_admin_feature
+county,10600010,رامهرمز,geonames-iran-2026-09-19,118826,geonames_admin_feature
+county,10600011,شادگان,geonames-iran-2026-09-19,116102,geonames_admin_feature
+county,10600012,شوشتر,geonames-iran-2026-09-19,114584,geonames_admin_feature
+county,10600013,مسجدسلیمان,geonames-iran-2026-09-19,124620,geonames_admin_feature
+county,10600014,شوش,geonames-iran-2026-09-19,114593,geonames_admin_feature
+county,10600015,باغ ملک,geonames-iran-2026-09-19,142114,geonames_admin_feature
+county,10600016,امیدیه,geonames-iran-2026-09-19,121861,geonames_admin_feature
+county,10600017,لالی,geonames-iran-2026-09-19,125938,geonames_admin_feature
+county,10600018,هندیجان,geonames-iran-2026-09-19,131559,geonames_admin_feature
+county,10600019,رامشیر,geonames-iran-2026-09-19,118805,geonames_admin_feature
+county,10600020,گتوند,geonames-iran-2026-09-19,133884,geonames_admin_feature
+county,10600021,قلعه خواجه,geonames-iran-2026-09-19,120499,geonames_admin_feature
+county,10600022,هفتگل,geonames-iran-2026-09-19,132428,geonames_admin_feature
+county,10600023,هویزه,geonames-iran-2026-09-19,130821,geonames_admin_feature
+county,10600024,ملاثانی,geonames-iran-2026-09-19,123389,geonames_admin_feature
+county,10600025,حمیدیه,geonames-iran-2026-09-19,132105,geonames_admin_feature
+county,10600026,آغاجاری,coordinate-center-verification-2026-09-19,county:10600026,verified_override
+county,10600027,کوت عبداله,coordinate-center-verification-2026-09-19,county:10600027,verified_override
+county,10600028,الوان,coordinate-center-verification-2026-09-19,county:10600028,verified_override
+county,10600029,دهدز,coordinate-center-verification-2026-09-19,county:10600029,verified_override
+county,10600030,صیدون,coordinate-center-verification-2026-09-19,county:10600030,verified_override
+county,10700010,کازرون,geonames-iran-2026-09-19,128321,geonames_admin_feature
+county,10700011,لار,geonames-iran-2026-09-19,125877,geonames_admin_feature
+county,10700012,مرودشت,geonames-iran-2026-09-19,124721,geonames_admin_feature
+county,10700013,نورآباد,geonames-iran-2026-09-19,121925,geonames_admin_feature
+county,10700014,نی ریز,geonames-iran-2026-09-19,122289,geonames_admin_feature
+county,10700015,لامرد,geonames-iran-2026-09-19,125926,geonames_admin_feature
+county,10700016,بوانات,geonames-iran-2026-09-19,113723,geonames_admin_feature
+county,10700017,ارسنجان,geonames-iran-2026-09-19,142958,geonames_admin_feature
+county,10700018,صفاشهر,geonames-iran-2026-09-19,137025,geonames_admin_feature
+county,10700019,حاجی آباد,geonames-iran-2026-09-19,132380,geonames_admin_feature
+county,10700020,قیر,geonames-iran-2026-09-19,119264,geonames_admin_feature
+county,10700021,مهر,geonames-iran-2026-09-19,123485,geonames_admin_feature
+county,10700022,فراشبند,geonames-iran-2026-09-19,134781,geonames_admin_feature
+county,10700023,سعادت شهر,geonames-iran-2026-09-19,118123,geonames_admin_feature
+county,10700024,خنج,geonames-iran-2026-09-19,127382,geonames_admin_feature
+county,10700025,سروستان,geonames-iran-2026-09-19,116725,geonames_admin_feature
+county,10700026,مصیری,geonames-iran-2026-09-19,124622,geonames_admin_feature
+county,10700027,گراش,geonames-iran-2026-09-19,133595,geonames_admin_feature
+county,10700028,کوار,geonames-iran-2026-09-19,44439,geonames_admin_feature
+county,10700029,خرامه,geonames-iran-2026-09-19,127613,geonames_admin_feature
+county,10700030,زرقان,coordinate-center-verification-2026-09-19,county:10700030,verified_override
+county,10700031,بیضا,coordinate-center-verification-2026-09-19,county:10700031,verified_override
+county,10700032,حسامی,coordinate-center-verification-2026-09-19,county:10700032,verified_override
+county,10700033,قایمیه,coordinate-center-verification-2026-09-19,county:10700033,verified_override
+county,10700034,باب انار,coordinate-center-verification-2026-09-19,county:10700034,verified_override
+county,10700035,آباده طشک,coordinate-center-verification-2026-09-19,county:10700035,verified_override
+county,10700036,اوز,coordinate-center-verification-2026-09-19,county:10700036,verified_override
+county,10700037,جویم,geonames-iran-2026-09-19,129931,geonames_admin_feature
+county,10800010,بردسیر,geonames-iran-2026-09-19,124647,geonames_admin_feature
+county,10800011,راور,geonames-iran-2026-09-19,118704,geonames_admin_feature
+county,10800012,عنبرآباد,geonames-iran-2026-09-19,143471,geonames_admin_feature
+county,10800013,منوجان,geonames-iran-2026-09-19,124914,geonames_admin_feature
+county,10800014,کوهبنان,geonames-iran-2026-09-19,126411,geonames_admin_feature
+county,10800015,رودبار,geonames-iran-2026-09-19,6928551,geonames_admin_feature
+county,10800016,قلعه گنج,geonames-iran-2026-09-19,120323,geonames_admin_feature
+county,10800017,محمدآباد,geonames-iran-2026-09-19,123674,geonames_admin_feature
+county,10800018,رابر,geonames-iran-2026-09-19,119010,geonames_admin_feature
+county,10800019,فهرج,geonames-iran-2026-09-19,134962,geonames_admin_feature
+county,10800020,انار,geonames-iran-2026-09-19,143499,geonames_admin_feature
+county,10800021,نرماشیر,geonames-iran-2026-09-19,118323,geonames_admin_feature
+county,10800022,فاریاب,geonames-iran-2026-09-19,134735,geonames_admin_feature
+county,10800023,ارزوییه,coordinate-center-verification-2026-09-19,county:10800023,verified_override
+county,10800024,گنبکی,coordinate-center-verification-2026-09-19,county:10800024,verified_override
+county,10800025,زهکلوت,coordinate-center-verification-2026-09-19,county:10800025,verified_override
+county,10900013,قوچان,geonames-iran-2026-09-19,119115,geonames_admin_feature
+county,10900014,کاشمر,geonames-iran-2026-09-19,128447,geonames_admin_feature
+county,10900015,گناباد,geonames-iran-2026-09-19,132961,geonames_admin_feature
+county,10900016,مشهد,geonames-iran-2026-09-19,124665,geonames_admin_feature
+county,10900017,نیشابور,geonames-iran-2026-09-19,122285,geonames_admin_feature
+county,10900018,چناران,geonames-iran-2026-09-19,138742,geonames_admin_feature
+county,10900019,خواف,geonames-iran-2026-09-19,1160544,geonames_admin_feature
+county,10900020,سرخس,geonames-iran-2026-09-19,1159716,geonames_admin_feature
+county,10900022,فریمان,geonames-iran-2026-09-19,134809,geonames_admin_feature
+county,10900023,بردسکن,geonames-iran-2026-09-19,141349,geonames_admin_feature
+county,10900027,رشتخوار,geonames-iran-2026-09-19,118328,geonames_admin_feature
+county,10900028,کلات,geonames-iran-2026-09-19,31265,geonames_admin_feature
+county,10900029,خلیل آباد,geonames-iran-2026-09-19,128025,geonames_admin_feature
+county,10900030,فیض آباد,geonames-iran-2026-09-19,134563,geonames_admin_feature
+county,10900031,بجستان,geonames-iran-2026-09-19,141891,geonames_admin_feature
+county,10900032,طرقبه,geonames-iran-2026-09-19,112616,geonames_admin_feature
+county,10900033,فیروزه,geonames-iran-2026-09-19,31020,geonames_admin_feature
+county,10900034,جغتای,geonames-iran-2026-09-19,130091,geonames_admin_feature
+county,10900035,دولت آباد,geonames-iran-2026-09-19,135743,geonames_admin_feature
+county,10900036,نقاب,geonames-iran-2026-09-19,122375,geonames_admin_feature
+county,10900037,باخرز,coordinate-center-verification-2026-09-19,county:10900037,verified_override
+county,10900038,سلطان آباد,geonames-iran-2026-09-19,114105,geonames_admin_feature
+county,10900039,داورزن,geonames-iran-2026-09-19,137125,geonames_admin_feature
+county,10900040,صالح آباد,coordinate-center-verification-2026-09-19,county:10900040,verified_override
+county,10900041,ریوش,coordinate-center-verification-2026-09-19,county:10900041,verified_override
+county,10900042,خرو,coordinate-center-verification-2026-09-19,county:10900042,verified_override
+county,10900043,ششتمد,geonames-iran-2026-09-19,115226,geonames_admin_feature
+county,10900044,گلبهار,coordinate-center-verification-2026-09-19,county:10900044,verified_override
+county,10900045,عشق آباد,coordinate-center-verification-2026-09-19,county:10900045,verified_override
+county,11000010,کاشان,geonames-iran-2026-09-19,6861211,geonames_admin_feature
+county,11000011,گلپایگان,geonames-iran-2026-09-19,133037,geonames_admin_feature
+county,11000012,زرین شهر,coordinate-center-verification-2026-09-19,county:11000012,verified_override
+county,11000013,نایین,coordinate-center-verification-2026-09-19,county:11000013,verified_override
+county,11000014,نجف آباد,geonames-iran-2026-09-19,418606,geonames_admin_feature
+county,11000015,نطنز,geonames-iran-2026-09-19,122491,geonames_admin_feature
+county,11000016,شاهین شهر,geonames-iran-2026-09-19,417472,geonames_admin_feature
+county,11000017,مبارکه,geonames-iran-2026-09-19,418625,geonames_admin_feature
+county,11000018,آران و بیدگل,geonames-iran-2026-09-19,143122,geonames_admin_feature
+county,11000019,تیران,geonames-iran-2026-09-19,418446,geonames_admin_feature
+county,11000020,چادگان,geonames-iran-2026-09-19,139780,geonames_admin_feature
+county,11000021,دهاقان,geonames-iran-2026-09-19,137057,geonames_admin_feature
+county,11000022,دولت آباد,geonames-iran-2026-09-19,418868,geonames_admin_feature
+county,11000023,خور,geonames-iran-2026-09-19,127029,geonames_admin_feature
+county,11000024,بویین و میاندشت,coordinate-center-verification-2026-09-19,county:11000024,verified_override
+county,11000025,تودشک,coordinate-center-verification-2026-09-19,county:11000025,verified_override
+county,11000026,نیک آباد,coordinate-center-verification-2026-09-19,county:11000026,verified_override
+county,11000027,ورزنه,geonames-iran-2026-09-19,112124,geonames_admin_feature
+county,11000028,هرند,coordinate-center-verification-2026-09-19,county:11000028,verified_override
+county,11100010,زهک,geonames-iran-2026-09-19,1159302,geonames_admin_feature
+county,11100011,دوست محمد,geonames-iran-2026-09-19,1161297,geonames_admin_feature
+county,11100012,گلمورتی,geonames-iran-2026-09-19,7102155,geonames_admin_feature
+county,11100013,مهرستان,geonames-iran-2026-09-19,1159306,geonames_admin_feature
+county,11100014,سوران,geonames-iran-2026-09-19,1159431,geonames_admin_feature
+county,11100015,ادیمی,geonames-iran-2026-09-19,1161887,geonames_admin_feature
+county,11100016,محمدآباد,coordinate-center-verification-2026-09-19,county:11100016,verified_override
+county,11100017,میرجاوه,geonames-iran-2026-09-19,1160258,geonames_admin_feature
+county,11100018,قصرقند,geonames-iran-2026-09-19,1159884,geonames_admin_feature
+county,11100019,فنوج,geonames-iran-2026-09-19,134894,geonames_admin_feature
+county,11100020,بمپور,coordinate-center-verification-2026-09-19,county:11100020,verified_override
+county,11100021,نوک آباد,geonames-iran-2026-09-19,1160088,geonames_admin_feature
+county,11100022,نگور,coordinate-center-verification-2026-09-19,county:11100022,verified_override
+county,11100023,سرباز,geonames-iran-2026-09-19,1159709,geonames_admin_feature
+county,11100024,جالق,coordinate-center-verification-2026-09-19,county:11100024,verified_override
+county,11100025,اسپکه,coordinate-center-verification-2026-09-19,county:11100025,verified_override
+county,11100026,زرآباد,coordinate-center-verification-2026-09-19,county:11100026,verified_override
+county,11200010,دهگلان,geonames-iran-2026-09-19,136773,geonames_admin_feature
+county,11300010,قروه درگزین,coordinate-center-verification-2026-09-19,county:11300010,verified_override
+county,11400010,آلونی,coordinate-center-verification-2026-09-19,county:11400010,verified_override
+county,11400011,مال خلیفه,coordinate-center-verification-2026-09-19,county:11400011,verified_override
+county,11400012,فرخ شهر,coordinate-center-verification-2026-09-19,county:11400012,verified_override
+county,11500010,سراب دوره,geonames-iran-2026-09-19,117345,geonames_admin_feature
+county,11500011,چقابل,geonames-iran-2026-09-19,139015,geonames_admin_feature
+county,11500012,معمولان,coordinate-center-verification-2026-09-19,county:11500012,verified_override
+county,11600010,بدره,geonames-iran-2026-09-19,415694,geonames_admin_feature
+county,11600011,توحید,coordinate-center-verification-2026-09-19,county:11600011,verified_override
+county,11600012,چوار,coordinate-center-verification-2026-09-19,county:11600012,verified_override
+county,11800010,عسلویه,geonames-iran-2026-09-19,142857,geonames_admin_feature
+county,11900010,سلطانیه,coordinate-center-verification-2026-09-19,county:11900010,verified_override
+county,12100011,بهاباد,geonames-iran-2026-09-19,9533956,geonames_admin_feature
+county,12100012,مروست,coordinate-center-verification-2026-09-19,county:12100012,verified_override
+county,12100013,زارچ,geonames-iran-2026-09-19,111407,geonames_admin_feature
+county,12200010,خمیر,coordinate-center-verification-2026-09-19,county:12200010,verified_override
+county,12200011,پارسیان,coordinate-center-verification-2026-09-19,county:12200011,verified_override
+county,12200012,سیریک,coordinate-center-verification-2026-09-19,county:12200012,verified_override
+county,12200013,سردشت,geonames-iran-2026-09-19,117116,geonames_admin_feature
+county,12300010,اسلامشهر,geonames-iran-2026-09-19,449504,geonames_admin_feature
+county,12300012,رباط‌کریم,geonames-iran-2026-09-19,118367,geonames_admin_feature
+county,12300013,پاکدشت,geonames-iran-2026-09-19,9478811,geonames_admin_feature
+county,12300014,فیروزکوه,geonames-iran-2026-09-19,134462,geonames_admin_feature
+county,12300016,قدس,geonames-iran-2026-09-19,120292,geonames_admin_feature
+county,12300017,ملارد,geonames-iran-2026-09-19,125188,geonames_admin_feature
+county,12300018,پیشوا,geonames-iran-2026-09-19,120972,geonames_admin_feature
+county,12300019,گلستان,geonames-iran-2026-09-19,32900,geonames_admin_feature
+county,12300020,پردیس,geonames-iran-2026-09-19,6681051,geonames_admin_feature
+county,12300021,قرچک,geonames-iran-2026-09-19,32767,geonames_admin_feature
+county,12400010,سرعین,coordinate-center-verification-2026-09-19,county:12400010,verified_override
+county,12400011,اصلاندوز,coordinate-center-verification-2026-09-19,county:12400011,verified_override
+county,12400012,تازه کندانگوت,coordinate-center-verification-2026-09-19,county:12400012,verified_override
+county,12700010,آزادشهر,geonames-iran-2026-09-19,110831,geonames_admin_feature
+county,12700011,رامیان,geonames-iran-2026-09-19,118824,geonames_admin_feature
+county,12700012,مراوه,coordinate-center-verification-2026-09-19,county:12700012,verified_override
+county,12700013,گمیش تپه,geonames-iran-2026-09-19,40047,geonames_admin_feature
+county,12700014,گالیکش,geonames-iran-2026-09-19,134282,geonames_admin_feature
+county,12800010,پیش قلعه,coordinate-center-verification-2026-09-19,county:12800010,verified_override
+county,12900010,خوسف,geonames-iran-2026-09-19,127098,geonames_admin_feature
+county,12900011,طبس,coordinate-center-verification-2026-09-19,county:12900011,verified_override
+county,12900012,عشق آباد,coordinate-center-verification-2026-09-19,county:12900012,verified_override

@@ -1317,7 +1317,9 @@
           "center_name",
           "latitude",
           "longitude",
-          "source_id"
+          "source_id",
+          "source_feature_id",
+          "source_name"
         ],
         "properties": {
           "province_id": {
@@ -1332,12 +1334,24 @@
             "minLength": 1
           },
           "latitude": {
-            "type": "number"
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
           },
           "longitude": {
-            "type": "number"
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
           },
           "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_feature_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_name": {
             "type": "string",
             "minLength": 1
           }
@@ -1356,7 +1370,9 @@
           "center_name",
           "latitude",
           "longitude",
-          "source_id"
+          "source_id",
+          "source_feature_id",
+          "source_name"
         ],
         "properties": {
           "county_id": {
@@ -1374,12 +1390,24 @@
             "minLength": 1
           },
           "latitude": {
-            "type": "number"
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
           },
           "longitude": {
-            "type": "number"
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
           },
           "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_feature_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_name": {
             "type": "string",
             "minLength": 1
           }

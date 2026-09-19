@@ -21,7 +21,7 @@ export type DatasetName = "provinces" | "counties" | "districts" | "rurals" | "c
 export type PublicRecord = Record<string, string | number | null>;
 export type Datasets = Record<DatasetName, PublicRecord[]>;
 export type CoordinateDatasetName = "province-capitals" | "county-centers";
-export type CoordinateRecord = Record<string, string | number>;
+export type CoordinateRecord = Record<string, any>;
 export type CoordinateDatasets = Record<CoordinateDatasetName, CoordinateRecord[]>;
 export interface SourceInspection {
   worksheet: string; headers: readonly string[]; totalRows: number; coderecCounts: Record<Coderec, number>;

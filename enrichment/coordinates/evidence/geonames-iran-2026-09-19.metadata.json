@@ -1,0 +1,13 @@
+{
+  "provider": "GeoNames",
+  "upstream_url": "https://download.geonames.org/export/dump/IR.zip",
+  "accessed_on": "2026-09-19",
+  "upstream_dataset": "IR.zip",
+  "upstream_sha256": "c21d0cc96cf645bba2a245921fbcbc9251aa489b59b43e0bf48f4210c9b9902d",
+  "local_extraction": "evidence/geonames-iran-2026-09-19.tsv",
+  "local_extraction_sha256": "2d6eec0d8068fea4a1b83eb25590a8c40c741f94bcce43bb1573f3f2ebfddd0c",
+  "extraction_method": "tools/scripts/capture-coordinate-evidence.mjs@1",
+  "license": "CC BY 4.0; attribution to GeoNames is required",
+  "status": "derived/non-official",
+  "records": 483
+}

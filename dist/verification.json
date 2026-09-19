@@ -274,6 +274,14 @@
         "invalidCoordinates": 0,
         "missingProvenance": 0
       },
+      "coordinateRows": 515,
+      "sourceFeatureIdsResolved": 515,
+      "coordinateSnapshotMatches": 515,
+      "identityEvidenceRows": 515,
+      "identityEvidenceResolved": 515,
+      "missingIdentityEvidence": 0,
+      "duplicateIdentityMappings": 0,
+      "invalidSourceFeatureIds": 0,
       "formatParity": {
         "passed": true,
         "rowCounts": {
@@ -290,7 +298,11 @@
           "accessed_on": "2026-09-19",
           "license": "CC BY 4.0; attribution to GeoNames is required",
           "status": "derived",
-          "notes": "A committed, one-time curated subset of the GeoNames Iran dump. It supplies point coordinates for province capitals and county seats; it is not part of the official administrative workbook and is not a centroid or polygon dataset."
+          "notes": "A committed, one-time curated subset of the GeoNames Iran dump. It supplies point coordinates for province capitals and county seats; it is not part of the official administrative workbook and is not a centroid or polygon dataset.",
+          "evidence": {
+            "metadata": "enrichment/coordinates/evidence/geonames-iran-2026-09-19.metadata.json",
+            "extraction": "enrichment/coordinates/evidence/geonames-iran-2026-09-19.tsv"
+          }
         }
       ]
     },

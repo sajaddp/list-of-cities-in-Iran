@@ -6,7 +6,9 @@
     "center_name": "اراک",
     "latitude": 34.09493,
     "longitude": 49.69809,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143127",
+    "source_name": "Arāk"
   },
   {
     "county_id": 1000002,
@@ -15,7 +17,9 @@
     "center_name": "آشتیان",
     "latitude": 34.52298,
     "longitude": 50.00608,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142744",
+    "source_name": "Āshtīān"
   },
   {
     "county_id": 1000003,
@@ -24,7 +28,9 @@
     "center_name": "تفرش",
     "latitude": 34.69307,
     "longitude": 50.01601,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113636",
+    "source_name": "Tafresh"
   },
   {
     "county_id": 1000004,
@@ -33,7 +39,9 @@
     "center_name": "خمین",
     "latitude": 33.63889,
     "longitude": 50.08003,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127403",
+    "source_name": "Khomeyn"
   },
   {
     "county_id": 1000005,
@@ -42,7 +50,9 @@
     "center_name": "دلیجان",
     "latitude": 33.9905,
     "longitude": 50.6838,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136399",
+    "source_name": "Delījān"
   },
   {
     "county_id": 1000006,
@@ -51,7 +61,9 @@
     "center_name": "ساوه",
     "latitude": 35.0213,
     "longitude": 50.3566,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116667",
+    "source_name": "Sāveh"
   },
   {
     "county_id": 1000007,
@@ -60,7 +72,9 @@
     "center_name": "شازند",
     "latitude": 33.93132,
     "longitude": 49.40629,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142567",
+    "source_name": "Shāzand"
   },
   {
     "county_id": 1000009,
@@ -69,7 +83,9 @@
     "center_name": "محلات",
     "latitude": 33.91108,
     "longitude": 50.45317,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125438",
+    "source_name": "Maḩallāt"
   },
   {
     "county_id": 1010001,
@@ -78,7 +94,9 @@
     "center_name": "آستارا",
     "latitude": 38.43084,
     "longitude": 48.86994,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142676",
+    "source_name": "Āstārā"
   },
   {
     "county_id": 1010002,
@@ -87,7 +105,9 @@
     "center_name": "آستانه اشرفیه",
     "latitude": 37.26318,
     "longitude": 49.94325,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142679",
+    "source_name": "Āstāneh-ye Ashrafīyeh"
   },
   {
     "county_id": 1010003,
@@ -96,7 +116,9 @@
     "center_name": "بندرانزلی",
     "latitude": 37.47318,
     "longitude": 49.45785,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141679",
+    "source_name": "Bandar-e Anzalī"
   },
   {
     "county_id": 1010004,
@@ -105,7 +127,9 @@
     "center_name": "هشتپر (تالش)",
     "latitude": 37.79658,
     "longitude": 48.90521,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113343",
+    "source_name": "Hashtpar"
   },
   {
     "county_id": 1010005,
@@ -114,7 +138,9 @@
     "center_name": "رشت",
     "latitude": 37.27611,
     "longitude": 49.58862,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118743",
+    "source_name": "Rasht"
   },
   {
     "county_id": 1010006,
@@ -123,7 +149,9 @@
     "center_name": "رودبار",
     "latitude": 36.8211,
     "longitude": 49.4264,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "41151",
+    "source_name": "Pā’īn-e Bāzār-e Rūdbār"
   },
   {
     "county_id": 1010007,
@@ -132,7 +160,9 @@
     "center_name": "رودسر",
     "latitude": 37.13696,
     "longitude": 50.29174,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118191",
+    "source_name": "Rūdsar"
   },
   {
     "county_id": 1010008,
@@ -141,7 +171,9 @@
     "center_name": "صومعه سرا",
     "latitude": 37.30134,
     "longitude": 49.31504,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113860",
+    "source_name": "Şowme‘eh Sarā"
   },
   {
     "county_id": 1010009,
@@ -150,7 +182,9 @@
     "center_name": "فومن",
     "latitude": 37.224,
     "longitude": 49.3125,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134441",
+    "source_name": "Fūman"
   },
   {
     "county_id": 1020001,
@@ -159,7 +193,9 @@
     "center_name": "آمل",
     "latitude": 36.46961,
     "longitude": 52.35072,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143534",
+    "source_name": "Āmol"
   },
   {
     "county_id": 1020002,
@@ -168,7 +204,9 @@
     "center_name": "بابل",
     "latitude": 36.55102,
     "longitude": 52.6786,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142363",
+    "source_name": "Bābol"
   },
   {
     "county_id": 1020004,
@@ -177,7 +215,9 @@
     "center_name": "بهشهر",
     "latitude": 36.69235,
     "longitude": 53.55262,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140918",
+    "source_name": "Behshahr"
   },
   {
     "county_id": 1020005,
@@ -186,7 +226,9 @@
     "center_name": "تنکابن",
     "latitude": 36.81626,
     "longitude": 50.87376,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112656",
+    "source_name": "Tonekābon"
   },
   {
     "county_id": 1020006,
@@ -195,7 +237,9 @@
     "center_name": "رامسر",
     "latitude": 36.91796,
     "longitude": 50.64802,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117773",
+    "source_name": "Rāmsar"
   },
   {
     "county_id": 1020007,
@@ -204,7 +248,9 @@
     "center_name": "ساری",
     "latitude": 36.56332,
     "longitude": 53.06009,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116996",
+    "source_name": "Sari"
   },
   {
     "county_id": 1020008,
@@ -213,7 +259,9 @@
     "center_name": "پل سفید",
     "latitude": 36.11787,
     "longitude": 53.05531,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120936",
+    "source_name": "Pol-e Sefīd"
   },
   {
     "county_id": 1030002,
@@ -222,7 +270,9 @@
     "center_name": "اهر",
     "latitude": 38.4774,
     "longitude": 47.0699,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144616",
+    "source_name": "Ahar"
   },
   {
     "county_id": 1030003,
@@ -231,7 +281,9 @@
     "center_name": "تبریز",
     "latitude": 38.08,
     "longitude": 46.2919,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113646",
+    "source_name": "Tabriz"
   },
   {
     "county_id": 1030005,
@@ -240,7 +292,9 @@
     "center_name": "سراب",
     "latitude": 37.9408,
     "longitude": 47.5367,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117368",
+    "source_name": "Sarāb"
   },
   {
     "county_id": 1030006,
@@ -249,7 +303,9 @@
     "center_name": "مراغه",
     "latitude": 37.39206,
     "longitude": 46.23909,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124877",
+    "source_name": "Marāgheh"
   },
   {
     "county_id": 1030007,
@@ -258,7 +314,9 @@
     "center_name": "مرند",
     "latitude": 38.4329,
     "longitude": 45.7749,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124862",
+    "source_name": "Marand"
   },
   {
     "county_id": 1040001,
@@ -267,7 +325,9 @@
     "center_name": "ارومیه",
     "latitude": 37.55274,
     "longitude": 45.07605,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121801",
+    "source_name": "Orūmīyeh"
   },
   {
     "county_id": 1040002,
@@ -276,7 +336,9 @@
     "center_name": "پیرانشهر",
     "latitude": 36.701,
     "longitude": 45.1413,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121110",
+    "source_name": "Piranshahr"
   },
   {
     "county_id": 1040003,
@@ -285,7 +347,9 @@
     "center_name": "خوی",
     "latitude": 38.5503,
     "longitude": 44.9521,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "126972",
+    "source_name": "Khūy"
   },
   {
     "county_id": 1040004,
@@ -294,7 +358,9 @@
     "center_name": "سردشت",
     "latitude": 36.1552,
     "longitude": 45.4788,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117111",
+    "source_name": "Sardasht"
   },
   {
     "county_id": 1040005,
@@ -303,7 +369,9 @@
     "center_name": "سلماس",
     "latitude": 38.1973,
     "longitude": 44.7653,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117656",
+    "source_name": "Salmās"
   },
   {
     "county_id": 1040006,
@@ -312,7 +380,9 @@
     "center_name": "ماکو",
     "latitude": 39.28992,
     "longitude": 44.46035,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125205",
+    "source_name": "Maku"
   },
   {
     "county_id": 1040007,
@@ -321,7 +391,9 @@
     "center_name": "مهاباد",
     "latitude": 36.7631,
     "longitude": 45.7222,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125446",
+    "source_name": "Mahābād"
   },
   {
     "county_id": 1040008,
@@ -330,7 +402,9 @@
     "center_name": "میاندوآب",
     "latitude": 36.96667,
     "longitude": 46.10961,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124085",
+    "source_name": "Mīāndoāb"
   },
   {
     "county_id": 1040009,
@@ -339,7 +413,9 @@
     "center_name": "نقده",
     "latitude": 36.9553,
     "longitude": 45.388,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122698",
+    "source_name": "Naqadeh"
   },
   {
     "county_id": 1050001,
@@ -348,7 +424,9 @@
     "center_name": "اسلام آبادغرب",
     "latitude": 34.1089,
     "longitude": 46.52988,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135175",
+    "source_name": "Eslāmābād-e Gharb"
   },
   {
     "county_id": 1050002,
@@ -357,7 +435,9 @@
     "center_name": "کرمانشاه",
     "latitude": 34.31417,
     "longitude": 47.065,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128226",
+    "source_name": "Kermanshah"
   },
   {
     "county_id": 1050003,
@@ -366,7 +446,9 @@
     "center_name": "پاوه",
     "latitude": 35.0434,
     "longitude": 46.3565,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121240",
+    "source_name": "Pāveh"
   },
   {
     "county_id": 1050004,
@@ -375,7 +457,9 @@
     "center_name": "سرپل ذهاب",
     "latitude": 34.46109,
     "longitude": 45.86264,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120931",
+    "source_name": "Sarpol-e Z̄ahāb"
   },
   {
     "county_id": 1050005,
@@ -384,7 +468,9 @@
     "center_name": "سنقر",
     "latitude": 34.78187,
     "longitude": 47.59945,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "114049",
+    "source_name": "Sonqor"
   },
   {
     "county_id": 1050006,
@@ -393,7 +479,9 @@
     "center_name": "قصرشیرین",
     "latitude": 34.5156,
     "longitude": 45.5791,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119586",
+    "source_name": "Qaşr-e Shīrīn"
   },
   {
     "county_id": 1050007,
@@ -402,7 +490,9 @@
     "center_name": "کنگاور",
     "latitude": 34.5043,
     "longitude": 47.9653,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128831",
+    "source_name": "Kangāvar"
   },
   {
     "county_id": 1050008,
@@ -411,7 +501,9 @@
     "center_name": "گیلانغرب",
     "latitude": 34.1421,
     "longitude": 45.9203,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "133345",
+    "source_name": "Gīlān-e Gharb"
   },
   {
     "county_id": 1050009,
@@ -420,7 +512,9 @@
     "center_name": "جوانرود",
     "latitude": 34.8067,
     "longitude": 46.4913,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "25883",
+    "source_name": "Javānrūd"
   },
   {
     "county_id": 1060001,
@@ -429,7 +523,9 @@
     "center_name": "آبادان",
     "latitude": 30.3392,
     "longitude": 48.3043,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "145459",
+    "source_name": "Abadan"
   },
   {
     "county_id": 1060002,
@@ -438,7 +534,9 @@
     "center_name": "اندیمشک",
     "latitude": 32.4615,
     "longitude": 48.35368,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143420",
+    "source_name": "Andīmeshk"
   },
   {
     "county_id": 1060003,
@@ -447,7 +545,9 @@
     "center_name": "اهواز",
     "latitude": 31.31901,
     "longitude": 48.6842,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144448",
+    "source_name": "Ahvaz"
   },
   {
     "county_id": 1060004,
@@ -456,7 +556,9 @@
     "center_name": "ایذه",
     "latitude": 31.83027,
     "longitude": 49.86756,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130697",
+    "source_name": "Īz̄eh"
   },
   {
     "county_id": 1060005,
@@ -465,7 +567,9 @@
     "center_name": "بندر ماهشهر",
     "latitude": 30.55655,
     "longitude": 49.18852,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141663",
+    "source_name": "Bandar-e Māhshahr"
   },
   {
     "county_id": 1060006,
@@ -474,7 +578,9 @@
     "center_name": "بهبهان",
     "latitude": 30.5959,
     "longitude": 50.2417,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140951",
+    "source_name": "Behbahān"
   },
   {
     "county_id": 1060007,
@@ -483,7 +589,9 @@
     "center_name": "خرمشهر",
     "latitude": 30.44079,
     "longitude": 48.18428,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127319",
+    "source_name": "Khorramshahr"
   },
   {
     "county_id": 1060008,
@@ -492,7 +600,9 @@
     "center_name": "دزفول",
     "latitude": 32.38114,
     "longitude": 48.40581,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136256",
+    "source_name": "Dezful"
   },
   {
     "county_id": 1060009,
@@ -501,7 +611,9 @@
     "center_name": "سوسنگرد",
     "latitude": 31.5635,
     "longitude": 48.18958,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137268",
+    "source_name": "Sūsangerd"
   },
   {
     "county_id": 1070001,
@@ -510,7 +622,9 @@
     "center_name": "آباده",
     "latitude": 31.1608,
     "longitude": 52.6506,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "145449",
+    "source_name": "Abadeh"
   },
   {
     "county_id": 1070002,
@@ -519,7 +633,9 @@
     "center_name": "استهبان",
     "latitude": 29.1266,
     "longitude": 54.0421,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135094",
+    "source_name": "Estahbān"
   },
   {
     "county_id": 1070003,
@@ -528,7 +644,9 @@
     "center_name": "اقلید",
     "latitude": 30.89885,
     "longitude": 52.69701,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135355",
+    "source_name": "Eqlīd"
   },
   {
     "county_id": 1070004,
@@ -537,7 +655,9 @@
     "center_name": "جهرم",
     "latitude": 28.5,
     "longitude": 53.5605,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130531",
+    "source_name": "Jahrom"
   },
   {
     "county_id": 1070005,
@@ -546,7 +666,9 @@
     "center_name": "داراب",
     "latitude": 28.75171,
     "longitude": 54.54065,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137956",
+    "source_name": "Dārāb"
   },
   {
     "county_id": 1070006,
@@ -555,7 +677,9 @@
     "center_name": "اردکان",
     "latitude": 30.25961,
     "longitude": 51.98491,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "403656",
+    "source_name": "Ārdaḵān"
   },
   {
     "county_id": 1070007,
@@ -564,7 +688,9 @@
     "center_name": "شیراز",
     "latitude": 29.61031,
     "longitude": 52.53113,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "115019",
+    "source_name": "Shiraz"
   },
   {
     "county_id": 1070008,
@@ -573,7 +699,9 @@
     "center_name": "فسا",
     "latitude": 28.9383,
     "longitude": 53.6482,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134721",
+    "source_name": "Fasā"
   },
   {
     "county_id": 1070009,
@@ -582,7 +710,9 @@
     "center_name": "فیروزآباد",
     "latitude": 28.84459,
     "longitude": 52.57151,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134518",
+    "source_name": "Fīrūzābād"
   },
   {
     "county_id": 1080001,
@@ -591,7 +721,9 @@
     "center_name": "بافت",
     "latitude": 29.2331,
     "longitude": 56.6022,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142247",
+    "source_name": "Bāft"
   },
   {
     "county_id": 1080002,
@@ -600,7 +732,9 @@
     "center_name": "بم",
     "latitude": 29.106,
     "longitude": 58.357,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141736",
+    "source_name": "Bam"
   },
   {
     "county_id": 1080003,
@@ -609,7 +743,9 @@
     "center_name": "جیرفت",
     "latitude": 28.67806,
     "longitude": 57.74056,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6925362",
+    "source_name": "Jīroft"
   },
   {
     "county_id": 1080004,
@@ -618,7 +754,9 @@
     "center_name": "رفسنجان",
     "latitude": 30.4067,
     "longitude": 55.9939,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118994",
+    "source_name": "Rafsanjān"
   },
   {
     "county_id": 1080005,
@@ -627,7 +765,9 @@
     "center_name": "زرند",
     "latitude": 30.81271,
     "longitude": 56.56399,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111421",
+    "source_name": "Zarand"
   },
   {
     "county_id": 1080006,
@@ -636,7 +776,9 @@
     "center_name": "سیرجان",
     "latitude": 29.45137,
     "longitude": 55.6809,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "114259",
+    "source_name": "Sirjan"
   },
   {
     "county_id": 1080007,
@@ -645,7 +787,9 @@
     "center_name": "شهربابک",
     "latitude": 30.1165,
     "longitude": 55.1186,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "115781",
+    "source_name": "Shahr-e Bābak"
   },
   {
     "county_id": 1080008,
@@ -654,7 +798,9 @@
     "center_name": "کرمان",
     "latitude": 30.28321,
     "longitude": 57.07879,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128234",
+    "source_name": "Kerman"
   },
   {
     "county_id": 1080009,
@@ -663,7 +809,9 @@
     "center_name": "کهنوج",
     "latitude": 27.94034,
     "longitude": 57.69983,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6961608",
+    "source_name": "Kahnūj"
   },
   {
     "county_id": 1090004,
@@ -672,7 +820,9 @@
     "center_name": "تایباد",
     "latitude": 34.74,
     "longitude": 60.7756,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159384",
+    "source_name": "Tāybād"
   },
   {
     "county_id": 1090005,
@@ -681,7 +831,9 @@
     "center_name": "تربت حیدریه",
     "latitude": 35.27401,
     "longitude": 59.21949,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112646",
+    "source_name": "Torbat-e Ḩeydarīyeh"
   },
   {
     "county_id": 1090006,
@@ -690,7 +842,9 @@
     "center_name": "تربت جام",
     "latitude": 35.244,
     "longitude": 60.6225,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159362",
+    "source_name": "Torbat-e Jām"
   },
   {
     "county_id": 1090007,
@@ -699,7 +853,9 @@
     "center_name": "درگز",
     "latitude": 37.44447,
     "longitude": 59.10809,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137585",
+    "source_name": "Dargaz"
   },
   {
     "county_id": 1090008,
@@ -708,7 +864,9 @@
     "center_name": "سبزوار",
     "latitude": 36.2126,
     "longitude": 57.68191,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118063",
+    "source_name": "Sabzevar"
   },
   {
     "county_id": 1100001,
@@ -717,7 +875,9 @@
     "center_name": "اردستان",
     "latitude": 33.37939,
     "longitude": 52.36981,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143052",
+    "source_name": "Ardestān"
   },
   {
     "county_id": 1100002,
@@ -726,7 +886,9 @@
     "center_name": "اصفهان",
     "latitude": 32.65246,
     "longitude": 51.67462,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418863",
+    "source_name": "Isfahan"
   },
   {
     "county_id": 1100003,
@@ -735,7 +897,9 @@
     "center_name": "خمینی شهر",
     "latitude": 32.6856,
     "longitude": 51.53609,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418710",
+    "source_name": "Khomeynī Shahr"
   },
   {
     "county_id": 1100004,
@@ -744,7 +908,9 @@
     "center_name": "خوانسار",
     "latitude": 33.22052,
     "longitude": 50.31497,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127033",
+    "source_name": "Khānsār"
   },
   {
     "county_id": 1100005,
@@ -753,7 +919,9 @@
     "center_name": "سمیرم",
     "latitude": 31.41667,
     "longitude": 51.56667,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116406",
+    "source_name": "Semīrom"
   },
   {
     "county_id": 1100006,
@@ -762,7 +930,9 @@
     "center_name": "داران",
     "latitude": 32.98741,
     "longitude": 50.4108,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137929",
+    "source_name": "Dārān"
   },
   {
     "county_id": 1100007,
@@ -771,7 +941,9 @@
     "center_name": "فریدونشهر",
     "latitude": 32.94195,
     "longitude": 50.11991,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134601",
+    "source_name": "Fereydūnshahr"
   },
   {
     "county_id": 1100008,
@@ -780,7 +952,9 @@
     "center_name": "فلاورجان",
     "latitude": 32.5553,
     "longitude": 51.50973,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418851",
+    "source_name": "Falāvarjān"
   },
   {
     "county_id": 1100009,
@@ -789,7 +963,9 @@
     "center_name": "شهرضا",
     "latitude": 32.00877,
     "longitude": 51.86407,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418533",
+    "source_name": "Shahreẕā"
   },
   {
     "county_id": 1110001,
@@ -798,7 +974,9 @@
     "center_name": "ایرانشهر",
     "latitude": 27.20245,
     "longitude": 60.68476,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160939",
+    "source_name": "Iranshahr"
   },
   {
     "county_id": 1110002,
@@ -807,7 +985,9 @@
     "center_name": "چاه بهار",
     "latitude": 25.2919,
     "longitude": 60.643,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1161724",
+    "source_name": "Chabahar"
   },
   {
     "county_id": 1110003,
@@ -816,7 +996,9 @@
     "center_name": "خاش",
     "latitude": 28.22107,
     "longitude": 61.21582,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160571",
+    "source_name": "Khāsh"
   },
   {
     "county_id": 1110004,
@@ -825,7 +1007,9 @@
     "center_name": "زابل",
     "latitude": 31.0306,
     "longitude": 61.4949,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1113217",
+    "source_name": "Zābol"
   },
   {
     "county_id": 1110005,
@@ -834,7 +1018,9 @@
     "center_name": "زاهدان",
     "latitude": 29.4963,
     "longitude": 60.8629,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159301",
+    "source_name": "Zahedan"
   },
   {
     "county_id": 1110006,
@@ -843,7 +1029,9 @@
     "center_name": "سراوان",
     "latitude": 27.37089,
     "longitude": 62.33096,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159713",
+    "source_name": "Sarāvān"
   },
   {
     "county_id": 1110007,
@@ -852,7 +1040,9 @@
     "center_name": "نیک شهر",
     "latitude": 26.2258,
     "longitude": 60.2143,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160110",
+    "source_name": "Nīkshahr"
   },
   {
     "county_id": 1110008,
@@ -861,7 +1051,9 @@
     "center_name": "راسک",
     "latitude": 26.23682,
     "longitude": 61.39901,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159836",
+    "source_name": "Rāsak"
   },
   {
     "county_id": 1110009,
@@ -870,7 +1062,9 @@
     "center_name": "کنارک",
     "latitude": 25.3604,
     "longitude": 60.3995,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160500",
+    "source_name": "Konārak"
   },
   {
     "county_id": 1120001,
@@ -879,7 +1073,9 @@
     "center_name": "بانه",
     "latitude": 35.9975,
     "longitude": 45.8853,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141584",
+    "source_name": "Bāneh"
   },
   {
     "county_id": 1120002,
@@ -888,7 +1084,9 @@
     "center_name": "بیجار",
     "latitude": 35.8668,
     "longitude": 47.60506,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140521",
+    "source_name": "Bījār"
   },
   {
     "county_id": 1120003,
@@ -897,7 +1095,9 @@
     "center_name": "سقز",
     "latitude": 36.24992,
     "longitude": 46.2735,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117392",
+    "source_name": "Saqqez"
   },
   {
     "county_id": 1120004,
@@ -906,7 +1106,9 @@
     "center_name": "سنندج",
     "latitude": 35.31495,
     "longitude": 46.99883,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117574",
+    "source_name": "Sanandaj"
   },
   {
     "county_id": 1120005,
@@ -915,7 +1117,9 @@
     "center_name": "قروه",
     "latitude": 35.1664,
     "longitude": 47.80564,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119161",
+    "source_name": "Qorveh"
   },
   {
     "county_id": 1120006,
@@ -924,7 +1128,9 @@
     "center_name": "مریوان",
     "latitude": 35.51829,
     "longitude": 46.18298,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124778",
+    "source_name": "Marīvān"
   },
   {
     "county_id": 1120007,
@@ -933,7 +1139,9 @@
     "center_name": "دیواندره",
     "latitude": 35.9139,
     "longitude": 47.0239,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136156",
+    "source_name": "Dīvāndarreh"
   },
   {
     "county_id": 1120008,
@@ -942,7 +1150,9 @@
     "center_name": "کامیاران",
     "latitude": 34.79535,
     "longitude": 46.93682,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128905",
+    "source_name": "Kāmyārān"
   },
   {
     "county_id": 1120009,
@@ -951,7 +1161,9 @@
     "center_name": "سروآباد",
     "latitude": 35.3126,
     "longitude": 46.3669,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116739",
+    "source_name": "Sarvābād"
   },
   {
     "county_id": 1130001,
@@ -960,7 +1172,9 @@
     "center_name": "تویسرکان",
     "latitude": 34.551,
     "longitude": 48.44353,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112422",
+    "source_name": "Tūyserkān"
   },
   {
     "county_id": 1130002,
@@ -969,7 +1183,9 @@
     "center_name": "ملایر",
     "latitude": 34.30158,
     "longitude": 48.82166,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125185",
+    "source_name": "Malāyer"
   },
   {
     "county_id": 1130003,
@@ -978,7 +1194,9 @@
     "center_name": "نهاوند",
     "latitude": 34.19088,
     "longitude": 48.37446,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122915",
+    "source_name": "Nahāvand"
   },
   {
     "county_id": 1130004,
@@ -987,7 +1205,9 @@
     "center_name": "همدان",
     "latitude": 34.79922,
     "longitude": 48.51456,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132144",
+    "source_name": "Hamadān"
   },
   {
     "county_id": 1130005,
@@ -996,7 +1216,9 @@
     "center_name": "کبودرآهنگ",
     "latitude": 35.20924,
     "longitude": 48.72341,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "129904",
+    "source_name": "Kabūdarāhang"
   },
   {
     "county_id": 1130006,
@@ -1005,7 +1227,9 @@
     "center_name": "اسدآباد",
     "latitude": 34.78241,
     "longitude": 48.12012,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142872",
+    "source_name": "Asadābād"
   },
   {
     "county_id": 1130007,
@@ -1014,7 +1238,9 @@
     "center_name": "بهار",
     "latitude": 34.9072,
     "longitude": 48.4414,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142000",
+    "source_name": "Bahār"
   },
   {
     "county_id": 1130008,
@@ -1023,7 +1249,9 @@
     "center_name": "رزن",
     "latitude": 35.38625,
     "longitude": 49.0334,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118681",
+    "source_name": "Razan"
   },
   {
     "county_id": 1130009,
@@ -1032,7 +1260,9 @@
     "center_name": "فامنین",
     "latitude": 35.11593,
     "longitude": 48.97336,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134906",
+    "source_name": "Fāmenīn"
   },
   {
     "county_id": 1140001,
@@ -1041,7 +1271,9 @@
     "center_name": "بروجن",
     "latitude": 31.96523,
     "longitude": 51.2873,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140046",
+    "source_name": "Borūjen"
   },
   {
     "county_id": 1140002,
@@ -1050,7 +1282,9 @@
     "center_name": "شهرکرد",
     "latitude": 32.32612,
     "longitude": 50.8572,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "115770",
+    "source_name": "Shahr-e Kord"
   },
   {
     "county_id": 1140003,
@@ -1059,7 +1293,9 @@
     "center_name": "فارسان",
     "latitude": 32.25694,
     "longitude": 50.56095,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134762",
+    "source_name": "Fārsān"
   },
   {
     "county_id": 1140004,
@@ -1068,7 +1304,9 @@
     "center_name": "لردگان",
     "latitude": 31.51338,
     "longitude": 50.82672,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125609",
+    "source_name": "Lordegān"
   },
   {
     "county_id": 1140005,
@@ -1077,7 +1315,9 @@
     "center_name": "اردل",
     "latitude": 31.99969,
     "longitude": 50.66231,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143070",
+    "source_name": "Ardal"
   },
   {
     "county_id": 1140006,
@@ -1086,7 +1326,9 @@
     "center_name": "چلگرد",
     "latitude": 32.4672,
     "longitude": 50.12229,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "138799",
+    "source_name": "Chelgard"
   },
   {
     "county_id": 1140007,
@@ -1095,7 +1337,9 @@
     "center_name": "شلمزار",
     "latitude": 32.0465,
     "longitude": 50.81639,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "115607",
+    "source_name": "Shalamzār"
   },
   {
     "county_id": 1140008,
@@ -1104,7 +1348,9 @@
     "center_name": "سامان",
     "latitude": 32.45014,
     "longitude": 50.91092,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117627",
+    "source_name": "Sāmān"
   },
   {
     "county_id": 1140009,
@@ -1113,7 +1359,9 @@
     "center_name": "بن",
     "latitude": 32.54037,
     "longitude": 50.74515,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140891",
+    "source_name": "Ben"
   },
   {
     "county_id": 1150001,
@@ -1122,7 +1370,9 @@
     "center_name": "الیگودرز",
     "latitude": 33.404,
     "longitude": 49.69179,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143921",
+    "source_name": "Alīgūdarz"
   },
   {
     "county_id": 1150002,
@@ -1131,7 +1381,9 @@
     "center_name": "بروجرد",
     "latitude": 33.8973,
     "longitude": 48.7516,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140044",
+    "source_name": "Borūjerd"
   },
   {
     "county_id": 1150003,
@@ -1140,7 +1392,9 @@
     "center_name": "خرم آباد",
     "latitude": 33.48778,
     "longitude": 48.35583,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127349",
+    "source_name": "Khorramabad"
   },
   {
     "county_id": 1150004,
@@ -1149,7 +1403,9 @@
     "center_name": "نورآباد",
     "latitude": 34.0734,
     "longitude": 47.9725,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "24851",
+    "source_name": "Nūrābād"
   },
   {
     "county_id": 1150005,
@@ -1158,7 +1414,9 @@
     "center_name": "دورود",
     "latitude": 33.49218,
     "longitude": 49.0616,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135878",
+    "source_name": "Dorūd"
   },
   {
     "county_id": 1150006,
@@ -1167,7 +1425,9 @@
     "center_name": "کوهدشت",
     "latitude": 33.53335,
     "longitude": 47.60999,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "126409",
+    "source_name": "Kūhdasht"
   },
   {
     "county_id": 1150007,
@@ -1176,7 +1436,9 @@
     "center_name": "ازنا",
     "latitude": 33.45643,
     "longitude": 49.45646,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142497",
+    "source_name": "Aznā"
   },
   {
     "county_id": 1150008,
@@ -1185,7 +1447,9 @@
     "center_name": "پلدختر",
     "latitude": 33.15249,
     "longitude": 47.71014,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120949",
+    "source_name": "Poldokhtar"
   },
   {
     "county_id": 1150009,
@@ -1194,7 +1458,9 @@
     "center_name": "الشتر",
     "latitude": 33.86419,
     "longitude": 48.26258,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144269",
+    "source_name": "Aleshtar"
   },
   {
     "county_id": 1160001,
@@ -1203,7 +1469,9 @@
     "center_name": "ایلام",
     "latitude": 33.6374,
     "longitude": 46.4227,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130802",
+    "source_name": "Īlām"
   },
   {
     "county_id": 1160002,
@@ -1212,7 +1480,9 @@
     "center_name": "دره شهر",
     "latitude": 33.14447,
     "longitude": 47.3799,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137436",
+    "source_name": "Darreh Shahr"
   },
   {
     "county_id": 1160003,
@@ -1221,7 +1491,9 @@
     "center_name": "دهلران",
     "latitude": 32.6941,
     "longitude": 47.2679,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136702",
+    "source_name": "Dehlorān"
   },
   {
     "county_id": 1160004,
@@ -1230,7 +1502,9 @@
     "center_name": "سرابله",
     "latitude": 33.76772,
     "longitude": 46.56578,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117304",
+    "source_name": "Sarābleh"
   },
   {
     "county_id": 1160005,
@@ -1239,7 +1513,9 @@
     "center_name": "مهران",
     "latitude": 33.1222,
     "longitude": 46.1646,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124291",
+    "source_name": "Mehrān"
   },
   {
     "county_id": 1160006,
@@ -1248,7 +1524,9 @@
     "center_name": "آبدانان",
     "latitude": 32.9926,
     "longitude": 47.4198,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "145233",
+    "source_name": "Ābdānān"
   },
   {
     "county_id": 1160007,
@@ -1257,7 +1535,9 @@
     "center_name": "ایوان",
     "latitude": 33.8272,
     "longitude": 46.3097,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "129929",
+    "source_name": "Eyvān"
   },
   {
     "county_id": 1160008,
@@ -1266,7 +1546,9 @@
     "center_name": "ارکواز",
     "latitude": 33.3828,
     "longitude": 46.5983,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120539",
+    "source_name": "Arkavaz"
   },
   {
     "county_id": 1160009,
@@ -1275,7 +1557,9 @@
     "center_name": "لومار",
     "latitude": 33.56522,
     "longitude": 46.814,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "401555",
+    "source_name": "Lūmār"
   },
   {
     "county_id": 1170001,
@@ -1284,7 +1568,9 @@
     "center_name": "یاسوج",
     "latitude": 30.66824,
     "longitude": 51.58796,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "66093",
+    "source_name": "Yasuj"
   },
   {
     "county_id": 1170002,
@@ -1293,7 +1579,9 @@
     "center_name": "دهدشت",
     "latitude": 30.79337,
     "longitude": 50.56508,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136987",
+    "source_name": "Dehdasht"
   },
   {
     "county_id": 1170003,
@@ -1302,7 +1590,9 @@
     "center_name": "دوگنبدان",
     "latitude": 30.3586,
     "longitude": 50.7981,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136014",
+    "source_name": "Dogonbadan"
   },
   {
     "county_id": 1170004,
@@ -1311,7 +1601,9 @@
     "center_name": "سی سخت",
     "latitude": 30.86393,
     "longitude": 51.4559,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137013",
+    "source_name": "Sīsakht"
   },
   {
     "county_id": 1170005,
@@ -1320,7 +1612,9 @@
     "center_name": "لیکک",
     "latitude": 30.8949,
     "longitude": 50.0931,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125688",
+    "source_name": "Līkak"
   },
   {
     "county_id": 1170006,
@@ -1329,7 +1623,9 @@
     "center_name": "چرام",
     "latitude": 30.75561,
     "longitude": 50.74522,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "138989",
+    "source_name": "Charām"
   },
   {
     "county_id": 1170007,
@@ -1338,7 +1634,9 @@
     "center_name": "باشت",
     "latitude": 30.361,
     "longitude": 51.15735,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141124",
+    "source_name": "Bāsht"
   },
   {
     "county_id": 1170008,
@@ -1347,7 +1645,9 @@
     "center_name": "لنده",
     "latitude": 30.98215,
     "longitude": 50.4206,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125726",
+    "source_name": "Landeh"
   },
   {
     "county_id": 1170009,
@@ -1356,7 +1656,9 @@
     "center_name": "مارگون",
     "latitude": 30.99237,
     "longitude": 51.08253,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124771",
+    "source_name": "Mārgown"
   },
   {
     "county_id": 1180001,
@@ -1365,7 +1667,9 @@
     "center_name": "بوشهر",
     "latitude": 28.96887,
     "longitude": 50.83657,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "139817",
+    "source_name": "Bushehr"
   },
   {
     "county_id": 1180002,
@@ -1374,7 +1678,9 @@
     "center_name": "اهرم",
     "latitude": 28.8826,
     "longitude": 51.2746,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144484",
+    "source_name": "Ahram"
   },
   {
     "county_id": 1180003,
@@ -1383,7 +1689,9 @@
     "center_name": "برازجان",
     "latitude": 29.2699,
     "longitude": 51.2188,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140097",
+    "source_name": "Borāzjān"
   },
   {
     "county_id": 1180004,
@@ -1392,7 +1700,9 @@
     "center_name": "خورموج",
     "latitude": 28.6543,
     "longitude": 51.38,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127014",
+    "source_name": "Khūrmūj"
   },
   {
     "county_id": 1180005,
@@ -1401,16 +1711,20 @@
     "center_name": "بندردیر",
     "latitude": 27.8399,
     "longitude": 51.9378,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136280",
+    "source_name": "Bandar-e Deyr"
   },
   {
     "county_id": 1180006,
     "county_name": "کنگان",
     "province_id": 118,
     "center_name": "بندرکنگان",
-    "latitude": 27.837,
-    "longitude": 52.062,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 27.83434,
+    "longitude": 52.06306,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128847",
+    "source_name": "Bandar-e Kangān"
   },
   {
     "county_id": 1180007,
@@ -1419,7 +1733,9 @@
     "center_name": "بندرگناوه",
     "latitude": 29.5791,
     "longitude": 50.517,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134217",
+    "source_name": "Bandar-e Genāveh"
   },
   {
     "county_id": 1180008,
@@ -1428,7 +1744,9 @@
     "center_name": "بندردیلم",
     "latitude": 30.0542,
     "longitude": 50.159,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141676",
+    "source_name": "Bandar-e Deylam"
   },
   {
     "county_id": 1180009,
@@ -1437,7 +1755,9 @@
     "center_name": "جم",
     "latitude": 27.82977,
     "longitude": 52.32518,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130451",
+    "source_name": "Jam"
   },
   {
     "county_id": 1190001,
@@ -1446,7 +1766,9 @@
     "center_name": "ابهر",
     "latitude": 36.1468,
     "longitude": 49.218,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "145034",
+    "source_name": "Abhar"
   },
   {
     "county_id": 1190003,
@@ -1455,7 +1777,9 @@
     "center_name": "قیدار",
     "latitude": 36.11949,
     "longitude": 48.59089,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6741193",
+    "source_name": "Khodābandeh"
   },
   {
     "county_id": 1190004,
@@ -1464,7 +1788,9 @@
     "center_name": "زنجان",
     "latitude": 36.67642,
     "longitude": 48.49628,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111453",
+    "source_name": "Zanjan"
   },
   {
     "county_id": 1190006,
@@ -1473,7 +1799,9 @@
     "center_name": "زرین آباد",
     "latitude": 36.42622,
     "longitude": 48.28158,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111246",
+    "source_name": "Zarrīnābād"
   },
   {
     "county_id": 1190007,
@@ -1482,7 +1810,9 @@
     "center_name": "خرمدره",
     "latitude": 36.20777,
     "longitude": 49.19527,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "41210",
+    "source_name": "Khorramdarreh"
   },
   {
     "county_id": 1190008,
@@ -1491,7 +1821,9 @@
     "center_name": "آب بر",
     "latitude": 36.92627,
     "longitude": 48.95832,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "145407",
+    "source_name": "Ābbar"
   },
   {
     "county_id": 1190009,
@@ -1500,7 +1832,9 @@
     "center_name": "ماه نشان",
     "latitude": 36.7444,
     "longitude": 47.6725,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125290",
+    "source_name": "Māhneshān"
   },
   {
     "county_id": 1200001,
@@ -1509,7 +1843,9 @@
     "center_name": "دامغان",
     "latitude": 36.1679,
     "longitude": 54.34292,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "138025",
+    "source_name": "Dāmghān"
   },
   {
     "county_id": 1200002,
@@ -1518,7 +1854,9 @@
     "center_name": "سمنان",
     "latitude": 35.57691,
     "longitude": 53.39205,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116402",
+    "source_name": "Semnan"
   },
   {
     "county_id": 1200003,
@@ -1527,7 +1865,9 @@
     "center_name": "شاهرود",
     "latitude": 36.41819,
     "longitude": 54.97628,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135423",
+    "source_name": "Shahrud"
   },
   {
     "county_id": 1200004,
@@ -1536,7 +1876,9 @@
     "center_name": "گرمسار",
     "latitude": 35.21824,
     "longitude": 52.34085,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "133964",
+    "source_name": "Garmsār"
   },
   {
     "county_id": 1200005,
@@ -1545,7 +1887,9 @@
     "center_name": "مهدی شهر",
     "latitude": 35.71071,
     "longitude": 53.35394,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "7100777",
+    "source_name": "Mahdishahr"
   },
   {
     "county_id": 1200006,
@@ -1554,7 +1898,9 @@
     "center_name": "آرادان",
     "latitude": 35.24941,
     "longitude": 52.49422,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143129",
+    "source_name": "Ārādān"
   },
   {
     "county_id": 1200007,
@@ -1563,7 +1909,9 @@
     "center_name": "میامی",
     "latitude": 36.41092,
     "longitude": 55.65018,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124562",
+    "source_name": "Meyami"
   },
   {
     "county_id": 1200008,
@@ -1572,7 +1920,9 @@
     "center_name": "سرخه",
     "latitude": 35.4633,
     "longitude": 53.214,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113952",
+    "source_name": "Sorkheh"
   },
   {
     "county_id": 1210001,
@@ -1581,7 +1931,9 @@
     "center_name": "اردکان",
     "latitude": 32.31001,
     "longitude": 54.01747,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143073",
+    "source_name": "Ardakān"
   },
   {
     "county_id": 1210002,
@@ -1590,7 +1942,9 @@
     "center_name": "بافق",
     "latitude": 31.6035,
     "longitude": 55.40249,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142255",
+    "source_name": "Bāfq"
   },
   {
     "county_id": 1210003,
@@ -1599,7 +1953,9 @@
     "center_name": "تفت",
     "latitude": 31.74384,
     "longitude": 54.20278,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113632",
+    "source_name": "Taft"
   },
   {
     "county_id": 1210004,
@@ -1608,7 +1964,9 @@
     "center_name": "مهریز",
     "latitude": 31.58428,
     "longitude": 54.4428,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124274",
+    "source_name": "Mahrīz"
   },
   {
     "county_id": 1210005,
@@ -1617,7 +1975,9 @@
     "center_name": "یزد",
     "latitude": 31.89722,
     "longitude": 54.3675,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111822",
+    "source_name": "Yazd"
   },
   {
     "county_id": 1210006,
@@ -1626,7 +1986,9 @@
     "center_name": "میبد",
     "latitude": 32.25014,
     "longitude": 54.01658,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124193",
+    "source_name": "Meybod"
   },
   {
     "county_id": 1210007,
@@ -1635,7 +1997,9 @@
     "center_name": "ابرکوه",
     "latitude": 31.1289,
     "longitude": 53.2824,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "145427",
+    "source_name": "Abarkūh"
   },
   {
     "county_id": 1210008,
@@ -1644,7 +2008,9 @@
     "center_name": "اشکذر",
     "latitude": 31.99679,
     "longitude": 54.20852,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "66250",
+    "source_name": "Ashkez̄ar"
   },
   {
     "county_id": 1210009,
@@ -1653,16 +2019,20 @@
     "center_name": "هرات",
     "latitude": 30.05407,
     "longitude": 54.37294,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113556",
+    "source_name": "Herāt"
   },
   {
     "county_id": 1220001,
     "county_name": "ابوموسی",
     "province_id": 122,
     "center_name": "ابوموسی",
-    "latitude": 25.864,
-    "longitude": 55.023,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 25.875,
+    "longitude": 55.03,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "292983",
+    "source_name": "Abu Musa Island"
   },
   {
     "county_id": 1220002,
@@ -1671,7 +2041,9 @@
     "center_name": "بندر عباس",
     "latitude": 27.1865,
     "longitude": 56.2808,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141681",
+    "source_name": "Bandar Abbas"
   },
   {
     "county_id": 1220003,
@@ -1680,7 +2052,9 @@
     "center_name": "بندر لنگه",
     "latitude": 26.56207,
     "longitude": 54.88382,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141665",
+    "source_name": "Bandar-e Lengeh"
   },
   {
     "county_id": 1220004,
@@ -1689,7 +2063,9 @@
     "center_name": "قشم",
     "latitude": 26.9492,
     "longitude": 56.2691,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119374",
+    "source_name": "Qeshm"
   },
   {
     "county_id": 1220005,
@@ -1698,16 +2074,20 @@
     "center_name": "میناب",
     "latitude": 27.13104,
     "longitude": 57.08716,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "123941",
+    "source_name": "Mīnāb"
   },
   {
     "county_id": 1220006,
     "county_name": "جاسک",
     "province_id": 122,
     "center_name": "بندر جاسک",
-    "latitude": 25.653,
-    "longitude": 57.775,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 25.64533,
+    "longitude": 57.77552,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130276",
+    "source_name": "Jask"
   },
   {
     "county_id": 1220007,
@@ -1716,7 +2096,9 @@
     "center_name": "دهبارز",
     "latitude": 27.44194,
     "longitude": 57.19198,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120351",
+    "source_name": "Rūdān"
   },
   {
     "county_id": 1220008,
@@ -1725,7 +2107,9 @@
     "center_name": "حاجی آباد",
     "latitude": 28.3091,
     "longitude": 55.9017,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132382",
+    "source_name": "Ḩājjīābād"
   },
   {
     "county_id": 1220009,
@@ -1734,7 +2118,9 @@
     "center_name": "بستک",
     "latitude": 27.19908,
     "longitude": 54.36676,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141104",
+    "source_name": "Bastak"
   },
   {
     "county_id": 1230001,
@@ -1743,7 +2129,9 @@
     "center_name": "تهران",
     "latitude": 35.75,
     "longitude": 51.5148,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6683528",
+    "source_name": "Tehrān"
   },
   {
     "county_id": 1230002,
@@ -1752,7 +2140,9 @@
     "center_name": "دماوند",
     "latitude": 35.71842,
     "longitude": 52.06958,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "138042",
+    "source_name": "Damāvand"
   },
   {
     "county_id": 1230003,
@@ -1761,7 +2151,9 @@
     "center_name": "ری",
     "latitude": 35.59354,
     "longitude": 51.43997,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "9533872",
+    "source_name": "Rey"
   },
   {
     "county_id": 1230004,
@@ -1770,7 +2162,9 @@
     "center_name": "تجریش",
     "latitude": 35.8044,
     "longitude": 51.4256,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113514",
+    "source_name": "Tajrīsh"
   },
   {
     "county_id": 1230006,
@@ -1779,7 +2173,9 @@
     "center_name": "ورامین",
     "latitude": 35.3242,
     "longitude": 51.6457,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112214",
+    "source_name": "Varāmīn"
   },
   {
     "county_id": 1230009,
@@ -1788,7 +2184,9 @@
     "center_name": "شهریار",
     "latitude": 35.65884,
     "longitude": 51.05775,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143860",
+    "source_name": "Shahrīār"
   },
   {
     "county_id": 1240001,
@@ -1797,7 +2195,9 @@
     "center_name": "اردبیل",
     "latitude": 38.2498,
     "longitude": 48.2933,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143083",
+    "source_name": "Ardabīl"
   },
   {
     "county_id": 1240002,
@@ -1806,7 +2206,9 @@
     "center_name": "بیله سوار",
     "latitude": 39.37961,
     "longitude": 48.35463,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140494",
+    "source_name": "Bīleh Savār"
   },
   {
     "county_id": 1240003,
@@ -1815,7 +2217,9 @@
     "center_name": "خلخال",
     "latitude": 37.61837,
     "longitude": 48.52928,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128008",
+    "source_name": "Khalkhāl"
   },
   {
     "county_id": 1240004,
@@ -1824,7 +2228,9 @@
     "center_name": "مشگین شهر",
     "latitude": 38.399,
     "longitude": 47.682,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124210",
+    "source_name": "Meshgīn Shahr"
   },
   {
     "county_id": 1240005,
@@ -1833,7 +2239,9 @@
     "center_name": "گرمی",
     "latitude": 39.0215,
     "longitude": 48.0801,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "133972",
+    "source_name": "Germī"
   },
   {
     "county_id": 1240006,
@@ -1842,7 +2250,9 @@
     "center_name": "پارس آباد",
     "latitude": 39.6482,
     "longitude": 47.9174,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121380",
+    "source_name": "Pārsābād"
   },
   {
     "county_id": 1240007,
@@ -1851,7 +2261,9 @@
     "center_name": "گیوی",
     "latitude": 37.68585,
     "longitude": 48.34204,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "9514746",
+    "source_name": "Gīvī"
   },
   {
     "county_id": 1240008,
@@ -1860,7 +2272,9 @@
     "center_name": "نمین",
     "latitude": 38.4269,
     "longitude": 48.4839,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122721",
+    "source_name": "Namīn"
   },
   {
     "county_id": 1240009,
@@ -1869,7 +2283,9 @@
     "center_name": "نیر",
     "latitude": 38.0346,
     "longitude": 47.9986,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "15269",
+    "source_name": "Nīr"
   },
   {
     "county_id": 1250001,
@@ -1878,7 +2294,9 @@
     "center_name": "قم",
     "latitude": 34.6401,
     "longitude": 50.8764,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119208",
+    "source_name": "Qom"
   },
   {
     "county_id": 1250002,
@@ -1887,7 +2305,9 @@
     "center_name": "جعفریه",
     "latitude": 34.7747,
     "longitude": 50.5169,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "133677",
+    "source_name": "Ja‘farīyeh"
   },
   {
     "county_id": 1250003,
@@ -1896,16 +2316,20 @@
     "center_name": "کهک",
     "latitude": 34.3938,
     "longitude": 50.8643,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122026",
+    "source_name": "Kahak"
   },
   {
     "county_id": 1260001,
     "county_name": "بویین زهرا",
     "province_id": 126,
     "center_name": "بویین زهرا",
-    "latitude": 35.766,
-    "longitude": 49.985,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 35.7669,
+    "longitude": 50.0578,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "139903",
+    "source_name": "Bū’īn Zahrā"
   },
   {
     "county_id": 1260002,
@@ -1914,7 +2338,9 @@
     "center_name": "تاکستان",
     "latitude": 36.07057,
     "longitude": 49.69571,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113491",
+    "source_name": "Tākestān"
   },
   {
     "county_id": 1260003,
@@ -1923,7 +2349,9 @@
     "center_name": "قزوین",
     "latitude": 36.26877,
     "longitude": 50.0041,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119505",
+    "source_name": "Qazvin"
   },
   {
     "county_id": 1260004,
@@ -1932,7 +2360,9 @@
     "center_name": "آبیک",
     "latitude": 36.03993,
     "longitude": 50.53101,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144795",
+    "source_name": "Ābyek"
   },
   {
     "county_id": 1260005,
@@ -1941,7 +2371,9 @@
     "center_name": "الوند",
     "latitude": 36.1893,
     "longitude": 50.0643,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "10570",
+    "source_name": "Alvand"
   },
   {
     "county_id": 1260006,
@@ -1950,7 +2382,9 @@
     "center_name": "آوج",
     "latitude": 35.57959,
     "longitude": 49.22313,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142642",
+    "source_name": "Āvaj"
   },
   {
     "county_id": 1270001,
@@ -1959,7 +2393,9 @@
     "center_name": "بندرگز",
     "latitude": 36.77409,
     "longitude": 53.94798,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141673",
+    "source_name": "Bandar-e Gaz"
   },
   {
     "county_id": 1270002,
@@ -1968,7 +2404,9 @@
     "center_name": "بندرترکمن",
     "latitude": 36.90124,
     "longitude": 54.07195,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141653",
+    "source_name": "Bandar-e Torkaman"
   },
   {
     "county_id": 1270003,
@@ -1977,7 +2415,9 @@
     "center_name": "علی آباد",
     "latitude": 36.91011,
     "longitude": 54.86737,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144038",
+    "source_name": "'Alī Ābād-e Katūl"
   },
   {
     "county_id": 1270004,
@@ -1986,7 +2426,9 @@
     "center_name": "کردکوی",
     "latitude": 36.79307,
     "longitude": 54.11214,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "126572",
+    "source_name": "Kord Kūy"
   },
   {
     "county_id": 1270005,
@@ -1995,7 +2437,9 @@
     "center_name": "گرگان",
     "latitude": 36.8427,
     "longitude": 54.44391,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132892",
+    "source_name": "Gorgān"
   },
   {
     "county_id": 1270006,
@@ -2004,7 +2448,9 @@
     "center_name": "گنبدکاووس",
     "latitude": 37.25004,
     "longitude": 55.16721,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132938",
+    "source_name": "Gonbad-e Kāvūs"
   },
   {
     "county_id": 1270007,
@@ -2013,7 +2459,9 @@
     "center_name": "مینودشت",
     "latitude": 37.23015,
     "longitude": 55.37211,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "123927",
+    "source_name": "Mīnūdasht"
   },
   {
     "county_id": 1270008,
@@ -2022,7 +2470,9 @@
     "center_name": "آق قلا",
     "latitude": 37.0139,
     "longitude": 54.45504,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "7329809",
+    "source_name": "Āq Qalā"
   },
   {
     "county_id": 1270009,
@@ -2031,7 +2481,9 @@
     "center_name": "کلاله",
     "latitude": 37.37899,
     "longitude": 55.493,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "129512",
+    "source_name": "Kalāleh"
   },
   {
     "county_id": 1280001,
@@ -2040,7 +2492,9 @@
     "center_name": "اسفراین",
     "latitude": 37.07645,
     "longitude": 57.51009,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135298",
+    "source_name": "Esfarāyen"
   },
   {
     "county_id": 1280002,
@@ -2049,7 +2503,9 @@
     "center_name": "بجنورد",
     "latitude": 37.47473,
     "longitude": 57.32903,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140380",
+    "source_name": "Bojnūrd"
   },
   {
     "county_id": 1280003,
@@ -2058,7 +2514,9 @@
     "center_name": "جاجرم",
     "latitude": 36.95012,
     "longitude": 56.38005,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130524",
+    "source_name": "Jājarm"
   },
   {
     "county_id": 1280004,
@@ -2067,7 +2525,9 @@
     "center_name": "شیروان",
     "latitude": 37.39669,
     "longitude": 57.92952,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "114930",
+    "source_name": "Shīrvān"
   },
   {
     "county_id": 1280005,
@@ -2076,7 +2536,9 @@
     "center_name": "فاروج",
     "latitude": 37.23121,
     "longitude": 58.219,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134745",
+    "source_name": "Fārūj"
   },
   {
     "county_id": 1280006,
@@ -2085,7 +2547,9 @@
     "center_name": "آشخانه",
     "latitude": 37.5615,
     "longitude": 56.92125,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142768",
+    "source_name": "Āshkhāneh"
   },
   {
     "county_id": 1280007,
@@ -2094,7 +2558,9 @@
     "center_name": "گرمه",
     "latitude": 36.987,
     "longitude": 56.28942,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "133978",
+    "source_name": "Garmeh"
   },
   {
     "county_id": 1280008,
@@ -2103,7 +2569,9 @@
     "center_name": "راز",
     "latitude": 37.93395,
     "longitude": 57.1126,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118694",
+    "source_name": "Rāz"
   },
   {
     "county_id": 1280009,
@@ -2112,7 +2580,9 @@
     "center_name": "صفی آباد",
     "latitude": 36.6954,
     "longitude": 57.92838,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117916",
+    "source_name": "Şafīābād"
   },
   {
     "county_id": 1290001,
@@ -2121,7 +2591,9 @@
     "center_name": "بیرجند",
     "latitude": 32.86628,
     "longitude": 59.22114,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140463",
+    "source_name": "Bīrjand"
   },
   {
     "county_id": 1290002,
@@ -2130,7 +2602,9 @@
     "center_name": "اسدیه",
     "latitude": 32.9428,
     "longitude": 59.71998,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142862",
+    "source_name": "Asadīyeh"
   },
   {
     "county_id": 1290003,
@@ -2139,7 +2613,9 @@
     "center_name": "سربیشه",
     "latitude": 32.57566,
     "longitude": 59.79821,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117204",
+    "source_name": "Sarbīsheh"
   },
   {
     "county_id": 1290004,
@@ -2148,7 +2624,9 @@
     "center_name": "قاین",
     "latitude": 33.72654,
     "longitude": 59.18439,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120694",
+    "source_name": "Qā’en"
   },
   {
     "county_id": 1290005,
@@ -2157,7 +2635,9 @@
     "center_name": "نهبندان",
     "latitude": 31.54185,
     "longitude": 60.03648,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160120",
+    "source_name": "Nehbandān"
   },
   {
     "county_id": 1290006,
@@ -2166,7 +2646,9 @@
     "center_name": "سرایان",
     "latitude": 33.86017,
     "longitude": 58.52166,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117232",
+    "source_name": "Sarāyān"
   },
   {
     "county_id": 1290007,
@@ -2175,7 +2657,9 @@
     "center_name": "فردوس",
     "latitude": 34.0185,
     "longitude": 58.17222,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134613",
+    "source_name": "Ferdows"
   },
   {
     "county_id": 1290008,
@@ -2184,7 +2668,9 @@
     "center_name": "بشرویه",
     "latitude": 33.86845,
     "longitude": 57.42885,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "9480732",
+    "source_name": "Boshrūyeh"
   },
   {
     "county_id": 1290009,
@@ -2193,7 +2679,9 @@
     "center_name": "حاجی آباد",
     "latitude": 33.60496,
     "longitude": 59.9934,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1161048",
+    "source_name": "Ḩājjīābād"
   },
   {
     "county_id": 1300001,
@@ -2202,7 +2690,9 @@
     "center_name": "کرج",
     "latitude": 35.83266,
     "longitude": 50.99155,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128747",
+    "source_name": "Karaj"
   },
   {
     "county_id": 1300002,
@@ -2211,7 +2701,9 @@
     "center_name": "هشتگرد",
     "latitude": 35.962,
     "longitude": 50.6799,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "131691",
+    "source_name": "Hashtgerd"
   },
   {
     "county_id": 1300003,
@@ -2220,7 +2712,9 @@
     "center_name": "نظرآباد",
     "latitude": 35.95411,
     "longitude": 50.60607,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122438",
+    "source_name": "Naz̧arābād"
   },
   {
     "county_id": 1300004,
@@ -2229,7 +2723,9 @@
     "center_name": "طالقان",
     "latitude": 36.17449,
     "longitude": 50.76908,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "9904",
+    "source_name": "Ţāleqān"
   },
   {
     "county_id": 1300005,
@@ -2238,7 +2734,9 @@
     "center_name": "اشتهارد",
     "latitude": 35.7255,
     "longitude": 50.3662,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135205",
+    "source_name": "Eshtehārd"
   },
   {
     "county_id": 1300006,
@@ -2247,7 +2745,9 @@
     "center_name": "فردیس",
     "latitude": 35.7292,
     "longitude": 50.98483,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112179",
+    "source_name": "Fardīs"
   },
   {
     "county_id": 1300007,
@@ -2256,7 +2756,9 @@
     "center_name": "چهارباغ",
     "latitude": 35.8389,
     "longitude": 50.8481,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "41672",
+    "source_name": "Chahārbāgh"
   },
   {
     "county_id": 10000010,
@@ -2265,7 +2767,9 @@
     "center_name": "مامونیه",
     "latitude": 35.30454,
     "longitude": 50.49934,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6657461",
+    "source_name": "Māmūnīyeh"
   },
   {
     "county_id": 10000011,
@@ -2274,7 +2778,9 @@
     "center_name": "کمیجان",
     "latitude": 34.72142,
     "longitude": 49.32653,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "126715",
+    "source_name": "Komījān"
   },
   {
     "county_id": 10000012,
@@ -2283,7 +2789,9 @@
     "center_name": "خنداب",
     "latitude": 34.3928,
     "longitude": 49.1841,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127389",
+    "source_name": "Khondāb"
   },
   {
     "county_id": 10000013,
@@ -2292,7 +2800,9 @@
     "center_name": "فرمهین",
     "latitude": 34.50383,
     "longitude": 49.68437,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134788",
+    "source_name": "Farmahīn"
   },
   {
     "county_id": 10100010,
@@ -2301,7 +2811,9 @@
     "center_name": "لنگرود",
     "latitude": 37.19548,
     "longitude": 50.15263,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125897",
+    "source_name": "Langarūd"
   },
   {
     "county_id": 10100011,
@@ -2310,7 +2822,9 @@
     "center_name": "لاهیجان",
     "latitude": 37.20416,
     "longitude": 50.00919,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "126015",
+    "source_name": "Lāhījān"
   },
   {
     "county_id": 10100012,
@@ -2319,7 +2833,9 @@
     "center_name": "شفت",
     "latitude": 37.1702,
     "longitude": 49.3998,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116076",
+    "source_name": "Shaft"
   },
   {
     "county_id": 10100013,
@@ -2328,7 +2844,9 @@
     "center_name": "املش",
     "latitude": 37.0966,
     "longitude": 50.18709,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143539",
+    "source_name": "Amlash"
   },
   {
     "county_id": 10100014,
@@ -2337,7 +2855,9 @@
     "center_name": "رضوانشهر",
     "latitude": 37.54947,
     "longitude": 49.13736,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118532",
+    "source_name": "Reẕvānshahr"
   },
   {
     "county_id": 10100015,
@@ -2346,7 +2866,9 @@
     "center_name": "سیاهکل",
     "latitude": 37.15328,
     "longitude": 49.87136,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "114489",
+    "source_name": "Sīāhkal"
   },
   {
     "county_id": 10100016,
@@ -2355,7 +2877,9 @@
     "center_name": "ماسال",
     "latitude": 37.3631,
     "longitude": 49.1329,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141015",
+    "source_name": "Māsāl"
   },
   {
     "county_id": 10100017,
@@ -2364,16 +2888,20 @@
     "center_name": "خمام",
     "latitude": 37.39016,
     "longitude": 49.65846,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127415",
+    "source_name": "Khomām"
   },
   {
     "county_id": 10200010,
     "county_name": "قایم شهر",
     "province_id": 102,
     "center_name": "قایم شهر",
-    "latitude": 36.463,
-    "longitude": 52.86,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 36.46671,
+    "longitude": 52.86762,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120695",
+    "source_name": "Qā’em Shahr"
   },
   {
     "county_id": 10200014,
@@ -2382,7 +2910,9 @@
     "center_name": "نور",
     "latitude": 36.57168,
     "longitude": 52.0153,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113797",
+    "source_name": "Nūr"
   },
   {
     "county_id": 10200015,
@@ -2391,7 +2921,9 @@
     "center_name": "نوشهر",
     "latitude": 36.64852,
     "longitude": 51.49621,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121959",
+    "source_name": "Nowshahr"
   },
   {
     "county_id": 10200016,
@@ -2400,7 +2932,9 @@
     "center_name": "بابلسر",
     "latitude": 36.69929,
     "longitude": 52.65011,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142358",
+    "source_name": "Bābolsar"
   },
   {
     "county_id": 10200018,
@@ -2409,7 +2943,9 @@
     "center_name": "محمودآباد",
     "latitude": 36.63191,
     "longitude": 52.26286,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125328",
+    "source_name": "Maḩmūdābād"
   },
   {
     "county_id": 10200019,
@@ -2418,7 +2954,9 @@
     "center_name": "نکا",
     "latitude": 36.65079,
     "longitude": 53.29905,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122397",
+    "source_name": "Nekā"
   },
   {
     "county_id": 10200020,
@@ -2427,7 +2965,9 @@
     "center_name": "چالوس",
     "latitude": 36.655,
     "longitude": 51.4204,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "139223",
+    "source_name": "Chālūs"
   },
   {
     "county_id": 10200021,
@@ -2436,7 +2976,9 @@
     "center_name": "جویبار",
     "latitude": 36.64088,
     "longitude": 52.91206,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "129933",
+    "source_name": "Jūybār"
   },
   {
     "county_id": 10200022,
@@ -2445,7 +2987,9 @@
     "center_name": "گلوگاه",
     "latitude": 36.72734,
     "longitude": 53.80888,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134255",
+    "source_name": "Galūgāh"
   },
   {
     "county_id": 10200023,
@@ -2454,7 +2998,9 @@
     "center_name": "فریدونکنار",
     "latitude": 36.68489,
     "longitude": 52.51917,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134602",
+    "source_name": "Fereydūn Kenār"
   },
   {
     "county_id": 10200024,
@@ -2463,7 +3009,9 @@
     "center_name": "عباس آباد",
     "latitude": 36.72769,
     "longitude": 51.10574,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "145303",
+    "source_name": "'Abās Ābād"
   },
   {
     "county_id": 10200025,
@@ -2472,7 +3020,9 @@
     "center_name": "سورک",
     "latitude": 36.59488,
     "longitude": 53.20762,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113760",
+    "source_name": "Sūrak"
   },
   {
     "county_id": 10200026,
@@ -2481,7 +3031,9 @@
     "center_name": "کیاکلا",
     "latitude": 36.58028,
     "longitude": 52.81253,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "126962",
+    "source_name": "Kīā Kolā"
   },
   {
     "county_id": 10200027,
@@ -2490,7 +3042,9 @@
     "center_name": "شیرگاه",
     "latitude": 36.2987,
     "longitude": 52.89021,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "115001",
+    "source_name": "Shīr Gāh"
   },
   {
     "county_id": 10200028,
@@ -2499,7 +3053,9 @@
     "center_name": "کلاردشت",
     "latitude": 36.51094,
     "longitude": 51.17343,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "8781",
+    "source_name": "Kalārdasht"
   },
   {
     "county_id": 10300010,
@@ -2508,7 +3064,9 @@
     "center_name": "میانه",
     "latitude": 37.421,
     "longitude": 47.715,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124082",
+    "source_name": "Mīāneh"
   },
   {
     "county_id": 10300011,
@@ -2517,7 +3075,9 @@
     "center_name": "هشترود",
     "latitude": 37.4779,
     "longitude": 47.0508,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142554",
+    "source_name": "Hashtrūd"
   },
   {
     "county_id": 10300012,
@@ -2526,7 +3086,9 @@
     "center_name": "بناب",
     "latitude": 37.3404,
     "longitude": 46.0561,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140889",
+    "source_name": "Bonāb"
   },
   {
     "county_id": 10300013,
@@ -2535,7 +3097,9 @@
     "center_name": "بستان آباد",
     "latitude": 37.84633,
     "longitude": 46.83542,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "23290",
+    "source_name": "Bostānābād"
   },
   {
     "county_id": 10300014,
@@ -2544,7 +3108,9 @@
     "center_name": "شبستر",
     "latitude": 38.1804,
     "longitude": 45.7028,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116126",
+    "source_name": "Shabestar"
   },
   {
     "county_id": 10300015,
@@ -2553,7 +3119,9 @@
     "center_name": "کلیبر",
     "latitude": 38.86509,
     "longitude": 47.03909,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "129201",
+    "source_name": "Kaleybar"
   },
   {
     "county_id": 10300016,
@@ -2562,7 +3130,9 @@
     "center_name": "هریس",
     "latitude": 38.24816,
     "longitude": 47.11678,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "131528",
+    "source_name": "Herīs"
   },
   {
     "county_id": 10300019,
@@ -2571,7 +3141,9 @@
     "center_name": "جلفا",
     "latitude": 38.93788,
     "longitude": 45.63329,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130081",
+    "source_name": "Julfa"
   },
   {
     "county_id": 10300020,
@@ -2580,7 +3152,9 @@
     "center_name": "ملکان",
     "latitude": 37.14258,
     "longitude": 46.10345,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125112",
+    "source_name": "Malekān"
   },
   {
     "county_id": 10300021,
@@ -2589,7 +3163,9 @@
     "center_name": "آذرشهر",
     "latitude": 37.759,
     "longitude": 45.9783,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6686970",
+    "source_name": "Āz̄arshahr"
   },
   {
     "county_id": 10300022,
@@ -2598,7 +3174,9 @@
     "center_name": "اسکو",
     "latitude": 37.91504,
     "longitude": 46.12258,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121781",
+    "source_name": "Oskū"
   },
   {
     "county_id": 10300023,
@@ -2607,7 +3185,9 @@
     "center_name": "قره آغاج",
     "latitude": 37.2187,
     "longitude": 47.2167,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "22451",
+    "source_name": "Qarah Āghāj"
   },
   {
     "county_id": 10300024,
@@ -2616,7 +3196,9 @@
     "center_name": "ورزقان",
     "latitude": 38.67549,
     "longitude": 46.11205,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112121",
+    "source_name": "Varazqān"
   },
   {
     "county_id": 10300025,
@@ -2625,7 +3207,9 @@
     "center_name": "عجب شیر",
     "latitude": 37.4776,
     "longitude": 45.8943,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144443",
+    "source_name": "Ajab Shīr"
   },
   {
     "county_id": 10300026,
@@ -2634,7 +3218,9 @@
     "center_name": "خمارلو",
     "latitude": 39.15889,
     "longitude": 47.03288,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127409",
+    "source_name": "Khomārlū"
   },
   {
     "county_id": 10300027,
@@ -2643,16 +3229,20 @@
     "center_name": "هوراند",
     "latitude": 38.86125,
     "longitude": 47.36797,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130854",
+    "source_name": "Hūrānd"
   },
   {
     "county_id": 10300028,
     "county_name": "لیلان",
     "province_id": 103,
     "center_name": "لیلان",
-    "latitude": 36.96,
-    "longitude": 46.18,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 38.669,
+    "longitude": 46.2113,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125686",
+    "source_name": "Līlāb"
   },
   {
     "county_id": 10300029,
@@ -2661,7 +3251,9 @@
     "center_name": "ترکمانچای",
     "latitude": 37.5853,
     "longitude": 47.3896,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112634",
+    "source_name": "Torkamān"
   },
   {
     "county_id": 10400010,
@@ -2670,7 +3262,9 @@
     "center_name": "بوکان",
     "latitude": 36.521,
     "longitude": 46.2089,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "139889",
+    "source_name": "Būkān"
   },
   {
     "county_id": 10400011,
@@ -2679,7 +3273,9 @@
     "center_name": "شاهین دژ",
     "latitude": 36.6793,
     "longitude": 46.5669,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117793",
+    "source_name": "Shāhīn Dezh"
   },
   {
     "county_id": 10400012,
@@ -2688,7 +3284,9 @@
     "center_name": "تکاب",
     "latitude": 36.4009,
     "longitude": 47.1133,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113508",
+    "source_name": "Takāb"
   },
   {
     "county_id": 10400013,
@@ -2697,7 +3295,9 @@
     "center_name": "اشنویه",
     "latitude": 37.0397,
     "longitude": 45.0983,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121795",
+    "source_name": "Oshnavīyeh"
   },
   {
     "county_id": 10400014,
@@ -2706,7 +3306,9 @@
     "center_name": "سیه چشمه",
     "latitude": 39.06508,
     "longitude": 44.38416,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116326",
+    "source_name": "Seyah Cheshmeh"
   },
   {
     "county_id": 10400015,
@@ -2715,7 +3317,9 @@
     "center_name": "پلدشت",
     "latitude": 39.348,
     "longitude": 45.071,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120954",
+    "source_name": "Poldasht"
   },
   {
     "county_id": 10400016,
@@ -2724,7 +3328,9 @@
     "center_name": "قره ضیاءالدین",
     "latitude": 38.8915,
     "longitude": 45.0255,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119730",
+    "source_name": "Qarah Ẕīā’ od Dīn"
   },
   {
     "county_id": 10400017,
@@ -2733,16 +3339,20 @@
     "center_name": "شوط",
     "latitude": 39.2192,
     "longitude": 44.77,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "401118",
+    "source_name": "Showţ"
   },
   {
     "county_id": 10400018,
     "county_name": "چهاربرج",
     "province_id": 104,
     "center_name": "چهاربرج",
-    "latitude": 36.465,
-    "longitude": 46.704,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 36.44112,
+    "longitude": 46.68879,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117944",
+    "source_name": "Şafākhāneh"
   },
   {
     "county_id": 10400019,
@@ -2751,7 +3361,9 @@
     "center_name": "باروق",
     "latitude": 36.9583,
     "longitude": 46.3249,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141190",
+    "source_name": "Bārūq"
   },
   {
     "county_id": 10400020,
@@ -2760,7 +3372,9 @@
     "center_name": "میرآباد",
     "latitude": 36.4053,
     "longitude": 45.372,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "3315",
+    "source_name": "Mīrābād"
   },
   {
     "county_id": 10500010,
@@ -2769,7 +3383,9 @@
     "center_name": "صحنه",
     "latitude": 34.4813,
     "longitude": 47.6908,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117835",
+    "source_name": "Şaḩneh"
   },
   {
     "county_id": 10500011,
@@ -2778,7 +3394,9 @@
     "center_name": "هرسین",
     "latitude": 34.2721,
     "longitude": 47.5861,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "131962",
+    "source_name": "Harsīn"
   },
   {
     "county_id": 10500012,
@@ -2787,16 +3405,20 @@
     "center_name": "تازه آباد",
     "latitude": 34.7387,
     "longitude": 46.1496,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6709138",
+    "source_name": "Tāzehābād"
   },
   {
     "county_id": 10500013,
     "county_name": "دالاهو",
     "province_id": 105,
     "center_name": "کرند",
-    "latitude": 34.328,
-    "longitude": 47.586,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 34.2842,
+    "longitude": 46.2423,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128252",
+    "source_name": "Kerend-e Gharb"
   },
   {
     "county_id": 10500014,
@@ -2805,7 +3427,9 @@
     "center_name": "روانسر",
     "latitude": 34.7153,
     "longitude": 46.6533,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118705",
+    "source_name": "Ravānsar"
   },
   {
     "county_id": 10600010,
@@ -2814,7 +3438,9 @@
     "center_name": "رامهرمز",
     "latitude": 31.27997,
     "longitude": 49.60351,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118826",
+    "source_name": "Rāmhormoz"
   },
   {
     "county_id": 10600011,
@@ -2823,7 +3449,9 @@
     "center_name": "شادگان",
     "latitude": 30.64924,
     "longitude": 48.66497,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116102",
+    "source_name": "Shādegān"
   },
   {
     "county_id": 10600012,
@@ -2832,7 +3460,9 @@
     "center_name": "شوشتر",
     "latitude": 32.04972,
     "longitude": 48.84843,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "114584",
+    "source_name": "Shūshtar"
   },
   {
     "county_id": 10600013,
@@ -2841,7 +3471,9 @@
     "center_name": "مسجدسلیمان",
     "latitude": 31.9364,
     "longitude": 49.3039,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124620",
+    "source_name": "Masjed Soleymān"
   },
   {
     "county_id": 10600014,
@@ -2850,7 +3482,9 @@
     "center_name": "شوش",
     "latitude": 32.1942,
     "longitude": 48.2436,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "114593",
+    "source_name": "Shūsh"
   },
   {
     "county_id": 10600015,
@@ -2859,7 +3493,9 @@
     "center_name": "باغ ملک",
     "latitude": 31.52398,
     "longitude": 49.88558,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142114",
+    "source_name": "Bāgh-e Malek"
   },
   {
     "county_id": 10600016,
@@ -2868,7 +3504,9 @@
     "center_name": "امیدیه",
     "latitude": 30.76277,
     "longitude": 49.70226,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121861",
+    "source_name": "Omīdīyeh"
   },
   {
     "county_id": 10600017,
@@ -2877,7 +3515,9 @@
     "center_name": "لالی",
     "latitude": 32.32981,
     "longitude": 49.09324,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125938",
+    "source_name": "Lālī"
   },
   {
     "county_id": 10600018,
@@ -2886,7 +3526,9 @@
     "center_name": "هندیجان",
     "latitude": 30.2363,
     "longitude": 49.7119,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "131559",
+    "source_name": "Hendījān"
   },
   {
     "county_id": 10600019,
@@ -2895,7 +3537,9 @@
     "center_name": "رامشیر",
     "latitude": 30.89315,
     "longitude": 49.40787,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118805",
+    "source_name": "Rāmshīr"
   },
   {
     "county_id": 10600020,
@@ -2904,7 +3548,9 @@
     "center_name": "گتوند",
     "latitude": 32.24585,
     "longitude": 48.81315,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "133884",
+    "source_name": "Gotvand"
   },
   {
     "county_id": 10600021,
@@ -2913,7 +3559,9 @@
     "center_name": "قلعه خواجه",
     "latitude": 32.20622,
     "longitude": 49.44526,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120499",
+    "source_name": "Qal‘eh-ye Khvājeh"
   },
   {
     "county_id": 10600022,
@@ -2922,7 +3570,9 @@
     "center_name": "هفتگل",
     "latitude": 31.44686,
     "longitude": 49.52951,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132428",
+    "source_name": "Haftkel"
   },
   {
     "county_id": 10600023,
@@ -2931,7 +3581,9 @@
     "center_name": "هویزه",
     "latitude": 31.4619,
     "longitude": 48.074,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130821",
+    "source_name": "Hoveyzeh"
   },
   {
     "county_id": 10600024,
@@ -2940,7 +3592,9 @@
     "center_name": "ملاثانی",
     "latitude": 31.5847,
     "longitude": 48.88587,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "123389",
+    "source_name": "Mollās̄ānī"
   },
   {
     "county_id": 10600025,
@@ -2949,7 +3603,9 @@
     "center_name": "حمیدیه",
     "latitude": 31.48285,
     "longitude": 48.4332,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132105",
+    "source_name": "Ḥamīdiyeh"
   },
   {
     "county_id": 10600026,
@@ -2958,16 +3614,20 @@
     "center_name": "آغاجاری",
     "latitude": 30.7006,
     "longitude": 49.8315,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144696",
+    "source_name": "Aghajari"
   },
   {
     "county_id": 10600027,
     "county_name": "کارون",
     "province_id": 106,
     "center_name": "کوت عبداله",
-    "latitude": 31.245,
-    "longitude": 48.657,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 31.23917,
+    "longitude": 48.65639,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "126082",
+    "source_name": "Kūt-e ‘Abdollāh"
   },
   {
     "county_id": 10600028,
@@ -2976,7 +3636,9 @@
     "center_name": "الوان",
     "latitude": 32.11171,
     "longitude": 48.45877,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "285",
+    "source_name": "Boneh-ye ‘Alvān"
   },
   {
     "county_id": 10600029,
@@ -2985,7 +3647,9 @@
     "center_name": "دهدز",
     "latitude": 31.7096,
     "longitude": 50.28827,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136983",
+    "source_name": "Dehdez"
   },
   {
     "county_id": 10600030,
@@ -2994,7 +3658,9 @@
     "center_name": "صیدون",
     "latitude": 31.36682,
     "longitude": 50.08335,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116318",
+    "source_name": "Şeydūn"
   },
   {
     "county_id": 10700010,
@@ -3003,7 +3669,9 @@
     "center_name": "کازرون",
     "latitude": 29.61919,
     "longitude": 51.6535,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128321",
+    "source_name": "Kāzerūn"
   },
   {
     "county_id": 10700011,
@@ -3012,7 +3680,9 @@
     "center_name": "لار",
     "latitude": 27.68336,
     "longitude": 54.34172,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125877",
+    "source_name": "Lār"
   },
   {
     "county_id": 10700012,
@@ -3021,7 +3691,9 @@
     "center_name": "مرودشت",
     "latitude": 29.87407,
     "longitude": 52.80258,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124721",
+    "source_name": "Marvdasht"
   },
   {
     "county_id": 10700013,
@@ -3030,7 +3702,9 @@
     "center_name": "نورآباد",
     "latitude": 30.11405,
     "longitude": 51.52174,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121925",
+    "source_name": "Nūrābād"
   },
   {
     "county_id": 10700014,
@@ -3039,7 +3713,9 @@
     "center_name": "نی ریز",
     "latitude": 29.1988,
     "longitude": 54.3278,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122289",
+    "source_name": "Neyrīz"
   },
   {
     "county_id": 10700015,
@@ -3048,7 +3724,9 @@
     "center_name": "لامرد",
     "latitude": 27.334,
     "longitude": 53.179,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125926",
+    "source_name": "Lamerd"
   },
   {
     "county_id": 10700016,
@@ -3057,7 +3735,9 @@
     "center_name": "بوانات",
     "latitude": 30.4551,
     "longitude": 53.651,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113723",
+    "source_name": "Surian"
   },
   {
     "county_id": 10700017,
@@ -3066,7 +3746,9 @@
     "center_name": "ارسنجان",
     "latitude": 29.9124,
     "longitude": 53.3085,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142958",
+    "source_name": "Arsanjān"
   },
   {
     "county_id": 10700018,
@@ -3075,7 +3757,9 @@
     "center_name": "صفاشهر",
     "latitude": 30.6131,
     "longitude": 53.1954,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137025",
+    "source_name": "Şafāshahr"
   },
   {
     "county_id": 10700019,
@@ -3084,7 +3768,9 @@
     "center_name": "حاجی آباد",
     "latitude": 28.35735,
     "longitude": 54.42335,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132380",
+    "source_name": "Ḩājjīābād"
   },
   {
     "county_id": 10700020,
@@ -3093,7 +3779,9 @@
     "center_name": "قیر",
     "latitude": 28.4825,
     "longitude": 53.0346,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119264",
+    "source_name": "Qīr"
   },
   {
     "county_id": 10700021,
@@ -3102,7 +3790,9 @@
     "center_name": "مهر",
     "latitude": 27.5521,
     "longitude": 52.88157,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "123485",
+    "source_name": "Mohr"
   },
   {
     "county_id": 10700022,
@@ -3111,7 +3801,9 @@
     "center_name": "فراشبند",
     "latitude": 28.86012,
     "longitude": 52.09452,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134781",
+    "source_name": "Farrāshband"
   },
   {
     "county_id": 10700023,
@@ -3120,7 +3812,9 @@
     "center_name": "سعادت شهر",
     "latitude": 30.07921,
     "longitude": 53.13464,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118123",
+    "source_name": "Sa‘ādat Shahr"
   },
   {
     "county_id": 10700024,
@@ -3129,7 +3823,9 @@
     "center_name": "خنج",
     "latitude": 27.8913,
     "longitude": 53.4344,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127382",
+    "source_name": "Khonj"
   },
   {
     "county_id": 10700025,
@@ -3138,7 +3834,9 @@
     "center_name": "سروستان",
     "latitude": 29.2735,
     "longitude": 53.2203,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116725",
+    "source_name": "Sarvestān"
   },
   {
     "county_id": 10700026,
@@ -3147,7 +3845,9 @@
     "center_name": "مصیری",
     "latitude": 30.24493,
     "longitude": 51.52158,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124622",
+    "source_name": "Maşīrī"
   },
   {
     "county_id": 10700027,
@@ -3156,7 +3856,9 @@
     "center_name": "گراش",
     "latitude": 27.66966,
     "longitude": 54.13586,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "133595",
+    "source_name": "Gerāsh"
   },
   {
     "county_id": 10700028,
@@ -3165,7 +3867,9 @@
     "center_name": "کوار",
     "latitude": 29.20505,
     "longitude": 52.69043,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "44439",
+    "source_name": "Kavār"
   },
   {
     "county_id": 10700029,
@@ -3174,7 +3878,9 @@
     "center_name": "خرامه",
     "latitude": 29.49896,
     "longitude": 53.31199,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127613",
+    "source_name": "Kherāmeh"
   },
   {
     "county_id": 10700030,
@@ -3183,7 +3889,9 @@
     "center_name": "زرقان",
     "latitude": 29.77237,
     "longitude": 52.71891,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111327",
+    "source_name": "Zarqān"
   },
   {
     "county_id": 10700031,
@@ -3192,7 +3900,9 @@
     "center_name": "بیضا",
     "latitude": 29.9717,
     "longitude": 52.40059,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116364",
+    "source_name": "Tall Beyẕā"
   },
   {
     "county_id": 10700032,
@@ -3201,16 +3911,20 @@
     "center_name": "حسامی",
     "latitude": 29.96919,
     "longitude": 53.87416,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "131508",
+    "source_name": "Ḩesāmī"
   },
   {
     "county_id": 10700033,
     "county_name": "کوه چنار",
     "province_id": 107,
     "center_name": "قایمیه",
-    "latitude": 29.846,
-    "longitude": 51.57,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 29.61919,
+    "longitude": 51.6535,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128321",
+    "source_name": "Kāzerūn"
   },
   {
     "county_id": 10700034,
@@ -3219,7 +3933,9 @@
     "center_name": "باب انار",
     "latitude": 28.9752,
     "longitude": 53.21667,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142386",
+    "source_name": "Bāb Anār"
   },
   {
     "county_id": 10700035,
@@ -3228,7 +3944,9 @@
     "center_name": "آباده طشک",
     "latitude": 29.81083,
     "longitude": 53.7275,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113090",
+    "source_name": "Ābādeh Ţashk"
   },
   {
     "county_id": 10700036,
@@ -3237,7 +3955,9 @@
     "center_name": "اوز",
     "latitude": 27.7622,
     "longitude": 54.00417,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135053",
+    "source_name": "Evaz"
   },
   {
     "county_id": 10700037,
@@ -3246,7 +3966,9 @@
     "center_name": "جویم",
     "latitude": 28.2548,
     "longitude": 53.98112,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "129931",
+    "source_name": "Jūyom"
   },
   {
     "county_id": 10800010,
@@ -3255,7 +3977,9 @@
     "center_name": "بردسیر",
     "latitude": 29.92266,
     "longitude": 56.57433,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124647",
+    "source_name": "Bardsīr"
   },
   {
     "county_id": 10800011,
@@ -3264,7 +3988,9 @@
     "center_name": "راور",
     "latitude": 31.26562,
     "longitude": 56.80545,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118704",
+    "source_name": "Rāvar"
   },
   {
     "county_id": 10800012,
@@ -3273,7 +3999,9 @@
     "center_name": "عنبرآباد",
     "latitude": 28.4759,
     "longitude": 57.848,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143471",
+    "source_name": "‘Anbarābād"
   },
   {
     "county_id": 10800013,
@@ -3282,7 +4010,9 @@
     "center_name": "منوجان",
     "latitude": 27.39893,
     "longitude": 57.49722,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124914",
+    "source_name": "Manūjān"
   },
   {
     "county_id": 10800014,
@@ -3291,7 +4021,9 @@
     "center_name": "کوهبنان",
     "latitude": 31.41029,
     "longitude": 56.28255,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "126411",
+    "source_name": "Kūhbanān"
   },
   {
     "county_id": 10800015,
@@ -3300,7 +4032,9 @@
     "center_name": "رودبار",
     "latitude": 28.02899,
     "longitude": 57.9961,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6928551",
+    "source_name": "Rūdbār"
   },
   {
     "county_id": 10800016,
@@ -3309,7 +4043,9 @@
     "center_name": "قلعه گنج",
     "latitude": 27.5236,
     "longitude": 57.8811,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120323",
+    "source_name": "Qal‘eh Ganj"
   },
   {
     "county_id": 10800017,
@@ -3318,7 +4054,9 @@
     "center_name": "محمدآباد",
     "latitude": 28.66877,
     "longitude": 59.07341,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "123674",
+    "source_name": "Moḩammadābād"
   },
   {
     "county_id": 10800018,
@@ -3327,7 +4065,9 @@
     "center_name": "رابر",
     "latitude": 29.2912,
     "longitude": 56.9131,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119010",
+    "source_name": "Rābor"
   },
   {
     "county_id": 10800019,
@@ -3336,7 +4076,9 @@
     "center_name": "فهرج",
     "latitude": 28.9502,
     "longitude": 58.885,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134962",
+    "source_name": "Fahraj"
   },
   {
     "county_id": 10800020,
@@ -3345,7 +4087,9 @@
     "center_name": "انار",
     "latitude": 30.87066,
     "longitude": 55.27025,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143499",
+    "source_name": "Anār"
   },
   {
     "county_id": 10800021,
@@ -3354,7 +4098,9 @@
     "center_name": "نرماشیر",
     "latitude": 28.95216,
     "longitude": 58.69773,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118323",
+    "source_name": "Narmāshīr"
   },
   {
     "county_id": 10800022,
@@ -3363,16 +4109,20 @@
     "center_name": "فاریاب",
     "latitude": 28.0987,
     "longitude": 57.23181,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134735",
+    "source_name": "Fāryāb"
   },
   {
     "county_id": 10800023,
     "county_name": "ارزوییه",
     "province_id": 108,
     "center_name": "ارزوییه",
-    "latitude": 28.44,
-    "longitude": 56.37,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 28.45318,
+    "longitude": 56.35994,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142902",
+    "source_name": "Orzū’īyeh"
   },
   {
     "county_id": 10800024,
@@ -3381,7 +4131,9 @@
     "center_name": "گنبکی",
     "latitude": 28.72242,
     "longitude": 58.86416,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "46023",
+    "source_name": "Ḩasanābād"
   },
   {
     "county_id": 10800025,
@@ -3390,7 +4142,9 @@
     "center_name": "زهکلوت",
     "latitude": 27.79256,
     "longitude": 58.58682,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "7052385",
+    "source_name": "Zeh-e Kalūt"
   },
   {
     "county_id": 10900013,
@@ -3399,7 +4153,9 @@
     "center_name": "قوچان",
     "latitude": 37.106,
     "longitude": 58.50955,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119115",
+    "source_name": "Qūchān"
   },
   {
     "county_id": 10900014,
@@ -3408,7 +4164,9 @@
     "center_name": "کاشمر",
     "latitude": 35.23831,
     "longitude": 58.46558,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128447",
+    "source_name": "Kāshmar"
   },
   {
     "county_id": 10900015,
@@ -3417,7 +4175,9 @@
     "center_name": "گناباد",
     "latitude": 34.35287,
     "longitude": 58.68365,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132961",
+    "source_name": "Gonābād"
   },
   {
     "county_id": 10900016,
@@ -3426,7 +4186,9 @@
     "center_name": "مشهد",
     "latitude": 36.29807,
     "longitude": 59.60567,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124665",
+    "source_name": "Mashhad"
   },
   {
     "county_id": 10900017,
@@ -3435,7 +4197,9 @@
     "center_name": "نیشابور",
     "latitude": 36.21329,
     "longitude": 58.79575,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122285",
+    "source_name": "Neyshābūr"
   },
   {
     "county_id": 10900018,
@@ -3444,7 +4208,9 @@
     "center_name": "چناران",
     "latitude": 36.64546,
     "longitude": 59.12123,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "138742",
+    "source_name": "Chenārān"
   },
   {
     "county_id": 10900019,
@@ -3453,7 +4219,9 @@
     "center_name": "خواف",
     "latitude": 34.57232,
     "longitude": 60.14404,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160544",
+    "source_name": "Khvāf"
   },
   {
     "county_id": 10900020,
@@ -3462,7 +4230,9 @@
     "center_name": "سرخس",
     "latitude": 36.5449,
     "longitude": 61.1577,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159716",
+    "source_name": "Sarakhs"
   },
   {
     "county_id": 10900022,
@@ -3471,7 +4241,9 @@
     "center_name": "فریمان",
     "latitude": 35.70685,
     "longitude": 59.85006,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134809",
+    "source_name": "Farīmān"
   },
   {
     "county_id": 10900023,
@@ -3480,7 +4252,9 @@
     "center_name": "بردسکن",
     "latitude": 35.26218,
     "longitude": 57.97075,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141349",
+    "source_name": "Bardaskan"
   },
   {
     "county_id": 10900027,
@@ -3489,7 +4263,9 @@
     "center_name": "رشتخوار",
     "latitude": 34.97512,
     "longitude": 59.62482,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118328",
+    "source_name": "Roshtkhvār"
   },
   {
     "county_id": 10900028,
@@ -3498,7 +4274,9 @@
     "center_name": "کلات",
     "latitude": 36.99532,
     "longitude": 59.76472,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "31265",
+    "source_name": "Kalāt-e Nāderī"
   },
   {
     "county_id": 10900029,
@@ -3507,7 +4285,9 @@
     "center_name": "خلیل آباد",
     "latitude": 35.25395,
     "longitude": 58.28566,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128025",
+    "source_name": "Khalīlābād"
   },
   {
     "county_id": 10900030,
@@ -3516,7 +4296,9 @@
     "center_name": "فیض آباد",
     "latitude": 35.01891,
     "longitude": 58.78343,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134563",
+    "source_name": "Feyẕābād"
   },
   {
     "county_id": 10900031,
@@ -3525,7 +4307,9 @@
     "center_name": "بجستان",
     "latitude": 34.51639,
     "longitude": 58.1845,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141891",
+    "source_name": "Bajestān"
   },
   {
     "county_id": 10900032,
@@ -3534,7 +4318,9 @@
     "center_name": "طرقبه",
     "latitude": 36.3104,
     "longitude": 59.3735,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112616",
+    "source_name": "Ţorqabeh"
   },
   {
     "county_id": 10900033,
@@ -3543,7 +4329,9 @@
     "center_name": "فیروزه",
     "latitude": 36.28639,
     "longitude": 58.58586,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "31020",
+    "source_name": "Fīrūzeh"
   },
   {
     "county_id": 10900034,
@@ -3552,7 +4340,9 @@
     "center_name": "جغتای",
     "latitude": 36.63619,
     "longitude": 57.07284,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130091",
+    "source_name": "Joghtāy"
   },
   {
     "county_id": 10900035,
@@ -3561,7 +4351,9 @@
     "center_name": "دولت آباد",
     "latitude": 35.28219,
     "longitude": 59.51972,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135743",
+    "source_name": "Dowlatābād"
   },
   {
     "county_id": 10900036,
@@ -3570,7 +4362,9 @@
     "center_name": "نقاب",
     "latitude": 36.70792,
     "longitude": 57.42146,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122375",
+    "source_name": "Neqāb"
   },
   {
     "county_id": 10900037,
@@ -3579,7 +4373,9 @@
     "center_name": "باخرز",
     "latitude": 35.09861,
     "longitude": 60.15885,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159905",
+    "source_name": "Qal‘eh Now-e ‘Olyā"
   },
   {
     "county_id": 10900038,
@@ -3588,7 +4384,9 @@
     "center_name": "سلطان آباد",
     "latitude": 36.40352,
     "longitude": 58.03894,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "114105",
+    "source_name": "Solţānābād"
   },
   {
     "county_id": 10900039,
@@ -3597,7 +4395,9 @@
     "center_name": "داورزن",
     "latitude": 36.35088,
     "longitude": 56.87547,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137125",
+    "source_name": "Dāvarzan"
   },
   {
     "county_id": 10900040,
@@ -3606,7 +4406,9 @@
     "center_name": "صالح آباد",
     "latitude": 36.18959,
     "longitude": 57.69779,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "7319",
+    "source_name": "Şāleḩābād"
   },
   {
     "county_id": 10900041,
@@ -3615,7 +4417,9 @@
     "center_name": "ریوش",
     "latitude": 35.47521,
     "longitude": 58.45733,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118454",
+    "source_name": "Rīvash"
   },
   {
     "county_id": 10900042,
@@ -3624,7 +4428,9 @@
     "center_name": "خرو",
     "latitude": 35.46265,
     "longitude": 58.05727,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127129",
+    "source_name": "Khowr"
   },
   {
     "county_id": 10900043,
@@ -3633,16 +4439,20 @@
     "center_name": "ششتمد",
     "latitude": 35.95969,
     "longitude": 57.76673,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "115226",
+    "source_name": "Sheshtamad"
   },
   {
     "county_id": 10900044,
     "county_name": "گلبهار",
     "province_id": 109,
     "center_name": "گلبهار",
-    "latitude": 36.52,
-    "longitude": 59.17,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 36.56976,
+    "longitude": 59.1904,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "7082152",
+    "source_name": "Golbahār"
   },
   {
     "county_id": 10900045,
@@ -3651,7 +4461,9 @@
     "center_name": "عشق آباد",
     "latitude": 36.87584,
     "longitude": 58.40308,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "7341",
+    "source_name": "‘Eshqābād"
   },
   {
     "county_id": 11000010,
@@ -3660,7 +4472,9 @@
     "center_name": "کاشان",
     "latitude": 34.00228,
     "longitude": 51.43879,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6861211",
+    "source_name": "Kāshān"
   },
   {
     "county_id": 11000011,
@@ -3669,25 +4483,31 @@
     "center_name": "گلپایگان",
     "latitude": 33.4537,
     "longitude": 50.28836,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "133037",
+    "source_name": "Golpāyegān"
   },
   {
     "county_id": 11000012,
     "county_name": "لنجان",
     "province_id": 110,
     "center_name": "زرین شهر",
-    "latitude": 32.386,
-    "longitude": 51.377,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 32.39057,
+    "longitude": 51.37654,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418418",
+    "source_name": "Zarrīn Shahr"
   },
   {
     "county_id": 11000013,
     "county_name": "نایین",
     "province_id": 110,
     "center_name": "نایین",
-    "latitude": 32.86,
-    "longitude": 53.09,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 32.86004,
+    "longitude": 53.08693,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122869",
+    "source_name": "Nā’īn"
   },
   {
     "county_id": 11000014,
@@ -3696,7 +4516,9 @@
     "center_name": "نجف آباد",
     "latitude": 32.63464,
     "longitude": 51.36525,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418606",
+    "source_name": "Najafābād"
   },
   {
     "county_id": 11000015,
@@ -3705,7 +4527,9 @@
     "center_name": "نطنز",
     "latitude": 33.51118,
     "longitude": 51.91808,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "122491",
+    "source_name": "Naţanz"
   },
   {
     "county_id": 11000016,
@@ -3714,7 +4538,9 @@
     "center_name": "شاهین شهر",
     "latitude": 32.85788,
     "longitude": 51.5529,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "417472",
+    "source_name": "Shāhīn Shahr"
   },
   {
     "county_id": 11000017,
@@ -3723,7 +4549,9 @@
     "center_name": "مبارکه",
     "latitude": 32.34612,
     "longitude": 51.50205,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418625",
+    "source_name": "Mobārakeh"
   },
   {
     "county_id": 11000018,
@@ -3732,7 +4560,9 @@
     "center_name": "آران و بیدگل",
     "latitude": 34.05751,
     "longitude": 51.48291,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143122",
+    "source_name": "Ārān Bīdgol"
   },
   {
     "county_id": 11000019,
@@ -3741,7 +4571,9 @@
     "center_name": "تیران",
     "latitude": 32.70328,
     "longitude": 51.15381,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418446",
+    "source_name": "Tīrān"
   },
   {
     "county_id": 11000020,
@@ -3750,7 +4582,9 @@
     "center_name": "چادگان",
     "latitude": 32.76825,
     "longitude": 50.62873,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "139780",
+    "source_name": "Chādegān"
   },
   {
     "county_id": 11000021,
@@ -3759,7 +4593,9 @@
     "center_name": "دهاقان",
     "latitude": 31.93986,
     "longitude": 51.64731,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "137057",
+    "source_name": "Dehāqān"
   },
   {
     "county_id": 11000022,
@@ -3768,7 +4604,9 @@
     "center_name": "دولت آباد",
     "latitude": 32.79978,
     "longitude": 51.69553,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418868",
+    "source_name": "Dowlatābād"
   },
   {
     "county_id": 11000023,
@@ -3777,16 +4615,20 @@
     "center_name": "خور",
     "latitude": 33.77512,
     "longitude": 55.08329,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127029",
+    "source_name": "Khūr"
   },
   {
     "county_id": 11000024,
     "county_name": "بویین و میاندشت",
     "province_id": 110,
     "center_name": "بویین و میاندشت",
-    "latitude": 33.08,
-    "longitude": 50.15,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 33.07612,
+    "longitude": 50.16432,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124101",
+    "source_name": "Mīāndasht"
   },
   {
     "county_id": 11000025,
@@ -3795,7 +4637,9 @@
     "center_name": "تودشک",
     "latitude": 32.7207,
     "longitude": 52.6709,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112535",
+    "source_name": "Tūdeshk"
   },
   {
     "county_id": 11000026,
@@ -3804,7 +4648,9 @@
     "center_name": "نیک آباد",
     "latitude": 32.303,
     "longitude": 52.2057,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6899676",
+    "source_name": "Nīkābād"
   },
   {
     "county_id": 11000027,
@@ -3813,7 +4659,9 @@
     "center_name": "ورزنه",
     "latitude": 33.54218,
     "longitude": 50.50106,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112124",
+    "source_name": "Varzaneh"
   },
   {
     "county_id": 11000028,
@@ -3822,7 +4670,9 @@
     "center_name": "هرند",
     "latitude": 32.56531,
     "longitude": 52.43654,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418806",
+    "source_name": "Harand"
   },
   {
     "county_id": 11100010,
@@ -3831,7 +4681,9 @@
     "center_name": "زهک",
     "latitude": 30.894,
     "longitude": 61.6804,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159302",
+    "source_name": "Zehak"
   },
   {
     "county_id": 11100011,
@@ -3840,7 +4692,9 @@
     "center_name": "دوست محمد",
     "latitude": 31.1447,
     "longitude": 61.7925,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1161297",
+    "source_name": "Dūst Moḩammad Khān"
   },
   {
     "county_id": 11100012,
@@ -3849,7 +4703,9 @@
     "center_name": "گلمورتی",
     "latitude": 27.48232,
     "longitude": 59.44656,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "7102155",
+    "source_name": "Galmūrtī"
   },
   {
     "county_id": 11100013,
@@ -3858,7 +4714,9 @@
     "center_name": "مهرستان",
     "latitude": 27.131,
     "longitude": 61.67445,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159306",
+    "source_name": "Mehrestān"
   },
   {
     "county_id": 11100014,
@@ -3867,7 +4725,9 @@
     "center_name": "سوران",
     "latitude": 27.2855,
     "longitude": 61.9965,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159431",
+    "source_name": "Sūrān"
   },
   {
     "county_id": 11100015,
@@ -3876,7 +4736,9 @@
     "center_name": "ادیمی",
     "latitude": 31.11144,
     "longitude": 61.41189,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1161887",
+    "source_name": "Adīmī"
   },
   {
     "county_id": 11100016,
@@ -3885,7 +4747,9 @@
     "center_name": "محمدآباد",
     "latitude": 31.1278,
     "longitude": 61.5681,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1113006",
+    "source_name": "Moḩammadābād"
   },
   {
     "county_id": 11100017,
@@ -3894,7 +4758,9 @@
     "center_name": "میرجاوه",
     "latitude": 29.0148,
     "longitude": 61.44959,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160258",
+    "source_name": "Mīrjāveh"
   },
   {
     "county_id": 11100018,
@@ -3903,7 +4769,9 @@
     "center_name": "قصرقند",
     "latitude": 26.23244,
     "longitude": 60.73932,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159884",
+    "source_name": "Qaşr-e Qand"
   },
   {
     "county_id": 11100019,
@@ -3912,7 +4780,9 @@
     "center_name": "فنوج",
     "latitude": 26.57527,
     "longitude": 59.64144,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134894",
+    "source_name": "Fannūj"
   },
   {
     "county_id": 11100020,
@@ -3921,7 +4791,9 @@
     "center_name": "بمپور",
     "latitude": 27.19439,
     "longitude": 60.45594,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1161735",
+    "source_name": "Bampūr"
   },
   {
     "county_id": 11100021,
@@ -3930,7 +4802,9 @@
     "center_name": "نوک آباد",
     "latitude": 28.5397,
     "longitude": 60.7595,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160088",
+    "source_name": "Nūkābād"
   },
   {
     "county_id": 11100022,
@@ -3939,7 +4813,9 @@
     "center_name": "نگور",
     "latitude": 25.38882,
     "longitude": 61.13834,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160121",
+    "source_name": "Negūr"
   },
   {
     "county_id": 11100023,
@@ -3948,16 +4824,20 @@
     "center_name": "سرباز",
     "latitude": 26.63228,
     "longitude": 61.25787,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159709",
+    "source_name": "Sarbāz"
   },
   {
     "county_id": 11100024,
     "county_name": "گلشن",
     "province_id": 111,
     "center_name": "جالق",
-    "latitude": 27.62,
-    "longitude": 61.23,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 27.60287,
+    "longitude": 62.71023,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1160907",
+    "source_name": "Jālq"
   },
   {
     "county_id": 11100025,
@@ -3966,7 +4846,9 @@
     "center_name": "اسپکه",
     "latitude": 26.84004,
     "longitude": 60.1731,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1161269",
+    "source_name": "Espakeh"
   },
   {
     "county_id": 11100026,
@@ -3975,7 +4857,9 @@
     "center_name": "زرآباد",
     "latitude": 25.58263,
     "longitude": 59.36161,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111431",
+    "source_name": "Zarābād"
   },
   {
     "county_id": 11200010,
@@ -3984,16 +4868,20 @@
     "center_name": "دهگلان",
     "latitude": 35.278,
     "longitude": 47.4184,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "136773",
+    "source_name": "Dehgolān"
   },
   {
     "county_id": 11300010,
     "county_name": "درگزین",
     "province_id": 113,
     "center_name": "قروه درگزین",
-    "latitude": 35.313,
-    "longitude": 49.194,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 35.30954,
+    "longitude": 49.10023,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119160",
+    "source_name": "Qorveh-ye Dargazīn"
   },
   {
     "county_id": 11400010,
@@ -4002,7 +4890,9 @@
     "center_name": "آلونی",
     "latitude": 31.55303,
     "longitude": 51.0605,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143758",
+    "source_name": "Ālūnī"
   },
   {
     "county_id": 11400011,
@@ -4011,16 +4901,20 @@
     "center_name": "مال خلیفه",
     "latitude": 31.2908,
     "longitude": 51.26026,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125077",
+    "source_name": "Māl Khalīfeh"
   },
   {
     "county_id": 11400012,
     "county_name": "فرخ شهر",
     "province_id": 114,
     "center_name": "فرخ شهر",
-    "latitude": 32.271,
-    "longitude": 50.98,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 32.27174,
+    "longitude": 50.98008,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120678",
+    "source_name": "Farrokh Shahr"
   },
   {
     "county_id": 11500010,
@@ -4029,7 +4923,9 @@
     "center_name": "سراب دوره",
     "latitude": 33.5639,
     "longitude": 48.0221,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117345",
+    "source_name": "Sarāb-e Dūreh"
   },
   {
     "county_id": 11500011,
@@ -4038,7 +4934,9 @@
     "center_name": "چقابل",
     "latitude": 33.28175,
     "longitude": 47.50979,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "139015",
+    "source_name": "Chaqābol"
   },
   {
     "county_id": 11500012,
@@ -4047,7 +4945,9 @@
     "center_name": "معمولان",
     "latitude": 33.3793,
     "longitude": 47.9596,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125016",
+    "source_name": "Ma‘mūlān"
   },
   {
     "county_id": 11600010,
@@ -4056,16 +4956,20 @@
     "center_name": "بدره",
     "latitude": 33.30573,
     "longitude": 47.03708,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "415694",
+    "source_name": "Badreh"
   },
   {
     "county_id": 11600011,
     "county_name": "هلیلان",
     "province_id": 116,
     "center_name": "توحید",
-    "latitude": 33.7,
-    "longitude": 47.7,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 27.82775,
+    "longitude": 52.85789,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "8298952",
+    "source_name": "Tohid"
   },
   {
     "county_id": 11600012,
@@ -4074,7 +4978,9 @@
     "center_name": "چوار",
     "latitude": 33.6953,
     "longitude": 46.2979,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "138905",
+    "source_name": "Chavār"
   },
   {
     "county_id": 11800010,
@@ -4083,16 +4989,20 @@
     "center_name": "عسلویه",
     "latitude": 27.47383,
     "longitude": 52.60782,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142857",
+    "source_name": "Bandar-e ‘Asalūyah"
   },
   {
     "county_id": 11900010,
     "county_name": "سلطانیه",
     "province_id": 119,
     "center_name": "سلطانیه",
-    "latitude": 36.434,
-    "longitude": 48.794,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 36.43318,
+    "longitude": 48.79471,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117799",
+    "source_name": "Solţānīyeh"
   },
   {
     "county_id": 12100011,
@@ -4101,7 +5011,9 @@
     "center_name": "بهاباد",
     "latitude": 31.87091,
     "longitude": 56.02433,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "9533956",
+    "source_name": "Bahābād"
   },
   {
     "county_id": 12100012,
@@ -4110,7 +5022,9 @@
     "center_name": "مروست",
     "latitude": 30.47833,
     "longitude": 54.21167,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124724",
+    "source_name": "Marvast"
   },
   {
     "county_id": 12100013,
@@ -4119,16 +5033,20 @@
     "center_name": "زارچ",
     "latitude": 31.99111,
     "longitude": 54.23194,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111407",
+    "source_name": "Zārach"
   },
   {
     "county_id": 12200010,
     "county_name": "خمیر",
     "province_id": 122,
     "center_name": "خمیر",
-    "latitude": 26.95,
-    "longitude": 55.58,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 26.9521,
+    "longitude": 55.5851,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127992",
+    "source_name": "Bandar-e Khamīr"
   },
   {
     "county_id": 12200011,
@@ -4137,7 +5055,9 @@
     "center_name": "پارسیان",
     "latitude": 27.2918,
     "longitude": 56.1532,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "112944",
+    "source_name": "Tāzīān-e Pā’īn"
   },
   {
     "county_id": 12200012,
@@ -4146,7 +5066,9 @@
     "center_name": "سیریک",
     "latitude": 26.5055,
     "longitude": 57.122,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "114262",
+    "source_name": "Sīrīk-e Kohneh"
   },
   {
     "county_id": 12200013,
@@ -4155,7 +5077,9 @@
     "center_name": "سردشت",
     "latitude": 26.45574,
     "longitude": 57.90271,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117116",
+    "source_name": "Sardasht"
   },
   {
     "county_id": 12300010,
@@ -4164,7 +5088,9 @@
     "center_name": "اسلامشهر",
     "latitude": 35.55222,
     "longitude": 51.23504,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "449504",
+    "source_name": "Eslamshahr"
   },
   {
     "county_id": 12300012,
@@ -4173,7 +5099,9 @@
     "center_name": "رباط‌کریم",
     "latitude": 35.4846,
     "longitude": 51.0829,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118367",
+    "source_name": "Robāţ Karīm"
   },
   {
     "county_id": 12300013,
@@ -4182,7 +5110,9 @@
     "center_name": "پاکدشت",
     "latitude": 35.47854,
     "longitude": 51.6834,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "9478811",
+    "source_name": "Pākdasht"
   },
   {
     "county_id": 12300014,
@@ -4191,7 +5121,9 @@
     "center_name": "فیروزکوه",
     "latitude": 35.75674,
     "longitude": 52.77062,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134462",
+    "source_name": "Fīrūzkūh"
   },
   {
     "county_id": 12300016,
@@ -4200,7 +5132,9 @@
     "center_name": "قدس",
     "latitude": 35.7214,
     "longitude": 51.109,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120292",
+    "source_name": "Qods"
   },
   {
     "county_id": 12300017,
@@ -4209,7 +5143,9 @@
     "center_name": "ملارد",
     "latitude": 35.6659,
     "longitude": 50.9767,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "125188",
+    "source_name": "Malārd"
   },
   {
     "county_id": 12300018,
@@ -4218,7 +5154,9 @@
     "center_name": "پیشوا",
     "latitude": 35.308,
     "longitude": 51.7267,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "120972",
+    "source_name": "Pīshvā"
   },
   {
     "county_id": 12300019,
@@ -4227,7 +5165,9 @@
     "center_name": "گلستان",
     "latitude": 35.5183,
     "longitude": 51.1819,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "32900",
+    "source_name": "Golestān"
   },
   {
     "county_id": 12300020,
@@ -4236,7 +5176,9 @@
     "center_name": "پردیس",
     "latitude": 35.74687,
     "longitude": 51.81222,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6681051",
+    "source_name": "Pardīs"
   },
   {
     "county_id": 12300021,
@@ -4245,16 +5187,20 @@
     "center_name": "قرچک",
     "latitude": 35.42873,
     "longitude": 51.57757,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "32767",
+    "source_name": "Qarchak"
   },
   {
     "county_id": 12400010,
     "county_name": "سرعین",
     "province_id": 124,
     "center_name": "سرعین",
-    "latitude": 38.15,
-    "longitude": 48.08,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 38.15022,
+    "longitude": 48.07068,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117048",
+    "source_name": "Sara'eyn"
   },
   {
     "county_id": 12400011,
@@ -4263,7 +5209,9 @@
     "center_name": "اصلاندوز",
     "latitude": 39.4439,
     "longitude": 47.4056,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "142703",
+    "source_name": "Aşlān Dūz"
   },
   {
     "county_id": 12400012,
@@ -4272,7 +5220,9 @@
     "center_name": "تازه کندانگوت",
     "latitude": 39.0443,
     "longitude": 47.7453,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "16977",
+    "source_name": "Angut"
   },
   {
     "county_id": 12700010,
@@ -4281,7 +5231,9 @@
     "center_name": "آزادشهر",
     "latitude": 37.08641,
     "longitude": 55.17222,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "110831",
+    "source_name": "Āzādshahr"
   },
   {
     "county_id": 12700011,
@@ -4290,16 +5242,20 @@
     "center_name": "رامیان",
     "latitude": 37.01598,
     "longitude": 55.14123,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118824",
+    "source_name": "Rāmīān"
   },
   {
     "county_id": 12700012,
     "county_name": "مراوه تپه",
     "province_id": 127,
     "center_name": "مراوه",
-    "latitude": 37.904,
-    "longitude": 55.96,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 37.9041,
+    "longitude": 55.95596,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "123295",
+    "source_name": "Marāveh Tappeh"
   },
   {
     "county_id": 12700013,
@@ -4308,7 +5264,9 @@
     "center_name": "گمیش تپه",
     "latitude": 37.0718,
     "longitude": 54.07654,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "40047",
+    "source_name": "Gomīshān"
   },
   {
     "county_id": 12700014,
@@ -4317,7 +5275,9 @@
     "center_name": "گالیکش",
     "latitude": 37.27259,
     "longitude": 55.43394,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "134282",
+    "source_name": "Gālīkesh"
   },
   {
     "county_id": 12800010,
@@ -4326,7 +5286,9 @@
     "center_name": "پیش قلعه",
     "latitude": 37.65206,
     "longitude": 57.00195,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "40788",
+    "source_name": "Pīsh Qal‘eh"
   },
   {
     "county_id": 12900010,
@@ -4335,16 +5297,20 @@
     "center_name": "خوسف",
     "latitude": 32.78108,
     "longitude": 58.89002,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127098",
+    "source_name": "Khūsf"
   },
   {
     "county_id": 12900011,
     "county_name": "طبس",
     "province_id": 129,
     "center_name": "طبس",
-    "latitude": 33.595,
-    "longitude": 56.924,
-    "source_id": "geonames-iran-2026-09-19"
+    "latitude": 33.59586,
+    "longitude": 56.92437,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113659",
+    "source_name": "Tabas"
   },
   {
     "county_id": 12900012,
@@ -4353,6 +5319,8 @@
     "center_name": "عشق آباد",
     "latitude": 34.36633,
     "longitude": 56.92993,
-    "source_id": "geonames-iran-2026-09-19"
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "135221",
+    "source_name": "‘Eshqābād"
   }
 ]
