@@ -4,7 +4,7 @@ import { execFileSync } from "node:child_process";
 import { join, resolve, relative } from "node:path";
 import { tmpdir } from "node:os";
 import test from "node:test";
-import { loadV2Contract } from "../src/compat";
+import { loadV2Contract, loadV2RuralMigrationOverrides } from "../src/compat";
 import { buildCanonicalModel } from "../src/model";
 import { DATASET_COLUMNS, sha256, verifyFormatParity } from "../src/output";
 import { buildPipeline, classifyRuralMigrationCandidates, MANIFEST_ENTITY_TYPES, ruralMigrations, validateManifest, verifyPipeline } from "../src/pipeline";
@@ -54,9 +54,20 @@ test("real rural migration is complete, valid, and captures the audited normaliz
   const currentIds = new Set(data.rurals.map((record) => Number(record.id))); for (const migration of migrations) { if (migration.status === "matched") assert.ok(migration.new_id !== null && currentIds.has(migration.new_id)); for (const candidate of migration.candidate_new_ids) assert.ok(currentIds.has(candidate)); }
   const previousNotFound = execFileSync("git", ["show", "3c982f57692bff9c80932a4e7a13e47a55bffd59:migration/v2-to-v3.csv"], { cwd: root, encoding: "utf8" }).trim().split("\n").slice(1).map((line) => line.split(",")).filter(([, , , status]) => status === "not_found").map(([, oldId]) => Number(oldId));
   assert.equal(previousNotFound.length, 63); const repaired = migrations.filter((migration) => previousNotFound.includes(migration.old_id));
-  assert.deepEqual(Object.fromEntries(["matched", "ambiguous", "not_found"].map((status) => [status, repaired.filter((migration) => migration.status === status).length])), { matched: 50, ambiguous: 0, not_found: 13 });
-  assert.equal(migrations.filter((migration) => migration.status === "matched").length, 1511); assert.equal(migrations.filter((migration) => migration.match_basis === "legacy-id-province-county-normalized-name").length, 50);
+  assert.deepEqual(Object.fromEntries(["matched", "ambiguous", "not_found"].map((status) => [status, repaired.filter((migration) => migration.status === status).length])), { matched: 63, ambiguous: 0, not_found: 0 });
+  assert.equal(migrations.filter((migration) => migration.status === "matched").length, 1524); assert.equal(migrations.filter((migration) => migration.status === "ambiguous").length, 0); assert.equal(migrations.filter((migration) => migration.status === "not_found").length, 0); assert.equal(migrations.filter((migration) => migration.match_basis === "legacy-id-province-county-normalized-name").length, 50);
   for (const id of [1000004001, 1060005002, 12300013002]) { const migration = migrations.find((record) => record.old_id === id); assert.equal(migration?.status, "matched"); assert.equal(migration?.match_basis, "legacy-id-province-county-normalized-name"); }
+  const overrides = loadV2RuralMigrationOverrides(root); const expected = new Map([[1010004002, 101000400070001], [1040008005, 104000800070002], [1040008007, 104000800080002], [1070007002, 107000700080001], [10300010002, 1030002900020001], [10300010001, 1030002900010001], [10300010003, 1030002900010002], [10300010004, 1030002900010003], [12900011001, 1290001200010001], [12900011002, 1290001200020001], [1070003001, 107000300010001], [1180008001, 118000800010001], [1180008002, 118000800010002]]);
+  assert.equal(overrides.length, expected.size); for (const [oldId, newId] of expected) { const matchingRows = migrations.filter((migration) => migration.old_id === oldId); assert.equal(matchingRows.length, 1); assert.deepEqual(matchingRows[0], { entity: "rural", old_id: oldId, new_id: newId, status: "matched", match_basis: "compatibility_override", candidate_new_ids: [newId] }); assert.ok(currentIds.has(newId)); }
+});
+test("rural migration overrides fail closed when stale, conflicting, or misleading", () => {
+  const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical/list.xlsx")).rows); const contract = loadV2Contract(root); const data = projectDatasets(model, contract); const overrides = loadV2RuralMigrationOverrides(root);
+  assert.throws(() => ruralMigrations(model, data, contract, [{ old_id: 999, current_key: overrides[0].current_key, reason: "administrative_reorganization" }]), /unknown V2 rural ID/);
+  assert.throws(() => ruralMigrations(model, data, contract, [{ ...overrides[0], current_key: "rural:99:99:99:9999" }]), /current_key must resolve/);
+  assert.throws(() => ruralMigrations(model, data, contract, [overrides[0], { ...overrides[0] }]), /Duplicate rural migration override old_id/);
+  const automatic = contract.datasets.rurals.find((old) => !overrides.some((override) => override.old_id === old.id))!;
+  assert.throws(() => ruralMigrations(model, data, contract, [{ old_id: automatic.id, current_key: overrides[0].current_key, reason: "administrative_reorganization" }]), /conflicts with automatic matched match/);
+  assert.throws(() => ruralMigrations(model, data, contract, [overrides[0], { ...overrides[1], current_key: overrides[0].current_key }]), /Duplicate rural migration override target/);
 });
 test("reorganized cities retain V2 IDs without changing the current hierarchy", () => {
   const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical/list.xlsx")).rows); const data = projectDatasets(model, loadV2Contract(root));

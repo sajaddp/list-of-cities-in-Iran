@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { assertAcyclic, buildCanonicalModel } from "./model";
-import { loadV2Contract, legacyIdFor, V2Contract, V2Dataset } from "./compat";
+import { loadV2Contract, loadV2RuralMigrationOverrides, legacyIdFor, RuralMigrationOverride, V2Contract, V2Dataset } from "./compat";
 import { sha256, validateJsonOutputs, verifyFormatParity, writeDatasets, writeSchema } from "./output";
 import { idFor, projectDatasets } from "./project";
 import { schemaResult } from "./schema";
@@ -31,16 +31,32 @@ export function classifyRuralMigrationCandidates(old: V2Contract["datasets"]["ru
   if (candidate_new_ids.length > 1) return { entity: "rural", old_id: old.id, new_id: null, status: "ambiguous", match_basis, candidate_new_ids };
   return { entity: "rural", old_id: old.id, new_id: null, status: "not_found", match_basis: "no-current-legacy-id-province-county-normalized-name-match", candidate_new_ids: [] };
 }
-export function ruralMigrations(model: Computed["model"], data: Datasets, contract: V2Contract): Migration[] {
+function applyRuralMigrationOverrides(model: Computed["model"], data: Datasets, contract: V2Contract, automaticMigrations: Migration[], overrides: RuralMigrationOverride[]): Migration[] {
+  const historicalById = new Map(contract.datasets.rurals.map((record) => [record.id, record])); const automaticByOldId = new Map(automaticMigrations.map((migration) => [migration.old_id, migration])); const currentRurals = new Map(data.rurals.map((record) => [Number(record.id), record])); const seenOldIds = new Set<number>(); const seenTargetIds = new Set<number>(); const targets = new Map<number, number>();
+  for (const override of overrides) {
+    if (!override || typeof override.old_id !== "number" || typeof override.current_key !== "string" || typeof override.reason !== "string") throw new Error("Invalid rural migration override entry");
+    if (!Number.isSafeInteger(override.old_id) || !historicalById.has(override.old_id)) throw new Error(`Rural migration override references unknown V2 rural ID ${override.old_id}`);
+    if (override.reason !== "administrative_reorganization" && override.reason !== "official_name_change") throw new Error(`Rural migration override has invalid reason for V2 rural ID ${override.old_id}`);
+    if (seenOldIds.has(override.old_id)) throw new Error(`Duplicate rural migration override old_id ${override.old_id}`); seenOldIds.add(override.old_id);
+    const automatic = automaticByOldId.get(override.old_id); if (!automatic || automatic.status !== "not_found") throw new Error(`Rural migration override conflicts with automatic ${automatic?.status ?? "missing"} match for V2 rural ID ${override.old_id}`);
+    const entities = model.entities.filter((entity) => entity.type === "rural" && entity.key === override.current_key); if (entities.length !== 1) throw new Error(`Rural migration override current_key must resolve to exactly one current rural: ${override.current_key}`);
+    const targetId = Number(idFor(entities[0])); if (!currentRurals.has(targetId)) throw new Error(`Rural migration override current_key does not produce a current V3 rural ID: ${override.current_key}`);
+    if (seenTargetIds.has(targetId)) throw new Error(`Duplicate rural migration override target V3 rural ID ${targetId}`); seenTargetIds.add(targetId); targets.set(override.old_id, targetId);
+  }
+  const migrated = automaticMigrations.map((migration) => { const targetId = targets.get(migration.old_id); return targetId === undefined ? migration : { entity: "rural" as const, old_id: migration.old_id, new_id: targetId, status: "matched" as const, match_basis: "compatibility_override", candidate_new_ids: [targetId] }; });
+  if (new Set(migrated.map((migration) => migration.old_id)).size !== migrated.length) throw new Error("Rural migration overrides create duplicate migration rows");
+  return migrated;
+}
+export function ruralMigrations(model: Computed["model"], data: Datasets, contract: V2Contract, overrides: RuralMigrationOverride[] = loadV2RuralMigrationOverrides(path.basename(process.cwd()) === "tools" ? path.resolve(process.cwd(), "..") : process.cwd())): Migration[] {
   const ruralById = new Map(data.rurals.map((record) => [String(record.id), record]));
   const candidates = model.entities.filter((entity) => entity.type === "rural").map((entity) => { const record = ruralById.get(String(idFor(entity)))!; return { legacy_id: legacyIdFor(entity), id: Number(record.id), name: String(record.name), province_id: record.province_id as number | undefined, county_id: record.county_id as number | undefined }; });
-  return contract.datasets.rurals.map((old) => classifyRuralMigrationCandidates(old, candidates));
+  return applyRuralMigrationOverrides(model, data, contract, contract.datasets.rurals.map((old) => classifyRuralMigrationCandidates(old, candidates)), overrides);
 }
 function migrationMetrics(migrations: Migration[], contract: V2Contract, data: Datasets) {
   const old = new Set(contract.datasets.rurals.map((record) => record.id)); const next = new Set(data.rurals.map((record) => Number(record.id)));
   const invalidOldIds = migrations.filter((record) => !old.has(record.old_id)).length;
   const invalidNewIds = migrations.filter((record) => record.new_id !== null && !next.has(record.new_id)).length + migrations.flatMap((record) => record.candidate_new_ids).filter((id) => !next.has(id)).length;
-  return { v2Rows: old.size, migrationRecords: migrations.length, matched: migrations.filter((record) => record.status === "matched").length, ambiguous: migrations.filter((record) => record.status === "ambiguous").length, not_found: migrations.filter((record) => record.status === "not_found").length, normalizationMatches: migrations.filter((record) => record.status === "matched" && record.match_basis === "legacy-id-province-county-normalized-name").length, invalidOldIds, invalidNewIds, complete: new Set(migrations.map((record) => record.old_id)).size === old.size && migrations.every((record) => old.has(record.old_id)) };
+  return { v2Rows: old.size, migrationRecords: migrations.length, matched: migrations.filter((record) => record.status === "matched").length, ambiguous: migrations.filter((record) => record.status === "ambiguous").length, not_found: migrations.filter((record) => record.status === "not_found").length, normalizationMatches: migrations.filter((record) => record.status === "matched" && record.match_basis === "legacy-id-province-county-normalized-name").length, compatibilityOverrideMatches: migrations.filter((record) => record.status === "matched" && record.match_basis === "compatibility_override").length, invalidOldIds, invalidNewIds, complete: new Set(migrations.map((record) => record.old_id)).size === old.size && migrations.every((record) => old.has(record.old_id)) };
 }
 function migrationCsv(migrations: Migration[]): string { const rows = migrations.map((record) => `${record.entity},${record.old_id},${record.new_id ?? ""},${record.status},${record.match_basis},${record.candidate_new_ids.join("|")}`); return `entity,old_id,new_id,status,match_basis,candidate_new_ids\n${rows.join("\n")}\n`; }
 function writeMigration(repoRoot: string, migrations: Migration[]): void { fs.writeFileSync(path.join(repoRoot, "migration", "v2-to-v3.csv"), migrationCsv(migrations), "utf8"); }

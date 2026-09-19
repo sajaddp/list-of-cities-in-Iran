@@ -240,10 +240,11 @@
     "migration": {
       "v2Rows": 1524,
       "migrationRecords": 1524,
-      "matched": 1511,
+      "matched": 1524,
       "ambiguous": 0,
-      "not_found": 13,
+      "not_found": 0,
       "normalizationMatches": 50,
+      "compatibilityOverrideMatches": 13,
       "invalidOldIds": 0,
       "invalidNewIds": 0,
       "complete": true

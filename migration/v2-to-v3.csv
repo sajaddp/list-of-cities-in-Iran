@@ -42,7 +42,7 @@ rural,1010002004,101000200020004,matched,legacy-id-parent-and-name,1010002000200
 rural,1010003001,101000300010001,matched,legacy-id-parent-and-name,101000300010001
 rural,1010003002,101000300010002,matched,legacy-id-parent-and-name,101000300010002
 rural,1010004001,101000400050001,matched,legacy-id-parent-and-name,101000400050001
-rural,1010004002,,not_found,no-current-legacy-id-province-county-normalized-name-match,
+rural,1010004002,101000400070001,matched,compatibility_override,101000400070001
 rural,1010004003,101000400030003,matched,legacy-id-parent-and-name,101000400030003
 rural,1010004004,101000400030004,matched,legacy-id-parent-and-name,101000400030004
 rural,1010005001,101000500020001,matched,legacy-id-parent-and-name,101000500020001
@@ -154,9 +154,9 @@ rural,1040007004,104000700020004,matched,legacy-id-parent-and-name,1040007000200
 rural,1040008001,104000800060001,matched,legacy-id-parent-and-name,104000800060001
 rural,1040008002,104000800030002,matched,legacy-id-province-county-normalized-name,104000800030002
 rural,1040008003,104000800030003,matched,legacy-id-province-county-normalized-name,104000800030003
-rural,1040008005,,not_found,no-current-legacy-id-province-county-normalized-name-match,
+rural,1040008005,104000800070002,matched,compatibility_override,104000800070002
 rural,1040008006,104000800030006,matched,legacy-id-parent-and-name,104000800030006
-rural,1040008007,,not_found,no-current-legacy-id-province-county-normalized-name-match,
+rural,1040008007,104000800080002,matched,compatibility_override,104000800080002
 rural,1040009001,104000900020001,matched,legacy-id-parent-and-name,104000900020001
 rural,1040009002,104000900030002,matched,legacy-id-parent-and-name,104000900030002
 rural,1040009003,104000900020003,matched,legacy-id-parent-and-name,104000900020003
@@ -235,7 +235,7 @@ rural,1070001003,107000100040003,matched,legacy-id-parent-and-name,1070001000400
 rural,1070001004,107000100040004,matched,legacy-id-parent-and-name,107000100040004
 rural,1070002001,107000200010001,matched,legacy-id-parent-and-name,107000200010001
 rural,1070002002,107000200010002,matched,legacy-id-parent-and-name,107000200010002
-rural,1070003001,,not_found,no-current-legacy-id-province-county-normalized-name-match,
+rural,1070003001,107000300010001,matched,compatibility_override,107000300010001
 rural,1070003002,107000300010002,matched,legacy-id-parent-and-name,107000300010002
 rural,1070003003,107000300010003,matched,legacy-id-parent-and-name,107000300010003
 rural,1070003004,107000300020004,matched,legacy-id-parent-and-name,107000300020004
@@ -252,7 +252,7 @@ rural,1070006001,107000600020001,matched,legacy-id-parent-and-name,1070006000200
 rural,1070006002,107000600020002,matched,legacy-id-parent-and-name,107000600020002
 rural,1070006003,107000600020003,matched,legacy-id-parent-and-name,107000600020003
 rural,1070007001,107000700050001,matched,legacy-id-parent-and-name,107000700050001
-rural,1070007002,,not_found,no-current-legacy-id-province-county-normalized-name-match,
+rural,1070007002,107000700080001,matched,compatibility_override,107000700080001
 rural,1070007003,107000700050003,matched,legacy-id-parent-and-name,107000700050003
 rural,1070007006,107000700050006,matched,legacy-id-parent-and-name,107000700050006
 rural,1070007008,107000700050008,matched,legacy-id-parent-and-name,107000700050008
@@ -606,8 +606,8 @@ rural,1180006002,118000600030002,matched,legacy-id-parent-and-name,1180006000300
 rural,1180006004,118000600020004,matched,legacy-id-parent-and-name,118000600020004
 rural,1180006005,118000600020005,matched,legacy-id-parent-and-name,118000600020005
 rural,1180007001,118000700020001,matched,legacy-id-parent-and-name,118000700020001
-rural,1180008001,,not_found,no-current-legacy-id-province-county-normalized-name-match,
-rural,1180008002,,not_found,no-current-legacy-id-province-county-normalized-name-match,
+rural,1180008001,118000800010001,matched,compatibility_override,118000800010001
+rural,1180008002,118000800010002,matched,compatibility_override,118000800010002
 rural,1180009001,118000900010001,matched,legacy-id-parent-and-name,118000900010001
 rural,1180009002,118000900010002,matched,legacy-id-parent-and-name,118000900010002
 rural,1180009003,118000900010003,matched,legacy-id-parent-and-name,118000900010003
@@ -966,10 +966,10 @@ rural,10200027001,1020002700010001,matched,legacy-id-parent-and-name,10200027000
 rural,10200027002,1020002700010002,matched,legacy-id-parent-and-name,1020002700010002
 rural,10200028001,1020002800010001,matched,legacy-id-parent-and-name,1020002800010001
 rural,10200028002,1020002800010002,matched,legacy-id-parent-and-name,1020002800010002
-rural,10300010002,,not_found,no-current-legacy-id-province-county-normalized-name-match,
-rural,10300010001,,not_found,no-current-legacy-id-province-county-normalized-name-match,
-rural,10300010003,,not_found,no-current-legacy-id-province-county-normalized-name-match,
-rural,10300010004,,not_found,no-current-legacy-id-province-county-normalized-name-match,
+rural,10300010002,1030002900020001,matched,compatibility_override,1030002900020001
+rural,10300010001,1030002900010001,matched,compatibility_override,1030002900010001
+rural,10300010003,1030002900010002,matched,compatibility_override,1030002900010002
+rural,10300010004,1030002900010003,matched,compatibility_override,1030002900010003
 rural,10300010005,1030001000040005,matched,legacy-id-province-county-normalized-name,1030001000040005
 rural,10300010006,1030001000040006,matched,legacy-id-province-county-normalized-name,1030001000040006
 rural,10300010007,1030001000040007,matched,legacy-id-parent-and-name,1030001000040007
@@ -1520,6 +1520,6 @@ rural,12900010001,1290001000010001,matched,legacy-id-parent-and-name,12900010000
 rural,12900010002,1290001000010002,matched,legacy-id-parent-and-name,1290001000010002
 rural,12900011003,1290001100020003,matched,legacy-id-parent-and-name,1290001100020003
 rural,12900010003,1290001000020003,matched,legacy-id-parent-and-name,1290001000020003
-rural,12900011001,,not_found,no-current-legacy-id-province-county-normalized-name-match,
-rural,12900011002,,not_found,no-current-legacy-id-province-county-normalized-name-match,
+rural,12900011001,1290001200010001,matched,compatibility_override,1290001200010001
+rural,12900011002,1290001200020001,matched,compatibility_override,1290001200020001
 rural,12900011004,1290001100020004,matched,legacy-id-parent-and-name,1290001100020004

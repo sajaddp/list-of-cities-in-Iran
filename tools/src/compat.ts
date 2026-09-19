@@ -10,10 +10,15 @@ import { CanonicalEntity, EntityType } from "./types";
 export interface V2Record { id: number; name: string; slug: string; province_id?: number; county_id?: number; tel_prefix?: string; }
 export type V2Dataset = "provinces" | "counties" | "districts" | "cities" | "rurals";
 export interface V2Contract { note: string; sourceCommit: string; datasets: Record<V2Dataset, V2Record[]>; }
+export type RuralMigrationOverrideReason = "administrative_reorganization" | "official_name_change";
+export interface RuralMigrationOverride { old_id: number; current_key: string; reason: RuralMigrationOverrideReason; }
 const datasetFor: Record<Exclude<EntityType, "village">, V2Dataset> = { province: "provinces", county: "counties", district: "districts", city: "cities", rural: "rurals" };
 
 export function loadV2Contract(repoRoot: string): V2Contract {
   return JSON.parse(fs.readFileSync(path.join(repoRoot, "compat", "v2-public-contract.json"), "utf8")) as V2Contract;
+}
+export function loadV2RuralMigrationOverrides(repoRoot: string): RuralMigrationOverride[] {
+  return JSON.parse(fs.readFileSync(path.join(repoRoot, "compat", "v2-rural-migration-overrides.json"), "utf8")) as RuralMigrationOverride[];
 }
 export function legacyIdFor(entity: CanonicalEntity): number {
   const province = 100 + Number(entity.codes.province);
