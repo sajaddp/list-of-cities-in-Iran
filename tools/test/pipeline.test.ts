@@ -266,14 +266,20 @@ test("city datasets form the published real-city and urban-zone partition", () =
 
 test("Explorer projects the published city partition without city aliases", () => {
   const cities = JSON.parse(readFileSync(join(root, "dist", "json", "cities.json"), "utf8"));
+  const realCities = JSON.parse(readFileSync(join(root, "dist", "json", "cities-filtered.json"), "utf8"));
+  const urbanZones = JSON.parse(readFileSync(join(root, "dist", "json", "urban-zones.json"), "utf8"));
   const core = JSON.parse(readFileSync(join(root, "docs", "data", "search-core.json"), "utf8"));
   const explorerCities = core.filter((record: { type: string }) => record.type === "city");
   const explorerUrbanZones = core.filter((record: { type: string }) => record.type === "urban-zone");
   assert.equal(explorerCities.length, 1481);
   assert.equal(explorerUrbanZones.length, 191);
   const cityIds = new Set(cities.map((record: { id: number }) => record.id));
+  const realCityIds = new Set(realCities.map((record: { id: number }) => record.id));
+  const urbanZoneIds = new Set(urbanZones.map((record: { id: number }) => record.id));
   const explorerCityIds = new Set(explorerCities.map((record: { id: number }) => record.id));
   const explorerUrbanZoneIds = new Set(explorerUrbanZones.map((record: { id: number }) => record.id));
+  assert.deepEqual(explorerCityIds, realCityIds);
+  assert.deepEqual(explorerUrbanZoneIds, urbanZoneIds);
   assert.equal([...explorerCityIds].filter((id) => explorerUrbanZoneIds.has(id)).length, 0);
   assert.deepEqual(new Set([...explorerCityIds, ...explorerUrbanZoneIds]), cityIds);
   const arakOne = explorerUrbanZones.find((record: { name: string }) => record.name === "اراک 1");
