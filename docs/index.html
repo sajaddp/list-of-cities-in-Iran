@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="کاوشگر داده تقسیمات کشوری ایران برای برنامه‌نویسان">
+    <title>کاوشگر داده تقسیمات کشوری ایران</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">list-of-cities-in-Iran</p>
+        <h1>داده تقسیمات کشوری ایران برای برنامه‌نویسان</h1>
+        <p class="subtitle" lang="en" dir="ltr">Iran Administrative Data for Developers</p>
+        <nav class="actions" aria-label="دسترسی سریع">
+          <a class="button primary" href="#search">جست‌وجوی داده</a>
+          <a class="button" href="#downloads">دریافت داده</a>
+          <a class="button" href="#semantics">تفاوت شهر و شهرستان</a>
+        </nav>
+      </header>
+
+      <section id="search" aria-labelledby="search-title">
+        <div class="section-heading"><div><p class="eyebrow">Explorer</p><h2 id="search-title">رکورد درست را پیدا کنید</h2></div><p id="load-state" class="muted" role="status">در حال آماده‌سازی جست‌وجو…</p></div>
+        <div class="search-box">
+          <label for="query">نام استان، شهرستان، بخش، دهستان، شهر یا آبادی</label>
+          <input id="query" type="search" autocomplete="off" placeholder="مثلاً رفسنجان، تهران یا اراک" disabled>
+          <div class="filters" aria-label="فیلتر نوع تقسیمات">
+            <button type="button" class="filter active" data-filter="all" aria-pressed="true">همهٔ موارد رایج</button>
+            <button type="button" class="filter" data-filter="province" aria-pressed="false">استان / Province</button>
+            <button type="button" class="filter" data-filter="county" aria-pressed="false">شهرستان / County</button>
+            <button type="button" class="filter" data-filter="district" aria-pressed="false">بخش / District</button>
+            <button type="button" class="filter" data-filter="rural" aria-pressed="false">دهستان / Rural District</button>
+            <button type="button" class="filter" data-filter="city" aria-pressed="false">شهر / City</button>
+            <button type="button" class="filter" data-filter="village" aria-pressed="false">آبادی / Village</button>
+          </div>
+        </div>
+        <p id="search-note" class="muted">فهرست آبادی‌ها فقط با انتخاب «آبادی» بارگیری می‌شود.</p>
+        <div class="explorer-grid">
+          <section aria-labelledby="results-title"><h3 id="results-title">نتایج</h3><ul id="results" class="results" aria-live="polite"></ul><button id="search-villages" class="text-button" type="button" hidden>جست‌وجو در آبادی‌ها</button></section>
+          <aside id="detail" class="detail" aria-labelledby="detail-title"><h3 id="detail-title">جزئیات رکورد</h3><p class="muted">یک نتیجه را انتخاب کنید.</p></aside>
+        </div>
+      </section>
+
+      <section id="downloads" aria-labelledby="downloads-title">
+        <div class="section-heading"><div><p class="eyebrow">Downloads</p><h2 id="downloads-title">دریافت سریع داده</h2></div><p class="muted">فایل‌های مخزن مرجع هستند.</p></div>
+        <div class="download-table" role="region" aria-label="پیوندهای دریافت داده" tabindex="0">
+          <table>
+            <thead><tr><th>داده</th><th>JSON</th><th>CSV</th><th>XLSX</th></tr></thead>
+            <tbody>
+              <tr><th>استان‌ها / Provinces</th><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/json/provinces.json">JSON</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/csv/provinces.csv">CSV</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/xlsx/provinces.xlsx">XLSX</a></td></tr>
+              <tr><th>شهرستان‌ها / Counties</th><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/json/counties.json">JSON</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/csv/counties.csv">CSV</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/xlsx/counties.xlsx">XLSX</a></td></tr>
+              <tr><th>شهرها / Cities <small>پروجکشن کامل و canonical</small></th><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/json/cities.json">JSON</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/csv/cities.csv">CSV</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/xlsx/cities.xlsx">XLSX</a></td></tr>
+              <tr><th>شهرهای فیلترشده / Filtered Cities <small>مشتق‌شده برای سهولت</small></th><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/json/cities-filtered.json">JSON</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/csv/cities-filtered.csv">CSV</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/xlsx/cities-filtered.xlsx">XLSX</a></td></tr>
+              <tr><th>بخش‌ها / Districts</th><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/json/districts.json">JSON</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/csv/districts.csv">CSV</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/xlsx/districts.xlsx">XLSX</a></td></tr>
+              <tr><th>دهستان‌ها / Rural Districts</th><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/json/rurals.json">JSON</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/csv/rurals.csv">CSV</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/xlsx/rurals.xlsx">XLSX</a></td></tr>
+              <tr><th>آبادی‌ها / Villages</th><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/json/villages.json">JSON</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/csv/villages.csv">CSV</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/xlsx/villages.xlsx">XLSX</a></td></tr>
+              <tr><th>همه داده‌ها / All</th><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/json/all.json">JSON</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/csv/all.csv">CSV</a></td><td><a href="https://raw.githubusercontent.com/sajaddp/list-of-cities-in-Iran/main/dist/xlsx/all.xlsx">XLSX</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="semantics" class="semantics" aria-labelledby="semantics-title">
+        <p class="eyebrow">Data semantics</p><h2 id="semantics-title">شهر و شهرستان یکی نیستند</h2>
+        <div class="semantic-cards"><article><span class="badge county">شهرستان / County</span><p>یک تقسیم اداری است؛ مثلاً «شهرستان رفسنجان» در استان کرمان.</p></article><article><span class="badge city">شهر / City</span><p>یک سکونتگاه شهری است؛ مثلاً «شهر رفسنجان» در شهرستان رفسنجان.</p></article></div>
+      </section>
+
+      <section id="metadata" aria-labelledby="metadata-title"><p class="eyebrow">Dataset</p><h2 id="metadata-title">دربارهٔ داده</h2><div id="metadata-content" class="metadata" aria-live="polite"><p class="muted">در حال بارگیری فراداده…</p></div></section>
+    </main>
+    <footer><a href="https://github.com/sajaddp/list-of-cities-in-Iran">GitHub repository</a> <span aria-hidden="true">·</span> دادهٔ عمومی، بدون ردیابی یا تحلیل رفتار</footer>
+    <script src="assets/explorer-core.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

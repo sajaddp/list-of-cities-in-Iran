@@ -1,6 +1,6 @@
 # نحوه فراخوانی و استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در جاوااسکریپت
 
-در این راهنما، به‌صورت حرفه‌ای روش صحیح فراخوانی و استفاده از **فهرست شهرهای ایران** به زبان جاوااسکریپت توضیح داده شده است. برای این منظور از فایل `provinces.json` در مسیر `dist/json` استفاده می‌کنیم. این فایل شامل داده‌های ساختاریافته مربوط به استان‌ها و شهرهای ایران است که در پروژه‌های فرانت‌اند یا فول‌استک قابل استفاده است.
+در این راهنما، به‌صورت حرفه‌ای روش صحیح فراخوانی و استفاده از **فهرست شهرهای ایران** به زبان جاوااسکریپت توضیح داده شده است. برای این منظور از فایل `provinces.json` در مسیر `dist/json` استفاده می‌کنیم. این فایل شامل داده‌های ساختاریافته مربوط به استان‌ها است که در پروژه‌های فرانت‌اند یا فول‌استک قابل استفاده است.
 
 ## مراحل
 
@@ -46,7 +46,7 @@ if (provinces) {
 
 ## How to Load and Use JSON File for Iranian Cities by Province in JavaScript
 
-This professional guide demonstrates how to correctly load and use the JSON file containing a structured list of **Iranian provinces and cities** in JavaScript. We use `provinces.json` located at `dist/json`, suitable for front-end or full-stack projects.
+This professional guide demonstrates how to correctly load and use the JSON file containing a structured list of **Iranian provinces** in JavaScript. We use `provinces.json` located at `dist/json`, suitable for front-end or full-stack projects.
 
 ## Steps
 

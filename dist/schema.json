@@ -1,0 +1,1419 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "list-of-cities-in-iran V3 datasets",
+  "$defs": {
+    "provinces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "tel_prefix"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tel_prefix": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "counties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "province_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "districts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "province_id",
+          "county_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          },
+          "county_id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "rurals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "province_id",
+          "county_id",
+          "district_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          },
+          "county_id": {
+            "type": "integer"
+          },
+          "district_id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "cities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "province_id",
+          "county_id",
+          "district_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          },
+          "county_id": {
+            "type": "integer"
+          },
+          "district_id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "cities-filtered": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "province_id",
+          "county_id",
+          "district_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          },
+          "county_id": {
+            "type": "integer"
+          },
+          "district_id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "villages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "province_id",
+          "county_id",
+          "district_id",
+          "rural_id",
+          "coderec",
+          "village_code",
+          "mapped_rural_code"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^village:"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          },
+          "county_id": {
+            "type": "integer"
+          },
+          "district_id": {
+            "type": "integer"
+          },
+          "rural_id": {
+            "type": "integer"
+          },
+          "coderec": {
+            "enum": [
+              "6",
+              "8"
+            ]
+          },
+          "village_code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mapped_rural_code": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "all": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "name",
+              "slug",
+              "tel_prefix",
+              "province_id",
+              "county_id",
+              "district_id",
+              "rural_id",
+              "coderec",
+              "village_code",
+              "mapped_rural_code"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^village:"
+                  }
+                ]
+              },
+              "type": {
+                "enum": [
+                  "province",
+                  "county",
+                  "district",
+                  "rural",
+                  "city",
+                  "village"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "slug": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tel_prefix": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "province_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "county_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "district_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rural_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "coderec": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "6",
+                      "8"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "village_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "mapped_rural_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "properties": {
+                  "type": {
+                    "const": "province"
+                  },
+                  "id": {
+                    "type": "integer"
+                  },
+                  "tel_prefix": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "province_id": {
+                    "type": "null"
+                  },
+                  "county_id": {
+                    "type": "null"
+                  },
+                  "district_id": {
+                    "type": "null"
+                  },
+                  "rural_id": {
+                    "type": "null"
+                  },
+                  "coderec": {
+                    "type": "null"
+                  },
+                  "village_code": {
+                    "type": "null"
+                  },
+                  "mapped_rural_code": {
+                    "type": "null"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "name",
+              "slug",
+              "tel_prefix",
+              "province_id",
+              "county_id",
+              "district_id",
+              "rural_id",
+              "coderec",
+              "village_code",
+              "mapped_rural_code"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^village:"
+                  }
+                ]
+              },
+              "type": {
+                "enum": [
+                  "province",
+                  "county",
+                  "district",
+                  "rural",
+                  "city",
+                  "village"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "slug": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tel_prefix": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "province_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "county_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "district_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rural_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "coderec": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "6",
+                      "8"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "village_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "mapped_rural_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "properties": {
+                  "type": {
+                    "const": "county"
+                  },
+                  "id": {
+                    "type": "integer"
+                  },
+                  "tel_prefix": {
+                    "type": "null"
+                  },
+                  "province_id": {
+                    "type": "integer"
+                  },
+                  "county_id": {
+                    "type": "null"
+                  },
+                  "district_id": {
+                    "type": "null"
+                  },
+                  "rural_id": {
+                    "type": "null"
+                  },
+                  "coderec": {
+                    "type": "null"
+                  },
+                  "village_code": {
+                    "type": "null"
+                  },
+                  "mapped_rural_code": {
+                    "type": "null"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "name",
+              "slug",
+              "tel_prefix",
+              "province_id",
+              "county_id",
+              "district_id",
+              "rural_id",
+              "coderec",
+              "village_code",
+              "mapped_rural_code"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^village:"
+                  }
+                ]
+              },
+              "type": {
+                "enum": [
+                  "province",
+                  "county",
+                  "district",
+                  "rural",
+                  "city",
+                  "village"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "slug": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tel_prefix": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "province_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "county_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "district_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rural_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "coderec": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "6",
+                      "8"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "village_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "mapped_rural_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "properties": {
+                  "type": {
+                    "const": "district"
+                  },
+                  "id": {
+                    "type": "integer"
+                  },
+                  "tel_prefix": {
+                    "type": "null"
+                  },
+                  "province_id": {
+                    "type": "integer"
+                  },
+                  "county_id": {
+                    "type": "integer"
+                  },
+                  "district_id": {
+                    "type": "null"
+                  },
+                  "rural_id": {
+                    "type": "null"
+                  },
+                  "coderec": {
+                    "type": "null"
+                  },
+                  "village_code": {
+                    "type": "null"
+                  },
+                  "mapped_rural_code": {
+                    "type": "null"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "name",
+              "slug",
+              "tel_prefix",
+              "province_id",
+              "county_id",
+              "district_id",
+              "rural_id",
+              "coderec",
+              "village_code",
+              "mapped_rural_code"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^village:"
+                  }
+                ]
+              },
+              "type": {
+                "enum": [
+                  "province",
+                  "county",
+                  "district",
+                  "rural",
+                  "city",
+                  "village"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "slug": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tel_prefix": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "province_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "county_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "district_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rural_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "coderec": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "6",
+                      "8"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "village_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "mapped_rural_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "properties": {
+                  "type": {
+                    "const": "rural"
+                  },
+                  "id": {
+                    "type": "integer"
+                  },
+                  "tel_prefix": {
+                    "type": "null"
+                  },
+                  "province_id": {
+                    "type": "integer"
+                  },
+                  "county_id": {
+                    "type": "integer"
+                  },
+                  "district_id": {
+                    "type": "integer"
+                  },
+                  "rural_id": {
+                    "type": "null"
+                  },
+                  "coderec": {
+                    "type": "null"
+                  },
+                  "village_code": {
+                    "type": "null"
+                  },
+                  "mapped_rural_code": {
+                    "type": "null"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "name",
+              "slug",
+              "tel_prefix",
+              "province_id",
+              "county_id",
+              "district_id",
+              "rural_id",
+              "coderec",
+              "village_code",
+              "mapped_rural_code"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^village:"
+                  }
+                ]
+              },
+              "type": {
+                "enum": [
+                  "province",
+                  "county",
+                  "district",
+                  "rural",
+                  "city",
+                  "village"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "slug": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tel_prefix": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "province_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "county_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "district_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rural_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "coderec": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "6",
+                      "8"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "village_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "mapped_rural_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "properties": {
+                  "type": {
+                    "const": "city"
+                  },
+                  "id": {
+                    "type": "integer"
+                  },
+                  "tel_prefix": {
+                    "type": "null"
+                  },
+                  "province_id": {
+                    "type": "integer"
+                  },
+                  "county_id": {
+                    "type": "integer"
+                  },
+                  "district_id": {
+                    "type": "integer"
+                  },
+                  "rural_id": {
+                    "type": "null"
+                  },
+                  "coderec": {
+                    "type": "null"
+                  },
+                  "village_code": {
+                    "type": "null"
+                  },
+                  "mapped_rural_code": {
+                    "type": "null"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "name",
+              "slug",
+              "tel_prefix",
+              "province_id",
+              "county_id",
+              "district_id",
+              "rural_id",
+              "coderec",
+              "village_code",
+              "mapped_rural_code"
+            ],
+            "properties": {
+              "id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^village:"
+                  }
+                ]
+              },
+              "type": {
+                "enum": [
+                  "province",
+                  "county",
+                  "district",
+                  "rural",
+                  "city",
+                  "village"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "slug": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tel_prefix": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "province_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "county_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "district_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rural_id": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "coderec": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "6",
+                      "8"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "village_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "mapped_rural_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "properties": {
+                  "type": {
+                    "const": "village"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^village:"
+                  },
+                  "tel_prefix": {
+                    "type": "null"
+                  },
+                  "province_id": {
+                    "type": "integer"
+                  },
+                  "county_id": {
+                    "type": "integer"
+                  },
+                  "district_id": {
+                    "type": "integer"
+                  },
+                  "rural_id": {
+                    "type": "integer"
+                  },
+                  "coderec": {
+                    "enum": [
+                      "6",
+                      "8"
+                    ]
+                  },
+                  "village_code": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "province-capitals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "province_id",
+          "province_name",
+          "center_name",
+          "latitude",
+          "longitude",
+          "source_id",
+          "source_feature_id",
+          "source_name"
+        ],
+        "properties": {
+          "province_id": {
+            "type": "integer"
+          },
+          "province_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "center_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_feature_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_name": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "county-centers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "county_id",
+          "county_name",
+          "province_id",
+          "center_name",
+          "latitude",
+          "longitude",
+          "source_id",
+          "source_feature_id",
+          "source_name"
+        ],
+        "properties": {
+          "county_id": {
+            "type": "integer"
+          },
+          "county_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          },
+          "center_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_feature_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_name": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "datasetVersion": "3.0.0-phase2",
+  "schemaVersion": "3.0.0-phase2",
+  "officialSourceYear": 1404,
+  "source": {
+    "filename": "offical/list.xlsx",
+    "sha256": "e58107e6d478366f98042c3f25b2f27032363976f0ce25dab91fc55ea03ad1df"
+  },
+  "entityTypeContract": {
+    "provinces": "province",
+    "counties": "county",
+    "districts": "district",
+    "rurals": "rural",
+    "cities": "city",
+    "cities-filtered": "city",
+    "villages": "village",
+    "all": "mixed"
+  },
+  "generatedDatasets": [
+    {
+      "name": "provinces",
+      "entityType": "province",
+      "derived": false,
+      "rowCount": 31,
+      "paths": {
+        "json": "dist/json/provinces.json",
+        "csv": "dist/csv/provinces.csv",
+        "xlsx": "dist/xlsx/provinces.xlsx"
+      }
+    },
+    {
+      "name": "counties",
+      "entityType": "county",
+      "derived": false,
+      "rowCount": 484,
+      "paths": {
+        "json": "dist/json/counties.json",
+        "csv": "dist/csv/counties.csv",
+        "xlsx": "dist/xlsx/counties.xlsx"
+      }
+    },
+    {
+      "name": "districts",
+      "entityType": "district",
+      "derived": false,
+      "rowCount": 1193,
+      "paths": {
+        "json": "dist/json/districts.json",
+        "csv": "dist/csv/districts.csv",
+        "xlsx": "dist/xlsx/districts.xlsx"
+      }
+    },
+    {
+      "name": "rurals",
+      "entityType": "rural",
+      "derived": false,
+      "rowCount": 2777,
+      "paths": {
+        "json": "dist/json/rurals.json",
+        "csv": "dist/csv/rurals.csv",
+        "xlsx": "dist/xlsx/rurals.xlsx"
+      }
+    },
+    {
+      "name": "cities",
+      "entityType": "city",
+      "derived": false,
+      "rowCount": 1672,
+      "paths": {
+        "json": "dist/json/cities.json",
+        "csv": "dist/csv/cities.csv",
+        "xlsx": "dist/xlsx/cities.xlsx"
+      }
+    },
+    {
+      "name": "cities-filtered",
+      "entityType": "city",
+      "derived": true,
+      "rowCount": 1185,
+      "paths": {
+        "json": "dist/json/cities-filtered.json",
+        "csv": "dist/csv/cities-filtered.csv",
+        "xlsx": "dist/xlsx/cities-filtered.xlsx"
+      },
+      "filterRule": "exclude cities whose current-name filter slug includes '-' or '_'"
+    },
+    {
+      "name": "villages",
+      "entityType": "village",
+      "derived": false,
+      "rowCount": 99317,
+      "paths": {
+        "json": "dist/json/villages.json",
+        "csv": "dist/csv/villages.csv",
+        "xlsx": "dist/xlsx/villages.xlsx"
+      }
+    },
+    {
+      "name": "all",
+      "entityType": "mixed",
+      "derived": false,
+      "rowCount": 105474,
+      "paths": {
+        "json": "dist/json/all.json",
+        "csv": "dist/csv/all.csv",
+        "xlsx": "dist/xlsx/all.xlsx"
+      }
+    }
+  ],
+  "enrichmentDatasets": [
+    {
+      "name": "province-capitals",
+      "entityType": "province-capital",
+      "enrichment": true,
+      "derived": true,
+      "officialAdministrativeSource": false,
+      "rowCount": 31,
+      "sourceIds": [
+        "geonames-iran-2026-09-19"
+      ],
+      "paths": {
+        "json": "dist/json/province-capitals.json",
+        "csv": "dist/csv/province-capitals.csv",
+        "xlsx": "dist/xlsx/province-capitals.xlsx"
+      }
+    },
+    {
+      "name": "county-centers",
+      "entityType": "county-center",
+      "enrichment": true,
+      "derived": true,
+      "officialAdministrativeSource": false,
+      "rowCount": 484,
+      "sourceIds": [
+        "geonames-iran-2026-09-19"
+      ],
+      "paths": {
+        "json": "dist/json/county-centers.json",
+        "csv": "dist/csv/county-centers.csv",
+        "xlsx": "dist/xlsx/county-centers.xlsx"
+      }
+    }
+  ],
+  "enrichmentSources": [
+    {
+      "id": "geonames-iran-2026-09-19",
+      "provider": "GeoNames",
+      "source_url": "https://download.geonames.org/export/dump/IR.zip",
+      "accessed_on": "2026-09-19",
+      "license": "CC BY 4.0; attribution to GeoNames is required",
+      "status": "derived",
+      "notes": "A committed, one-time curated subset of the GeoNames Iran dump. It supplies point coordinates for province capitals and county seats; it is not part of the official administrative workbook and is not a centroid or polygon dataset.",
+      "evidence": {
+        "metadata": "enrichment/coordinates/evidence/geonames-iran-2026-09-19.metadata.json",
+        "extraction": "enrichment/coordinates/evidence/geonames-iran-2026-09-19.tsv"
+      }
+    }
+  ],
+  "llmContexts": [
+    {
+      "scope": "provinces",
+      "entityType": "province",
+      "rowCount": 31,
+      "path": "dist/llm/provinces.txt",
+      "format": "header+tsv",
+      "derived": true
+    },
+    {
+      "scope": "counties",
+      "entityType": "county",
+      "rowCount": 484,
+      "path": "dist/llm/counties.txt",
+      "format": "header+tsv",
+      "derived": true
+    },
+    {
+      "scope": "cities",
+      "entityType": "city",
+      "rowCount": 1672,
+      "path": "dist/llm/cities.txt",
+      "format": "header+tsv",
+      "derived": true
+    },
+    {
+      "scope": "cities-filtered",
+      "entityType": "city",
+      "rowCount": 1185,
+      "path": "dist/llm/cities-filtered.txt",
+      "format": "header+tsv",
+      "derived": true
+    }
+  ],
+  "generator": {
+    "name": "list-of-cities-in-iran-tools",
+    "version": "3.0.0-phase2",
+    "deterministic": true
+  }
+}

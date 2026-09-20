@@ -1,0 +1,241 @@
+import assert from "node:assert/strict";
+import { existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { join, resolve, relative } from "node:path";
+import { tmpdir } from "node:os";
+import test from "node:test";
+import { loadV2Contract, loadV2RuralMigrationOverrides } from "../src/compat";
+import { buildCanonicalModel } from "../src/model";
+import { DATASET_COLUMNS, sha256, verifyCoordinateFormatParity, verifyFormatParity } from "../src/output";
+import { COORDINATE_DATASET_COLUMNS, loadCoordinateSources, validateCoordinateDatasets } from "../src/coordinates";
+import { inspectLlmContext, LLM_SCOPES } from "../src/llm";
+import { explorerRecords, verifyExplorerData, verifyExplorerShell } from "../src/explorer";
+import { buildPipeline, classifyRuralMigrationCandidates, MANIFEST_ENTITY_TYPES, ruralMigrations, validateManifest, verifyPipeline } from "../src/pipeline";
+import { assertUniquePublicIds, historicalCityIdOverrides, idFor, projectDatasets } from "../src/project";
+import { coordinateSchema, validateDatasets } from "../src/schema";
+import Ajv from "ajv/dist/2020";
+import { officialName, parseOfficialWorkbook } from "../src/source";
+import { normalizeMigrationName, normalizePersianText } from "../src/text";
+import { Datasets, SourceRow } from "../src/types";
+
+const root = resolve(__dirname, "../..");
+const ExplorerCore = require(join(root, "docs", "assets", "explorer-core.js"));
+test("coordinate schemas reject invalid global ranges and a same-name place without identity evidence fails", () => { const source = loadCoordinateSources(root); const ajv = new Ajv({ allErrors: true, strict: false }); const schema = ajv.compile({ ...coordinateSchema, $ref: "#/$defs/province-capitals" }); for (const [field, value] of [["latitude", 90.0001], ["latitude", -90.0001], ["longitude", 180.0001], ["longitude", -180.0001], ["longitude", 200], ["latitude", "35.7"], ["longitude", "51.4"]] as const) { const rows = clone(source.datasets["province-capitals"]); rows[0][field] = value; assert.equal(schema(rows), false); } for (const [field, value] of [["latitude", -90], ["latitude", 90], ["longitude", -180], ["longitude", 180]] as const) { const rows = clone(source.datasets["province-capitals"]); rows[0][field] = value; assert.equal(schema(rows), true); } const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical/list.xlsx")).rows); const data = projectDatasets(model, loadV2Contract(root)); const altered = loadCoordinateSources(root); altered.datasets["county-centers"][0].latitude = Number(altered.datasets["county-centers"][0].latitude) + 0.01; assert.throws(() => validateCoordinateDatasets(altered.datasets, data, altered.registry, altered.evidence), /snapshot mismatch/); const unknown = loadCoordinateSources(root); unknown.datasets["county-centers"][0].source_feature_id = "not-a-feature"; assert.throws(() => validateCoordinateDatasets(unknown.datasets, data, unknown.registry, unknown.evidence), /Unknown coordinate source_feature_id/); const missing = loadCoordinateSources(root); missing.evidence.identities = missing.evidence.identities.slice(1); assert.throws(() => validateCoordinateDatasets(missing.datasets, data, missing.registry, missing.evidence), /Missing center identity evidence/); const duplicate = loadCoordinateSources(root); duplicate.evidence.identities.push({ ...duplicate.evidence.identities[0] }); assert.throws(() => validateCoordinateDatasets(duplicate.datasets, data, duplicate.registry, duplicate.evidence), /Duplicate center identity mapping/); });
+test("coordinate schemas remain strict for required fields, ID types, and extra properties", () => { const source = loadCoordinateSources(root); const validate = new Ajv({ allErrors: true, strict: false }).compile({ ...coordinateSchema, $ref: "#/$defs/province-capitals" }); for (const field of ["latitude", "longitude", "source_id", "source_feature_id"] as const) { const rows = clone(source.datasets["province-capitals"]); delete rows[0][field]; assert.equal(validate(rows), false); } const wrongId = clone(source.datasets["province-capitals"]); wrongId[0].province_id = "100"; assert.equal(validate(wrongId), false); const extra = clone(source.datasets["province-capitals"]); extra[0].unexpected = true; assert.equal(validate(extra), false); });
+const v2Commit = "c4fcbd9018edd0ba5ecaf7a4860cb3381dfa86c6";
+const row = (coderec: SourceRow["coderec"], extra: Partial<SourceRow> = {}): SourceRow => ({ provinceCode: "00", provinceName: "مرکزی", countyCode: "01", countyName: "اراک", districtCode: "02", districtName: "مرکزی", ruralCode: "0001", ruralName: "امان آباد", villageCode: "000266", coderec, name: "نام", mappedRuralCode: coderec === "8" ? "3238" : null, rowNumber: 1, ...extra });
+const load = (directory: string, name: keyof Datasets) => JSON.parse(readFileSync(join(directory, "json", `${name}.json`), "utf8"));
+const clone = <T>(value: T): T => JSON.parse(JSON.stringify(value));
+function files(directory: string): string[] { return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => entry.isDirectory() ? files(join(directory, entry.name)).map((file) => join(entry.name, file)) : [entry.name]); }
+function hashes(directory: string): Record<string, string> { return Object.fromEntries(files(directory).sort().map((file) => [file, sha256(readFileSync(join(directory, file)))])); }
+
+test("source parsing rejects whitespace-only official names", () => { assert.equal(officialName(" خدا آفرین ", 1), "خدا آفرین"); assert.throws(() => officialName("   ", 99), /Missing official name/); });
+test("manifest uses exact declared entity types and Phase 2 enrichment contracts", () => { const manifest = { entityTypeContract: MANIFEST_ENTITY_TYPES, generatedDatasets: Object.entries(MANIFEST_ENTITY_TYPES).map(([name, entityType]) => ({ name, entityType })), enrichmentDatasets: [{ enrichment: true, officialAdministrativeSource: false, sourceIds: ["coordinate-source"] }, { enrichment: true, officialAdministrativeSource: false, sourceIds: ["coordinate-source"] }], enrichmentSources: [{ id: "coordinate-source" }], llmContexts: LLM_SCOPES.map((scope) => ({ scope })) }; assert.ok(validateManifest(manifest)); for (const invalid of ["countie", "citie", "al"]) { const broken = clone(manifest); broken.generatedDatasets[1].entityType = invalid; assert.equal(validateManifest(broken), false); } });
+test("canonical keys preserve padded codes while V3 rural IDs remain collision-safe", () => {
+  const rows = [row("1", { countyCode: null, districtCode: null, ruralCode: null, villageCode: null }), row("2", { districtCode: null, ruralCode: null, villageCode: null }), row("3", { ruralCode: null, villageCode: null }), row("4", { villageCode: null }), row("5", { ruralCode: "1101", villageCode: null }), row("6"), row("8", { villageCode: "000267" })];
+  const model = buildCanonicalModel(rows); const data = projectDatasets(model, loadV2Contract(root)); assert.ok(model.byKey.has("rural:00:01:02:0001")); assert.equal(data.rurals[0].id, 100000100020001); assert.equal(data.villages[0].id, "village:00:01:02:0001:000266:6");
+});
+test("source accounting, compatibility fixture, and public compatibility are real", () => {
+  const parsed = parseOfficialWorkbook(join(root, "offical/list.xlsx")); assert.deepEqual(parsed.inspection.coderecCounts, { "1": 31, "2": 484, "3": 1193, "4": 2777, "5": 1672, "6": 95389, "8": 3928 }); assert.equal(parsed.inspection.totalRows, 105474);
+  const contract = loadV2Contract(root); assert.deepEqual(Object.fromEntries(Object.entries(contract.datasets).map(([name, records]) => [name, records.length])), { provinces: 31, counties: 482, districts: 1184, cities: 1659, rurals: 1524 });
+});
+test("compatibility fixture exactly matches the pinned V2 Git outputs", () => {
+  const contract = loadV2Contract(root); assert.equal(contract.sourceCommit, v2Commit);
+  for (const dataset of ["provinces", "counties", "districts", "cities", "rurals"] as const) {
+    let historical: unknown;
+    try { historical = JSON.parse(execFileSync("git", ["show", `${v2Commit}:dist/json/${dataset}.json`], { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] })); }
+    catch (error) { assert.fail(`Cannot read pinned V2 revision ${v2Commit} for ${dataset}; local Git history is required: ${error instanceof Error ? error.message : String(error)}`); }
+    assert.deepEqual(contract.datasets[dataset], historical, `compat fixture mismatch for ${dataset}`);
+  }
+});
+test("migration-only normalization preserves conservative rural matching and ambiguity", () => {
+  for (const [oldName, currentName] of [["چهار چشمه", "چهارچشمه"], ["بندرامام خمینی", "بندر امام خمینی"], ["شریف آباد", "شريف‌آباد"]]) assert.equal(normalizeMigrationName(oldName), normalizeMigrationName(currentName));
+  const old = { id: 1, name: "شریف آباد", slug: "x", province_id: 100, county_id: 1000001 };
+  assert.equal(classifyRuralMigrationCandidates(old, [{ legacy_id: 1, id: 9, name: "شريف‌آباد", province_id: 100, county_id: 1000001 }]).status, "matched");
+  const ambiguous = classifyRuralMigrationCandidates(old, [{ legacy_id: 1, id: 9, name: "شريف‌آباد", province_id: 100, county_id: 1000001 }, { legacy_id: 1, id: 10, name: "شریف‌آباد", province_id: 100, county_id: 1000001 }]);
+  assert.equal(ambiguous.status, "ambiguous"); assert.equal(ambiguous.new_id, null); assert.deepEqual(ambiguous.candidate_new_ids, [9, 10]);
+});
+test("real rural migration is complete, valid, and captures the audited normalization cases", () => {
+  const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical/list.xlsx")).rows); const contract = loadV2Contract(root); const data = projectDatasets(model, contract); const migrations = ruralMigrations(model, data, contract);
+  assert.equal(migrations.length, contract.datasets.rurals.length); assert.equal(new Set(migrations.map((record) => record.old_id)).size, contract.datasets.rurals.length);
+  const currentIds = new Set(data.rurals.map((record) => Number(record.id))); for (const migration of migrations) { if (migration.status === "matched") assert.ok(migration.new_id !== null && currentIds.has(migration.new_id)); for (const candidate of migration.candidate_new_ids) assert.ok(currentIds.has(candidate)); }
+  const previousNotFound = execFileSync("git", ["show", "3c982f57692bff9c80932a4e7a13e47a55bffd59:migration/v2-to-v3.csv"], { cwd: root, encoding: "utf8" }).trim().split("\n").slice(1).map((line) => line.split(",")).filter(([, , , status]) => status === "not_found").map(([, oldId]) => Number(oldId));
+  assert.equal(previousNotFound.length, 63); const repaired = migrations.filter((migration) => previousNotFound.includes(migration.old_id));
+  assert.deepEqual(Object.fromEntries(["matched", "ambiguous", "not_found"].map((status) => [status, repaired.filter((migration) => migration.status === status).length])), { matched: 63, ambiguous: 0, not_found: 0 });
+  assert.equal(migrations.filter((migration) => migration.status === "matched").length, 1524); assert.equal(migrations.filter((migration) => migration.status === "ambiguous").length, 0); assert.equal(migrations.filter((migration) => migration.status === "not_found").length, 0); assert.equal(migrations.filter((migration) => migration.match_basis === "legacy-id-province-county-normalized-name").length, 50);
+  for (const id of [1000004001, 1060005002, 12300013002]) { const migration = migrations.find((record) => record.old_id === id); assert.equal(migration?.status, "matched"); assert.equal(migration?.match_basis, "legacy-id-province-county-normalized-name"); }
+  const overrides = loadV2RuralMigrationOverrides(root); const expected = new Map([[1010004002, 101000400070001], [1040008005, 104000800070002], [1040008007, 104000800080002], [1070007002, 107000700080001], [10300010002, 1030002900020001], [10300010001, 1030002900010001], [10300010003, 1030002900010002], [10300010004, 1030002900010003], [12900011001, 1290001200010001], [12900011002, 1290001200020001], [1070003001, 107000300010001], [1180008001, 118000800010001], [1180008002, 118000800010002]]);
+  assert.equal(overrides.length, expected.size); for (const [oldId, newId] of expected) { const matchingRows = migrations.filter((migration) => migration.old_id === oldId); assert.equal(matchingRows.length, 1); assert.deepEqual(matchingRows[0], { entity: "rural", old_id: oldId, new_id: newId, status: "matched", match_basis: "compatibility_override", candidate_new_ids: [newId] }); assert.ok(currentIds.has(newId)); }
+});
+test("rural migration overrides fail closed when stale, conflicting, or misleading", () => {
+  const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical/list.xlsx")).rows); const contract = loadV2Contract(root); const data = projectDatasets(model, contract); const overrides = loadV2RuralMigrationOverrides(root);
+  assert.throws(() => ruralMigrations(model, data, contract, [{ old_id: 999, current_key: overrides[0].current_key, reason: "administrative_reorganization" }]), /unknown V2 rural ID/);
+  assert.throws(() => ruralMigrations(model, data, contract, [{ ...overrides[0], current_key: "rural:99:99:99:9999" }]), /current_key must resolve/);
+  assert.throws(() => ruralMigrations(model, data, contract, [overrides[0], { ...overrides[0] }]), /Duplicate rural migration override old_id/);
+  const automatic = contract.datasets.rurals.find((old) => !overrides.some((override) => override.old_id === old.id))!;
+  assert.throws(() => ruralMigrations(model, data, contract, [{ old_id: automatic.id, current_key: overrides[0].current_key, reason: "administrative_reorganization" }]), /conflicts with automatic matched match/);
+  assert.throws(() => ruralMigrations(model, data, contract, [overrides[0], { ...overrides[1], current_key: overrides[0].current_key }]), /Duplicate rural migration override target/);
+});
+test("reorganized cities retain V2 IDs without changing the current hierarchy", () => {
+  const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical/list.xlsx")).rows); const data = projectDatasets(model, loadV2Contract(root));
+  assert.deepEqual(historicalCityIdOverrides, { "city:03:29:01:2144": 10300010002144, "city:29:12:01:2345": 12900011002345 });
+  for (const expected of [{ name: "ترکمانچای", id: 10300010002144, province_id: 103, county_id: 10300029, district_id: 10300029001, slug: "ترکمانچای" }, { name: "عشق آباد", id: 12900011002345, province_id: 129, county_id: 12900012, district_id: 12900012001, slug: "عشق-آباد" }]) assert.deepEqual(data.cities.find((city) => city.id === expected.id), expected);
+  assert.doesNotThrow(() => assertUniquePublicIds(data));
+});
+test("build has strict schemas, exact parity, V2 IDs/slugs, migration truth, and tel prefixes", () => {
+  const directory = mkdtempSync(join(tmpdir(), "iran-cities-v3-"));
+  try {
+    const result = buildPipeline(root, directory); assert.equal(result.rowCounts.villages, 99317); assert.equal(result.rowCounts.all, 105474); assert.equal(result.rowCounts["cities-filtered"], 1185); assert.ok(verifyFormatParity(directory).passed); verifyPipeline(root);
+    const contract = loadV2Contract(root); const current = { provinces: load(directory, "provinces"), counties: load(directory, "counties"), districts: load(directory, "districts"), cities: load(directory, "cities"), rurals: load(directory, "rurals") };
+    for (const [name, legacy] of Object.entries(contract.datasets)) { const byId = new Map((current as Record<string, { id: number; slug: string }[]>)[name].map((record) => [record.id, record])); for (const old of legacy) { const next = byId.get(old.id); if (next) { assert.equal(next.id, old.id); assert.equal(next.slug, old.slug); } } }
+    for (const [dataset, id, currentName, expected] of [["counties", 10300026, "خدا آفرین", "خداآفرین"], ["counties", 12300012, "رباط‌کریم", "رباط-کریم"], ["cities", 1030003001621, "تبریز 1", "تبریز1"]] as const) { const old = contract.datasets[dataset].find((record) => record.id === id); assert.ok(old, `missing historical example ${id}`); const next = (current as Record<string, { id: number; name: string; slug: string }[]>)[dataset].find((record) => record.id === id); assert.equal(next?.name, currentName); assert.equal(next?.slug, expected); }
+    assert.equal(current.provinces.length, 31); for (const province of current.provinces) { const old = contract.datasets.provinces.find((record) => record.id === province.id); assert.ok(province.tel_prefix && province.tel_prefix !== "---"); assert.equal(province.tel_prefix, old?.tel_prefix); }
+    const migration = readFileSync(join(root, "migration", "v2-to-v3.csv"), "utf8").trim().split("\n"); assert.equal(migration.length - 1, 1524); const oldIds = new Set(contract.datasets.rurals.map((record) => String(record.id))); const newIds = new Set((current.rurals as { id: number }[]).map((record) => String(record.id))); const seen = new Set<string>(); for (const line of migration.slice(1)) { const [entity, oldId, newId, status, , candidates] = line.split(","); assert.equal(entity, "rural"); assert.ok(oldIds.has(oldId)); assert.ok(!seen.has(oldId)); seen.add(oldId); assert.ok(["matched", "ambiguous", "not_found"].includes(status)); if (status === "matched") assert.ok(newIds.has(newId)); for (const id of candidates.split("|").filter(Boolean)) assert.ok(newIds.has(id)); } assert.equal(seen.size, oldIds.size);
+    const all = load(directory, "all"); assert.ok(all.every((record: Record<string, unknown>) => JSON.stringify(Object.keys(record)) === JSON.stringify(DATASET_COLUMNS.all)));
+  } finally { rmSync(directory, { recursive: true, force: true }); }
+});
+test("schemas reject invalid IDs, ancestry, fields, village CODEREC, and tel prefixes", () => {
+  const directory = mkdtempSync(join(tmpdir(), "iran-schema-v3-")); try { buildPipeline(root, directory); const datasets = Object.fromEntries(["provinces", "counties", "districts", "rurals", "cities", "cities-filtered", "villages", "all"].map((name) => [name, load(directory, name as keyof Datasets)])) as Datasets;
+    const numeric = clone(datasets); numeric.counties[0].id = "not-a-number"; assert.throws(() => validateDatasets(numeric), /Schema validation/);
+    const ancestry = clone(datasets); delete ancestry.rurals[0].district_id; assert.throws(() => validateDatasets(ancestry), /Schema validation/);
+    const wrong = clone(datasets); (wrong.all[0] as Record<string, unknown>).county_id = 1; assert.throws(() => validateDatasets(wrong), /Schema validation/);
+    const extra = clone(datasets); (extra.all[0] as Record<string, unknown>).unknown = "no"; assert.throws(() => validateDatasets(extra), /Schema validation/);
+    const coderec = clone(datasets); coderec.villages[0].coderec = "5"; assert.throws(() => validateDatasets(coderec), /Schema validation/);
+    const tel = clone(datasets); delete tel.provinces[0].tel_prefix; assert.throws(() => validateDatasets(tel), /Schema validation/);
+  } finally { rmSync(directory, { recursive: true, force: true }); } });
+test("public-ID safety and collision checks fail loudly", () => { assert.throws(() => idFor({ type: "province", key: "province:x", parentKey: null, coderec: "1", name: "x", codes: { province: "9007199254740992" } }), /Unsafe numeric identifier/); assert.throws(() => assertUniquePublicIds({ provinces: [{ id: 1 }], counties: [], districts: [], rurals: [], cities: [], "cities-filtered": [], villages: [], all: [{ id: 1 }, { id: 1 }] }), /Duplicate public IDs/); });
+test("every generated artifact is deterministic across independent clean builds", () => { const first = mkdtempSync(join(tmpdir(), "iran-first-")); const second = mkdtempSync(join(tmpdir(), "iran-second-")); try { buildPipeline(root, first); const firstHashes = hashes(first); const firstMigration = sha256(readFileSync(join(root, "migration", "v2-to-v3.csv"))); buildPipeline(root, second); assert.deepEqual(hashes(second), firstHashes); assert.equal(sha256(readFileSync(join(root, "migration", "v2-to-v3.csv"))), firstMigration); } finally { rmSync(first, { recursive: true, force: true }); rmSync(second, { recursive: true, force: true }); } });
+test("Phase 2 LLM contexts are self-describing TSV with explicit city/county semantics", () => { const directory = mkdtempSync(join(tmpdir(), "iran-llm-v3-")); try { const result = buildPipeline(root, directory); const cities = load(directory, "cities") as { name: string }[]; const counties = load(directory, "counties") as { name: string }[]; assert.ok(cities.some((city) => counties.some((county) => county.name === city.name))); for (const scope of LLM_SCOPES) { const text = readFileSync(join(directory, "llm", `${scope}.txt`), "utf8"); const check = inspectLlmContext(scope, text); assert.equal(check.rows, result.rowCounts[scope]); assert.deepEqual(check.columns, DATASET_COLUMNS[scope]); assert.equal(check.semanticHeaderValid, true); assert.ok(text.includes("source_year: 1404") && text.includes("schema: 1") && text.endsWith("\n")); } assert.equal(readdirSync(join(directory, "llm")).sort().join(","), "cities-filtered.txt,cities.txt,counties.txt,provinces.txt"); } finally { rmSync(directory, { recursive: true, force: true }); } });
+test("Phase 2 coordinate enrichment is complete, provenance-backed, strict, and parity safe", () => { const directory = mkdtempSync(join(tmpdir(), "iran-coordinates-v3-")); try { buildPipeline(root, directory); const provinceCapitals = JSON.parse(readFileSync(join(directory, "json", "province-capitals.json"), "utf8")); const countyCenters = JSON.parse(readFileSync(join(directory, "json", "county-centers.json"), "utf8")); const source = loadCoordinateSources(root); const data = Object.fromEntries(["provinces", "counties", "districts", "rurals", "cities", "cities-filtered", "villages", "all"].map((name) => [name, load(directory, name as keyof Datasets)])) as Datasets; validateCoordinateDatasets(source.datasets, data, source.registry); assert.equal(provinceCapitals.length, data.provinces.length); assert.equal(countyCenters.length, data.counties.length); assert.equal(new Set(countyCenters.map((record: { county_id: number }) => record.county_id)).size, data.counties.length); assert.ok([...provinceCapitals, ...countyCenters].every((record: { latitude: number; longitude: number; source_id: string }) => Number.isFinite(record.latitude) && Number.isFinite(record.longitude) && !(record.latitude === 0 && record.longitude === 0) && source.registry.sources.some((item) => item.id === record.source_id))); assert.ok(verifyCoordinateFormatParity(directory).passed); const ajv = new Ajv({ allErrors: true, strict: false }); const invalid = clone(provinceCapitals); delete invalid[0].source_id; assert.equal(ajv.compile({ ...coordinateSchema, $ref: "#/$defs/province-capitals" })(invalid), false); assert.deepEqual(Object.keys(provinceCapitals[0]), COORDINATE_DATASET_COLUMNS["province-capitals"]); } finally { rmSync(directory, { recursive: true, force: true }); } });
+test("README retains V3 facts, direct downloads, local links, and the immutable footer", () => {
+  const readme = readFileSync(join(root, "README.md"), "utf8");
+  const footer = "Made with ❤ by [Sajad Dehshiri](https://sajaddehshiri.ir)";
+  const manifest = JSON.parse(readFileSync(join(root, "dist", "manifest.json"), "utf8"));
+
+  assert.equal(readme.split("\n").filter((line) => line.trim()).at(-1), footer);
+  assert.equal(readme.split("\n")[0], "# لیست شهرها و استان‌های ایران");
+  assert.equal([...readme.matchAll(/^# /gm)].length, 1);
+  const sections = readme.split("\n## List of Cities and Provinces in Iran\n");
+  assert.equal(sections.length, 2, "Keep complete Persian and English sections separate");
+  const [persian, english] = sections;
+  const persianSourceYear = String(manifest.officialSourceYear).replace(/\d/g, (digit) => "۰۱۲۳۴۵۶۷۸۹"[Number(digit)]);
+  assert.ok(persian.includes(`**${persianSourceYear}**`));
+  assert.ok([...persian.matchAll(/^#{2,6} (.+)$/gm)].every(([, heading]) => /\p{Script=Arabic}/u.test(heading)));
+  assert.ok([...english.matchAll(/^#{2,6} (.+)$/gm)].every(([, heading]) => !/\p{Script=Arabic}/u.test(heading)));
+  assert.ok(readme.includes(`Current official source year: **${manifest.officialSourceYear}**`));
+  assert.ok(readme.includes("City = شهر. County = شهرستان. City != County."));
+  assert.ok(readme.includes("cities-filtered") && readme.includes("derived / convenience"));
+  assert.ok(readme.includes("province capital") && readme.includes("county administrative center / seat"));
+  assert.ok(readme.includes("not training dataset") && readme.includes("LLM Context"));
+  assert.ok(!readme.includes("iran-divisions"));
+
+  for (const dataset of manifest.generatedDatasets) {
+    for (const section of sections) {
+      const rows = section.split("\n")
+        .filter((line) => line.startsWith("|"))
+        .map((line) => line.split("|").slice(1, -1).map((cell) => cell.trim()))
+        .filter((cells) => cells[1] === `\`${dataset.name}\``);
+      assert.equal(rows.length, 1, `Each language must list ${dataset.name} exactly once in its download table`);
+      assert.equal(rows[0][2], String(dataset.rowCount), `README count mismatch for ${dataset.name}`);
+      for (const path of Object.values(dataset.paths)) assert.ok(section.includes(`](${path})`), `Each language must link ${path}`);
+    }
+    for (const path of Object.values(dataset.paths)) {
+      assert.ok(readme.includes(`](${path})`), `README must link ${path}`);
+      assert.ok(existsSync(join(root, path)), `Missing generated dataset ${path}`);
+    }
+  }
+  for (const dataset of manifest.enrichmentDatasets) {
+    for (const path of Object.values(dataset.paths)) {
+      assert.ok(readme.includes(`](${path})`), `README must link ${path}`);
+      assert.ok(existsSync(join(root, path)), `Missing enrichment dataset ${path}`);
+    }
+  }
+
+  const localLinks = [...readme.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)]
+    .map((match) => match[1].split(/[?#]/, 1)[0])
+    .filter((target) => target && !target.startsWith("http://") && !target.startsWith("https://") && !target.startsWith("#"));
+  for (const target of localLinks) assert.ok(existsSync(join(root, target)), `Broken README link: ${target}`);
+
+  const llms = readFileSync(join(root, "docs", "llms.txt"), "utf8");
+  assert.ok(llms.includes("dist/manifest.json") && llms.includes("dist/schema.json") && llms.includes("dist/llm/counties.txt"));
+});
+
+test("Pages projection is deterministic, resolves every public entity, and separates village loading", () => {
+  const directory = mkdtempSync(join(tmpdir(), "iran-explorer-v3-"));
+  try {
+    buildPipeline(root, directory);
+    const datasets = Object.fromEntries(["provinces", "counties", "districts", "rurals", "cities", "cities-filtered", "villages", "all"].map((name) => [name, load(directory, name as keyof Datasets)])) as Datasets;
+    const coordinates = { "province-capitals": JSON.parse(readFileSync(join(directory, "json", "province-capitals.json"), "utf8")), "county-centers": JSON.parse(readFileSync(join(directory, "json", "county-centers.json"), "utf8")) };
+    const manifest = JSON.parse(readFileSync(join(directory, "manifest.json"), "utf8"));
+    const verification = verifyExplorerData(root, datasets, coordinates, manifest);
+    const expected = explorerRecords(datasets, coordinates, manifest);
+    assert.deepEqual(verification, { coreRows: expected.core.length, villageRows: expected.villages.length, duplicateSearchIds: 0, invalidEntityReferences: 0, invalidParentReferences: 0 });
+    const meta = JSON.parse(readFileSync(join(root, "docs", "data", "explorer-meta.json"), "utf8"));
+    assert.equal(meta.searchResources.core.rows, expected.core.length); assert.equal(meta.searchResources.villages.rows, expected.villages.length); assert.equal(meta.searchResources.villages.lazy, true);
+    assert.ok(expected.core.every((record) => record.type !== "village")); assert.ok(expected.villages.every((record) => record.type === "village"));
+    const before = hashes(join(root, "docs", "data")); buildPipeline(root, directory); assert.deepEqual(hashes(join(root, "docs", "data")), before);
+  } finally { rmSync(directory, { recursive: true, force: true }); }
+});
+
+test("browser explorer search, hierarchy, JSON, AI context, and coordinate payloads follow the V3 contract", () => {
+  const coreRecords = JSON.parse(readFileSync(join(root, "docs", "data", "search-core.json"), "utf8"));
+  const villageRecords = JSON.parse(readFileSync(join(root, "docs", "data", "search-villages.json"), "utf8"));
+  const meta = JSON.parse(readFileSync(join(root, "docs", "data", "explorer-meta.json"), "utf8"));
+  const index = ExplorerCore.indexRecords(coreRecords.concat(villageRecords));
+  const rafsanjan = ExplorerCore.searchRecords(coreRecords, "رفسنجان", "all");
+  assert.ok(rafsanjan.some((record: { type: string }) => record.type === "county")); assert.ok(rafsanjan.some((record: { type: string }) => record.type === "city"));
+  assert.deepEqual(ExplorerCore.searchRecords(coreRecords, "رفسنجان", "county").map((record: { type: string }) => record.type), ["county"]);
+  assert.deepEqual(ExplorerCore.searchRecords(coreRecords, "رفسنجان", "city").map((record: { type: string }) => record.type), ["city"]);
+  assert.equal(ExplorerCore.normalizeSearch("شريف‌آباد"), ExplorerCore.normalizeSearch("شريف آباد")); assert.equal(ExplorerCore.normalizeSearch("كريم"), ExplorerCore.normalizeSearch("کریم"));
+  const ranked = ExplorerCore.searchRecords([{ type: "city", id: 1, name: "اراک", slug: "a" }, { type: "city", id: 2, name: "اراکستان", slug: "b" }, { type: "city", id: 3, name: "نواراک", slug: "c" }], "اراک", "all"); assert.deepEqual(ranked.map((record: { id: number }) => record.id), [1, 2, 3]);
+  const province = coreRecords.find((record: { type: string }) => record.type === "province"); const county = coreRecords.find((record: { type: string }) => record.type === "county"); const city = rafsanjan.find((record: { type: string }) => record.type === "city"); const village = villageRecords[0];
+  for (const record of [province, county, city, village]) { const payload = ExplorerCore.publicRecord(record); assert.ok(!Object.hasOwn(payload, "type") && !Object.hasOwn(payload, "center")); assert.equal(payload.id, record.id); }
+  assert.ok(province.center && county.center); assert.match(province.center.label, /Province capital/); assert.match(county.center.label, /administrative center/); assert.ok(Number.isFinite(province.center.latitude) && province.center.provenance && province.center.provenance_status === "derived");
+  const cityBreadcrumb = ExplorerCore.breadcrumb(city, index); assert.deepEqual(cityBreadcrumb.map((record: { type: string }) => record.type), ["province", "county", "district", "city"]);
+  const villageSearch = ExplorerCore.searchRecords(villageRecords, village.name, "village"); assert.ok(villageSearch.some((record: { id: string }) => record.id === village.id)); assert.ok(!coreRecords.some((record: { type: string }) => record.type === "village"));
+  for (const record of [county, city, village]) { const context = ExplorerCore.formatAiContext(record, index, meta); for (const semantic of ExplorerCore.sharedSemantics) assert.ok(context.includes(semantic)); assert.ok(context.includes("# list-of-cities-in-Iran Explorer Context") && context.includes("source_year: 1404") && context.includes("selected_record:")); }
+  const countyContext = ExplorerCore.formatAiContext(rafsanjan.find((record: { type: string }) => record.type === "county"), index, meta); const cityContext = ExplorerCore.formatAiContext(city, index, meta); assert.notEqual(countyContext, cityContext); assert.match(cityContext, /selected_entity: city/); assert.match(cityContext, /county and city are different entity types/);
+});
+
+test("Explorer filter transitions clear only incompatible detail and copy state", () => {
+  const coreRecords = JSON.parse(readFileSync(join(root, "docs", "data", "search-core.json"), "utf8"));
+  const villageRecords = JSON.parse(readFileSync(join(root, "docs", "data", "search-villages.json"), "utf8"));
+  const rafsanjan = ExplorerCore.searchRecords(coreRecords, "رفسنجان", "all");
+  const county = rafsanjan.find((record: { type: string }) => record.type === "county"); const city = rafsanjan.find((record: { type: string }) => record.type === "city");
+  const countyToCity = ExplorerCore.changeFilterState({ filter: "county", selected: county, activeIndex: 0 }, "city");
+  assert.deepEqual(countyToCity, { filter: "city", selected: null, activeIndex: -1 }); assert.equal(ExplorerCore.isFilterCompatible(countyToCity.selected, countyToCity.filter), false); assert.equal(ExplorerCore.canUseSelected(county, countyToCity), false);
+  const cityToCounty = ExplorerCore.changeFilterState({ filter: "city", selected: city, activeIndex: 0 }, "county");
+  assert.deepEqual(cityToCounty, { filter: "county", selected: null, activeIndex: -1 }); assert.equal(ExplorerCore.isFilterCompatible(cityToCounty.selected, cityToCounty.filter), false); assert.equal(ExplorerCore.canUseSelected(city, cityToCounty), false);
+  const coreToVillage = ExplorerCore.changeFilterState({ filter: "all", selected: county, activeIndex: 0 }, "village");
+  assert.deepEqual(coreToVillage, { filter: "village", selected: null, activeIndex: -1 });
+  const villageToCore = ExplorerCore.changeFilterState({ filter: "village", selected: villageRecords[0], activeIndex: 0 }, "all");
+  assert.deepEqual(villageToCore, { filter: "all", selected: null, activeIndex: -1 });
+  const compatible = ExplorerCore.changeFilterState({ filter: "county", selected: county, activeIndex: 0 }, "all");
+  assert.equal(compatible.selected, county); assert.equal(ExplorerCore.isFilterCompatible(compatible.selected, compatible.filter), true);
+});
+
+test("Explorer Escape clears a result-focused search interaction and supports a fresh query", () => {
+  const coreRecords = JSON.parse(readFileSync(join(root, "docs", "data", "search-core.json"), "utf8"));
+  const matches = ExplorerCore.searchRecords(coreRecords, "رفسنجان", "all");
+  assert.ok(matches.length > 1);
+  const activeIndex = ExplorerCore.moveActiveResult(-1, "ArrowDown", matches.length);
+  assert.equal(activeIndex, 0); assert.equal(ExplorerCore.moveActiveResult(activeIndex, "ArrowUp", matches.length), 0); assert.equal(ExplorerCore.moveActiveResult(activeIndex, "ArrowDown", matches.length), 1);
+  assert.equal(ExplorerCore.canUseSelected(matches[activeIndex], { filter: "all", selected: matches[activeIndex] }), true);
+  const dismissed = ExplorerCore.clearSearchState({ query: "رفسنجان", selected: matches[activeIndex], activeIndex });
+  assert.deepEqual(dismissed, { query: "", selected: null, activeIndex: -1 });
+  const freshMatches = ExplorerCore.searchRecords(coreRecords, "اراک", "all");
+  assert.ok(freshMatches.length > 0); const freshActiveIndex = ExplorerCore.moveActiveResult(-1, "ArrowDown", freshMatches.length);
+  assert.equal(freshActiveIndex, 0); assert.equal(freshMatches[freshActiveIndex].type, "county");
+});
+
+test("Pages shell has valid local assets, lazy village wiring, safe rendering, and stable repository download links", () => {
+  const page = readFileSync(join(root, "docs", "index.html"), "utf8"); const app = readFileSync(join(root, "docs", "assets", "app.js"), "utf8"); const shell = verifyExplorerShell(root);
+  for (const file of ["docs/index.html", "docs/assets/styles.css", "docs/assets/explorer-core.js", "docs/assets/app.js", "docs/assets/fonts/Estedad[wght].woff2", "docs/assets/fonts/OFL.txt", "docs/data/explorer-meta.json", "docs/data/search-core.json", "docs/data/search-villages.json", "docs/llms.txt"]) assert.ok(existsSync(join(root, file)));
+  assert.deepEqual(shell, { fontPath: "docs/assets/fonts/Estedad[wght].woff2", fontFormat: "woff2", variableWeightRange: "100 900", externalFontDependencies: 0 });
+  assert.ok(page.includes('href="assets/styles.css"') && page.includes('src="assets/explorer-core.js"') && page.includes('src="assets/app.js"'));
+  assert.ok(app.includes('fetch("data/explorer-meta.json")') && app.includes('fetch("data/search-core.json")') && app.includes('fetch("data/search-villages.json")'));
+  assert.ok(app.indexOf('fetch("data/search-villages.json")') > app.indexOf("async function loadVillages")); assert.ok(!app.includes("innerHTML") && !app.includes("eval("));
+  assert.ok(app.includes("core.changeFilterState") && app.includes("core.clearSearchState") && app.includes('"ArrowDown"') && app.includes('"ArrowUp"') && app.includes('"Enter"') && app.includes('event.key === "Escape"'));
+  const links = [...page.matchAll(/https:\/\/raw\.githubusercontent\.com\/sajaddp\/list-of-cities-in-Iran\/main\/dist\/(?:json|csv|xlsx)\/[a-z-]+\.(?:json|csv|xlsx)/g)].map((match) => match[0]);
+  assert.equal(links.length, 24); assert.ok(links.every((link) => /\/dist\/(json|csv|xlsx)\/[a-z-]+\.(json|csv|xlsx)$/.test(link)));
+});

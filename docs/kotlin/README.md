@@ -1,6 +1,6 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در Kotlin
 
-در این راهنما، به‌صورت حرفه‌ای روش صحیح فراخوانی و استفاده از **فهرست شهرهای ایران** به زبان Kotlin (نسخه 1.28) توضیح داده شده است. برای این منظور از فایل `provinces.json` در مسیر `dist/json` استفاده می‌کنیم. این فایل شامل داده‌های ساختاریافته مربوط به استان‌ها و شهرهای ایران است.
+در این راهنما، به‌صورت حرفه‌ای روش صحیح فراخوانی و استفاده از **فهرست شهرهای ایران** به زبان Kotlin (نسخه 1.28) توضیح داده شده است. برای این منظور از فایل `provinces.json` در مسیر `dist/json` استفاده می‌کنیم. این فایل شامل داده‌های ساختاریافته مربوط به استان‌ها است.
 
 ## مراحل
 
@@ -68,7 +68,7 @@ fun main() {
 
 ## Guide to Using JSON File for Iranian Cities by Province in Kotlin
 
-This professional guide demonstrates how to correctly load and use the JSON file containing a structured list of **Iranian provinces and cities** in Kotlin (version 1.28). We use `provinces.json` located at `dist/json`.
+This professional guide demonstrates how to correctly load and use the JSON file containing a structured list of **Iranian provinces** in Kotlin (version 1.28). We use `provinces.json` located at `dist/json`.
 
 ## Steps
 

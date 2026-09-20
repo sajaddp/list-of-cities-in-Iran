@@ -1,6 +1,6 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در پروژه Next.js 15 (App Router)
 
-در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه Next.js 15 با ساختار App Router توضیح داده شده است. فایل `provinces.json` که در مسیر `dist/json` قرار دارد، شامل داده‌های ساختاریافته‌ی استان‌ها و شهرهای ایران است و می‌توان از آن در Server Components یا API Routeهای داخل دایرکتوری `app` استفاده کرد.
+در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه Next.js 15 با ساختار App Router توضیح داده شده است. فایل `provinces.json` که در مسیر `dist/json` قرار دارد، شامل داده‌های ساختاریافته‌ی استان‌ها است و می‌توان از آن در Server Components یا API Routeهای داخل دایرکتوری `app` استفاده کرد.
 
 ## مراحل
 
@@ -68,7 +68,7 @@ export async function GET() {
 
 ## Guide to Using JSON File for Iranian Cities by Province in a Next.js 15 (App Router) Project
 
-This professional guide explains how to use a **list of Iranian provinces and cities** in a Next.js 15 project using the App Router structure. The `provinces.json` file located in the `dist/json` directory contains structured data suitable for use in server components or API routes.
+This professional guide explains how to use a **list of Iranian provinces** in a Next.js 15 project using the App Router structure. The `provinces.json` file located in the `dist/json` directory contains structured data suitable for use in server components or API routes.
 
 ## Steps
 

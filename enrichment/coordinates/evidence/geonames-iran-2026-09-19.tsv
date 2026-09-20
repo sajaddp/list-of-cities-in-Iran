@@ -1,0 +1,484 @@
+geonameid	name	asciiname	alternatenames	latitude	longitude	feature_class	feature_code	country_code	cc2	admin1_code	admin2_code	admin3_code	admin4_code	population	elevation	dem	timezone	modification_date
+285	Boneh-ye ‘Alvān	Boneh-ye 'Alvan	Alvan,Alvān,Boneh Alavan,Boneh Alvan,Boneh Alvān,Boneh-ye `Alvan,Boneh-ye ‘Alvān,`Alvan,alwan,الوان,بنه علوان,‘Alvān	32.11171	48.45877	P	PPL	IR		15				6860	0	54	Asia/Tehran	2026-05-19
+3315	Mīrābād	Mirabad	Mirabad,Mīrābād,myr abad,میر آباد	36.4053	45.372	P	PPLA2	IR		01				6000	0	1360	Asia/Tehran	2026-05-21
+7319	Şāleḩābād	Salehabad	Salehabad,Salehabad-e Kuchak,salh abad,salh abad kwchk,Şālehābād-e Kūchak,Şāleḩābād,صالح آباد,صالح آباد کوچک	36.18959	57.69779	P	PPL	IR		42				0		939	Asia/Tehran	2024-07-17
+7341	‘Eshqābād	`Eshqabad	`Asheqabad,`Eshqabad,عاشق آباد,عشق آباد,‘Eshqābād,‘Āsheqābād	36.87584	58.40308	P	PPL	IR		42				0		1750	Asia/Tehran	2024-07-17
+8781	Kalārdasht	Kalardasht	Kalardasht,Kalārdasht,Kelardasht,Kelārdasht,klardsht,کلاردشت	36.51094	51.17343	P	PPLA2	IR		35				13401		1144	Asia/Tehran	2026-09-14
+9904	Ţāleqān	Taleqan	Shahrak,Shahrak-e Taleqan,Shahrak-e Ţāleqān,Taleqan,Tāleqān,shhrk,shhrk talqan,taliqan,talqan,Ţāleqān,تالِقان,شهرك,شهرک طالقان,طالقان	36.17449	50.76908	P	PPLA2	IR		44				3211		1823	Asia/Tehran	2023-04-12
+10570	Alvand	Alvand	Alborz,Alvand,albrz,alwnd,البرز,الوند	36.1893	50.0643	P	PPLA2	IR		38	11963561			90000	0	1243	Asia/Tehran	2018-11-07
+15269	Nīr	Nir	Nir,Nīr,Shahrestan-e Nir,Shahrestān-e Nīr,nyr,shhrstan nyr,شهرستان نير,نير	38.0346	47.9986	P	PPLA2	IR		32				5873		1623	Asia/Tehran	2025-10-01
+16977	Angut	Angut	Tazeh Kand,Tazeh Kand-e Angut,Tāzeh Kand,Tāzeh Kand-e Angūt,tazh knd,tazih kandi aangwt,تازه كند,تازِه كَندِ اَنگوت	39.0443	47.7453	P	PPL	IR		32				2645		768	Asia/Tehran	2026-04-21
+22451	Qarah Āghāj	Qarah Aghaj	Qarah Aghaj,Qarah Āghāj,Qareh Aghaj,Qareh Āghāj,qrh aghaj,قره آغاج	37.2187	47.2167	P	PPLA2	IR		33				0		1867	Asia/Tehran	2024-07-18
+23290	Bostānābād	Bostanabad	Bostanabad,Bostānābād,bstan abad,بستان آباد	37.84633	46.83542	P	PPLA2	IR		33				21734		1725	Asia/Tehran	2026-06-12
+24851	Nūrābād	Nurabad	Nurabad,Nūrābād,nwr abad,Нурабад,نور آباد	34.0734	47.9725	P	PPLA2	IR		23				65547		1790	Asia/Tehran	2026-05-21
+25883	Javānrūd	Javanrud	Javanrud,Javānrūd,Juanru,Jūānrū,Qal`a Juanrud,Qal`eh Juanrud,Qal`eh-ye Javanrud,Qal‘a Jūanrūd,Qal‘eh Jūānrūd,Qal‘eh-ye Javānrūd,jwanrwd,جوانرود	34.8067	46.4913	P	PPLA2	IR		13	449625			54354		1317	Asia/Tehran	2026-04-28
+31020	Fīrūzeh	Firuzeh	Barghan,Barghān,Bozghan,Bozghān,Firuzeh,Fīrūzeh,bzghan,fyrwzh,بزغان,فيروزه	36.28639	58.58586	P	PPLA2	IR		42				0		1168	Asia/Tehran	2024-07-22
+31265	Kalāt-e Nāderī	Kalat-e Naderi	Kalat,Kalat-e Naderi,Kalāt,Kalāt-e Nāderī,klat,klat nadry,کلات,کلات نادری	36.99532	59.76472	P	PPLA2	IR		42				0		881	Asia/Tehran	2024-07-22
+32767	Qarchak	Qarchak	Garchak,Qarchak,qrchk,Гарчак,قرچك	35.42873	51.57757	P	PPLA2	IR		26				251834		962	Asia/Tehran	2026-09-14
+32900	Golestān	Golestan	Golestan,Golestān,Shahrak-e Golestan,Shahrak-e Golestān,glstan,shhrk glstan,Голестан,شهرك گلستان,گلستان	35.5183	51.1819	P	PPLA2	IR		26	9533739			240000		1042	Asia/Tehran	2026-09-14
+40047	Gomīshān	Gomishan	Gish Dafeh,Gomesh Tappeh,Gomish Tappeh,Gomish Tappeh Jik,Gomishan,Gomīsh Tappeh,Gomīsh Tappeh Jīk,Gomīshān,Gumish Tepe,Gumshan,Gumshān,Gīsh Dafeh,gmysh tph,gmyshan,گميش تپه,گميشان	37.0718	54.07654	P	PPLA2	IR		37				19191		-23	Asia/Tehran	2026-05-20
+40788	Pīsh Qal‘eh	Pish Qal`eh	Pish Qal`eh,Pīsh Qal‘eh,Qal`eh,Qal‘eh,پیش قلعه	37.65206	57.00195	P	PPL	IR		43				0		599	Asia/Tehran	2024-07-17
+41151	Pā’īn-e Bāzār-e Rūdbār	Pa'in-e Bazar-e Rudbar	Pa'in-e Bazar-e Rudbar,Pā’īn-e Bāzār-e Rūdbār,Rudbar,Rudbar-e Kuhpayeh-ye Pa'in,Rūdbār,Rūdbār-e Kūhpāyeh-ye Pā’īn,payyn bazar rwdbar,rwdbar,rwdbar kwhpayh payyn,رودبار,رودبار کوهپایه پائین,پائین بازار رودبار	36.8211	49.4264	P	PPLA2	IR		08				0		204	Asia/Tehran	2024-07-25
+41210	Khorramdarreh	Khorramdarreh	Khorramdareh,Khorramdarreh,Khurramdarreh,Khurramdarrekh,khrmdrh,خرمدره	36.20777	49.19527	P	PPLA2	IR		36				50528		1582	Asia/Tehran	2018-05-03
+41672	Chahārbāgh	Chaharbagh	Chahar Bagh,Chahar Dangeh,Chahār Bāgh,Chahār Dāngeh,chhar bagh,chhar dangh,چهار باغ,چهار دانگه	35.8389	50.8481	P	PPL	IR		44				48828		1251	Asia/Tehran	2026-07-25
+44439	Kavār	Kavar	Kaval,Kavar,Kavār,kwar,کوار	29.20505	52.69043	P	PPLA2	IR		07				31711		1555	Asia/Tehran	2025-10-14
+46023	Ḩasanābād	Hasanabad	Gonbagi,Gonbagī,Hasanabad,Hasanabad-e Gonbaki,gnbgy,hsn abad,حسن آباد,گنبگی,Ḩasanābād,Ḩasanābād-e Gonbakī	28.72242	58.86416	P	PPL	IR		29				0		707	Asia/Tehran	2024-07-23
+66093	Yasuj	Yasuj	Jasudz,Jasudzh,Jasudż,Jasudž,Jásúdž,YES,Yasooj,Yasuc,Yasudsch,Yasuj,Yasûc,Yesuj,Yesūj,Yāsūj,ya su ji,yasuj,yasuja,yasujeu,yasuju,yaswj,yiswj,yswj,Ёсӯҷ,Ясудж,Յասուջ,ياسوج,يَسُّج,يِسوج,یاسوج,یسوج,यासूज,ヤースージュ,亞蘇季,야수즈	30.66824	51.58796	P	PPLA	IR		05				96786		1841	Asia/Tehran	2013-11-10
+66250	Ashkez̄ar	Ashkezar	Ash Kuzar,Ashk Dez,Ashkakzar,Ashkazar,Ashkaz̄ar,Ashkezar,Ashkez̄ar,Askizar,Askīzār,aashkadhar,aaskyzar,ashkakzar,ashkdhr,Āshkakzār,آشكَكزار,اشکذر,اَسكيزار,اَشكَذَر	31.99679	54.20852	P	PPLA2	IR		40	449721			19123		1175	Asia/Tehran	2026-07-04
+110831	Āzādshahr	Azadshahr	Azadshahr,Shah Pasand,Shāh Pasand,azad shhr,shah psnd,Āzādshahr,آزاد شهر,شاه پسند	37.08641	55.17222	P	PPLA2	IR		37				47590		127	Asia/Tehran	2024-07-21
+111246	Zarrīnābād	Zarrinabad	Zarinabad,Zarrinabad,Zarrīnābād,zryn abad,زرین آباد	36.42622	48.28158	P	PPLA2	IR		36				2374		1750	Asia/Tehran	2026-04-22
+111327	Zarqān	Zarqan	Zargan,Zarghanak,Zargān,Zarqan,Zarqān,zrqan,زرقان	29.77237	52.71891	P	PPL	IR		07				32261		1582	Asia/Tehran	2026-05-13
+111407	Zārach	Zarach	Ashkezar,Ashkeẕar,Zarach,Zarej,Zarj,Zārach,Zārj,ashkdhr,zarch,zarij,zarj,اشکذر,زارج,زارچ,زَرِج	31.99111	54.23194	P	PPLA2	IR		40				11691		1181	Asia/Tehran	2026-05-21
+111421	Zarand	Zarand	Zarand,zrnd,زرند	30.81271	56.56399	P	PPLA2	IR		29				58983		1656	Asia/Tehran	2014-09-04
+111431	Zarābād	Zarabad	Zarabad,Zarābād,zr abad,زر آباد	25.58263	59.36161	P	PPL	IR		04				0		12	Asia/Tehran	2024-07-21
+111453	Zanjan	Zanjan	JWN,Zandschan,Zandzan,Zandžan,Zanjan,Zanjān,Zendzhan,Zenjan,Zenjān,Zəncan,znjan,Зенджан,زنجان	36.67642	48.49628	P	PPLA	IR		36				357471		1666	Asia/Tehran	2024-07-21
+111822	Yazd	Yazd	AZD,Dakbayan sa Yazd,Giaznt,Isatis,Jasd,Jazd,Jazdo,Jezd,Jezdas,Kath,Yasd,Yazd,Yezd,Yəzd,iezdi,ya ci de,yajeudeu,yazda,yazudo,yzd,Γιαζντ,Јазд,Йезд,Язд,Յազդ,יזד,يزد,یزد,यज़्द,იეზდი,ヤズド,亚兹德,야즈드	31.89722	54.3675	P	PPLA	IR		40				477905		1216	Asia/Tehran	2026-05-13
+112121	Varazqān	Varazqan	Varazqan,Varazqān,Varezqan,Varezqān,Varzagan,Varzaghan Dezmar,Varzagān,Varzaqan,Varzaqān,Verazgan,Verazqan,Verazqān,warzagan,warzaghan dizmar,wirazgan,wrzqan,ورزقان,وَرزَغَن دِزمَر,وَرزَگان,وِرَزگَن	38.67549	46.11205	P	PPLA2	IR		33				5348		1532	Asia/Tehran	2026-07-21
+112124	Varzaneh	Varzaneh	Varzaneh,Varzineh,wrznh,ورزنه	33.54218	50.50106	P	PPLA2	IR		28				12714		1776	Asia/Tehran	2026-06-01
+112179	Fardīs	Fardis	Fardis,Fardīs,Vardish,Vardīsh,Wardi,Wārdi,frdys,wardysh,فرديس,وَرديش	35.7292	50.98483	P	PPLA2	IR		44				0		1237	Asia/Tehran	2024-07-25
+112214	Varāmīn	Varamin	Esfandabad,Esfandābād,Varamin,Varāmīn,Veramin,Verāmin,varamin,wramyn,Варамин,ورامين	35.3242	51.6457	P	PPLA2	IR		26				225628		920	Asia/Tehran	2026-05-17
+112422	Tūyserkān	Tuyserkan	Tooyserkan,Tuisarkan,Tuysarkan,Tuyserkan,Tūysarkān,Tūyserkān,Tūīsarkān,tuysirkan,twysrkan,تویسرکان,تُّيسِركَن	34.551	48.44353	P	PPLA2	IR		09				50455		1829	Asia/Tehran	2026-04-25
+112535	Tūdeshk	Tudeshk	Toodeshk,Tudashk,Tudasht,Tudeshg,Tudeshk,Tūdasht,Tūdeshg,Tūdeshk,twdshg,twdshk,تودشک,تودشگ	32.7207	52.6709	P	PPL	IR		28				0		2030	Asia/Tehran	2026-06-17
+112616	Ţorqabeh	Torqabeh	Targhobeh,Toroqbeh,Torqabeh,Torqebeh,trqbh,Ţoroqbeh,Ţorqabeh,طرقبه	36.3104	59.3735	P	PPLA2	IR		42	9526260			20998		1316	Asia/Tehran	2026-06-21
+112634	Torkamān	Torkaman	Torkaman,Torkaman Chay,Torkamān,Torkamān Chāy,Turkmanchai,Turkmānchāi,trkman,ترکمان	37.5853	47.3896	P	PPL	IR		33				7443		1620	Asia/Tehran	2026-03-04
+112646	Torbat-e Ḩeydarīyeh	Torbat-e Heydariyeh	Torbat-e Heydariyeh,Torbat-e Ḩeydarīyeh,Torbat-e-Heydari,Torbete-Khejderie,Turbat-i-Haidari,Turbet-i-Haidari,trbt hydryh,Торбете-Хейдерие,تربت حیدریه	35.27401	59.21949	P	PPLA2	IR		42				140019		1351	Asia/Tehran	2026-09-14
+112656	Tonekābon	Tonekabon	Shahsavar,Shahsavār,Shahsawar,Shahsawār,Tonekabon,Tonekābon,tnkabn,Тонекабон,تنکابن	36.81626	50.87376	P	PPLA2	IR		35				37501		-15	Asia/Tehran	2024-07-22
+112944	Tāzīān-e Pā’īn	Tazian-e Pa'in	Parsian,Pārsīān,Tazeyan,Tazeyan-e Zir,Tazeyān-e Zīr,Tazian,Tazian-e Pa'in,Tazian-e Zir,Taziyan,Tazīyan,Tāzeyān,Tāzīān,Tāzīān-e Pā’īn,Tāzīān-e Zīr,parsyan,tazian,taziani zyr,tazyan,tazyan payyn,tazyan zyr,تازيان زير,تازيان پائين,تازِيان,تَزيَّن,تَزِيانِ زير,پارسيان	27.2918	56.1532	P	PPL	IR		11				0		70	Asia/Tehran	2024-07-25
+113090	Ābādeh Ţashk	Abadeh Tashk	Abade-Teshk,Abade-i-Tashk,Abade-je-Tashk,Abadeh Toshk,Abadeh-i-Tashk,Abadeh-ye Tashk,Abadetask,Abadetaşk,Abadetesk,Abadeteşk,Abadi-Toshk,Abadi-ye Tashk,Tashk,a ba dai he ta shen ke,abadh tshk,abadt tshk,abadہ tshk,Ābādeh Toshk,Ābādeh-i-Tashk,Ābādeh-ye Ţashk,Ābādī-ye Tashk,Ţashk,Абаде-Тешк,Абаде́-йе-Ташк,Абаде́-і-Ташк,Абаді-Тошк,Ташк,آبادة تشك,آباده طشک,آبادہ طشک,阿巴代赫塔什克	29.81083	53.7275	P	PPL	IR		07				7379		1598	Asia/Tehran	2026-05-13
+113343	Hashtpar	Hashtpar	Gashpar,Hashtpar,Hashtpar-e Tavalesh,Hashtpar-e Tavālesh,Otak Saray,Otaq Sarai,Otaq Saray,Otāq Sarai,Oţāq Sarāy,Talesh,Tālesh,hshtpr,hshtpr twalsh,هشتپر,هشتپر توالش	37.79658	48.90521	P	PPLA2	IR		08				45305		57	Asia/Tehran	2016-05-07
+113491	Tākestān	Takestan	Seyadahan,Seyādahan,Siadehan,Siahdehan,Siakh-Degen,Siakhdekhan,Sīahdehān,Sīādehan,Takestan,Takistan,Tākestān,Tākistān,takstan,تاكستان	36.07057	49.69571	P	PPLA2	IR		38				71499		1265	Asia/Tehran	2024-07-22
+113508	Takāb	Takab	Takab,Takan Tepe,Takāb,tkab,تکاب	36.4009	47.1133	P	PPLA2	IR		01				51541		1798	Asia/Tehran	2024-07-22
+113514	Tajrīsh	Tajrish	Tajrish,Tajrīsh,tjrysh,تجريش	35.8044	51.4256	P	PPLA2	IR		26				86000		1608	Asia/Tehran	2025-03-06
+113556	Herāt	Herat	Burd Harat,Burd Herat,Būrd Harāt,Būrd Herāt,Harat Khowreh,Harāt Khowreh,Herat,Herat-i-Khurreh,Herāt,Herāt-i-Khurreh,Shahr-e Herat,Shahr-e Herāt,Tajabad,Tajabad-e Harat,Tājābād,Tājābād-e Harāt,hrat,shhr hrat,شهر هرات,هرات	30.05407	54.37294	P	PPLA2	IR		40				13032		1595	Asia/Tehran	2026-04-28
+113632	Taft	Taft	Taft,tft,Тафт,تفت	31.74384	54.20278	P	PPLA2	IR		40	449719			18464		1549	Asia/Tehran	2026-06-01
+113636	Tafresh	Tafresh	Tafresh,tfrsh,Тафреш,تفرش	34.69307	50.01601	P	PPLA2	IR		34				16493		1910	Asia/Tehran	2026-04-25
+113646	Tabriz	Tabriz	Davrez,Dawrez,TBZ,Tabrez,Tabris,Tabriz,Tabrizo,Tabríz,Tabrīz,Taebris,Taebriz,Tampriz,Tauris,Tebriz,Tebriza,Tebrizas,Tebrīza,Tehbryz,Tewrez,Tewrêz,Toewriz,Täbris,Täbriz,Töwriz,Təbriz,Tʻawriz,da bu li shi,ta bris,tabareza,tabariza,tabeulijeu,tabris,taburizu,tavrizi,tbryz,Ταμπρίζ,Табрез,Табриз,Тебриз,Тэбрыз,Тәбриз,Դավրէժ,Դաւրէժ,Թավրիզ,Թաւրիզ,טאבריז,תבריז,تبريز,تبریز,تەورێز,तबरेज़,ਤਬਰੀਜ਼,ടാബ്രിസ്,ตาบริซ,ཊ་བི་རི་ཛ།,თავრიზი,タブリーズ,大不里士,타브리즈	38.08	46.2919	P	PPLA	IR		33				1424641		1396	Asia/Tehran	2026-08-27
+113659	Tabas	Tabas	Golshan,Gulshan,TCX,Tabas,Tabas Gilaki,Tebes,Təbəs,ta ba si,tbs,Ţabas,Табас,Тебес,شہرستان طبس,طبس,塔巴斯	33.59586	56.92437	P	PPL	IR		40				49993		669	Asia/Tehran	2024-07-22
+113723	Surian	Surian	Bavanat,Sureyan,Surian,Suriyan,Sūreyān,Sūrīyān,Sūrīān,bwanat,swryan,بوانات,سوریان	30.4551	53.651	P	PPLA2	IR		07				20000		2182	Asia/Tehran	2023-07-17
+113760	Sūrak	Surak	Surak,Sūrak,swrk,سورک	36.59488	53.20762	P	PPLA2	IR		35				9208		38	Asia/Tehran	2025-04-07
+113797	Nūr	Nur	Nur,Nūr,Suldeh,Sulehdeh,Sūldeh,Sūlehdeh,nwr,swldih,swlihdih,سولدِه,سولِهدِه,نور	36.57168	52.0153	P	PPLA2	IR		35				26947		-18	Asia/Tehran	2025-05-13
+113860	Şowme‘eh Sarā	Sowme'eh Sara	Somee Sara,Sowma`eh Sara,Sowme`eh Sara,Sume`eh Sara,Sumehsara,Sumesera,Şowma‘eh Sarā,Şowme‘eh Sarā,Şūme‘eh Sarā,صومعه سرا	37.30134	49.31504	P	PPLA2	IR		08				47083		7	Asia/Tehran	2026-02-27
+113952	Sorkheh	Sorkheh	Sorkheh,Surkheh,srkhh,سرخه	35.4633	53.214	P	PPLA2	IR		25				9951		1139	Asia/Tehran	2026-05-22
+114049	Sonqor	Sonqor	Sanghur,Sanghūr,Sonqor,Sunqur,Sūnqūr,snqr,سنقر	34.78187	47.59945	P	PPLA2	IR		13				44256		1697	Asia/Tehran	2026-05-21
+114105	Solţānābād	Soltanabad	Kashmar,Soltanabad,Solţānābād,Sultanabad,Sultānābād,Turshiz,sltan abad,سلطان آباد	36.40352	58.03894	P	PPLA2	IR		42				0		1212	Asia/Tehran	2024-07-22
+114259	Sirjan	Sirjan	SYJ,Sa'idabad,Sa‘īdābād,Sircan,Sirdschan,Sirdzan,Sirdzhan,Sirdżan,Sirdžan,Sirjan,Sīrjān,sirajana,syrjan,xi er zhan,Серҷон,Сирджан,سيرجان,سیرجان,सीरजान,錫爾詹	29.45137	55.6809	P	PPL	IR		29				199704		1744	Asia/Tehran	2026-06-14
+114262	Sīrīk-e Kohneh	Sirik-e Kohneh	Sirik,Sirik-e Kohneh,Sīrīk,Sīrīk-e Kohneh,syryk,syryk khnh,سيريك,سيريک کهنه	26.5055	57.122	P	PPL	IR		11				0		16	Asia/Tehran	2024-07-19
+114489	Sīāhkal	Siahkal	Seyah Kal,Seyāh Kal,Siah Kal,Siahkal,Siahkal Mahalleh,Siyah Kal,Sīyāh Kal,Sīāh Kal,Sīāhkal,Sīāhkal Maḩalleh,syahkl,سیاهکل	37.15328	49.87136	P	PPLA2	IR		08				19924		47	Asia/Tehran	2025-05-13
+114584	Shūshtar	Shushtar	Shooshtar,Shushtar,Shushtehr,Shustar,Shūshtar,Shūstar,shwshtr,Шуштэр,شوشتر	32.04972	48.84843	P	PPLA2	IR		15	449558			101878		50	Asia/Tehran	2026-05-19
+114593	Shūsh	Shush	Shoosh,Shush,Shūsh,Susa,Suse,Susy,Suza,Suzo,Suzy,Súsy,Sūsa,shwsh,susa,Сузы,شوش,スーサ	32.1942	48.2436	P	PPLA2	IR		15				77148		71	Asia/Tehran	2026-05-19
+114930	Shīrvān	Shirvan	Shirvan,Shīrvān,shyrwan,شیروان	37.39669	57.92952	P	PPLA2	IR		43				82790		1093	Asia/Tehran	2024-07-24
+115001	Shīr Gāh	Shir Gah	Shir Gah,Shīr Gāh,shyr gah,شير گاه	36.2987	52.89021	P	PPLA2	IR		35				0		217	Asia/Tehran	2026-07-13
+115019	Shiraz	Shiraz	Chimaz,Chiraz,SYZ,Schiras,Sheroz,Shiraz,Shyraz,Shīrāz,Siraz,Siraza,Sirazas,Sirazo,Siráz,Sjiraz,Sziraz,Xiraz,chi ras,she la zi,shirazi,shirazu,shyraz,silajeu,Ŝirazo,Şiraz,Şîraz,Širaz,Širazas,Šíráz,Šīrāz,Šīrāza,Σιράζ,Шероз,Шираз,Шыраз,Շիրազ,שיראז,شيراز,شیراز,ชีราซ,შირაზი,シーラーズ,設拉子,시라즈	29.61031	52.53113	P	PPLA	IR		07	449583			1249942		1545	Asia/Tehran	2024-07-22
+115226	Sheshtamad	Sheshtamad	Sheshtamad,Sheshtomad,shshtmd,ششتمد	35.95969	57.76673	P	PPLA2	IR		42				3108		1357	Asia/Tehran	2026-06-24
+115607	Shalamzār	Shalamzar	Shalamzar,Shalamzār,shlmzar,شلمزار	32.0465	50.81639	P	PPLA2	IR		03				6899		2029	Asia/Tehran	2025-05-22
+115770	Shahr-e Kord	Shahr-e Kord	CQD,QHK,Shahr Kord,Shahr Kurd,Shahr-e Kord,Shahrekord,Shakhre-Kord,shhr krd,Шахре-Корд,شهر كرد	32.32612	50.8572	P	PPLA	IR		03				129153		2066	Asia/Tehran	2019-03-07
+115781	Shahr-e Bābak	Shahr-e Babak	Shahr Babak,Shahr Bābak,Shahr-e Babak,Shahr-e Bābak,Shahr-i-Babak,Shahr-i-Bābak,shhr babk,شهر بابک	30.1165	55.1186	P	PPLA2	IR		29				51620		1846	Asia/Tehran	2026-04-28
+116076	Shaft	Shaft	Bazar Shaft,Bāzār Shaft,Shaft,shft,شفت	37.1702	49.3998	P	PPLA2	IR		08				8184		45	Asia/Tehran	2025-10-29
+116102	Shādegān	Shadegan	Fallabiyeh,Fallahiyeh,Fallehiyeh,Fallābīyeh,Fallāḩīyeh,Shadegan,Shadeganskie,Shadgan,Shādegān,Shādgān,shadgan,Шадеганские,شادگان	30.64924	48.66497	P	PPLA2	IR		15				41733		10	Asia/Tehran	2026-05-16
+116126	Shabestar	Shabestar	Chabiastar,Shabestar,Shabiastar,Shabistar,shbstr,Шабестар,شبستر	38.1804	45.7028	P	PPLA2	IR		33				22181		1433	Asia/Tehran	2026-04-28
+116318	Şeydūn	Seydun	Seydan,Seydun,sidan,sydwn,Şeydān,Şeydūn,صِيدان,صیدون	31.36682	50.08335	P	PPL	IR		15				0		963	Asia/Tehran	2024-07-22
+116326	Seyah Cheshmeh	Seyah Cheshmeh	Kara Aineh,Qareh Eyni,Qareh Eynī,Seyah Cheshmeh,Siah Chashmeh,Siah Cheshmeh,Siyah Cheshmeh,Siāh Chashmeh,Sīyah Cheshmeh,Sīāh Cheshmeh,qarih ainy,syah chishmih,syh chshmh,سياه چِشمِه,سيه چشمه,قَرِه اِينی	39.06508	44.38416	P	PPLA2	IR		01				17804		1832	Asia/Tehran	2026-05-21
+116364	Tall Beyẕā	Tall Beyza	Bayza,Bayzâ,Beyza,Beyzā,Beyẕā,Sepidan,Sepīdān,Tal-e Baiza,Tall Beyza,Tall Beyẕā,Tol-e Beyza,Tol-e Beyẕā,byda,tl byda,بیضا,تل بیضا	29.9717	52.40059	P	PPL	IR		07				0		1634	Asia/Tehran	2026-07-13
+116402	Semnan	Semnan	SNX,Semnan,Semnān,smnan,Семнан,سمنان	35.57691	53.39205	P	PPLA	IR		25				124826		1148	Asia/Tehran	2024-07-22
+116406	Semīrom	Semirom	Samirum,Semirom,Semīrom,Simrom,Sīmrom,smyrm,سمیرم	31.41667	51.56667	P	PPLA2	IR		28				26942		2425	Asia/Tehran	2026-06-01
+116667	Sāveh	Saveh	Sava,Saveh,Sāveh,sawh,Сава,ساوه	35.0213	50.3566	P	PPLA2	IR		34				220762		1008	Asia/Tehran	2026-04-25
+116725	Sarvestān	Sarvestan	Sarvestan,Sarvestān,Sarvistan,Sarvistān,srwstan,سروستان	29.2735	53.2203	P	PPLA2	IR		07				18187		1542	Asia/Tehran	2026-05-13
+116739	Sarvābād	Sarvabad	Sarrabad,Sarrābād,Sarvabad,Sarvābād,Saulawa,Saulāwa,Sulaveh,Sūlāveh,srw abad,سرو آباد	35.3126	46.3669	P	PPLA2	IR		16				5121	1130	1184	Asia/Tehran	2025-04-07
+116996	Sari	Sari	SRY,Sari,Sari i Iran,Saris,Sariyo,Sarí,Sarî,Shahr-i-Tajan,Shari-i-Tajan,Sori,Szari,Szári,Sárí,Sārī,sa li shi,sali,sari,sary,sary  ayran,Σάρι,Сари,Сарі,Сорӣ,Սարի,سارى,ساري,ساری,ساری، ایران,सारी,სარი,サーリー,薩里市,사리	36.56332	53.06009	P	PPLA	IR		35				255396		43	Asia/Tehran	2013-05-12
+117048	Sara'eyn	Sara'eyn	Sar`ein,Sar`eīn,Sara'eyn,Sara’eyn,sarayiyn,سَر عِين,سَرعِين,سَرَئِين	38.15022	48.07068	P	PPL	IR		33				5459		1671	Asia/Tehran	2026-02-27
+117111	Sardasht	Sardasht	Sardasht,srdsht,سردشت	36.1552	45.4788	P	PPLA2	IR		01				46412		1516	Asia/Tehran	2026-05-21
+117116	Sardasht	Sardasht	Sardasht,Sardasht-e Bashakerd,Sardasht-e Bashākerd,srdsht,srdsht bshakrd,سردشت,سردشت بشاکرد	26.45574	57.90271	P	PPLA2	IR		11				1725		727	Asia/Tehran	2026-05-13
+117204	Sarbīsheh	Sarbisheh	Sar-bice,Sarbisheh,Sarbīsheh,srbyshh,سربیشه	32.57566	59.79821	P	PPLA2	IR		41				8715		1824	Asia/Tehran	2026-02-17
+117232	Sarāyān	Sarayan	Sara'ian,Sarayan,Sarāyān,Sarā’īān,Siryan,Sīryān,srayan,سرایان	33.86017	58.52166	P	PPLA2	IR		41				13795		1449	Asia/Tehran	2026-02-17
+117304	Sarābleh	Sarableh	Sarableh,Sarābleh,srablh,سرابله	33.76772	46.56578	P	PPLA2	IR		10				12393		1027	Asia/Tehran	2026-05-13
+117345	Sarāb-e Dūreh	Sarab-e Dureh	Sarab Darreh,Sarab Doreh,Sarab Dowrah,Sarab Dowreh,Sarab-e Do Rah,Sarab-e Dowreh,Sarab-e Dureh,Sarabdowreh,Sarāb Darreh,Sarāb Doreh,Sarāb Dowrah,Sarāb Dowreh,Sarāb-e Do Rah,Sarāb-e Dowreh,Sarāb-e Dūreh,Sarābdowreh,srab dwrh,سراب دوره	33.5639	48.0221	P	PPLA2	IR		23				1713		1114	Asia/Tehran	2026-03-13
+117368	Sarāb	Sarab	Sarab,Sarāb,srab,سراب	37.9408	47.5367	P	PPLA2	IR		33				45031	1650	1682	Asia/Tehran	2025-03-07
+117392	Saqqez	Saqqez	Saggiz,Saggız,Saghez,Saghghez,Sakez,Sakezo,Sakiz,Sakkiz,Sakīz,Saqez,Saqqez,Saqqez (2),Saqqiz,Saqqız,Sekkez,Seqiz,sa gai zi,saghiz,sakkeja,sakyz,saqiz,sqz,sqz (1),sqz (2),Саққиз,Секкез,سقز,سقّز (1),سقّز (٢),سَغِز,سَقِّز,سَكيز,سەقز,सक्केज,薩蓋茲	36.24992	46.2735	P	PPL	IR		16				165258		1520	Asia/Tehran	2026-06-14
+117574	Sanandaj	Sanandaj	SDG,Sanandadsch,Sanandadz,Sanandadż,Sanandadž,Sanandago,Sanandaj,Sanandaĝo,Sanandij,Senendec,Senendedzas,Senendedzh,Senendedžas,Senendehdzh,Senna,Senneh,Sinandij,Sine,Sinneh,Sənəndəc,sa nan da ji,sanandaja,sanandaji,sina,sinih,snndj,Санандаџ,Санандаҷ,Сенендедж,Сенендэдж,Сәнәндәҗ,Սանանդաջ,سنندج,سنە,سِنَّ,سِنِّه,सनंदज,सनंदाज,萨南达季,사난다지	35.31495	46.99883	P	PPLA	IR		16				349176		1494	Asia/Tehran	2024-01-27
+117627	Sāmān	Saman	Saman,Sāmān,saman,سامان	32.45014	50.91092	P	PPLA2	IR		03				14192		1953	Asia/Tehran	2026-04-25
+117656	Salmās	Salmas	Dilmagan,Dilman,Dīlmagān,Dīlman,Salmas,Salmās,Shahpoor,Shahpur,Shapur,Shāhpūr,slmas,Салмас,سلماس	38.1973	44.7653	P	PPLA2	IR		01				81606		1382	Asia/Tehran	2024-07-18
+117773	Rāmsar	Ramsar	RZR,Ramsar,Ransar,Rāmsar,Rānsar,Sakht Sar,ramsr,ramusaru,رامسر,ラームサル	36.91796	50.64802	P	PPLA2	IR		35				35997	-21	21	Asia/Tehran	2025-03-06
+117793	Shāhīn Dezh	Shahin Dezh	Sa'in Dezh,Sa'in Qal`eh,Sahin Dazh,Sain Kaleh,Shahin Dezh,Shāhīn Dezh,Sāīn Kaleh,shahyn dzh,Şā’īn Dezh,Şā’īn Qal‘eh,شاهین دژ	36.6793	46.5669	P	PPLA2	IR		01				41442		1370	Asia/Tehran	2024-07-22
+117799	Solţānīyeh	Soltaniyeh	Sa`idiyeh,Sa‘īdīyeh,Soltaneyyeh,Soltaniyeh,Solţāneyyeh,Solţānīyeh,Sultaniye,Sultaniyeh,Sultānīyeh,sltanyh,سلطانيّه	36.43318	48.79471	P	PPLA2	IR		36				7638		1775	Asia/Tehran	2026-07-17
+117835	Şaḩneh	Sahneh	Sahna,Sahneh,Sehneh,shnh,Şaḩneh,صحنه	34.4813	47.6908	P	PPLA2	IR		13				35508		1364	Asia/Tehran	2026-04-25
+117916	Şafīābād	Safiabad	Safiabad,sfy abad,Şafīābād,صفی آباد	36.6954	57.92838	P	PPL	IR		43				0		1229	Asia/Tehran	2016-06-04
+117944	Şafākhāneh	Safakhaneh	Safa Khaneh,Safakhaneh,sfakhanh,Şafā Khāneh,Şafākhāneh,صفاخانه	36.44112	46.68879	P	PPL	IR		01				0		1637	Asia/Tehran	2024-07-18
+118063	Sabzevar	Sabzevar	AFZ,Sabzawar,Sabzawār,Sabzevar,Sabzevār,Sabzewar,Sabzivor,Sebzevar,Səbzivar,sa bo ze wa er,sab si war,sabzevara,sbzwar,Сабзевар,Сабзивор,Себзевар,سبزوار,सब्ज़ेवार,ซับซีวาร์,薩卜澤瓦爾	36.2126	57.68191	P	PPL	IR		42				243700		974	Asia/Tehran	2026-06-14
+118123	Sa‘ādat Shahr	Sa'adat Shahr	Sa'adat Abad,Sa`adat Shahr,Sa`adatabad,Sa‘ādat Shahr,Sa‘ādatābād,Sa’ādat Ābād,سعادت شهر	30.07921	53.13464	P	PPLA2	IR		07				17131		1784	Asia/Tehran	2026-02-27
+118191	Rūdsar	Rudsar	Rud-i-Sar,Rudsar,Rūd-i-Sar,Rūdsar,rwdsr,رودسر	37.13696	50.29174	P	PPLA2	IR		08				47502		-23	Asia/Tehran	2024-07-25
+118323	Narmāshīr	Narmashir	Narmashir,Narmāshīr,Rostamabad,Rostamābād,nrmashyr,rstm abad,رستم آباد,نرماشير	28.95216	58.69773	P	PPLA2	IR		29				0		759	Asia/Tehran	2024-07-24
+118328	Roshtkhvār	Roshtkhvar	Rash Khar,Rashkhvan,Rashkhvān,Rashtkhvar,Rashtkhvār,Roshkhvar,Roshkhvār,Roshtehkhvar,Roshtehkhvār,Roshtkhar,Roshtkhvar,Roshtkhvār,Roshtkhār,Rushkar,Rūshkār,rshtkhwar,رشتخوار	34.97512	59.62482	P	PPLA2	IR		42				7514		1149	Asia/Tehran	2026-07-18
+118367	Robāţ Karīm	Robat Karim	Rebate-Kerim,Robat Karim,Robāţ Karīm,Shahriar,Shahryar,Shahryār,rbat krym,Ребате-Керим,رباط كريم	35.4846	51.0829	P	PPLA2	IR		26				105393		1038	Asia/Tehran	2026-09-14
+118454	Rīvash	Rivash	Raush,Rivash,Rivush,Rivūsh,Rīvash,rywsh,ریوش	35.47521	58.45733	P	PPL	IR		42				0		1668	Asia/Tehran	2024-07-24
+118532	Reẕvānshahr	Rezvanshahr	Razvand,Rezvandeh,Rezvanshahr,Rezvāndeh,Rezvānshahr,Reẕvāndeh,Reẕvānshahr,Rizvand,Rizwand,rdwandh,rdwanshhr,رضوانده,رضوانشهر	37.54947	49.13736	P	PPLA2	IR		08				19519		15	Asia/Tehran	2025-05-13
+118681	Razan	Razan	Razan,rzn,رزن	35.38625	49.0334	P	PPLA2	IR		09				14275		1845	Asia/Tehran	2026-06-21
+118694	Rāz	Raz	Raz,Rāz,raz,راز	37.93395	57.1126	P	PPL	IR		43				0		1274	Asia/Tehran	2012-01-16
+118704	Rāvar	Ravar	Ravar,Rāvar,rawr,راور	31.26562	56.80545	P	PPLA2	IR		29				40167		1181	Asia/Tehran	2024-07-19
+118705	Ravānsar	Ravansar	Ravansar,Ravānsar,Rawansir,Rawānsīr,rwansr,روانسر	34.7153	46.6533	P	PPLA2	IR		13				24527		1345	Asia/Tehran	2026-04-25
+118743	Rasht	Rasht	RAS,Raixt,Rascht,Rasht,Rasjt,Rast,Rasto,Raszt,Raŝto,Rašt,Reshh,Resht,Rest,Restas,Reşt,Reštas,Rəşt,la shen te,lasyuteu,rashuto,rasta,reshti,rsht,Рашт,Решт,Рещ,Рәшт,Ռեշտ,ראשת,رشت,ڕەشت,रश्त,แรชต์,რეშთი,ラシュト,拉什特,라슈트	37.27611	49.58862	P	PPLA	IR		08				594590		4	Asia/Tehran	2019-02-27
+118805	Rāmshīr	Ramshir	Khalafabad,Khalafābād,Khalas Abad,Ram Shahr,Ramshir,Rāmshīr,khlf abad,ramshyr,خلف آباد,رامشیر	30.89315	49.40787	P	PPLA2	IR		15				25009		26	Asia/Tehran	2026-05-16
+118824	Rāmīān	Ramian	Rameyan,Ramian,Ramiyan,Rāmeyān,Rāmīyān,Rāmīān,ramyan,راميان	37.01598	55.14123	P	PPLA2	IR		37				0		222	Asia/Tehran	2014-09-04
+118826	Rāmhormoz	Ramhormoz	Ram Hormuz,Ramhormoz,Ramuz,Rām Hormuz,Rāmhormoz,Rāmuz,ramhrmz,رامهرمز	31.27997	49.60351	P	PPLA2	IR		15				74285		160	Asia/Tehran	2025-07-02
+118994	Rafsanjān	Rafsanjan	Bahramabad,Bahrāmābād,RJN,Rafsandzhane,Rafsanjan,Rafsanjān,Rafsinjan,Rafsinjān,rfsnjan,Рафсанджане,رفسنجان	30.4067	55.9939	P	PPLA2	IR		29				147680		1514	Asia/Tehran	2024-07-24
+119010	Rābor	Rabor	Raber,Rabor,Rabur,Rahbur,Rābor,Rābur,Rāhbur,rabr,رابر	29.2912	56.9131	P	PPLA2	IR		29				13263		2331	Asia/Tehran	2025-05-12
+119115	Qūchān	Quchan	Gochan,Kuchan,Quchan,Qūchān,qwchan,Кучан,قوچان	37.106	58.50955	P	PPLA2	IR		42				111752		1313	Asia/Tehran	2026-09-14
+119160	Qorveh-ye Dargazīn	Qorveh-ye Dargazin	Ghorveh,Orveh Dar Jozin,Orveh Dar Jozīn,Qorveh,Qurveh,Qūrveh,arwh dr jzyn,ghurwih,qrwh,qwrwih,اروه در جزین,غُروِه,قروه,قوروِه	35.30954	49.10023	P	PPLA2	IR		09				9540		1784	Asia/Tehran	2026-06-21
+119161	Qorveh	Qorveh	Qorveh,Qurve,Qurveh,qrwh,قروه	35.1664	47.80564	P	PPLA2	IR		16				87953		1909	Asia/Tehran	2017-03-04
+119208	Qom	Qom	Dakbayan sa Qom,Ghom,Homo,Kom,Kum,Kum shaary,Kumas,QUM,Qom,Qum,Qûm,gomu,koma,ku mu,kum,kuvom,qm,qwm,Ĥomo,Ком,Кум,Кум шаары,Қум,קום,قم,قوم,कोम,குவோம்,ゴム,库姆,쿰	34.6401	50.8764	P	PPLA	IR		39				900000		935	Asia/Tehran	2019-09-05
+119264	Qīr	Qir	Qir,Qir va Karzin,Qīr,Qīr va Kārzīn,qyr,qyr w karzyn,قیر,قیر و کارزین	28.4825	53.0346	P	PPLA2	IR		07				20010		774	Asia/Tehran	2025-05-12
+119374	Qeshm	Qeshm	Bandar-e Qeshm,Gheshm,Keshm,Qeshm,Qishm,qshm,Кешм,قشم	26.9492	56.2691	P	PPLA2	IR		11	449706			25000		34	Asia/Tehran	2013-11-27
+119505	Qazvin	Qazvin	Dakbayan sa Qazvin,GZW,Gazvin,Kazvin,Kazvinas,Kazvín,Kazwin,Kuazvin,Qazvin,Qazvín,Qazvīn,Qazwen,Qazwên,Qəzvin,gazuvuin,jia ci wen,kajeubin,kazvina,kxs win,qzwyn,Казвин,Казвін,Къазвин,Қазвин,Ղազվին,قزوين,قزوین,قەزوین,कज़्वीन,กอซวีน,ყაზვინი,ガズヴィーン,加兹温,카즈빈	36.26877	50.0041	P	PPLA	IR		38				333635		1300	Asia/Tehran	2024-07-24
+119586	Qaşr-e Shīrīn	Qasr-e Shirin	Ghasr-i-shirin,Ghasr-shirin,Ghasr-shīrīn,Ghasr-ī-shīrīn,Qasr-e Shirin,Qasr-i-Shirin,Qasr-ī-Shīrīn,Qaşr-e Shīrīn,qsr shyryn,قصر شيرين	34.5156	45.5791	P	PPLA2	IR		13				18473		363	Asia/Tehran	2026-06-29
+119730	Qarah Ẕīā’ od Dīn	Qarah Zia' od Din	Ghareh Ziya' Oddin,Ghareh Ziya’ Oddin,Qara Zia ud Din,Qara Zīa ud Dīn,Qarah Zia' od Din,Qarah Ẕīā’ od Dīn,Qaraziadin,Qareh Zeya ed Din,Qareh Zeyā ed Dīn,Qareh Zia' od Din,Qareh Ziya 'Eddin,Qareh Zīyā ’Eddīn,Qareh Ẕīā’ od Dīn,قره ضیاء الدین	38.8915	45.0255	P	PPLA2	IR		01				26767		1090	Asia/Tehran	2026-05-21
+120292	Qods	Qods	Gods,Karaj,Qal'eh Hasan,Qal'eh-ye Hasan Khan,Qal‘eh Hasan,Qal‘eh-ye Ḩasan Khān,Qods,Shahr-e Qods,Shahrak-e Qods,karaj,qalʿih hasan,qds,qlʿh hsn khan,shhr qds,shhrk qds,Годс,شهر قدس,شهرك قدس,قدس,قلعه حسن خان,قَلعِه هَسَن,كَرَج	35.7214	51.109	P	PPLA2	IR		26				309605		1181	Asia/Tehran	2026-09-14
+120323	Qal‘eh Ganj	Qal`eh Ganj	Ghal`eh Ganj,Ghal‘eh Ganj,Kalat-i-Ganj,Kalateh-ye Ganj,Kalāt-i-Ganj,Kalāteh-ye Ganj,Mohammadabad,Moḩammadābād,Qal`eh Ganj,Qal`eh-ye Ganj,Qal‘eh Ganj,Qal‘eh-ye Ganj,قلعه گنج	27.5236	57.8811	P	PPLA2	IR		29				0		406	Asia/Tehran	2024-07-24
+120351	Rūdān	Rudan	Bala Shahr,Bala Shahr-e Deh Barez,Bālā Shahr,Bālā Shahr-e Deh Bārez,Deh Barez,Deh Bariz,Deh Bārez,Deh Bāriz,Deh Dariz,Deh Dāriz,Dehbarez,Dehbārez,Qal`eh-ye Deh Barez,Qal`eh-ye Deh-e Barez,Qal‘eh-ye Deh Bārez,Qal‘eh-ye Deh-e Bārez,Rudan,Rugan,Rūdān,Rūgan,bala shahr,bala shahri dih bariz,dhbarz,rwdan,rwgan,بالا شَهر,بالا شَهرِ دِه بارِز,دهبارز,رودان,روگَن,قَلعِۀ دِهِ بارِز	27.44194	57.19198	P	PPLA2	IR		11				36121		193	Asia/Tehran	2026-05-05
+120499	Qal‘eh-ye Khvājeh	Qal`eh-ye Khvajeh	Qal'eh Khajeh,Qal`eh Khvajeh,Qal`eh-ye Khvajeh,Qal`eh-ye Khvajeh Bala,Qal‘eh Khvājeh,Qal‘eh-ye Khvājeh,Qal‘eh-ye Khvājeh Bālā,Qal’eh Khājeh,qlʿh khwajh,قلعه خواجه,قلعه خواجه بالا	32.20622	49.44526	P	PPLA2	IR		15				0		753	Asia/Tehran	2024-07-25
+120539	Arkavaz	Arkavaz	Arakvaz,Arakvaz-e Malekshahi,Arakvāz,Arakvāz-e Malekshāhī,Arkavazi,Arkavāzī,Arkvaz,Arkvāz,Arkwaz,Arkwāz,Qal`eh Darreh,Qal‘eh Darreh,arkwaz,arkwaz mlkshahy,ارکواز,ارکواز ملکشاهی,قَلعِه دَرِّه	33.3828	46.5983	P	PPLA2	IR		10				11977		1326	Asia/Tehran	2026-01-26
+120678	Farrokh Shahr	Farrokh Shahr	Farrokh Shahr,Qahferokh,Qahofrokh,Qatarokh,Qehfarukh,frkh shhr,qahfirukh,qahufrukh,qatarukh,فرّخ شهر,قَتَرُخ,قَهفِرُخ,قَهُفرُخ	32.27174	50.98008	P	PPL	IR		03				32391		2106	Asia/Tehran	2012-01-16
+120694	Qā’en	Qa'en	Qa'en,Qain,Qayen,Qaīn,Qāyen,Qā’en,Shahr-e Qayen,Shahr-e Qāyen,qayn,قائن,قاین	33.72654	59.18439	P	PPLA2	IR		41				42323		1447	Asia/Tehran	2026-09-11
+120695	Qā’em Shahr	Qa'em Shahr	Kaehmshekhr,Qa'em Shahr,Qā’em Shahr,Shahabad,Shahi,Shāhābād,Shāhī,`Aliabad,qaym shhr,Каэмшехр,قائم شهر,‘Alīābād	36.46671	52.86762	P	PPL	IR		35				204953		43	Asia/Tehran	2026-09-14
+120931	Sarpol-e Z̄ahāb	Sarpol-e Zahab	Pol-e Zahab,Pol-e Zohab,Pol-e Z̄ahāb,Pol-e Z̄ohāb,Sar-e Pol-e Zahab,Sar-e Pol-e Z̄ahāb,Sar-i-Pul Zuhab,Sar-ī-Pūl Zūhāb,Sari-Pul,Sarpol,Sarpol-e Zahab,Sarpol-e Z̄ahāb,Sarī-Pūl,sr pl dhhab,سر پل ذهاب	34.46109	45.86264	P	PPLA2	IR		13				45481		547	Asia/Tehran	2026-05-16
+120936	Pol-e Sefīd	Pol-e Sefid	Pol Sefid,Pol-e Sefid,Pol-e Sefīd,pl sfyd,پل سفيد	36.11787	53.05531	P	PPLA2	IR		35				8294		560	Asia/Tehran	2026-04-30
+120949	Poldokhtar	Poldokhtar	Pol Dokhtar,Pol-e Dokhtar,Poldokhtar,Pul-i-Dukhtar,pl dkhtr,pldkhtr,پل دختر,پلدختر	33.15249	47.71014	P	PPLA2	IR		23				26352		663	Asia/Tehran	2026-03-13
+120954	Poldasht	Poldasht	Araplar,Pol Dasht,Pol'desht,Pol-e Dasht,Poldasht,Pol’desht,Pul Dasht,aaraplar,pldsht,اَرَپلَر,پلدشت	39.348	45.071	P	PPLA2	IR		01				42170		783	Asia/Tehran	2025-03-07
+120972	Pīshvā	Pishva	Pichva,Pishva,Pishyan,Pīchvā,Pīshvā,Pīshyān,pychwa,pyshwa,pyshyan,پيشوا,پيشيان,پيچوا	35.308	51.7267	P	PPLA2	IR		26				53856		953	Asia/Tehran	2024-07-24
+121110	Piranshahr	Piranshahr	KHA,Khaneh,Khāneh,Okrug Peronsahr,Okrug Peronšahr,Piran Shahr,Piransaher,Piransahr,Piransar,Piransara,Piranschahr,Piransehr,Piranshahr,Piranshekhr,Piransherkh,Piransjahr,Piranszahr,Piranxahr,Piranşehr,Piranşəhr,Piranšaher,Piranšahr,Piranšāra,Pîranşar,Pīrān Shahr,Pīrānshahr,byranshhr,pi lan sha he er,piranshafuru,pyranshar,pyranshhr,Пероншаҳр,Пираншехр,Піраншерх,بیرانشهر,پیرانشار,پیرانشهر,پیرانشھر,پیرانشہر,ピーラーンシャフル,皮兰沙赫尔	36.701	45.1413	P	PPL	IR		01				168393		1444	Asia/Tehran	2026-06-14
+121240	Pāveh	Paveh	Paveh,Pawah,Paweh,Pāveh,Pāweh,pawh,پاوه	35.0434	46.3565	P	PPLA2	IR		13				25771		1525	Asia/Tehran	2026-05-16
+121380	Pārsābād	Parsabad	Farsabad,Fārsābād,PFQ,Parsabad,Pārsābād,fars abad,pars abad,Парсабад,فارس آباد,پارس آباد	39.6482	47.9174	P	PPLA2	IR		32				102996		46	Asia/Tehran	2026-07-13
+121781	Oskū	Osku	Osku,Oskū,Uzku,Yuzki,askw,اسکو	37.91504	46.12258	P	PPLA2	IR		33				18459		1512	Asia/Tehran	2026-04-21
+121795	Oshnavīyeh	Oshnaviyeh	Ashnooyeh,Oshnaviyeh,Oshnavīyeh,Oshnovie,Oshnovieh,Oshnoviyeh,Oshnovīeh,Oshnovīyeh,Oshnuje,Ushnu,Ushnuiyeh,Ushnū,Ushnūīyeh,ashnwyh,Ошновіє,Ошнуйе,اشنويه	37.0397	45.0983	P	PPLA2	IR		01				50661		1443	Asia/Tehran	2024-07-15
+121801	Orūmīyeh	Orumiyeh	OMH,Orumieh,Orumiyeh,Orūmīyeh,Ourmia,Reza'iyeh,Rezaeyeh,Rezaiyye,Rezâiyye,Rezā’īyeh,Rizaiyeh,Rizāiyeh,Urmia,Urmija,Urmiya,Urmiye,Urmía,Urumija,Urumiyeh,Urūmiyeh,arwmyh,arwmyt,shhrstan arwmyh,Úrmia,Ûrmiye,Урмия,Урумия,אורמיה,أرومية,ارومیه,ارومیّه,شهرستان ارومیه,ܐܘܪܡܝܐ	37.55274	45.07605	P	PPLA	IR		01				577307		1350	Asia/Tehran	2024-07-17
+121861	Omīdīyeh	Omidiyeh	Omidiyeh,Omidiyeh Sherkat-e Naft,Omīdīyeh,Omīdīyeh Sherkat-e Naft,Sherkat-e Naft,amydyh,amydyh shrkt nft,امیدیه,امیدیه شرکت نفت	30.76277	49.70226	P	PPLA2	IR		15				67427		25	Asia/Tehran	2026-05-16
+121925	Nūrābād	Nurabad	Nurabad,Nūrābād,nwr abad,نور آباد	30.11405	51.52174	P	PPLA2	IR		07				57058		951	Asia/Tehran	2025-05-14
+121959	Nowshahr	Nowshahr	Bandar-e Now Shahr,NSH,Nau Shahr,Nowshahr,nwshhr,نوشهر	36.64852	51.49621	P	PPLA2	IR		35	449688			40000		-17	Asia/Tehran	2017-03-04
+122026	Kahak	Kahak	Kahak,Kahak-e Qom,Neaeufle-le-Chateau,Nowfel low Shatow,Nowfel low Shātow,khk,كهک	34.3938	50.8643	P	PPL	IR		39				4837		1438	Asia/Tehran	2026-02-17
+122285	Neyshābūr	Neyshabur	Nejsaburo,Nejŝaburo,Neyshabur,Neyshābūr,Nichapur,Nisabur,Nischapur,Nishabur,Nishapur,Nishopur,Nişabur,Nīshābūr,Nīshāpūr,nishapu,nysabwr,nyshabwr,nyshapwr,Нишапур,Нишопур,نيسابور,نیشابور,نیشاپور,ニシャプー	36.21329	58.79575	P	PPLA2	IR		42				220929		1199	Asia/Tehran	2024-07-22
+122289	Neyrīz	Neyriz	Neyriz,Neyrīz,Niriz,Nīrīz,nyryz,نیریز	29.1988	54.3278	P	PPLA2	IR		07				45506		1606	Asia/Tehran	2024-07-22
+122375	Neqāb	Neqab	Neqab,Neqāb,nqab,نقاب	36.70792	57.42146	P	PPLA2	IR		42				14783		1073	Asia/Tehran	2026-04-21
+122397	Nekā	Neka	Naranj Bagh,Neka,Neka',Nekā,Nekā’,Nika,Nāranj Bāgh,Nīkā,naranj bagh,nka,nyka,Нека,نارَنج باغ,نكا,نكاء,نيكا	36.65079	53.29905	P	PPLA2	IR		35	449686			60991		50	Asia/Tehran	2026-05-16
+122438	Naz̧arābād	Nazarabad	Nazarabad,Nazarabad-e Bozorg,Naz̧arābād,Naz̧arābād-e Bozorg,nazarabadi buzurg,nzr abad,Назарабад,نظر آباد,نَظَرابادِ بُزُرگ	35.95411	50.60607	P	PPLA2	IR		44				213388		1199	Asia/Tehran	2026-09-14
+122491	Naţanz	Natanz	Natanz,Naţanz,ntnz,نطنز	33.51118	51.91808	P	PPLA2	IR		28				43977		1637	Asia/Tehran	2025-06-17
+122698	Naqadeh	Naqadeh	Nagadeh,Naghadeh,Naghdeh,Nakhuda,Naqadeh,Nākhuda,nqdh,نقده	36.9553	45.388	P	PPLA2	IR		01				81598		1325	Asia/Tehran	2026-03-04
+122721	Namīn	Namin	Namin,Namīn,nmyn,نمين	38.4269	48.4839	P	PPLA2	IR		32				13659		1429	Asia/Tehran	2026-04-22
+122869	Nā’īn	Na'in	Na'in,Naeyn,Nāeyn,Nā’īn,nayyn,نائین	32.86004	53.08693	P	PPLA2	IR		28				27379		1564	Asia/Tehran	2026-09-11
+122915	Nahāvand	Nahavand	Nachavant,Nagavande,Nahavand,Nahāvand,Nehavend,Nehāvend,Nihavand,Nīhāvand,nhawnd,nihavuando,Ναχαβάντ,Нагаванде,نهاوند,ニハーヴァンド	34.19088	48.37446	P	PPLA2	IR		09				76250		1673	Asia/Tehran	2024-07-16
+123295	Marāveh Tappeh	Maraveh Tappeh	Maraveh,Maraveh Tappeh,Maravehtepe,Marveh Tappeh,Marāveh,Marāveh Tappeh,Moraveh Tappeh,Morāveh Tappeh,mrawh tph,مراوه تپه	37.9041	55.95596	P	PPLA2	IR		37				0		210	Asia/Tehran	2024-07-24
+123389	Mollās̄ānī	Mollasani	Molla Sany,Mollasani,Mollā Sāny,Mollās̄ānī,Mulla Sani,Mulla Sāni,Ramin,Rāmīn,mla thany,ramyn,رامین,ملا ثانی	31.5847	48.88587	P	PPLA2	IR		15				0		28	Asia/Tehran	2017-05-07
+123485	Mohr	Mohr	Mehr,Mohr,Mohur,Mohur-i- Saiyidan,Mohur-i- Saiyidān,Mur,Mūr,mhr,muhr,shhrstan muhr,شهرستان مُهر,مهر,مُهر	27.5521	52.88157	P	PPLA2	IR		07				7784		434	Asia/Tehran	2026-04-22
+123674	Moḩammadābād	Mohammadabad	Mohammadabad,Mohammadabad-e Rigan,Moḩammadābād,Moḩammadābād-e Rīgān,Muhammadabad,Muhammadābād,mhmd abad,محمد آباد	28.66877	59.07341	P	PPLA2	IR		29				0		602	Asia/Tehran	2024-07-24
+123927	Mīnūdasht	Minudasht	Minudasht,Mīnūdasht,mynwdsht,مينودشت	37.23015	55.37211	P	PPLA2	IR		37				30085		156	Asia/Tehran	2025-03-06
+123941	Mīnāb	Minab	Minab,Mīnāb,mynab,Минаб,ميناب	27.13104	57.08716	P	PPLA2	IR		11				97986		43	Asia/Tehran	2026-07-13
+124082	Mīāneh	Mianeh	Meyaneh,Meyāneh,Miane,Mianeh,Miyaneh,Mīyaneh,Mīāneh,myanh,Миане,میانه	37.421	47.715	P	PPLA2	IR		33				106291		1097	Asia/Tehran	2026-09-14
+124085	Mīāndoāb	Miandoab	Meyandoab,Meyāndoāb,Miandoab,Miandow Ab,Miandowab,Mianduab,Miyandoab,Miyanduab,Miyāndūāb,Mīyāndoāb,Mīāndow Āb,Mīāndowāb,Mīāndoāb,Mīāndūāb,Qosacay,Qoşaçay,myandwab,qwshachay,Миандоаб,قوشاچای,میاندوآب	36.96667	46.10961	P	PPLA2	IR		01				134425		1294	Asia/Tehran	2026-03-04
+124101	Mīāndasht	Miandasht	Boo'in,Boo’in,Bu'in,Bu'in va Miandasht,Bu`in-e Miandasht,Bū‘īn-e Mīāndasht,Bū’īn,Bū’īn va Mīāndasht,Dum-i-Kamar,Meyandasht,Meyāndasht,Miandasht,Miyandasht,Mīyandasht,Mīāndasht,bwyyn w myandsht,myandsht,بوئین و میاندشت,میاندشت	33.07612	50.16432	P	PPLA2	IR		28				0		2414	Asia/Tehran	2024-07-25
+124193	Meybod	Meybod	Maibud,Meybod,mybd,ميبد	32.25014	54.01658	P	PPLA2	IR		40				51874		1071	Asia/Tehran	2018-05-08
+124210	Meshgīn Shahr	Meshgin Shahr	Kheyav,Kheyāv,Khiav,Khiov,Khiyav,Khiyov,Khīyāv,Khīāv,Meshgin Shahr,Meshgīn Shahr,Meshkin Shahr,Meshkīn Shahr,Mishgin,mshgyn shhr,مشگين شهر	38.399	47.682	P	PPLA2	IR		32				74109		1421	Asia/Tehran	2025-07-02
+124274	Mahrīz	Mahriz	Mahriz,Mahrīz,Mehriz,Mehrīz,mhryz,mihryz,مهريز,مِهريز	31.58428	54.4428	P	PPLA2	IR		40	449723			34237		1475	Asia/Tehran	2026-06-03
+124291	Mehrān	Mehran	Mansurabad,Mansūrābād,Mehran,Mehrān,manswr abad,mhran,مهران,مَنسور آباد	33.1222	46.1646	P	PPLA2	IR		10				11831		150	Asia/Tehran	2024-07-15
+124562	Meyami	Meyami	Maiamai,Maiāmai,Mayamey,Mayāmey,Meyamey,Meyami,Meyāmey,Meyāmī,mayamiy,miamy,myamy,مَيامِی,مِيامی,میامی	36.41092	55.65018	P	PPL	IR		25				0		1086	Asia/Tehran	2024-07-24
+124620	Masjed Soleymān	Masjed Soleyman	Masjed Soleiman,Masjed Soleyman,Masjed Soleymān,Masjed-e Soleyman,Masjed-e Soleymān,Masjid-i-Sulaiman,Mesdzhede-Solejman,msjd slyman,msjdslyman,Месджеде-Солейман,مسجد سلیمان,مسجدسلیمان	31.9364	49.3039	P	PPLA2	IR		15				100497		240	Asia/Tehran	2026-09-14
+124622	Maşīrī	Masiri	Masiri,Masīrī,Maşīrī,msyry,مصیری	30.24493	51.52158	P	PPLA2	IR		07				0		916	Asia/Tehran	2022-02-17
+124647	Bardsīr	Bardsir	Bardesir,Bardesīr,Bardsir,Bardsīr,Deh-e Now-e Mashiz,Deh-e Now-e Mashīz,Mashiz,Mashīz,Mshiz,Qal`eh-ye Mashiz,Qal‘eh-ye Mashīz,brdsyr,بردسیر	29.92266	56.57433	P	PPLA2	IR		29				25152	2047	2049	Asia/Tehran	2026-06-28
+124665	Mashhad	Mashhad	Alexandria,MHD,Masant,Masat,Maschhad,Mashad,Mashado,Mashhad,Mashkhad,Masyhad,Maxhad,Maŝhado,Maşat,Mašhad,Mașhad,Meixad,Meshed,Mesheda,Meshedas,Meshkhed,MeshkhӀed,Meszhed,Mexed,Meşhed,Mešheda,Mešhedas,Məshəd,Məşhəd,Sanaabad,ma shen ha de,mach had,macukat,masahada,mashuhado,masyuhadeu,meshhedi,mshd,mshhd,snabad,Μασάντ,Машхад,Машҳад,Мешхед,МешхӀед,Мешһед,Мәшһәд,Մաշհադ,משהד,سناباد,مشهد,مشہد,مەشھەد,मशहद,মাশহাদ,ਮਸ਼ਹਦ,மசுகாத்,മശ്‌ഹദ്,มัชฮัด,მეშჰედი,マシュハド,馬什哈德,마슈하드	36.29807	59.60567	P	PPLA	IR		42				2307177		980	Asia/Tehran	2025-03-09
+124721	Marvdasht	Marvdasht	Marvdasht,Mervdesht,mrwdsht,Мервдешт,مرودشت	29.87407	52.80258	P	PPLA2	IR		07				148858		1603	Asia/Tehran	2026-01-18
+124724	Marvast	Marvast	Dabestan-e Khvajeh Marvast,Dabestān-e Khvājeh Marvast,Marvas,Marvast,mrwst,مروست	30.47833	54.21167	P	PPL	IR		40				9379		1540	Asia/Tehran	2026-04-28
+124771	Mārgown	Margown	Maregun,Margown,Marjan,Markan,Māregūn,Mārgown,Mārjān,Mārkān,margwn,marjan,markan,مارجان,ماركان,مارگون	30.99237	51.08253	P	PPLA2	IR		05				3135		2345	Asia/Tehran	2026-06-01
+124778	Marīvān	Marivan	Dezh Shahpur,Dezh Shapoor,Dezh Shāhpūr,Marivan,Marīvān,Merivan,Qal`eh-ye Marivan,Qal‘eh-ye Marīvān,dizh shahpwr,mrywan,Мериван,دِژ شاهپور,قَلعِۀ مَريوان,مریوان	35.51829	46.18298	P	PPLA2	IR		16				136654	1310	1306	Asia/Tehran	2026-09-14
+124862	Marand	Marand	Marand,Morand,mrnd,Маранд,مرند	38.4329	45.7749	P	PPLA2	IR		33				124191		1322	Asia/Tehran	2014-09-04
+124877	Marāgheh	Maragheh	ACP,Maragheh,Maraghen,Marāgheh,Marāghen,Merage,mraghh,Мераге,مراغه	37.39206	46.23909	P	PPLA2	IR		33				262604		1455	Asia/Tehran	2026-09-14
+124914	Manūjān	Manujan	Jarian,Jārīān,Manujan,Manūjān,Posht Qalat,Posht Qalāt,Qal`eh-ye Manujan,Qal‘eh-ye Manūjān,jaryan,mnwjan,جاریان,منوجان	27.39893	57.49722	P	PPLA2	IR		29				15634		354	Asia/Tehran	2026-06-30
+125016	Ma‘mūlān	Ma'mulan	Ma`mulan,Mamulun,Ma‘mūlān,Māmūlūn,mamwlwn,مامولون,معمولان	33.3793	47.9596	P	PPL	IR		23				7656		897	Asia/Tehran	2026-03-13
+125077	Māl Khalīfeh	Mal Khalifeh	Deh Khalifa,Deh Khalīfa,Deh-e Khalifeh,Deh-e Khalīfeh,Mal Khalifeh,Mal-e Khalifeh,Māl Khalīfeh,Māl-e Khalīfeh,dh khlyf,dh khlyfh,mal khlyfh,دِه خَلیفَ,دِهِ خَلیفِه,مال خلیفه,مال خَلیفِه	31.2908	51.26026	P	PPL	IR		03				4024		1979	Asia/Tehran	2026-05-05
+125112	Malekān	Malekan	Malek Kandi,Malek Kandī,Malekan,Malekān,Malik Kandi,Malikkand,malik kandy,mlkan,ملکان,مَلِك كَندی	37.14258	46.10345	P	PPLA2	IR		33				27431		1299	Asia/Tehran	2026-03-04
+125185	Malāyer	Malayer	Daulatabad,Daūlatābād,Dowlatabad,Dowlatābād,Malayer,Malāyer,Melajer,mlayr,Мелайер,ملایر	34.30158	48.82166	P	PPLA2	IR		09				170237		1760	Asia/Tehran	2026-09-14
+125188	Malārd	Malard	Malar,Malard,Malār,Malārd,Melard,Melārd,malar,mlard,ملارد,مَلار	35.6659	50.9767	P	PPLA2	IR		26				56745		1163	Asia/Tehran	2024-07-24
+125205	Maku	Maku	IMQ,Maku,Mākū,ma ku,makw,makۆ,Маку,Մակու,ماكو,ماکو,ماکۆ,馬庫	39.28992	44.46035	P	PPLA2	IR		01				46581		1304	Asia/Tehran	2026-05-20
+125290	Māhneshān	Mahneshan	Mah Neshan,Mahneshan,Māh Neshān,Māhneshān,mah nshan,mahnshan,ماه نشان,ماهنشان	36.7444	47.6725	P	PPLA2	IR		36				5487		1300	Asia/Tehran	2026-07-29
+125328	Maḩmūdābād	Mahmudabad	Mahmudabad,Maḩmūdābād,mhmwd abad,محمود آباد	36.63191	52.26286	P	PPLA2	IR		35				31844		-23	Asia/Tehran	2025-05-12
+125438	Maḩallāt	Mahallat	Mahallat,Mahallat Bala,Mahallat-e Bala,Mahallāt Bāla,Maḩallāt,Maḩallāt-e Bālā,mhlat,محلات	33.91108	50.45317	P	PPLA2	IR		34				43245		1751	Asia/Tehran	2026-04-25
+125446	Mahābād	Mahabad	Mahabad,Mahābād,Makhabad,Mehabad,Mehābād,Saujbulagh,Sāūjbulāgh,mah abad,mhabad,mih abad,Махабад,مهاباد,مَه آباد,مِه آباد	36.7631	45.7222	P	PPL	IR		01				168393		1324	Asia/Tehran	2026-06-14
+125609	Lordegān	Lordegan	Lord Jan,Lordagan,Lordagān,Lordajan,Lordajān,Lordakan,Lordakān,Lordegan,Lordegān,Lordgan,Lordgān,Lurdagan,Lurdagān,lrdgan,lurd jan,لردگان,لُرد جَن	31.51338	50.82672	P	PPLA2	IR		03				40528	1764	1588	Asia/Tehran	2026-04-01
+125686	Līlāb	Lilab	Lilab,Lilan,Lilyan,Līlāb,Līlān,lylab,لیلاب	38.669	46.2113	P	PPL	IR		33				764		1372	Asia/Tehran	2026-03-02
+125688	Līkak	Likak	Lak Lak,Lakak,Likak,Likak-e Bahmani,Lirkak,Līkak,Līkak-e Bahmanī,Līrkak,Qal`eh-i-Likak,Qal`eh-ye Likak,Qal‘eh-i-Likak,Qal‘eh-ye Līkak,Seh Laklak,lykk,lykk bhmny,ليکک,لیکک بهمنی	30.8949	50.0931	P	PPLA2	IR		05				19857		652	Asia/Tehran	2025-10-15
+125726	Landeh	Landeh	Landeh,Lendeh,Lindeh,Lindsh,lndh,لنده	30.98215	50.4206	P	PPLA2	IR		05				12772		776	Asia/Tehran	2025-05-12
+125877	Lār	Lar	LRR,Lar,Larestan,Lār,Shahr-e Qadim-e Lar,Shahr-e Qadīm-e Lār,lar,shhr qdym lar,شهر قدیم لار,لار	27.68336	54.34172	P	PPLA2	IR		07				62045		818	Asia/Tehran	2026-01-07
+125897	Langarūd	Langarud	Langarood,Langarud,Langarūd,Langerud,Langerūd,Shahr-e Langarud,Shahr-e Langarūd,lngrwd,لنگرود	37.19548	50.15263	P	PPLA2	IR		08				68148		-19	Asia/Tehran	2024-07-18
+125926	Lamerd	Lamerd	LFM,Lamard,Lamerd,Lāmard,Lāmerd,lamrd,لامرد	27.334	53.179	P	PPLA2	IR		07	449590			29380		425	Asia/Tehran	2026-04-22
+125938	Lālī	Lali	Dasht-e Lali,Dasht-e Lati,Dasht-e Lālī,Lali,Lali Pelayen,Lālī,Lālī Pelāyen,dsht laly,laly,دشت لالی,لالی	32.32981	49.09324	P	PPLA2	IR		15				18473		381	Asia/Tehran	2026-04-28
+126015	Lāhījān	Lahijan	Lahijan,Lakhidzhan,Lāhījān,lahyjan,Лахиджан,لاهیجان	37.20416	50.00919	P	PPLA2	IR		08	449662			101073	4	4	Asia/Tehran	2026-09-14
+126082	Kūt-e ‘Abdollāh	Kut-e 'Abdollah	Kut Abdullah,Kut `Abdollah,Kut-e `Abdollah,Kut-e-Abdollah,Kut-e-`Abd Allah,Kūt Abdullah,Kūt ‘Abdollāh,Kūt-e ‘Abdollāh,Kūt-e-Abdollāh,Kūt-e-‘Abd Allāh,کوت عبدالله	31.23917	48.65639	P	PPLA2	IR		15				56252		36	Asia/Tehran	2026-06-07
+126409	Kūhdasht	Kuhdasht	Kuh-i-Dasht,Kuhdasht,Kūh-ī-Dasht,Kūhdasht,kwhdsht,کوهدشت	33.53335	47.60999	P	PPLA2	IR		23				89091		1190	Asia/Tehran	2026-03-05
+126411	Kūhbanān	Kuhbanan	Koobanan,Kuh Banan,Kuh Baneh,Kuhbanan,Kuhbonan,Kūh Baneh,Kūh Banān,Kūhbanān,Kūhbonān,kwhbnan,کوهبنان	31.41029	56.28255	P	PPLA2	IR		29				10761		1990	Asia/Tehran	2026-01-01
+126572	Kord Kūy	Kord Kuy	Kord Ku,Kord Kuy,Kord Kū,Kord Kūy,Kordkuy,Kurd Kui,Kurd Kūi,krd kwy,krdkwy,kurd kw,كردكوی,كُرد كو,کرد کوی	36.79307	54.11214	P	PPLA2	IR		37				39881		-2	Asia/Tehran	2026-06-09
+126715	Komījān	Komijan	Khumajan,Khūmajān,Komazan,Komejan,Komejān,Komeyjan,Komeyjān,Komijan,Komizan,Komāzān,Komījān,Komīzān,Kumizan,Kūmīzān,kmyjan,كميجان	34.72142	49.32653	P	PPLA2	IR		34				7358		1782	Asia/Tehran	2026-05-20
+126962	Kīā Kolā	Kia Kola	Jadid ol Eslam,Jadīd ol Eslām,Kia Kala,Kia Kola,Kiya Kala,Kīyā Kalā,Kīā Kalā,Kīā Kolā,kya kla,كيا كلا	36.58028	52.81253	P	PPLA2	IR		35				8040		-4	Asia/Tehran	2026-03-04
+126972	Khūy	Khuy	KHY,Khoi,Khoj,Khowy,Khoy,Khvoy,khwy,Хой,خوی	38.5503	44.9521	P	PPLA2	IR		01				198845		1143	Asia/Tehran	2026-09-14
+127014	Khūrmūj	Khurmuj	Khormoj,Khormuj,Khormūj,Khowr Muj,Khowr Mūj,Khowrmuj,Khowrmūj,Khurmoj,Khurmudj,Khurmuj,Khūrmūj,khwrmwj,خورموج	28.6543	51.38	P	PPLA2	IR		22				40722		56	Asia/Tehran	2026-05-13
+127029	Khūr	Khur	Khowr,Khur,Khvor,Khūr,khwr,خور	33.77512	55.08329	P	PPLA2	IR		28				6765		831	Asia/Tehran	2026-05-13
+127033	Khānsār	Khansar	Khansar,Khavansar,Khonsar,Khunsar,Khvansar,Khvonsar,Khvonsār,Khvānsār,Khūnsār,Shahr-e Khvonsar,Shahr-e Khvonsār,khwansar,خوانسار	33.22052	50.31497	P	PPLA2	IR		28				21883		2230	Asia/Tehran	2026-06-15
+127098	Khūsf	Khusf	Khoosaf,Khusef,Khusf,Khūsef,Khūsf,khwsf,خوسف	32.78108	58.89002	P	PPLA2	IR		41				5716		1309	Asia/Tehran	2026-02-17
+127129	Khowr	Khowr	Kharu,Kharū,Khowr,Khur,Khūr,khrw,khwr,خرو,خور	35.46265	58.05727	P	PPL	IR		42				0		1560	Asia/Tehran	2024-07-25
+127319	Khorramshahr	Khorramshahr	Al-Muhammarah,Choremsehras,Choremšehras,Chorramsahr,Chorramschahr,Chorramszahr,Chorramšahr,Horamsaher,Horamšaher,Huerremsehr,Hürremşehr,Jorramchar,Khoramshahr,Khorram Shahr Abadan,Khorram Shahr Ābādān,Khorramchahre,Khorramshahr,Khorramxahr,Khorremshekhr,Khunin Shahr,Khurramshahr,Khūnīn Shahr,Koramshar,Koramsjar,Mohammerah,Muhammerah,Xürrəmşəhr,alkhrmshhr,bndr khrmshhr,horramushafuru,huo la mu sha he er,khrmshhr,khurramasahara,Корамшар,Хорремшехр,Хуррамшаҳр,الخرمشهر,بندر خرمشهر,خرمشهر,خرمشھر,खुर्रमशहर,ホッラムシャフル,霍拉姆沙赫尔	30.44079	48.18428	P	PPLA2	IR		15				330606		4	Asia/Tehran	2026-05-21
+127349	Khorramabad	Khorramabad	KHD,Khorramabad,Khorramābād,Khur Ramabad,Khur Ramābād,Khurramobod,khrm abad,Хуррамобод,خرم آباد	33.48778	48.35583	P	PPLA	IR		23				329825		1182	Asia/Tehran	2026-08-30
+127382	Khonj	Khonj	Khonj,Khunj,Khunji,khnj,خنج	27.8913	53.4344	P	PPLA2	IR		07				19217	670	671	Asia/Tehran	2026-05-21
+127389	Khondāb	Khondab	Khandab,Khondab,Khondāb,Khāndāb,khandab,khndab,خانداب,خنداب	34.3928	49.1841	P	PPLA2	IR		34				7810		1695	Asia/Tehran	2025-05-13
+127403	Khomeyn	Khomeyn	Khomein,Khomeyn,Khomeīn,Khowmeyn,Khumain,Khūmaīn,khmyn,خمين	33.63889	50.08003	P	PPLA2	IR		34				77425		1809	Asia/Tehran	2018-11-06
+127409	Khomārlū	Khomarlu	Khomarlu,Khomārlū,khmarlw,خمارلو	39.15889	47.03288	P	PPLA2	IR		33				1902		295	Asia/Tehran	2026-04-22
+127415	Khomām	Khomam	Bazar Khomam,Bazar-i-Khuman,Bāzār Khomām,Bāzār-i-Khuman,Khemam,Khomam,Khomām,khmam,خمام	37.39016	49.65846	P	PPL	IR		08				20897		-15	Asia/Tehran	2026-02-27
+127613	Kherāmeh	Kherameh	Karameh,Kharameh,Kharāmeh,Kherameh,Kherāmeh,khramh,خرامه	29.49896	53.31199	P	PPLA2	IR		07	9520866			18477		1593	Asia/Tehran	2026-09-03
+127992	Bandar-e Khamīr	Bandar-e Khamir	Bandar-e Khamir,Bandar-e Khamīr,Khamir,Khamīr,Xamir,bandari khamyr,bndr khmyr,bndrkhmyr,khamyr,بندر خمير,بندرخمير,بَندَرِ خَمير,خَمير	26.9521	55.5851	P	PPLA2	IR		11				15320		16	Asia/Tehran	2026-05-20
+128008	Khalkhāl	Khalkhal	Harau,Harowabad,Herau,Herauabad,Heroabad,Herow,Herowabad,Herowābād,Heroābād,Hirabad,Hirābād,Khalkhal,Khalkhāl,hrw abad,khlkhal,خلخال,هرو آباد	37.61837	48.52928	P	PPLA2	IR		32				51024		1795	Asia/Tehran	2024-07-24
+128025	Khalīlābād	Khalilabad	Khalilabad,Khalīlābād,khlyl abad,خلیل آباد	35.25395	58.28566	P	PPLA2	IR		42				12751		980	Asia/Tehran	2026-06-10
+128226	Kermanshah	Kermanshah	Bahtaran,Bakhtaran,Bākhtarān,KSH,Kermansah,Kermansaho,Kermanschah,Kermanshah,Kermanshahan,Kermanshakh,Kermanŝaho,Kermanšah,Kermânsâh,Kermānschāh,Kermānshāh,Kermānshāhān,Kirmansah,Kirmanşah,Kirmasan,Kirmaşan,Province de Kermanshah,Provincia de Kermanshah,Provinco Kermansah,Provinco Kermanŝah,Província de Kermanshah,Qahremanshahr,Qahremānshahr,astan krmanshah,ke er man sha he,kerumansha,krmanshah,Керманшах,Кирмоншоҳ,Устони Кирмоншоҳ,استان کرمانشاه,كرمانشاه,کرمانشاه,ケルマーンシャー,克尔曼沙赫	34.31417	47.065	P	PPLA	IR		13				621100		1392	Asia/Tehran	2024-07-17
+128234	Kerman	Kerman	Carmana,Dakbayan sa Kerman,Dakbayan sa Kermān,KER,Kerman,Kermanas,Kermano,Kermon,Kermán,Kermān,Kirman,Kirmon,karmana,ke er man,keleuman,kermani,keruman,krman,Керман,Кирмон,Կերման,כרמאן,كرمان,کرمان,कर्मान,ქერმანი,ケルマーン,克尔曼,케르만	30.28321	57.07879	P	PPLA	IR		29				577514		1760	Asia/Tehran	2024-07-24
+128252	Kerend-e Gharb	Kerend-e Gharb	Karand,Karind,Karīnd,Kerend,Kerend-e Gharb,krnd ghrb,کرند غرب	34.2842	46.2423	P	PPLA2	IR		13				0		1588	Asia/Tehran	2014-09-04
+128321	Kāzerūn	Kazerun	Kasrun,Kazarun,Kazeroun,Kazerun,Kazeruna,Kāzarūn,Kāzerūn,kazrwn,Казеруна,كازرون	29.61919	51.6535	P	PPLA2	IR		07				112360		846	Asia/Tehran	2026-07-13
+128447	Kāshmar	Kashmar	Kashmar,Kashmer,Khashmar,Kāshmar,Soultanabad,Torshiz,Torshīz,Turshiz,Turshīz,kashmr,Кашмер,کاشمر	35.23831	58.46558	P	PPLA2	IR		42				131517		1054	Asia/Tehran	2026-09-14
+128747	Karaj	Karaj	Heredi,Karadj,Karadje,Karadsch,Karadz,Karadzs,Karadż,Karadž,Karago,Karaj,Karatz,Karaĝo,Karej,Kerec,Keredi,Keredzas,Keredzh,Keredžas,Kerezh,Kərəc,Leredi,PYK,QKC,Qasabeh-e Karaj,Qaşabeh-e Karaj,ka la ji,kairaija,kalaji,karaj,karaji,kha rac,krj,kyaraji,qasabihi karaj,Καράτζ,Карай,Караџ,Караҷ,Кередж,Кереж,כאראג,قَصَبِهِ كَرَج,كرج,کرج,کەرەج,कैरैज,கராஜ்,คาราจ,ქარაჯი,キャラジ,卡拉季,카라지	35.83266	50.99155	P	PPLA	IR		44				1448075		1341	Asia/Tehran	2021-08-20
+128831	Kangāvar	Kangavar	Kangavar,Kangāvar,kngawr,کنگاور	34.5043	47.9653	P	PPLA2	IR		13				51352		1476	Asia/Tehran	2026-04-25
+128847	Bandar-e Kangān	Bandar-e Kangan	Bandar-e Kangan,Bandar-e Kangān,KNR,Kangan,Kangun,Kangān,bndri kngan,kngan,بندرِ كنگان,كنگان	27.83434	52.06306	P	PPLA2	IR		22				60187		11	Asia/Tehran	2026-04-22
+128905	Kāmyārān	Kamyaran	Kamyaran,Kāmyārān,kamyaran,کامیاران	34.79535	46.93682	P	PPLA2	IR		16				57077		1433	Asia/Tehran	2026-05-21
+129201	Kaleybar	Kaleybar	Kaleybar,Kalibar,Kalipar,Kalībar,Keleibar,Keleivar,klybr,کليبر	38.86509	47.03909	P	PPLA2	IR		33				0		1148	Asia/Tehran	2018-05-22
+129512	Kalāleh	Kalaleh	KLM,Kalalah,Kalaleh,Kalālah,Kalāleh,klalh,كلاله	37.37899	55.493	P	PPLA2	IR		37				33700		152	Asia/Tehran	2024-07-24
+129904	Kabūdarāhang	Kabudarahang	Kaboodrahang,Kabud Rahang,Kabudarahang,Kabutarahang,Kabūd Rāhang,Kabūdarāhang,Kabūtarāhang,kbwdr ahng,کبودر آهنگ	35.20924	48.72341	P	PPLA2	IR		09				19216		1670	Asia/Tehran	2026-04-25
+129929	Eyvān	Eyvan	Aiwan,Aīwān,Bagh-e Shah,Bagh-i-Shah,Bāgh-e Shāh,Bāgh-ī-Shāh,Eyvan,Eyvan-e Gharb,Eyvān,Eyvān-e Gharb,Ivan,Juy Zar,Jūy Zar,aywan,aywan ghrb,baghi shah,jwy zar,Īvān,ايوان,ایوان غرب,باغِ شاه,جوی زَر	33.8272	46.3097	P	PPLA2	IR		10				31299		1184	Asia/Tehran	2026-05-13
+129931	Jūyom	Juyom	Juwun,Juwūn,Juyom,Juyum,Jūyom,Jūyum,Zhoyum,Zhoyūm,jwym,جویم	28.2548	53.98112	P	PPLA2	IR		07				8010		861	Asia/Tehran	2026-06-06
+129933	Jūybār	Juybar	Baghlu,Bāghlū,Juybar,Jūybār,jwybar,جويبار	36.64088	52.91206	P	PPLA2	IR		35				32924		-7	Asia/Tehran	2026-05-16
+130081	Julfa	Julfa	Culfa,Dzhulfi,Jolfa,Jolfā,Julfa,jlfa,julfa,جلفا,جُلفا	38.93788	45.63329	P	PPL	IR		33				8810		704	Asia/Tehran	2026-07-17
+130091	Joghtāy	Joghtay	Jaghatai,Jaghatāi,Joghatay,Joghatāy,Joghtay,Joghtāy,jghtay,جغتای	36.63619	57.07284	P	PPLA2	IR		42				9268		1360	Asia/Tehran	2026-08-31
+130276	Jask	Jask	Bandar-e Jask,Bandar-e Jāsk,JSK,Jask,Jāsk,bndri jask,jask,بندرِ جاسک,جاسک	25.64533	57.77552	P	PPLA2	IR		11				16680		5	Asia/Tehran	2026-05-16
+130451	Jam	Jam	Jam,Jam-e Jam,Jamm,Jām-e Jam,Velayat,Velāyat,jami jam,jm,wlayt,جامِ جَم,جم,ولایت	27.82977	52.32518	P	PPLA2	IR		22				31436		622	Asia/Tehran	2025-05-12
+130524	Jājarm	Jajarm	Jajarm,Jājarm,jajrm,جاجرم	36.95012	56.38005	P	PPLA2	IR		43				19580		933	Asia/Tehran	2026-05-22
+130531	Jahrom	Jahrom	Do,Dzhekhrom,JAR,Jahrom,Jahrum,Jahrūm,dw,jhrm,Джехром,جهرم,دو	28.5	53.5605	P	PPLA2	IR		07				141634	1050	1040	Asia/Tehran	2026-09-14
+130697	Īz̄eh	Izeh	Ize,Izeh,Malamir,Malāmir,aydhh,Īz̄eh,Изе,ایذه	31.83027	49.86756	P	PPLA2	IR		15				119399		825	Asia/Tehran	2026-09-14
+130802	Īlām	Ilam	Elam,Elām,IIL,Ilam,ailam,aylam,ylam,Īlām,Илам,اِلام,ایلام,يلام	33.6374	46.4227	P	PPLA	IR		10				140940		1403	Asia/Tehran	2017-02-08
+130821	Hoveyzeh	Hoveyzeh	Havizeh,Hawiza,Hawizeh,Hawīzeh,Hovayze,Hovayzeh,Hoveyzeh,Huzgan,Hūzgān,hwyzh,هویزه	31.4619	48.074	P	PPLA2	IR		15				19481		15	Asia/Tehran	2026-04-28
+130854	Hūrānd	Hurand	Howrand,Howrānd,Hurand,Hūrānd,hwrand,هوراند	38.86125	47.36797	P	PPL	IR		33				0		1105	Asia/Tehran	2024-07-18
+131508	Ḩesāmī	Hesami	Hesami,hsamy,حسامی,Ḩesāmī	29.96919	53.87416	P	PPL	IR		07				0		2076	Asia/Tehran	2014-08-05
+131528	Herīs	Heris	Haris,Harīs,Heris,Herīs,Hiriz,hrys,هريس	38.24816	47.11678	P	PPLA2	IR		33				10515		1904	Asia/Tehran	2026-05-21
+131559	Hendījān	Hendijan	Hendeyan,Hendeyān,Hendian,Hendijan,Hendijan Kuchek,Hendijar,Hendījān,Hendījān Kūchek,Hendījār,Hendīān,Hindian,Hindijan,Hindīān,hndyjan,هندیجان	30.2363	49.7119	P	PPLA2	IR		15				29015		9	Asia/Tehran	2026-04-28
+131691	Hashtgerd	Hashtgerd	Ashjird,Hashtgerd,Hashtjerd,Hashtjird,hashtjird,hshtgrd,هشتگرد,هَشتجِرد	35.962	50.6799	P	PPLA2	IR		44	449510			55640		1272	Asia/Tehran	2026-04-22
+131962	Harsīn	Harsin	Harsin,Harsīn,hrsyn,هرسین	34.2721	47.5861	P	PPLA2	IR		13				57647		1551	Asia/Tehran	2024-07-24
+132105	Ḥamīdiyeh	Hamidiyeh	Allah,Allāh,Hamidiya,Hamidiyeh,Illah,hmydyh,حمیدیه,Ḩamīdīyeh	31.48285	48.4332	P	PPLA2	IR		15				22057		17	Asia/Tehran	2026-04-28
+132144	Hamadān	Hamadan	Ecbatana,HDM,Hamadan,Hamadān,Hamedan,Hamedān,Khamadan,hmdan,Хамадан,همدان	34.79922	48.51456	P	PPLA	IR		09				528256		1820	Asia/Tehran	2024-07-22
+132380	Ḩājjīābād	Hajjiabad	Hajiabad,Hajjiabad,Hājīābād,hajy abad,حاجی آباد,Ḩājjīābād	28.35735	54.42335	P	PPLA2	IR		07				21675		1033	Asia/Tehran	2026-05-13
+132382	Ḩājjīābād	Hajjiabad	Hajjiabad,hajy abad,حاجی آباد,Ḩājjīābād	28.3091	55.9017	P	PPLA2	IR		11				23309		926	Asia/Tehran	2023-04-12
+132428	Haftkel	Haftkel	Haftgel,Haftkel,hftgl,hftkl,هفتکل,هفتگل	31.44686	49.52951	P	PPLA2	IR		15				15802		298	Asia/Tehran	2025-07-02
+132892	Gorgān	Gorgan	Asterabad,Asterābād,GBT,Gorgan,Gorgān,Gurgan,Gurgon,Gūrgān,Hirkanio,aastir abad,grgan,gwrgan,Горган,Гургон,اَستِر آباد,گرگان,گورگان	36.8427	54.44391	P	PPLA	IR		37				244937		140	Asia/Tehran	2024-07-19
+132938	Gonbad-e Kāvūs	Gonbad-e Kavus	Dashte Gorgan,Gombede-Kavus,Gonbad Qabus,Gonbad Qavoos,Gonbad Qābūs,Gonbad-e Kavus,Gonbad-e Kāvūs,Gonbad-e Qabus,Gonbad-e Qābūs,Gunbad-i-Kawas,Gunbad-i-Kawus,Gunbad-i-Kāwās,Gunbad-i-Kāwūs,Gunbad-i-Qabus,Gunbad-i-Qābūs,gnbd kawws,gnbd qabws,Гомбеде-Кавус,گنبد قابوس,گنبد کاووس	37.25004	55.16721	P	PPLA2	IR		37				151910		38	Asia/Tehran	2026-09-14
+132961	Gonābād	Gonabad	Gonabad,Gonābād,Gunabad,Gūnābād,Juymand,Jūymand,gnabad,گناباد	34.35287	58.68365	P	PPLA2	IR		42				43465		1095	Asia/Tehran	2024-07-24
+133037	Golpāyegān	Golpayegan	Golpayagan,Golpayegan,Golpāyagān,Golpāyegān,Gulpaigan,Gulpāīgān,Shahr-e Golpayegan,Shahr-e Golpāyegān,glpaygan,گلپایگان	33.4537	50.28836	P	PPLA2	IR		28				58936	1830	1817	Asia/Tehran	2026-05-13
+133345	Gīlān-e Gharb	Gilan-e Gharb	Gilan,Gilan-e Gharb,Gīlān,Gīlān-e Gharb,gylan ghrb,گیلان غرب	34.1421	45.9203	P	PPLA2	IR		13				0		802	Asia/Tehran	2024-07-25
+133595	Gerāsh	Gerash	Gerash,Gerāsh,Girash,Girāsh,grash,گراش	27.66966	54.13586	P	PPLA2	IR		07				34469		923	Asia/Tehran	2026-01-07
+133677	Ja‘farīyeh	Ja'fariyeh	Gazaran,Gazeran,Gazran,Gazrown,Gāzarān,Gāzerān,Gāzrān,Ja`fariyeh,Ja‘farīyeh,Kazran,Kāzrān,gazran,جعفریه,گازران	34.7747	50.5169	P	PPL	IR		39				9387		976	Asia/Tehran	2026-04-25
+133884	Gotvand	Gotvand	Gatvand,Gotvand,Gutwand,Gūtwand,Shahrestan-e Gotvand,Shahrestān-e Gotvand,gtwnd,shhrstan gtwnd,شهرستان گتوند,گتوند	32.24585	48.81315	P	PPLA2	IR		15				24216		70	Asia/Tehran	2026-04-28
+133964	Garmsār	Garmsar	Garmsar,Garmsār,Qeshlaq,Qeshlāq,Qishlaq,Shahr-e Qeshlaq,Shahr-e Qeshlāq,grmsar,qishlaq,shahri qishlaq,شَهرِ قِشلاق,قِشلاق,گرمسار	35.21824	52.34085	P	PPLA2	IR		25				48672		860	Asia/Tehran	2026-05-17
+133972	Germī	Germi	Garmi,Garmi Ejarood,Garmī,Germi,Germī,grmy,گرمی	39.0215	48.0801	P	PPLA2	IR		32				28967		854	Asia/Tehran	2025-07-02
+133978	Garmeh	Garmeh	Garmeh,grmh,گرمه	36.987	56.28942	P	PPLA2	IR		43				0		1051	Asia/Tehran	2014-09-04
+134217	Bandar-e Genāveh	Bandar-e Genaveh	Bandar Ganaveh,Bandar Ganāveh,Bandar-e Ganaveh,Bandar-e Ganāveh,Bandar-e Genaveh,Bandar-e Genāveh,Bandar-e-Gonaveh,Bandar-e-Gonāveh,Ganaveh,Ganāveh,Genaveh,Genāveh,Gonaveh,Gonāveh,Kenareh,Kenâreh,bndr gnawh,بندر گناوه	29.5791	50.517	P	PPLA2	IR		22				52750		8	Asia/Tehran	2024-07-24
+134255	Galūgāh	Galugah	Galugah,Galūgāh,glwgah,گلوگاه	36.72734	53.80888	P	PPLA2	IR		35				21352		34	Asia/Tehran	2026-02-27
+134282	Gālīkesh	Galikesh	Galikash,Galikesh,Galīkesh,Gālīkash,Gālīkesh,galyksh,گاليكش	37.27259	55.43394	P	PPLA2	IR		37				23394		195	Asia/Tehran	2025-05-19
+134441	Fūman	Fuman	Fowman,Fowmen,Fuman,Fumen,Fūman,fwmn,فومن	37.224	49.3125	P	PPLA2	IR		08				35841		33	Asia/Tehran	2026-04-21
+134462	Fīrūzkūh	Firuzkuh	Firuzkuh,Fīrūzkūh,Qasabeh-ye Firuz Kuh,Qaşabeh-ye Fīrūz Kūh,fyrwzkwh,فيروزكوه	35.75674	52.77062	P	PPLA2	IR		26				17453		1943	Asia/Tehran	2026-05-22
+134518	Fīrūzābād	Firuzabad	Firuzabad,Fīrūzābād,fyrwz abad,فیروز آباد	28.84459	52.57151	P	PPLA2	IR		07				65417		1316	Asia/Tehran	2026-05-21
+134563	Feyẕābād	Feyzabad	Faizabad,Faizābād,Feyzabad,Feyzābād,Feyẕābād,fyd abad,فیض آباد	35.01891	58.78343	P	PPLA2	IR		42				0		931	Asia/Tehran	2024-07-15
+134601	Fereydūnshahr	Fereydunshahr	Fareydunshahr,Fareydūnshahr,Fereydunshahr,Fereydūnshahr,Phereidan,frydwn shhr,pereidani,فریدون شهر,ფერეიდანი	32.94195	50.11991	P	PPLA2	IR		28				13603		2540	Asia/Tehran	2026-07-11
+134602	Fereydūn Kenār	Fereydun Kenar	Faridun Kinar,Fereidun Kenar,Fereydun Kenar,Fereydunkenar,Fereydūn Kenār,Fereydūnkenār,Fāridūn Kinār,Qasabeh,Qaşabeh,frydwn knar,frydwnknar,فريدون كنار,فريدونكنار	36.68489	52.51917	P	PPLA2	IR		35				34097		-20	Asia/Tehran	2020-11-01
+134613	Ferdows	Ferdows	Ferdous,Ferdows,Firdaus,Firdavs,Firdevs,Firdovs,Tun,Tūn,fei er dao si,ferudousu,frdws,Фердоус,Фирдавс,فردوس,フェルドゥース,費爾道斯	34.0185	58.17222	P	PPLA2	IR		41				28965		1279	Asia/Tehran	2026-05-20
+134721	Fasā	Fasa	FAZ,Fasa,Fassa,Fasā,fsa,فسا	28.9383	53.6482	P	PPLA2	IR		07				98061		1366	Asia/Tehran	2024-07-25
+134735	Fāryāb	Faryab	Fariab,Fariyab,Faryab,Fāryāb,Fārīāb,Pariab,Paryab,Paryāb,Pay Ab,Pārīāb,Pāy Āb,Shahmoradi-ye Faryab,Shahmorādi-ye Fāryāb,faryab,فاریاب	28.0987	57.23181	P	PPLA2	IR		29				4863		660	Asia/Tehran	2026-05-13
+134745	Fārūj	Faruj	Farij,Faruj,Fārij,Fārūj,farwj,فاروج	37.23121	58.219	P	PPLA2	IR		43				12061		1183	Asia/Tehran	2025-03-06
+134762	Fārsān	Farsan	Farsa,Farsan,Farsian,Farsun,Farsūn,Fārsā,Fārsān,Fārsīān,farsan,فارسان	32.25694	50.56095	P	PPLA2	IR		03				30504		2039	Asia/Tehran	2026-06-01
+134781	Farrāshband	Farrashband	Farash,Farashband,Farrash,Farrashband,Farrāsh,Farrāshband,Farāsh,Farāshband,frashbnd,فراشبند	28.86012	52.09452	P	PPLA2	IR		07				20320		776	Asia/Tehran	2025-05-12
+134788	Farmahīn	Farmahin	Farmahin,Farmahīn,frmhyn,فرمهين	34.50383	49.68437	P	PPLA2	IR		34				5756		1782	Asia/Tehran	2026-02-17
+134809	Farīmān	Fariman	Fariman,Farimun,Farīmān,Farīmūn,fryman,فریمان	35.70685	59.85006	P	PPLA2	IR		42				0		1398	Asia/Tehran	2024-07-25
+134894	Fannūj	Fannuj	Fannuj,Fannūj,Fanuch,Fanuj,Fanūj,Fānūch,fnwj,فنوج	26.57527	59.64144	P	PPLA2	IR		04	11963562			13000		717	Asia/Tehran	2024-07-25
+134906	Fāmenīn	Famenin	Famanin,Famenin,Faminin,Famīnīn,Fāmanīn,Fāmenīn,famnyn,فامنین	35.11593	48.97336	P	PPLA2	IR		09				14208		1637	Asia/Tehran	2025-05-12
+134962	Fahraj	Fahraj	Fahraj,Fahrej,Iranshahr,Irānshahr,Narmashir,Narmāshīr,fhrj,فهرج	28.9502	58.885	P	PPLA2	IR		29				0		680	Asia/Tehran	2014-09-04
+135053	Evaz	Evaz	Avaz,Evaz,Evazeh,`Avaz,`Iwaz,awz,اوز,‘Avaz,‘Iwaz	27.7622	54.00417	P	PPL	IR		07				19987		968	Asia/Tehran	2026-01-07
+135094	Estahbān	Estahban	Estahban,Estahbanat,Estahbān,Estehbanat,Eşţahbān,Eşţahbānāt,Istehbanat,Istehbānāt,Savanat,Savānāt,Shahr-e Estahbanat,Shahr-e Eşţahbānāt,asthban,استهبان	29.1266	54.0421	P	PPLA2	IR		07				36410		1743	Asia/Tehran	2026-01-13
+135175	Eslāmābād-e Gharb	Eslamabad-e Gharb	Eslamabad,Eslamabad-e Gharb,Eslāmābād,Eslāmābād-e Gharb,Harunabad,Hārūnābād,Shahabad,Shahabad-e Gharb,Shāhābād,Shāhābād-e Gharb,aslam abad ghrb,shah abad ghrb,shah‌abad ghrb,اسلام آباد غرب,شاه آباد غرب,شاه‌آباد غرب	34.1089	46.52988	P	PPLA2	IR		13				90559	1335	1338	Asia/Tehran	2025-03-06
+135205	Eshtehārd	Eshtehard	Eshtehard,Eshtehārd,Ishtahabad,Ishtahard,ashthard,Īshtahard,Īshtahābād,اشتهارد	35.7255	50.3662	P	PPLA2	IR		44				29993		1161	Asia/Tehran	2025-05-13
+135221	‘Eshqābād	`Eshqabad	`Eshqabad,عشق آباد,‘Eshqābād	34.36633	56.92993	P	PPL	IR		41				0		773	Asia/Tehran	2024-07-25
+135298	Esfarāyen	Esfarayen	Esfarayen,Esfarāyen,Meyanabad,Meyanābād,Mianabad,Miyanabad,Mīyānābād,Mīānābād,asfrayn,اسفراین	37.07645	57.51009	P	PPLA2	IR		43				59490		1253	Asia/Tehran	2026-05-22
+135355	Eqlīd	Eqlid	Eklid,Eklīd,Eqlid,Eqlīd,Iqlid,Iqlīd,Shahrestan-e Eqlid,Shahrestān-e Eqlīd,aqlyd,اقلید	30.89885	52.69701	P	PPLA2	IR		07				44341		2212	Asia/Tehran	2026-05-13
+135423	Shahrud	Shahrud	Emamshahr,Emāmshahr,Imamshekhr,RUD,Shahrud,Sharud,Shāhrūd,Shārūd,aimamshahr,shahrwd,sharwd,Имамшехр,اِمامشَهر,شارود,شاهرود	36.41819	54.97628	P	PPL	IR		25				165000		1351	Asia/Tehran	2026-09-14
+135743	Dowlatābād	Dowlatabad	Daulatabad,Daulatābad,Dowlatabad,Dowlatābād,dwlt abad,دولت آباد	35.28219	59.51972	P	PPLA2	IR		42				0		1369	Asia/Tehran	2024-07-25
+135878	Dorūd	Dorud	Dorood Garan,Dorud,Dorūd,Dow Rud,Dow Rūd,Durud,Dūrūd,dwrwd,Доруд,دورود	33.49218	49.0616	P	PPLA2	IR		23				121638		1454	Asia/Tehran	2026-09-14
+136014	Dogonbadan	Dogonbadan	Do Gonbadan,Do Gonbadān,Dogonbadan,Dow Gonbadan,Dow Gonbadān,Du Gunbadan,Du Gunbadān,GCH,Gachsaran,Gachsārān,du gunbadan,gchsaran,دُو گُنبَدان,گچساران	30.3586	50.7981	P	PPL	IR		05				96728		723	Asia/Tehran	2026-06-14
+136156	Dīvāndarreh	Divandarreh	Divan Darra,Divandarreh,Diwan Darreh,Dīvan Darra,Dīvāndarreh,Dīwān Darreh,dywandrh,ديواندره	35.9139	47.0239	P	PPLA2	IR		16				34007		1838	Asia/Tehran	2026-02-16
+136256	Dezful	Dezful	DEF,Dezfoul,Dezful,Dezfūl,Dizful,Dizful',Dīzfūl,des ful,dezaphula,di zi fu lei,dyzfwl,dzfwl,Дизфуль,دزفول,ديزفول,देज़फूल,เดซฟูล,迪茲富勒	32.38114	48.40581	P	PPLA2	IR		15				264709		143	Asia/Tehran	2026-05-20
+136280	Bandar-e Deyr	Bandar-e Deyr	Bandar-e Deyyer,Daiyir,Dayer,Dayir,Dayyer,Deyr,Qal'eh Dir,Qal’eh Dīr,bndr dyr,dyr,qalyih dyr,بندر دیر,دير,قَلئِه دير	27.8399	51.9378	P	PPLA2	IR		22				24083		9	Asia/Tehran	2026-05-13
+136399	Delījān	Delijan	Dalijan,Dalijān,Delijan,Delījān,Dilijan,Dilījān,dlyjan,دليجان	33.9905	50.6838	P	PPLA2	IR		34				33508		1522	Asia/Tehran	2024-07-25
+136702	Dehlorān	Dehloran	Deh Lovan,Deh Lovān,Deh Luran,Deh Lūrān,Dehloran,Dehlorān,Dekhlorana,dhlran,dih luan,dih lwran,Дехлорана,دهلران,دِه لوران,دِه لُوان	32.6941	47.2679	P	PPLA2	IR		10				46002		224	Asia/Tehran	2024-07-25
+136773	Dehgolān	Dehgolan	Deh Gulan,Deh-i-Gulan,Deh-ī-Gūlān,Dehgolan,Dehgolān,dhglan,دهگلان	35.278	47.4184	P	PPLA2	IR		16				0		1818	Asia/Tehran	2024-07-25
+136983	Dehdez	Dehdez	Deh Diz,Deh-e Dez,Dehdaz,Dehdez,dhdz,دهدز	31.7096	50.28827	P	PPL	IR		15				5490		1537	Asia/Tehran	2025-05-12
+136987	Dehdasht	Dehdasht	Dehdasht,Dehdast,Kuhgiluyeh,dhdsht,dihdast,دهدشت,دِهدَست	30.79337	50.56508	P	PPLA2	IR		05				57036		806	Asia/Tehran	2026-06-30
+137013	Sīsakht	Sisakht	Deh Bozorg-e Sisakht,Deh Bozorg-e Sīsakht,Deh Bozorg-e Sīsākht,Deh-e Bozorg Sisakht,Deh-e Bozorg Sīsakht,Sisakht,Sīsakht,dih buzurgi sysakht,sy skht,دِه بُزُرگِ سيساخت,دِه بُزُرگِ سيسَخت,سی سخت	30.86393	51.4559	P	PPLA2	IR		05				7855		2267	Asia/Tehran	2026-05-09
+137025	Şafāshahr	Safashahr	Deh Bid,Deh Bīd,Safashahr,dh byd,sfashhr,Şafāshahr,ده بید,صفاشهر	30.6131	53.1954	P	PPLA2	IR		07				26933		2299	Asia/Tehran	2026-05-21
+137057	Dehāqān	Dehaqan	Dehaqan,Dehāqān,dhaqan,دهاقان	31.93986	51.64731	P	PPLA2	IR		28	449483			17945		2045	Asia/Tehran	2026-05-13
+137125	Dāvarzan	Davarzan	Davarzan,Duvarzan,Duvarzān,Dāvarzan,dawrzn,داورزن	36.35088	56.87547	P	PPLA2	IR		42				0		938	Asia/Tehran	2024-07-25
+137268	Sūsangerd	Susangerd	Dasht-e Azadegan,Dasht-e Āzādegān,Dasht-i-Mishan,Dasht-i-Mishān,Dashte' Mishan,Dashte’ Mishan,Khafajiyah,Khafajiyaz,Khafajiyeh,Susangerd,Susangird,Susangurd,Sūsangerd,Sūsangird,Sūsangurd,swsngrd,سوسنگرد	31.5635	48.18958	P	PPLA2	IR		15				51431		15	Asia/Tehran	2026-05-19
+137436	Darreh Shahr	Darreh Shahr	Dareh sahr,Darre Szahr,Darreh Shahr,Darreh-ye Shahr,Darrehshahr,Darreshekhr,Deresehr,Dereşehr,Dərəşəhr,Madakto,drh shhr,Даррашаҳр,Даррешехр,Դարեհ շահր,دره شهر,دره‌شهر,دەڕەشار,شهرستان دره‌شهر	33.14447	47.3799	P	PPLA2	IR		10	449461			24961	667	660	Asia/Tehran	2016-07-04
+137585	Dargaz	Dargaz	Dargaz,Darreh Gaz,Mohammadabad,Mohammadabad Arbab,Moḩammadābād,Moḩammadābād Arbāb,Muhammadabad,Muhammadābād,drgz,drh gz,دره گز,درگز	37.44447	59.10809	P	PPLA2	IR		42				36762	479	476	Asia/Tehran	2026-05-22
+137929	Dārān	Daran	Daran,Darun,Dārān,Dārūn,Fareydan,Faridan,Farīdān,daran,frydn,داران,فریدن	32.98741	50.4108	P	PPLA2	IR		28				20078		2312	Asia/Tehran	2026-04-25
+137956	Dārāb	Darab	City of Darius,Darab,Darab-e Do,Darabgerd,Darabkert,Darius-town,Darábgerd,Dārāb,Dārāb-e Do,darab,darab 2,داراب,داراب ٢	28.75171	54.54065	P	PPLA2	IR		07				70232		1125	Asia/Tehran	2026-05-21
+138025	Dāmghān	Damghan	Damghan,Dāmghān,damghan,دامغان	36.1679	54.34292	P	PPLA2	IR		25				67694		1154	Asia/Tehran	2024-07-25
+138042	Damāvand	Damavand	Damavand,Damāvand,Demavend,Demāvend,Qasabeh-e Damavand,Qaşabeh-e Damāvand,dmawnd,qasabihi damawand,Дамаванд,دماوند,قَصَبِهِ دَماوَند	35.71842	52.06958	P	PPLA2	IR		26				29144		1959	Asia/Tehran	2024-07-18
+138742	Chenārān	Chenaran	Chanaran,Chanārān,Chenaran,Chenārān,Chinaran,Chinārān,chnaran,چناران	36.64546	59.12123	P	PPLA2	IR		42				53879		1176	Asia/Tehran	2026-05-22
+138799	Chelgard	Chelgard	Chalehgard,Chelgard,Chelgerd,Shur Ab,Shūr Āb,chlgrd,چلگرد	32.4672	50.12229	P	PPLA2	IR		03				2989		2333	Asia/Tehran	2026-05-16
+138905	Chavār	Chavar	Chavar,Chavār,Chawar,Chawār,Chuar,Chūār,Kani Chavar,Kani Chawar,Kanī Chawār,Kānī Chavār,chawar,chwar,kany chawar,كانی چَوار,چوار,چَوار	33.6953	46.2979	P	PPL	IR		10				5831		1037	Asia/Tehran	2026-04-21
+138989	Charām	Charam	Charam,Charām,Cherum,Tal Gard,Tal Gerd,Tal Gerd Choram,Tal Gerd Chorām,Tall Gerd-e Charam,Tall Gerd-e Charām,chram,tal gard,tal gird,tal gird churam,tl grd chram,تل گرد چرام,تَل گَرد,تَل گِرد,تَل گِرد چُرام,چرام	30.75561	50.74522	P	PPLA2	IR		05	9532947			15218	788	726	Asia/Tehran	2026-03-01
+139015	Chaqābol	Chaqabol	Chaqabal,Chaqabol,Chaqābal,Chaqābol,Cheghabal,Cheghābal,Chogha Bol,Choghā Bol,Choqa Bol,Choqā Bol,Rahman,Rahman-e Barkhvordari,Raḩmān,Raḩmān-e Barkhvordārī,chaqabal,chaqabul,chighabal,chqabl,chugha bul,chuqa bul,rahman,rahmani barkhwurdary,rhman,رحمان,رَحمان,رَحمانِ بَرخوُرداری,چقابل,چَقابَل,چَقابُل,چُغا بُل,چُقا بُل,چِغابَل	33.28175	47.50979	P	PPLA2	IR		23				0		1077	Asia/Tehran	2024-07-25
+139223	Chālūs	Chalus	Chalus,Chālūs,chalws,Чалус,چالوس	36.655	51.4204	P	PPLA2	IR		35				107490		26	Asia/Tehran	2026-07-13
+139780	Chādegān	Chadegan	Chadegan,Chadgan,Chadgun,Chadgūn,Chadugan,Chadūgān,Chādegān,Chādgān,chadgan,چادگان	32.76825	50.62873	P	PPLA2	IR		28				9924		2113	Asia/Tehran	2026-04-01
+139817	Bushehr	Bushehr	Abu Shahr,Abu Shehr,Abuschehr,BUZ,Bandar Abu Shehr,Bandar Bushehr,Bandar Būshehr,Bandar-e Bushehr,Bandar-e Būshehr,Bouchehr,Buschehr,Buschir,Busehr,Bushehr,Busher,Bushir,Bushire,Būshehr,Būšehr,bndr bwshhr,bwshhr,bwshihr,Бушер,Бушир,Бӯшеҳр,Бӯшиҳр,بندر بوشهر,بوشهر,بوشِهر	28.96887	50.83657	P	PPLA	IR		22				165377		8	Asia/Tehran	2024-07-25
+139889	Būkān	Bukan	Bokan,Bowkan,Bowkān,Bukan,Būkān,bwkan,Букан,بوکان	36.521	46.2089	P	PPLA2	IR		01				193501	1365	1352	Asia/Tehran	2026-05-21
+139903	Bū’īn Zahrā	Bu'in Zahra	Bu'in,Bu'in Zahra,Buyin,Būyīn,Bū’īn,Bū’īn Zahrā,bwyyn zhra,بوئین زهرا	35.7669	50.0578	P	PPLA2	IR		38				0		1217	Asia/Tehran	2024-07-25
+140044	Borūjerd	Borujerd	Borudzherd,Borujerd,Borūjerd,Burujird,Būrūjīrd,brwjrd,bwrwjyrd,Боруджерд,بروجرد,بوروجيرد	33.8973	48.7516	P	PPLA2	IR		23				251958		1574	Asia/Tehran	2026-05-16
+140046	Borūjen	Borujen	Amrujan,Amrūjān,Beroojen,Borujan,Borujen,Borūjen,Borūjān,Burujan,Burūjān,Urujan,Urūjān,aamrwjan,birujin,brwjn,burwjan,اَمروجان,بروجن,بُروجان,بِرُّجِن	31.96523	51.2873	P	PPLA2	IR		03				57071	2197	2230	Asia/Tehran	2026-06-01
+140097	Borāzjān	Borazjan	Borazdjan,Borazdzhan,Borazjan,Borazjun,Borāzjān,Borāzjūn,brazjan,burazdjan,Боразджан,برازجان,بُرَزدجَن	29.2699	51.2188	P	PPLA2	IR		22				110567		70	Asia/Tehran	2026-09-14
+140380	Bojnūrd	Bojnurd	BJB,Bodzhnurd,Bojnord,Bojnourd,Bojnurd,Bojnūrd,Bujnurd,Bujnūrd,bjnwrd,Боджнурд,بجنورد	37.47473	57.32903	P	PPLA	IR		43				192041		1069	Asia/Tehran	2024-07-25
+140463	Bīrjand	Birjand	Birdjand,Birdschand,Birdzhend,Birjand,Bīrjand,XBJ,byrjnd,Бирдженд,Бӣрҷанд,بيرجند,بیرجند	32.86628	59.22114	P	PPLA	IR		41				196982		1459	Asia/Tehran	2024-07-25
+140494	Bīleh Savār	Bileh Savar	Bileh Savar,Bīleh Savār,bylh swar,بيله سوار	39.37961	48.35463	P	PPLA2	IR		32				14000		83	Asia/Tehran	2024-07-25
+140521	Bījār	Bijar	Bidzhar,Bijar,Bījār,byjar,Биджар,بيجار	35.8668	47.60506	P	PPL	IR		16				50014		1929	Asia/Tehran	2026-04-22
+140889	Bonāb	Bonab	Benab,Benāb,Binab,Bināb,Bonab,Bonāb,Bunab,bnab,Бонаб,بناب	37.3404	46.0561	P	PPLA2	IR		33				80359		1288	Asia/Tehran	2024-07-25
+140891	Ben	Ben	Bain,Ban,Ben,bn,بن	32.54037	50.74515	P	PPLA2	IR		03				12971		2187	Asia/Tehran	2026-04-25
+140918	Behshahr	Behshahr	Ashraf,Behshahr,Bekhshekhr,aashraf,bhshhr,Бехшехр,اَشرَف,بهشهر	36.69235	53.55262	P	PPLA2	IR		35				94702		10	Asia/Tehran	2026-03-04
+140951	Behbahān	Behbahan	Behbahan,Behbahān,Behbehan,Behbehān,Bekhbekhan,bhbhan,Бехбехан,بهبهان	30.5959	50.2417	P	PPLA2	IR		15				122604		326	Asia/Tehran	2026-09-14
+141015	Māsāl	Masal	Bazar-e Masal,Bāzār-e Māsāl,Masal,Masal-Bazar,Māsāl,Sar-i-Bazar,Sar-i-Bāzar,Sari Bazar Musar,Sārī Bāzār Mūsār,bazar masal,masal,بازار ماسال,ماسال	37.3631	49.1329	P	PPLA2	IR		08				17901		61	Asia/Tehran	2025-05-13
+141104	Bastak	Bastak	Bastak,Lastak,bstk,lstk,Бастак,بستک,لَستَك	27.19908	54.36676	P	PPLA2	IR		11	449700			9959		403	Asia/Tehran	2026-06-17
+141124	Bāsht	Basht	Basht,Bāsht,basht,باشت,بَشت	30.361	51.15735	P	PPLA2	IR		05				10764		807	Asia/Tehran	2025-05-12
+141190	Bārūq	Baruq	Baruq,Bārūq,barwq,باروق	36.9583	46.3249	P	PPL	IR		01				4225		1355	Asia/Tehran	2026-03-04
+141349	Bardaskan	Bardaskan	Badar Askan,Badar Askān,Badr Eshkand,Bardaskan,Bardaskand,Bardeshkand,Bardeskan,Bardāskan,Bardāskand,Berdesken,Budraskan,Būdraskān,Bərdəskən,ba er da si kan,baradaskana,brdaskn,brdskn,Бардаскан,Բարդասքան,برداسکن,بردسكن,بردسکن,বারদাস্কান,巴爾達斯坎	35.26218	57.97075	P	PPLA2	IR		42				28233		990	Asia/Tehran	2024-07-22
+141584	Bāneh	Baneh	Bane,Baneh,Bani,Bāneh,banh,bani,Бани,بانه,بَنِ	35.9975	45.8853	P	PPLA2	IR		16				110218		1525	Asia/Tehran	2026-05-21
+141653	Bandar-e Torkaman	Bandar-e Torkaman	Bandar Shah,Bandar Shāh,Bandar-e Shah,Bandar-e Shāh,Bandar-e Torkaman,Bandar-e Torkeman,Bandar-e Torkman,bandari shah,bandari turkman,bndr trkmn,بندر تركمن,بَندَرِ تُركمَن,بَندَرِ شاه	36.90124	54.07195	P	PPLA2	IR		37				53970		-22	Asia/Tehran	2024-04-16
+141663	Bandar-e Māhshahr	Bandar-e Mahshahr	Bandar Ma`sbur,Bandar Ma`shur,Bandar Mah Shahr Terminal,Bandar Mah Sharh,Bandar Mah-Shahr,Bandar Mashur,Bandar Ma‘sbur,Bandar Ma‘shūr,Bandar-Mashour,Bandar-e Ma`shur,Bandar-e Mahshahr,Bandar-e Ma‘shūr,Bandar-e Māhshahr,Bandar-mashoor,Bar Andaz,Bender-Makhshekhr,Bār Andāz,MRX,Mah Shahr,Mahshahr,Markaz-e Bargiri-ye Bandar-e Mah Shahr,Markaz-e Bārgīrī-ye Bandar-e Māh Shahr,Mashur,Māhshahr,bndr mahshhr,Бендер-Махшехр,بندر ماهشهر	30.55655	49.18852	P	PPLA2	IR		15				162797		8	Asia/Tehran	2026-09-14
+141665	Bandar-e Lengeh	Bandar-e Lengeh	BDH,Bandar Langeh,Bandar-e Lengeh,Bandar-e-Langeh,Linja,Linjah,bndr lngh,بندر لنگه	26.56207	54.88382	P	PPLA2	IR		11	449702			30435		10	Asia/Tehran	2026-06-15
+141673	Bandar-e Gaz	Bandar-e Gaz	Bandar Gaz,Bandar-e Gaz,Bandar-i-Gaz,Bandar-i-Jaz,Bander Gaz,bndr gz,بندر گز	36.77409	53.94798	P	PPLA2	IR		37				20742		-19	Asia/Tehran	2026-03-04
+141676	Bandar-e Deylam	Bandar-e Deylam	Bandar Deilam,Bandar Deylam,Bandar Dilam,Bandar Dīlam,Bandar e Deilam,Bandar-e Delam,Bandar-e Deylam,Deilam,Deylam,Dilam,Dīlam,bndr dylm,بندر ديلم	30.0542	50.159	P	PPLA2	IR		22				25730		5	Asia/Tehran	2025-09-20
+141679	Bandar-e Anzalī	Bandar-e Anzali	Bandar Anzali,Bandar Pahlavi,Bandar Pahlevi,Bandar-e Anzali,Bandar-e Anzalī,Bandar-e Pahlavi,Bandar-e Pahlavī,Bender-Ehnzeli,Enceli,Enzeli,Pahlavi,Pahlavī,Pahlevi,Pahlevī,Pehlevi,bndr anzly,Бендер-Энзели,بندر انزلی	37.47318	49.45785	P	PPLA2	IR		08				118564		-20	Asia/Tehran	2026-09-14
+141681	Bandar Abbas	Bandar Abbas	BND,Bandar Abas,Bandar Abbas,Bandar Abbás,Bandar `Abbas,Bandar `Abbasi,Bandar ‘Abbās,Bandar ‘Abbāsī,Bandar-Abbas,Bandar-Abbasz,Bandar-Abbos,Bandar-Abbász,Bandar-e Abbas,Bandar-e `Abbas,Bandar-e ‘Abbās,Bandare Abasas,Bander Abbas,Bantar Ampas,Bendehr-Abas,Bender Abas,Bender Abbas,Bender Ebbas,Bender-Abbas,Bəndər Abbas,Cambarao,Cambarão,Gombroon,Gumrun,Port Comorao,Port Comorão,a ba si gang,ban dar xab bas,bandaleuabaseu,bandara abbasa,bandara-e-abbasa,bender-abasi,bndr ʻbʼs,bndr ʿbas,gumbrun,Μπαντάρ Αμπάς,Бандар-Аббос,Бендер Абас,Бендер-Аббас,Бендэр-Абас,Բանդեր Աբբաս,בנדר עבאס,بندر عباس,بندرعباس,بَندَر عَبّاسی,بَندَرِ عَبّاس,بەندەر عەباس,گُمبرُّن,बंदर-ए-अब्बास,বন্দর আব্বাস,บันดาร์อับบาส,ბენდერ-აბასი,バンダレ・アッバース,阿巴斯港,반다르아바스	27.1865	56.2808	P	PPLA	IR		11				352173		9	Asia/Tehran	2024-09-05
+141736	Bam	Bam	BXR,Bam,bamu,bm,Бам,بم,バム	29.106	58.357	P	PPLA2	IR		29				99268		1061	Asia/Tehran	2018-09-14
+141891	Bajestān	Bajestan	Bajestan,Bajestān,Bejestan,Bejestān,Bijestan,Bijistan,Bījestān,Bījistān,bjstan,بجستان	34.51639	58.1845	P	PPLA2	IR		42				0		1259	Asia/Tehran	2024-07-25
+142000	Bahār	Bahar	Bahar,Bahār,Bakhar,bhar,Бахар,بهار	34.9072	48.4414	P	PPLA2	IR		09				28645		1722	Asia/Tehran	2024-07-16
+142114	Bāgh-e Malek	Bagh-e Malek	Bagh Malek,Bagh-e Malek,Bagh-i-Malik,Bāgh-e Malek,bagh mlk,باغ ملک	31.52398	49.88558	P	PPLA2	IR		15				26343		711	Asia/Tehran	2026-01-01
+142247	Bāft	Baft	Baft,Bāft,baft,بافت	29.2331	56.6022	P	PPLA2	IR		29				34517		2268	Asia/Tehran	2025-03-07
+142255	Bāfq	Bafq	Bafk,Bafq,Bāfq,bafq,Бафк,بافق	31.6035	55.40249	P	PPLA2	IR		40				45453		991	Asia/Tehran	2026-05-21
+142358	Bābolsar	Babolsar	Babolsar,Babul Sar,Bābolsar,Bābul Sar,Mashhad-i-Sar,Mashhadsar,Meshed-i-Sar,bablsr,بابلسر	36.69929	52.65011	P	PPLA2	IR		35				48051		-21	Asia/Tehran	2024-07-24
+142363	Bābol	Babol	Babol,Babol',Babul,Balfrush,Barfarush,Barfrush,Barfurush,Bābol,Bābul,Bārfurush,babl,Баболь,بابل	36.55102	52.6786	P	PPLA2	IR		35				202796		1	Asia/Tehran	2024-07-25
+142386	Bāb Anār	Bab Anar	Bab Anar,Bab-e Anar,Baba Anar,Baba Na`am,Baba Najm,Baba Nar,Bāb Anār,Bāb-e Anār,Bāba Nār,Bābā Anār,Bābā Najm,Bābā Na‘am,bab anar,باب انار	28.9752	53.21667	P	PPL	IR		07				7061		1316	Asia/Tehran	2026-09-11
+142497	Aznā	Azna	Azna,Aznā,Ezna,Eznā,azna,ازنا	33.45643	49.45646	P	PPLA2	IR		23				47489		1862	Asia/Tehran	2026-05-13
+142554	Hashtrūd	Hashtrud	Azaran,Hashtrud,Hashtrūd,Sar Eskand,Sar Eskand Khan,Sar Eskand Khān,Sar Eskandar,Saraskand,Sarāskand,hshtrwd,Āz̄arān,هشترود	37.4779	47.0508	P	PPLA2	IR		33				20572		1651	Asia/Tehran	2026-06-21
+142567	Shāzand	Shazand	Azadshahr,Shah Zand,Shazand,Shāzand,shaznd,Āzādshahr,شازند	33.93132	49.40629	P	PPLA2	IR		34				21181		1906	Asia/Tehran	2025-05-13
+142642	Āvaj	Avaj	Avaj,Aveh,Avej,aawih,aawij,awj,Āvaj,آوج,اَوِج,اَوِه	35.57959	49.22313	P	PPLA2	IR		38				0		1967	Asia/Tehran	2024-07-18
+142676	Āstārā	Astara	Astara,astara,Āstārā,Астара,آستارا	38.43084	48.86994	P	PPLA2	IR		08	449649			39065		-22	Asia/Tehran	2022-02-17
+142679	Āstāneh-ye Ashrafīyeh	Astaneh-ye Ashrafiyeh	Astane,Astaneh,Astaneh-ye Ashrafiyeh,astanh ashrfyh,Āstāneh,Āstāneh-ye Ashrafīyeh,آستانه اشرفیه	37.26318	49.94325	P	PPLA2	IR		08				44941		-8	Asia/Tehran	2026-07-11
+142703	Aşlān Dūz	Aslan Duz	Aslan Duz,Aslandooz,Aslanduz Tepe,Aslāndūz Tepe,Aşlān Dūz,aaslanduz,aaslandwz tipi,aslan dwz,اصلان دوز,اَسلاندوز تِپِ,اَسلَندُّز	39.4439	47.4056	P	PPL	IR		32				6348		154	Asia/Tehran	2025-09-28
+142744	Āshtīān	Ashtian	Ashtian,Ashtiyan,Ashtīyan,ashtyan,Āshtīān,آشتيان	34.52298	50.00608	P	PPLA2	IR		34				8763		2073	Asia/Tehran	2026-02-03
+142768	Āshkhāneh	Ashkhaneh	Ashkhaneh,ashkhanh,Āshkhāneh,آشخانه	37.5615	56.92125	P	PPLA2	IR		43				25104		743	Asia/Tehran	2026-05-22
+142857	Bandar-e ‘Asalūyah	Bandar-e 'Asaluyah	Asalu,Bandar-e `Asalu,Bandar-e `Asaluyah,Bandar-e `Asaluyeh,Bandar-e ‘Asalū,Bandar-e ‘Asalūyah,Bandar-e ‘Asalūyeh,PGU,`Asaluyah,`Asaluyeh,بندر عسلویه,بَندَرِ عَسَلو,عسلويه,‘Asalūyah,‘Asalūyeh	27.47383	52.60782	P	PPLA2	IR		22	9519975			13557		-9999	Asia/Tehran	2026-06-07
+142862	Asadīyeh	Asadiyeh	Asadiyeh,Asadīyeh,asdyh,اسدیه	32.9428	59.71998	P	PPLA2	IR		41				0		2170	Asia/Tehran	2024-07-18
+142872	Asadābād	Asadabad	Asadabad,Asadabada,Asadābād,asd abad,Асадабада,اسد آباد	34.78241	48.12012	P	PPLA2	IR		09				55703		1596	Asia/Tehran	2026-04-28
+142902	Orzū’īyeh	Orzu'iyeh	Arzoo'eyeh,Arzoo’eyeh,Arzu,Arzu'iyeh,Arzū’īyeh,Orzu'iyeh,Orzū’īyeh,Ozu'iyeh,Ozū’īyeh,`Orsu'iyeh,arzwyyh,Ārzū,ارزوئیه,‘Orsū’īyeh	28.45318	56.35994	P	PPLA2	IR		29				6868		1027	Asia/Tehran	2026-05-05
+142958	Arsanjān	Arsanjan	Arsanjan,Arsanjān,Arsenjan,Arsenjān,Arsinjan,Arsinjān,arsnjan,ارسنجان	29.9124	53.3085	P	PPLA2	IR		07				17706		1634	Asia/Tehran	2026-04-21
+143052	Ardestān	Ardestan	Ardestan,Ardestān,Ardistan,Ardistān,ardstan,اردستان	33.37939	52.36981	P	PPLA2	IR		28				16058		1219	Asia/Tehran	2025-04-15
+143070	Ardal	Ardal	Ardal,Ardel,ardl,اردل	31.99969	50.66231	P	PPLA2	IR		03				10113		1860	Asia/Tehran	2026-04-01
+143073	Ardakān	Ardakan	Ardakan,Ardakān,Ardekan,ardkan,اردکان	32.31001	54.01747	P	PPLA2	IR		40				58834		1040	Asia/Tehran	2024-07-15
+143083	Ardabīl	Ardabil	ADU,Ardabel,Ardabil,Ardabīl,Ardebil,Ardebīl,Artawil,Erdebil,Ertepil,aardibyl,ardbyl,Ərdəbil,Ардабел,Արդաբիլ,Արտաւիլ,Էրտէպիլ,اردبيل,اردبیل,اَردِبيل	38.2498	48.2933	P	PPLA	IR		32				410753		1353	Asia/Tehran	2026-08-30
+143122	Ārān Bīdgol	Aran Bidgol	Aran,Aran Bidgol,Aran va Bidgol,Arun,Arūn,Gol Ara,Gol Ārā,aran,aran byd gl,aran w bydgl,gl ara,Ārān,Ārān Bīdgol,Ārān va Bīdgol,آران,آران بيد گل,آران و بيدگل,گل آرا	34.05751	51.48291	P	PPLA2	IR		28				65404		909	Asia/Tehran	2025-05-13
+143127	Arāk	Arak	Arak,Arak - sawh,Arok,Arāk,Ehrak,Soltanabad,Solţānābād,Sultanabad,Sultānābād,`Iraq,arak,sawh,sultan abad,Арак,Арок,Эрак,اراک,ساوه,سُلطان آباد,‘Irāq	34.09493	49.69809	P	PPLA	IR		34				503647		1738	Asia/Tehran	2024-09-05
+143129	Ārādān	Aradan	Aradan,Ardan,Ardān,Azadan,aardan,aradan,Ārādān,Āzādān,آرادان,اَردان	35.24941	52.49422	P	PPLA2	IR		25				6252		874	Asia/Tehran	2026-05-17
+143420	Andīmeshk	Andimeshk	Andimeshg,Andimeshk,Andimishk,Andremeshl,Andīmeshg,Andīmeshk,Andīmīshk,Ehndimeshk,Salehabad,Salehābād,andymshk,Эндимешк,اندیمشک	32.4615	48.35368	P	PPLA2	IR		15				135116		147	Asia/Tehran	2026-09-14
+143471	‘Anbarābād	'Anbarabad	Ambarabad,Ambārābād,`Anbarabad,عنبر آباد,‘Anbarābād	28.4759	57.848	P	PPLA2	IR		29				18185		603	Asia/Tehran	2025-03-07
+143499	Anār	Anar	Anar,Anār,anar,انار	30.87066	55.27025	P	PPLA2	IR		29				15532		1409	Asia/Tehran	2025-03-06
+143534	Āmol	Amol	Amol,Amol',Amul,aml,Āmol,Амоль,آمل	36.46961	52.35072	P	PPLA2	IR		35	449674			237528		96	Asia/Tehran	2025-11-04
+143539	Amlash	Amlash	Amlash,Amlesh,Amlish,amlsh,املش	37.0966	50.18709	P	PPLA2	IR		08				15444		30	Asia/Tehran	2026-02-27
+143758	Ālūnī	Aluni	Aluni,Bakhshi,Bakhshī,alwny,bkhshy,Ālūnī,آلونی,بخشی	31.55303	51.0605	P	PPL	IR		03				5248		1849	Asia/Tehran	2026-04-01
+143860	Shahrīār	Shahriar	Ali Shah `Iwaz,Ali Shāh ‘Iwaz,Shahreyar,Shahreyār,Shahriar,Shahriyar,Shahriyār,Shahrīār,Shakhrijar,`Ali Shah `Avaz,shhryar,Шахрияр,شهريار,‘Alī Shāh ‘Avaẕ	35.65884	51.05775	P	PPLA2	IR		26				309607		1159	Asia/Tehran	2026-04-30
+143921	Alīgūdarz	Aligudarz	Aligoodarz,Aligudarz,Alīgūdarz,`Ali Gudar,alygwdrz,Алигударз,الیگودرز,‘Ali Gudār	33.404	49.69179	P	PPLA2	IR		23				89268		1985	Asia/Tehran	2026-05-17
+144038	'Alī Ābād-e Katūl	'Ali Abad-e Katul	Aliabad,`Aliabad,`Aliabad-e Katul,Алиабад,علی آباد,علی آباد کتول,‘Alīābād,‘Alīābād-e Katūl	36.91011	54.86737	P	PPLA2	IR		37				52838		134	Asia/Tehran	2026-06-28
+144269	Aleshtar	Aleshtar	Alashtar,Aleshtar,Alishtar,Alishtār,Qal`eh Mozaffari,Qal`eh `Alishtar,Qal‘eh Moz̧affari,Qal‘eh ‘Alishtār,alshtr,الشتر	33.86419	48.26258	P	PPLA2	IR		23				27701		1614	Asia/Tehran	2014-09-04
+144443	Ajab Shīr	Ajab Shir	Ajabshahr,`Ajab Shir,aajabshahr,اَجَبشَهر,عجب شیر,‘Ajab Shīr	37.4776	45.8943	P	PPLA2	IR		33				29675		1297	Asia/Tehran	2024-07-15
+144448	Ahvaz	Ahvaz	AWZ,Ahvaz,Ahvaz - ahwaz,Ahvaza,Ahvazas,Ahvazo,Ahvoz,Ahváz,Ahvāz,Ahvāza,Ahwas,Ahwaz,Ahwāz,Akhvaz,Akhvaz shaary,Axvaz,Bandar Nasiri,Bandar Nāsirī,Bandar-e Naser,Bandar-e Nāşer,Ehvaz,Naseri,Nasiri,Nāsiri,Nāşerī,a wa shi,abajeu,afuvuazu,ahabaja,ahavaza,ahvazi,ahwaz,akvacu,alahwaz,Əhvaz,Ахваз,Ахваз шаары,Аҳвоз,Ախվազ,אהוואז,ئەھواز,الأهواز,اهواز,اہواز,अहवाज़,আহবাজ,ਅਹਵਾਜ਼,ஆக்வாசு,ཨཱ་ཝཛ།,აჰვაზი,アフヴァーズ,阿瓦士,아바즈	31.31901	48.6842	P	PPLA	IR		15				841145		23	Asia/Tehran	2024-09-05
+144484	Ahram	Ahram	Ahram,Ahrom,ahrm,اهرم	28.8826	51.2746	P	PPLA2	IR		22				15198		63	Asia/Tehran	2026-05-13
+144616	Ahar	Ahar	Ahar,Aher,Akhar,Eher,a ha er,ahaleu,ahara,ahr,Əhər,Ахар,Аҳар,Ահար,Ահէր,أهر,اهر,اہار,اہر,अहार,阿哈尔,아하르	38.4774	47.0699	P	PPLA2	IR		33				100641		1336	Asia/Tehran	2026-05-21
+144696	Aghajari	Aghajari	AKW,Agha Jari,Aghajari,Aqa Jari,aghajary,Āghā Jārī,Āghājārī,Āqā Jarī,آغاجاری	30.7006	49.8315	P	PPL	IR		15				21785		151	Asia/Tehran	2024-07-14
+144795	Ābyek	Abyek	Abiak,Abiak Sarai,Abiak Sarāi,Abyek,Abyek Sofla,Abyek-e Pa'in,aabyik sufla,abyiki payyn,abyk,Ābyek,Ābyek-e Pā’īn,آبيِكِ پائين,آبيک,اَبيِك سُفلَ	36.03993	50.53101	P	PPLA2	IR		38				60107		1258	Asia/Tehran	2026-04-22
+145034	Abhar	Abhar	Abhar,Abkhar,abhr,Абхар,ابهر	36.1468	49.218	P	PPLA2	IR		36				69889		1541	Asia/Tehran	2017-08-01
+145233	Ābdānān	Abdanan	Abdanan,Awdanan,Qal`a Ab-i-Danan,Qal`eh Ab-i-Danan,Qal`eh-ye Ab Danan,Qal`eh-ye Abdaran,Qal‘a Ab-ī-Danan,Qal‘eh Āb-ī-Dānān,Qal‘eh-ye Āb Dānān,Qal‘eh-ye Ābdārān,a bo da nan,abadanana,abdanan,Ābdānān,Абданан,آبدانان,ابدانان,قَلعِۀ آب دانان,قَلعِۀ آبداران,अबदानन,阿卜达南,阿卜達南	32.9926	47.4198	P	PPLA2	IR		10				23946		889	Asia/Tehran	2026-08-30
+145303	'Abās Ābād	'Abas Abad	Abassabad,Abbasabad,Varaak,Varsak,`Abbasabad,Абассабад,عباس آباد,‘Abbāsābād	36.72769	51.10574	P	PPLA2	IR		35				13482		-19	Asia/Tehran	2024-07-16
+145407	Ābbar	Abbar	Abbar,Obar,Ubar,Ubār,ab br,Ābbar,آب بر	36.92627	48.95832	P	PPLA2	IR		36				8091		624	Asia/Tehran	2026-05-22
+145427	Abarkūh	Abarkuh	Abar Qu,Abar Qū,Abarghoo,Abarku,Abarkuh,Abarkū,Abarkūh,Abarquh,Abarqūh,aabarghu,aabarkw,aabarqwh,abr qw,abrkwh,ابر قو,ابرکوه,اَبَرغُّ,اَبَرقوه,اَبَركو	31.1289	53.2824	P	PPLA2	IR		40				27524		1508	Asia/Tehran	2026-05-21
+145449	Abadeh	Abadeh	Abade,Abadeh,abadh,Ābādeh,Абаде,آباده	31.1608	52.6506	P	PPLA2	IR		07				59116		2006	Asia/Tehran	2024-07-19
+145459	Abadan	Abadan	ABD,Abadan,Abadana,Abadanas,Abadano,Abadán,Ampantan,Obodon,a ba dan,abadan,abadana,abadani,Ábádán,Ābadāna,Ābādān,ʿbadan,Αμπαντάν,Абадан,Ободон,Աբադան,אבאדאן,آبادان,ابادان,عبادان,अबादान,ਆਬਾਦਾਨ,აბადანი,アバダーン,アーバーダーン,阿巴丹,아바단	30.3392	48.3043	P	PPL	IR		15				231476		6	Asia/Tehran	2026-06-14
+292983	Abu Musa Island	Abu Musa Island	AEU,Abu Musa,Abu Musa Island,Abu Mūsa Island,Abū Mūsá,Jazirat Abu Musa,Jazireh-ye Abu Musa,Jazireh-ye Bu Musa,Jazīrat Abu Mūsá,Jazīreh-ye Abū Mūsá,Jazīreh-ye Bū Mūsá,Jezirat Bu Musa,aabw mwsay,اَبو موسَى,جَزيرِۀ اَبو موسَى,جَزيرِۀ بو موسَى	25.875	55.03	T	ISL	IR	AE	11				2131		4	Asia/Tehran	2024-07-19
+401118	Showţ	Showt	Shot,Showt,Showţ,Shoţ,Shut,shut,shwt,شوط,شُط	39.2192	44.77	P	PPLA2	IR		01				25381		994	Asia/Tehran	2025-10-18
+401555	Lūmār	Lumar	Lumar,Lūmār,Shahrak-e Lumar,Shahrak-e Lūmār,lwmar,shhrk lwmar,شهرک لومار,لومار	33.56522	46.814	P	PPLA2	IR		10				2696		772	Asia/Tehran	2026-01-26
+403656	Ārdaḵān	Ardakan	Ardakan,Ardakān,Sepidan,Sepīdān,ardkan,spydan,اردکان,سپیدان	30.25961	51.98491	P	PPLA2	IR		07				14633		2235	Asia/Tehran	2026-05-05
+415694	Badreh	Badreh	Badreh,bdrh,بدره	33.30573	47.03708	P	PPLA2	IR		10				0		1047	Asia/Tehran	2023-07-11
+417472	Shāhīn Shahr	Shahin Shahr	Shahin Shahr,Shakhinshekhr,Shāhīn Shahr,shahyn shhr,Шахиншехр,شاهین شهر	32.85788	51.5529	P	PPLA2	IR		28				173329		1591	Asia/Tehran	2026-09-14
+418418	Zarrīn Shahr	Zarrin Shahr	Qal`eh Riz,Qal‘eh Rīz,Riz,Riz-e Lanjan,Rīz,Rīz-e Lanjān,Zarrin Shahr,Zarrīn Shahr,zryn shhr,زرّین شهر	32.39057	51.37654	P	PPLA2	IR		28				55817		1705	Asia/Tehran	2026-03-02
+418446	Tīrān	Tiran	Tehran,Tehrān,Tihran,Tihrān,Tiran,Tirun,Tirūn,Tīrān,tyran,تیران	32.70328	51.15381	P	PPLA2	IR		28				21703		1839	Asia/Tehran	2025-05-12
+418533	Shahreẕā	Shahreza	Qomisheh,Qomsheh,Qomīsheh,Qowmsheh,Qumisheh,Shahreza,Shahreẕā,Shahriza,Shekhreza,qmshh,shhrda,Шехреза,شهرضا,قمشه	32.00877	51.86407	P	PPLA2	IR		28				134952		1822	Asia/Tehran	2026-09-14
+418606	Najafābād	Najafabad	Nadzhafabad,Najafabad,Najafābād,Nejafabad,Nejafābād,njf abad,Наджафабад,نجف آباد	32.63464	51.36525	P	PPLA2	IR		28				235281		1648	Asia/Tehran	2026-02-17
+418625	Mobārakeh	Mobarakeh	Mobarakeh,Mobārakeh,Mubarakeh,Mubārakeh,mbarkh,مبارکه	32.34612	51.50205	P	PPLA2	IR		28				69449		1669	Asia/Tehran	2026-02-28
+418710	Khomeynī Shahr	Khomeyni Shahr	Homayoon Shahr,Homayunshahr,Homāyūnshahr,Khomejnishekhr,Khomeyni Shahr,Khomeynishahr,Khomeynī Shahr,Khomeynīshahr,Mehrbin,Sedeh,Three Castles,khmyny shhr,mhrbyn,sdh,Хомейнишехр,خمینی شهر,سده,مهربین	32.6856	51.53609	P	PPLA2	IR		28				277334		1595	Asia/Tehran	2026-09-14
+418806	Harand	Harand	Hajiabad,Harand,Hājiābād,hrnd,هرند	32.56531	52.43654	P	PPL	IR		28				0		1542	Asia/Tehran	2025-04-15
+418851	Falāvarjān	Falavarjan	Falavar Jan,Falavarjan,Falāvar Jān,Falāvarjān,Felavarjan,Felāvarjān,Mollavarjan,Mollāvarjān,Pol-e Vargan,Pol-e Vargān,Pol-e Varqan,Pol-e Varqān,Pul-i-Vargan,Pul-i-Vargān,flawrjan,mlawrjan,فلاورجان,ملاورجان	32.5553	51.50973	P	PPLA2	IR		28				49843		1609	Asia/Tehran	2024-07-25
+418863	Isfahan	Isfahan	Aspadana,Dakbayan sa Esfahan,Dakbayan sa Esfahān,Esfahan,Esfahano,Esfahān,Esfehan,Eşfahān,Eşfehān,Eṣfahān,IFN,Isfachan,Isfahan,Isfahana,Isfahanas,Isfahanum,Isfahon,Isfahán,Isfahāna,Isfakhan,Isfehan,Ispahan,Iszfahan,Iszfahán,Kota Isfahan,Spahan,Yspyhan,asfhan,aysfahan,esaphahana,esufahan,icupakan,isafahana,iseupahan,isfahana,isphahana,xis fa han,yi si fa han,Îsfehan,İsfahan,İsfehan,Ισφαχάν,Ісфахан,Исфахан,Исфаҳон,Исфаһан,Սպահան,אספהאן,أصفهان,ئسفأھان,ئەسفەھان,اصفهان,اصفہان,ایصفاهان,इस्फहान,इस्फ़हान,এসফাহন,ਇਸਫ਼ਹਾਨ,இசுபகான்,อิสฟาฮาน,ისპაანი,エスファハーン,伊斯法罕,이스파한	32.65246	51.67462	P	PPLA	IR		28				1547164		1578	Asia/Tehran	2026-07-02
+418868	Dowlatābād	Dowlatabad	Daulatabad,Daulatābād,Dowlatabad,Dowlatābād,dwlt abad,دولت آباد	32.79978	51.69553	P	PPLA2	IR		28				33607		1569	Asia/Tehran	2024-07-25
+449504	Eslamshahr	Eslamshahr	Eslamchahr,Eslamsaher,Eslamschahr,Eslamshahr,Eslamšaher,Eslāmshahr,Islamshekhr,Islamsəhr,Shadshahr,aslamshhr,İslamşəhr,Исламшехр,اسلامشهر	35.55222	51.23504	P	PPLA2	IR		26	9533740			450000		1063	Asia/Tehran	2024-07-15
+1113006	Moḩammadābād	Mohammadabad	Mohammadabad,Moḩammadābād,mhmd abad,محمد آباد	31.1278	61.5681	P	PPL	IR		04				0		482	Asia/Tehran	2024-07-15
+1113217	Zābol	Zabol	ACZ,Zabol,Zabol',Zābol,zabl,Заболь,زابل	31.0306	61.4949	P	PPLA2	IR		04				121989		483	Asia/Tehran	2024-07-25
+1159301	Zahedan	Zahedan	Dowzdab,Dowzdāb,Duzdab,Duzdap,Duzdāb,Duzdāp,ZAH,Zahedan,Zahedan-e (Yek),Zahedanas,Zahedano,Zahedán,Zahidan,Zaidan,Zaidān,Zakhedan,Záhedán,Zāhedān,Zāhedān-e (Yek),cakitan,jahedan,jahedana,zahdan,zahedan,zahedana,zahedani,zha hei dan,Захедан,Зоҳидон,Զահեդան,زاهدان,زاہدان,ज़ाहेदान,জহেদন,சாகிதன்,ზაჰედანი,ザーヘダーン,扎黑丹,자헤단	29.4963	60.8629	P	PPLA	IR		04				551980		1380	Asia/Tehran	2024-07-25
+1159302	Zehak	Zehak	Deh-e Zahak,Zahak,Zehak,zhk,زهک	30.894	61.6804	P	PPLA2	IR		04				14324		496	Asia/Tehran	2023-04-12
+1159306	Mehrestān	Mehrestan	Magas,Mehrestan,Mehrestān,Qal`eh-ye Zaboli,Qal‘eh-ye Zābolī,Zaboli,Zābolī,mhrstan,zably,زابلی,مهرستان	27.131	61.67445	P	PPLA2	IR		04				12245		1274	Asia/Tehran	2026-05-13
+1159362	Torbat-e Jām	Torbat-e Jam	Torbat-e Jam,Torbat-e Jām,Torbat-e Sheykh Jam,Torbat-e Sheykh Jām,Turbat-i-Shaikh Jam,trbt jam,تربت جام	35.244	60.6225	P	PPLA2	IR		42				58928		908	Asia/Tehran	2024-07-22
+1159384	Tāybād	Taybad	Taiabad,Taybad,Tayebad,Tayebat,Tayyebat,Taīabad,Tāybād,Tāyebāt,taybad,tayb‌abad,Ţayyebāt,تايباد,تایب‌آباد	34.74	60.7756	P	PPLA2	IR		42				37513		811	Asia/Tehran	2024-07-25
+1159431	Sūrān	Suran	Sooran,Suran,Surar,Sūrān,Sūrār,swran,سوران	27.2855	61.9965	P	PPLA2	IR		04				0		1151	Asia/Tehran	2020-06-10
+1159709	Sarbāz	Sarbaz	Qal` eh-ye Sarbaz,Qal‘ eh-ye Sarbāz,Sarbaz,Sarbāz,srbaz,سرباز	26.63228	61.25787	P	PPLA2	IR		04				2020		916	Asia/Tehran	2026-06-12
+1159713	Sarāvān	Saravan	Saravan,Sarāvān,srawan,سراوان	27.37089	62.33096	P	PPLA2	IR		04				60014		1177	Asia/Tehran	2025-03-06
+1159716	Sarakhs	Sarakhs	CKT,Sarahs,Sarakhs,Serakhs,srkhs,Сарахс,سرخس	36.5449	61.1577	P	PPLA2	IR		42				46499		276	Asia/Tehran	2014-09-04
+1159836	Rāsak	Rasak	Rasak,Rask,Razk,Rāsak,Rāsk,Rāzk,rask,راسک	26.23682	61.39901	P	PPLA2	IR		04				10115		405	Asia/Tehran	2025-05-14
+1159884	Qaşr-e Qand	Qasr-e Qand	Qand,Qasagan,Qasegan,Qasr-e Qand,Qaşr-e Qand,Qāsagān,Qāsegān,qsr qnd,قصر قند	26.23244	60.73932	P	PPLA2	IR		04				0		507	Asia/Tehran	2024-07-24
+1159905	Qal‘eh Now-e ‘Olyā	Qal`eh Now-e `Olya	Qal'eh Now-Ye-'Olya,Qal`eh Now,Qal`eh Now-e Bala,Qal`eh Now-e `Olya,Qal`eh-i-Nau,Qal`eh-ye Now,Qal`eh-ye Now Bala,Qal`eh-ye Now `Olya,Qal`eh-ye Now-ye `Olya,Qal‘eh Now,Qal‘eh Now-e Bālā,Qal‘eh Now-e ‘Olyā,Qal‘eh-i-Nau,Qal‘eh-ye Now,Qal‘eh-ye Now Bālā,Qal‘eh-ye Now ‘Ōlyā,Qal‘eh-ye Now-ye ‘Olyā,Qal’eh Now-Ye-’Olyā,قلعه نو عليا	35.09861	60.15885	P	PPL	IR		42				0		1429	Asia/Tehran	2024-07-25
+1160088	Nūkābād	Nukabad	Nok Abad,Nukabad,Nūkābād,nwk abad,نوک آباد	28.5397	60.7595	P	PPLA2	IR		04				5261		1647	Asia/Tehran	2026-07-19
+1160110	Nīkshahr	Nikshahr	Geh,Keh,Nik,Nikshahr,Nīk,Nīkshahr,nykshhr,نیکشهر	26.2258	60.2143	P	PPLA2	IR		04	1482504			17000		466	Asia/Tehran	2020-06-10
+1160120	Nehbandān	Nehbandan	Nah,Neh,Nehbandan,Nehbandān,nhbndan,نهبندان	31.54185	60.03648	P	PPLA2	IR		41				18304		1187	Asia/Tehran	2025-04-07
+1160121	Negūr	Negur	Negur,Negūr,Ni Kor,Nigor,Nigvar,Nī Kor,Nīgvār,ngwr,نگور	25.38882	61.13834	P	PPL	IR		04				5670		29	Asia/Tehran	2026-05-13
+1160258	Mīrjāveh	Mirjaveh	Mirjaveh,Mirjawa,Mīrjāveh,Mīrjāwa,myrjawh,میرجاوه	29.0148	61.44959	P	PPLA2	IR		04				9359		852	Asia/Tehran	2026-06-29
+1160500	Konārak	Konarak	Kenarak,Kenārak,Konarak,Konārak,Kumarak,Kunarak,Kunark,Kunārak,Kūmārak,knark,کنارک	25.3604	60.3995	P	PPLA2	IR		04				43258		6	Asia/Tehran	2025-03-07
+1160544	Khvāf	Khvaf	Khaf,Khvaf,Khvāf,Khāf,Qasabeh-ye Rud,Qaşabeh-ye Rūd,Rud,Rui Khaf,Ruy,Rūd,Rūi Khāf,Rūy,khwaf,خواف	34.57232	60.14404	P	PPLA2	IR		42	1482426			33189		970	Asia/Tehran	2026-07-18
+1160571	Khāsh	Khash	Kavash,Khash,Khāsh,Kwash,Kwāsh,Vasht,Vāsht,khash,Хаш,خاش	28.22107	61.21582	P	PPLA2	IR		04				69603		1413	Asia/Tehran	2024-07-25
+1160907	Jālq	Jalq	Jalaq,Jaleq,Jalk,Jalq,Jālaq,Jāleq,Jālk,Jālq,Kashan,Kashān,Khooshab,Khushab,Khvoshab,Khvoshāb,Khūshāb,khwshab,خوشاب	27.60287	62.71023	P	PPL	IR		04				18098		840	Asia/Tehran	2026-05-05
+1160939	Iranshahr	Iranshahr	Fahrej,Fehruj,IHR,Iranshahr,Iranshekhr,Qal`eh-ye Naseri,Qal‘eh-ye Nāşerī,ayranshhr,Īrānshahr,Ираншехр,ايرانشهر	27.20245	60.68476	P	PPLA2	IR		04				131232		566	Asia/Tehran	2026-09-14
+1161048	Ḩājjīābād	Hajjiabad	Hajabad,Hajiabad,Hajjiabad,Hajābād,Hājīābād,hajy abad,حاجی آباد,Ḩājjīābād	33.60496	59.9934	P	PPLA2	IR		41				0		1038	Asia/Tehran	2024-07-24
+1161269	Espakeh	Espakeh	Aspakeh,Esfakeh,Espakeh,Isfakeh,Ispakeh,aspkh,اسپکه	26.84004	60.1731	P	PPL	IR		04				4719		771	Asia/Tehran	2026-07-19
+1161297	Dūst Moḩammad Khān	Dust Mohammad Khan	Dust Mohammad Khan,Dūst Moḩammad Khān,dwst mhmd,dwst mhmd khan,دوست محمد,دوست محمد خان	31.1447	61.7925	P	PPLA2	IR		04				6621		483	Asia/Tehran	2026-07-10
+1161724	Chabahar	Chabahar	Cabahar,Cahbahar,Chabahar,Chabakhar,Chah Bahar,Chakhbekhar,Chāh Bahār,Czabahar,Tschahbahar,ZBR,bndr chabhar,cabahara,chabhar,chah bhar,qia he ba ha er,tshabhar,Çabahar,Čabahar,Čáhbahár,Чабахар,Чахбехар,Чҳобаҳор,بندر چابهار,تشابهار,چابهار,چابہار,چاه بهار,چاہ بہار,चाबहार,ਚਾਬਹਾਰ,恰赫巴哈爾	25.2919	60.643	P	PPLA2	IR		04				47287		18	Asia/Tehran	2024-07-25
+1161735	Bampūr	Bampur	Bampoor,Bampur,Bampūr,bmpwr,بمپور	27.19439	60.45594	P	PPL	IR		04				12217		518	Asia/Tehran	2026-05-13
+1161887	Adīmī	Adimi	Adimi,Adīmī,Hadimi,Hādīmi,adymy,ادیمی	31.11144	61.41189	P	PPLA2	IR		04				0		470	Asia/Tehran	2024-07-24
+6657461	Māmūnīyeh	Mamuniyeh	Mamuniyeh,Māmūnīyeh,mamwnyh,مامونیه	35.30454	50.49934	P	PPLA2	IR		34				21814		1258	Asia/Tehran	2026-04-25
+6681051	Pardīs	Pardis	Jadid Pardis,Jadīd Pardīs,Pardis,Pardīs,Shahr-e Jadid-e Pardis,Shahr-e Jadīd-e Pardīs,jdyd prdys,prdys,shhr jdyd prdys,Пардис,جديد پرديس,شهر جدید پردیس,پرديس	35.74687	51.81222	P	PPLA2	IR		26				114249		1848	Asia/Tehran	2026-09-14
+6683528	Tehrān	Tehran	Masood's eyeglass service's,Tegeran,Tehran,Tehrān,thran,Тегеран,تهران	35.75	51.5148	P	PPL	IR		26				0		1368	Asia/Tehran	2024-07-25
+6686970	Āz̄arshahr	Azarshahr	Azarshahr,Dehkhvareqan,Dehkhvāreqān,adhrshhr,dihkhwariqan,Āz̄arshahr,آذرشهر,دِهخوارِقان	37.759	45.9783	P	PPLA2	IR		33				44887		1386	Asia/Tehran	2026-05-21
+6709138	Tāzehābād	Tazehabad	Tazehabad,Tāzehābād,tazh abad,تازه آباد	34.7387	46.1496	P	PPLA2	IR		13				0		1231	Asia/Tehran	2024-07-18
+6741193	Khodābandeh	Khodabandeh	Geydar Palnamnar,Geydār Palnamnār,Ghaidar Paighambar,Keydar-Peygambar,Khoda Bandeh,Khodabandeh,Khodā Bandeh,Khodābandeh,Qeydar,Qeydar Peyghambar,Qeydār,Qeydār Peyghāmbar,Qidar,Qīdar,khdabndh,qydar,خدابنده,قیدار	36.11949	48.59089	P	PPL	IR		36				0		1974	Asia/Tehran	2024-07-18
+6861211	Kāshān	Kashan	Kachan,Kashan,Kāshān,kashan,Кашан,كاشان	34.00228	51.43879	P	PPLA2	IR		28				304487		948	Asia/Tehran	2026-09-14
+6899676	Nīkābād	Nikabad	Nikabad,Nīkābād,nyk abad,نیک آباد	32.303	52.2057	P	PPL	IR		28				0		1570	Asia/Tehran	2013-07-07
+6925362	Jīroft	Jiroft	Dzhiroft,JYR,Jiroft,Jīroft,Sabzawaran,Sabzevaran,Sabzevaran-e Jiroft,Sabzevārān,Sabzevārān-e Jiroft,Sabzvaran,Sabzvārān,Sabzāwārān,jyrft,Джирофт,جیرفت	28.67806	57.74056	P	PPLA2	IR		29	449612			130429		680	Asia/Tehran	2026-09-14
+6928551	Rūdbār	Rudbar	Eslamabad,Eslamabad-e Rudbar,Eslāmābād,Eslāmābād-e Rūdbār,Rudbar,Rūdbār,aslam abad,aslam abad rwdbar,rwdbar,اسلام آباد,اسلام آباد رودبار,رودبار	28.02899	57.9961	P	PPLA2	IR		29				0		486	Asia/Tehran	2024-07-15
+6961608	Kahnūj	Kahnuj	Kahnuj,Kahnūj,khnwj,کهنوج	27.94034	57.69983	P	PPLA2	IR		29				52624		501	Asia/Tehran	2026-05-05
+7052385	Zeh-e Kalūt	Zeh-e Kalut	Zeh-e Kalut,Zeh-e Kalūt,zh klwt,زه کلوت	27.79256	58.58682	P	PPL	IR		29				0		386	Asia/Tehran	2024-07-25
+7082152	Golbahār	Golbahar	Sayeban Goli,Shahrak-e Golbahar,Shahrak-e Golbahār,Sāyebān Golī,sayban gly,shhrk glbhar,سایبان گلی,شهرک گلبهار	36.56976	59.1904	P	PPL	IR		42				36877		1205	Asia/Tehran	2026-05-22
+7100777	Mahdishahr	Mahdishahr	Mahdishahr,Sangsar,mhdyshhr,sngsr,سنگسر,مهدیشهر	35.71071	53.35394	P	PPLA2	IR		25	124337			21000	1600	1661	Asia/Tehran	2014-01-05
+7102155	Galmūrtī	Galmurti	Dalgan,Dalgān,Galmurti,Galmūrtī,dlgan,glmwrty,دلگان,گلمورتی	27.48232	59.44656	P	PPLA2	IR		04				10292		388	Asia/Tehran	2026-05-05
+7329809	Āq Qalā	Aq Qala	Aq Qal`eh,Aq Qala,Pahlavi Dezh,Pahlavi-dej,Pahlavī Dezh,Pahlevi Diz,aq qla,Āq Qalā,Āq Qal‘eh,آق قلا	37.0139	54.45504	P	PPLA2	IR		37				35116		-13	Asia/Tehran	2025-04-07
+8298952	Tohid	Tohid	TEW,Tohid	27.82775	52.85789	P	PPLL	IR		07				0		1467	Asia/Tehran	2017-08-06
+9478811	Pākdasht	Pakdasht	Mamazan,Māmāzān,Pakdasht,Pākdasht,mamazan,pakdsht,Пакдашт,مامازان,پاکدشت	35.47854	51.6834	P	PPLA2	IR		26				236319		1030	Asia/Tehran	2026-09-14
+9480732	Boshrūyeh	Boshruyeh	Bocruye,Boshruiyeh,Boshruyeh,Boshrūyeh,Boshrūīyeh,Bushruieh,Bushruiyeh,Bushrūīeh,Bushrūīyeh,bshrwyh,بشرویه	33.86845	57.42885	P	PPLA2	IR		41				15318		879	Asia/Tehran	2023-04-12
+9514746	Gīvī	Givi	Givi,Gīvī,gywy,گیوی	37.68585	48.34204	P	PPLA2	IR		32				7101		1360	Asia/Tehran	2026-02-17
+9533872	Rey	Rey	Raj,Ray,Rayy,Rehj,Rei,Rej,Rejus,Rey,Rhagae,Rėjus,Shahr-e Rey,alry,lei yi,ry,shhr ry,Ρέι,Рей,Рэй,الري,رى,ری,رے,شهر ری,雷伊	35.59354	51.43997	P	PPLA2	IR		26				0		1062	Asia/Tehran	2019-09-05
+9533956	Bahābād	Bahabad	Bahabad,Bahābād,Behabad,Behābād,bhabad,بهاباد	31.87091	56.02433	P	PPLA2	IR		40				0		1404	Asia/Tehran	2017-10-06

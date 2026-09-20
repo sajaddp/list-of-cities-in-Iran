@@ -1,0 +1,417 @@
+{
+  "version": "3.0.0-phase2",
+  "source": {
+    "year": 1404,
+    "filename": "offical/list.xlsx",
+    "sha256": "e58107e6d478366f98042c3f25b2f27032363976f0ce25dab91fc55ea03ad1df",
+    "worksheet": "Query3",
+    "totalRows": 105474,
+    "coderecCounts": {
+      "1": 31,
+      "2": 484,
+      "3": 1193,
+      "4": 2777,
+      "5": 1672,
+      "6": 95389,
+      "8": 3928
+    },
+    "nullableColumns": {
+      "کد استان": 0,
+      "نام استان": 0,
+      "کد شهرستان": 31,
+      "نام شهرستان": 31,
+      "کد بخش": 515,
+      "نام بخش": 515,
+      "کد دهستان": 1708,
+      "نام دهستان": 3380,
+      "کد آبادی": 6157,
+      "Coderec": 0,
+      "نام": 0,
+      "کد ابادی بلوکه": 101546
+    },
+    "samplesByCoderec": {
+      "1": {
+        "provinceCode": "00",
+        "provinceName": "مرکزی",
+        "countyCode": null,
+        "countyName": null,
+        "districtCode": null,
+        "districtName": null,
+        "ruralCode": null,
+        "ruralName": null,
+        "villageCode": null,
+        "coderec": "1",
+        "name": "مرکزی",
+        "mappedRuralCode": null,
+        "rowNumber": 2
+      },
+      "2": {
+        "provinceCode": "00",
+        "provinceName": "مرکزی",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": null,
+        "districtName": null,
+        "ruralCode": null,
+        "ruralName": null,
+        "villageCode": null,
+        "coderec": "2",
+        "name": "اراک",
+        "mappedRuralCode": null,
+        "rowNumber": 3
+      },
+      "3": {
+        "provinceCode": "00",
+        "provinceName": "مرکزی",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": null,
+        "ruralName": null,
+        "villageCode": null,
+        "coderec": "3",
+        "name": "مرکزی",
+        "mappedRuralCode": null,
+        "rowNumber": 4
+      },
+      "4": {
+        "provinceCode": "00",
+        "provinceName": "مرکزی",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": "0001",
+        "ruralName": "امان آباد",
+        "villageCode": null,
+        "coderec": "4",
+        "name": "امان آباد",
+        "mappedRuralCode": null,
+        "rowNumber": 5
+      },
+      "5": {
+        "provinceCode": "00",
+        "provinceName": "مرکزی",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": "1101",
+        "ruralName": null,
+        "villageCode": null,
+        "coderec": "5",
+        "name": "اراک",
+        "mappedRuralCode": null,
+        "rowNumber": 109
+      },
+      "6": {
+        "provinceCode": "00",
+        "provinceName": "مرکزی",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": "0001",
+        "ruralName": "امان آباد",
+        "villageCode": "000268",
+        "coderec": "6",
+        "name": "انجدان",
+        "mappedRuralCode": null,
+        "rowNumber": 7
+      },
+      "8": {
+        "provinceCode": "00",
+        "provinceName": "مرکزی",
+        "countyCode": "01",
+        "countyName": "اراک",
+        "districtCode": "02",
+        "districtName": "مرکزي",
+        "ruralCode": "0001",
+        "ruralName": "امان آباد",
+        "villageCode": "000266",
+        "coderec": "8",
+        "name": "امان آباد",
+        "mappedRuralCode": "3238",
+        "rowNumber": 6
+      }
+    }
+  },
+  "validation": {
+    "supportedRows": 105474,
+    "unhandledRows": 0,
+    "duplicateCanonicalKeys": 0,
+    "missingParents": 0,
+    "cycles": 0,
+    "orphans": 0,
+    "duplicatePublicIds": 0,
+    "unsafeNumericIdentifiers": 0,
+    "jsonSchema": {
+      "passed": true,
+      "errors": []
+    },
+    "formatParity": {
+      "passed": true,
+      "rowCounts": {
+        "provinces": 31,
+        "counties": 484,
+        "districts": 1193,
+        "rurals": 2777,
+        "cities": 1672,
+        "cities-filtered": 1185,
+        "villages": 99317,
+        "all": 105474
+      },
+      "errors": []
+    },
+    "rowCounts": {
+      "provinces": 31,
+      "counties": 484,
+      "districts": 1193,
+      "rurals": 2777,
+      "cities": 1672,
+      "cities-filtered": 1185,
+      "villages": 99317,
+      "all": 105474
+    },
+    "citiesFiltered": {
+      "derived": true,
+      "rule": "exclude cities whose current-name filter slug includes '-' or '_'",
+      "subset": true
+    },
+    "villages": {
+      "sourceCoderecs": [
+        "6",
+        "8"
+      ],
+      "accountedRows": 99317
+    },
+    "manifest": {
+      "passed": true,
+      "entityTypes": {
+        "provinces": "province",
+        "counties": "county",
+        "districts": "district",
+        "rurals": "rural",
+        "cities": "city",
+        "cities-filtered": "city",
+        "villages": "village",
+        "all": "mixed"
+      }
+    },
+    "llm": {
+      "contexts": {
+        "provinces": {
+          "scope": "provinces",
+          "rows": 31,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "tel_prefix"
+          ],
+          "bytes": 1772,
+          "semanticHeaderValid": true
+        },
+        "counties": {
+          "scope": "counties",
+          "rows": 484,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "province_id"
+          ],
+          "bytes": 18815,
+          "semanticHeaderValid": true
+        },
+        "cities": {
+          "scope": "cities",
+          "rows": 1672,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "province_id",
+            "county_id",
+            "district_id"
+          ],
+          "bytes": 108528,
+          "semanticHeaderValid": true
+        },
+        "cities-filtered": {
+          "scope": "cities-filtered",
+          "rows": 1185,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "province_id",
+            "county_id",
+            "district_id"
+          ],
+          "bytes": 74272,
+          "semanticHeaderValid": true
+        }
+      },
+      "deterministic": true,
+      "noUnexpectedArtifacts": true
+    },
+    "coordinates": {
+      "provinceCapitals": {
+        "expected": 31,
+        "matched": 31,
+        "missing": [],
+        "duplicates": 0,
+        "invalidCoordinates": 0,
+        "missingProvenance": 0
+      },
+      "countyCenters": {
+        "expected": 484,
+        "matched": 484,
+        "missing": [],
+        "duplicates": 0,
+        "invalidCoordinates": 0,
+        "missingProvenance": 0
+      },
+      "coordinateRows": 515,
+      "sourceFeatureIdsResolved": 515,
+      "coordinateSnapshotMatches": 515,
+      "identityEvidenceRows": 515,
+      "identityEvidenceResolved": 515,
+      "missingIdentityEvidence": 0,
+      "duplicateIdentityMappings": 0,
+      "invalidSourceFeatureIds": 0,
+      "formatParity": {
+        "passed": true,
+        "rowCounts": {
+          "province-capitals": 31,
+          "county-centers": 484
+        },
+        "errors": []
+      },
+      "provenanceSources": [
+        {
+          "id": "geonames-iran-2026-09-19",
+          "provider": "GeoNames",
+          "source_url": "https://download.geonames.org/export/dump/IR.zip",
+          "accessed_on": "2026-09-19",
+          "license": "CC BY 4.0; attribution to GeoNames is required",
+          "status": "derived",
+          "notes": "A committed, one-time curated subset of the GeoNames Iran dump. It supplies point coordinates for province capitals and county seats; it is not part of the official administrative workbook and is not a centroid or polygon dataset.",
+          "evidence": {
+            "metadata": "enrichment/coordinates/evidence/geonames-iran-2026-09-19.metadata.json",
+            "extraction": "enrichment/coordinates/evidence/geonames-iran-2026-09-19.tsv"
+          }
+        }
+      ]
+    },
+    "explorer": {
+      "coreRows": 6157,
+      "villageRows": 99317,
+      "duplicateSearchIds": 0,
+      "invalidEntityReferences": 0,
+      "invalidParentReferences": 0
+    },
+    "documentation": {
+      "requiredPaths": [
+        "dist/manifest.json",
+        "dist/schema.json",
+        "dist/llm/provinces.txt",
+        "dist/llm/counties.txt",
+        "dist/llm/cities-filtered.txt",
+        "dist/llm/cities.txt",
+        "dist/json/province-capitals.json",
+        "dist/json/county-centers.json",
+        "docs/llms.txt",
+        "docs/index.html",
+        "docs/assets/app.js",
+        "docs/assets/explorer-core.js",
+        "docs/assets/styles.css",
+        "docs/data/explorer-meta.json",
+        "docs/data/search-core.json",
+        "docs/data/search-villages.json"
+      ],
+      "missingPaths": [],
+      "quickStart": true,
+      "cityCountySemantics": true,
+      "filteredSemantics": true,
+      "manifestSchemaLinks": true,
+      "footer": {
+        "exact": true
+      }
+    },
+    "v2Compatibility": {
+      "provinces": {
+        "historicalEntities": 31,
+        "historicalMatched": 31,
+        "historicalEntitiesMatched": 31,
+        "idsPreserved": 31,
+        "idsChanged": 0,
+        "slugsPreserved": 31,
+        "intentionalOrUnavoidableDifferences": 0
+      },
+      "counties": {
+        "historicalEntities": 482,
+        "historicalMatched": 482,
+        "historicalEntitiesMatched": 482,
+        "idsPreserved": 482,
+        "idsChanged": 0,
+        "slugsPreserved": 482,
+        "intentionalOrUnavoidableDifferences": 0
+      },
+      "districts": {
+        "historicalEntities": 1184,
+        "historicalMatched": 1182,
+        "historicalEntitiesMatched": 1182,
+        "idsPreserved": 1182,
+        "idsChanged": 0,
+        "slugsPreserved": 1182,
+        "intentionalOrUnavoidableDifferences": 2
+      },
+      "cities": {
+        "historicalEntities": 1659,
+        "historicalMatched": 1658,
+        "historicalEntitiesMatched": 1658,
+        "idsPreserved": 1658,
+        "idsChanged": 0,
+        "slugsPreserved": 1658,
+        "intentionalOrUnavoidableDifferences": 1
+      }
+    },
+    "migration": {
+      "v2Rows": 1524,
+      "migrationRecords": 1524,
+      "matched": 1524,
+      "ambiguous": 0,
+      "not_found": 0,
+      "normalizationMatches": 50,
+      "compatibilityOverrideMatches": 13,
+      "invalidOldIds": 0,
+      "invalidNewIds": 0,
+      "complete": true
+    },
+    "idStrategy": {
+      "legacyPublicIds": "V2 formulas parse source segments numerically; canonical keys retain padded source strings",
+      "rural": "V3 fixed-width district+rural suffix prevents V2 cross-district collisions",
+      "villages": "namespaced, delimiter-separated source-code IDs"
+    },
+    "allContract": {
+      "fields": [
+        "id",
+        "type",
+        "name",
+        "slug",
+        "tel_prefix",
+        "province_id",
+        "county_id",
+        "district_id",
+        "rural_id",
+        "coderec",
+        "village_code",
+        "mapped_rural_code"
+      ],
+      "nullableTabularCellsDecodeAs": "null"
+    }
+  }
+}

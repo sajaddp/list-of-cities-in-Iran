@@ -1,0 +1,312 @@
+[
+  {
+    "province_id": 100,
+    "province_name": "مرکزی",
+    "center_name": "اراک",
+    "latitude": 34.09493,
+    "longitude": 49.69809,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143127",
+    "source_name": "Arāk"
+  },
+  {
+    "province_id": 101,
+    "province_name": "گیلان",
+    "center_name": "رشت",
+    "latitude": 37.27611,
+    "longitude": 49.58862,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "118743",
+    "source_name": "Rasht"
+  },
+  {
+    "province_id": 102,
+    "province_name": "مازندران",
+    "center_name": "ساری",
+    "latitude": 36.56332,
+    "longitude": 53.06009,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116996",
+    "source_name": "Sari"
+  },
+  {
+    "province_id": 103,
+    "province_name": "آذربایجان شرقی",
+    "center_name": "تبریز",
+    "latitude": 38.08,
+    "longitude": 46.2919,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "113646",
+    "source_name": "Tabriz"
+  },
+  {
+    "province_id": 104,
+    "province_name": "آذربایجان غربی",
+    "center_name": "ارومیه",
+    "latitude": 37.55274,
+    "longitude": 45.07605,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "121801",
+    "source_name": "Orūmīyeh"
+  },
+  {
+    "province_id": 105,
+    "province_name": "کرمانشاه",
+    "center_name": "کرمانشاه",
+    "latitude": 34.31417,
+    "longitude": 47.065,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128226",
+    "source_name": "Kermanshah"
+  },
+  {
+    "province_id": 106,
+    "province_name": "خوزستان",
+    "center_name": "اهواز",
+    "latitude": 31.31901,
+    "longitude": 48.6842,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "144448",
+    "source_name": "Ahvaz"
+  },
+  {
+    "province_id": 107,
+    "province_name": "فارس",
+    "center_name": "شیراز",
+    "latitude": 29.61031,
+    "longitude": 52.53113,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "115019",
+    "source_name": "Shiraz"
+  },
+  {
+    "province_id": 108,
+    "province_name": "کرمان",
+    "center_name": "کرمان",
+    "latitude": 30.28321,
+    "longitude": 57.07879,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128234",
+    "source_name": "Kerman"
+  },
+  {
+    "province_id": 109,
+    "province_name": "خراسان رضوی",
+    "center_name": "مشهد",
+    "latitude": 36.29807,
+    "longitude": 59.60567,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "124665",
+    "source_name": "Mashhad"
+  },
+  {
+    "province_id": 110,
+    "province_name": "اصفهان",
+    "center_name": "اصفهان",
+    "latitude": 32.65246,
+    "longitude": 51.67462,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "418863",
+    "source_name": "Isfahan"
+  },
+  {
+    "province_id": 111,
+    "province_name": "سیستان و بلوچستان",
+    "center_name": "زاهدان",
+    "latitude": 29.4963,
+    "longitude": 60.8629,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "1159301",
+    "source_name": "Zahedan"
+  },
+  {
+    "province_id": 112,
+    "province_name": "کردستان",
+    "center_name": "سنندج",
+    "latitude": 35.31495,
+    "longitude": 46.99883,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "117574",
+    "source_name": "Sanandaj"
+  },
+  {
+    "province_id": 113,
+    "province_name": "همدان",
+    "center_name": "همدان",
+    "latitude": 34.79922,
+    "longitude": 48.51456,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132144",
+    "source_name": "Hamadān"
+  },
+  {
+    "province_id": 114,
+    "province_name": "چهارمحال و بختیاری",
+    "center_name": "شهرکرد",
+    "latitude": 32.32612,
+    "longitude": 50.8572,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "115770",
+    "source_name": "Shahr-e Kord"
+  },
+  {
+    "province_id": 115,
+    "province_name": "لرستان",
+    "center_name": "خرم آباد",
+    "latitude": 33.48778,
+    "longitude": 48.35583,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "127349",
+    "source_name": "Khorramabad"
+  },
+  {
+    "province_id": 116,
+    "province_name": "ایلام",
+    "center_name": "ایلام",
+    "latitude": 33.6374,
+    "longitude": 46.4227,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "130802",
+    "source_name": "Īlām"
+  },
+  {
+    "province_id": 117,
+    "province_name": "کهگیلویه و بویراحمد",
+    "center_name": "یاسوج",
+    "latitude": 30.66824,
+    "longitude": 51.58796,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "66093",
+    "source_name": "Yasuj"
+  },
+  {
+    "province_id": 118,
+    "province_name": "بوشهر",
+    "center_name": "بوشهر",
+    "latitude": 28.96887,
+    "longitude": 50.83657,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "139817",
+    "source_name": "Bushehr"
+  },
+  {
+    "province_id": 119,
+    "province_name": "زنجان",
+    "center_name": "زنجان",
+    "latitude": 36.67642,
+    "longitude": 48.49628,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111453",
+    "source_name": "Zanjan"
+  },
+  {
+    "province_id": 120,
+    "province_name": "سمنان",
+    "center_name": "سمنان",
+    "latitude": 35.57691,
+    "longitude": 53.39205,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "116402",
+    "source_name": "Semnan"
+  },
+  {
+    "province_id": 121,
+    "province_name": "یزد",
+    "center_name": "یزد",
+    "latitude": 31.89722,
+    "longitude": 54.3675,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "111822",
+    "source_name": "Yazd"
+  },
+  {
+    "province_id": 122,
+    "province_name": "هرمزگان",
+    "center_name": "بندر عباس",
+    "latitude": 27.1865,
+    "longitude": 56.2808,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "141681",
+    "source_name": "Bandar Abbas"
+  },
+  {
+    "province_id": 123,
+    "province_name": "تهران",
+    "center_name": "تهران",
+    "latitude": 35.75,
+    "longitude": 51.5148,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "6683528",
+    "source_name": "Tehrān"
+  },
+  {
+    "province_id": 124,
+    "province_name": "اردبیل",
+    "center_name": "اردبیل",
+    "latitude": 38.2498,
+    "longitude": 48.2933,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "143083",
+    "source_name": "Ardabīl"
+  },
+  {
+    "province_id": 125,
+    "province_name": "قم",
+    "center_name": "قم",
+    "latitude": 34.6401,
+    "longitude": 50.8764,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119208",
+    "source_name": "Qom"
+  },
+  {
+    "province_id": 126,
+    "province_name": "قزوین",
+    "center_name": "قزوین",
+    "latitude": 36.26877,
+    "longitude": 50.0041,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "119505",
+    "source_name": "Qazvin"
+  },
+  {
+    "province_id": 127,
+    "province_name": "گلستان",
+    "center_name": "گرگان",
+    "latitude": 36.8427,
+    "longitude": 54.44391,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "132892",
+    "source_name": "Gorgān"
+  },
+  {
+    "province_id": 128,
+    "province_name": "خراسان شمالی",
+    "center_name": "بجنورد",
+    "latitude": 37.47473,
+    "longitude": 57.32903,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140380",
+    "source_name": "Bojnūrd"
+  },
+  {
+    "province_id": 129,
+    "province_name": "خراسان جنوبی",
+    "center_name": "بیرجند",
+    "latitude": 32.86628,
+    "longitude": 59.22114,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "140463",
+    "source_name": "Bīrjand"
+  },
+  {
+    "province_id": 130,
+    "province_name": "البرز",
+    "center_name": "کرج",
+    "latitude": 35.83266,
+    "longitude": 50.99155,
+    "source_id": "geonames-iran-2026-09-19",
+    "source_feature_id": "128747",
+    "source_name": "Karaj"
+  }
+]

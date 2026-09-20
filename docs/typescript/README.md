@@ -1,6 +1,6 @@
 # راهنمای استفاده از فایل JSON برای فهرست شهرهای ایران به تفکیک استان در TypeScript
 
-در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه TypeScript توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها و شهرهای ایران بوده و در پروژه‌های Node.js، API محور یا واسط کاربری (UI) قابل استفاده است.
+در این راهنما، به صورت حرفه‌ای روش استفاده از **فهرست شهرهای ایران** در یک پروژه TypeScript توضیح داده شده است. برای این منظور، فایل `provinces.json` از مسیر `dist/json` استفاده می‌شود. این فایل شامل داده‌های ساختاریافته استان‌ها بوده و در پروژه‌های Node.js، API محور یا واسط کاربری (UI) قابل استفاده است.
 
 ## مراحل
 
@@ -44,7 +44,7 @@ type Province = {
 
 ## Guide to Using JSON File for Iranian Cities by Province in TypeScript
 
-This professional guide explains how to use a JSON file containing the list of **Iranian provinces and cities** in a TypeScript project. The file `provinces.json`, located in the `dist/json` directory, contains structured data suitable for use in Node.js, backend services, or frontend applications.
+This professional guide explains how to use a JSON file containing the list of **Iranian provinces** in a TypeScript project. The file `provinces.json`, located in the `dist/json` directory, contains structured data suitable for use in Node.js, backend services, or frontend applications.
 
 ## Steps
 

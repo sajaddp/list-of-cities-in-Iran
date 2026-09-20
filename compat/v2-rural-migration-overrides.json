@@ -1,0 +1,15 @@
+[
+  { "old_id": 1010004002, "current_key": "rural:01:04:07:0001", "reason": "administrative_reorganization" },
+  { "old_id": 1040008005, "current_key": "rural:04:08:07:0002", "reason": "administrative_reorganization" },
+  { "old_id": 1040008007, "current_key": "rural:04:08:08:0002", "reason": "administrative_reorganization" },
+  { "old_id": 1070007002, "current_key": "rural:07:07:08:0001", "reason": "administrative_reorganization" },
+  { "old_id": 10300010002, "current_key": "rural:03:29:02:0001", "reason": "administrative_reorganization" },
+  { "old_id": 10300010001, "current_key": "rural:03:29:01:0001", "reason": "administrative_reorganization" },
+  { "old_id": 10300010003, "current_key": "rural:03:29:01:0002", "reason": "administrative_reorganization" },
+  { "old_id": 10300010004, "current_key": "rural:03:29:01:0003", "reason": "administrative_reorganization" },
+  { "old_id": 12900011001, "current_key": "rural:29:12:01:0001", "reason": "administrative_reorganization" },
+  { "old_id": 12900011002, "current_key": "rural:29:12:02:0001", "reason": "administrative_reorganization" },
+  { "old_id": 1070003001, "current_key": "rural:07:03:01:0001", "reason": "official_name_change" },
+  { "old_id": 1180008001, "current_key": "rural:18:08:01:0001", "reason": "official_name_change" },
+  { "old_id": 1180008002, "current_key": "rural:18:08:01:0002", "reason": "official_name_change" }
+]
