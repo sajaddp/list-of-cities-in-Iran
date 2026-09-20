@@ -1,6 +1,6 @@
 {
   "name": "list-of-cities-in-iran-tools",
-  "version": "3.0.0-phase2",
+  "version": "3.0.0",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsx src/index.ts",
