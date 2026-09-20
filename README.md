@@ -42,16 +42,16 @@
 
 همه فایل‌های جدول زیر در هر سه فرمت موجود هستند. تعداد رکوردها از [فهرست مشخصات داده‌ها](dist/manifest.json) گرفته شده:
 
-| داده | نام فایل | تعداد رکورد | JSON | CSV | XLSX |
-| --- | --- | ---: | --- | --- | --- |
-| استان‌ها | `provinces` | 31 | [JSON](dist/json/provinces.json) | [CSV](dist/csv/provinces.csv) | [XLSX](dist/xlsx/provinces.xlsx) |
-| شهرستان‌ها | `counties` | 484 | [JSON](dist/json/counties.json) | [CSV](dist/csv/counties.csv) | [XLSX](dist/xlsx/counties.xlsx) |
-| بخش‌ها | `districts` | 1193 | [JSON](dist/json/districts.json) | [CSV](dist/csv/districts.csv) | [XLSX](dist/xlsx/districts.xlsx) |
-| شهرها؛ فهرست کامل | `cities` | 1672 | [JSON](dist/json/cities.json) | [CSV](dist/csv/cities.csv) | [XLSX](dist/xlsx/cities.xlsx) |
-| شهرهای فیلترشده | `cities-filtered` | 1185 | [JSON](dist/json/cities-filtered.json) | [CSV](dist/csv/cities-filtered.csv) | [XLSX](dist/xlsx/cities-filtered.xlsx) |
-| دهستان‌ها | `rurals` | 2777 | [JSON](dist/json/rurals.json) | [CSV](dist/csv/rurals.csv) | [XLSX](dist/xlsx/rurals.xlsx) |
-| آبادی‌ها | `villages` | 99317 | [JSON](dist/json/villages.json) | [CSV](dist/csv/villages.csv) | [XLSX](dist/xlsx/villages.xlsx) |
-| همه داده‌ها | `all` | 105474 | [JSON](dist/json/all.json) | [CSV](dist/csv/all.csv) | [XLSX](dist/xlsx/all.xlsx) |
+| داده | نام فایل | تعداد رکورد | JSON | CSV | XLSX | LLM |
+| --- | --- | ---: | --- | --- | --- | --- |
+| استان‌ها | `provinces` | 31 | [JSON](dist/json/provinces.json) | [CSV](dist/csv/provinces.csv) | [XLSX](dist/xlsx/provinces.xlsx) | [TXT](dist/llm/provinces.txt) |
+| شهرستان‌ها | `counties` | 484 | [JSON](dist/json/counties.json) | [CSV](dist/csv/counties.csv) | [XLSX](dist/xlsx/counties.xlsx) | [TXT](dist/llm/counties.txt) |
+| بخش‌ها | `districts` | 1193 | [JSON](dist/json/districts.json) | [CSV](dist/csv/districts.csv) | [XLSX](dist/xlsx/districts.xlsx) | — |
+| شهرها؛ فهرست کامل | `cities` | 1672 | [JSON](dist/json/cities.json) | [CSV](dist/csv/cities.csv) | [XLSX](dist/xlsx/cities.xlsx) | [TXT](dist/llm/cities.txt) |
+| شهرهای فیلترشده | `cities-filtered` | 1185 | [JSON](dist/json/cities-filtered.json) | [CSV](dist/csv/cities-filtered.csv) | [XLSX](dist/xlsx/cities-filtered.xlsx) | [TXT](dist/llm/cities-filtered.txt) |
+| دهستان‌ها | `rurals` | 2777 | [JSON](dist/json/rurals.json) | [CSV](dist/csv/rurals.csv) | [XLSX](dist/xlsx/rurals.xlsx) | — |
+| آبادی‌ها | `villages` | 99317 | [JSON](dist/json/villages.json) | [CSV](dist/csv/villages.csv) | [XLSX](dist/xlsx/villages.xlsx) | — |
+| همه داده‌ها | `all` | 105474 | [JSON](dist/json/all.json) | [CSV](dist/csv/all.csv) | [XLSX](dist/xlsx/all.xlsx) | — |
 
 فایل `cities-filtered` از فهرست شهرها ساخته می‌شود و یک تقسیم‌بندی رسمی جداگانه نیست. برای دریافت تمام رکوردهای شهر، فایل `cities` را انتخاب کنید. فایل `all` همه سطح‌های تقسیمات کشوری را در بر می‌گیرد، نه فقط شهرها.
 
@@ -286,16 +286,16 @@ Confirm the administrative level and check the corresponding file: `cities` for 
 
 All datasets below are available in all three formats. Counts are recorded in the [manifest](dist/manifest.json).
 
-| Data | Dataset | Records | JSON | CSV | XLSX |
-| --- | --- | ---: | --- | --- | --- |
-| Provinces | `provinces` | 31 | [JSON](dist/json/provinces.json) | [CSV](dist/csv/provinces.csv) | [XLSX](dist/xlsx/provinces.xlsx) |
-| Counties | `counties` | 484 | [JSON](dist/json/counties.json) | [CSV](dist/csv/counties.csv) | [XLSX](dist/xlsx/counties.xlsx) |
-| Districts | `districts` | 1193 | [JSON](dist/json/districts.json) | [CSV](dist/csv/districts.csv) | [XLSX](dist/xlsx/districts.xlsx) |
-| Cities, complete list | `cities` | 1672 | [JSON](dist/json/cities.json) | [CSV](dist/csv/cities.csv) | [XLSX](dist/xlsx/cities.xlsx) |
-| Filtered cities | `cities-filtered` | 1185 | [JSON](dist/json/cities-filtered.json) | [CSV](dist/csv/cities-filtered.csv) | [XLSX](dist/xlsx/cities-filtered.xlsx) |
-| Rural districts | `rurals` | 2777 | [JSON](dist/json/rurals.json) | [CSV](dist/csv/rurals.csv) | [XLSX](dist/xlsx/rurals.xlsx) |
-| Villages | `villages` | 99317 | [JSON](dist/json/villages.json) | [CSV](dist/csv/villages.csv) | [XLSX](dist/xlsx/villages.xlsx) |
-| All data | `all` | 105474 | [JSON](dist/json/all.json) | [CSV](dist/csv/all.csv) | [XLSX](dist/xlsx/all.xlsx) |
+| Data | Dataset | Records | JSON | CSV | XLSX | LLM |
+| --- | --- | ---: | --- | --- | --- | --- |
+| Provinces | `provinces` | 31 | [JSON](dist/json/provinces.json) | [CSV](dist/csv/provinces.csv) | [XLSX](dist/xlsx/provinces.xlsx) | [TXT](dist/llm/provinces.txt) |
+| Counties | `counties` | 484 | [JSON](dist/json/counties.json) | [CSV](dist/csv/counties.csv) | [XLSX](dist/xlsx/counties.xlsx) | [TXT](dist/llm/counties.txt) |
+| Districts | `districts` | 1193 | [JSON](dist/json/districts.json) | [CSV](dist/csv/districts.csv) | [XLSX](dist/xlsx/districts.xlsx) | — |
+| Cities, complete list | `cities` | 1672 | [JSON](dist/json/cities.json) | [CSV](dist/csv/cities.csv) | [XLSX](dist/xlsx/cities.xlsx) | [TXT](dist/llm/cities.txt) |
+| Filtered cities | `cities-filtered` | 1185 | [JSON](dist/json/cities-filtered.json) | [CSV](dist/csv/cities-filtered.csv) | [XLSX](dist/xlsx/cities-filtered.xlsx) | [TXT](dist/llm/cities-filtered.txt) |
+| Rural districts | `rurals` | 2777 | [JSON](dist/json/rurals.json) | [CSV](dist/csv/rurals.csv) | [XLSX](dist/xlsx/rurals.xlsx) | — |
+| Villages | `villages` | 99317 | [JSON](dist/json/villages.json) | [CSV](dist/csv/villages.csv) | [XLSX](dist/xlsx/villages.xlsx) | — |
+| All data | `all` | 105474 | [JSON](dist/json/all.json) | [CSV](dist/csv/all.csv) | [XLSX](dist/xlsx/all.xlsx) | — |
 
 `cities-filtered` is a **derived / convenience** dataset, not a separate official classification. Use `cities` for every city record in the current source. The `all` dataset includes all administrative levels, not just cities.
 
