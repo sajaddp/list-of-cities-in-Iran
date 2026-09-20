@@ -76,6 +76,9 @@
     const ancestors = breadcrumb(record, index).slice(0, -1);
     const lines = [
       "# list-of-cities-in-Iran Explorer Context",
+      "project: list-of-cities-in-Iran",
+      "repository: https://github.com/sajaddp/list-of-cities-in-Iran",
+      "maintainer: Sajad Dehshiri",
       "schema: 1",
       "source_year: " + meta.sourceYear,
       "dataset_version: " + meta.datasetVersion,

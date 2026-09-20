@@ -380,6 +380,9 @@ test("Explorer ranking, filtering, breadcrumbs, public copies, and AI context re
     sourceYear: 1404,
     datasetVersion: "3.0.0",
   });
+  assert.match(context, /project: list-of-cities-in-Iran/);
+  assert.match(context, /repository: https:\/\/github\.com\/sajaddp\/list-of-cities-in-Iran/);
+  assert.match(context, /maintainer: Sajad Dehshiri/);
   assert.match(context, /selected_entity: city/);
   assert.match(context, /county and city are different entity types/);
 });
