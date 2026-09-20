@@ -1,10 +1,12 @@
 # لیست شهرها و استان‌های ایران
 
-![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
+![GitHub Release Date](https://img.shields.io/github/release-date/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/sajaddp/list-of-cities-in-Iran?style=for-the-badge)
 
 [English documentation](#list-of-cities-and-provinces-in-iran)
+
+[جست‌وجو و مشاهده آنلاین داده‌ها](https://sajaddehshiri.ir/list-of-cities-in-Iran/)
 
 این مخزن شامل لیست شهرها و استان‌های ایران، شهرستان‌ها، بخش‌ها، دهستان‌ها و آبادی‌هاست. داده‌ها بر اساس فایل رسمی تقسیمات کشوری تا پایان سال **۱۴۰۴** آماده شده‌اند و در سه فرمت **JSON، CSV و XLSX** در دسترس هستند.
 
@@ -92,11 +94,7 @@ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 cd list-of-cities-in-Iran
 ```
 
-این دستور شاخه پیش‌فرض را دریافت می‌کند. اگر README یک شاخه دیگر را می‌خوانید، همان شاخه را هم در نسخه محلی انتخاب کنید؛ برای مثال، داده‌های در حال آماده‌سازی نسخه ۳ در شاخه `dev` قرار دارند:
-
-```shell
-git switch dev
-```
+این دستور آخرین نسخه شاخه پیش‌فرض `main` را دریافت می‌کند.
 
 ### کدام فایل را انتخاب کنم؟
 
@@ -136,7 +134,7 @@ git switch dev
 
 ## جست‌وجو و مشاهده داده‌ها
 
-[ابزار جست‌وجوی داده‌ها](docs/index.html) برای پیدا کردن رکوردها، مشاهده نوع و مسیر تقسیمات کشوری، بررسی مختصات و رسیدن به فایل‌های دانلودی ساخته شده. دو دکمه `Copy JSON` و `Copy for AI` هم برای کپی رکورد یا آماده کردن آن برای هوش مصنوعی در اختیار دارید.
+[ابزار جست‌وجوی آنلاین داده‌ها](https://sajaddehshiri.ir/list-of-cities-in-Iran/) برای پیدا کردن رکوردها، مشاهده نوع و مسیر تقسیمات کشوری، بررسی مختصات و رسیدن به فایل‌های دانلودی ساخته شده. دو دکمه `Copy JSON` و `Copy for AI` هم برای کپی رکورد یا آماده کردن آن برای هوش مصنوعی در اختیار دارید.
 
 جست‌وجوی عادی، استان‌ها تا شهرها را پوشش می‌دهد؛ داده‌های آبادی‌ها فقط پس از انتخاب جست‌وجوی آبادی بارگیری می‌شوند. این ابزار به بک‌اند یا سرویس بیرونی نیاز ندارد و فایل‌های اصلی مخزن همچنان مرجع داده‌ها هستند.
 
@@ -200,7 +198,7 @@ python3 -m http.server --directory docs 8000
 
 این مرحله فقط برای مشارکت در پروژه یا بررسی نحوه تولید داده‌هاست؛ برای استفاده از فایل‌های آماده لازم نیست آن را اجرا کنید.
 
-پس از دریافت مخزن با تاریخچه کامل Git و نصب Node.js و npm:
+پس از دریافت مخزن و نصب Node.js و npm:
 
 ```shell
 cd tools
@@ -209,8 +207,6 @@ npm test
 npm run build
 npm run verify
 ```
-
-آزمون‌های سازگاری، خروجی‌های نسخه‌های قبلی را از تاریخچه Git می‌خوانند؛ بنابراین دریافت کم‌عمق مخزن با `--depth` برای اجرای همه آزمون‌ها کافی نیست.
 
 فرایند ساخت از ورودی‌های ذخیره‌شده در مخزن استفاده می‌کند. با ورودی یکسان، خروجی یکسان تولید می‌شود و برابری فایل‌های JSON، CSV و XLSX بررسی می‌شود. [آزمون‌های خودکار گیت‌هاب](.github/workflows/validate.yml) نیز آزمون، ساخت، بررسی خروجی‌ها و تشخیص فایل‌های به‌روزرسانی‌نشده را اجرا می‌کنند.
 
@@ -251,6 +247,8 @@ npm run verify
 ## List of Cities and Provinces in Iran
 
 [نسخه فارسی](#لیست-شهرها-و-استانهای-ایران)
+
+[Open the Developer Data Explorer](https://sajaddehshiri.ir/list-of-cities-in-Iran/)
 
 This repository provides a list of cities and provinces in Iran, along with counties, districts, rural districts, and villages. The Iran administrative divisions dataset is available in **JSON, CSV, and XLSX** for direct use in software projects.
 
@@ -340,11 +338,7 @@ git clone https://github.com/sajaddp/list-of-cities-in-Iran.git
 cd list-of-cities-in-Iran
 ```
 
-Cloning checks out the default branch. Select the branch whose README you are reading; for example, the V3 preparation work is on `dev`:
-
-```shell
-git switch dev
-```
+Cloning checks out the current default branch, `main`.
 
 #### Which file should I use?
 
@@ -384,7 +378,7 @@ Fields and ID types differ between datasets. `tel_prefix` belongs to province re
 
 ### Developer Data Explorer
 
-The [static data explorer](docs/index.html) provides entity search, type labels, administrative breadcrumbs, available coordinates, and dataset links. **Copy JSON** copies the public record; **Copy for AI** prepares the selected record and its ancestors as a compact context.
+The [Developer Data Explorer](https://sajaddehshiri.ir/list-of-cities-in-Iran/) provides entity search, type labels, administrative breadcrumbs, available coordinates, and dataset links. **Copy JSON** copies the public record; **Copy for AI** prepares the selected record and its ancestors as a compact context.
 
 Common searches exclude villages until village search is explicitly selected. The explorer requires no backend or external API. Repository datasets remain authoritative.
 
@@ -444,7 +438,7 @@ Review the [V2 public contract](compat/v2-public-contract.json) when upgrading. 
 
 ### Build and Verify
 
-Building is only necessary for contribution or verification, not for consuming the prepared files. With a full-history Git clone, Node.js, and npm:
+Building is only necessary for contribution or verification, not for consuming the prepared files. With a Git clone, Node.js, and npm:
 
 ```shell
 cd tools
@@ -453,8 +447,6 @@ npm test
 npm run build
 npm run verify
 ```
-
-Compatibility tests read pinned historical revisions. A shallow clone made with `--depth` does not provide the full history required by these tests.
 
 The build uses committed inputs and is deterministic: the same inputs produce the same outputs. Verification checks JSON/CSV/XLSX parity and data contracts. The [GitHub Actions workflow](.github/workflows/validate.yml) runs tests, build, verification, and generated-artifact drift checks.
 
