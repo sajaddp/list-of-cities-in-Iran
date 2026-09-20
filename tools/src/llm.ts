@@ -25,6 +25,10 @@ export function formatLlmContext(scope: DatasetName, records: PublicRecord[], so
   const columns = DATASET_COLUMNS[scope];
   const semantics = scope === "provinces"
     ? ["province = استان; a first-level administrative division.", ...sharedSemantics]
+    : scope === "cities"
+      ? ["cities = complete CODEREC=5 projection; contains 1481 real cities and 191 urban zones.", "Use cities-filtered for real cities only; use urban-zones for urban zones only.", ...sharedSemantics]
+      : scope === "cities-filtered"
+        ? ["cities-filtered = real cities only; excludes urban zones.", ...sharedSemantics]
     : scope === "urban-zones"
       ? ["urban zone = ناحیه شهری; not a real city.", ...sharedSemantics]
       : sharedSemantics;

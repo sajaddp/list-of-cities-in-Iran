@@ -15,7 +15,7 @@
     "tools"
   ],
   "author": "Sajad Dehshiri",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "description": "لیست شهرهای ایران",
   "devDependencies": {
     "@eslint/js": "^9.39.1",

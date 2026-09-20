@@ -6,7 +6,7 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   const labels = {
     province: "استان / Province", county: "شهرستان / County", district: "بخش / District",
-    rural: "دهستان / Rural District", city: "شهر / City", village: "آبادی / Village"
+    rural: "دهستان / Rural District", city: "شهر / City", "urban-zone": "ناحیه شهری / Urban Zone", village: "آبادی / Village"
   };
   const publicFields = {
     province: ["id", "name", "slug", "tel_prefix"],
@@ -14,6 +14,7 @@
     district: ["id", "name", "slug", "province_id", "county_id"],
     rural: ["id", "name", "slug", "province_id", "county_id", "district_id"],
     city: ["id", "name", "slug", "province_id", "county_id", "district_id"],
+    "urban-zone": ["type", "id", "name", "slug", "province_id", "county_id", "district_id"],
     village: ["id", "name", "slug", "province_id", "county_id", "district_id", "rural_id", "coderec", "village_code", "mapped_rural_code"]
   };
   const parentSteps = {
@@ -21,6 +22,7 @@
     district: [["province_id", "province"], ["county_id", "county"], ["id", "district"]],
     rural: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["id", "rural"]],
     city: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["id", "city"]],
+    "urban-zone": [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["id", "urban-zone"]],
     village: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["rural_id", "rural"], ["id", "village"]]
   };
   const sharedSemantics = [
@@ -29,6 +31,11 @@
     "county and city are different entity types.",
     "same name does not mean the same entity."
   ];
+  function semanticsFor(record) {
+    return record.type === "urban-zone"
+      ? ["urban zone = ناحیه شهری; not a real city.", "county = شهرستان; an administrative division.", "county and city are different entity types.", "same name does not mean the same entity."]
+      : sharedSemantics;
+  }
   function normalizeSearch(value) {
     return String(value || "").normalize("NFC").replace(/[يى]/g, "ی").replace(/ك/g, "ک").replace(/[\s\u200c]+/g, " ").trim().toLocaleLowerCase("fa-IR");
   }
@@ -86,7 +93,7 @@
       "selected_entity_label: " + labels[record.type],
       "",
       "semantics:",
-      ...sharedSemantics.map((item) => "- " + item),
+      ...semanticsFor(record).map((item) => "- " + item),
       "",
       "ancestor_context:"
     ];

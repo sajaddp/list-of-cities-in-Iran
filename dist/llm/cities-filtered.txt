@@ -8,6 +8,7 @@ encoding: UTF-8
 representation: TSV; literal tabs and newlines are forbidden in values; final newline is LF.
 
 semantics:
+- cities-filtered = real cities only; excludes urban zones.
 - county = شهرستان; an administrative division.
 - city = شهر; an urban settlement.
 - county and city are different entity types.

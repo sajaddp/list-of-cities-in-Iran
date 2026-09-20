@@ -14,7 +14,7 @@
     const items = [
       "سال منبع: " + meta.sourceYear, "نسخهٔ داده: " + meta.datasetVersion,
       "استان: " + meta.counts.provinces, "شهرستان: " + meta.counts.counties,
-      "شهر: " + meta.counts.cities, "آبادی: " + meta.counts.villages
+      "شهر واقعی: " + meta.counts["cities-filtered"], "ناحیهٔ شهری: " + meta.counts["urban-zones"], "آبادی: " + meta.counts.villages
     ];
     items.forEach((value) => target.append(make("p", value)));
     [["مخزن", meta.repository.url], ["manifest", meta.repository.manifest], ["schema", meta.repository.schema], ["provenance", meta.repository.provenance]].forEach(([label, href]) => { const link = make("a", label); link.href = href; target.append(link); });

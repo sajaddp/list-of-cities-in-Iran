@@ -264,6 +264,38 @@ test("city datasets form the published real-city and urban-zone partition", () =
   assert.ok(realCities.some((record: { name: string }) => record.name === "قورچی باشی"));
 });
 
+test("Explorer projects the published city partition without city aliases", () => {
+  const cities = JSON.parse(readFileSync(join(root, "dist", "json", "cities.json"), "utf8"));
+  const core = JSON.parse(readFileSync(join(root, "docs", "data", "search-core.json"), "utf8"));
+  const explorerCities = core.filter((record: { type: string }) => record.type === "city");
+  const explorerUrbanZones = core.filter((record: { type: string }) => record.type === "urban-zone");
+  assert.equal(explorerCities.length, 1481);
+  assert.equal(explorerUrbanZones.length, 191);
+  const cityIds = new Set(cities.map((record: { id: number }) => record.id));
+  const explorerCityIds = new Set(explorerCities.map((record: { id: number }) => record.id));
+  const explorerUrbanZoneIds = new Set(explorerUrbanZones.map((record: { id: number }) => record.id));
+  assert.equal([...explorerCityIds].filter((id) => explorerUrbanZoneIds.has(id)).length, 0);
+  assert.deepEqual(new Set([...explorerCityIds, ...explorerUrbanZoneIds]), cityIds);
+  const arakOne = explorerUrbanZones.find((record: { name: string }) => record.name === "اراک 1");
+  assert.equal(arakOne?.type, "urban-zone");
+  assert.deepEqual(ExplorerCore.searchRecords(core, "اراک 1", "city"), []);
+  assert.equal(ExplorerCore.searchRecords(core, "اراک 1", "urban-zone")[0]?.type, "urban-zone");
+  assert.equal(ExplorerCore.publicRecord(arakOne).type, "urban-zone");
+  const context = ExplorerCore.formatAiContext(arakOne, ExplorerCore.indexRecords(core), { sourceYear: 1404, datasetVersion: "3.1.0" });
+  assert.match(context, /selected_entity: urban-zone/);
+  assert.match(context, /urban zone = ناحیه شهری; not a real city/);
+});
+
+test("LLM city contexts state the real-city and urban-zone partition", () => {
+  const cities = readFileSync(join(root, "dist", "llm", "cities.txt"), "utf8");
+  const realCities = readFileSync(join(root, "dist", "llm", "cities-filtered.txt"), "utf8");
+  const urbanZones = readFileSync(join(root, "dist", "llm", "urban-zones.txt"), "utf8");
+  assert.match(cities, /cities = complete CODEREC=5 projection; contains 1481 real cities and 191 urban zones/);
+  assert.match(cities, /Use cities-filtered for real cities only; use urban-zones for urban zones only/);
+  assert.match(realCities, /cities-filtered = real cities only; excludes urban zones/);
+  assert.match(urbanZones, /urban zone = ناحیه شهری; not a real city/);
+});
+
 test("coordinate schema rejects out-of-range, mistyped, and extra fields", () => {
   const validate = new Ajv({ allErrors: true, strict: false }).compile({
     ...coordinateSchema,

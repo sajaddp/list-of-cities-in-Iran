@@ -249,7 +249,7 @@
             "county_id",
             "district_id"
           ],
-          "bytes": 108528,
+          "bytes": 108699,
           "semanticHeaderValid": true
         },
         "cities-filtered": {
@@ -263,7 +263,7 @@
             "county_id",
             "district_id"
           ],
-          "bytes": 96317,
+          "bytes": 96377,
           "semanticHeaderValid": true
         },
         "urban-zones": {

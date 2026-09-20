@@ -33,7 +33,8 @@
         "county",
         "district",
         "rural",
-        "city"
+        "city",
+        "urban-zone"
       ]
     },
     "villages": {

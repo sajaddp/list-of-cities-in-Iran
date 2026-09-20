@@ -2,9 +2,11 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { CoordinateDatasets, DatasetName, Datasets, EntityType, PublicRecord } from "./types";
 
+export type ExplorerEntityType = EntityType | "urban-zone";
+
 export interface ExplorerRecord {
   [key: string]: unknown;
-  type: EntityType;
+  type: ExplorerEntityType;
   id: string | number;
   name: string;
   slug: string;
@@ -26,14 +28,14 @@ export interface ExplorerMeta {
   repository: { url: string; manifest: string; schema: string; provenance: string };
   counts: Record<string, number>;
   coordinates: { provinceCapitals: number; countyCenters: number; provenance: string };
-  searchResources: { core: { path: string; rows: number; types: EntityType[] }; villages: { path: string; rows: number; types: EntityType[]; lazy: true } };
+  searchResources: { core: { path: string; rows: number; types: ExplorerEntityType[] }; villages: { path: string; rows: number; types: ExplorerEntityType[]; lazy: true } };
 }
 
-const dataNames: Array<[DatasetName, EntityType]> = [
+const dataNames: Array<[DatasetName, ExplorerEntityType]> = [
   ["provinces", "province"], ["counties", "county"], ["districts", "district"],
-  ["rurals", "rural"], ["cities", "city"], ["villages", "village"],
+  ["rurals", "rural"], ["cities-filtered", "city"], ["urban-zones", "urban-zone"], ["villages", "village"],
 ];
-const coreTypes: EntityType[] = ["province", "county", "district", "rural", "city"];
+const coreTypes: ExplorerEntityType[] = ["province", "county", "district", "rural", "city", "urban-zone"];
 const clone = (record: PublicRecord): PublicRecord => JSON.parse(JSON.stringify(record)) as PublicRecord;
 
 export function explorerRecords(datasets: Datasets, coordinates: CoordinateDatasets, manifest: Record<string, any>): { core: ExplorerRecord[]; villages: ExplorerRecord[] } {
@@ -49,7 +51,7 @@ export function explorerRecords(datasets: Datasets, coordinates: CoordinateDatas
       provenance: String(center.source_name), source_id: String(center.source_id), provenance_status: provenanceStatus.get(String(center.source_id)) ?? "unknown",
     };
     return explorer;
-  })])) as Record<DatasetName, ExplorerRecord[]>;
+  })])) as Record<string, ExplorerRecord[]>;
   return { core: coreTypes.flatMap((type) => records[dataNames.find(([, entityType]) => entityType === type)![0]]), villages: records.villages };
 }
 
@@ -112,10 +114,11 @@ export function verifyExplorerData(repoRoot: string, datasets: Datasets, coordin
   const all = [...actualCore, ...actualVillages];
   const duplicates = all.length - new Set(all.map((record) => `${record.type}:${record.id}`)).size;
   const byType = new Map(dataNames.map(([name, type]) => [type, new Map(datasets[name].map((record) => [String(record.id), record]))]));
-  const parentType: Partial<Record<EntityType, Array<[string, EntityType]>>> = {
+  const parentType: Partial<Record<ExplorerEntityType, Array<[string, ExplorerEntityType]>>> = {
     county: [["province_id", "province"]], district: [["province_id", "province"], ["county_id", "county"]],
     rural: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"]],
     city: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"]],
+    "urban-zone": [["province_id", "province"], ["county_id", "county"], ["district_id", "district"]],
     village: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["rural_id", "rural"]],
   };
   let invalidEntityReferences = 0, invalidParentReferences = 0;
