@@ -9,7 +9,7 @@ import { buildCanonicalModel } from "../src/model";
 import { DATASET_COLUMNS, sha256, verifyCoordinateFormatParity, verifyFormatParity } from "../src/output";
 import { COORDINATE_DATASET_COLUMNS, loadCoordinateSources, validateCoordinateDatasets } from "../src/coordinates";
 import { inspectLlmContext, LLM_SCOPES } from "../src/llm";
-import { explorerRecords, verifyExplorerData } from "../src/explorer";
+import { explorerRecords, verifyExplorerData, verifyExplorerShell } from "../src/explorer";
 import { buildPipeline, classifyRuralMigrationCandidates, MANIFEST_ENTITY_TYPES, ruralMigrations, validateManifest, verifyPipeline } from "../src/pipeline";
 import { assertUniquePublicIds, historicalCityIdOverrides, idFor, projectDatasets } from "../src/project";
 import { coordinateSchema, validateDatasets } from "../src/schema";
@@ -146,12 +146,45 @@ test("browser explorer search, hierarchy, JSON, AI context, and coordinate paylo
   const countyContext = ExplorerCore.formatAiContext(rafsanjan.find((record: { type: string }) => record.type === "county"), index, meta); const cityContext = ExplorerCore.formatAiContext(city, index, meta); assert.notEqual(countyContext, cityContext); assert.match(cityContext, /selected_entity: city/); assert.match(cityContext, /county and city are different entity types/);
 });
 
+test("Explorer filter transitions clear only incompatible detail and copy state", () => {
+  const coreRecords = JSON.parse(readFileSync(join(root, "docs", "data", "search-core.json"), "utf8"));
+  const villageRecords = JSON.parse(readFileSync(join(root, "docs", "data", "search-villages.json"), "utf8"));
+  const rafsanjan = ExplorerCore.searchRecords(coreRecords, "رفسنجان", "all");
+  const county = rafsanjan.find((record: { type: string }) => record.type === "county"); const city = rafsanjan.find((record: { type: string }) => record.type === "city");
+  const countyToCity = ExplorerCore.changeFilterState({ filter: "county", selected: county, activeIndex: 0 }, "city");
+  assert.deepEqual(countyToCity, { filter: "city", selected: null, activeIndex: -1 }); assert.equal(ExplorerCore.isFilterCompatible(countyToCity.selected, countyToCity.filter), false); assert.equal(ExplorerCore.canUseSelected(county, countyToCity), false);
+  const cityToCounty = ExplorerCore.changeFilterState({ filter: "city", selected: city, activeIndex: 0 }, "county");
+  assert.deepEqual(cityToCounty, { filter: "county", selected: null, activeIndex: -1 }); assert.equal(ExplorerCore.isFilterCompatible(cityToCounty.selected, cityToCounty.filter), false); assert.equal(ExplorerCore.canUseSelected(city, cityToCounty), false);
+  const coreToVillage = ExplorerCore.changeFilterState({ filter: "all", selected: county, activeIndex: 0 }, "village");
+  assert.deepEqual(coreToVillage, { filter: "village", selected: null, activeIndex: -1 });
+  const villageToCore = ExplorerCore.changeFilterState({ filter: "village", selected: villageRecords[0], activeIndex: 0 }, "all");
+  assert.deepEqual(villageToCore, { filter: "all", selected: null, activeIndex: -1 });
+  const compatible = ExplorerCore.changeFilterState({ filter: "county", selected: county, activeIndex: 0 }, "all");
+  assert.equal(compatible.selected, county); assert.equal(ExplorerCore.isFilterCompatible(compatible.selected, compatible.filter), true);
+});
+
+test("Explorer Escape clears a result-focused search interaction and supports a fresh query", () => {
+  const coreRecords = JSON.parse(readFileSync(join(root, "docs", "data", "search-core.json"), "utf8"));
+  const matches = ExplorerCore.searchRecords(coreRecords, "رفسنجان", "all");
+  assert.ok(matches.length > 1);
+  const activeIndex = ExplorerCore.moveActiveResult(-1, "ArrowDown", matches.length);
+  assert.equal(activeIndex, 0); assert.equal(ExplorerCore.moveActiveResult(activeIndex, "ArrowUp", matches.length), 0); assert.equal(ExplorerCore.moveActiveResult(activeIndex, "ArrowDown", matches.length), 1);
+  assert.equal(ExplorerCore.canUseSelected(matches[activeIndex], { filter: "all", selected: matches[activeIndex] }), true);
+  const dismissed = ExplorerCore.clearSearchState({ query: "رفسنجان", selected: matches[activeIndex], activeIndex });
+  assert.deepEqual(dismissed, { query: "", selected: null, activeIndex: -1 });
+  const freshMatches = ExplorerCore.searchRecords(coreRecords, "اراک", "all");
+  assert.ok(freshMatches.length > 0); const freshActiveIndex = ExplorerCore.moveActiveResult(-1, "ArrowDown", freshMatches.length);
+  assert.equal(freshActiveIndex, 0); assert.equal(freshMatches[freshActiveIndex].type, "county");
+});
+
 test("Pages shell has valid local assets, lazy village wiring, safe rendering, and stable repository download links", () => {
-  const page = readFileSync(join(root, "docs", "index.html"), "utf8"); const app = readFileSync(join(root, "docs", "assets", "app.js"), "utf8");
-  for (const file of ["docs/index.html", "docs/assets/styles.css", "docs/assets/explorer-core.js", "docs/assets/app.js", "docs/data/explorer-meta.json", "docs/data/search-core.json", "docs/data/search-villages.json", "docs/llms.txt"]) assert.ok(existsSync(join(root, file)));
+  const page = readFileSync(join(root, "docs", "index.html"), "utf8"); const app = readFileSync(join(root, "docs", "assets", "app.js"), "utf8"); const shell = verifyExplorerShell(root);
+  for (const file of ["docs/index.html", "docs/assets/styles.css", "docs/assets/explorer-core.js", "docs/assets/app.js", "docs/assets/fonts/Estedad[wght].woff2", "docs/assets/fonts/OFL.txt", "docs/data/explorer-meta.json", "docs/data/search-core.json", "docs/data/search-villages.json", "docs/llms.txt"]) assert.ok(existsSync(join(root, file)));
+  assert.deepEqual(shell, { fontPath: "docs/assets/fonts/Estedad[wght].woff2", fontFormat: "woff2", variableWeightRange: "100 900", externalFontDependencies: 0 });
   assert.ok(page.includes('href="assets/styles.css"') && page.includes('src="assets/explorer-core.js"') && page.includes('src="assets/app.js"'));
   assert.ok(app.includes('fetch("data/explorer-meta.json")') && app.includes('fetch("data/search-core.json")') && app.includes('fetch("data/search-villages.json")'));
   assert.ok(app.indexOf('fetch("data/search-villages.json")') > app.indexOf("async function loadVillages")); assert.ok(!app.includes("innerHTML") && !app.includes("eval("));
+  assert.ok(app.includes("core.changeFilterState") && app.includes("core.clearSearchState") && app.includes('"ArrowDown"') && app.includes('"ArrowUp"') && app.includes('"Enter"') && app.includes('event.key === "Escape"'));
   const links = [...page.matchAll(/https:\/\/raw\.githubusercontent\.com\/sajaddp\/list-of-cities-in-Iran\/main\/dist\/(?:json|csv|xlsx)\/[a-z-]+\.(?:json|csv|xlsx)/g)].map((match) => match[0]);
   assert.equal(links.length, 24); assert.ok(links.every((link) => /\/dist\/(json|csv|xlsx)\/[a-z-]+\.(json|csv|xlsx)$/.test(link)));
 });

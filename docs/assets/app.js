@@ -3,7 +3,7 @@
   const query = document.getElementById("query"), results = document.getElementById("results"), detail = document.getElementById("detail");
   const loadState = document.getElementById("load-state"), searchNote = document.getElementById("search-note"), villageButton = document.getElementById("search-villages");
   const filters = Array.from(document.querySelectorAll(".filter"));
-  let meta, coreRecords = [], villageRecords = null, filter = "all", selected = null;
+  let meta, coreRecords = [], villageRecords = null, filter = "all", selected = null, activeIndex = -1;
   let index = new Map();
   const make = (tag, text) => { const element = document.createElement(tag); if (text !== undefined) element.textContent = text; return element; };
   const setIndex = () => { index = core.indexRecords(villageRecords ? coreRecords.concat(villageRecords) : coreRecords); };
@@ -30,11 +30,11 @@
       if (filter !== "village" && villageRecords === null) villageButton.hidden = false;
       return;
     }
-    matches.forEach((record) => {
+    matches.forEach((record, resultIndex) => {
       const item = make("li"), button = make("button"); button.type = "button"; button.className = "result";
       const name = make("strong", record.name); const badge = make("span", core.labels[record.type]); badge.className = "badge " + record.type;
       const crumb = make("span", core.breadcrumbText(record, index)); crumb.className = "crumb";
-      button.append(name, badge, crumb); button.addEventListener("click", () => renderDetail(record)); item.append(button); results.append(item);
+      button.append(name, badge, crumb); button.addEventListener("click", () => { activeIndex = resultIndex; renderDetail(record); }); item.append(button); results.append(item);
     });
   }
   function fieldList(record) {
@@ -59,8 +59,12 @@
       lines.forEach((line) => section.append(make("p", line))); detail.append(section);
     }
     const actions = make("div"); actions.className = "detail-actions";
-    const jsonButton = make("button", "Copy JSON"); jsonButton.type = "button"; jsonButton.addEventListener("click", () => copy(JSON.stringify(core.publicRecord(record), null, 2) + "\n", "JSON"));
-    const aiButton = make("button", "Copy for AI"); aiButton.type = "button"; aiButton.addEventListener("click", () => copy(core.formatAiContext(record, index, meta), "AI context"));
+    const copyIfActive = (content, label) => {
+      if (!core.canUseSelected(record, { filter, selected })) return;
+      copy(content, label);
+    };
+    const jsonButton = make("button", "Copy JSON"); jsonButton.type = "button"; jsonButton.addEventListener("click", () => copyIfActive(JSON.stringify(core.publicRecord(record), null, 2) + "\n", "JSON"));
+    const aiButton = make("button", "Copy for AI"); aiButton.type = "button"; aiButton.addEventListener("click", () => copyIfActive(core.formatAiContext(record, index, meta), "AI context"));
     actions.append(jsonButton, aiButton); detail.append(actions); const status = make("p", ""); status.className = "status"; status.setAttribute("aria-live", "polite"); detail.append(status);
   }
   async function loadVillages() {
@@ -71,13 +75,28 @@
   }
   async function chooseFilter(next) {
     if (next === "village" && !(await loadVillages())) return;
-    filter = next; filters.forEach((button) => { const active = button.dataset.filter === filter; button.classList.toggle("active", active); button.setAttribute("aria-pressed", String(active)); });
+    const nextState = core.changeFilterState({ filter, selected, activeIndex }, next);
+    filter = nextState.filter; activeIndex = nextState.activeIndex;
+    if (nextState.selected !== selected) clearDetail();
+    selected = nextState.selected;
+    filters.forEach((button) => { const active = button.dataset.filter === filter; button.classList.toggle("active", active); button.setAttribute("aria-pressed", String(active)); });
     renderResults();
   }
   filters.forEach((button) => button.addEventListener("click", () => chooseFilter(button.dataset.filter)));
   villageButton.addEventListener("click", async () => { if (await loadVillages()) chooseFilter("village"); });
-  query.addEventListener("input", renderResults);
-  query.addEventListener("keydown", (event) => { if (event.key === "ArrowDown") { const first = results.querySelector("button"); if (first) { event.preventDefault(); first.focus(); } } else if (event.key === "Enter") { const first = results.querySelector("button"); if (first) { event.preventDefault(); first.click(); } } else if (event.key === "Escape") { query.value = ""; clearDetail(); renderResults(); } });
-  results.addEventListener("keydown", (event) => { if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return; const buttons = Array.from(results.querySelectorAll("button")); const position = buttons.indexOf(document.activeElement); const next = buttons[position + (event.key === "ArrowDown" ? 1 : -1)]; if (next) { event.preventDefault(); next.focus(); } });
+  query.addEventListener("input", () => { activeIndex = -1; renderResults(); });
+  function dismissSearch() {
+    const state = core.clearSearchState({ query: query.value, selected, activeIndex });
+    query.value = state.query; selected = state.selected; activeIndex = state.activeIndex;
+    clearDetail(); renderResults(); query.focus();
+  }
+  query.addEventListener("keydown", (event) => { if (event.key === "ArrowDown") { const first = results.querySelector("button"); if (first) { event.preventDefault(); activeIndex = 0; first.focus(); } } else if (event.key === "Enter") { const first = results.querySelector("button"); if (first) { event.preventDefault(); activeIndex = 0; first.click(); } } else if (event.key === "Escape") { event.preventDefault(); dismissSearch(); } });
+  results.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") { event.preventDefault(); dismissSearch(); return; }
+    if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+    const buttons = Array.from(results.querySelectorAll("button")); const position = buttons.indexOf(document.activeElement);
+    activeIndex = core.moveActiveResult(position, event.key, buttons.length);
+    const next = buttons[activeIndex]; if (next && activeIndex !== position) { event.preventDefault(); next.focus(); }
+  });
   Promise.all([fetch("data/explorer-meta.json"), fetch("data/search-core.json")]).then(async ([metaResponse, coreResponse]) => { if (!metaResponse.ok || !coreResponse.ok) throw new Error("Static data request failed"); meta = await metaResponse.json(); coreRecords = await coreResponse.json(); setIndex(); query.disabled = false; loadState.textContent = "جست‌وجوی دادهٔ رایج آماده است."; renderMetadata(); renderResults(); }).catch(() => { showError("بارگیری دادهٔ کاوشگر ناموفق بود. پیوندهای دریافت مستقیم پایین صفحه همچنان در دسترس‌اند."); document.getElementById("metadata-content").replaceChildren(make("p", "فراداده بارگیری نشد؛ برای دریافت فایل‌ها از پیوندهای مستقیم استفاده کنید.")); });
 })();

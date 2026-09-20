@@ -32,6 +32,28 @@
   function normalizeSearch(value) {
     return String(value || "").normalize("NFC").replace(/[يى]/g, "ی").replace(/ك/g, "ک").replace(/[\s\u200c]+/g, " ").trim().toLocaleLowerCase("fa-IR");
   }
+  function isFilterCompatible(record, filter) {
+    if (!record) return false;
+    return filter === "all" ? record.type !== "village" : record.type === filter;
+  }
+  function changeFilterState(state, filter) {
+    return {
+      filter,
+      selected: isFilterCompatible(state.selected, filter) ? state.selected : null,
+      activeIndex: -1
+    };
+  }
+  function canUseSelected(record, state) {
+    return state.selected === record && isFilterCompatible(record, state.filter);
+  }
+  function clearSearchState(state) {
+    return { ...state, query: "", selected: null, activeIndex: -1 };
+  }
+  function moveActiveResult(activeIndex, key, resultCount) {
+    if (key === "ArrowDown" && activeIndex < resultCount - 1) return activeIndex + 1;
+    if (key === "ArrowUp" && activeIndex > 0) return activeIndex - 1;
+    return activeIndex;
+  }
   function searchRecords(records, query, type, limit) {
     const normalized = normalizeSearch(query);
     if (!normalized) return [];
@@ -70,5 +92,5 @@
     lines.push("", "selected_record:", JSON.stringify(publicRecord(record), null, 2));
     return lines.join("\n") + "\n";
   }
-  return { labels, sharedSemantics, normalizeSearch, searchRecords, indexRecords, breadcrumb, breadcrumbText, publicRecord, formatAiContext };
+  return { labels, sharedSemantics, normalizeSearch, isFilterCompatible, changeFilterState, canUseSelected, clearSearchState, moveActiveResult, searchRecords, indexRecords, breadcrumb, breadcrumbText, publicRecord, formatAiContext };
 });

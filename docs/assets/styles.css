@@ -1,4 +1,5 @@
-:root { color-scheme: light dark; --ink:#152033; --muted:#5d6979; --line:#d7dee8; --surface:#fff; --soft:#f4f7fb; --accent:#075d91; --accent-soft:#dff1fc; --focus:#e05d2d; --radius:12px; font-family:Tahoma, Arial, sans-serif; }
+@font-face { font-family:"Estedad"; src:url("./fonts/Estedad%5Bwght%5D.woff2") format("woff2"); font-style:normal; font-weight:100 900; font-display:swap; }
+:root { color-scheme: light dark; --ink:#152033; --muted:#5d6979; --line:#d7dee8; --surface:#fff; --soft:#f4f7fb; --accent:#075d91; --accent-soft:#dff1fc; --focus:#e05d2d; --radius:12px; font-family:"Estedad", sans-serif; }
 * { box-sizing:border-box; }
 body { margin:0; color:var(--ink); background:var(--soft); line-height:1.7; }
 a { color:var(--accent); text-underline-offset:3px; }
@@ -14,7 +15,8 @@ h1,h2,h3 { line-height:1.35; margin:.25em 0 .55em; } h1 { font-size:clamp(1.7rem
 .button.primary,.filter.active { background:var(--accent); color:#fff; } .filter { font-size:.86rem; padding:.35rem .55rem; }
 .section-heading { display:flex; justify-content:space-between; gap:16px; align-items:start; }
 .search-box { background:var(--soft); border-radius:10px; padding:18px; } label { display:block; font-weight:700; margin-bottom:7px; }
-input { width:100%; padding:.75rem; border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--ink); font:inherit; margin-bottom:12px; }
+input,button,select,textarea { font:inherit; }
+input { width:100%; padding:.75rem; border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--ink); margin-bottom:12px; }
 .explorer-grid { display:grid; grid-template-columns:minmax(0, 1fr) minmax(280px, .9fr); gap:24px; margin-top:18px; }
 .results { margin:0; padding:0; list-style:none; display:grid; gap:8px; } .result { width:100%; text-align:right; padding:12px; border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--ink); cursor:pointer; font:inherit; }
 .result:hover,.result:focus-visible { border-color:var(--accent); } .result strong { display:block; } .result .crumb { display:block; color:var(--muted); font-size:.84rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }

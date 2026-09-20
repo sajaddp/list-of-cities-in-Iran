@@ -81,7 +81,28 @@ export function writeExplorerData(repoRoot: string, datasets: Datasets, coordina
 
 export interface ExplorerVerification { coreRows: number; villageRows: number; duplicateSearchIds: number; invalidEntityReferences: number; invalidParentReferences: number; }
 
+export interface ExplorerShellVerification { fontPath: string; fontFormat: "woff2"; variableWeightRange: "100 900"; externalFontDependencies: 0; }
+
+export function verifyExplorerShell(repoRoot: string): ExplorerShellVerification {
+  const pagePath = path.join(repoRoot, "docs", "index.html");
+  const stylesheetPath = path.join(repoRoot, "docs", "assets", "styles.css");
+  const fontPath = path.join(repoRoot, "docs", "assets", "fonts", "Estedad[wght].woff2");
+  const licensePath = path.join(repoRoot, "docs", "assets", "fonts", "OFL.txt");
+  const page = fs.readFileSync(pagePath, "utf8");
+  const stylesheet = fs.readFileSync(stylesheetPath, "utf8");
+  const font = fs.readFileSync(fontPath);
+  if (!fs.existsSync(licensePath)) throw new Error("Explorer Estedad license notice is missing");
+  if (font.subarray(0, 4).toString("ascii") !== "wOF2") throw new Error("Explorer Estedad asset is not a WOFF2 file");
+  if (!stylesheet.includes('@font-face { font-family:"Estedad"; src:url("./fonts/Estedad%5Bwght%5D.woff2") format("woff2"); font-style:normal; font-weight:100 900; font-display:swap; }')) throw new Error("Explorer Estedad @font-face contract is missing or invalid");
+  if (!stylesheet.includes('font-family:"Estedad", sans-serif')) throw new Error("Explorer Estedad is not the primary UI font");
+  if (!stylesheet.includes("input,button,select,textarea { font:inherit; }")) throw new Error("Explorer form controls do not inherit the UI font");
+  if (/(?:@import\s+(?:url\()?\s*["']?https?:\/\/|src\s*:\s*url\(\s*["']?https?:\/\/)/i.test(stylesheet)) throw new Error("Explorer CSS has an external font dependency");
+  if (/<link\b(?=[^>]*\brel=["']stylesheet["'])(?=[^>]*\bhref=["']https?:\/\/)/i.test(page)) throw new Error("Explorer HTML has an external stylesheet dependency");
+  return { fontPath: "docs/assets/fonts/Estedad[wght].woff2", fontFormat: "woff2", variableWeightRange: "100 900", externalFontDependencies: 0 };
+}
+
 export function verifyExplorerData(repoRoot: string, datasets: Datasets, coordinates: CoordinateDatasets, manifest: Record<string, any>, outputRoot = path.join(repoRoot, "docs", "data")): ExplorerVerification {
+  verifyExplorerShell(repoRoot);
   const expected = explorerRecords(datasets, coordinates, manifest);
   const expectedMeta = explorerMeta(manifest, expected);
   const actualCore = JSON.parse(fs.readFileSync(path.join(outputRoot, "search-core.json"), "utf8")) as ExplorerRecord[];
