@@ -505,4 +505,17 @@ test("Pages shell keeps local assets, lazy villages, safe rendering, and reposit
     )
     .sort();
   assert.deepEqual(downloads, expected);
+  const aiDownloads = [
+    ...page.matchAll(
+      /https:\/\/raw\.githubusercontent\.com\/sajaddp\/list-of-cities-in-Iran\/main\/(dist\/llm\/[a-z-]+\.txt)/g,
+    ),
+  ]
+    .map((match) => match[1])
+    .sort();
+  assert.deepEqual(aiDownloads, [
+    "dist/llm/provinces.txt",
+    "dist/llm/counties.txt",
+    "dist/llm/cities.txt",
+    "dist/llm/cities-filtered.txt",
+  ].sort());
 });
