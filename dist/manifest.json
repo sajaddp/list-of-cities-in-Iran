@@ -1,6 +1,6 @@
 {
-  "datasetVersion": "3.0.0-phase2",
-  "schemaVersion": "3.0.0-phase2",
+  "datasetVersion": "3.0.0",
+  "schemaVersion": "3.0.0",
   "officialSourceYear": 1404,
   "source": {
     "filename": "offical/list.xlsx",
@@ -192,7 +192,7 @@
   ],
   "generator": {
     "name": "list-of-cities-in-iran-tools",
-    "version": "3.0.0-phase2",
+    "version": "3.0.0",
     "deterministic": true
   }
 }

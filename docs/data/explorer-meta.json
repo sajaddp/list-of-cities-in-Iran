@@ -1,6 +1,6 @@
 {
-  "datasetVersion": "3.0.0-phase2",
-  "schemaVersion": "3.0.0-phase2",
+  "datasetVersion": "3.0.0",
+  "schemaVersion": "3.0.0",
   "sourceYear": 1404,
   "repository": {
     "url": "https://github.com/sajaddp/list-of-cities-in-Iran",
