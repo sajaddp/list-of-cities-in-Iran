@@ -107,7 +107,42 @@ test("public-ID safety and collision checks fail loudly", () => { assert.throws(
 test("every generated artifact is deterministic across independent clean builds", () => { const first = mkdtempSync(join(tmpdir(), "iran-first-")); const second = mkdtempSync(join(tmpdir(), "iran-second-")); try { buildPipeline(root, first); const firstHashes = hashes(first); const firstMigration = sha256(readFileSync(join(root, "migration", "v2-to-v3.csv"))); buildPipeline(root, second); assert.deepEqual(hashes(second), firstHashes); assert.equal(sha256(readFileSync(join(root, "migration", "v2-to-v3.csv"))), firstMigration); } finally { rmSync(first, { recursive: true, force: true }); rmSync(second, { recursive: true, force: true }); } });
 test("Phase 2 LLM contexts are self-describing TSV with explicit city/county semantics", () => { const directory = mkdtempSync(join(tmpdir(), "iran-llm-v3-")); try { const result = buildPipeline(root, directory); const cities = load(directory, "cities") as { name: string }[]; const counties = load(directory, "counties") as { name: string }[]; assert.ok(cities.some((city) => counties.some((county) => county.name === city.name))); for (const scope of LLM_SCOPES) { const text = readFileSync(join(directory, "llm", `${scope}.txt`), "utf8"); const check = inspectLlmContext(scope, text); assert.equal(check.rows, result.rowCounts[scope]); assert.deepEqual(check.columns, DATASET_COLUMNS[scope]); assert.equal(check.semanticHeaderValid, true); assert.ok(text.includes("source_year: 1404") && text.includes("schema: 1") && text.endsWith("\n")); } assert.equal(readdirSync(join(directory, "llm")).sort().join(","), "cities-filtered.txt,cities.txt,counties.txt,provinces.txt"); } finally { rmSync(directory, { recursive: true, force: true }); } });
 test("Phase 2 coordinate enrichment is complete, provenance-backed, strict, and parity safe", () => { const directory = mkdtempSync(join(tmpdir(), "iran-coordinates-v3-")); try { buildPipeline(root, directory); const provinceCapitals = JSON.parse(readFileSync(join(directory, "json", "province-capitals.json"), "utf8")); const countyCenters = JSON.parse(readFileSync(join(directory, "json", "county-centers.json"), "utf8")); const source = loadCoordinateSources(root); const data = Object.fromEntries(["provinces", "counties", "districts", "rurals", "cities", "cities-filtered", "villages", "all"].map((name) => [name, load(directory, name as keyof Datasets)])) as Datasets; validateCoordinateDatasets(source.datasets, data, source.registry); assert.equal(provinceCapitals.length, data.provinces.length); assert.equal(countyCenters.length, data.counties.length); assert.equal(new Set(countyCenters.map((record: { county_id: number }) => record.county_id)).size, data.counties.length); assert.ok([...provinceCapitals, ...countyCenters].every((record: { latitude: number; longitude: number; source_id: string }) => Number.isFinite(record.latitude) && Number.isFinite(record.longitude) && !(record.latitude === 0 && record.longitude === 0) && source.registry.sources.some((item) => item.id === record.source_id))); assert.ok(verifyCoordinateFormatParity(directory).passed); const ajv = new Ajv({ allErrors: true, strict: false }); const invalid = clone(provinceCapitals); delete invalid[0].source_id; assert.equal(ajv.compile({ ...coordinateSchema, $ref: "#/$defs/province-capitals" })(invalid), false); assert.deepEqual(Object.keys(provinceCapitals[0]), COORDINATE_DATASET_COLUMNS["province-capitals"]); } finally { rmSync(directory, { recursive: true, force: true }); } });
-test("README and LLM navigation retain V3 developer-contract links and the immutable footer", () => { const readme = readFileSync(join(root, "README.md"), "utf8"); const footer = "Made with ❤ by [Sajad Dehshiri](https://sajaddehshiri.ir)"; assert.equal(readme.split("\n").filter((line) => line.trim()).at(-1), footer); for (const file of ["dist/json/provinces.json", "dist/json/counties.json", "dist/json/cities-filtered.json", "dist/json/cities.json", "dist/json/districts.json", "dist/json/rurals.json", "dist/json/villages.json", "dist/json/all.json", "dist/manifest.json", "dist/schema.json", "docs/llms.txt"]) assert.ok(existsSync(join(root, file))); assert.ok(readme.includes("Which file should I use?") && readme.includes("City = شهر. County = شهرستان.") && readme.includes("cities-filtered.*")); const llms = readFileSync(join(root, "docs", "llms.txt"), "utf8"); assert.ok(llms.includes("dist/manifest.json") && llms.includes("dist/schema.json") && llms.includes("dist/llm/counties.txt")); });
+test("README retains V3 facts, direct downloads, local links, and the immutable footer", () => {
+  const readme = readFileSync(join(root, "README.md"), "utf8");
+  const footer = "Made with ❤ by [Sajad Dehshiri](https://sajaddehshiri.ir)";
+  const manifest = JSON.parse(readFileSync(join(root, "dist", "manifest.json"), "utf8"));
+
+  assert.equal(readme.split("\n").filter((line) => line.trim()).at(-1), footer);
+  assert.ok(readme.startsWith("# تقسیمات کشوری"));
+  assert.ok(readme.includes(`Current official source year: **${manifest.officialSourceYear}**`));
+  assert.ok(readme.includes("City = شهر. County = شهرستان. City != County."));
+  assert.ok(readme.includes("cities-filtered") && readme.includes("derived / convenience"));
+  assert.ok(readme.includes("province capital") && readme.includes("county administrative center / seat"));
+  assert.ok(readme.includes("not training dataset") && readme.includes("LLM Context"));
+  assert.ok(!readme.includes("iran-divisions"));
+
+  for (const dataset of manifest.generatedDatasets) {
+    assert.match(readme, new RegExp("\\\\|[^\\\\n]*`" + dataset.name + "`[^\\\\n]*\\\\|\\\\s*" + dataset.rowCount + "\\\\s*\\\\|"));
+    for (const path of Object.values(dataset.paths)) {
+      assert.ok(readme.includes(`](${path})`), `README must link ${path}`);
+      assert.ok(existsSync(join(root, path)), `Missing generated dataset ${path}`);
+    }
+  }
+  for (const dataset of manifest.enrichmentDatasets) {
+    for (const path of Object.values(dataset.paths)) {
+      assert.ok(readme.includes(`](${path})`), `README must link ${path}`);
+      assert.ok(existsSync(join(root, path)), `Missing enrichment dataset ${path}`);
+    }
+  }
+
+  const localLinks = [...readme.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)]
+    .map((match) => match[1].split(/[?#]/, 1)[0])
+    .filter((target) => target && !target.startsWith("http://") && !target.startsWith("https://") && !target.startsWith("#"));
+  for (const target of localLinks) assert.ok(existsSync(join(root, target)), `Broken README link: ${target}`);
+
+  const llms = readFileSync(join(root, "docs", "llms.txt"), "utf8");
+  assert.ok(llms.includes("dist/manifest.json") && llms.includes("dist/schema.json") && llms.includes("dist/llm/counties.txt"));
+});
 
 test("Pages projection is deterministic, resolves every public entity, and separates village loading", () => {
   const directory = mkdtempSync(join(tmpdir(), "iran-explorer-v3-"));
