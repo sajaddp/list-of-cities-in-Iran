@@ -25,6 +25,7 @@ const emptyDatasets = (): Datasets => ({
   rurals: [],
   cities: [],
   "cities-filtered": [],
+  "urban-zones": [],
   villages: [],
   all: [],
 });
@@ -234,6 +235,7 @@ test("manifest validator accepts the contract and rejects invalid entity types",
       { scope: "counties" },
       { scope: "cities-filtered" },
       { scope: "cities" },
+      { scope: "urban-zones" },
     ],
   };
   assert.equal(validateManifest(manifest), true);
@@ -244,6 +246,22 @@ test("manifest validator accepts the contract and rejects invalid entity types",
     }),
     false,
   );
+});
+
+test("city datasets form the published real-city and urban-zone partition", () => {
+  const cities = JSON.parse(readFileSync(join(root, "dist", "json", "cities.json"), "utf8"));
+  const realCities = JSON.parse(readFileSync(join(root, "dist", "json", "cities-filtered.json"), "utf8"));
+  const urbanZones = JSON.parse(readFileSync(join(root, "dist", "json", "urban-zones.json"), "utf8"));
+  assert.equal(cities.length, 1672);
+  assert.equal(realCities.length, 1481);
+  assert.equal(urbanZones.length, 191);
+  const cityIds = new Set(cities.map((record: { id: number }) => record.id));
+  const realCityIds = new Set(realCities.map((record: { id: number }) => record.id));
+  const urbanZoneIds = new Set(urbanZones.map((record: { id: number }) => record.id));
+  assert.equal([...realCityIds].filter((id) => urbanZoneIds.has(id)).length, 0);
+  assert.equal(new Set([...realCityIds, ...urbanZoneIds]).size, cityIds.size);
+  assert.deepEqual(new Set([...realCityIds, ...urbanZoneIds]), cityIds);
+  assert.ok(realCities.some((record: { name: string }) => record.name === "قورچی باشی"));
 });
 
 test("coordinate schema rejects out-of-range, mistyped, and extra fields", () => {
@@ -517,5 +535,6 @@ test("Pages shell keeps local assets, lazy villages, safe rendering, and reposit
     "dist/llm/counties.txt",
     "dist/llm/cities.txt",
     "dist/llm/cities-filtered.txt",
+    "dist/llm/urban-zones.txt",
   ].sort());
 });

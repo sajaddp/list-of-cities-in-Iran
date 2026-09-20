@@ -1,6 +1,6 @@
 {
-  "datasetVersion": "3.0.0",
-  "schemaVersion": "3.0.0",
+  "datasetVersion": "3.1.0",
+  "schemaVersion": "3.1.0",
   "officialSourceYear": 1404,
   "source": {
     "filename": "offical/list.xlsx",
@@ -13,6 +13,7 @@
     "rurals": "rural",
     "cities": "city",
     "cities-filtered": "city",
+    "urban-zones": "urban-zone",
     "villages": "village",
     "all": "mixed"
   },
@@ -76,13 +77,27 @@
       "name": "cities-filtered",
       "entityType": "city",
       "derived": true,
-      "rowCount": 1185,
+      "rowCount": 1481,
       "paths": {
         "json": "dist/json/cities-filtered.json",
         "csv": "dist/csv/cities-filtered.csv",
         "xlsx": "dist/xlsx/cities-filtered.xlsx"
       },
-      "filterRule": "exclude cities whose current-name filter slug includes '-' or '_'"
+      "partitionOf": "cities",
+      "classificationSource": "classification/urban-zones.json"
+    },
+    {
+      "name": "urban-zones",
+      "entityType": "urban-zone",
+      "derived": true,
+      "rowCount": 191,
+      "paths": {
+        "json": "dist/json/urban-zones.json",
+        "csv": "dist/csv/urban-zones.csv",
+        "xlsx": "dist/xlsx/urban-zones.xlsx"
+      },
+      "partitionOf": "cities",
+      "classificationSource": "classification/urban-zones.json"
     },
     {
       "name": "villages",
@@ -184,15 +199,23 @@
     {
       "scope": "cities-filtered",
       "entityType": "city",
-      "rowCount": 1185,
+      "rowCount": 1481,
       "path": "dist/llm/cities-filtered.txt",
+      "format": "header+tsv",
+      "derived": true
+    },
+    {
+      "scope": "urban-zones",
+      "entityType": "urban-zone",
+      "rowCount": 191,
+      "path": "dist/llm/urban-zones.txt",
       "format": "header+tsv",
       "derived": true
     }
   ],
   "generator": {
     "name": "list-of-cities-in-iran-tools",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "deterministic": true
   }
 }

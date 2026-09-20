@@ -17,7 +17,7 @@ export interface CanonicalEntity {
 export interface CanonicalModel {
   entities: CanonicalEntity[]; byKey: Map<string, CanonicalEntity>; sourceRows: SourceRow[]; sourceCounts: Record<Coderec, number>;
 }
-export type DatasetName = "provinces" | "counties" | "districts" | "rurals" | "cities" | "cities-filtered" | "villages" | "all";
+export type DatasetName = "provinces" | "counties" | "districts" | "rurals" | "cities" | "cities-filtered" | "urban-zones" | "villages" | "all";
 export type PublicRecord = Record<string, string | number | null>;
 export type Datasets = Record<DatasetName, PublicRecord[]>;
 export type CoordinateDatasetName = "province-capitals" | "county-centers";

@@ -1,6 +1,6 @@
 {
-  "datasetVersion": "3.0.0",
-  "schemaVersion": "3.0.0",
+  "datasetVersion": "3.1.0",
+  "schemaVersion": "3.1.0",
   "sourceYear": 1404,
   "repository": {
     "url": "https://github.com/sajaddp/list-of-cities-in-Iran",
@@ -14,7 +14,8 @@
     "districts": 1193,
     "rurals": 2777,
     "cities": 1672,
-    "cities-filtered": 1185,
+    "cities-filtered": 1481,
+    "urban-zones": 191,
     "villages": 99317,
     "all": 105474
   },

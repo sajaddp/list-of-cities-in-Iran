@@ -4,7 +4,7 @@ City = شهر; County = شهرستان. They are different entity types even whe
 
 Manifest: dist/manifest.json
 JSON Schema: dist/schema.json
-Main JSON: dist/json/provinces.json, dist/json/counties.json, dist/json/cities-filtered.json, dist/json/cities.json, dist/json/all.json
-LLM Context: dist/llm/provinces.txt, dist/llm/counties.txt, dist/llm/cities-filtered.txt, dist/llm/cities.txt
+Main JSON: dist/json/provinces.json, dist/json/counties.json, dist/json/cities-filtered.json, dist/json/urban-zones.json, dist/json/cities.json, dist/json/all.json
+LLM Context: dist/llm/provinces.txt, dist/llm/counties.txt, dist/llm/cities-filtered.txt, dist/llm/urban-zones.txt, dist/llm/cities.txt
 Administrative source/semantics: offical/list.xlsx and offical/coderec.md
 Coordinate provenance: enrichment/coordinates/sources.json and manifest enrichmentSources

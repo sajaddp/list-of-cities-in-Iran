@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "list-of-cities-in-iran V3 datasets",
+  "title": "list-of-cities-in-iran V3.1 datasets",
   "$defs": {
     "provinces": {
       "type": "array",
@@ -169,6 +169,43 @@
       }
     },
     "cities-filtered": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "province_id",
+          "county_id",
+          "district_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "province_id": {
+            "type": "integer"
+          },
+          "county_id": {
+            "type": "integer"
+          },
+          "district_id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "urban-zones": {
       "type": "array",
       "items": {
         "type": "object",

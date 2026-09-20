@@ -6,12 +6,12 @@ import { CoordinateDatasetName, CoordinateDatasets, DatasetName, Datasets, Publi
 import { combinedSchema, validateDatasets } from "./schema";
 import { COORDINATE_DATASET_COLUMNS, COORDINATE_DATASET_NAMES, coordinateAsPublicRecords } from "./coordinates";
 import { ALL_COLUMNS } from "./project";
-const names: DatasetName[] = ["provinces", "counties", "districts", "rurals", "cities", "cities-filtered", "villages", "all"];
+const names: DatasetName[] = ["provinces", "counties", "districts", "rurals", "cities", "cities-filtered", "urban-zones", "villages", "all"];
 const nl = "\n";
 export const sha256 = (data: Buffer | string) => crypto.createHash("sha256").update(data).digest("hex");
 export const DATASET_COLUMNS: Record<DatasetName, readonly string[]> = {
   provinces: ["id", "name", "slug", "tel_prefix"], counties: ["id", "name", "slug", "province_id"], districts: ["id", "name", "slug", "province_id", "county_id"],
-  rurals: ["id", "name", "slug", "province_id", "county_id", "district_id"], cities: ["id", "name", "slug", "province_id", "county_id", "district_id"], "cities-filtered": ["id", "name", "slug", "province_id", "county_id", "district_id"],
+  rurals: ["id", "name", "slug", "province_id", "county_id", "district_id"], cities: ["id", "name", "slug", "province_id", "county_id", "district_id"], "cities-filtered": ["id", "name", "slug", "province_id", "county_id", "district_id"], "urban-zones": ["id", "name", "slug", "province_id", "county_id", "district_id"],
   villages: ["id", "name", "slug", "province_id", "county_id", "district_id", "rural_id", "coderec", "village_code", "mapped_rural_code"], all: ALL_COLUMNS,
 };
 const csvCell = (value: string | number | null) => { const text = value === null ? "" : String(value); return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text; };

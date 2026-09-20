@@ -2,7 +2,7 @@ import { DatasetName, PublicRecord } from "./types";
 import { DATASET_COLUMNS } from "./output";
 
 export const LLM_CONTEXT_VERSION = 1;
-export const LLM_SCOPES: DatasetName[] = ["provinces", "counties", "cities", "cities-filtered"];
+export const LLM_SCOPES: DatasetName[] = ["provinces", "counties", "cities", "cities-filtered", "urban-zones"];
 
 const sharedSemantics = [
   "county = شهرستان; an administrative division.",
@@ -11,7 +11,7 @@ const sharedSemantics = [
   "same name does not mean the same entity.",
 ];
 
-const entityFor = (scope: DatasetName): string => scope === "provinces" ? "province" : scope === "counties" ? "county" : "city";
+const entityFor = (scope: DatasetName): string => scope === "provinces" ? "province" : scope === "counties" ? "county" : scope === "urban-zones" ? "urban-zone" : "city";
 
 function tsvCell(value: string | number | null): string {
   const text = value === null ? "" : String(value);
@@ -25,7 +25,9 @@ export function formatLlmContext(scope: DatasetName, records: PublicRecord[], so
   const columns = DATASET_COLUMNS[scope];
   const semantics = scope === "provinces"
     ? ["province = استان; a first-level administrative division.", ...sharedSemantics]
-    : sharedSemantics;
+    : scope === "urban-zones"
+      ? ["urban zone = ناحیه شهری; not a real city.", ...sharedSemantics]
+      : sharedSemantics;
   const lines = [
     "# list-of-cities-in-Iran LLM Context",
     `schema: ${LLM_CONTEXT_VERSION}`,

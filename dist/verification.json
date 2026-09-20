@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "3.1.0",
   "source": {
     "year": 1404,
     "filename": "offical/list.xlsx",
@@ -158,7 +158,8 @@
         "districts": 1193,
         "rurals": 2777,
         "cities": 1672,
-        "cities-filtered": 1185,
+        "cities-filtered": 1481,
+        "urban-zones": 191,
         "villages": 99317,
         "all": 105474
       },
@@ -170,14 +171,25 @@
       "districts": 1193,
       "rurals": 2777,
       "cities": 1672,
-      "cities-filtered": 1185,
+      "cities-filtered": 1481,
+      "urban-zones": 191,
       "villages": 99317,
       "all": 105474
     },
-    "citiesFiltered": {
-      "derived": true,
-      "rule": "exclude cities whose current-name filter slug includes '-' or '_'",
-      "subset": true
+    "cityPartition": {
+      "source": "classification/urban-zones.json",
+      "cities": 1672,
+      "citiesFiltered": {
+        "realCities": true,
+        "rows": 1481,
+        "subset": true
+      },
+      "urbanZones": {
+        "rows": 191,
+        "subset": true
+      },
+      "overlap": 0,
+      "complete": true
     },
     "villages": {
       "sourceCoderecs": [
@@ -195,6 +207,7 @@
         "rurals": "rural",
         "cities": "city",
         "cities-filtered": "city",
+        "urban-zones": "urban-zone",
         "villages": "village",
         "all": "mixed"
       }
@@ -241,7 +254,7 @@
         },
         "cities-filtered": {
           "scope": "cities-filtered",
-          "rows": 1185,
+          "rows": 1481,
           "columns": [
             "id",
             "name",
@@ -250,7 +263,21 @@
             "county_id",
             "district_id"
           ],
-          "bytes": 74272,
+          "bytes": 96317,
+          "semanticHeaderValid": true
+        },
+        "urban-zones": {
+          "scope": "urban-zones",
+          "rows": 191,
+          "columns": [
+            "id",
+            "name",
+            "slug",
+            "province_id",
+            "county_id",
+            "district_id"
+          ],
+          "bytes": 12753,
           "semanticHeaderValid": true
         }
       },
@@ -321,6 +348,7 @@
         "dist/llm/counties.txt",
         "dist/llm/cities-filtered.txt",
         "dist/llm/cities.txt",
+        "dist/llm/urban-zones.txt",
         "dist/json/province-capitals.json",
         "dist/json/county-centers.json",
         "docs/llms.txt",

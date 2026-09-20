@@ -1,0 +1,1530 @@
+[
+  {
+    "id": 1000001001678,
+    "name": "اراک 1",
+    "slug": "اراک-1",
+    "province_id": 100,
+    "county_id": 1000001,
+    "district_id": 1000001002
+  },
+  {
+    "id": 1000001001679,
+    "name": "اراک 2",
+    "slug": "اراک-2",
+    "province_id": 100,
+    "county_id": 1000001,
+    "district_id": 1000001002
+  },
+  {
+    "id": 1000001001680,
+    "name": "اراک 3",
+    "slug": "اراک-3",
+    "province_id": 100,
+    "county_id": 1000001,
+    "district_id": 1000001002
+  },
+  {
+    "id": 1000001002858,
+    "name": "اراک 4",
+    "slug": "اراک-4",
+    "province_id": 100,
+    "county_id": 1000001,
+    "district_id": 1000001002
+  },
+  {
+    "id": 1000001002859,
+    "name": "اراک 5",
+    "slug": "اراک-5",
+    "province_id": 100,
+    "county_id": 1000001,
+    "district_id": 1000001002
+  },
+  {
+    "id": 1000006002860,
+    "name": "ساوه  1",
+    "slug": "ساوه-1",
+    "province_id": 100,
+    "county_id": 1000006,
+    "district_id": 1000006003
+  },
+  {
+    "id": 1000006002861,
+    "name": "ساوه  2",
+    "slug": "ساوه-2",
+    "province_id": 100,
+    "county_id": 1000006,
+    "district_id": 1000006003
+  },
+  {
+    "id": 1010003002538,
+    "name": "بندرانزلی 1",
+    "slug": "بندرانزلی-1",
+    "province_id": 101,
+    "county_id": 1010003,
+    "district_id": 1010003001
+  },
+  {
+    "id": 1010003002539,
+    "name": "بندرانزلی 2",
+    "slug": "بندرانزلی-2",
+    "province_id": 101,
+    "county_id": 1010003,
+    "district_id": 1010003001
+  },
+  {
+    "id": 1010005001654,
+    "name": "رشت 1",
+    "slug": "رشت-1",
+    "province_id": 101,
+    "county_id": 1010005,
+    "district_id": 1010005005
+  },
+  {
+    "id": 1010005001655,
+    "name": "رشت 2",
+    "slug": "رشت-2",
+    "province_id": 101,
+    "county_id": 1010005,
+    "district_id": 1010005005
+  },
+  {
+    "id": 1010005001656,
+    "name": "رشت 3",
+    "slug": "رشت-3",
+    "province_id": 101,
+    "county_id": 1010005,
+    "district_id": 1010005005
+  },
+  {
+    "id": 1010005002098,
+    "name": "رشت 4",
+    "slug": "رشت-4",
+    "province_id": 101,
+    "county_id": 1010005,
+    "district_id": 1010005005
+  },
+  {
+    "id": 1010005002099,
+    "name": "رشت 5",
+    "slug": "رشت-5",
+    "province_id": 101,
+    "county_id": 1010005,
+    "district_id": 1010005005
+  },
+  {
+    "id": 1020002002743,
+    "name": "بابل 1",
+    "slug": "بابل-1",
+    "province_id": 102,
+    "county_id": 1020002,
+    "district_id": 1020002002
+  },
+  {
+    "id": 1020002002744,
+    "name": "بابل 2",
+    "slug": "بابل-2",
+    "province_id": 102,
+    "county_id": 1020002,
+    "district_id": 1020002002
+  },
+  {
+    "id": 1020007002740,
+    "name": "ساری 1",
+    "slug": "ساری-1",
+    "province_id": 102,
+    "county_id": 1020007,
+    "district_id": 1020007003
+  },
+  {
+    "id": 1020007002741,
+    "name": "ساری 2",
+    "slug": "ساری-2",
+    "province_id": 102,
+    "county_id": 1020007,
+    "district_id": 1020007003
+  },
+  {
+    "id": 1020007002742,
+    "name": "ساری 3",
+    "slug": "ساری-3",
+    "province_id": 102,
+    "county_id": 1020007,
+    "district_id": 1020007003
+  },
+  {
+    "id": 1030003001621,
+    "name": "تبریز 1",
+    "slug": "تبریز1",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003001622,
+    "name": "تبریز 2",
+    "slug": "تبریز2",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003001623,
+    "name": "تبریز 3",
+    "slug": "تبریز3",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003001624,
+    "name": "تبریز 4",
+    "slug": "تبریز4",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003001651,
+    "name": "تبریز 5",
+    "slug": "تبریز5",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003001652,
+    "name": "تبریز 6",
+    "slug": "تبریز6",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003001653,
+    "name": "تبریز 7",
+    "slug": "تبریز7",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003002071,
+    "name": "تبریز  9",
+    "slug": "تبریز-9",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003002072,
+    "name": "تبریز  10",
+    "slug": "تبریز-10",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030003002521,
+    "name": "تبریز 8",
+    "slug": "تبریز8",
+    "province_id": 103,
+    "county_id": 1030003,
+    "district_id": 1030003003
+  },
+  {
+    "id": 1030006001649,
+    "name": "مراغه 1",
+    "slug": "مراغه-1",
+    "province_id": 103,
+    "county_id": 1030006,
+    "district_id": 1030006002
+  },
+  {
+    "id": 1030006001650,
+    "name": "مراغه 2",
+    "slug": "مراغه-2",
+    "province_id": 103,
+    "county_id": 1030006,
+    "district_id": 1030006002
+  },
+  {
+    "id": 1040001002528,
+    "name": "ارومیه 1",
+    "slug": "ارومیه-1",
+    "province_id": 104,
+    "county_id": 1040001,
+    "district_id": 1040001004
+  },
+  {
+    "id": 1040001002529,
+    "name": "ارومیه 2",
+    "slug": "ارومیه-2",
+    "province_id": 104,
+    "county_id": 1040001,
+    "district_id": 1040001004
+  },
+  {
+    "id": 1040001002530,
+    "name": "ارومیه 3",
+    "slug": "ارومیه-3",
+    "province_id": 104,
+    "county_id": 1040001,
+    "district_id": 1040001004
+  },
+  {
+    "id": 1040001002531,
+    "name": "ارومیه 4",
+    "slug": "ارومیه-4",
+    "province_id": 104,
+    "county_id": 1040001,
+    "district_id": 1040001004
+  },
+  {
+    "id": 1040001002853,
+    "name": "ارومیه 5",
+    "slug": "ارومیه-5",
+    "province_id": 104,
+    "county_id": 1040001,
+    "district_id": 1040001004
+  },
+  {
+    "id": 1050002001666,
+    "name": "کرمانشاه 1",
+    "slug": "کرمانشاه-1",
+    "province_id": 105,
+    "county_id": 1050002,
+    "district_id": 1050002004
+  },
+  {
+    "id": 1050002001667,
+    "name": "کرمانشاه 2",
+    "slug": "کرمانشاه-2",
+    "province_id": 105,
+    "county_id": 1050002,
+    "district_id": 1050002004
+  },
+  {
+    "id": 1050002001668,
+    "name": "کرمانشاه 3",
+    "slug": "کرمانشاه-3",
+    "province_id": 105,
+    "county_id": 1050002,
+    "district_id": 1050002004
+  },
+  {
+    "id": 1050002001669,
+    "name": "کرمانشاه 4",
+    "slug": "کرمانشاه-4",
+    "province_id": 105,
+    "county_id": 1050002,
+    "district_id": 1050002004
+  },
+  {
+    "id": 1050002001670,
+    "name": "کرمانشاه 5",
+    "slug": "کرمانشاه-5",
+    "province_id": 105,
+    "county_id": 1050002,
+    "district_id": 1050002004
+  },
+  {
+    "id": 1050002001671,
+    "name": "کرمانشاه 6",
+    "slug": "کرمانشاه-6",
+    "province_id": 105,
+    "county_id": 1050002,
+    "district_id": 1050002004
+  },
+  {
+    "id": 1050002002856,
+    "name": "کرمانشاه 7",
+    "slug": "کرمانشاه-7",
+    "province_id": 105,
+    "county_id": 1050002,
+    "district_id": 1050002004
+  },
+  {
+    "id": 1050002002857,
+    "name": "کرمانشاه 8",
+    "slug": "کرمانشاه-8",
+    "province_id": 105,
+    "county_id": 1050002,
+    "district_id": 1050002004
+  },
+  {
+    "id": 1060001001687,
+    "name": "آبادان 1",
+    "slug": "آبادان-1",
+    "province_id": 106,
+    "county_id": 1060001,
+    "district_id": 1060001002
+  },
+  {
+    "id": 1060001001688,
+    "name": "آبادان 2",
+    "slug": "آبادان-2",
+    "province_id": 106,
+    "county_id": 1060001,
+    "district_id": 1060001002
+  },
+  {
+    "id": 1060001002855,
+    "name": "آبادان 3",
+    "slug": "آبادان-3",
+    "province_id": 106,
+    "county_id": 1060001,
+    "district_id": 1060001002
+  },
+  {
+    "id": 1060003001625,
+    "name": "اهواز 1",
+    "slug": "اهواز1",
+    "province_id": 106,
+    "county_id": 1060003,
+    "district_id": 1060003002
+  },
+  {
+    "id": 1060003001626,
+    "name": "اهواز 2",
+    "slug": "اهواز2",
+    "province_id": 106,
+    "county_id": 1060003,
+    "district_id": 1060003002
+  },
+  {
+    "id": 1060003001684,
+    "name": "اهواز 3",
+    "slug": "اهواز3",
+    "province_id": 106,
+    "county_id": 1060003,
+    "district_id": 1060003002
+  },
+  {
+    "id": 1060003001685,
+    "name": "اهواز 4",
+    "slug": "اهواز4",
+    "province_id": 106,
+    "county_id": 1060003,
+    "district_id": 1060003002
+  },
+  {
+    "id": 1060003001686,
+    "name": "اهواز 5",
+    "slug": "اهواز5",
+    "province_id": 106,
+    "county_id": 1060003,
+    "district_id": 1060003002
+  },
+  {
+    "id": 1060003002668,
+    "name": "اهواز 6",
+    "slug": "اهواز6",
+    "province_id": 106,
+    "county_id": 1060003,
+    "district_id": 1060003002
+  },
+  {
+    "id": 1060003002669,
+    "name": "اهواز 7",
+    "slug": "اهواز7",
+    "province_id": 106,
+    "county_id": 1060003,
+    "district_id": 1060003002
+  },
+  {
+    "id": 1060003002670,
+    "name": "اهواز 8",
+    "slug": "اهواز8",
+    "province_id": 106,
+    "county_id": 1060003,
+    "district_id": 1060003002
+  },
+  {
+    "id": 1060008001689,
+    "name": "دزفول 1",
+    "slug": "دزفول-1",
+    "province_id": 106,
+    "county_id": 1060008,
+    "district_id": 1060008002
+  },
+  {
+    "id": 1060008001690,
+    "name": "دزفول 2",
+    "slug": "دزفول-2",
+    "province_id": 106,
+    "county_id": 1060008,
+    "district_id": 1060008002
+  },
+  {
+    "id": 1060008002865,
+    "name": "دزفول 3",
+    "slug": "دزفول-3",
+    "province_id": 106,
+    "county_id": 1060008,
+    "district_id": 1060008002
+  },
+  {
+    "id": 1070007001075,
+    "name": "شیراز 11",
+    "slug": "شیراز-11",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007001627,
+    "name": "شیراز 1",
+    "slug": "شیراز1",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007001628,
+    "name": "شیراز 2",
+    "slug": "شیراز2",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007001693,
+    "name": "شیراز 3",
+    "slug": "شیراز3",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007001694,
+    "name": "شیراز 4",
+    "slug": "شیراز4",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007001695,
+    "name": "شیراز 5",
+    "slug": "شیراز5",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007002532,
+    "name": "شیراز 7",
+    "slug": "شیراز7",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007002533,
+    "name": "شیراز 8",
+    "slug": "شیراز8",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007002738,
+    "name": "شیراز 9",
+    "slug": "شیراز-9",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1070007002864,
+    "name": "شیراز 10",
+    "slug": "شیراز-10",
+    "province_id": 107,
+    "county_id": 1070007,
+    "district_id": 1070007005
+  },
+  {
+    "id": 1080006002675,
+    "name": "سیرجان 1",
+    "slug": "سیرجان-1",
+    "province_id": 108,
+    "county_id": 1080006,
+    "district_id": 1080006001
+  },
+  {
+    "id": 1080006002676,
+    "name": "سیرجان 2",
+    "slug": "سیرجان-2",
+    "province_id": 108,
+    "county_id": 1080006,
+    "district_id": 1080006001
+  },
+  {
+    "id": 1080008001675,
+    "name": "کرمان 1",
+    "slug": "کرمان-1",
+    "province_id": 108,
+    "county_id": 1080008,
+    "district_id": 1080008005
+  },
+  {
+    "id": 1080008001676,
+    "name": "کرمان 2",
+    "slug": "کرمان-2",
+    "province_id": 108,
+    "county_id": 1080008,
+    "district_id": 1080008005
+  },
+  {
+    "id": 1080008001677,
+    "name": "کرمان 3",
+    "slug": "کرمان-3",
+    "province_id": 108,
+    "county_id": 1080008,
+    "district_id": 1080008005
+  },
+  {
+    "id": 1080008002534,
+    "name": "کرمان 4",
+    "slug": "کرمان-4",
+    "province_id": 108,
+    "county_id": 1080008,
+    "district_id": 1080008005
+  },
+  {
+    "id": 1100002001407,
+    "name": "اصفهان 15",
+    "slug": "اصفهان-15",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001633,
+    "name": "اصفهان 1",
+    "slug": "اصفهان-1",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001634,
+    "name": "اصفهان 2",
+    "slug": "اصفهان-2",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001635,
+    "name": "اصفهان 3",
+    "slug": "اصفهان-3",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001636,
+    "name": "اصفهان 4",
+    "slug": "اصفهان-4",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001637,
+    "name": "اصفهان 5",
+    "slug": "اصفهان-5",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001638,
+    "name": "اصفهان 6",
+    "slug": "اصفهان-6",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001639,
+    "name": "اصفهان 7",
+    "slug": "اصفهان-7",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001640,
+    "name": "اصفهان 8",
+    "slug": "اصفهان-8",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001641,
+    "name": "اصفهان 9",
+    "slug": "اصفهان-9",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002001642,
+    "name": "اصفهان 10",
+    "slug": "اصفهان-10",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002002001,
+    "name": "اصفهان 12",
+    "slug": "اصفهان-12",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002002002,
+    "name": "اصفهان 13",
+    "slug": "اصفهان-13",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002002089,
+    "name": "اصفهان 14",
+    "slug": "اصفهان-14",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1100002002554,
+    "name": "اصفهان 11",
+    "slug": "اصفهان-11",
+    "province_id": 110,
+    "county_id": 1100002,
+    "district_id": 1100002003
+  },
+  {
+    "id": 1110005001681,
+    "name": "زاهدان 1",
+    "slug": "زاهدان-1",
+    "province_id": 111,
+    "county_id": 1110005,
+    "district_id": 1110005001
+  },
+  {
+    "id": 1110005001682,
+    "name": "زاهدان 2",
+    "slug": "زاهدان-2",
+    "province_id": 111,
+    "county_id": 1110005,
+    "district_id": 1110005001
+  },
+  {
+    "id": 1110005001683,
+    "name": "زاهدان 3",
+    "slug": "زاهدان-3",
+    "province_id": 111,
+    "county_id": 1110005,
+    "district_id": 1110005001
+  },
+  {
+    "id": 1110005002862,
+    "name": "زاهدان 4",
+    "slug": "زاهدان-4",
+    "province_id": 111,
+    "county_id": 1110005,
+    "district_id": 1110005001
+  },
+  {
+    "id": 1110005002863,
+    "name": "زاهدان 5",
+    "slug": "زاهدان-5",
+    "province_id": 111,
+    "county_id": 1110005,
+    "district_id": 1110005001
+  },
+  {
+    "id": 1120004001672,
+    "name": "سنندج 1",
+    "slug": "سنندج-1",
+    "province_id": 112,
+    "county_id": 1120004,
+    "district_id": 1120004003
+  },
+  {
+    "id": 1120004001673,
+    "name": "سنندج 2",
+    "slug": "سنندج-2",
+    "province_id": 112,
+    "county_id": 1120004,
+    "district_id": 1120004003
+  },
+  {
+    "id": 1120004001674,
+    "name": "سنندج 3",
+    "slug": "سنندج-3",
+    "province_id": 112,
+    "county_id": 1120004,
+    "district_id": 1120004003
+  },
+  {
+    "id": 1130004001691,
+    "name": "همدان 1",
+    "slug": "همدان-1",
+    "province_id": 113,
+    "county_id": 1130004,
+    "district_id": 1130004007
+  },
+  {
+    "id": 1130004001692,
+    "name": "همدان 2",
+    "slug": "همدان-2",
+    "province_id": 113,
+    "county_id": 1130004,
+    "district_id": 1130004007
+  },
+  {
+    "id": 1130004002522,
+    "name": "همدان 3",
+    "slug": "همدان-3",
+    "province_id": 113,
+    "county_id": 1130004,
+    "district_id": 1130004007
+  },
+  {
+    "id": 1130004002523,
+    "name": "همدان 4",
+    "slug": "همدان-4",
+    "province_id": 113,
+    "county_id": 1130004,
+    "district_id": 1130004007
+  },
+  {
+    "id": 1150002002988,
+    "name": "بروجرد 3",
+    "slug": "بروجرد-3",
+    "province_id": 115,
+    "county_id": 1150002,
+    "district_id": 1150002002
+  },
+  {
+    "id": 1160001001659,
+    "name": "ایلام 1",
+    "slug": "ایلام-1",
+    "province_id": 116,
+    "county_id": 1160001,
+    "district_id": 1160001003
+  },
+  {
+    "id": 1160001001660,
+    "name": "ایلام 2",
+    "slug": "ایلام-2",
+    "province_id": 116,
+    "county_id": 1160001,
+    "district_id": 1160001003
+  },
+  {
+    "id": 1190004001664,
+    "name": "زنجان 1",
+    "slug": "زنجان-1",
+    "province_id": 119,
+    "county_id": 1190004,
+    "district_id": 1190004005
+  },
+  {
+    "id": 1190004001665,
+    "name": "زنجان 2",
+    "slug": "زنجان-2",
+    "province_id": 119,
+    "county_id": 1190004,
+    "district_id": 1190004005
+  },
+  {
+    "id": 1190004002384,
+    "name": "زنجان 3",
+    "slug": "زنجان-3",
+    "province_id": 119,
+    "county_id": 1190004,
+    "district_id": 1190004005
+  },
+  {
+    "id": 1190004002958,
+    "name": "زنجان 4",
+    "slug": "زنجان-4",
+    "province_id": 119,
+    "county_id": 1190004,
+    "district_id": 1190004005
+  },
+  {
+    "id": 1210005001016,
+    "name": "یزد 4",
+    "slug": "یزد-4",
+    "province_id": 121,
+    "county_id": 1210005,
+    "district_id": 1210005003
+  },
+  {
+    "id": 1210005001657,
+    "name": "یزد 1",
+    "slug": "یزد-1",
+    "province_id": 121,
+    "county_id": 1210005,
+    "district_id": 1210005003
+  },
+  {
+    "id": 1210005001658,
+    "name": "یزد 2",
+    "slug": "یزد-2",
+    "province_id": 121,
+    "county_id": 1210005,
+    "district_id": 1210005003
+  },
+  {
+    "id": 1210005002525,
+    "name": "یزد 3",
+    "slug": "یزد-3",
+    "province_id": 121,
+    "county_id": 1210005,
+    "district_id": 1210005003
+  },
+  {
+    "id": 1220002001089,
+    "name": "بندرعباس  4",
+    "slug": "بندرعباس-4",
+    "province_id": 122,
+    "county_id": 1220002,
+    "district_id": 1220002004
+  },
+  {
+    "id": 1220002001697,
+    "name": "بندر عباس  1",
+    "slug": "بندر-عباس-1",
+    "province_id": 122,
+    "county_id": 1220002,
+    "district_id": 1220002004
+  },
+  {
+    "id": 1220002001698,
+    "name": "بندر عباس  2",
+    "slug": "بندر-عباس-2",
+    "province_id": 122,
+    "county_id": 1220002,
+    "district_id": 1220002004
+  },
+  {
+    "id": 1220002002091,
+    "name": "بندر عباس  3",
+    "slug": "بندر-عباس-3",
+    "province_id": 122,
+    "county_id": 1220002,
+    "district_id": 1220002004
+  },
+  {
+    "id": 1230001001601,
+    "name": "تهران 1",
+    "slug": "تهران-1",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001602,
+    "name": "تهران 2",
+    "slug": "تهران-2",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001603,
+    "name": "تهران 3",
+    "slug": "تهران-3",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001604,
+    "name": "تهران 4",
+    "slug": "تهران-4",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001605,
+    "name": "تهران 5",
+    "slug": "تهران-5",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001606,
+    "name": "تهران 6",
+    "slug": "تهران-6",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001607,
+    "name": "تهران 7",
+    "slug": "تهران-7",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001608,
+    "name": "تهران 8",
+    "slug": "تهران-8",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001609,
+    "name": "تهران 9",
+    "slug": "تهران-9",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001610,
+    "name": "تهران 10",
+    "slug": "تهران-10",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001611,
+    "name": "تهران 11",
+    "slug": "تهران-11",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001612,
+    "name": "تهران 12",
+    "slug": "تهران-12",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001613,
+    "name": "تهران 13",
+    "slug": "تهران-13",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001614,
+    "name": "تهران 14",
+    "slug": "تهران-14",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001615,
+    "name": "تهران 15",
+    "slug": "تهران-15",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001616,
+    "name": "تهران 16",
+    "slug": "تهران-16",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001617,
+    "name": "تهران 17",
+    "slug": "تهران-17",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001618,
+    "name": "تهران 18",
+    "slug": "تهران-18",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001619,
+    "name": "تهران 19",
+    "slug": "تهران-19",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001001620,
+    "name": "تهران 20",
+    "slug": "تهران-20",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001002225,
+    "name": "تهران 21",
+    "slug": "تهران-21",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1230001002226,
+    "name": "تهران 22",
+    "slug": "تهران-22",
+    "province_id": 123,
+    "county_id": 1230001,
+    "district_id": 1230001002
+  },
+  {
+    "id": 1240001001662,
+    "name": "اردبیل 1",
+    "slug": "اردبیل-1",
+    "province_id": 124,
+    "county_id": 1240001,
+    "district_id": 1240001001
+  },
+  {
+    "id": 1240001001663,
+    "name": "اردبیل 2",
+    "slug": "اردبیل-2",
+    "province_id": 124,
+    "county_id": 1240001,
+    "district_id": 1240001001
+  },
+  {
+    "id": 1240001002575,
+    "name": "اردبیل 3",
+    "slug": "اردبیل-3",
+    "province_id": 124,
+    "county_id": 1240001,
+    "district_id": 1240001001
+  },
+  {
+    "id": 1240001002852,
+    "name": "اردبیل 4",
+    "slug": "اردبیل-4",
+    "province_id": 124,
+    "county_id": 1240001,
+    "district_id": 1240001001
+  },
+  {
+    "id": 1240001002873,
+    "name": "اردبیل 5",
+    "slug": "اردبیل-5",
+    "province_id": 124,
+    "county_id": 1240001,
+    "district_id": 1240001001
+  },
+  {
+    "id": 1250001002096,
+    "name": "قم 5",
+    "slug": "قم-5",
+    "province_id": 125,
+    "county_id": 1250001,
+    "district_id": 1250001003
+  },
+  {
+    "id": 1250001002097,
+    "name": "قم 6",
+    "slug": "قم-6",
+    "province_id": 125,
+    "county_id": 1250001,
+    "district_id": 1250001003
+  },
+  {
+    "id": 1250001002221,
+    "name": "قم 1",
+    "slug": "قم-1",
+    "province_id": 125,
+    "county_id": 1250001,
+    "district_id": 1250001003
+  },
+  {
+    "id": 1250001002222,
+    "name": "قم 2",
+    "slug": "قم-2",
+    "province_id": 125,
+    "county_id": 1250001,
+    "district_id": 1250001003
+  },
+  {
+    "id": 1250001002223,
+    "name": "قم 3",
+    "slug": "قم-3",
+    "province_id": 125,
+    "county_id": 1250001,
+    "district_id": 1250001003
+  },
+  {
+    "id": 1250001002224,
+    "name": "قم 4",
+    "slug": "قم-4",
+    "province_id": 125,
+    "county_id": 1250001,
+    "district_id": 1250001003
+  },
+  {
+    "id": 1250001002810,
+    "name": "قم 7",
+    "slug": "قم-7",
+    "province_id": 125,
+    "county_id": 1250001,
+    "district_id": 1250001003
+  },
+  {
+    "id": 1250001002811,
+    "name": "قم 8",
+    "slug": "قم-8",
+    "province_id": 125,
+    "county_id": 1250001,
+    "district_id": 1250001003
+  },
+  {
+    "id": 1260003002291,
+    "name": "قزوین 1",
+    "slug": "قزوین-1",
+    "province_id": 126,
+    "county_id": 1260003,
+    "district_id": 1260003005
+  },
+  {
+    "id": 1260003002292,
+    "name": "قزوین 2",
+    "slug": "قزوین-2",
+    "province_id": 126,
+    "county_id": 1260003,
+    "district_id": 1260003005
+  },
+  {
+    "id": 1260003002520,
+    "name": "قزوین 3",
+    "slug": "قزوین-3",
+    "province_id": 126,
+    "county_id": 1260003,
+    "district_id": 1260003005
+  },
+  {
+    "id": 1260003002703,
+    "name": "قزوین 4",
+    "slug": "قزوین-4",
+    "province_id": 126,
+    "county_id": 1260003,
+    "district_id": 1260003005
+  },
+  {
+    "id": 1270005002697,
+    "name": "گرگان 1",
+    "slug": "گرگان-1",
+    "province_id": 127,
+    "county_id": 1270005,
+    "district_id": 1270005002
+  },
+  {
+    "id": 1270005002698,
+    "name": "گرگان 2",
+    "slug": "گرگان-2",
+    "province_id": 127,
+    "county_id": 1270005,
+    "district_id": 1270005002
+  },
+  {
+    "id": 1270005002866,
+    "name": "گرگان 3",
+    "slug": "گرگان-3",
+    "province_id": 127,
+    "county_id": 1270005,
+    "district_id": 1270005002
+  },
+  {
+    "id": 1270006001095,
+    "name": "گنبدکاووس 1",
+    "slug": "گنبدکاووس-1",
+    "province_id": 127,
+    "county_id": 1270006,
+    "district_id": 1270006004
+  },
+  {
+    "id": 1270006001096,
+    "name": "گنبدکاووس 2",
+    "slug": "گنبدکاووس-2",
+    "province_id": 127,
+    "county_id": 1270006,
+    "district_id": 1270006004
+  },
+  {
+    "id": 1300001002280,
+    "name": "کرج 1",
+    "slug": "کرج-1",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002281,
+    "name": "کرج 2",
+    "slug": "کرج-2",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002283,
+    "name": "کرج 4",
+    "slug": "کرج-4",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002284,
+    "name": "کرج 5",
+    "slug": "کرج-5",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002285,
+    "name": "کرج 6",
+    "slug": "کرج-6",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002286,
+    "name": "کرج 7",
+    "slug": "کرج-7",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002287,
+    "name": "کرج 8",
+    "slug": "کرج-8",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002288,
+    "name": "کرج 9",
+    "slug": "کرج-9",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002766,
+    "name": "کرج 10",
+    "slug": "کرج-10",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300001002767,
+    "name": "کرج 3",
+    "slug": "کرج-3",
+    "province_id": 130,
+    "county_id": 1300001,
+    "district_id": 1300001001
+  },
+  {
+    "id": 1300006002540,
+    "name": "فردیس 2",
+    "slug": "فردیس-2",
+    "province_id": 130,
+    "county_id": 1300006,
+    "district_id": 1300006001
+  },
+  {
+    "id": 1300006002982,
+    "name": "فردیس 1",
+    "slug": "فردیس-1",
+    "province_id": 130,
+    "county_id": 1300006,
+    "district_id": 1300006001
+  },
+  {
+    "id": 10600013002671,
+    "name": "مسجدسلیمان 1",
+    "slug": "مسجدسلیمان-1",
+    "province_id": 106,
+    "county_id": 10600013,
+    "district_id": 10600013003
+  },
+  {
+    "id": 10600013002672,
+    "name": "مسجدسلیمان 2",
+    "slug": "مسجدسلیمان-2",
+    "province_id": 106,
+    "county_id": 10600013,
+    "district_id": 10600013003
+  },
+  {
+    "id": 10900016001629,
+    "name": "مشهد 1",
+    "slug": "مشهد-1",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001630,
+    "name": "مشهد 2",
+    "slug": "مشهد-2",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001631,
+    "name": "مشهد 3",
+    "slug": "مشهد-3",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001632,
+    "name": "مشهد 4",
+    "slug": "مشهد-4",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001643,
+    "name": "مشهد 5",
+    "slug": "مشهد-5",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001644,
+    "name": "مشهد 6",
+    "slug": "مشهد-6",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001645,
+    "name": "مشهد 7",
+    "slug": "مشهد-7",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001646,
+    "name": "مشهد 8",
+    "slug": "مشهد-8",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001647,
+    "name": "مشهد 9",
+    "slug": "مشهد-9",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016001648,
+    "name": "مشهد 10",
+    "slug": "مشهد-10",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016002000,
+    "name": "مشهد 12",
+    "slug": "مشهد-12",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900016002524,
+    "name": "مشهد 11",
+    "slug": "مشهد-11",
+    "province_id": 109,
+    "county_id": 10900016,
+    "district_id": 10900016005
+  },
+  {
+    "id": 10900017002786,
+    "name": "نیشابور 1",
+    "slug": "نیشابور-1",
+    "province_id": 109,
+    "county_id": 10900017,
+    "district_id": 10900017004
+  },
+  {
+    "id": 10900017002787,
+    "name": "نیشابور 2",
+    "slug": "نیشابور-2",
+    "province_id": 109,
+    "county_id": 10900017,
+    "district_id": 10900017004
+  },
+  {
+    "id": 12300010001050,
+    "name": "اسلام‌شهر 6",
+    "slug": "اسلام-شهر6",
+    "province_id": 123,
+    "county_id": 12300010,
+    "district_id": 12300010002
+  },
+  {
+    "id": 12300013001052,
+    "name": "پاکدشت 1",
+    "slug": "پاکدشت-1",
+    "province_id": 123,
+    "county_id": 12300013,
+    "district_id": 12300013002
+  },
+  {
+    "id": 12300013001053,
+    "name": "پاکدشت 2",
+    "slug": "پاکدشت-2",
+    "province_id": 123,
+    "county_id": 12300013,
+    "district_id": 12300013002
+  }
+]

@@ -48,12 +48,13 @@
 | شهرستان‌ها | `counties` | 484 | [JSON](dist/json/counties.json) | [CSV](dist/csv/counties.csv) | [XLSX](dist/xlsx/counties.xlsx) | [TXT](dist/llm/counties.txt) |
 | بخش‌ها | `districts` | 1193 | [JSON](dist/json/districts.json) | [CSV](dist/csv/districts.csv) | [XLSX](dist/xlsx/districts.xlsx) | — |
 | شهرها؛ فهرست کامل | `cities` | 1672 | [JSON](dist/json/cities.json) | [CSV](dist/csv/cities.csv) | [XLSX](dist/xlsx/cities.xlsx) | [TXT](dist/llm/cities.txt) |
-| شهرهای فیلترشده | `cities-filtered` | 1185 | [JSON](dist/json/cities-filtered.json) | [CSV](dist/csv/cities-filtered.csv) | [XLSX](dist/xlsx/cities-filtered.xlsx) | [TXT](dist/llm/cities-filtered.txt) |
+| شهرهای واقعی | `cities-filtered` | 1481 | [JSON](dist/json/cities-filtered.json) | [CSV](dist/csv/cities-filtered.csv) | [XLSX](dist/xlsx/cities-filtered.xlsx) | [TXT](dist/llm/cities-filtered.txt) |
+| ناحیه‌های شهری | `urban-zones` | 191 | [JSON](dist/json/urban-zones.json) | [CSV](dist/csv/urban-zones.csv) | [XLSX](dist/xlsx/urban-zones.xlsx) | [TXT](dist/llm/urban-zones.txt) |
 | دهستان‌ها | `rurals` | 2777 | [JSON](dist/json/rurals.json) | [CSV](dist/csv/rurals.csv) | [XLSX](dist/xlsx/rurals.xlsx) | — |
 | آبادی‌ها | `villages` | 99317 | [JSON](dist/json/villages.json) | [CSV](dist/csv/villages.csv) | [XLSX](dist/xlsx/villages.xlsx) | — |
 | همه داده‌ها | `all` | 105474 | [JSON](dist/json/all.json) | [CSV](dist/csv/all.csv) | [XLSX](dist/xlsx/all.xlsx) | — |
 
-فایل `cities-filtered` از فهرست شهرها ساخته می‌شود و یک تقسیم‌بندی رسمی جداگانه نیست. برای دریافت تمام رکوردهای شهر، فایل `cities` را انتخاب کنید. فایل `all` همه سطح‌های تقسیمات کشوری را در بر می‌گیرد، نه فقط شهرها.
+فایل `cities` همه 1672 رکورد شهر را دارد؛ `cities-filtered` شامل 1481 شهر واقعی و `urban-zones` شامل 191 ناحیه شهری است. دو خروجی مشتق‌شده، تقسیم‌بندی کامل و بدون هم‌پوشانی `cities` هستند. فایل `all` همه سطح‌های تقسیمات کشوری را در بر می‌گیرد، نه فقط شهرها.
 
 ## ویژگی‌ها
 
@@ -102,12 +103,13 @@ cd list-of-cities-in-Iran
 | --- | --- |
 | انتخاب استان و شهرستان در فرم آدرس | [استان‌ها](dist/json/provinces.json) و [شهرستان‌ها](dist/json/counties.json) |
 | فهرست کامل شهرهای منبع فعلی | [شهرها](dist/json/cities.json) |
-| فهرست فیلترشده شهرها، مطابق رفتار نسخه‌های قبلی | [شهرهای فیلترشده](dist/json/cities-filtered.json) |
+| فقط شهرهای واقعی | [شهرهای واقعی](dist/json/cities-filtered.json) |
+| فقط ناحیه‌های شهری | [ناحیه‌های شهری](dist/json/urban-zones.json) |
 | انتخاب بخش و دهستان | [بخش‌ها](dist/json/districts.json) و [دهستان‌ها](dist/json/rurals.json) |
 | فهرست روستاها و آبادی‌ها | [آبادی‌ها](dist/json/villages.json) |
 | همه سطح‌های تقسیمات کشوری در یک فایل | [همه داده‌ها](dist/json/all.json) |
 
-**تفاوت دو فایل شهرها:** فایل `cities` تمام رکوردهای شهر را دارد. فیلتر `cities-filtered` بر اساس نام فعلی شهر انجام می‌شود: اگر شکل استانداردشده این نام شامل `-` یا `_` باشد، شهر از این فهرست کنار گذاشته می‌شود. این قاعده در [مشخصات داده‌ها](dist/manifest.json) ثبت شده؛ نتیجه آن یک فهرست کمکی هست، نه تشخیص رسمی‌تر یا دقیق‌تر شهرها. مبنای فیلتر، نام فعلی شهر هست؛ `slug` عمومی ممکن هست برای سازگاری با نسخه‌های قبل بدون تغییر مانده باشد.
+**رابطه خروجی‌های شهر:** `cities` فهرست کامل 1672 رکورد شهر است. `cities-filtered` فهرست 1481 شهر واقعی و `urban-zones` فهرست 191 ناحیه شهری است؛ این دو فایل با هم و بدون هم‌پوشانی، `cities` را تشکیل می‌دهند. طبقه‌بندی در [منبع کاننیکال ناحیه‌های شهری](classification/urban-zones.json) نگه‌داری می‌شود.
 
 راهنماهای MySQL، PostgreSQL، MSSQL، TypeScript، JavaScript، Go، Kotlin، Python، PHP، MongoDB و Next.js در [پوشه مستندات](docs/) قرار دارند. هنگام استفاده از نمونه‌های قدیمی، نام فایل‌ها و فیلدها را با [ساختار فعلی داده‌ها](dist/schema.json) تطبیق دهید.
 
@@ -148,14 +150,15 @@ python3 -m http.server --directory docs 8000
 
 ## استفاده با هوش مصنوعی
 
-برای معرفی داده‌ها به ابزارهایی مثل ChatGPT، Codex یا Claude، لازم نیست تمام فایل‌های مخزن را وارد گفتگو کنید. چهار فایل متنی زیر، داده‌های موردنیاز را همراه با توضیح ستون‌ها، سال منبع و تفاوت شهر و شهرستان در اختیار ابزار قرار می‌دهند:
+برای معرفی داده‌ها به ابزارهایی مثل ChatGPT، Codex یا Claude، لازم نیست تمام فایل‌های مخزن را وارد گفتگو کنید. پنج فایل متنی زیر، داده‌های موردنیاز را همراه با توضیح ستون‌ها، سال منبع و تفاوت شهر و شهرستان در اختیار ابزار قرار می‌دهند:
 
 | داده | فایل متنی |
 | --- | --- |
 | استان‌ها | [provinces.txt](dist/llm/provinces.txt) |
 | شهرستان‌ها | [counties.txt](dist/llm/counties.txt) |
 | شهرها؛ فهرست کامل | [cities.txt](dist/llm/cities.txt) |
-| شهرهای فیلترشده | [cities-filtered.txt](dist/llm/cities-filtered.txt) |
+| شهرهای واقعی | [cities-filtered.txt](dist/llm/cities-filtered.txt) |
+| ناحیه‌های شهری | [urban-zones.txt](dist/llm/urban-zones.txt) |
 
 هر فایل یک توضیح کوتاه و جدول داده با جداکننده تب دارد. می‌توانید متن آن را در گفتگو کپی کنید یا به ورودی ابزار بدهید. این فایل‌ها برای تأمین اطلاعات هنگام کار با هوش مصنوعی هستند، نه برای آموزش مدل. برای آبادی‌ها و همه داده‌ها، فایل متنی بسیار بزرگ تولید نمی‌شود.
 
@@ -186,7 +189,7 @@ python3 -m http.server --directory docs 8000
 | [schema.json](dist/schema.json) | فیلدهای مجاز، نوع داده و ساختار هر رکورد |
 | [verification.json](dist/verification.json) | نتیجه بررسی داده‌ها، ارتباط‌ها، سازگاری و برابری خروجی‌های مختلف |
 
-منبع مختصات جداگانه ثبت شده و فهرست شهرهای فیلترشده هم از فهرست کامل شهرها به دست می‌آید. این دو را نباید با داده خام فایل رسمی یکی دانست.
+منبع مختصات جداگانه ثبت شده و تقسیم‌بندی شهرهای واقعی و ناحیه‌های شهری هم از فهرست کامل شهرها به دست می‌آید. این دو را نباید با داده خام فایل رسمی یکی دانست.
 
 ## مهاجرت از نسخه ۲ به ۳
 
@@ -292,12 +295,13 @@ All datasets below are available in all three formats. Counts are recorded in th
 | Counties | `counties` | 484 | [JSON](dist/json/counties.json) | [CSV](dist/csv/counties.csv) | [XLSX](dist/xlsx/counties.xlsx) | [TXT](dist/llm/counties.txt) |
 | Districts | `districts` | 1193 | [JSON](dist/json/districts.json) | [CSV](dist/csv/districts.csv) | [XLSX](dist/xlsx/districts.xlsx) | — |
 | Cities, complete list | `cities` | 1672 | [JSON](dist/json/cities.json) | [CSV](dist/csv/cities.csv) | [XLSX](dist/xlsx/cities.xlsx) | [TXT](dist/llm/cities.txt) |
-| Filtered cities | `cities-filtered` | 1185 | [JSON](dist/json/cities-filtered.json) | [CSV](dist/csv/cities-filtered.csv) | [XLSX](dist/xlsx/cities-filtered.xlsx) | [TXT](dist/llm/cities-filtered.txt) |
+| Real cities | `cities-filtered` | 1481 | [JSON](dist/json/cities-filtered.json) | [CSV](dist/csv/cities-filtered.csv) | [XLSX](dist/xlsx/cities-filtered.xlsx) | [TXT](dist/llm/cities-filtered.txt) |
+| Urban zones | `urban-zones` | 191 | [JSON](dist/json/urban-zones.json) | [CSV](dist/csv/urban-zones.csv) | [XLSX](dist/xlsx/urban-zones.xlsx) | [TXT](dist/llm/urban-zones.txt) |
 | Rural districts | `rurals` | 2777 | [JSON](dist/json/rurals.json) | [CSV](dist/csv/rurals.csv) | [XLSX](dist/xlsx/rurals.xlsx) | — |
 | Villages | `villages` | 99317 | [JSON](dist/json/villages.json) | [CSV](dist/csv/villages.csv) | [XLSX](dist/xlsx/villages.xlsx) | — |
 | All data | `all` | 105474 | [JSON](dist/json/all.json) | [CSV](dist/csv/all.csv) | [XLSX](dist/xlsx/all.xlsx) | — |
 
-`cities-filtered` is a **derived / convenience** dataset, not a separate official classification. Use `cities` for every city record in the current source. The `all` dataset includes all administrative levels, not just cities.
+`cities` contains all 1672 city records. `cities-filtered` contains 1481 real cities and `urban-zones` contains 191 urban zones. The two derived datasets are a complete, non-overlapping partition of `cities`; `all` includes every administrative level, not just cities.
 
 ### Features
 
@@ -346,12 +350,13 @@ Cloning checks out the current default branch, `main`.
 | --- | --- |
 | Province and county selectors in an address form | [Provinces](dist/json/provinces.json) and [counties](dist/json/counties.json) |
 | Every current city record | [Cities](dist/json/cities.json) |
-| The existing convenience city list | [Filtered cities](dist/json/cities-filtered.json) |
+| Real cities only | [Real cities](dist/json/cities-filtered.json) |
+| Urban zones only | [Urban zones](dist/json/urban-zones.json) |
 | District and rural-district selectors | [Districts](dist/json/districts.json) and [rural districts](dist/json/rurals.json) |
 | Villages and rural settlements | [Villages](dist/json/villages.json) |
 | All administrative levels in one file | [All data](dist/json/all.json) |
 
-**City filtering:** `cities` contains the complete city projection. `cities-filtered` excludes cities whose current-name filter slug contains `-` or `_`, as documented in the [manifest](dist/manifest.json). It is a convenience rule, not a more authoritative definition of a city. The filter slug is not necessarily the compatibility-preserved public `slug`.
+**City dataset relationship:** `cities` is the complete 1672-record city projection. `cities-filtered` contains 1481 real cities and `urban-zones` contains 191 urban zones; together they form `cities` with no overlap. The classification is maintained in the [canonical urban-zone source](classification/urban-zones.json).
 
 Usage guides for MySQL, PostgreSQL, MSSQL, TypeScript, JavaScript, Go, Kotlin, Python, PHP, MongoDB, and Next.js are available under [docs/](docs/). Check older examples against the [current schema](dist/schema.json) before using their file paths or fields.
 
@@ -399,7 +404,8 @@ The following **LLM Context** files provide compact, self-contained data for too
 | Provinces | [provinces.txt](dist/llm/provinces.txt) |
 | Counties | [counties.txt](dist/llm/counties.txt) |
 | Cities, complete list | [cities.txt](dist/llm/cities.txt) |
-| Filtered cities | [cities-filtered.txt](dist/llm/cities-filtered.txt) |
+| Real cities | [cities-filtered.txt](dist/llm/cities-filtered.txt) |
+| Urban zones | [urban-zones.txt](dist/llm/urban-zones.txt) |
 
 Each file contains a descriptive header and a TSV body, including source year, columns, scope, and explicit City/County semantics. Copy the text into a conversation or pipe it to an AI tool. These are **not training datasets**. Large `all` or `villages` context dumps are intentionally not generated.
 

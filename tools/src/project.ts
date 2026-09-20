@@ -22,19 +22,18 @@ function base(e: CanonicalEntity, contract: V2Contract): PublicRecord {
 }
 const ancestors = (e: CanonicalEntity): PublicRecord => ({ province_id: provinceId(e), county_id: countyId(e), district_id: districtId(e) });
 export function assertUniquePublicIds(data: Datasets): void { for (const [name, records] of Object.entries(data)) { const ids = records.map((r) => String(r.id)); if (new Set(ids).size !== ids.length) throw new Error(`Duplicate public IDs in ${name}`); } }
-export function projectDatasets(model: CanonicalModel, contract: V2Contract): Datasets {
-  const data: Datasets = { provinces: [], counties: [], districts: [], rurals: [], cities: [], "cities-filtered": [], villages: [], all: [] };
+export function projectDatasets(model: CanonicalModel, contract: V2Contract, urbanZoneKeys: ReadonlySet<string>): Datasets {
+  const data: Datasets = { provinces: [], counties: [], districts: [], rurals: [], cities: [], "cities-filtered": [], "urban-zones": [], villages: [], all: [] };
+  const classifiedUrbanZones = new Set<string>();
   for (const entity of model.entities) { let record: PublicRecord; switch (entity.type) {
     case "province": record = { ...base(entity, contract), tel_prefix: tel[entity.name] ?? "---" }; data.provinces.push(record); break;
     case "county": record = { ...base(entity, contract), province_id: provinceId(entity) }; data.counties.push(record); break;
     case "district": record = { ...base(entity, contract), province_id: provinceId(entity), county_id: countyId(entity) }; data.districts.push(record); break;
     case "rural": record = { ...base(entity, contract), ...ancestors(entity) }; data.rurals.push(record); break;
-    case "city": record = { ...base(entity, contract), ...ancestors(entity) }; data.cities.push(record); break;
+    case "city": record = { ...base(entity, contract), ...ancestors(entity) }; data.cities.push(record); if (urbanZoneKeys.has(entity.key)) { data["urban-zones"].push(record); classifiedUrbanZones.add(entity.key); } else data["cities-filtered"].push(record); break;
     case "village": record = { ...base(entity, contract), ...ancestors(entity), rural_id: ruralId(entity), coderec: entity.coderec, village_code: entity.codes.village!, mapped_rural_code: entity.codes.mappedRural ?? null }; data.villages.push(record); break;
   } data.all.push(allRecord(record, entity.type)); }
-  // Preserve the Phase 1 filter predicate over the current official name; the
-  // public slug itself may deliberately be a historical V2 compatibility slug.
-  data["cities-filtered"] = data.cities.filter((city) => { const filterSlug = generateSlug(String(city.name)); return !filterSlug.includes("-") && !filterSlug.includes("_"); });
+  if (classifiedUrbanZones.size !== urbanZoneKeys.size) throw new Error("Urban-zone classification contains an unprojected city");
   for (const name of Object.keys(data) as (keyof Datasets)[]) data[name].sort((a, b) => String(a.id).localeCompare(String(b.id), "en", { numeric: true }));
   assertUniquePublicIds(data); return data;
 }
