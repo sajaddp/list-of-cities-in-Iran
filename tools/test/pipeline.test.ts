@@ -113,7 +113,15 @@ test("README retains V3 facts, direct downloads, local links, and the immutable 
   const manifest = JSON.parse(readFileSync(join(root, "dist", "manifest.json"), "utf8"));
 
   assert.equal(readme.split("\n").filter((line) => line.trim()).at(-1), footer);
-  assert.ok(readme.startsWith("# تقسیمات کشوری"));
+  assert.equal(readme.split("\n")[0], "# لیست شهرها و استان‌های ایران");
+  assert.equal([...readme.matchAll(/^# /gm)].length, 1);
+  const sections = readme.split("\n## List of Cities and Provinces in Iran\n");
+  assert.equal(sections.length, 2, "Keep complete Persian and English sections separate");
+  const [persian, english] = sections;
+  const persianSourceYear = String(manifest.officialSourceYear).replace(/\d/g, (digit) => "۰۱۲۳۴۵۶۷۸۹"[Number(digit)]);
+  assert.ok(persian.includes(`**${persianSourceYear}**`));
+  assert.ok([...persian.matchAll(/^#{2,6} (.+)$/gm)].every(([, heading]) => /\p{Script=Arabic}/u.test(heading)));
+  assert.ok([...english.matchAll(/^#{2,6} (.+)$/gm)].every(([, heading]) => !/\p{Script=Arabic}/u.test(heading)));
   assert.ok(readme.includes(`Current official source year: **${manifest.officialSourceYear}**`));
   assert.ok(readme.includes("City = شهر. County = شهرستان. City != County."));
   assert.ok(readme.includes("cities-filtered") && readme.includes("derived / convenience"));
@@ -122,7 +130,15 @@ test("README retains V3 facts, direct downloads, local links, and the immutable 
   assert.ok(!readme.includes("iran-divisions"));
 
   for (const dataset of manifest.generatedDatasets) {
-    assert.match(readme, new RegExp("\\\\|[^\\\\n]*`" + dataset.name + "`[^\\\\n]*\\\\|\\\\s*" + dataset.rowCount + "\\\\s*\\\\|"));
+    for (const section of sections) {
+      const rows = section.split("\n")
+        .filter((line) => line.startsWith("|"))
+        .map((line) => line.split("|").slice(1, -1).map((cell) => cell.trim()))
+        .filter((cells) => cells[1] === `\`${dataset.name}\``);
+      assert.equal(rows.length, 1, `Each language must list ${dataset.name} exactly once in its download table`);
+      assert.equal(rows[0][2], String(dataset.rowCount), `README count mismatch for ${dataset.name}`);
+      for (const path of Object.values(dataset.paths)) assert.ok(section.includes(`](${path})`), `Each language must link ${path}`);
+    }
     for (const path of Object.values(dataset.paths)) {
       assert.ok(readme.includes(`](${path})`), `README must link ${path}`);
       assert.ok(existsSync(join(root, path)), `Missing generated dataset ${path}`);
