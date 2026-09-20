@@ -1,0 +1,28 @@
+name: Validate generated data
+
+on:
+  pull_request:
+  push:
+    branches: [main, dev]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tools/package-lock.json
+      - name: Install and validate
+        working-directory: tools
+        run: |
+          npm ci
+          npm test
+          npm run build
+          npm run verify
+      - name: Reject stale generated artifacts or whitespace errors
+        run: |
+          git diff --check
+          git diff --exit-code

@@ -1,0 +1,47 @@
+{
+  "datasetVersion": "3.0.0-phase2",
+  "schemaVersion": "3.0.0-phase2",
+  "sourceYear": 1404,
+  "repository": {
+    "url": "https://github.com/sajaddp/list-of-cities-in-Iran",
+    "manifest": "https://github.com/sajaddp/list-of-cities-in-Iran/blob/main/dist/manifest.json",
+    "schema": "https://github.com/sajaddp/list-of-cities-in-Iran/blob/main/dist/schema.json",
+    "provenance": "https://github.com/sajaddp/list-of-cities-in-Iran/blob/main/enrichment/coordinates/sources.json"
+  },
+  "counts": {
+    "provinces": 31,
+    "counties": 484,
+    "districts": 1193,
+    "rurals": 2777,
+    "cities": 1672,
+    "cities-filtered": 1185,
+    "villages": 99317,
+    "all": 105474
+  },
+  "coordinates": {
+    "provinceCapitals": 31,
+    "countyCenters": 484,
+    "provenance": "https://github.com/sajaddp/list-of-cities-in-Iran/blob/main/enrichment/coordinates/sources.json"
+  },
+  "searchResources": {
+    "core": {
+      "path": "data/search-core.json",
+      "rows": 6157,
+      "types": [
+        "province",
+        "county",
+        "district",
+        "rural",
+        "city"
+      ]
+    },
+    "villages": {
+      "path": "data/search-villages.json",
+      "rows": 99317,
+      "types": [
+        "village"
+      ],
+      "lazy": true
+    }
+  }
+}

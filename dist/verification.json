@@ -306,6 +306,13 @@
         }
       ]
     },
+    "explorer": {
+      "coreRows": 6157,
+      "villageRows": 99317,
+      "duplicateSearchIds": 0,
+      "invalidEntityReferences": 0,
+      "invalidParentReferences": 0
+    },
     "documentation": {
       "requiredPaths": [
         "dist/manifest.json",
@@ -316,7 +323,14 @@
         "dist/llm/cities.txt",
         "dist/json/province-capitals.json",
         "dist/json/county-centers.json",
-        "docs/llms.txt"
+        "docs/llms.txt",
+        "docs/index.html",
+        "docs/assets/app.js",
+        "docs/assets/explorer-core.js",
+        "docs/assets/styles.css",
+        "docs/data/explorer-meta.json",
+        "docs/data/search-core.json",
+        "docs/data/search-villages.json"
       ],
       "missingPaths": [],
       "quickStart": true,
