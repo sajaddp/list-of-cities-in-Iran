@@ -8,7 +8,7 @@
 
 [جست‌وجو و مشاهده آنلاین داده‌ها](https://sajaddehshiri.ir/list-of-cities-in-Iran/)
 
-این مخزن شامل لیست شهرها و استان‌های ایران، شهرستان‌ها، بخش‌ها، دهستان‌ها و آبادی‌هاست. داده‌ها بر اساس فایل رسمی تقسیمات کشوری تا پایان سال **۱۴۰۴** آماده شده‌اند و در سه فرمت **JSON، CSV و XLSX** در دسترس هستند. نسخهٔ آمادهٔ انتشار: **v3.1.2**.
+این مخزن شامل لیست شهرها و استان‌های ایران، شهرستان‌ها، بخش‌ها، دهستان‌ها و آبادی‌هاست. داده‌ها بر اساس فایل رسمی تقسیمات کشوری تا پایان سال **۱۴۰۴** آماده شده‌اند و در سه فرمت **JSON، CSV و XLSX** در دسترس هستند. نسخهٔ منتشرشده: **v3.1.2**.
 
 برای استفاده در سایت یا نرم‌افزار، کافی هست فایل موردنیاز را از [جدول دانلود](#دانلود-دادهها) دریافت کنید؛ نیازی به نصب پکیج یا اجرای ابزارهای مخزن ندارید. اگر فایل رسمی به‌روزتری منتشر شده، لطفاً از طریق [بخش گزارش مشکلات](https://github.com/sajaddp/list-of-cities-in-Iran/issues) به ما اطلاع دهید.
 
@@ -253,7 +253,7 @@ npm run verify
 
 [Open the Developer Data Explorer](https://sajaddehshiri.ir/list-of-cities-in-Iran/)
 
-This repository provides a list of cities and provinces in Iran, along with counties, districts, rural districts, and villages. The Iran administrative divisions dataset is available in **JSON, CSV, and XLSX** for direct use in software projects. Prepared release: **v3.1.2**.
+This repository provides a list of cities and provinces in Iran, along with counties, districts, rural districts, and villages. The Iran administrative divisions dataset is available in **JSON, CSV, and XLSX** for direct use in software projects. Current release: **v3.1.2**.
 
 Current official source year: **1404** (Solar Hijri). The administrative files are generated from the official workbook covering divisions through the end of that year. If a newer official source becomes available, please [open an issue](https://github.com/sajaddp/list-of-cities-in-Iran/issues).
 
