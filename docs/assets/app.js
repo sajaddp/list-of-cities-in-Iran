@@ -12,7 +12,7 @@
   function renderMetadata() {
     const target = document.getElementById("metadata-content"); target.replaceChildren();
     const items = [
-      "سال منبع: " + meta.sourceYear, "نسخهٔ داده: " + meta.datasetVersion,
+      "سال منبع: " + meta.sourceYear, "نسخهٔ داده: v" + meta.datasetVersion,
       "استان: " + meta.counts.provinces, "شهرستان: " + meta.counts.counties,
       "شهر واقعی: " + meta.counts["cities-filtered"], "ناحیهٔ شهری: " + meta.counts["urban-zones"], "آبادی: " + meta.counts.villages
     ];
@@ -40,7 +40,7 @@
   function fieldList(record) {
     const list = make("dl");
     [["شناسهٔ عمومی / Public ID", record.id], ["slug", record.slug], ["نوع / Type", core.labels[record.type]]].forEach(([label, value]) => { list.append(make("dt", label), make("dd", String(value))); });
-    const parentFields = [["province_id", "province_id"], ["county_id", "county_id"], ["district_id", "district_id"], ["rural_id", "rural_id"], ["coderec", "coderec"], ["village_code", "village_code"], ["mapped_rural_code", "mapped_rural_code"]];
+    const parentFields = [["province_id", "province_id"], ["county_id", "county_id"], ["district_id", "district_id"], ["city_id", "parent city_id"], ["rural_id", "rural_id"], ["coderec", "coderec"], ["village_code", "village_code"], ["mapped_rural_code", "mapped_rural_code"]];
     parentFields.filter(([field]) => Object.prototype.hasOwnProperty.call(record, field)).forEach(([field, label]) => list.append(make("dt", label), make("dd", String(record[field] === null ? "null" : record[field]))));
     return list;
   }

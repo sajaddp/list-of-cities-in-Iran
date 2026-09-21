@@ -1,6 +1,7 @@
 import { CanonicalEntity, CanonicalModel, Datasets, PublicRecord } from "./types";
 import { generateSlug } from "./text";
 import { V2Contract, legacyIdFor, v2RecordFor } from "./compat";
+import { UrbanZoneContract } from "./urban-zones";
 
 const tel: Record<string, string> = { "آذربایجان شرقی": "041", "آذربایجان غربی": "044", اردبیل: "045", اصفهان: "031", البرز: "026", ایلام: "084", بوشهر: "077", تهران: "021", "چهارمحال و بختیاری": "038", "خراسان جنوبی": "056", "خراسان رضوی": "051", "خراسان شمالی": "058", خوزستان: "061", زنجان: "024", سمنان: "023", "سیستان و بلوچستان": "054", فارس: "071", قزوین: "028", قم: "025", کردستان: "087", کرمان: "034", کرمانشاه: "083", "کهگیلویه و بویراحمد": "074", گلستان: "017", لرستان: "066", گیلان: "013", مازندران: "011", مرکزی: "086", هرمزگان: "076", همدان: "081", یزد: "035" };
 function numeric(value: string): number { const id = Number(value); if (!Number.isSafeInteger(id)) throw new Error(`Unsafe numeric identifier ${value}`); return id; }
@@ -22,18 +23,30 @@ function base(e: CanonicalEntity, contract: V2Contract): PublicRecord {
 }
 const ancestors = (e: CanonicalEntity): PublicRecord => ({ province_id: provinceId(e), county_id: countyId(e), district_id: districtId(e) });
 export function assertUniquePublicIds(data: Datasets): void { for (const [name, records] of Object.entries(data)) { const ids = records.map((r) => String(r.id)); if (new Set(ids).size !== ids.length) throw new Error(`Duplicate public IDs in ${name}`); } }
-export function projectDatasets(model: CanonicalModel, contract: V2Contract, urbanZoneKeys: ReadonlySet<string>): Datasets {
+export function projectDatasets(model: CanonicalModel, contract: V2Contract, urbanZones: UrbanZoneContract): Datasets {
   const data: Datasets = { provinces: [], counties: [], districts: [], rurals: [], cities: [], "cities-filtered": [], "urban-zones": [], villages: [], all: [] };
   const classifiedUrbanZones = new Set<string>();
+  const cityRecords = new Map(model.entities.filter((entity) => entity.type === "city").map((entity) => [entity.key, { ...base(entity, contract), ...ancestors(entity) }]));
   for (const entity of model.entities) { let record: PublicRecord; switch (entity.type) {
     case "province": record = { ...base(entity, contract), tel_prefix: tel[entity.name] ?? "---" }; data.provinces.push(record); break;
     case "county": record = { ...base(entity, contract), province_id: provinceId(entity) }; data.counties.push(record); break;
     case "district": record = { ...base(entity, contract), province_id: provinceId(entity), county_id: countyId(entity) }; data.districts.push(record); break;
     case "rural": record = { ...base(entity, contract), ...ancestors(entity) }; data.rurals.push(record); break;
-    case "city": record = { ...base(entity, contract), ...ancestors(entity) }; data.cities.push(record); if (urbanZoneKeys.has(entity.key)) { data["urban-zones"].push(record); classifiedUrbanZones.add(entity.key); } else data["cities-filtered"].push(record); break;
+    case "city": {
+      record = cityRecords.get(entity.key)!;
+      data.cities.push(record);
+      const parentKey = urbanZones.parentByCityKey.get(entity.key);
+      if (parentKey) {
+        const parent = cityRecords.get(parentKey);
+        if (!parent || typeof parent.id !== "number") throw new Error(`Urban-zone parent public ID is invalid: ${parentKey}`);
+        data["urban-zones"].push({ ...record, city_id: parent.id });
+        classifiedUrbanZones.add(entity.key);
+      } else data["cities-filtered"].push(record);
+      break;
+    }
     case "village": record = { ...base(entity, contract), ...ancestors(entity), rural_id: ruralId(entity), coderec: entity.coderec, village_code: entity.codes.village!, mapped_rural_code: entity.codes.mappedRural ?? null }; data.villages.push(record); break;
   } data.all.push(allRecord(record, entity.type)); }
-  if (classifiedUrbanZones.size !== urbanZoneKeys.size) throw new Error("Urban-zone classification contains an unprojected city");
+  if (classifiedUrbanZones.size !== urbanZones.keys.size) throw new Error("Urban-zone classification contains an unprojected city");
   for (const name of Object.keys(data) as (keyof Datasets)[]) data[name].sort((a, b) => String(a.id).localeCompare(String(b.id), "en", { numeric: true }));
   assertUniquePublicIds(data); return data;
 }

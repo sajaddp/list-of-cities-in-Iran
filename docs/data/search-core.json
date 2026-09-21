@@ -56112,6 +56112,7 @@
     "province_id": 100,
     "county_id": 1000001,
     "district_id": 1000001002,
+    "city_id": 1000001001101,
     "type": "urban-zone"
   },
   {
@@ -56121,6 +56122,7 @@
     "province_id": 100,
     "county_id": 1000001,
     "district_id": 1000001002,
+    "city_id": 1000001001101,
     "type": "urban-zone"
   },
   {
@@ -56130,6 +56132,7 @@
     "province_id": 100,
     "county_id": 1000001,
     "district_id": 1000001002,
+    "city_id": 1000001001101,
     "type": "urban-zone"
   },
   {
@@ -56139,6 +56142,7 @@
     "province_id": 100,
     "county_id": 1000001,
     "district_id": 1000001002,
+    "city_id": 1000001001101,
     "type": "urban-zone"
   },
   {
@@ -56148,6 +56152,7 @@
     "province_id": 100,
     "county_id": 1000001,
     "district_id": 1000001002,
+    "city_id": 1000001001101,
     "type": "urban-zone"
   },
   {
@@ -56157,6 +56162,7 @@
     "province_id": 100,
     "county_id": 1000006,
     "district_id": 1000006003,
+    "city_id": 1000006001110,
     "type": "urban-zone"
   },
   {
@@ -56166,6 +56172,7 @@
     "province_id": 100,
     "county_id": 1000006,
     "district_id": 1000006003,
+    "city_id": 1000006001110,
     "type": "urban-zone"
   },
   {
@@ -56175,6 +56182,7 @@
     "province_id": 101,
     "county_id": 1010003,
     "district_id": 1010003001,
+    "city_id": 1010003001120,
     "type": "urban-zone"
   },
   {
@@ -56184,6 +56192,7 @@
     "province_id": 101,
     "county_id": 1010003,
     "district_id": 1010003001,
+    "city_id": 1010003001120,
     "type": "urban-zone"
   },
   {
@@ -56193,6 +56202,7 @@
     "province_id": 101,
     "county_id": 1010005,
     "district_id": 1010005005,
+    "city_id": 1010005001129,
     "type": "urban-zone"
   },
   {
@@ -56202,6 +56212,7 @@
     "province_id": 101,
     "county_id": 1010005,
     "district_id": 1010005005,
+    "city_id": 1010005001129,
     "type": "urban-zone"
   },
   {
@@ -56211,6 +56222,7 @@
     "province_id": 101,
     "county_id": 1010005,
     "district_id": 1010005005,
+    "city_id": 1010005001129,
     "type": "urban-zone"
   },
   {
@@ -56220,6 +56232,7 @@
     "province_id": 101,
     "county_id": 1010005,
     "district_id": 1010005005,
+    "city_id": 1010005001129,
     "type": "urban-zone"
   },
   {
@@ -56229,6 +56242,7 @@
     "province_id": 101,
     "county_id": 1010005,
     "district_id": 1010005005,
+    "city_id": 1010005001129,
     "type": "urban-zone"
   },
   {
@@ -56238,6 +56252,7 @@
     "province_id": 102,
     "county_id": 1020002,
     "district_id": 1020002002,
+    "city_id": 1020002001154,
     "type": "urban-zone"
   },
   {
@@ -56247,6 +56262,7 @@
     "province_id": 102,
     "county_id": 1020002,
     "district_id": 1020002002,
+    "city_id": 1020002001154,
     "type": "urban-zone"
   },
   {
@@ -56256,6 +56272,7 @@
     "province_id": 102,
     "county_id": 1020007,
     "district_id": 1020007003,
+    "city_id": 1020007001169,
     "type": "urban-zone"
   },
   {
@@ -56265,6 +56282,7 @@
     "province_id": 102,
     "county_id": 1020007,
     "district_id": 1020007003,
+    "city_id": 1020007001169,
     "type": "urban-zone"
   },
   {
@@ -56274,6 +56292,7 @@
     "province_id": 102,
     "county_id": 1020007,
     "district_id": 1020007003,
+    "city_id": 1020007001169,
     "type": "urban-zone"
   },
   {
@@ -56283,6 +56302,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56292,6 +56312,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56301,6 +56322,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56310,6 +56332,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56319,6 +56342,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56328,6 +56352,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56337,6 +56362,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56346,6 +56372,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56355,6 +56382,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56364,6 +56392,7 @@
     "province_id": 103,
     "county_id": 1030003,
     "district_id": 1030003003,
+    "city_id": 1030003001214,
     "type": "urban-zone"
   },
   {
@@ -56373,6 +56402,7 @@
     "province_id": 103,
     "county_id": 1030006,
     "district_id": 1030006002,
+    "city_id": 1030006001223,
     "type": "urban-zone"
   },
   {
@@ -56382,6 +56412,7 @@
     "province_id": 103,
     "county_id": 1030006,
     "district_id": 1030006002,
+    "city_id": 1030006001223,
     "type": "urban-zone"
   },
   {
@@ -56391,6 +56422,7 @@
     "province_id": 104,
     "county_id": 1040001,
     "district_id": 1040001004,
+    "city_id": 1040001001235,
     "type": "urban-zone"
   },
   {
@@ -56400,6 +56432,7 @@
     "province_id": 104,
     "county_id": 1040001,
     "district_id": 1040001004,
+    "city_id": 1040001001235,
     "type": "urban-zone"
   },
   {
@@ -56409,6 +56442,7 @@
     "province_id": 104,
     "county_id": 1040001,
     "district_id": 1040001004,
+    "city_id": 1040001001235,
     "type": "urban-zone"
   },
   {
@@ -56418,6 +56452,7 @@
     "province_id": 104,
     "county_id": 1040001,
     "district_id": 1040001004,
+    "city_id": 1040001001235,
     "type": "urban-zone"
   },
   {
@@ -56427,6 +56462,7 @@
     "province_id": 104,
     "county_id": 1040001,
     "district_id": 1040001004,
+    "city_id": 1040001001235,
     "type": "urban-zone"
   },
   {
@@ -56436,6 +56472,7 @@
     "province_id": 105,
     "county_id": 1050002,
     "district_id": 1050002004,
+    "city_id": 1050002001258,
     "type": "urban-zone"
   },
   {
@@ -56445,6 +56482,7 @@
     "province_id": 105,
     "county_id": 1050002,
     "district_id": 1050002004,
+    "city_id": 1050002001258,
     "type": "urban-zone"
   },
   {
@@ -56454,6 +56492,7 @@
     "province_id": 105,
     "county_id": 1050002,
     "district_id": 1050002004,
+    "city_id": 1050002001258,
     "type": "urban-zone"
   },
   {
@@ -56463,6 +56502,7 @@
     "province_id": 105,
     "county_id": 1050002,
     "district_id": 1050002004,
+    "city_id": 1050002001258,
     "type": "urban-zone"
   },
   {
@@ -56472,6 +56512,7 @@
     "province_id": 105,
     "county_id": 1050002,
     "district_id": 1050002004,
+    "city_id": 1050002001258,
     "type": "urban-zone"
   },
   {
@@ -56481,6 +56522,7 @@
     "province_id": 105,
     "county_id": 1050002,
     "district_id": 1050002004,
+    "city_id": 1050002001258,
     "type": "urban-zone"
   },
   {
@@ -56490,6 +56532,7 @@
     "province_id": 105,
     "county_id": 1050002,
     "district_id": 1050002004,
+    "city_id": 1050002001258,
     "type": "urban-zone"
   },
   {
@@ -56499,6 +56542,7 @@
     "province_id": 105,
     "county_id": 1050002,
     "district_id": 1050002004,
+    "city_id": 1050002001258,
     "type": "urban-zone"
   },
   {
@@ -56508,6 +56552,7 @@
     "province_id": 106,
     "county_id": 1060001,
     "district_id": 1060001002,
+    "city_id": 1060001001270,
     "type": "urban-zone"
   },
   {
@@ -56517,6 +56562,7 @@
     "province_id": 106,
     "county_id": 1060001,
     "district_id": 1060001002,
+    "city_id": 1060001001270,
     "type": "urban-zone"
   },
   {
@@ -56526,6 +56572,7 @@
     "province_id": 106,
     "county_id": 1060001,
     "district_id": 1060001002,
+    "city_id": 1060001001270,
     "type": "urban-zone"
   },
   {
@@ -56535,6 +56582,7 @@
     "province_id": 106,
     "county_id": 1060003,
     "district_id": 1060003002,
+    "city_id": 1060003001272,
     "type": "urban-zone"
   },
   {
@@ -56544,6 +56592,7 @@
     "province_id": 106,
     "county_id": 1060003,
     "district_id": 1060003002,
+    "city_id": 1060003001272,
     "type": "urban-zone"
   },
   {
@@ -56553,6 +56602,7 @@
     "province_id": 106,
     "county_id": 1060003,
     "district_id": 1060003002,
+    "city_id": 1060003001272,
     "type": "urban-zone"
   },
   {
@@ -56562,6 +56612,7 @@
     "province_id": 106,
     "county_id": 1060003,
     "district_id": 1060003002,
+    "city_id": 1060003001272,
     "type": "urban-zone"
   },
   {
@@ -56571,6 +56622,7 @@
     "province_id": 106,
     "county_id": 1060003,
     "district_id": 1060003002,
+    "city_id": 1060003001272,
     "type": "urban-zone"
   },
   {
@@ -56580,6 +56632,7 @@
     "province_id": 106,
     "county_id": 1060003,
     "district_id": 1060003002,
+    "city_id": 1060003001272,
     "type": "urban-zone"
   },
   {
@@ -56589,6 +56642,7 @@
     "province_id": 106,
     "county_id": 1060003,
     "district_id": 1060003002,
+    "city_id": 1060003001272,
     "type": "urban-zone"
   },
   {
@@ -56598,6 +56652,7 @@
     "province_id": 106,
     "county_id": 1060003,
     "district_id": 1060003002,
+    "city_id": 1060003001272,
     "type": "urban-zone"
   },
   {
@@ -56607,6 +56662,7 @@
     "province_id": 106,
     "county_id": 1060008,
     "district_id": 1060008002,
+    "city_id": 1060008001282,
     "type": "urban-zone"
   },
   {
@@ -56616,6 +56672,7 @@
     "province_id": 106,
     "county_id": 1060008,
     "district_id": 1060008002,
+    "city_id": 1060008001282,
     "type": "urban-zone"
   },
   {
@@ -56625,6 +56682,7 @@
     "province_id": 106,
     "county_id": 1060008,
     "district_id": 1060008002,
+    "city_id": 1060008001282,
     "type": "urban-zone"
   },
   {
@@ -56634,6 +56692,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56643,6 +56702,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56652,6 +56712,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56661,6 +56722,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56670,6 +56732,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56679,6 +56742,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56688,6 +56752,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56697,6 +56762,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56706,6 +56772,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56715,6 +56782,7 @@
     "province_id": 107,
     "county_id": 1070007,
     "district_id": 1070007005,
+    "city_id": 1070007001309,
     "type": "urban-zone"
   },
   {
@@ -56724,6 +56792,7 @@
     "province_id": 108,
     "county_id": 1080006,
     "district_id": 1080006001,
+    "city_id": 1080006001338,
     "type": "urban-zone"
   },
   {
@@ -56733,6 +56802,7 @@
     "province_id": 108,
     "county_id": 1080006,
     "district_id": 1080006001,
+    "city_id": 1080006001338,
     "type": "urban-zone"
   },
   {
@@ -56742,6 +56812,7 @@
     "province_id": 108,
     "county_id": 1080008,
     "district_id": 1080008005,
+    "city_id": 1080008001346,
     "type": "urban-zone"
   },
   {
@@ -56751,6 +56822,7 @@
     "province_id": 108,
     "county_id": 1080008,
     "district_id": 1080008005,
+    "city_id": 1080008001346,
     "type": "urban-zone"
   },
   {
@@ -56760,6 +56832,7 @@
     "province_id": 108,
     "county_id": 1080008,
     "district_id": 1080008005,
+    "city_id": 1080008001346,
     "type": "urban-zone"
   },
   {
@@ -56769,6 +56842,7 @@
     "province_id": 108,
     "county_id": 1080008,
     "district_id": 1080008005,
+    "city_id": 1080008001346,
     "type": "urban-zone"
   },
   {
@@ -56778,6 +56852,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56787,6 +56862,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56796,6 +56872,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56805,6 +56882,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56814,6 +56892,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56823,6 +56902,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56832,6 +56912,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56841,6 +56922,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56850,6 +56932,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56859,6 +56942,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56868,6 +56952,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56877,6 +56962,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56886,6 +56972,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56895,6 +56982,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56904,6 +56992,7 @@
     "province_id": 110,
     "county_id": 1100002,
     "district_id": 1100002003,
+    "city_id": 1100002001406,
     "type": "urban-zone"
   },
   {
@@ -56913,6 +57002,7 @@
     "province_id": 111,
     "county_id": 1110005,
     "district_id": 1110005001,
+    "city_id": 1110005001451,
     "type": "urban-zone"
   },
   {
@@ -56922,6 +57012,7 @@
     "province_id": 111,
     "county_id": 1110005,
     "district_id": 1110005001,
+    "city_id": 1110005001451,
     "type": "urban-zone"
   },
   {
@@ -56931,6 +57022,7 @@
     "province_id": 111,
     "county_id": 1110005,
     "district_id": 1110005001,
+    "city_id": 1110005001451,
     "type": "urban-zone"
   },
   {
@@ -56940,6 +57032,7 @@
     "province_id": 111,
     "county_id": 1110005,
     "district_id": 1110005001,
+    "city_id": 1110005001451,
     "type": "urban-zone"
   },
   {
@@ -56949,6 +57042,7 @@
     "province_id": 111,
     "county_id": 1110005,
     "district_id": 1110005001,
+    "city_id": 1110005001451,
     "type": "urban-zone"
   },
   {
@@ -56958,6 +57052,7 @@
     "province_id": 112,
     "county_id": 1120004,
     "district_id": 1120004003,
+    "city_id": 1120004001458,
     "type": "urban-zone"
   },
   {
@@ -56967,6 +57062,7 @@
     "province_id": 112,
     "county_id": 1120004,
     "district_id": 1120004003,
+    "city_id": 1120004001458,
     "type": "urban-zone"
   },
   {
@@ -56976,6 +57072,7 @@
     "province_id": 112,
     "county_id": 1120004,
     "district_id": 1120004003,
+    "city_id": 1120004001458,
     "type": "urban-zone"
   },
   {
@@ -56985,6 +57082,7 @@
     "province_id": 113,
     "county_id": 1130004,
     "district_id": 1130004007,
+    "city_id": 1130004001475,
     "type": "urban-zone"
   },
   {
@@ -56994,6 +57092,7 @@
     "province_id": 113,
     "county_id": 1130004,
     "district_id": 1130004007,
+    "city_id": 1130004001475,
     "type": "urban-zone"
   },
   {
@@ -57003,6 +57102,7 @@
     "province_id": 113,
     "county_id": 1130004,
     "district_id": 1130004007,
+    "city_id": 1130004001475,
     "type": "urban-zone"
   },
   {
@@ -57012,6 +57112,7 @@
     "province_id": 113,
     "county_id": 1130004,
     "district_id": 1130004007,
+    "city_id": 1130004001475,
     "type": "urban-zone"
   },
   {
@@ -57021,6 +57122,7 @@
     "province_id": 115,
     "county_id": 1150002,
     "district_id": 1150002002,
+    "city_id": 1150002001492,
     "type": "urban-zone"
   },
   {
@@ -57030,6 +57132,7 @@
     "province_id": 116,
     "county_id": 1160001,
     "district_id": 1160001003,
+    "city_id": 1160001001500,
     "type": "urban-zone"
   },
   {
@@ -57039,6 +57142,7 @@
     "province_id": 116,
     "county_id": 1160001,
     "district_id": 1160001003,
+    "city_id": 1160001001500,
     "type": "urban-zone"
   },
   {
@@ -57048,6 +57152,7 @@
     "province_id": 119,
     "county_id": 1190004,
     "district_id": 1190004005,
+    "city_id": 1190004001534,
     "type": "urban-zone"
   },
   {
@@ -57057,6 +57162,7 @@
     "province_id": 119,
     "county_id": 1190004,
     "district_id": 1190004005,
+    "city_id": 1190004001534,
     "type": "urban-zone"
   },
   {
@@ -57066,6 +57172,7 @@
     "province_id": 119,
     "county_id": 1190004,
     "district_id": 1190004005,
+    "city_id": 1190004001534,
     "type": "urban-zone"
   },
   {
@@ -57075,6 +57182,7 @@
     "province_id": 119,
     "county_id": 1190004,
     "district_id": 1190004005,
+    "city_id": 1190004001534,
     "type": "urban-zone"
   },
   {
@@ -57084,6 +57192,7 @@
     "province_id": 121,
     "county_id": 1210005,
     "district_id": 1210005003,
+    "city_id": 1210005001562,
     "type": "urban-zone"
   },
   {
@@ -57093,6 +57202,7 @@
     "province_id": 121,
     "county_id": 1210005,
     "district_id": 1210005003,
+    "city_id": 1210005001562,
     "type": "urban-zone"
   },
   {
@@ -57102,6 +57212,7 @@
     "province_id": 121,
     "county_id": 1210005,
     "district_id": 1210005003,
+    "city_id": 1210005001562,
     "type": "urban-zone"
   },
   {
@@ -57111,6 +57222,7 @@
     "province_id": 121,
     "county_id": 1210005,
     "district_id": 1210005003,
+    "city_id": 1210005001562,
     "type": "urban-zone"
   },
   {
@@ -57120,6 +57232,7 @@
     "province_id": 122,
     "county_id": 1220002,
     "district_id": 1220002004,
+    "city_id": 1220002001567,
     "type": "urban-zone"
   },
   {
@@ -57129,6 +57242,7 @@
     "province_id": 122,
     "county_id": 1220002,
     "district_id": 1220002004,
+    "city_id": 1220002001567,
     "type": "urban-zone"
   },
   {
@@ -57138,6 +57252,7 @@
     "province_id": 122,
     "county_id": 1220002,
     "district_id": 1220002004,
+    "city_id": 1220002001567,
     "type": "urban-zone"
   },
   {
@@ -57147,6 +57262,7 @@
     "province_id": 122,
     "county_id": 1220002,
     "district_id": 1220002004,
+    "city_id": 1220002001567,
     "type": "urban-zone"
   },
   {
@@ -57156,6 +57272,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57165,6 +57282,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57174,6 +57292,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57183,6 +57302,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57192,6 +57312,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57201,6 +57322,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57210,6 +57332,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57219,6 +57342,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57228,6 +57352,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57237,6 +57362,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57246,6 +57372,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57255,6 +57382,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57264,6 +57392,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57273,6 +57402,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57282,6 +57412,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57291,6 +57422,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57300,6 +57432,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57309,6 +57442,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57318,6 +57452,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57327,6 +57462,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57336,6 +57472,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57345,6 +57482,7 @@
     "province_id": 123,
     "county_id": 1230001,
     "district_id": 1230001002,
+    "city_id": 1230001001576,
     "type": "urban-zone"
   },
   {
@@ -57354,6 +57492,7 @@
     "province_id": 124,
     "county_id": 1240001,
     "district_id": 1240001001,
+    "city_id": 1240001001195,
     "type": "urban-zone"
   },
   {
@@ -57363,6 +57502,7 @@
     "province_id": 124,
     "county_id": 1240001,
     "district_id": 1240001001,
+    "city_id": 1240001001195,
     "type": "urban-zone"
   },
   {
@@ -57372,6 +57512,7 @@
     "province_id": 124,
     "county_id": 1240001,
     "district_id": 1240001001,
+    "city_id": 1240001001195,
     "type": "urban-zone"
   },
   {
@@ -57381,6 +57522,7 @@
     "province_id": 124,
     "county_id": 1240001,
     "district_id": 1240001001,
+    "city_id": 1240001001195,
     "type": "urban-zone"
   },
   {
@@ -57390,6 +57532,7 @@
     "province_id": 124,
     "county_id": 1240001,
     "district_id": 1240001001,
+    "city_id": 1240001001195,
     "type": "urban-zone"
   },
   {
@@ -57399,6 +57542,7 @@
     "province_id": 125,
     "county_id": 1250001,
     "district_id": 1250001003,
+    "city_id": 1250001001114,
     "type": "urban-zone"
   },
   {
@@ -57408,6 +57552,7 @@
     "province_id": 125,
     "county_id": 1250001,
     "district_id": 1250001003,
+    "city_id": 1250001001114,
     "type": "urban-zone"
   },
   {
@@ -57417,6 +57562,7 @@
     "province_id": 125,
     "county_id": 1250001,
     "district_id": 1250001003,
+    "city_id": 1250001001114,
     "type": "urban-zone"
   },
   {
@@ -57426,6 +57572,7 @@
     "province_id": 125,
     "county_id": 1250001,
     "district_id": 1250001003,
+    "city_id": 1250001001114,
     "type": "urban-zone"
   },
   {
@@ -57435,6 +57582,7 @@
     "province_id": 125,
     "county_id": 1250001,
     "district_id": 1250001003,
+    "city_id": 1250001001114,
     "type": "urban-zone"
   },
   {
@@ -57444,6 +57592,7 @@
     "province_id": 125,
     "county_id": 1250001,
     "district_id": 1250001003,
+    "city_id": 1250001001114,
     "type": "urban-zone"
   },
   {
@@ -57453,6 +57602,7 @@
     "province_id": 125,
     "county_id": 1250001,
     "district_id": 1250001003,
+    "city_id": 1250001001114,
     "type": "urban-zone"
   },
   {
@@ -57462,6 +57612,7 @@
     "province_id": 125,
     "county_id": 1250001,
     "district_id": 1250001003,
+    "city_id": 1250001001114,
     "type": "urban-zone"
   },
   {
@@ -57471,6 +57622,7 @@
     "province_id": 126,
     "county_id": 1260003,
     "district_id": 1260003005,
+    "city_id": 1260003001595,
     "type": "urban-zone"
   },
   {
@@ -57480,6 +57632,7 @@
     "province_id": 126,
     "county_id": 1260003,
     "district_id": 1260003005,
+    "city_id": 1260003001595,
     "type": "urban-zone"
   },
   {
@@ -57489,6 +57642,7 @@
     "province_id": 126,
     "county_id": 1260003,
     "district_id": 1260003005,
+    "city_id": 1260003001595,
     "type": "urban-zone"
   },
   {
@@ -57498,6 +57652,7 @@
     "province_id": 126,
     "county_id": 1260003,
     "district_id": 1260003005,
+    "city_id": 1260003001595,
     "type": "urban-zone"
   },
   {
@@ -57507,6 +57662,7 @@
     "province_id": 127,
     "county_id": 1270005,
     "district_id": 1270005002,
+    "city_id": 1270005001181,
     "type": "urban-zone"
   },
   {
@@ -57516,6 +57672,7 @@
     "province_id": 127,
     "county_id": 1270005,
     "district_id": 1270005002,
+    "city_id": 1270005001181,
     "type": "urban-zone"
   },
   {
@@ -57525,6 +57682,7 @@
     "province_id": 127,
     "county_id": 1270005,
     "district_id": 1270005002,
+    "city_id": 1270005001181,
     "type": "urban-zone"
   },
   {
@@ -57534,6 +57692,7 @@
     "province_id": 127,
     "county_id": 1270006,
     "district_id": 1270006004,
+    "city_id": 1270006001186,
     "type": "urban-zone"
   },
   {
@@ -57543,6 +57702,7 @@
     "province_id": 127,
     "county_id": 1270006,
     "district_id": 1270006004,
+    "city_id": 1270006001186,
     "type": "urban-zone"
   },
   {
@@ -57552,6 +57712,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57561,6 +57722,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57570,6 +57732,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57579,6 +57742,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57588,6 +57752,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57597,6 +57762,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57606,6 +57772,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57615,6 +57782,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57624,6 +57792,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57633,6 +57802,7 @@
     "province_id": 130,
     "county_id": 1300001,
     "district_id": 1300001001,
+    "city_id": 1300001001590,
     "type": "urban-zone"
   },
   {
@@ -57642,6 +57812,7 @@
     "province_id": 130,
     "county_id": 1300006,
     "district_id": 1300006001,
+    "city_id": 1300006002282,
     "type": "urban-zone"
   },
   {
@@ -57651,6 +57822,7 @@
     "province_id": 130,
     "county_id": 1300006,
     "district_id": 1300006001,
+    "city_id": 1300006002282,
     "type": "urban-zone"
   },
   {
@@ -57660,6 +57832,7 @@
     "province_id": 106,
     "county_id": 10600013,
     "district_id": 10600013003,
+    "city_id": 10600013001291,
     "type": "urban-zone"
   },
   {
@@ -57669,6 +57842,7 @@
     "province_id": 106,
     "county_id": 10600013,
     "district_id": 10600013003,
+    "city_id": 10600013001291,
     "type": "urban-zone"
   },
   {
@@ -57678,6 +57852,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57687,6 +57862,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57696,6 +57872,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57705,6 +57882,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57714,6 +57892,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57723,6 +57902,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57732,6 +57912,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57741,6 +57922,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57750,6 +57932,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57759,6 +57942,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57768,6 +57952,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57777,6 +57962,7 @@
     "province_id": 109,
     "county_id": 10900016,
     "district_id": 10900016005,
+    "city_id": 10900016001392,
     "type": "urban-zone"
   },
   {
@@ -57786,6 +57972,7 @@
     "province_id": 109,
     "county_id": 10900017,
     "district_id": 10900017004,
+    "city_id": 10900017001394,
     "type": "urban-zone"
   },
   {
@@ -57795,6 +57982,7 @@
     "province_id": 109,
     "county_id": 10900017,
     "district_id": 10900017004,
+    "city_id": 10900017001394,
     "type": "urban-zone"
   },
   {
@@ -57804,6 +57992,7 @@
     "province_id": 123,
     "county_id": 12300010,
     "district_id": 12300010002,
+    "city_id": 12300010001581,
     "type": "urban-zone"
   },
   {
@@ -57813,6 +58002,7 @@
     "province_id": 123,
     "county_id": 12300013,
     "district_id": 12300013002,
+    "city_id": 12300013002120,
     "type": "urban-zone"
   },
   {
@@ -57822,6 +58012,7 @@
     "province_id": 123,
     "county_id": 12300013,
     "district_id": 12300013002,
+    "city_id": 12300013002120,
     "type": "urban-zone"
   }
 ]

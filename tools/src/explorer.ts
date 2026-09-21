@@ -118,7 +118,7 @@ export function verifyExplorerData(repoRoot: string, datasets: Datasets, coordin
     county: [["province_id", "province"]], district: [["province_id", "province"], ["county_id", "county"]],
     rural: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"]],
     city: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"]],
-    "urban-zone": [["province_id", "province"], ["county_id", "county"], ["district_id", "district"]],
+    "urban-zone": [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["city_id", "city"]],
     village: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["rural_id", "rural"]],
   };
   let invalidEntityReferences = 0, invalidParentReferences = 0;

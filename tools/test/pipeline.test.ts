@@ -15,6 +15,9 @@ import { coordinateSchema } from "../src/schema";
 import { officialName } from "../src/source";
 import { normalizeMigrationName, normalizePersianText } from "../src/text";
 import { CanonicalEntity, CanonicalModel, Datasets } from "../src/types";
+import { buildCanonicalModel } from "../src/model";
+import { parseOfficialWorkbook } from "../src/source";
+import { loadUrbanZoneContract } from "../src/urban-zones";
 
 const root = resolve(__dirname, "../..");
 const ExplorerCore = require(join(root, "docs", "assets", "explorer-core.js"));
@@ -215,7 +218,7 @@ test("manifest validator accepts the contract and rejects invalid entity types",
   const manifest = {
     entityTypeContract: MANIFEST_ENTITY_TYPES,
     generatedDatasets: Object.entries(MANIFEST_ENTITY_TYPES).map(
-      ([name, entityType]) => ({ name, entityType }),
+      ([name, entityType]) => ({ name, entityType, ...(name === "cities" ? { sourceFaithful: true, officialCoderec: "5" } : {}), ...(name === "urban-zones" ? { parentReference: { field: "city_id", dataset: "cities-filtered" } } : {}), ...(name === "all" ? { sourceFaithful: true, coderec5Type: "city" } : {}) }),
     ),
     enrichmentDatasets: [
       {
@@ -262,6 +265,20 @@ test("city datasets form the published real-city and urban-zone partition", () =
   assert.equal(new Set([...realCityIds, ...urbanZoneIds]).size, cityIds.size);
   assert.deepEqual(new Set([...realCityIds, ...urbanZoneIds]), cityIds);
   assert.ok(realCities.some((record: { name: string }) => record.name === "قورچی باشی"));
+  const realCitiesById = new Map<number, { id: number; province_id: number; county_id: number; district_id: number }>(realCities.map((record: { id: number; province_id: number; county_id: number; district_id: number }): [number, { id: number; province_id: number; county_id: number; district_id: number }] => [record.id, record]));
+  assert.equal(urbanZones.filter((record: { city_id: number }) => Number.isInteger(record.city_id) && realCitiesById.has(record.city_id)).length, 191);
+  assert.equal(urbanZones.filter((record: { id: number; city_id: number; province_id: number; county_id: number; district_id: number }) => { const parent = realCitiesById.get(record.city_id)!; return record.id === record.city_id || record.province_id !== parent.province_id || record.county_id !== parent.county_id || record.district_id !== parent.district_id; }).length, 0);
+  const all = JSON.parse(readFileSync(join(root, "dist", "json", "all.json"), "utf8"));
+  const allById = new Map<number, { id: number; type: string }>(all.map((record: { id: number; type: string }): [number, { id: number; type: string }] => [record.id, record]));
+  assert.equal(urbanZones.filter((record: { id: number }) => allById.get(record.id)?.type === "city").length, 191);
+  assert.equal(all.filter((record: { type: string }) => record.type === "urban-zone").length, 0);
+  assert.equal(all.filter((record: object) => Object.prototype.hasOwnProperty.call(record, "city_id")).length, 0);
+});
+
+test("Urban Zone registry matches deterministic official-source evidence", () => {
+  const model = buildCanonicalModel(parseOfficialWorkbook(join(root, "offical", "list.xlsx")).rows);
+  const contract = loadUrbanZoneContract(root, model);
+  assert.deepEqual(contract.evidence, { expectedUrbanZones: 191, actualUrbanZones: 191, derivedCandidates: 191, resolved: 191, unresolved: 0, ambiguous: 0, committedParentMismatches: 0 });
 });
 
 test("Explorer projects the published city partition without city aliases", () => {
@@ -287,9 +304,15 @@ test("Explorer projects the published city partition without city aliases", () =
   assert.deepEqual(ExplorerCore.searchRecords(core, "اراک 1", "city"), []);
   assert.equal(ExplorerCore.searchRecords(core, "اراک 1", "urban-zone")[0]?.type, "urban-zone");
   assert.equal(ExplorerCore.publicRecord(arakOne).type, "urban-zone");
-  const context = ExplorerCore.formatAiContext(arakOne, ExplorerCore.indexRecords(core), { sourceYear: 1404, datasetVersion: "3.1.0" });
+  const index = ExplorerCore.indexRecords(core);
+  assert.equal(arakOne?.city_id, core.find((record: { type: string; name: string }) => record.type === "city" && record.name === "اراک")?.id);
+  assert.deepEqual(ExplorerCore.breadcrumb(arakOne, index).map((record: { type: string }) => record.type), ["province", "county", "district", "city", "urban-zone"]);
+  assert.equal(ExplorerCore.publicRecord(arakOne).city_id, arakOne?.city_id);
+  const context = ExplorerCore.formatAiContext(arakOne, index, { sourceYear: 1404, datasetVersion: "3.1.2" });
   assert.match(context, /selected_entity: urban-zone/);
   assert.match(context, /urban zone = ناحیه شهری; not a real city/);
+  assert.match(context, /city_id identifies the parent real city/);
+  assert.match(context, /"name":"اراک"/);
 });
 
 test("LLM city contexts state the real-city and urban-zone partition", () => {
@@ -300,6 +323,7 @@ test("LLM city contexts state the real-city and urban-zone partition", () => {
   assert.match(cities, /Use cities-filtered for real cities only; use urban-zones for urban zones only/);
   assert.match(realCities, /cities-filtered = real cities only; excludes urban zones/);
   assert.match(urbanZones, /urban zone = ناحیه شهری; not a real city/);
+  assert.match(urbanZones, /city_id identifies the parent real city in cities-filtered/);
 });
 
 test("coordinate schema rejects out-of-range, mistyped, and extra fields", () => {

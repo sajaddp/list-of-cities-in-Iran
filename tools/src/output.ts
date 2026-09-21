@@ -3,7 +3,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as XLSX from "xlsx";
 import { CoordinateDatasetName, CoordinateDatasets, DatasetName, Datasets, PublicRecord } from "./types";
-import { combinedSchema, validateDatasets } from "./schema";
+import { combinedSchemaFor, validateDatasets } from "./schema";
 import { COORDINATE_DATASET_COLUMNS, COORDINATE_DATASET_NAMES, coordinateAsPublicRecords } from "./coordinates";
 import { ALL_COLUMNS } from "./project";
 const names: DatasetName[] = ["provinces", "counties", "districts", "rurals", "cities", "cities-filtered", "urban-zones", "villages", "all"];
@@ -11,7 +11,7 @@ const nl = "\n";
 export const sha256 = (data: Buffer | string) => crypto.createHash("sha256").update(data).digest("hex");
 export const DATASET_COLUMNS: Record<DatasetName, readonly string[]> = {
   provinces: ["id", "name", "slug", "tel_prefix"], counties: ["id", "name", "slug", "province_id"], districts: ["id", "name", "slug", "province_id", "county_id"],
-  rurals: ["id", "name", "slug", "province_id", "county_id", "district_id"], cities: ["id", "name", "slug", "province_id", "county_id", "district_id"], "cities-filtered": ["id", "name", "slug", "province_id", "county_id", "district_id"], "urban-zones": ["id", "name", "slug", "province_id", "county_id", "district_id"],
+  rurals: ["id", "name", "slug", "province_id", "county_id", "district_id"], cities: ["id", "name", "slug", "province_id", "county_id", "district_id"], "cities-filtered": ["id", "name", "slug", "province_id", "county_id", "district_id"], "urban-zones": ["id", "name", "slug", "province_id", "county_id", "district_id", "city_id"],
   villages: ["id", "name", "slug", "province_id", "county_id", "district_id", "rural_id", "coderec", "village_code", "mapped_rural_code"], all: ALL_COLUMNS,
 };
 const csvCell = (value: string | number | null) => { const text = value === null ? "" : String(value); return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text; };
@@ -37,5 +37,5 @@ export function verifyFormatParity(root: string): ParityResult { const rowCounts
 }
 export interface CoordinateParityResult { passed: boolean; rowCounts: Record<CoordinateDatasetName, number>; errors: string[]; }
 export function verifyCoordinateFormatParity(root: string): CoordinateParityResult { const rowCounts = {} as Record<CoordinateDatasetName, number>; const errors: string[] = []; for (const name of COORDINATE_DATASET_NAMES) try { const json = JSON.parse(fs.readFileSync(path.join(root, "json", `${name}.json`), "utf8")) as PublicRecord[]; const csvRows = parseCsv(fs.readFileSync(path.join(root, "csv", `${name}.csv`), "utf8")); const book = XLSX.readFile(path.join(root, "xlsx", `${name}.xlsx`), { cellText: true }); const sheet = book.Sheets[book.SheetNames[0]]; const xlsxRows = XLSX.utils.sheet_to_json<Record<string, unknown>>(sheet, { defval: "", raw: true }); const columns = COORDINATE_DATASET_COLUMNS[name]; if (json.length !== csvRows.length || json.length !== xlsxRows.length) throw new Error("row-count parity failed"); for (let i = 0; i < json.length; i += 1) { for (const actual of [csvRows[i], xlsxRows[i]]) { if (JSON.stringify(Object.keys(actual)) !== JSON.stringify(columns)) throw new Error("column parity failed"); for (const column of columns) { const expected = json[i][column]; const received = actual[column]; if (typeof expected === "number" ? Number(received) !== expected : String(received) !== String(expected)) throw new Error(`format mismatch at record ${i}`); } } } rowCounts[name] = json.length; } catch (error) { errors.push(`${name}: ${(error as Error).message}`); } return { passed: errors.length === 0, rowCounts, errors }; }
-export const writeSchema = (root: string) => fs.writeFileSync(path.join(root, "schema.json"), `${JSON.stringify(combinedSchema, null, 2)}${nl}`, "utf8");
+export const writeSchema = (root: string, version: string) => fs.writeFileSync(path.join(root, "schema.json"), `${JSON.stringify(combinedSchemaFor(version), null, 2)}${nl}`, "utf8");
 export function validateJsonOutputs(root: string): void { const datasets = Object.fromEntries(names.map((name) => [name, JSON.parse(fs.readFileSync(path.join(root, "json", `${name}.json`), "utf8"))])) as Datasets; validateDatasets(datasets); }
