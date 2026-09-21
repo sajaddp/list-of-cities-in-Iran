@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "list-of-cities-in-iran V3.1 datasets",
+  "title": "list-of-cities-in-iran V3.1.2 datasets",
   "$defs": {
     "provinces": {
       "type": "array",
@@ -215,7 +215,8 @@
           "slug",
           "province_id",
           "county_id",
-          "district_id"
+          "district_id",
+          "city_id"
         ],
         "properties": {
           "id": {
@@ -236,6 +237,9 @@
             "type": "integer"
           },
           "district_id": {
+            "type": "integer"
+          },
+          "city_id": {
             "type": "integer"
           }
         },

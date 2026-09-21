@@ -30,7 +30,7 @@ export function formatLlmContext(scope: DatasetName, records: PublicRecord[], so
       : scope === "cities-filtered"
         ? ["cities-filtered = real cities only; excludes urban zones.", ...sharedSemantics]
     : scope === "urban-zones"
-      ? ["urban zone = ناحیه شهری; not a real city.", ...sharedSemantics]
+      ? ["urban zone = ناحیه شهری; not a real city.", "city_id identifies the parent real city in cities-filtered.", ...sharedSemantics]
       : sharedSemantics;
   const lines = [
     "# list-of-cities-in-Iran LLM Context",

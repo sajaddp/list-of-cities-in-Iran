@@ -21,14 +21,14 @@ const all = { type: "array", items: { oneOf: [
   allVariant("city", { id: integer, tel_prefix: nil, province_id: integer, county_id: integer, district_id: integer, rural_id: nil, coderec: nil, village_code: nil, mapped_rural_code: nil }),
   allVariant("village", { id: { type: "string", pattern: "^village:" }, tel_prefix: nil, province_id: integer, county_id: integer, district_id: integer, rural_id: integer, coderec: { enum: ["6", "8"] }, village_code: string }),
 ] } };
-export const schema = { $schema: "https://json-schema.org/draft/2020-12/schema", title: "list-of-cities-in-iran V3.1 datasets", $defs: {
+export const schema = { $schema: "https://json-schema.org/draft/2020-12/schema", title: "list-of-cities-in-iran V3 datasets", $defs: {
   provinces: local(["tel_prefix"], { id: integer, tel_prefix: string }),
   counties: local(["province_id"], { id: integer, province_id: integer }),
   districts: local(["province_id", "county_id"], { id: integer, province_id: integer, county_id: integer }),
   rurals: local(["province_id", "county_id", "district_id"], { id: integer, ...ancestry }),
   cities: local(["province_id", "county_id", "district_id"], { id: integer, ...ancestry }),
   "cities-filtered": local(["province_id", "county_id", "district_id"], { id: integer, ...ancestry }),
-  "urban-zones": local(["province_id", "county_id", "district_id"], { id: integer, ...ancestry }),
+  "urban-zones": local(["province_id", "county_id", "district_id", "city_id"], { id: integer, ...ancestry, city_id: integer }),
   villages: local(["province_id", "county_id", "district_id", "rural_id", "coderec", "village_code", "mapped_rural_code"], { id: { type: "string", pattern: "^village:" }, ...ancestry, rural_id: integer, coderec: { enum: ["6", "8"] }, village_code: string, mapped_rural_code: nullableString }),
   all,
 } };
@@ -40,7 +40,7 @@ export const coordinateSchema = { $schema: "https://json-schema.org/draft/2020-1
   "province-capitals": coordinate(["province_id", "province_name", "center_name", "latitude", "longitude", "source_id", "source_feature_id", "source_name"], { province_id: integer, province_name: coordinateString, center_name: coordinateString, latitude, longitude, source_id: coordinateString, source_feature_id: coordinateString, source_name: coordinateString }),
   "county-centers": coordinate(["county_id", "county_name", "province_id", "center_name", "latitude", "longitude", "source_id", "source_feature_id", "source_name"], { county_id: integer, county_name: coordinateString, province_id: integer, center_name: coordinateString, latitude, longitude, source_id: coordinateString, source_feature_id: coordinateString, source_name: coordinateString }),
 } };
-export const combinedSchema = { $schema: schema.$schema, title: "list-of-cities-in-iran V3.1 datasets", $defs: { ...schema.$defs, ...coordinateSchema.$defs } };
+export const combinedSchemaFor = (version: string) => ({ $schema: schema.$schema, title: `list-of-cities-in-iran V${version} datasets`, $defs: { ...schema.$defs, ...coordinateSchema.$defs } });
 export interface SchemaResult { passed: boolean; errors: string[]; }
 export function schemaResult(datasets: Datasets): SchemaResult { const ajv = new Ajv({ allErrors: true, strict: false }); const errors: string[] = []; for (const [name, records] of Object.entries(datasets) as [DatasetName, Datasets[DatasetName]][]) { const validate = ajv.compile({ ...schema, $ref: `#/$defs/${name}` }); if (!validate(records)) errors.push(`${name}: ${ajv.errorsText(validate.errors)}`); } return { passed: errors.length === 0, errors }; }
 export function validateDatasets(datasets: Datasets): void { const result = schemaResult(datasets); if (!result.passed) throw new Error(`Schema validation failed: ${result.errors.join("; ")}`); }

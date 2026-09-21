@@ -1,6 +1,6 @@
 {
-  "datasetVersion": "3.1.0",
-  "schemaVersion": "3.1.0",
+  "datasetVersion": "3.1.2",
+  "schemaVersion": "3.1.2",
   "officialSourceYear": 1404,
   "source": {
     "filename": "offical/list.xlsx",
@@ -71,7 +71,10 @@
         "json": "dist/json/cities.json",
         "csv": "dist/csv/cities.csv",
         "xlsx": "dist/xlsx/cities.xlsx"
-      }
+      },
+      "sourceFaithful": true,
+      "officialCoderec": "5",
+      "semanticRole": "complete-city-projection"
     },
     {
       "name": "cities-filtered",
@@ -84,7 +87,8 @@
         "xlsx": "dist/xlsx/cities-filtered.xlsx"
       },
       "partitionOf": "cities",
-      "classificationSource": "classification/urban-zones.json"
+      "classificationSource": "classification/urban-zones.json",
+      "semanticRole": "derived-real-city-subset"
     },
     {
       "name": "urban-zones",
@@ -97,7 +101,19 @@
         "xlsx": "dist/xlsx/urban-zones.xlsx"
       },
       "partitionOf": "cities",
-      "classificationSource": "classification/urban-zones.json"
+      "classificationSource": "classification/urban-zones.json",
+      "semanticRole": "derived-urban-zone-subset",
+      "parentReference": {
+        "field": "city_id",
+        "dataset": "cities-filtered"
+      },
+      "evidence": {
+        "official_administrative_source": "offical/list.xlsx",
+        "coderec_semantics_reference": "offical/coderec.md",
+        "official_coderec_5_semantics": "City (شهر)",
+        "classification": "Urban Zone is a project-derived semantic split, not an official entity type.",
+        "method": "Across all current CODEREC=5 rows, select names with a terminal numeric zone suffix; remove that suffix, normalize with the repository Persian compatibility normalization, and require exactly one non-Urban-Zone CODEREC=5 match in the same province, county, and district as the parent real city."
+      }
     },
     {
       "name": "villages",
@@ -119,7 +135,10 @@
         "json": "dist/json/all.json",
         "csv": "dist/csv/all.csv",
         "xlsx": "dist/xlsx/all.xlsx"
-      }
+      },
+      "sourceFaithful": true,
+      "coderec5Type": "city",
+      "semanticRole": "source-faithful-union"
     }
   ],
   "enrichmentDatasets": [
@@ -215,7 +234,7 @@
   ],
   "generator": {
     "name": "list-of-cities-in-iran-tools",
-    "version": "3.1.0",
+    "version": "3.1.2",
     "deterministic": true
   }
 }

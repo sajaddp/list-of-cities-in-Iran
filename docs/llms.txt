@@ -1,4 +1,4 @@
-list-of-cities-in-Iran is a generated, versioned repository of Iran administrative divisions. Current official administrative source year: 1404.
+list-of-cities-in-Iran is a generated, versioned repository of Iran administrative divisions. Prepared release: v3.1.2. Current official administrative source year: 1404.
 
 City = شهر; County = شهرستان. They are different entity types even when their names match.
 
@@ -8,3 +8,5 @@ Main JSON: dist/json/provinces.json, dist/json/counties.json, dist/json/cities-f
 LLM Context: dist/llm/provinces.txt, dist/llm/counties.txt, dist/llm/cities-filtered.txt, dist/llm/urban-zones.txt, dist/llm/cities.txt
 Administrative source/semantics: offical/list.xlsx and offical/coderec.md
 Coordinate provenance: enrichment/coordinates/sources.json and manifest enrichmentSources
+
+CODEREC=5 officially means City. `cities` is the complete source-faithful CODEREC=5 projection; `cities-filtered` and `urban-zones` are the project-derived semantic split. The 191 Urban Zones are names with a terminal numeric suffix whose suffix-removed, Persian-normalized base matches exactly one non-Urban-Zone CODEREC=5 city in the same province/county/district. In `urban-zones`, `city_id` identifies that parent real city in `cities-filtered`. `all` is the source-faithful union: those rows remain type="city", with no city_id field.

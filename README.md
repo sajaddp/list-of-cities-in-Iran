@@ -8,7 +8,7 @@
 
 [جست‌وجو و مشاهده آنلاین داده‌ها](https://sajaddehshiri.ir/list-of-cities-in-Iran/)
 
-این مخزن شامل لیست شهرها و استان‌های ایران، شهرستان‌ها، بخش‌ها، دهستان‌ها و آبادی‌هاست. داده‌ها بر اساس فایل رسمی تقسیمات کشوری تا پایان سال **۱۴۰۴** آماده شده‌اند و در سه فرمت **JSON، CSV و XLSX** در دسترس هستند.
+این مخزن شامل لیست شهرها و استان‌های ایران، شهرستان‌ها، بخش‌ها، دهستان‌ها و آبادی‌هاست. داده‌ها بر اساس فایل رسمی تقسیمات کشوری تا پایان سال **۱۴۰۴** آماده شده‌اند و در سه فرمت **JSON، CSV و XLSX** در دسترس هستند. نسخهٔ آمادهٔ انتشار: **v3.1.2**.
 
 برای استفاده در سایت یا نرم‌افزار، کافی هست فایل موردنیاز را از [جدول دانلود](#دانلود-دادهها) دریافت کنید؛ نیازی به نصب پکیج یا اجرای ابزارهای مخزن ندارید. اگر فایل رسمی به‌روزتری منتشر شده، لطفاً از طریق [بخش گزارش مشکلات](https://github.com/sajaddp/list-of-cities-in-Iran/issues) به ما اطلاع دهید.
 
@@ -54,7 +54,7 @@
 | آبادی‌ها | `villages` | 99317 | [JSON](dist/json/villages.json) | [CSV](dist/csv/villages.csv) | [XLSX](dist/xlsx/villages.xlsx) | — |
 | همه داده‌ها | `all` | 105474 | [JSON](dist/json/all.json) | [CSV](dist/csv/all.csv) | [XLSX](dist/xlsx/all.xlsx) | — |
 
-فایل `cities` همه 1672 رکورد شهر را دارد؛ `cities-filtered` شامل 1481 شهر واقعی و `urban-zones` شامل 191 ناحیه شهری است. دو خروجی مشتق‌شده، تقسیم‌بندی کامل و بدون هم‌پوشانی `cities` هستند. فایل `all` همه سطح‌های تقسیمات کشوری را در بر می‌گیرد، نه فقط شهرها.
+فایل رسمی، طبق [CODEREC=5](offical/coderec.md)، همهٔ 1672 رکورد را «شهر» می‌داند. `cities` همین پروجکشن کامل و منبع‌وفادار است؛ `cities-filtered` شامل 1481 شهر واقعی و `urban-zones` شامل 191 ناحیهٔ شهریِ مشتق‌شده از پروژه است. این طبقه‌بندی با نام دارای پسوند عددی پایانی، حذف پسوند، نرمال‌سازی فارسی و یک تطابق یکتای شهر واقعی در همان استان/شهرستان/بخش اثبات می‌شود. هر Urban Zone در `city_id` شناسهٔ عمومی شهر واقعی والد در `cities-filtered` را دارد. فایل `all` همه سطح‌ها را منبع‌وفادار نگه می‌دارد: این 191 رکورد در آن همچنان `type="city"` هستند و `city_id` ندارد.
 
 ## ویژگی‌ها
 
@@ -253,7 +253,7 @@ npm run verify
 
 [Open the Developer Data Explorer](https://sajaddehshiri.ir/list-of-cities-in-Iran/)
 
-This repository provides a list of cities and provinces in Iran, along with counties, districts, rural districts, and villages. The Iran administrative divisions dataset is available in **JSON, CSV, and XLSX** for direct use in software projects.
+This repository provides a list of cities and provinces in Iran, along with counties, districts, rural districts, and villages. The Iran administrative divisions dataset is available in **JSON, CSV, and XLSX** for direct use in software projects. Prepared release: **v3.1.2**.
 
 Current official source year: **1404** (Solar Hijri). The administrative files are generated from the official workbook covering divisions through the end of that year. If a newer official source becomes available, please [open an issue](https://github.com/sajaddp/list-of-cities-in-Iran/issues).
 
@@ -301,7 +301,7 @@ All datasets below are available in all three formats. Counts are recorded in th
 | Villages | `villages` | 99317 | [JSON](dist/json/villages.json) | [CSV](dist/csv/villages.csv) | [XLSX](dist/xlsx/villages.xlsx) | — |
 | All data | `all` | 105474 | [JSON](dist/json/all.json) | [CSV](dist/csv/all.csv) | [XLSX](dist/xlsx/all.xlsx) | — |
 
-`cities` contains all 1672 city records. `cities-filtered` contains 1481 real cities and `urban-zones` contains 191 urban zones. The two derived datasets are a complete, non-overlapping partition of `cities`; `all` includes every administrative level, not just cities.
+The official [CODEREC=5](offical/coderec.md) meaning is City, so `cities` is the complete, source-faithful 1,672-record projection. `cities-filtered` contains 1,481 real cities and `urban-zones` contains 191 project-derived Urban Zones. The deterministic evidence selects terminal numeric-suffix names, removes that suffix, applies repository Persian normalization, and requires one real-city match in the same province/county/district. Each Urban Zone `city_id` references its parent real city in `cities-filtered`. `all` remains the source-faithful union: its corresponding 191 rows stay `type="city"` and have no `city_id`.
 
 ### Features
 

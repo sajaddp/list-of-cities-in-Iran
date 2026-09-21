@@ -14,7 +14,7 @@
     district: ["id", "name", "slug", "province_id", "county_id"],
     rural: ["id", "name", "slug", "province_id", "county_id", "district_id"],
     city: ["id", "name", "slug", "province_id", "county_id", "district_id"],
-    "urban-zone": ["type", "id", "name", "slug", "province_id", "county_id", "district_id"],
+    "urban-zone": ["type", "id", "name", "slug", "province_id", "county_id", "district_id", "city_id"],
     village: ["id", "name", "slug", "province_id", "county_id", "district_id", "rural_id", "coderec", "village_code", "mapped_rural_code"]
   };
   const parentSteps = {
@@ -22,7 +22,7 @@
     district: [["province_id", "province"], ["county_id", "county"], ["id", "district"]],
     rural: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["id", "rural"]],
     city: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["id", "city"]],
-    "urban-zone": [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["id", "urban-zone"]],
+    "urban-zone": [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["city_id", "city"], ["id", "urban-zone"]],
     village: [["province_id", "province"], ["county_id", "county"], ["district_id", "district"], ["rural_id", "rural"], ["id", "village"]]
   };
   const sharedSemantics = [
@@ -33,7 +33,7 @@
   ];
   function semanticsFor(record) {
     return record.type === "urban-zone"
-      ? ["urban zone = ناحیه شهری; not a real city.", "county = شهرستان; an administrative division.", "county and city are different entity types.", "same name does not mean the same entity."]
+      ? ["urban zone = ناحیه شهری; not a real city.", "city_id identifies the parent real city in cities-filtered.", "county = شهرستان; an administrative division.", "county and city are different entity types.", "same name does not mean the same entity."]
       : sharedSemantics;
   }
   function normalizeSearch(value) {

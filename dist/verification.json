@@ -1,5 +1,5 @@
 {
-  "version": "3.1.0",
+  "version": "3.1.2",
   "source": {
     "year": 1404,
     "filename": "offical/list.xlsx",
@@ -186,7 +186,23 @@
       },
       "urbanZones": {
         "rows": 191,
-        "subset": true
+        "subset": true,
+        "evidence": {
+          "expectedUrbanZones": 191,
+          "actualUrbanZones": 191,
+          "derivedCandidates": 191,
+          "resolved": 191,
+          "unresolved": 0,
+          "ambiguous": 0,
+          "committedParentMismatches": 0
+        },
+        "parentReferences": {
+          "validPublicParentIds": 191,
+          "missingParents": 0,
+          "urbanZoneParents": 0,
+          "selfParents": 0,
+          "ancestryMismatches": 0
+        }
       },
       "overlap": 0,
       "complete": true
@@ -275,9 +291,10 @@
             "slug",
             "province_id",
             "county_id",
-            "district_id"
+            "district_id",
+            "city_id"
           ],
-          "bytes": 12753,
+          "bytes": 15516,
           "semanticHeaderValid": true
         }
       },
@@ -439,7 +456,11 @@
         "village_code",
         "mapped_rural_code"
       ],
-      "nullableTabularCellsDecodeAs": "null"
+      "nullableTabularCellsDecodeAs": "null",
+      "sourceFaithful": true,
+      "urbanZoneRowsRetainCityType": 191,
+      "urbanZoneTypeRows": 0,
+      "cityIdFields": 0
     }
   }
 }
